@@ -1,55 +1,130 @@
 import pdfplumber
-import fitz  # PyMuPDF
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-import time
+import math
+import pymupdf
 from PIL import Image
-import layoutparser as lp
+import os
+import shutil
 
-# # Suppress the warnings WARNING:pdfminer.pdfpage:CropBox missing from /Page, defaulting to MediaBox
-# import logging
-# logging.getLogger("pdfminer").setLevel(logging.ERROR)
+def detect_all_tables(pdf_path, stream_mode=False):
+    """
+    Detects all tables in the given PDF and returns a list of dicts,
+    one per table, with page number, bounding box, and optionally cell data.
+    
+    Args:
+        pdf_path (str): Path to the PDF file.
+        stream_mode (bool): If True, use a text‐based ("stream") detection strategy
+                            rather than relying on ruling lines ("lattice"). Defaults to False.
+    
+    Returns:
+        List[dict]: Each dict has:
+            - 'page_num' (int): 0‐based page index
+            - 'bbox'     (tuple): (x0, top, x1, bottom) in PDF points
+            - 'cells'    (List[dict]): Optional: each cell’s bbox and text
+    """
+    all_tables = []
+    
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_num, page in enumerate(pdf.pages):
+
+            # TODO: inspect this
+            if stream_mode:
+                # If your tables have no borders, use text‐based detection:
+                settings = {
+                    "vertical_strategy":   "text",
+                    "horizontal_strategy": "text",
+                }
+                tables = page.find_tables(table_settings=settings)
+            else:
+                # Default: detect by looking for ruling lines / borders
+                tables = page.find_tables()
+            
+            for tbl_idx, table in enumerate(tables):
+                x0, top, x1, bottom = table.bbox
+                width = x1 - x0
+                height = top - bottom
+                
+                # If you just want bbox info:
+                table_info = {
+                    "page_num": page_num,
+                    "table_index_on_page": tbl_idx,
+                    "bbox": (x0, top, x1, bottom),
+                    "width": width,
+                    "height": height,
+                    # If you want cell‐by‐cell details:
+                    "cells": []
+                }
+                
+                all_tables.append(table_info)
+    
+    return all_tables
 
 
-# # Extract tables as images
-# # THIS EXTRACTS TEH ENTIRE PAGE
-# with pdfplumber.open(pdf_path) as pdf:
-#     for i, page in enumerate(pdf.pages):
-#         tables = page.extract_tables()
-#         if tables:
-#             # Save page as image
-#             im = page.to_image(resolution=150)
-#             im_path = f"page_{i+1}_with_table.png"
-#             im.save(im_path)
-#             print(f"Saved {im_path}")
+
+
+if __name__ == "__main__":
+
+    path = "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf"
+    file_pymupdf = pymupdf.open(path)
+    file = pdfplumber.open(path)
+    page_count = len(file.pages)
+
+    #Extract images
+    for page_number in range(page_count):
+        images = file_pymupdf[page_number].get_images(full=True)
+        for img_index, img in enumerate(images):
+            xref = img[0]
+            pix = pymupdf.Pixmap(file_pymupdf, xref)
+            if pix.n < 5:  # this is GRAY or RGB
+                pix.save(f"image_{page_number+1}_{img_index+1}.png")
+            pix = None
+        
+
+    # Extract tables as images
+    with file as pdf:
+
+        # Extract images
+        tables = detect_all_tables(path, stream_mode=False)
+        print(f"Found {len(tables)} tables (lattice).")
+        counter = 0
+        for t in tables:
+            p = t["page_num"]
+            bbox = t["bbox"]
+            print(f" • Page {p+1}: bbox={bbox}, cells={len(t['cells'])}")
+
+            x1 = math.floor(bbox[0])
+            y1 = math.floor(bbox[1])
+            x2 = math.ceil(bbox[2])
+            y2 = math.ceil(bbox[3])
+
+            # Convert to (x, y, width, height):
+            width  = x2 - x1 
+            height = y2 - y1 
+                
+            page = pdf.pages[p]
+            # pdfplumber images are PIL Image objects at 72 dpi by default
+            pil_image = page.to_image(resolution=150).original  # render at 150 dpi
+
+            # Convert box from points→pixels: scale = 150 / 72
+            scale = 150/72
+            left   = int(x1 * scale)
+            top    = int(y1 * scale)
+            right  = int(x2 * scale)
+            bottom = int(y2 * scale)
+
+            cropped = pil_image.crop((left, top, right, bottom))
+            
+            image_name = "cropped_region" + str(counter) + ".png"
+
+            cropped.save(image_name)
+            print("Saved ", image_name)
+            counter+=1
 
     
-import os
-
-pdf_path = "../data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf"
-pdf_layout = lp.load_pdf(pdf_path)
-pdf_layout[0] # the layout for page 0
-pdf_layout, pdf_images = lp.load_pdf(pdf_path, load_images=True)
-lp.draw_box(pdf_images[0], pdf_layout[0])
-
-
-# # Extract the tables (DATA SCRAPING)
-# with pdfplumber.open(pdf_path) as pdf:
-#     for page in pdf.pages:
-#         tables = page.extract_tables()
-#         for table in tables:
-#             for row in table:
-#                 print(row)
-
-
-# doc = fitz.open("../data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf")
-# for page_number in range(len(doc)):
-#     images = doc[page_number].get_images(full=True)
-#     for img_index, img in enumerate(images):
-#         xref = img[0]
-#         pix = fitz.Pixmap(doc, xref)
-#         if pix.n < 5:  # this is GRAY or RGB
-#             pix.save(f"image_{page_number+1}_{img_index+1}.png")
-#         pix = None
+    # Example 2: Stream mode (for borderless/whitespace tables)
+    # tables_stream = detect_all_tables(pdf_file, stream_mode=True)
+    # print(f"Found {len(tables_stream)} tables (stream).")
+    # for t in tables_stream:
+    #     p = t["page_num"]
+    #     bbox = t["bbox"]
+    #     print(f" • Page {p+1}: bbox={bbox}, cells={len(t['cells'])}")
 
