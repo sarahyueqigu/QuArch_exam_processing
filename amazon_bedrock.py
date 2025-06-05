@@ -46,7 +46,7 @@ claude_thinking_payload = {
 response_claude_thinking = invoke_model(claude_inference_profile_arn, claude_thinking_payload)
 print("=== Claude 3.7 Sonnet With Thinking ===")
 print(response_claude_thinking)
-
+33
 # --- B. With Thinking Disabled ---
 claude_non_thinking_payload = {
     "anthropic_version": "bedrock-2023-05-31",

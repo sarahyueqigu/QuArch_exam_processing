@@ -26,7 +26,6 @@ def detect_all_tables(pdf_path, stream_mode=False):
     with pdfplumber.open(pdf_path) as pdf:
         for page_num, page in enumerate(pdf.pages):
 
-            # TODO: inspect this
             if stream_mode:
                 # If your tables have no borders, use text‐based detection:
                 settings = {
@@ -62,69 +61,65 @@ def detect_all_tables(pdf_path, stream_mode=False):
 
 
 if __name__ == "__main__":
+    input_dir = "data"
 
-    path = "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf"
-    file_pymupdf = pymupdf.open(path)
-    file = pdfplumber.open(path)
-    page_count = len(file.pages)
-
-    #Extract images
-    for page_number in range(page_count):
-        images = file_pymupdf[page_number].get_images(full=True)
-        for img_index, img in enumerate(images):
-            xref = img[0]
-            pix = pymupdf.Pixmap(file_pymupdf, xref)
-            if pix.n < 5:  # this is GRAY or RGB
-                pix.save(f"image_{page_number+1}_{img_index+1}.png")
-            pix = None
+    for filename in os.listdir(input_dir):
+        # Build full path
+        path = os.path.join(input_dir, filename)
         
+        
+        # Only process PDFs
+        if path.lower().endswith(".pdf"):
+            print("Processing:", path)
+            # Now `filepath` is the path to one PDF file
 
-    # Extract tables as images
-    with file as pdf:
+            output_dir = "images/" + filename + "_content"
 
-        # Extract images
-        tables = detect_all_tables(path, stream_mode=False)
-        print(f"Found {len(tables)} tables (lattice).")
-        counter = 0
-        for t in tables:
-            p = t["page_num"]
-            bbox = t["bbox"]
-            print(f" • Page {p+1}: bbox={bbox}, cells={len(t['cells'])}")
+            # 1. Create the target directory if it doesn't exist
+            os.makedirs(output_dir, exist_ok=True)
 
-            x1 = math.floor(bbox[0])
-            y1 = math.floor(bbox[1])
-            x2 = math.ceil(bbox[2])
-            y2 = math.ceil(bbox[3])
+            # Open both libraries’ handles
+            file_pymupdf = pymupdf.open(path)
+            file_plumber = pdfplumber.open(path)
+            page_count = len(file_plumber.pages)
 
-            # Convert to (x, y, width, height):
-            width  = x2 - x1 
-            height = y2 - y1 
-                
-            page = pdf.pages[p]
-            # pdfplumber images are PIL Image objects at 72 dpi by default
-            pil_image = page.to_image(resolution=150).original  # render at 150 dpi
+            # 2. Extract full‐page images via PyMuPDF and save into output_dir
+            for page_number in range(page_count):
+                images = file_pymupdf[page_number].get_images(full=True)
+                for img_index, img in enumerate(images):
+                    xref = img[0]
+                    pix = pymupdf.Pixmap(file_pymupdf, xref)
+                    if pix.n < 5:  # GRAY or RGB
+                        filename = f"page_{page_number+1}_img_{img_index+1}.png"
+                        save_path = os.path.join(output_dir, filename)
+                        pix.save(save_path)
+                    pix = None  # free the Pixmap
 
-            # Convert box from points→pixels: scale = 150 / 72
-            scale = 150/72
-            left   = int(x1 * scale)
-            top    = int(y1 * scale)
-            right  = int(x2 * scale)
-            bottom = int(y2 * scale)
+            # 3. Detect tables (via pdfplumber), crop them, and save each cropped region into output_dir
+            tables = detect_all_tables(path, stream_mode=False)
+            print(f"Found {len(tables)} tables (lattice).")
+            counter = 0
+            for t in tables:
+                p = t["page_num"]
+                bbox = t["bbox"]
+                x1, top, x2, bottom = bbox
+                # Convert PDF‐points box → integer pixel box at 150 DPI
+                scale = 150 / 72
+                left   = int(math.floor(x1) * scale)
+                top_px  = int(math.floor(top) * scale)
+                right  = int(math.ceil(x2) * scale)
+                bottom_px = int(math.ceil(bottom) * scale)
 
-            cropped = pil_image.crop((left, top, right, bottom))
-            
-            image_name = "cropped_region" + str(counter) + ".png"
+                page = file_plumber.pages[p]
+                pil_image = page.to_image(resolution=150).original 
 
-            cropped.save(image_name)
-            print("Saved ", image_name)
-            counter+=1
+                cropped = pil_image.crop((left, top_px, right, bottom_px))
+                filename = f"table_crop_{counter:03d}.png"
+                save_path = os.path.join(output_dir, filename)
+                cropped.save(save_path)
 
-    
-    # Example 2: Stream mode (for borderless/whitespace tables)
-    # tables_stream = detect_all_tables(pdf_file, stream_mode=True)
-    # print(f"Found {len(tables_stream)} tables (stream).")
-    # for t in tables_stream:
-    #     p = t["page_num"]
-    #     bbox = t["bbox"]
-    #     print(f" • Page {p+1}: bbox={bbox}, cells={len(t['cells'])}")
+                print(f"Saved {save_path}")
+                counter += 1
 
+            file_plumber.close()
+            file_pymupdf.close()
