@@ -1,0 +1,11 @@
+import pymupdf
+
+doc = pymupdf.open("Please Upload Your QAs Here_ (File responses)/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf") # open a document
+out = open("output.txt", "wb") # create a text output
+for page in doc: # iterate the document pages
+    text = page.get_text().encode("utf8") # get plain text (is in UTF-8)
+    # out.write(text) # write text of page
+    # out.write(bytes((12,))) # write page delimiter (form feed 0x0C)
+    one_line_bytes = (text.replace(b"\r", b" ").replace(b"\n", b" "))
+    out.write(one_line_bytes)
+out.close()
