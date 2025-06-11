@@ -1,0 +1,310 @@
+```json
+{
+  "exam_name": "CS232_Fall_2000_Final_Exam",
+  "problems": [
+    {
+      "problem": "1. Multiple Choice Problems",
+      "parts": [
+        {
+          "part": "A",
+          "question": [
+            {
+              "subproblem_question": "Choose the one untrue statement about MIPS addressing modes:"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "d. PC-relative addressing, used for branches, gets the upper 16 bits of the address from the PC"
+            }
+          ]
+        },
+        {
+          "part": "B",
+          "question": [
+            {
+              "subproblem_question": "For each of the MIPS code sequences below, indicate if the memory accesses show temporal locality, spatial locality, both, or neither (by checking the corresponding boxes)."
+            },
+            {
+              "subproblem_question": "a.",
+              "subproblem_figures": ["TABLE"]
+            },
+            {
+              "subproblem_question": "b.",
+              "subproblem_figures": ["TABLE"]
+            },
+            {
+              "subproblem_question": "c.",
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "a. [X] temporal locality, [ ] spatial locality, [ ] both, [ ] neither\nb. [ ] temporal locality, [ ] spatial locality, [X] both, [ ] neither\nc. [ ] temporal locality, [X] spatial locality, [ ] both, [ ] neither"
+            }
+          ]
+        },
+        {
+          "part": "C",
+          "question": [
+            {
+              "subproblem_question": "The following problems relate to the various characteristics of a cache."
+            },
+            {
+              "subproblem_question": "a) For each of the following characteristics of a cache, mark if it's a good characteristic, or a bad one."
+            },
+            {
+              "subproblem_question": "b) Mark how the characteristics would change if we increased the block size."
+            },
+            {
+              "subproblem_question": "c) Mark how increasing the associativity of the cache would affect its behavior."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "a) i. decreasing miss rate is (good).\nii. increasing the miss penalty is (bad).\niii. increasing the amount of tag storage with respect to the amount of data storage is (bad).\nb) i. the miss rate, in general, (decreases).\nii. the miss penalty (increases).\niii. when the block size gets more and more closer to the cache size, the miss rate starts to (increase).\niv. the amount of tag storage with respect to the amount of data storage (decreases).\nc) i. the miss rate (decreases).\nii. the hit time generally (increases)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "2. Short Answer Problems",
+      "parts": [
+        {
+          "part": "2",
+          "question": [
+            {
+              "subproblem_question": "Write 2.5 in the standard IEEE 754 single precision floating point binary representation."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "0 | 10000000 | 01000000000000000000000"
+            }
+          ]
+        },
+        {
+          "part": "3",
+          "question": [
+            {
+              "subproblem_question": "Write down a sentence on the characteristic feature of each of the following datapath implementations that differentiate one from the other."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Single cycle: One instruction takes one cycle. Clock cycle time is the maximum of the execution times of the instructions. There are separate functional units for each stage within an instruction.\nMulti-cycle: Number of cycles vary for each instruction, and therefore performance is better. Describes FSM in detail. Functional units are combined. Says something about \"many stuff\". The cycles are shorter.\nPipelined: Different instructions in different execution stages run simultaneously. Just \"more than one instruction at a time\".\nSuperscalar: Execute multiple instructions in the same cycle. Load/stores and ALU instructions done simultaneously.\nSuperpipelining: Just more stages to pipelining."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "4. Long Answer Problems",
+      "problem_context": "Consider a modification to the register file in the pipelined MIPS datapath. This modification allows the register file to do only one operation in each cycle: i.e. it can be either read from or written to in a single cycle.",
+      "parts": [
+        {
+          "part": "4",
+          "question": [
+            {
+              "subproblem_question": "This modification introduces structural hazards into MIPS. Show how a sequence of instructions that have NO data or control hazards would now be executed using the following diagram. Show at least the next five instructions."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "IMAGE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "5",
+      "problem_context": "Consider a simple, non-pipelined, single-cycle implementation of MIPS. Assume instruction fetch from memory takes the same time as data fetch from memory. The operation time for the major functional units for this machine are as follows: Memory units: 6 ns, ALU and adders: 4 ns, Register file (read or write): 2 ns",
+      "parts": [
+        {
+          "part": "a",
+          "question": [
+            {
+              "subproblem_question": "Put a mark in the each blank to indicate the stages of the critical path taken by the following instructions."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "TABLE"
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "question": [
+            {
+              "subproblem_question": "Assuming that no other delays arise from the memory system, internal control unit, program counter access, etc., find the clock cycle time for the single cycle datapath. Write a line about how you determined the clock cycle time."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The longest instruction is load word, and it takes 6+2+4+6+2=20 ns. So, 20 ns is the clock cycle time."
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "question": [
+            {
+              "subproblem_question": "For the given an instruction mix compare the performance of the pipelined and multi-cycle implementation of the datapath above."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Stores: 12% × 18 = 2.16\nBranch: 18% × 12 = 2.16\nJump: 2% × 6 = 0.12\nLoad 24% × 20 = 4.8\n15.40 (Multicycle Avg time per instruction)\nSince, slowest functional unit takes 6 ns , if ignoring stalls, hazards, etc., avg time per instruction for pipelined implementation is 6 ns . So, the pipelined implementation is faster by 15.40 / 6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "6",
+      "problem_context": "Given the C code below, fill in the blank lines in the MIPS code below so it will execute the C code properly. You may use only the blanks provided.",
+      "parts": [
+        {
+          "part": "6",
+          "question": [
+            {
+              "subproblem_question": "C code:\nint x, y, err;\n//the code to input the value of x is not shown\nif (x<10)\n err = 0;\nelse {\n x = 0;\n err = 1;\n}\ny = x;\nMIPS code:\nLabels are provided at the beginning of each line so that you do not have to add any labels.\n#$s0 = int x;\n#$s1 = int y;\n#$s2 = int err;\n#not shown here is the code that inputs a value for x\nL1: slti $t0, $s0, 10\nL2: beq $t0, $0, L5\nL3: add $s2, $0, $0\nL4: beq $0, $0, L7\nL5: add $s0, $0, $0\nL6: addi $s2, $0, 1\nL7: add $s1, $s0, $0"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "L2: beq $t0, $0, L5\nL4: beq $0, $0, L7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "7",
+      "problem_context": "Consider the single-cycle datapaths shown below, highlight clearly the paths to show the flow of both the data and the PC for the instructions given, then fill in the blanks for the control bits (0 = cleared, 1 = set, x = don't care). For the ALUOp field, use the following: 00 = \"add\", 01 = \"subtract\", 10 = \"do the funct field operation\".",
+      "parts": [
+        {
+          "part": "a",
+          "question": [
+            {
+              "subproblem_question": "Instruction: lw $1, 100 ($2)",
+              "subproblem_figures": ["IMAGE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "TABLE"
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "question": [
+            {
+              "subproblem_question": "Instruction: beq $2, $2, loop",
+              "subproblem_figures": ["IMAGE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "TABLE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "8",
+      "problem_context": "Referring to both of the diagrams from problem number 7, assume that the operation time for the major functional units are following: Memory units: 3 ns, Register file (read or write): 1 ns, General ALU: 2ns, Adder for PC+4: X ns, Adder for branch address computation: Y ns, Assume other units have no delay",
+      "parts": [
+        {
+          "part": "a",
+          "question": [
+            {
+              "subproblem_question": "If X=4 ns, Y=4 ns, what are the cycle times for the lw and beq instructions?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "cycle time for beq: 4+4=8 ns\ncycle time for lw: 3+1+2+3+1=10 ns\nWhat would be the cycle time of a datapath that supports only these two instructions? 10 ns"
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "question": [
+            {
+              "subproblem_question": "If X=2 ns, and Y=10 ns, what are the cycle times for the beq and lw instructions?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "cycle time for beq: 13 ns (takes 10 ns + waiting for 2 inputs takes max(3,2)=3 ns)\ncycle time for lw: 10 ns\nWhat would be the cycle time of a datapath that supports only these two instructions?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "9",
+      "problem_context": "Identify all the hazards in the following code, and state the type of each hazard.",
+      "parts": [
+        {
+          "part": "9",
+          "question": [
+            {
+              "subproblem_question": "IMAGE"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "IMAGE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "10",
+      "problem_context": "Given two pieces of code, the recursive fibbonachi code (MP1 - used recursion and function return values) and the memoizing fibbonachi code (MP2 - filled in an array recursivly) we wrote, compare the performance of the two machines described below. Ignore the instructions that are used to maintain the stack. Both machines run at the same clock rate",
+      "parts": [
+        {
+          "part": "10",
+          "question": [
+            {
+              "subproblem_question": "Machine A - superscalar MIPS machine that executes both one load/store and one ALU/branch instruction per cycle.\nMachine B - pipelined MIPS machine that completes one instruction per cycle."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Recursive fibbonachi: Same speed\nArray-based fibbonachi: Superscalar is faster"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "11",
+      "problem_context": "Consider a set-associative cache as given in the diagram below.",
+      "parts": [
+        {
+          "part": "11",
+          "question": [
+            {
+              "subproblem_question": "We are using a write-back policy on this cache, and we are using an extra dirty bit (\"D\") to mark those blocks that actually need to be written back when replaced, similar to what is done in virtual memory. Note that the dirty bit is examined on each replacement. The replacement policy is LRU(i.e. replace the least recently used block). Assuming that the cache is empty at the beginning, show how the cache changes for the following code sequence. There is a set of tables on the next page for this purpose. (continued on next page)\nNote that only the first two blocks of the cache are shown. Ignore what happens in the other blocks. You must fill in the \"D\", \"V\", and tag fields. Leave the field for the data blank. You may omit the leading 0's for the values in the tag fields. Also, if there is a memory access, write whether the access is a read or write, and then write the address.\na. lw $t0, 01000100_{two} ($0)\nb. sw $t0, 10000100_{two} ($0)\nc. lw $t1, 01000100_{two} ($0)\nd. lw $t2, 11000100_{two} ($0)\ne. sw $t1, 11000000_{two} ($0)",
+              "subproblem_figures": ["IMAGE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "a. TABLE\nb. TABLE\nc. TABLE\nd. TABLE\ne. TABLE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
