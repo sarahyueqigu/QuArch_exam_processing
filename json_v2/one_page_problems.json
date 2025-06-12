@@ -9,7 +9,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Add any necessary datapath and control signals and draw the result datapath. You should only add wires, gates, muxes to the datapath; do not modify the main functional units (the memory, register file, and ALU) themselves. Try to keep your diagram neat!"
             }

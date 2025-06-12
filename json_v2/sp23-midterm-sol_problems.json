@@ -7,7 +7,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Have you been to TA office hours before?"
             }
@@ -26,7 +26,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Represent decimal number 24 in hexadecimal form."
             }
@@ -39,7 +39,7 @@
         },
         {
           "part": "b",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Represent octal (base 8) number 53 in decimal form and binary form."
             }
@@ -52,7 +52,7 @@
         },
         {
           "part": "c",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Consider two unsigned binary numbers A=1011 and B=0101. Do the math below. Use as many bits as needed to precisely represent the results.",
               "subproblem_question": "What's the result of A+B?"
@@ -84,7 +84,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Consider a decimal number F=-100.50:",
               "subproblem_question": "Give the binary representation of F:"
@@ -101,7 +101,7 @@
               "solution": "-1100100.1"
             },
             {
-              "solution": "-1.1001001 × 2^6"
+              "solution": "-1.1001001 x 2^6"
             },
             {
               "solution": "1001001"
@@ -110,7 +110,7 @@
         },
         {
           "part": "b",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Consider a hex value F=0x7f800000 that represents a floating point number encoded using the IEEE 754 single-precision format.",
               "subproblem_question": "What is the exponent value (in decimal)?"
@@ -130,7 +130,7 @@
         },
         {
           "part": "c",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Professor Bob teaches a computer science course, and he is designing the scoring system of a midterm exam. The exam consists of 64 multiple choice questions and students will receive 1 point for each correct answer, 0 point for leaving it blank, and -0.25 points for a wrong answer. To store all the possible scores, Bob wants to incorporate knowledge from CSC 252 to improve the space efficiency by designing a new floating point representation, which should meet three criteria: 1. The characteristics are compliant with the floating-point representations we discussed in class; 2. Can accurately represent any valid score; 3. Use as few bits as possible.",
               "subproblem_question": "How many bits are used for the significand in this new floating point representation?"
@@ -169,7 +169,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Assuming A2A2A1A0=(1001)2 and B2B2B1B0=(0001)2:",
               "subproblem_question": "If X=0, what is the value of P3P2P1P0?"
@@ -189,7 +189,7 @@
         },
         {
           "part": "b",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Still assuming A2A2A1A0=(1001)2 and B2B2B1B0=(0001)2:",
               "subproblem_question": "If X=0, what is the value of Σ2Σ2Σ1Σ0?"
@@ -209,7 +209,7 @@
         },
         {
           "part": "c",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Assume that the 1-bit full adder is implemented as shown in the figure below. The delay at each gate is 1 ps.",
               "subproblem_question": "What is the propagation delay of the 1-bit full adder?"
@@ -235,7 +235,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Consider the following C code: struct Car{ char *model; int year; long mpg; }; struct Car myCars[2]; The following assembly is part of a function print_info(), which, as you can see, calls another function get_cars(), which initializes myCars and returns the pointer that points to myCars.",
               "subproblem_question": "What is the size (number of bytes) of struct Car, assuming proper alignment?"
@@ -261,9 +261,9 @@
         },
         {
           "part": "b",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_context": "Consider the following function p2. Its C code and assembly code are both partially given. Assuming that the input arguments to p2 are x=4, y=4. Then, use the rest of the assembly to find the return value of p2() given unsigned long p2(unsigned long x, unsigned long y){ unsigned long t1= x + 2*y; unsigned long t2= . . . ; // intentionally hidden return t2; } // some irrelevant instructions at the beginning omitted",
+              "subproblem_context": "Consider the following function p2. Its C code and assembly code are both partially given. Assuming that the input arguments to p2 are x=4, y=4. Then, use the rest of the assembly to find the return value of p2() given: unsigned long p2(unsigned long x, unsigned long y){ unsigned long t1= x + 2*y; unsigned long t2= . . . ; // intentionally hidden return t2; } // some irrelevant instructions at the beginning omitted",
               "subproblem_question": "Complete the three missing pieces in the assembly code."
             },
             {
@@ -293,7 +293,7 @@
       "parts": [
         {
           "part": "a",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "Consider a microarchitecture that is designed for an ISA with 256 instructions and 16 general-purpose registers. The ISA has a 16-bit address space. Assuming the opcode fields in all the instructions are encoded using the same amount of bits.",
               "subproblem_question": "If an instruction in this ISA takes the form of ins r1, r2, r3, where ins is the opcode, and r1, r2, and r3 are three general-purpose registers. How many bits are required to encode this instruction?"
@@ -313,7 +313,7 @@
         },
         {
           "part": "b",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "A single-cycle processor has a cycle time of 30 ns. Consider two different pipelined implementations of the same processor, each with 5 and 10 stages, respectively. Assume that the stages divide the computation uniformly. In both pipelined processors, it takes 1 ns for the output of a stage to latch on to the pipeline registers.",
               "subproblem_question": "What is the shortest plausible clock period for the 5-stage pipelined processor?"
@@ -357,7 +357,7 @@
               "solution": "(x-1+50)*(30/x+1)"
             },
             {
-              "solution": "5"
+              "solution": ""
             }
           ]
         }

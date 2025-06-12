@@ -16,7 +16,7 @@ Multiple questions within a subquestion
 Point value associations for the problem or subproblems, including extra credit points
 Solutions, either typed or handwritten
 Tables, diagrams, circuit schematics, or block diagrams
-Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, figures, and solutions. Ignore any point values for any problem, question, or sub-question. Format your response using the template below. If the particular exam question lacks any of the listed components, do not include them.
+Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, figures, and solutions. At times, a subquestion can have nested subparts. Ignore any point values for any problem, question, or sub-question. Format your response using the template below. If the particular exam question lacks any of the listed components, do not include them.
 
 Please format the data so that it can be exported into a JSON file. It should follow the following template.
 
@@ -30,7 +30,7 @@ Please format the data so that it can be exported into a JSON file. It should fo
       "parts": [
         {
           "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
               "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
@@ -46,7 +46,7 @@ Please format the data so that it can be exported into a JSON file. It should fo
         }
         {
           "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
               "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
@@ -68,23 +68,7 @@ Please format the data so that it can be exported into a JSON file. It should fo
       "parts": [
         {
           "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "question": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-            }
-          ]
-        }
-        {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
               "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
@@ -159,7 +143,7 @@ if __name__ == "__main__":
 
             json_filename = filename[:-4] + "_problems.json"
 
-            output_dir = "json" 
+            output_dir = "json_v2" 
 
             # Create the target directory if it doesn't exist
             os.makedirs(output_dir, exist_ok=True)

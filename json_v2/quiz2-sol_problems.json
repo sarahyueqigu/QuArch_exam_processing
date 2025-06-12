@@ -9,7 +9,7 @@
       "parts": [
         {
           "part": "1",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "In steady state, how many cycles does the processor stall waiting for loads per iteration of the inner loop?"
             }
@@ -22,9 +22,9 @@
         },
         {
           "part": "2",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "Ben Bitdiddle modifies his processor to support fine-grain round-robin multithreading. The processor now supports 2 threads, and threads are switched every cycle using a fixed round-robin schedule. If a thread cannot be scheduled because it is stalled on an instruction, the processor inserts a pipeline bubble and switches to schedule the other thread for the next cycle. Each thread now works on its own 1 KB-sized array, calculating the sum independently (i.e., there is no data sharing between threads). Alyssa P. Hacker points out that this multithreaded implementation will reduce the number of summations done per cycle compared to the single-threaded version. Is she correct? Briefly explain why or why not."
+              "subproblem_question": "Ben Bitdiddle modifies his processor to support fine-grain round-robin multithreading. The processor now supports 2 threads, and threads are switched every cycle using a fixed round-robin schedule. If a thread cannot be scheduled because it is stalled on an instruction, the processor inserts a pipeline bubble and switches to schedule the other thread for the next cycle. Each thread now works on its own 1 KB -sized array, calculating the sum independently (i.e., there is no data sharing between threads). Alyssa P. Hacker points out that this multithreaded implementation will reduce the number of summations done per cycle compared to the single-threaded version. Is she correct? Briefly explain why or why not."
             }
           ],
           "answer": [
@@ -35,7 +35,7 @@
         },
         {
           "part": "3",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Devise a simple modification to the C code to make the multithreaded implementation faster. Write the modified C code below, and briefly explain why it improves performance."
             }
@@ -50,12 +50,12 @@
     },
     {
       "problem": "Part B: Cache Coherence",
-      "problem_context": "Ben wants to design a directory-based MSI coherence protocol where the directory uses a bit vector to store each sharer set. Given an N-core system, the directory keeps an N-bit wide bit vector for each line it tracks. If the i-th bit of the bit vector is set, it means that core i's cache holds a copy of the line in either S or M state.",
+      "problem_context": "Ben wants to design a directory-based MSI coherence protocol where the directory uses a bit vector to store each sharer set. Given an N-core system, the directory keeps a N-bit wide bit vector for each line it tracks. If the i-th bit of the bit vector is set, it means that core i's cache holds a copy of the line in either S or M state.",
       "problem_figures": [],
       "parts": [
         {
           "part": "1",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Suppose that the processor has N cores, each of which has a 1 KB private cache with 32 B lines.\na) How many entries does the directory need to have to keep track of all cache lines in the private caches?\nb) In this directory, what is the total size of all the sharer sets in bits?"
             }
@@ -68,60 +68,56 @@
         },
         {
           "part": "2",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "Ben changes the design of the sharer sets by replacing the bit vector with a set of sharer pointers. Each pointer now keeps track of one sharer by storing the sharer's core id. For example, if cores 10 and 12 hold the line in S state, the sharer set for this line in the directory will consist of two pointers, '10' and '12'. Each sharer set can store at most 16 sharer pointers. Given an N-core system where N is a power of 2, what is the total number of bits needed for all sharer pointers in a sharer set?"
+              "subproblem_question": "Ben changes the design of the sharer sets by replacing the bit vector with a set of sharer pointers. Each pointer now keeps track of one sharer by storing the sharer's core id. For example, if cores 10 and 12 hold the line in S state, the sharer set for this line in the directory will consist of two pointers, \"10\" and \"12\". Each sharer set can store at most 16 sharer pointers. Given an N-core system where N is a power of 2, what is the total number of bits needed for all sharer pointers in a sharer set?"
             }
           ],
           "answer": [
             {
-              "solution": "16 pointers * logN bits/pointer = 16 logN"
+              "solution": "16 pointers * logN bits / pointer = 16 logN"
             }
           ]
         },
         {
           "part": "3",
-          "question": [
+          "subproblem": [
             {
               "subproblem_context": "To design the coherence protocol with sharer pointers, Ben starts with the basic MSI protocol described in the quiz handout. Because the number of sharer pointers is less than the number of potential sharers (assume N>16 cores), Ben introduces an all-sharers bit to each line in the directory. When this bit is set, the directory conservatively considers all private caches as sharers of this line. For the following questions, consider only transitions between stable states.",
               "subproblem_question": "a) What additional transitions does Ben need for each of the 3 processor states (M, S, and I)? Show the transition(s) below with an arrow between the source and destination states, clearly denoting it with the triggering action and the action taken during the transition. Do not introduce new messages.\nb) What additional transitions does Ben need for each of the 3 directory states (Ex, Sh, and Un)? Show the transition(s) below with an arrow between the source and destination states, clearly denoting it with the triggering action and the action taken during the transition. Do not introduce new messages. We've added an additional transition due to a WbReq to get you started."
             },
-            {
-              "subproblem_figures": ["IMAGE", "IMAGE"]
-            }
+            "subproblem_figures": ["IMAGE", "IMAGE"]
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the images provided in the question."
             }
           ]
         },
         {
           "part": "4",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "So far, we assumed that each coherence transaction completes before the next transaction begins. Alyssa P. Hacker points out that Ben's modification to the coherence protocol introduces additional races that he must now deal with when transient states are considered. To see this, consider the following 2-core scenario where a line is in shared state, with the all-sharers bit set in the directory, but only Core 1 has an actual copy of the line in its cache. Core 1 attempts to write to the line, triggering the directory to send an InvReq to Core 0's cache. However, before the InvReq arrives at Core 0's cache, Core 0 writes to the same cache line, sending an ExReq to the directory. Specifically, Core 0 sends an ExReq before it receives an InvReq. To maintain coherence, what action should Cache 0 take in response to the InvReq while in the I -> M transient state? Pick one of the following three answers: A: Acknowledge the InvReq by sending an InvResp and remain in the I -> M transient state to wait for a later ExResp. Meanwhile, the directory will buffer and serve ExReqs in the order of receiving these requests. B: Buffer or NACK the InvReq, wait for an ExResp from the directory, and then proceed to performing the invalidation. Meanwhile, the directory will buffer and serve ExReqs in the reverse order of receiving these requests i.e., it will first respond to Cache 0's request with an ExResp, then respond to Cache 1 with an ExResp when Cache 0's InvResp arrives. C: Performing either of A or B will result in correct behavior."
+              "subproblem_question": "So far, we assumed that each coherence transaction completes before the next transaction begins. Alyssa P. Hacker points out that Ben's modification to the coherence protocol introduces additional races that he must now deal with when transient states are considered. To see this, consider the following 2-core scenario where a line is in shared state, with the all-sharers bit set in the directory, but only Core 1 has an actual copy of the line in its cache. Core 1 attempts to write to the line, triggering the directory to send an InvReq to Core 0's cache. However, before the InvReq arrives at Core 0's cache, Core 0 writes to the same cache line, sending an ExReq to the directory. Specifically, Core 0 sends an ExReq before it receives an InvReq. To maintain coherence, what action should Cache 0 take in response to the InvReq while in the I -> M transient state? Pick one of the following three answers:\n\nA: Acknowledge the InvReq by sending an InvResp and remain in the I -> M transient state to wait for a later ExResp. Meanwhile, the directory will buffer and serve ExReqs in the order of receiving these requests.\n\nB: Buffer or NACK the InvReq, wait for an ExResp from the directory, and then proceed to performing the invalidation. Meanwhile, the directory will buffer and serve ExReqs in the reverse order of receiving these requests i.e., it will first respond to Cache 0's request with an ExResp, then respond to Cache 1 with an ExResp when Cache 0's InvResp arrives.\n\nC: Performing either of A or B will result in correct behavior."
             },
-            {
-              "subproblem_figures": ["IMAGE"]
-            }
+            "subproblem_figures": ["IMAGE"]
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the images provided in the question."
             }
           ]
         },
         {
           "part": "5",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Alyssa P. Hacker proposes an alternative solution that works as follows. Instead of using an all-sharers bit when the number of sharers exceeds the size of the sharer set, the directory evicts an existing sharer pointer and sends an InvReq to the corresponding cache. After the InvResp comes back, the directory replaces the pointer with the new sharer. Describe two scenarios, one where you would prefer using the all-sharers bit, and another where you would prefer evicting a sharer pointer entry. You can either describe them in words or write code snippets that describe these scenarios."
             }
           ],
           "answer": [
             {
-              "solution": "Lots of possible answers here. Key point is the number of extra invalidations you have to do. The following are just some examples. All-sharer preferred: Data frequently read repeatedly between all cores Eviction preferred: Producer-consumer relation where one core writes to a value that a subset of cores (16 < # cores sharing << N) consume. Keeping a restricted set of sharers will avoid sending N InvReqs."
+              "solution": "All-sharer preferred: Data frequently read repeatedly between all cores\nEviction preferred: Producer-consumer relation where one core writes to a value that a subset of cores (16 < # cores sharing << N) consume. Keeping a restricted set of sharers will avoid sending N InvReqs."
             }
           ]
         }
@@ -129,45 +125,48 @@
     },
     {
       "problem": "Part C: Memory Consistency",
-      "problem_context": "The following questions deal with memory accesses from multiple cores in a cache-coherent shared memory machine. For each question, you will consider the possible outcomes for the following memory consistency models: Sequential Consistency (SC), Total Store Order, IBM370-style (TSO-IBM370): Stores can be reordered after later loads, but store-to-load forwarding is disallowed until the value is globally visible to other cores. Total Store Order, x86-style (TSO-x86): Stores can be reordered after later loads, and stores from the same core are visible in the same order. Store-to-load forwarding within the same core is allowed. Relaxed Memory Order (RMO): Loads and stores can be reordered after later loads and stores, and store-to-load forwarding is allowed. Assume that all registers (r1, r2, ...) and memory locations (a, b, ...) initially contain 0.",
+      "problem_context": "The following questions deal with memory accesses from multiple cores in a cache-coherent shared memory machine. For each question, you will consider the possible outcomes for the following memory consistency models:\n\n- Sequential Consistency (SC)\n- Total Store Order, IBM370-style (TSO-IBM370): Stores can be reordered after later loads, but store-to-load forwarding is disallowed until the value is globally visible to other cores.\n- Total Store Order, x86-style (TSO-x86): Stores can be reordered after later loads, and stores from the same core are visible in the same order. Store-to-load forwarding within the same core is allowed.\n- Relaxed Memory Order (RMO): Loads and stores can be reordered after later loads and stores, and store-to-load forwarding is allowed.\n\nAssume that all registers (r1, r2, ...) and memory locations (a, b, ...) initially contain 0.",
       "problem_figures": [],
       "parts": [
         {
           "part": "1",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "Consider a cache-coherent shared-memory machine that executes the following two threads on two different cores. Assume that memory locations a, b, and c contain initial value 0.\n\n| T1 | T2 |\n| :--: | :--: |\n| ST (a) <- f1 | ST (b) <- f1 |\n| LD r1 <- (a) | ST (a) <- f2 |\n| LD r2 <- (b) | |\nCircle the consistency models for which the final values r1=1, r2=0, and (a)=1 are possible."
-            }
+              "subproblem_question": "Consider a cache-coherent shared-memory machine that executes the following two threads on two different cores. Assume that memory locations a, b, and c contain initial value 0.\n\n| T1 | T2 |\n| :--: | :--: |\n| ST (a) <- 1 | ST (b) <- 1 |\n| LD r1 <- (a) | ST (a) <- 2 |\n| LD r2 <- (b) | |\n\nCircle the consistency models for which the final values r1=1, r2=0, and (a)=1 are possible."
+            },
+            "subproblem_figures": ["TABLE"]
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question."
             }
           ]
         },
         {
           "part": "2",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "| T1 | T2 | T3 | T4 |\n| :-- | :-- | :-- | :-- |\n| ST (a) <- 1 | ST (a) <- 2 | LD r1 <- (a) LD r2 <- (a) | LD r3 <- (a) LD r4 <- (a) |\nCircle the consistency models for which the final values r1=1, r2=2, r3=2, and r4=1 are possible"
+              "subproblem_question": "| T1 | T2 | T3 | T4 |\n| :-- | :-- | :-- | :-- |\n| ST (a) <- 1 | ST (a) <- 2 | LD r1 <- (a) LD r2 <- (a) | LD r3 <- (a) LD r4 <- (a) |\n\nCircle the consistency models for which the final values r1=1, r2=2, r3=2, and r4=1 are possible\n\nSC TSO-IBM370 TSO-x86 Relaxed",
+              "subproblem_figures": ["TABLE"]
             }
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question."
             }
           ]
         },
         {
           "part": "3",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "| T1 | T2 | T3 |\n| :--: | :--: | :--: |\n| ST (a) <- 1 LD r1 <- (a) LD r2 <- (b) | ST (b) <- 1 | LD r3 <- (b) LD r4 <- (a) |\nCircle the consistency models for which the final values r1=1, r2=0, r3=1, r4=0 are possible."
+              "subproblem_question": "| T1 | T2 | T3 |\n| :--: | :--: | :--: |\n| ST (a) <- 1 LD r1 <- (a) LD r2 <- (b) | ST (b) <- 1 | LD r3 <- (b) LD r4 <- (a) |\n\nCircle the consistency models for which the final values r1=1, r2=0, r3=1, r4=0 are possible.\n\nSC TSO-IBM370 TSO-x86 Relaxed",
+              "subproblem_figures": ["TABLE"]
             }
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question."
             }
           ]
         }
@@ -180,35 +179,37 @@
       "parts": [
         {
           "part": "1",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Consider the following Benes network topology for 4 processor cores. The set of source cores are shown on the left column and the destination cores are on the right column. The routers all have two input and output ports. All the links connecting the cores and routers are unidirectional. Fill in the following table of topology metrics for this network.",
-              "subproblem_figures": ["IMAGE", "TABLE"]
+              "subproblem_figures": ["IMAGE"]
             }
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question.",
+              "solution_figures": ["TABLE"]
             }
           ]
         },
         {
           "part": "2",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "A Benes network for N cores can be defined recursively as a combination of two smaller N/2 Benes networks, as shown below. Fill in the following metrics for a Benes network for N cores. Assume that N is a power of 2.",
-              "subproblem_figures": ["IMAGE", "TABLE"]
+              "subproblem_figures": ["IMAGE"]
             }
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question.",
+              "solution_figures": ["TABLE"]
             }
           ]
         },
         {
           "part": "3",
-          "question": [
+          "subproblem": [
             {
               "subproblem_question": "Consider 3-dimensional mesh and torus networks with N nodes. Note that we pictorially describe the 3-D torus topology as a combination of 3 discrete sets of links, which each show the connections in a single dimension. Assume that N=k^3 where k is an even integer. Fill in the table below as a function of the number of nodes in the network. The units for each cell are hops or links. For average distance, assume uniform random traffic (where each node sends 1/Nth of the traffic to each destination, including itself). You can use N and k in your formulas. You only need to provide the asymptotic growth for the number of links and average distance for the 3D mesh. For everything else, you need to provide the exact number to receive full credit, and asymptotic growth will get you partial credit.",
               "subproblem_figures": ["TABLE"]
@@ -216,15 +217,16 @@
           ],
           "answer": [
             {
-              "solution": "The solution involves diagrams and transitions which are not text-based and thus not included here."
+              "solution": "The solution is represented by the table provided in the question.",
+              "solution_figures": ["TABLE"]
             }
           ]
         },
         {
           "part": "4",
-          "question": [
+          "subproblem": [
             {
-              "subproblem_question": "Consider the XY dimension-order routing described in class. If a packet wants to go from coordinate (a, b) to (a', b'): The packet is first minimally routed in the X dimension until its X-coordinate equals a'. Next, the packet is minimally routed in the Y dimension until its Y-coordinate equals b'. Is the routing algorithm deadlock free for a 2D-torus topology? Explain your reasoning with the turn model, clearly stating which turns are allowed and which are forbidden."
+              "subproblem_question": "Consider the XY dimension-order routing described in class. If a packet wants to go from coordinate (a, b) to (a', b'):\n\n- The packet is first minimally routed in the X dimension until its X-coordinate equals a'.\n- Next, the packet is minimally routed in the Y dimension until its Y-coordinate equals b'.\n\nIs the routing algorithm deadlock free for a 2D-torus topology? Explain your reasoning with the turn model, clearly stating which turns are allowed and which are forbidden."
             }
           ],
           "answer": [

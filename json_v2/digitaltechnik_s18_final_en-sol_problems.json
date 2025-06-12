@@ -1,0 +1,841 @@
+```json
+{
+  "exam_name": "Final Exam",
+  "problems": [
+    {
+      "problem": "1 Potpourri",
+      "problem_context": "Based on your knowledge of a basic MIPS design and the computer architecture techniques you learned throughout this course, put an \" X \" in the box corresponding to whether each of the following design characteristics is better classified as \"microarchitecture\" or \"ISA\":",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "1.1",
+          "subproblem": [
+            {
+              "subproblem_question": "Based on your knowledge of a basic MIPS design and the computer architecture techniques you learned throughout this course, put an \" X \" in the box corresponding to whether each of the following design characteristics is better classified as \"microarchitecture\" or \"ISA\":",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "General purpose register $29$ is the stack pointer | ISA\nMaximum bandwidth between the L2 and the L3 cache | Microarchitecture\nMaximum reservation station capacity | Microarchitecture\nHardware floating point exception support | ISA\nInstruction issue width | Microarchitecture\nVector instruction support | ISA\nMemory-mapped I/O Port Address | ISA\nArithmetic and Logic Unit (ALU) critical path | Microarchitecture\nCPU endianness | ISA\nVirtual page size | ISA",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "1.2",
+          "subproblem": [
+            {
+              "subproblem_question": "Modify the single-cycle processor datapath to include a version of the lw instruction, called lw2, that adds two registers to obtain the effective address. The datapath that you will modify is provided below. Your job is to implement the necessary data and control signals to support the new lw2 instruction, which we define to have the following semantics:\n\nlw2: Rd ← Memory[Rs+Rt]\nPC ← PC+4",
+              "subproblem_figures": ["IMAGE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "There is no need for new components and wires. The main difference is that the ALU must use \"Read data 2\", instead of the output of the sign extend unit. The new lw2 will be R-type, not I-type.\nThe values of the control signals need to be:\nRegDst = 1;\nALUScr = 0;\nMemtoReg = 1;\nRegWrite = 1;\nMemRead = 1;\nMemWrite = 0;\nALUop = 00;\nBranch = 0.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "1.3",
+          "subproblem": [
+            {
+              "subproblem_question": "The execution time of a given benchmark is 100 ms on a 500 MHz processor. An ETH alumnus, designing the next generation of the processor, notices that a new implementation enables the processor to run at 750 MHz . However, the modifications increase the CPI by 20% for the same benchmark.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "(a) [4 points] What is the execution time expressed in terms of the number of cycles taken for the old generation of the processor (i.e., before the modifications)?\nAnswer: Execution time is 50 Million cycles. The benchmark has 100 Million instructions.\n\n(b) [3 points] What is the execution time of the benchmark in milliseconds for the new generation of the processor?\nAnswer: 80 ms.\n\n(c) [3 points] What is the speedup or slowdown of the new generation processor over the old generation?\nAnswer: 25% speedup",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "2 Verilog",
+      "problem_context": "Please answer the following four questions about Verilog.",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Does the following code result in a sequential circuit or a combinational circuit? Explain why.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Sequential circuit.\n\nExplanation: This code results in a sequential circuit because data_in2 is not in the sensitivity list, and thus a latch is inferred for data_out.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "In the following code, the input clk is a clock signal. What is the hexadecimal value of the output c right after the third positive edge of clk if initially c=8'hE3 and a=4'd8 and b=4'o2 during the entire time?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "$8^{\prime} h C 4$.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how to fix it/them.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The code is not syntactically correct.\n\nExplanation:\n- Module names cannot start with a number → '1nn3r' is not a legal module name.\n- The output signal 'z' has to be declared as a 'wire' but not 'reg'.\n- 'r1' and 'r2' has to be declared as 'wire's.\n- The module '1nn3r' does not have ports named 'instr' and 'z'. Those need to be changed to 'd' and 's', respectively.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "Does the following code correctly implement a counter that counts from 1 to 11 by increments of 2 (e.g., 1,3,5,7,9,11,1,3,...)? If so, say \"Correct\". If not, correct the code with minimal modification.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "No, the implementation is not correct.\n\nThe correct implementation:\nmodule odd_counter (clk, count);\nwire clk;\nreg[3:0] count = 1;\nreg[3:0] count_next;\nalways@* begin\ncount_next = count;\nif (count != 11)\ncount_next += 2;\nelse\ncount_next = 1;\nend\nalways@(posedge clk)\ncount <= count_next;\nendmodule",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "e",
+          "subproblem": [
+            {
+              "subproblem_question": "Does the following code correctly instantiate a 4-bit adder? If so, say \"Correct\". If not, correct the code with minimal modification.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Yes.\n\nExplanation: Even though the wire s is swapped with the input b, the final computation produced by the module adder is still going to be correct since the or and and operations are commutative.",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "3 Boolean Algebra",
+      "problem_context": "",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Find the simplest sum-of-products representation of the following Boolean equation. Show your work step-by-step.\n$F=B+(A+\bar{C}) \cdot(\bar{A}+\bar{B}+\bar{C})$",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Answer: $F=A+B+\bar{C}$\n\nExplanation:\n$F=B+(A \cdot \bar{A}+A \cdot \bar{B}+A \cdot \bar{C}+\bar{A} \cdot \bar{C}+\bar{B} \cdot \bar{C}+\bar{C} \cdot \bar{C})$\n$F=B+0+A \cdot \bar{B}+\bar{C} \cdot(A+\bar{A})+\bar{B} \cdot \bar{C}+\bar{C}$\n$F=(B+A \cdot \bar{B})+\bar{C} \cdot(A+\bar{A})+(\bar{B} \cdot \bar{C}+\bar{C})$\n$F=(B+A)+\bar{C}+\bar{C} \cdot(\bar{B}+1)$\n$F=A+B+\bar{C}$",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "Convert the following Boolean equation so that it only contains NAND operations. Show your work step-by-step.\n$F=(\overline{A+B \cdot C)}+\bar{C}$",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Answer: $F=(\overline{((\overline{A \cdot A}) \cdot(\bar{B} \cdot \bar{C}))} \cdot C)$\n\nExplanation:\n$F=(\overline{(\overline{A+B} \cdot C) \cdot C})$\n$F=(\overline{(\overline{A+B} \cdot C) \cdot C})$\n$F=(\overline{(\overline{A \cdot(B \cdot C)}) \cdot C})$\n$F=(\overline{(\overline{(A \cdot A) \cdot(B \cdot C)}) \cdot C})$",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Using Boolean algebra, simplify the following min-terms: $\sum(3,5,7,11,13,15)$\nShow your work step-by-step.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Answer: $F=D \cdot(B+C)$\n\nExplanation:\n{3,5,7,11,13,15}={0011,0101,0111,1011,1101,1111}\n$F=(\bar{A} \cdot \bar{B} \cdot C \cdot D)+(\bar{A} \cdot B \cdot \bar{C} \cdot D)+(\bar{A} \cdot B \cdot C \cdot D)+(A \cdot \bar{B} \cdot C \cdot D)+(A \cdot B \cdot \bar{C} \cdot D)+(A \cdot B \cdot C \cdot D)$\n$F=(C \cdot D \cdot((\bar{A} \cdot \bar{B})+(\bar{A} \cdot B)+(A \cdot \bar{B})+(A \cdot B)))+(B \cdot D \cdot((\bar{A} \cdot \bar{C})+(A \cdot \bar{C})))$\n$F=(C \cdot D)+(B \cdot \bar{C} \cdot D)$\n$F=D \cdot(C+(B \cdot \bar{C}))$\n$F=D \cdot(B+C)$",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "4 Finite State Machine",
+      "problem_context": "You are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states.",
+      "problem_figures": ["IMAGE"],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "There is one critical component of an FSM that is missing in this diagram. Please write what is missing in the answer box below.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The reset line or indication for initial state.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "Of the two FSM types, what type of an FSM is this?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Moore",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "List one major advantage of each type of state encoding below.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "One-hot encoding | reduces next-state logic\nBinary encoding | reduces FFs to hold state\nOutput encoding | reduces the output logic",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "Fully describe the FSM with equations given that the states are encoded with one-hot encoding. Assign state encodings such that numerical values of states increase monotonically for states A through D while using the minimum possible number of bits to represent the states with one-hot encoding. Indicate the values you assign to each state and simplify all equations:",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "State assignments: A: 0001, B: 0010, C: 0100, D: 1000\nNS[3] = TB * TS[3] + TS[2]\nNS[2] = TB * TS[0] + \\overline{TA} * TS[1]\nNS[1] = \\overline{TB} * (TS[0] + TS[3])\nNS[0] = TS[1] * TA\nO[1] = TS[0] + TS[1]\nO[0] = TS[1] + TS[2]",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "e",
+          "subproblem": [
+            {
+              "subproblem_question": "Fully describe the FSM with equations given that the states are encoded with binary encoding. Assign state encodings such that numerical values of states increase monotonically for states A through D while using the minimum possible number of bits to represent the states with binary encoding. Indicate the values you assign to each state and simplify all equations:",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "State assignments: A: 00, B: 01, C: 10, D: 11\nNS[1] = TS[1] * (TS[0] * TB + TS[0] * TA) + TS[1] * (TS[0] + TS[0] * TB)\nNS[0] = TS[1] * TS[0] * TB + TS[1]\nO[1] = TS[1]\nO[0] = TS[1] XOR TS[0]",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "f",
+          "subproblem": [
+            {
+              "subproblem_question": "Fully describe the FSM with equations given that the states are encoded with output encoding. Use the minimum possible number of bits to represent the states with output encoding. Indicate the values you assign to each state and simplify all equations:",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "State assignments: A: 10, B: 11, C: 01, D: 00\nNS[1] = TS[1] * TS[0] * TB + TS[1] * TS[0] * TA + TS[1] * TS[0] * TB\n= TS[0] * TB + TS[1] * TS[0] * TA\nNS[0] = TS[1] * TS[0] + TS[1] * TS[0] * TA + TS[1] * TS[0] * TB\n= TS[1] * (TS[0] + TS[0] * TA) + TS[1] * TS[0] * TB\nO[1] = TS[1]\nO[0] = TS[0]",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "g",
+          "subproblem": [
+            {
+              "subproblem_question": "Assume the following conditions:\n- We can only implement our FSM with 2-input AND gates, 2-input OR gates, and D flip-flops.\n- 2-input AND gates and 2-input OR gates occupy the same area.\n- D flip-flops occupy 3x the area of 2-input AND gates.\nWhich state encoding do you choose to implement in order to minimize the total area of this FSM?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Output encoding has the least amount of circuitry elements.",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "5 ISA and Microarchitecture",
+      "problem_context": "You are asked to complete the following program written in MIPS assembly with a sequence of MIPS instructions that perform 64-bit integer subtraction (A - B). The 64-bit integer to be subtracted from (A) is loaded into registers $4 and $5. Similarly, the 64-bit integer to subtract (B) is loaded into registers $6 and $7. Both numbers are in two's complement form. The upper 32-bit part of each number is stored in the corresponding even-numbered register.",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Complete the above program to perform the 64-bit subtraction explained above using at most 4 MIPS instructions. (Note: A summary of the MIPS ISA is provided at the end of this question.)",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "A possible sequence of instructions is as follows:\nsubu $3, $5, $7 # Subtract the least significant part\nsltu $2, $5, $7 # Check if borrowing is needed\nadd $2, $6, $2 # Add borrow\nsub $2, $4, $2 # Subtract the most significant part",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "Assume that the program executes on a pipelined processor, which does not implement interlocking in hardware. The pipeline assumes that all instructions are independent and relies on the compiler to properly order instructions such that there is sufficient distance between dependent instructions. The compiler either moves other independent instructions between two dependent instructions, if it can find such instructions, or otherwise, inserts nops. There is no internal register file forwarding (i.e., if an instruction writes into a register, another instruction cannot access the new value of the register until the next cycle). The pipeline does not implement any data forwarding. The datapath has the following five pipeline stages, similarly to the basic pipelined MIPS processor we discussed in lecture. Registers are accessed in the Decode stage. The execution stage contains one ALU.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "We reoder the lw instructions to first load the data that corresponds to the lower parts of the two numbers since we need the lower part first. We also reorder the completely independent addi instruction to hide part of the load latency. We insert sufficient number of nop instructions until the register is written before the dependent instruction reads the same register in the decode stage.\n\nThis is the resulting code:\n\nLoop: lw $5, 4($1)\nlw $7, 12($1)\nlw $4, 0($1)\nlw $6, 8($1)\naddi $1, $1, 16\nsltu $2, $5, $7\nsubu $3, $5, $7\nnop\nnop\nadd $2, $6, $2\nnop\nnop\nnop\nsub $2, $4, $2\nj Loop",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "What is the Cycles Per Instruction (CPI) of the program when executed on the pipelined processor provided in part (b)?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "CPI ≈ 1.5\n\nExplanation:\nSince the code is an infinite loop, the number of cycles to fill the pipeline becomes negligible after a large number of iterations. Thus, we can consider that the throughput is one instruction every cycle. We count the number of cycles for one loop iteration. It is 15 for 10 instructions. This way, CPI ≈ 15/10 = 1.5",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "Now, assume a processor with a multi-cycle datapath. In this multi-cycle datapath, each instruction type is executed in the following number of cycles: 4 cycles for R-type, 5 cycles for load, 4 cycles for store, and 3 cycles for jump. What is the CPI of the program in part (a) when executed on this multi-cycle datapath? Assuming the multi-cycle datapath runs at the same clock frequency as the pipelined datapath in part (b), how much speedup does pipelining provide?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "CPI = 4.3\n\nExplanation:\nFor the multi-cycle datapath, we have to take into account the number of cycles for each instruction type: 4 cycles for R-type, 5 cycles for load, 4 cycles for store, and 3 cycles for jump.\nThus, CPI = (4 × 5 + 5 × 4 + 3 × 1) / 10 = 4.3.\n\nPipelining provides 287% speedup.\nSpeedup: Explanation.\nWe calculate the speedup as follows:\nSpeedup = CPI_multi-cycle / CPI_pipelined = 4.3 / 1.5 = 2.87.",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "6 Pipelining",
+      "problem_context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined MIPS processor we discussed in lectures, and one ALU:\n1. Fetch (one clock cycle)\n2. Decode (one clock cycle)\n3. Execute (one clock cycle)\n4. Memory (one clock cycle)\n5. Write-back (one clock cycle).",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "When the given code segment is executed on Machine I, the compiler has to reorder instructions and insert nops if needed. Write the resulting code that has minimal modifications from the original.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Copy: lw $2, 100($5)\naddi $1, $1, 1\nnop\nsw $2, 200($6)\nbne $1, $25, Copy",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "When the given code segment is executed on Machine II, dependencies between instructions are resolved in hardware. Explain when data is forwarded and which instructions are stalled and when they are stalled.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "In every iteration, data are forwarded for sw and for bne. The instruction sw is dependent on lw, so it is stalled one cycle in every iteration",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Calculate the machine code size of the code segments executed on Machine I (part (a)) and Machine II (part (b)).",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Machine I: 20 bytes (because of the additional nop)\nMachine II: 16 bytes",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "Calculate the number of cycles it takes to execute the code segment on Machine I and Machine II.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Machine I: 129 cycles\nMachine II: 129 cycles",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "e",
+          "subproblem": [
+            {
+              "subproblem_question": "Which machine is faster for this code segment? Explain.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "For this code segment, both machines take the same number of cycles. We cannot say which one is faster, since we do not know the clock frequency.",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "7 Out-of-order Execution",
+      "problem_context": "In this problem, we will give you the state of the Register Alias Table (RAT) and Reservation Stations (RS) for an out-of-order execution engine that employs Tomasulo's algorithm, as we discussed in lectures. Your first task is to determine the original sequence of four instructions in program order.",
+      "problem_figures": ["IMAGE", "TABLE", "TABLE"],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Give the four instructions that have been dispatched into the machine, in program order. The source registers for the first instruction can be specified in either order. Give instructions in the following format: \"opcode destination ← source1, source2.\"",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "MUL R1 ← R1, R1\nADD R1 ← R1, R2\nADD R4 ← R1, R1\nMUL R3 ← R1, R4",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "Now assume that the machine flushes all instructions out of the pipeline and restarts fetch from the first instruction in the sequence above. Show the full pipeline timing diagram below for the sequence of four instructions that you determined above, from the fetch of the first instruction to the writeback of the last instruction. Assume that the machine stops fetching instructions after the fourth instruction.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "| Cycle: | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |\n| :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| MUL R1 ← R1, R1 | F | D | E1 | E2 | E3 | W |  |  |  |  |  |  |  |  |  |  |\n| ADD R1 ← R1, R2 |  | F | D |  |  |  | E1 | E2 | W |  |  |  |  |  |  |  |\n| ADD R4 ← R1, R1 |  |  | F | D |  |  |  |  |  | E1 | E2 | W |  |  |  |  |\n| MUL R3 ← R1, R4 |  |  |  | F | D |  |  |  |  |  |  |  | E1 | E2 | E3 | W |",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Finally, show the state of the RAT and reservation stations at the end of the 12th cycle of execution in the figure below. Complete all blank parts.",
+              "subproblem_figures": ["TABLE", "TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "| Reg | V | Tag | Value |\n| :--: | :--: | :--: | :--: |\n| R0 | - | - | - |\n| R1 | 1 | - | 33 |\n| R2 | 1 | - | 8 |\n| R3 | 0 | E | - |\n| R4 | 1 | - | 66 |\n| R5 | - | - | - |\n\n| ID | V | Tag | Value | V | Tag | Value |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| A | - | - | - | - | - | - |\n| B | - | - | - | - | - | - |\n| C | - | - | - | - | - | - |\n\n| ID | V | Tag | Value | V | Tag | Value |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| D | - | - | - | - | - | - |\n| E | 1 | - | 33 | 1 | - | 66 |\n| F | - | - | - | - | - | - |",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "8 Vector Processing",
+      "problem_context": "Assume a vector processor that implements the following ISA:",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 1? Explain.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "100 banks (because the latency of VLD and VST instructions is 100 cycles)",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 2? Explain.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "101 banks.\nExplanation. To avoid stalls, we need to ensure that consecutive vector elements access 100 different banks.\nWith a vector stride of 2, consecutive elements of a vector will map to every other bank. For example, if the first element maps to bank 0, the next element will map to bank 2, and so on.\nWith 100 banks, the 51st element of a vector will map to bank 100 % 100 = 0, conflicting with the first element of the vector.\nHowevert, with 101 banks, the 51st element will map to bank 1, which was skipped by the previous vector elements.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Assume:\n- A machine that has a memory with as many banks as you found is part (a).\n- The vector stride is set to 1.\n- The value of the vector length is set to M (but we do not know M)\nThe machine executes the following program:\n\nVLD V1 ← A\nVLD V2 ← (A + 32768)\nVADD V3 ← V1, V1\nVMUL V4 ← V2, V3\nVST (A + 32768*2) ← V4\n\nThe total number of cycles needed to complete the execution of the above program is 4306. What is M?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "M = 1000\nExplanation.\nVLD |-100-|--(M-1)--|\nVLD |-100-|--(M-1)--|\nVADD |-5-|--(M-1)--|\nVMUL |-10-|--(M-1)--|\nVST |-100-|--(M-1)--|\n(M+100-1) + 100 + (M-1) + 10 + (M-1) + 100 + (M-1)\n=306 + 4*M = 4306 -> M = 1000 elements",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "If we modify the vector processor to support chaining, how many cycles would be required to execute the same program in part (c)? Explain.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "100 + (VLEN-1) + 100 + 10 + 100 + (VLEN-1) = 310 + 2*1000 - 2 = 2308 cycles",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "9 GPUs and SIMD",
+      "problem_context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.",
+      "problem_figures": [],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "How many warps does it take to execute this program?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "33 warps.\nExplanation:\nThe number of warps is calculated as:\n#Warps = ⌈#Total_threads / #Warp_size⌉,\nwhere\n#Total_threads = 1025 = 2^10 + 1 (i.e., one thread per loop iteration),\nand\n#Warp_size = 32 = 2^5 (given).\nThus, the number of warps needed to run this program is:\n#Warps = ⌈(2^10 + 1) / 2^5⌉ = 2^5 + 1 = 33.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "What is the maximum possible SIMD utilization of this program? (Hint: The warp scheduler does not issue instructions when no threads are active).",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1056.\nExplanation:\nEven though all active threads in a warp follow the same execution path, the last warp will only have one active thread.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer.)",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "For every 32 consecutive elements of A, every element should be lower than 33 (if), or greater than or equal to 33 (else). (NOTE: The solution is correct if both cases are given.)",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "What is the minimum possible SIMD utilization of this program?",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1568.\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nThen, part of the threads in each warp executes Instruction 2 and the other part executes Instruction 3. We consider that Instruction 2 is executed by α threads in each warp (except the last warp), where 0 < α ≤ 32, and Instruction 3 is executed by the remaining 32 - α threads. The only active thread in the last warp executes either Instruction 2 or Instruction 3. The other instruction is not issued for this warp.\nThe minimum SIMD utilization sums to 1025 + α × 32 + (32 - α) × 32 + 1 / 1056 + 1024 + 1024 + 32 = 1025 / 1568.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "e",
+          "subproblem": [
+            {
+              "subproblem_question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer.)",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "For every 32 consecutive elements of A, part of the elements should be lower than 33 (if), and the other part should be greater than or equal to 33 (else).",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "f",
+          "subproblem": [
+            {
+              "subproblem_question": "What is the SIMD utilization of this program if A[i] = i? Show your work.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1072.\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nInstruction 2 is executed by the first 33 threads, i.e., all threads in the first warp and one thread in the second warp.\nInstruction 3 is executed by the remaining active threads.\nThe SIMD utilization sums to 1025 + 32 + 1 + 31 + 960 + 1 / 1056 + 32 + 32 + 32 + 960 + 32 = 2050 / 2144 = 1025 / 1072.",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "10 Memory Hierarchy",
+      "problem_context": "An enterprising computer architect is building a new machine for high-frequency stock trading and needs to choose a CPU. She will need to optimize her setup for memory access latency in order to gain a competitive edge in the market. She is considering two different prototype enthusiast CPUs that advertise high memory performance:\n(A) Dragonfire-980 Hyper-Z\n(B) Peregrine G-Class XTreme",
+      "problem_figures": ["IMAGE", "IMAGE"],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Fill in the blanks for Dragonfire-980 Hyper-Z.",
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "| System Parameter | CPU A: Dragonfire-980 Hyper-Z |  |  |  |\n| :-- | :--: | :--: | :--: | :--: |\n|  | L1 | L2 | L3 | DRAM |\n| Cache Line Size (B) | N/A | N/A | N/A | N/A OR X |\n| Cache Associativity | 2 | X | X | X |\n| Total Cache Size (B) | 16 | X | X | X |\n| Access Latency from (ns) | 20 | X | X | 100 |",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "Fill in the blanks for Peregrine G-Class XTreme.",
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "| System Parameter | CPU B: Peregrine G-Class XTreme |  |  |  |\n| :-- | :--: | :--: | :--: | :--: |\n|  | L1 | L2 | L3 | DRAM |\n| Cache Line Size (B) | N/A | N/A | N/A | N/A OR X |\n| Cache Associativity | 1 | 4 | X | X |\n| Total Cache Size (B) | 32 | 512 | X | X |\n| Access Latency (ns) | 10 | 40 | X | 100 |",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "11 Dataflow Meets Logic",
+      "problem_context": "We often use the \"addition node\":\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.",
+      "problem_figures": ["IMAGE"],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "Implement the single-bit binary addition of two \"1-bit\" input tokens a and b as a dataflow graph using only 2-input {AND, OR, XOR} nodes and COPY nodes if necessary (illustrated in Figure 3). Fill in the internal implementation below, where inputs and outputs (labeled with their corresponding bit-widths) have been provided:",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The solution is not provided in the document.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "You may recognize the node we designed in part (a) as a model for a so-called \"halfadder (HA)\", which is not very useful by itself since it is only useful for adding 1-bit input tokens. In order to extend this design to perform binary addition of 2-bit input tokens a [1:0] and b [1:0], the sum [1] token from half-adding a [0] and b [0] will have to act as an input token for another half-adder node used for adding a [1] and b [1]. This results in a 3-input adder called a \"fulladder (FA)\".\nFortunately, we can implement a full-adder (FA) using half-adders (HA) (i.e., the node we designed in part (a). Implement the full-adder using a minimum number of half-adders and at most 1 additional 2-input {AND, OR, XOR} node.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The solution is not provided in the document.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "The full-adder (FA) is a versatile design that can be used to implement n-bit addition. Show how we might use it to implement 2-bit binary addition of two input tokens a [1:0] and b [1:0]. Use only a minimum number of full-adders (i.e., the dataflow node you designed in Part 2). Hint: you may use constant input tokens if necessary.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The solution is not provided in the document.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "subproblem": [
+            {
+              "subproblem_question": "Interestingly, the full-adder can also be used to add four 1-bit input tokens. This is a natural extension of the full-adder in the same way we extended the half-adder to create the fulladder itself (in part (b)). Implement the 4-input node below using only a minimum number of full-adders (FA) (i.e., the dataflow node you designed in part (b)). Hint: you may use constant input tokens if necessary.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The solution is not provided in the document.",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "e",
+          "subproblem": [
+            {
+              "subproblem_question": "As it turns out, any n ≥ 31-bit input binary adders can be implemented purely using full-adders. Fill in the table below for the minimum number of required full adders to implement an n-input 1-bit adder.",
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "| n | # required full-adders |\n| :--: | :-- |\n| 3 | 1 |\n| 4 | 3 |\n| 5 | 3 |\n| 6 | 4 |\n| 7 | 4 |\n| 8 | 7 |",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "12 BONUS: Branch Prediction",
+      "problem_context": "Assume a processor that implements an ISA with eight registers (R0-R7). In this ISA, the main memory is byte-addressable and each word contains 4 bytes. The processor employs a branch predictor. The ISA implements the instructions given in the following table:",
+      "problem_figures": ["TABLE"],
+      "parts": [
+        {
+          "part": "a",
+          "subproblem": [
+            {
+              "subproblem_question": "What would be the prediction accuracy using a global one-bit-history (last-time) branch predictor shared between all the branches? The initial state of the predictor is \"taken\".",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "19/36.\nNote that initial values of both R1 and R5 are 4; and they change only before the branches in lines 20 and 27 respectively. Both branches follow the pattern of T-T-T-NT, which creates a nested loop.\nAt each iteration of the internal loop, adjacent elements (pointed by R0 and R2) are swapped, if Memory[R0] ≤ Memory[R2]. Then, both R0 and R4 are incremented by 4. So they point to the next element in the next iteration.\nTherefore, the code sorts the elements in Array in increasing order.\nTable below shows the behavior of each branch through the code. Here T means that the corresponding branch is taken at specified turn, whereas N indicates that it is not taken.\n\n|  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| Line11 | T |  | N |  | N |  | T |  |  | N |  | N |  | T |  | T |  |  |\n| Line20 |  | T |  | T |  | T |  | N |  |  | T |  | T |  | T |  | N |  |\n| Line27 |  |  |  |  |  |  |  |  | T |  |  |  |  |  |  |  |  | T |\n|  | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 |\n| Line11 | N |  | T |  | T |  | T |  |  | T |  | T |  | T |  | T |  |  |\n| Line20 |  | T |  | T |  | T |  | N |  |  | T |  | T |  | T |  | N |  |\n| Line27 |  |  |  |  |  |  |  |  | T |  |  |  |  |  |  |  |  | N |\n\nOne-bit-history branch predictor suggests that the next branch's behavior will be the same with the last one. Table below shows the predictor states, hits, and misses through the execution.\n\n|  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| Predictor State | T | T | T | N | T | N | T | T | N | T | N | T | N | T | T |\n| Branch Behavior | T | T | N | T | N | T | T | N | T | N | T | N | T | T | T |\n| Hit/Miss | H | H | M | M | M | M | H | M | M | M | M | M | M | H | H |\n|  | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |\n| Predictor State | T | T | N | T | N | T | T | T | T | T | T | N | T | T | T |\n| Branch Behavior | T | N | T | N | T | T | T | T | T | T | N | T | T | T | T |\n| Hit/Miss | H | M | M | M | M | H | H | H | H | H | M | M | H | H | H |\n|  | 31 | 32 | 33 | 34 | 35 | 36 |  |  |  |  |  |  |  |  |  |\n| Predictor State | T | T | T | T | T | N |  |  |  |  |  |  |  |  |  |\n| Branch Behavior | T | T | T | T | N | N |  |  |  |  |  |  |  |  |  |\n| Hit/Miss | H | H | H | H | M | H |  |  |  |  |  |  |  |  |  |",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "subproblem": [
+            {
+              "subproblem_question": "What would be the prediction accuracy using a global two-bit-history (two-bit counter) branch predictor shared between all the branches? Assume that the initial state of the two-bit counter is \"weakly taken\". The \"weakly taken\" state transitions to the \"weakly not-taken\" state on misprediction. Similarly, the \"weakly not-taken\" state transitions to the \"weakly taken\" state on misprediction. A correct prediction in one of the \"weak\" states transitions the state to the corresponding \"strong\" state.",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "26/36.\nExplanation:\nTable below shows the predictor states, hits, and misses through the code. Used abbreviations are as follows: ST: Strongly Taken, WT: Weakly Taken, WN: Weakly Not-taken, SN: Strongly Not-taken.\nBranch behavior is the same with question (a), since both of them are shared predictors.\n\n|  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| Predictor State | WT | ST | ST | WT | ST | WT | ST | ST | WT | ST | WT | ST | WT | ST |\n| Branch Behavior | T | T | N | T | N | T | T | N | T | N | T | N | T | T |\n| Hit/Miss | H | H | M | H | M | H | H | M | H | M | H | M | H | H |\n|  | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |\n| Predictor State | ST | ST | ST | WT | ST | WT | ST | ST | ST | ST | ST | ST | WT | ST |\n| Branch Behavior | T | T | N | T | N | T | T | T | T | T | T | N | T | T |\n| Hit/Miss | H | H | M | H | M | H | H | H | H | H | H | M | H | H |\n|  | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 |  |  |  |  |  |  |\n| Predictor State | ST | ST | ST | ST | ST | ST | ST | WT |  |  |  |  |  |  |\n| Branch Behavior | T | T | T | T | T | T | N | N |  |  |  |  |  |  |\n| Hit/Miss | H | H | H | H | H | H | M | M |  |  |  |  |  |  |",
+              "solution_figures": []
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "subproblem": [
+            {
+              "subproblem_question": "What would be the prediction accuracy using a local two-bit-history (two-bit counter) branch predictor that is separate for each branch? The initial state is \"weakly taken\" and the state transitions are the same as in part (b).",
+              "subproblem_figures": []
+            }
+          ],
+          "answer": [
+            {
+              "solution": "- L11: 8/16\n- L20: 12/16\n- L27: 3/4\n- All Branches: 23/36\nExplanation: Private predictors update their states only based on the behaviors of corresponding branches.\n\n|  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| L11 Predictor State | WT |  | ST |  | WT |  | WN |  |  | WT |  | WN |\n| L11 Branch Behavior | T |  | N |  | N |  | T |  |  | N |  | N |\n| L11 Hit/Miss | H |  | M |  | M |  | M |  |  | M |  | H |\n| L20 Predictor State |  | WT |  | ST |  | ST |  | ST |  |  | WT |  |\n| L20 Branch Behavior |  | T |  | T |  | T |  | N |  |  | T |  |\n| L20 Hit/Miss |  | H |  | H |  | H |  | M |  |  | H |  |\n| L27 Predictor State |  |  |  |  |  |  |  |  | WT |  |  |  |\n| L27 Branch Behavior |  |  |  |  |  |  |  |  | T |  |  |  |\n| L27 Hit/Miss |  |  |  |  |  |  |  |  | H |  |  |  |\n|  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |\n| L11 Predictor State |  | SN |  | WN |  |  | WT |  | WN |  | WT |  |\n| L11 Branch Behavior |  | T |  | T |  |  | N |  | T |  | T |  |\n| L11 Hit/Miss |  | M |  | M |  |  | M |  | M |  | H |  |\n| L20 Predictor State | ST |  | ST |  | ST |  |  | WT |  | ST |  | ST |\n| L20 Branch Behavior | T |  | T |  | N |  |  | T |  | T |  | T |\n| L20 Hit/Miss | H |  | H |  | M |  |  | H |  | H |  | H |\n| L27 Predictor State |  |  |  |  |  | ST |  |  |  |  |  |  |\n| L27 Branch Behavior |  |  |  |  |  | T |  |  |  |  |  |  |\n| L27 Hit/Miss |  |  |  |  |  | H |  |  |  |  |  |  |\n|  | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 |\n| L11 Predictor State | ST |  |  | ST |  | ST |  | ST |  | ST |  |  |\n| L11 Branch Behavior | T |  |  | T |  | T |  | T |  | T |  |  |\n| L11 Hit/Miss | H |  |  | H |  | H |  | H |  | H |  |  |\n| L20 Predictor State |  | ST |  |  | WT |  | ST |  | ST |  | ST |  |\n| L20 Branch Behavior |  | N |  |  | T |  | T |  | T |  | N |  |\n| L20 Hit/Miss |  | M |  |  | H |  | H |  | H |  | M |  |\n| L27 Predictor State |  |  | ST |  |  |  |  |  |  |  |  | ST |\n| L27 Branch Behavior |  |  | T |  |  |  |  |  |  |  |  | N |\n| L27 Hit/Miss |  |  | H |  |  |  |  |  |  |  |  | M |",
+              "solution_figures": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
