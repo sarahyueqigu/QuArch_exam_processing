@@ -103,33 +103,37 @@ def call_mistral(prompt):
 
 
 def parse_and_classify(md_file, images_dir):
-    with open(md_file, 'r', encoding='utf-8') as f:
-        content = f.read()
-    # Extract referenced images
+    content = Path(md_file).read_text(encoding="utf-8")
     refs = extract_image_refs(content)
-    # Normalize to filenames
     image_list = [os.path.basename(r) for r in refs]
-    available_images = [img for img in os.listdir(images_dir) if img in image_list]
     prompt = prompt_template.format(
         markdown_content=content,
-        image_list=json.dumps(available_images)
+        image_list=json.dumps(image_list)
     )
+
     raw = call_mistral(prompt)
     print(f"\n─── RAW MISTRAL OUTPUT for {md_file} ───\n{raw}\n")
-    raw = raw.strip()
 
-    # Ensure we have both braces
-    if not raw.startswith('{'):
-        raw = '{' + raw
-    if not raw.endswith('}'):
-        raw = raw + '}'
+    # 1) If we already have a dict, return it
+    if isinstance(raw, dict):
+        return raw
 
+    # 2) Strip fences and extra text
+    clean = re.sub(r"```(?:json|text)?\s*", "", raw)
+    m = re.search(r"\{.*\}", clean, flags=re.DOTALL)
+    if not m:
+        print(f"❗ No JSON found in Mistral reply:\n{repr(raw)}")
+        raise ValueError("No JSON object in output")
+    json_str = m.group(0).strip()
+
+    # 3) Parse
     try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        # Dump the raw output for inspection
-        print(f"❗ Failed to parse JSON from {md_file}:\n{raw}\n")
+        return json.loads(json_str)
+    except json.JSONDecodeError as e:
+        print("❗ Failed to parse JSON:\n", json_str)
+        print("→ JSONDecodeError:", e)
         raise
+
 
 def natural_key(problem_id):
     # Extract first integer for sorting
@@ -148,7 +152,7 @@ def main(md_folder, img_folder, output_file):
     results.sort(key=lambda x: natural_key(x.get('problem', '')))
     # Write to JSON file
     with open(output_file, 'w', encoding='utf-8') as out:
-        json.dump(results, out, indent=2, ensure_ascii=False)
+        out.write(str(results))
     print(f"Classified {len(results)} problems. Output saved to {output_file}")
 
 if __name__ == '__main__':
