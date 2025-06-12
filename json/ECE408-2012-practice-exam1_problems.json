@@ -1,0 +1,321 @@
+```json
+{
+  "exam_name": "ECE408/CS483 Practice Exam #1, Fall 2012",
+  "problems": [
+    {
+      "problem": "Question 1",
+      "problem_context": "Answer each of the following questions in as few words as you can. Your answer will be graded based on completeness, correctness, and conciseness.",
+      "parts": [
+        {
+          "part": "1",
+          "question": [
+            {
+              "subproblem_question": "Give two reasons for adding extra \"padding\" elements to arrays allocated in GPU global memory?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1) To achieve coalesced global memory operations by ensuring all accesses in a Warp always form good coalescing groups (aligned to 64B boundaries). 2) To eliminate code complexity and branch divergence handling cases when the thread blocks don't evenly divide into the size of the dataset."
+            }
+          ]
+        },
+        {
+          "part": "2",
+          "question": [
+            {
+              "subproblem_question": "Give two potential disadvantages associated with increasing the amount of work done in each CUDA thread, such as loop unrolling techniques, using fewer threads in total?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1) With more resource usage in each enlarged thread block, the number of thread blocks that can be simultaneously executed by each SM can decrease, potentially reducing the total number of resident threads in each SM. 2) Fewer thread blocks per kernel invocation, may reduce the ability of the algorithm to scale to future GPUs. 3) The decrease in total thread blocks results in a higher penalty for cases where the number of SMs doesn't evenly divide into the number of thread blocks as the last group of thread blocks completes their work (load imbalance penalty)."
+            }
+          ]
+        },
+        {
+          "part": "3",
+          "question": [
+            {
+              "subproblem_question": "The following CUDA code is intended to perform a sum of all elements of the partialSum array. First, provide the missing operation, and second estimate the fraction of the iterations of the for loop that will have branch divergence."
+            },
+            {
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Yes, when stride is less than 32. The loop will iterate 9 times. The last 5 times will have branch divergence. 5/9 of the iterations will have branch divergence. (There can only be up to 512 threads in a block, thus stride cannot be more than 512 in this code.)"
+            }
+          ]
+        },
+        {
+          "part": "4",
+          "question": [
+            {
+              "subproblem_question": "For the following code, estimate the average run time in cycles of a thread. Assume for simplicity that the sin() function operates on radians, and that all operations including the sin() take 1 cycle."
+            },
+            {
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "(\#operations executing the if [anywhere from 2-5 depending on ISA details]) + A + B"
+            }
+          ]
+        },
+        {
+          "part": "5",
+          "question": [
+            {
+              "subproblem_question": "Provide two advantages of a programmer-managed memory, such as the CUDA shared memory, over a hardware managed cache?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "simpler hardware structures, and better utilization due to tighter control."
+            }
+          ]
+        },
+        {
+          "part": "6",
+          "question": [
+            {
+              "subproblem_question": "Assuming capacity were not an issue for registers or shared memory, give one case where it would be valuable to use shared memory instead of registers to hold values fetched from global memory?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "threads can communicate read values with each other, saving bandwidth through read-sharing or better coalescing."
+            }
+          ]
+        },
+        {
+          "part": "7",
+          "question": [
+            {
+              "subproblem_question": "Assume the following code will execute all in the same warp of a CUDA thread block. Write a some CUDA code in which the threads within the warp reverse an array list of length 32 in shared memory. Make your code as efficient in time and space as possible."
+            },
+            {
+              "subproblem_figures": ["TABLE"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "Question 2",
+      "problem_context": "For the vector addition kernel and the corresponding kernel launch code, answer each of the sub-questions below.",
+      "problem_figures": ["TABLE"],
+      "parts": [
+        {
+          "part": "1(a)",
+          "question": [
+            {
+              "subproblem_question": "Assume that the size of A, B, and C is 1000 elements. How many thread blocks will be generated?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "4"
+            }
+          ]
+        },
+        {
+          "part": "1(b)",
+          "question": [
+            {
+              "subproblem_question": "Assume that the size of A, B, and C is 1000 elements. How many warps are there in each block?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "8"
+            }
+          ]
+        },
+        {
+          "part": "1(c)",
+          "question": [
+            {
+              "subproblem_question": "Assume that the size of A, B, and C is 1000 elements. How many threads will be created in the grid?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "1024"
+            }
+          ]
+        },
+        {
+          "part": "1(c)",
+          "question": [
+            {
+              "subproblem_question": "Assume that the size of A, B, and C is 1000 elements. Is there any control divergence during the execution of the kernel? If so, identify the line number of the statement that causes the control divergence. Explain why or why not."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Yes, there is control divergence, which is caused by the if statement in line 2. Since the total number of threads in the grid will be 1024, larger than the size of arrays, the last warp will have divergence: the first 8 threads in the warp will take the true path and the other 24 threads will take the false path."
+            }
+          ]
+        },
+        {
+          "part": "1(b)",
+          "question": [
+            {
+              "subproblem_question": "Assume that the size of A, B, and C is 768 elements. Is there any control divergence during the execution of the kernel? If so, identify the line number of the statement that causes the control divergence. Explain why or why not."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "No, there is no control divergence. Since the total number of threads in the grid will be 768, the same as the size of the arrays, the last warp will not have divergence: all 32 threads will take the true path."
+            }
+          ]
+        },
+        {
+          "part": "1(c)",
+          "question": [
+            {
+              "subproblem_question": "As we discussed in class, data structure padding can be used to eliminate control divergence. Assuming that we will keep the host data structure size the same but pad the device data structure. Declare and initialize a new variable padded_size in line 3 and make some minor changes to statements in lines 4,5 , and 6 to eliminate control divergence during the execution of the kernel. Assume that random input values to floating point addition operations will not cause any errors or exceptions."
+            },
+            {
+              "subproblem_figures": ["TABLE"]
+            }
+          ],
+          "answer": [
+            {
+              "solution": "int vectAdd(float* A, float* B, float* C, int n) { //assume that size has been set to the actual length of //arrays A, B, and C 10. int size = n * sizeof(float); 11. int padded_size = (ceil(n/256.0)*256) * sizeof(float); 12. cudaMalloc((void **) &A_d, padded_size); 13. cudaMalloc((void **) &B_d, padded_size); 14. cudaMalloc((void **) &C_d, padded_size); 15. cudaMemcpy(A_d, A, size, cudaMemcpyHostToDevice); 16. cudaMemcpy(B_d, B, size, cudaMemcpyHostToDevice); 10. vecAddKernel<<<ceil(n/256.0), 256>>>(A_d, B_d, C_d, ceil (n/256.0)*256); 11. cudaMemcpy(C, C_d, size, cudaMemcpyDeviceToHost);"
+            }
+          ]
+        },
+        {
+          "part": "1(d)",
+          "question": [
+            {
+              "subproblem_question": "With this change to the host code, do you think that the \"if (i<n)\" is still needed in Line 2 of the original kernel? Why or why not?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "It is no longer needed. Since n will always to multiples of block sizes with padding, all threads will always have an i value smaller than n . There is no longer need for the test."
+            }
+          ]
+        },
+        {
+          "part": "1(e)",
+          "question": [
+            {
+              "subproblem_question": "For large vector sizes, say greater than 1,000,000 elements, do you expect that the padded code will have significant impact on performance? Why or why not?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "There should be little performance impact. The only warp that has control divergence in the original code was the last warp. With only one out of 30000 warps affected by control divergence, there was not much control divergence penalty to be eliminated."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "Question 3",
+      "problem_context": "The following streaming convolution kernel is executed on an input image N , using the convolution filter Mc . P is the output of the kernel. The kernel launch configuration and code are show below. BLOCK_SIZE is known at compile time, but can be set anywhere from 16 to 256.",
+      "problem_figures": ["TABLE"],
+      "parts": [
+        {
+          "part": "a",
+          "question": [
+            {
+              "subproblem_question": "Out of the possible range of values for BLOCK_SIZE, for what values of BLOCK_SIZE will this kernel function correctly when executing on a current device?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "BLOCK_SIZE =16 through 32. Since there is no synchronization, the whole block must be within one warp in order to function correctly."
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "question": [
+            {
+              "subproblem_question": "If the code does not execute correctly for all BLOCK_SIZE values, suggest a fix to the code to make it work for all BLOCK_SIZE values."
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Add synchthreads() after the two if statements in the second for loop."
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "question": [
+            {
+              "subproblem_question": "Out of the possible range of values for BLOCK_SIZE, for what values of BLOCK_SIZE will the kernel completely avoid uncoalesced loads from global memory?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "none. Global memory loads will not be fully-aligned for any BLOCK_SIZE value."
+            }
+          ]
+        },
+        {
+          "part": "d",
+          "question": [
+            {
+              "subproblem_question": "Does the last line in the kernel cause any shared memory bank conflicts? Why?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "No. Bank conflicts occur between multiple threads in the same instruction, not one thread in multiple instructions. Just because two accesses are written in the same line of source code doesn't mean they \"happen\" at exactly the same time. The loads and stores from and to shared memory are executed separately in this case."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "problem": "Question 4",
+      "problem_context": "You have been hired by an Italian F1 race team which is designing the new chassis for their new prototype. In the first stage of the design process, the engineering team would like to use small workstations with two GPUs (sharing the PCIe bus) to allow engineers to perform fast simulations of small parts of the prototype. Each simulation is an iterative process where each point in the output 3D volume is computed using two neighboring in each dimension from the input 3D volume points (multiply and add for each neighbor, 12 floating-point operations total for each output point). Assuming that each volume has 4096 x 1024 x 1024 points, the simulation code delivers 480 GFLOPS, and the PCIe bandwidth is 6GBps:",
+      "parts": [
+        {
+          "part": "a",
+          "question": [
+            {
+              "subproblem_question": "Assume that the data layout is that all elements in the x-dimension are consecutive, then the y-dimension, then the z-dimension. What is the optimal domain decomposition strategy i.e., which dimension should be divided across GPUs)? Why?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "The best domain decomposition strategy is to store the volume in such a way that the x-y plains with the same z coordinate stay within the same GPU, and partition the input and output volumes across the z-dimension. Since each x-y plane occupy consecutive locations, this domain decomposition strategy allows each inter-GPU communication to be implemented as a single memory transfer. That is, each plane can be sent with extra work packing the data into a contiguous memory buffer before transferring to the neighbor GPU, and unpacking the data after receiving the data from the neighbor GPU."
+            }
+          ]
+        },
+        {
+          "part": "b",
+          "question": [
+            {
+              "subproblem_question": "How would you implement the inter-GPU communication code in the CPU in CUDA 3.0 and CUDA 4.0?"
+            }
+          ]
+        },
+        {
+          "part": "c",
+          "question": [
+            {
+              "subproblem_question": "If GPU Compute is available, would it be the previous approach optimal if MPI communication ( 2 GBps ) is required?"
+            }
+          ],
+          "answer": [
+            {
+              "solution": "Each simulation step requires computing 2048 x 1024 x 1024=2 Gyga-points, which means 12 x 2=24 GFLOPS. Hence, each simulation step takes 24 / 480=0.05 seconds. The communication step transfers 2 x 1024 x 204=2 Mega-bytes, which takes 0.00067 seconds at 3GBps. CUDA 4.0: the data communication is implemented using cudaMemcpy(), and the runtime will select the best data transfer strategy. The worst case scenario is both GPUs using the bus at the same time, so the bandwidth gets divided by 2 (3GBps). In this case, the communication time is 1.3% of the total time. Hence it is not worthy to implement a more complicated schemes to overlap communication and data transfers. CUDA 3.0: the data communication requires using an intermediate host memory buffer. This buffer hast to be host-pinned memory to accomplish full PCIe bandwidth utilization. As in the previous case, the worst case scenario is each GPU getting half the PCIe bandwidth. In this case two data transfers are needed, so the communication time is 2 x 0.00076=0.00134 seconds. This represents 2.6% of the total execution time. As in the previous case, it is not worthy to implement double-buffering schemes in this case. If MPI is required, the communication time would be 0.00067 seconds to bring the data to the host memory, 0.002 seconds for the MPI transfer (assuming half the bandwidth available), and 0.00067 seconds to send the data to the destination GPU: 0.00334 seconds total. We do not include the time spent on intermediate host memory copies because use use host-pinned memory and GPU Direct allows the network card to use the same host-pinned buffer. In this case data communication is 6.25% ( 1.06 X speed-up). Most likely, the previous approach would be still valid."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
