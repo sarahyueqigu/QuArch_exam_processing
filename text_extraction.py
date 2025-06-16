@@ -24,68 +24,42 @@ Please format the data so that it can be exported into a JSON file. It should fo
 
 {
   "exam_name": <Copy the exact name of the file>,
-  "problems": [
+  "problem": <Copy the problem number and/or information>,
+  "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
+  "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+  "parts": [
     {
-      "problem": <Copy the problem number and/or information>,
-      "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
-      "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-      "parts": [
+      "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
+      "subproblem": [
         {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "subproblem": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-            }
-          ]
-        }
+          "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
+          "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
+          "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+          }
+      ]
+      "answer": [
         {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "subproblem": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-            }
-          ]
-            // ...repeat as needed for additional Q&A pairs within this part
+          "solution": <Insert the full solution exactly as shown in the original>,
+          "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
         }
       ]
-      "problem": <Copy the problem number and/or information>,
-      "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
-      "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-      "parts": [
+    }
+    {
+      "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
+      "subproblem": [
         {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "subproblem": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
-            },
-          ]
-            // ...repeat as needed for additional Q&A pairs within this part
+          "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
+          "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
+          "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+          }
+      ]
+      "answer": [
+        {
+          "solution": <Insert the full solution exactly as shown in the original>,
+          "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
         }
       ]
+        // ...repeat as needed for additional Q&A pairs within this part
     }
   ]
 }
@@ -152,23 +126,6 @@ def claud_37_processing(path):
    
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-    # # --- A. With Thinking Enabled ---
-    # claude_thinking_payload = {
-    #     "anthropic_version": "bedrock-2023-05-31",
-    #     "max_tokens": 24000,
-    #     "thinking": {
-    #         "type": "enabled",
-    #         "budget_tokens": 1500
-    #     },
-    #     "messages": [
-    #         {
-    #             "role": "user",
-    #             "content": prompt
-    #         }
-    #     ]
-    # }
-
-
      # Load the document
     with open(path, "rb") as file:
         document_bytes = file.read()
@@ -178,7 +135,7 @@ def claud_37_processing(path):
         {
             "role": "user",
             "content": [
-                {"text": "Briefly compare the models described in this document"},
+                {"text": prompt},
                 {
                     "document": {
                         # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
@@ -196,21 +153,22 @@ def claud_37_processing(path):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 500, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
         )
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]
         print(response_text)
+        return response_text
 
     except (ClientError, Exception) as e:
         print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
         exit(1)
 
 
-    response_claude_thinking = invoke_model(claude_inference_profile_arn, claude_thinking_payload)
-    print("=== Claude 3.7 Sonnet With Thinking ===")
-    print(response_claude_thinking)
+    # response_claude_thinking = invoke_model(claude_inference_profile_arn, conversation)
+    # print("=== Claude 3.7 Sonnet With Thinking ===")
+    # print(response_claude_thinking)
 
 
 
@@ -220,10 +178,11 @@ if __name__ == "__main__":
     for filename in os.listdir(input_dir):
         # Build full path
         input_path = os.path.join(input_dir, filename)
-        
+
         
         # Only process PDFs
-        if input_path.lower().endswith(".pdf"):
+        # if input_path.lower().endswith(".pdf"):
+        if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf":
             print("Processing:", input_path)
             # Now `filepath` is the path to one PDF file
              # Open both libraries’ handles
