@@ -1,3 +1,5 @@
+import boto3
+from botocore.exceptions import ClientError
 import json
 import os
 from mistralai import Mistral
@@ -5,7 +7,7 @@ from mistralai import Mistral
 api_key = "IffIovWq8tUyBc2oinkenZXp2MeqnALs"
 model = "mistral-small-latest"
 
-client = Mistral(api_key=api_key)
+client = boto3.client("bedrock-runtime", region_name="us-east-2")
 
 #PROMPT
 prompt = """You are a language model assisting with the digitization of academic exam content. The input is an exam which has been parsed into Markdown text. The exam contains one or more problems from a Computer Architecture assessment. A problem may include any combination of the following:
@@ -90,9 +92,21 @@ Please format the data so that it can be exported into a JSON file. It should fo
 
 """
 
-def mistral_processing(filename):
-    # Open both libraries’ handles
-    path = "data/" + filename
+def invoke_model(inference_profile_arn, payload):
+    """
+    Sends an InvokeModel request using the inference profile ARN.
+    Returns the decoded JSON response.
+    """
+    request_body = json.dumps(payload)
+    try:
+        response = client.invoke_model(modelId=inference_profile_arn, body=request_body)
+    except (ClientError, Exception) as e:
+        print(f"ERROR: Can't invoke model '{inference_profile_arn}': {e}")
+        return None
+    return json.loads(response["body"].read())
+
+
+def mistral_processing(path):
 
     # If local document, upload and retrieve the signed url
     uploaded_pdf = client.files.upload(
@@ -128,6 +142,78 @@ def mistral_processing(filename):
     return chat_response.choices[0].message.content
 
 
+def claud_37_processing(path):
+    # # Create a Bedrock Runtime client in the AWS Region you want to use.
+    # client = boto3.client("bedrock-runtime", region_name="us-east-1")
+
+    # # Set the model ID, e.g. Claude 3 Haiku.
+    # model_id = "anthropic.claude-3-7-sonnet-20250219-v1:0"
+
+   
+    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+
+    # # --- A. With Thinking Enabled ---
+    # claude_thinking_payload = {
+    #     "anthropic_version": "bedrock-2023-05-31",
+    #     "max_tokens": 24000,
+    #     "thinking": {
+    #         "type": "enabled",
+    #         "budget_tokens": 1500
+    #     },
+    #     "messages": [
+    #         {
+    #             "role": "user",
+    #             "content": prompt
+    #         }
+    #     ]
+    # }
+
+
+     # Load the document
+    with open(path, "rb") as file:
+        document_bytes = file.read()
+
+    # Start a conversation with a user message and the document
+    conversation = [
+        {
+            "role": "user",
+            "content": [
+                {"text": "Briefly compare the models described in this document"},
+                {
+                    "document": {
+                        # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
+                        "format": "pdf",
+                        "name": "Amazon Nova Service Cards",
+                        "source": {"bytes": document_bytes},
+                    }
+                },
+            ],
+        }
+    ]
+
+    try:
+        # Send the message to the model, using a basic inference configuration.
+        response = client.converse(
+            modelId=claude_inference_profile_arn,
+            messages=conversation,
+            inferenceConfig={"maxTokens": 500, "temperature": 0.3},
+        )
+
+        # Extract and print the response text.
+        response_text = response["output"]["message"]["content"][0]["text"]
+        print(response_text)
+
+    except (ClientError, Exception) as e:
+        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        exit(1)
+
+
+    response_claude_thinking = invoke_model(claude_inference_profile_arn, claude_thinking_payload)
+    print("=== Claude 3.7 Sonnet With Thinking ===")
+    print(response_claude_thinking)
+
+
+
 if __name__ == "__main__":
     input_dir = "data"
 
@@ -140,6 +226,8 @@ if __name__ == "__main__":
         if input_path.lower().endswith(".pdf"):
             print("Processing:", input_path)
             # Now `filepath` is the path to one PDF file
+             # Open both libraries’ handles
+            path = "data/" + filename
 
             json_filename = filename[:-4] + "_problems.json"
 
@@ -149,7 +237,8 @@ if __name__ == "__main__":
             os.makedirs(output_dir, exist_ok=True)
             output_path = os.path.join(output_dir, json_filename)
 
-            json_text = mistral_processing(filename)
+            # json_text = mistral_processing(filename)
+            json_text = claud_37_processing(path)
             print(json_text)
 
             
