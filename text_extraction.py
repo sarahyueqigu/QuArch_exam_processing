@@ -66,20 +66,6 @@ Please format the data so that it can be exported into a JSON file. It should fo
 
 """
 
-def invoke_model(inference_profile_arn, payload):
-    """
-    Sends an InvokeModel request using the inference profile ARN.
-    Returns the decoded JSON response.
-    """
-    request_body = json.dumps(payload)
-    try:
-        response = client.invoke_model(modelId=inference_profile_arn, body=request_body)
-    except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke model '{inference_profile_arn}': {e}")
-        return None
-    return json.loads(response["body"].read())
-
-
 def mistral_processing(path):
 
     # If local document, upload and retrieve the signed url
