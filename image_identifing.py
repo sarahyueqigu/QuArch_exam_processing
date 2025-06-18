@@ -44,9 +44,7 @@ image_name(2).png: "subproblem_figure"
 image_name(3).png: "subproblem_figure"
 image_name(4).png: "subproblem_figure"
 
-Each image_name should be replaced with the actual name of the image.
-
-Be as precise as possible in your associations. 
+Be as precise as possible in your associations. Only include the dictionary; don't include the reasoning.
 """
 
 
@@ -71,7 +69,6 @@ if __name__ == "__main__":
         with open(image_path, "rb") as image_file:
             image_bytes = image_file.read()
 
-
         # Start a conversation with a user message and the document
         conversation = [
             {
@@ -82,7 +79,7 @@ if __name__ == "__main__":
                         "document": {
                             # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
                             "format": "pdf",
-                            "name": "Amazon Nova Service Cards",
+                            "name": "Computer Architecture Exam",
                             "source": {"bytes": document_bytes},
                         }
                     },
@@ -109,6 +106,7 @@ if __name__ == "__main__":
             # Extract and print the response text.
             response_text = response["output"]["message"]["content"][0]["text"]
             print(response_text)
+            print(type(response_text))
 
         except (ClientError, Exception) as e:
             print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
