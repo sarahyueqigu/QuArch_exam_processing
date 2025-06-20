@@ -4,8 +4,6 @@ import json
 import os
 from mistralai import Mistral
 
-api_key = "IffIovWq8tUyBc2oinkenZXp2MeqnALs"
-model = "mistral-small-latest"
 
 client = boto3.client("bedrock-runtime", region_name="us-east-2")
 
@@ -65,51 +63,46 @@ Please format the data so that it can be exported into a JSON file. It should fo
 }
 
 """
+# api_key = "IffIovWq8tUyBc2oinkenZXp2MeqnALs"
+# model = "mistral-small-latest"
 
-def mistral_processing(path):
+# def mistral_processing(path):
 
-    # If local document, upload and retrieve the signed url
-    uploaded_pdf = client.files.upload(
-      file={
-        "file_name": path,
-        "content": open(path, "rb"),
-      },
-      purpose="ocr"
-    )
-    signed_url = client.files.get_signed_url(file_id=uploaded_pdf.id)
+#     # If local document, upload and retrieve the signed url
+#     uploaded_pdf = client.files.upload(
+#       file={
+#         "file_name": path,
+#         "content": open(path, "rb"),
+#       },
+#       purpose="ocr"
+#     )
+#     signed_url = client.files.get_signed_url(file_id=uploaded_pdf.id)
 
-    # Define the messages for the chat
-    messages = [
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "text",
-                    "text": prompt
-                },
-                {
-                    "type": "document_url",
-                    "document_url": signed_url.url
-                }
-            ]
-        }
-    ]
-    # Get the chat response
-    chat_response = client.chat.complete(
-        model=model,
-        messages=messages
-    )
-    return chat_response.choices[0].message.content
+#     # Define the messages for the chat
+#     messages = [
+#         {
+#             "role": "user",
+#             "content": [
+#                 {
+#                     "type": "text",
+#                     "text": prompt
+#                 },
+#                 {
+#                     "type": "document_url",
+#                     "document_url": signed_url.url
+#                 }
+#             ]
+#         }
+#     ]
+#     # Get the chat response
+#     chat_response = client.chat.complete(
+#         model=model,
+#         messages=messages
+#     )
+#     return chat_response.choices[0].message.content
 
 
 def claud_37_processing(path):
-    # # Create a Bedrock Runtime client in the AWS Region you want to use.
-    # client = boto3.client("bedrock-runtime", region_name="us-east-1")
-
-    # # Set the model ID, e.g. Claude 3 Haiku.
-    # model_id = "anthropic.claude-3-7-sonnet-20250219-v1:0"
-
-   
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
      # Load the document
@@ -152,41 +145,36 @@ def claud_37_processing(path):
         exit(1)
 
 
-    # response_claude_thinking = invoke_model(claude_inference_profile_arn, conversation)
-    # print("=== Claude 3.7 Sonnet With Thinking ===")
-    # print(response_claude_thinking)
-
-
 
 if __name__ == "__main__":
-    input_dir = "data"
+    parent_folder = "extracted_problems"
+    print(os.listdir(parent_folder))
+    os.makedirs("extracted_problems", exist_ok=True)
 
-    for filename in os.listdir(input_dir):
+    for folder in os.listdir(parent_folder):
         # Build full path
-        input_path = os.path.join(input_dir, filename)
+        for filename in os.listdir(folder):
+          
 
-        
-        # Only process PDFs
-        # if input_path.lower().endswith(".pdf"):
-        if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-2.pdf":
-            print("Processing:", input_path)
-            # Now `filepath` is the path to one PDF file
-             # Open both libraries’ handles
-            path = "data/" + filename
+          # Only process PDFs
+          if filename.lower().endswith(".pdf"):
+          # if input_path == input_dir + "/CDA 4205 Computer Architecture Exam 2 Practice Solution-2":
+              print("Processing:", filename)
 
-            json_filename = filename[:-4] + "_problems.json"
+              path = folder + "/" + parent_folder + "/" + filename
+              json_filename = filename[:-4] + ".json"
 
-            output_dir = "json_v2" 
+              output_dir = "json" 
 
-            # Create the target directory if it doesn't exist
-            os.makedirs(output_dir, exist_ok=True)
-            output_path = os.path.join(output_dir, json_filename)
+              # Create the target directory if it doesn't exist
+              os.makedirs(output_dir, exist_ok=True)
+              output_path = os.path.join(output_dir, json_filename)
 
-            # json_text = mistral_processing(filename)
-            json_text = claud_37_processing(path)
-            print(json_text)
+              # json_text = mistral_processing(filename)
+              json_text = claud_37_processing(path)
+              print(json_text)
 
-            
-            # Write the same data out to destination file
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(json_text)
+              
+              # Write the same data out to destination file
+              with open(output_path, 'w', encoding='utf-8') as f:
+                  f.write(json_text)
