@@ -1,0 +1,20 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Problem 2",
+  "problem_context": "Your current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued.",
+  "parts": [
+    {
+      "subproblem": [
+        {
+          "subproblem_question": "How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?"
+        }
+      ],
+      "answer": [
+        {
+          "solution": "%74≈27/20\n\nf≥3/10\n\nSUvector=Tscalar/Tvector=1/(f/10+(1-f))=1/(f/10+1-f)",
+          "solution_figures": ["IMAGE"]
+        }
+      ]
+    }
+  ]
+}

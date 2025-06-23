@@ -1,0 +1,38 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Problem 4",
+  "problem_context": "Having fallen in love with the IBM360 early in the course, you've analyzed a dynamic instruction trace of the EGGSELL spreadsheet running your Valentine's Day order list on your MIPS machine in order to consider resurrecting some aspects of the 360. You find that the benchmark executed 1,000,000 instructions in 2,200,000 cycles and that instruction frequencies were: \n\nArithmetic 50% \nBranch 20% \nLoad 20% \nStore 10% \n\nUnder more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction \n\nLADD rt, rs, offset \nhas the RTL semantics \n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset] \n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS.",
+  "parts": [
+    {
+      "subproblem": [
+        {
+          "subproblem_question": "Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?"
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Initial CPI = 2.2 LADD eliminates 5% of instructions. \nAt same CT, new CPI must be < 2.2/.95 ~ 2.3"
+        }
+      ]
+    },
+    {
+      "subproblem": [
+        {
+          "subproblem_question": "Give a couple of reasons why you expect the CPI to increase with this enhancement."
+        }
+      ],
+      "answer": [
+        {
+          "solution": "In a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn't answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions."
+        }
+      ]
+    },
+    {
+      "subproblem": [
+        {
+          "subproblem_question": "Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time."
+        }
+      ],
+      "answer": [
+        {
+          "solution": "There are two good design solutions. The \"Stanford MIPS style\" option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to

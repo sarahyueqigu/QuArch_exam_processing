@@ -2,7 +2,6 @@ import ast
 import boto3
 import fitz  # PyMuPDF
 import os
-import re
 from botocore.exceptions import ClientError
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):

@@ -47,6 +47,7 @@ image_name(4).png: "subproblem_figure"
 Be as precise as possible in your associations. Only include the dictionary; don't include the reasoning.
 """
 
+claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
 # Load the document
 with open("separated_exam_pages/CDA 4205 Computer Architecture Exam 2 Practice Solution-3 1.pdf", "rb") as file:
@@ -57,57 +58,108 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-if __name__ == "__main__":
-    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
-    input_dir = "images/CDA 4205 Computer Architecture Exam 2 Practice Solution-3"
-    
+def process(path):
+     # Build full path
+    image_path = os.path.join(input_dir, image_file)
+    image_base64 = encode_image(image_path)
+    with open(image_path, "rb") as image_file:
+        image_bytes = image_file.read()
 
-    for image_file in os.listdir(input_dir):
-        # Build full path
-        image_path = os.path.join(input_dir, image_file)
-        image_base64 = encode_image(image_path)
-        with open(image_path, "rb") as image_file:
-            image_bytes = image_file.read()
-
-        # Start a conversation with a user message and the document
-        conversation = [
-            {
-                "role": "user",
-                "content": [
-                    {"text": prompt},
-                    {
-                        "document": {
-                            # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
-                            "format": "pdf",
-                            "name": "Computer Architecture Exam",
-                            "source": {"bytes": document_bytes},
-                        }
-                    },
-                    {
-                        "image": {
-                            "format": "png",  
-                            "source": {
-                                "bytes": image_bytes  # must be raw image bytes, not base64
-                            }
+    # Start a conversation with a user message and the document
+    conversation = [
+        {
+            "role": "user",
+            "content": [
+                {"text": prompt},
+                {
+                    "document": {
+                        # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
+                        "format": "pdf",
+                        "name": "Computer Architecture Exam",
+                        "source": {"bytes": document_bytes},
+                    }
+                },
+                {
+                    "image": {
+                        "format": "png",  
+                        "source": {
+                            "bytes": image_bytes  # must be raw image bytes, not base64
                         }
                     }
-                ],
-            }
-        ]
+                }
+            ],
+        }
+    ]
 
-        try:
-            # Send the message to the model, using a basic inference configuration.
-            response = client.converse(
-                modelId=claude_inference_profile_arn,
-                messages=conversation,
-                inferenceConfig={"maxTokens": 800, "temperature": 0.3},
-            )
+    try:
+        # Send the message to the model, using a basic inference configuration.
+        response = client.converse(
+            modelId=claude_inference_profile_arn,
+            messages=conversation,
+            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+        )
 
-            # Extract and print the response text.
-            response_text = response["output"]["message"]["content"][0]["text"]
-            print(response_text)
-            print(type(response_text))
+        # Extract and print the response text.
+        response_text = response["output"]["message"]["content"][0]["text"]
+        print(response_text)
+        print(type(response_text))
 
-        except (ClientError, Exception) as e:
-            print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
-            exit(1)
+    except (ClientError, Exception) as e:
+        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        exit(1)
+
+
+# if __name__ == "__main__":
+#     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+#     input_dir = "images/CDA 4205 Computer Architecture Exam 2 Practice Solution-3"
+    
+
+#     for image_file in os.listdir(input_dir):
+#         # Build full path
+#         image_path = os.path.join(input_dir, image_file)
+#         image_base64 = encode_image(image_path)
+#         with open(image_path, "rb") as image_file:
+#             image_bytes = image_file.read()
+
+#         # Start a conversation with a user message and the document
+#         conversation = [
+#             {
+#                 "role": "user",
+#                 "content": [
+#                     {"text": prompt},
+#                     {
+#                         "document": {
+#                             # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
+#                             "format": "pdf",
+#                             "name": "Computer Architecture Exam",
+#                             "source": {"bytes": document_bytes},
+#                         }
+#                     },
+#                     {
+#                         "image": {
+#                             "format": "png",  
+#                             "source": {
+#                                 "bytes": image_bytes  # must be raw image bytes, not base64
+#                             }
+#                         }
+#                     }
+#                 ],
+#             }
+#         ]
+
+#         try:
+#             # Send the message to the model, using a basic inference configuration.
+#             response = client.converse(
+#                 modelId=claude_inference_profile_arn,
+#                 messages=conversation,
+#                 inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+#             )
+
+#             # Extract and print the response text.
+#             response_text = response["output"]["message"]["content"][0]["text"]
+#             print(response_text)
+#             print(type(response_text))
+
+#         except (ClientError, Exception) as e:
+#             print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+#             exit(1)

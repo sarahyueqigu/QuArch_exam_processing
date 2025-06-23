@@ -1,0 +1,46 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Problem 1",
+  "problem_context": "State and define the hazards presented by instruction level parallelism. For each one, indicate how it can be resolved.",
+  "parts": [
+    {
+      "part": "1",
+      "subproblem": [
+        {
+          "subproblem_question": "Data Hazards"
+        }
+      ],
+      "answer": [
+        {
+          "solution": "• RAW (Data dependence) cannot use a value before it is computed. Resolve by forwarding or stalling\n\n• WAW (Output dependence) cannot write a value if a logically preceding instruction might overwrite it  Resolve by pipeline design (in-order op-fetch + in-order WB), stalling on potential write to pending register, or renaming\n\n• WAR (anti-dependence) cannot write a value before logically preceding instruction reading the previous value have done so. Resolve by pipeline design (in-order issue with in-order operand fetch), stalling or renaming."
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "subproblem": [
+        {
+          "subproblem_question": "Structural Hazards"
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Attempt to use the same hardware resource for two different purposes at once. Resolve by adding hardware resources (as design time) or stalling"
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "subproblem": [
+        {
+          "subproblem_question": "Control Hazards"
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Cannot determine the control flow until the condition of the branch is resolved. Resolve by stalling.  Mitigated by predicting and discarding miss-predicts."
+        }
+      ]
+    }
+  ]
+}
