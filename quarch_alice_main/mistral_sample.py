@@ -10,6 +10,7 @@ client = Mistral(api_key=api_key)
 
 #_______________________________________
 # Mistral AI Prompt
+# 6/13 still doesnt work 
 #_______________________________________
 prompt = """
 You are a language model assisting with the digitization of academic exam content. The input is a .pdf file of an exam. The exam contains one or more problems from a Computer Architecture assessment. A problem may include any combination of the following:
