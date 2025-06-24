@@ -7,9 +7,11 @@ import image_identifing
 if __name__ == "__main__":
     # subprocess.run(["python3", "problem_page_extraction.py"])
 
-    parent_folder = "extracted_problems"
+    parent_folder = "OnurETHZ_exams"
     print(os.listdir(parent_folder))
-    os.makedirs("extracted_problems", exist_ok=True)
+    os.makedirs("OnurETHZ_exams", exist_ok=True)
+
+#/Users/aliceguo/Documents/QuArch_exam_processing/OnurETHZ_exams
 
     for folder in os.listdir(parent_folder):
         input_dir =  parent_folder + "/" + folder
