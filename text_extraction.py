@@ -1,7 +1,8 @@
 import boto3
 from botocore.exceptions import ClientError
-import json
 import os
+import sys
+
 # from mistralai import Mistral
 
 
@@ -66,7 +67,7 @@ def claud_37_processing(path, filename):
       "exam_name": <Copy the exact name of the file>,
       "problem": <Copy the problem number and/or information>,
       "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
-      "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+      "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence. If there are none, include this field as an empty array.]
       "parts": [
         {
           "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
@@ -74,13 +75,13 @@ def claud_37_processing(path, filename):
             {
               "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
               "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
               }
           ]
           "answer": [
             {
               "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
             }
           ]
         }
@@ -90,13 +91,13 @@ def claud_37_processing(path, filename):
             {
               "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
               "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
               }
           ]
           "answer": [
             {
               "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
             }
           ]
             // ...repeat as needed for additional Q&A pairs within this part
@@ -134,12 +135,12 @@ def claud_37_processing(path, filename):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 1500, "temperature": 0.3},
         )
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]
-        print(response_text)
+        # print(response_text)
         return response_text
 
     except (ClientError, Exception) as e:
@@ -152,24 +153,27 @@ def process(filename, input_dir, output_dir):
     print("Processing:", filename)
     json_filename = filename[:-4] + ".json"
 
-    # Create the target directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, json_filename)
 
     # json_text = mistral_processing(filename)
     json_text = claud_37_processing(input_dir, filename[:-4])
     stripped_json = strip_json_code_block(json_text)
-    print(stripped_json)
-
-    # json_text["exam_name"] = filename
 
     # Write the same data out to destination file
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(stripped_json)
-        data = json.load(f)
     
-    f["exam_name"] = filename
 
+    # # Kind of unncessary but if we want to label the JSONs
+
+    # with open(output_path, 'r') as f:     
+    #     data = json.load(f) 
+
+    # # Change the exam name
+    # data["exam_name"] = filename
+
+    # json.dump(data, f, indent=2)
+  
 
 
 def strip_json_code_block(text: str) -> str:
@@ -177,6 +181,7 @@ def strip_json_code_block(text: str) -> str:
     lines = text.strip().splitlines()
     cleaned_lines = [line for line in lines if not line.strip().startswith("```")]
     return "\n".join(cleaned_lines)
+
 
 
 # if __name__ == "__main__":

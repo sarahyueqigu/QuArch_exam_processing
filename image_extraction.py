@@ -22,12 +22,12 @@ parser = LlamaParse(
 # result = await parser.aparse("/content/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf")
 
 # or we can batch-run for multiple files
-file_batch = [
+# file_batch = [
 
-    "data/ddca-s23-en-sol.pdf",
-    "data/Culler_mid1-soln.pdf",
+#     "data/ddca-s23-en-sol.pdf",
+#     "data/Culler_mid1-soln.pdf",
 
-]
+# ]
 async def process_files(file_batch):
     # parse all the files asynchronously
     results = await parser.aparse(file_batch)

@@ -1,0 +1,55 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Q3. (10 pts)",
+  "problem_context": "Consider the following MIPS code sequence:\n\na: add $t0, $s0, $s1\n\nb: sub $t1, $s2, $t0\n\nc: xor $t0, $s0, $s1\n\nd: or  $t2, $t1, $t0",
+  "problem_figures": [
+    "extracted_problems/CDA 4205 Computer Architecture Exam 2 Practice Solution-3/Q3/img_p0_1.png"
+  ],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "(5 pts) Identify all the RAW dependencies between pairs of instructions.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Instruction b is dependent on instruction a ($t0)\nInstruction d is dependent on instruction b ($t1)\nInstruction d is dependent on instruction c ($t0)",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "(3 pts) Identify all the WAR dependencies between pairs of instructions",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Instruction c is dependent on instruction b ($t0)",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "(2 pts) Identify all the WAW dependencies between pairs of instructions",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Instruction c is dependent on instruction a ($t0)",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}
