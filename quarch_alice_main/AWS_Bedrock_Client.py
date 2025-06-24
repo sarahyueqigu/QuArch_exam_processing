@@ -168,29 +168,6 @@ response_claude_non_thinking = invoke_model(claude_inference_profile_arn, claude
 print("\n=== Claude 3.7 Sonnet Without Thinking ===")
 print(response_claude_non_thinking)
 
-<<<<<<< Updated upstream
-#########################################
-# 2. Inference for Meta Llama3 2-90B Instruct
-#########################################
-
-llama_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.meta.llama3-2-90b-instruct-v1:0"
-
-llama_prompt = (
-    "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n"
-    f"{query_prompt}\n"
-    "<|eot_id|>\n"
-    "<|start_header_id|>assistant<|end_header_id|>"
-)
-llama_payload = {
-    "prompt": llama_prompt,
-    "max_gen_len": 512,
-    "temperature": 0.5,
-}
-
-response_llama = invoke_model(llama_inference_profile_arn, llama_payload)
-print("\n=== Meta Llama3 2-90B Instruct ===")
-print(response_llama)
-=======
 
 # #########################################
 # # 2. Inference for Meta Llama3 2-90B Instruct
@@ -214,7 +191,6 @@ print(response_llama)
 # print("\n=== Meta Llama3 2-90B Instruct ===")
 # print(response_llama)
 
->>>>>>> Stashed changes
 
 #########################################
 # Mistral AI Pixtrel Large
