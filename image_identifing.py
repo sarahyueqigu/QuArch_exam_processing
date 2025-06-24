@@ -63,13 +63,11 @@ Be as precise as possible in your associations. Only include the dictionary; don
 
 claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-
 def encode_image(image_path):
     print(image_path)
     with open(image_path, "rb") as i:
         return base64.b64encode(i.read()).decode('utf-8')
 
-def process1(image_file, input_dir):
      # Build full path
     image_path = os.path.join(input_dir, image_file)
     # image_base64 = encode_image(image_path)
