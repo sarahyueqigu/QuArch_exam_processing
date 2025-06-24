@@ -2,7 +2,6 @@ import ast
 import boto3
 import fitz  # PyMuPDF
 import os
-import re
 from botocore.exceptions import ClientError
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
@@ -35,6 +34,8 @@ The problem number
 The start and end page numbers (inclusive) that cover that problem and all its subproblems
 
 Use the headings or clear visual cues such as “Problem X”, “Question X”, or similar phrases to detect problem boundaries. If a problem spans multiple pages, include all relevant pages in its range.
+
+IMPORTANT: Ignore any page numbers written in the corners of the exam, if any (such as Page 1 out of 20)
 
 Output your result as dictionary like this:
 {
@@ -108,7 +109,7 @@ if __name__ == "__main__":
         
         # Only process PDFs
         # if input_path.lower().endswith(".pdf"):
-        if input_path == "data/Culler_mid1-soln.pdf":
+        if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
             print("Processing:", input_path)
             string_output = claud_37_processing(input_path)
             print(string_output)
@@ -126,6 +127,7 @@ if __name__ == "__main__":
             for problem in data:
 
                 child_pdf_filename = problem + ".pdf"
+                # output_dir = "extracted_problems/" + filename[:-4] + "/" + child_pdf_filename[:-4]
                 output_dir = "extracted_problems/" + filename[:-4]
 
                 # Create the target directory if it doesn't exist
