@@ -100,7 +100,7 @@ def claud_37_processing(path):
 
 
 if __name__ == "__main__":
-    input_dir = "data"
+    input_dir = "OnurETHZ_exams"
 
     for filename in os.listdir(input_dir):
         # Build full path
@@ -108,8 +108,8 @@ if __name__ == "__main__":
 
         
         # Only process PDFs
-        # if input_path.lower().endswith(".pdf"):
-        if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
+        if input_path.lower().endswith(".pdf"):
+        # if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
             print("Processing:", input_path)
             string_output = claud_37_processing(input_path)
             print(string_output)

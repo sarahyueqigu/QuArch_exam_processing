@@ -150,7 +150,7 @@ def claud_37_processing(path, filename):
 
 
 def process(filename, input_dir, output_dir):
-    print("Processing:", filename)
+    print("Processing text in:", filename)
     json_filename = filename[:-4] + ".json"
 
     output_path = os.path.join(output_dir, json_filename)
