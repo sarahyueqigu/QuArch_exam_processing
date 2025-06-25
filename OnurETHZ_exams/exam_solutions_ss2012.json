@@ -1,0 +1,183 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "1",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right.",
+          "subproblem_figures": ["TABLE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "1-C 2-B 3-D 4-A",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1?",
+          "subproblem_figures": ["IMAGE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "0",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b).",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["IMAGE"]
+        }
+      ]
+    }
+  ]
+},
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "2",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "Write the truth table for the function Z= B'(C' + A) + BC'.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["TABLE"]
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "Compose a Karnaugh Map for the truth table from question 2(a).",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["TABLE"]
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Z = AB' + C'",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "d",
+      "subproblem": [
+        {
+          "subproblem_question": "Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation.",
+          "subproblem_figures": ["IMAGE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Z = A + B + C + D' + E'FG",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+},
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "3",
+  "problem_context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.",
+  "problem_figures": ["TABLE", "IMAGE"],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "Is this a Moore or Mealy type FSM?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Moore type, since the output G only depends on the state as there are no inputs",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_context": "It has been decided to use a simple binary state encoding using 3-bits where each state is encoded in standard binary. I.e. S0 = 000, S1 = 001, … , S6= 110, S7 = 111.",
+          "subproblem_question": "Make a state transition table using the binary state encodings given above. Determine the next state equations.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Current State Next State\nS2 S1 S0 N2 N1 N0\n0 0 0 0 0 1\n0 0 1 0 1 0\n0 1 0 0 1 1\n0 1 1 1 0 0\n1 0 0 1 0 1\n1 0 1 1 1 0\n1 1 0 1 1 1\n1 1 1 0 0 0\n\nN2 = S2'S1S0 + S2S1' + S2S0'  \nN1 = S1'S0 + S1S0' \nN0 = S0'",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "G2 = S2\nG1 = S2S1' + S2'S1\nG0 = S1'S0 + S1S0'",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "d",
+      "subproblem": [
+        {
+          "subproblem_context": "In step b), we have used a binary coding for the states. As a result, we needed a additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required.",
+          "subproblem_question": "Make a new state transition table and determine the next state equations using the gray code as state encoding.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Current State Next State\nS2 S1 S0 N2 N1 N0\n0 0 0 0 0 1\n0 0 1 0 1 1\n0 1 0 1 1 0\n0 1 1 0 1 0\n1 0 0 0 0 0\n1 0 1 1 0 0\n1 1 0 1 1 1\n1 1 1 1 0 1\n\nN2 = S2S0

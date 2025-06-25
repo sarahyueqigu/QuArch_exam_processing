@@ -135,7 +135,7 @@ def claud_37_processing(path, filename):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 1500, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 2000, "temperature": 0.3},
         )
 
         # Extract and print the response text.

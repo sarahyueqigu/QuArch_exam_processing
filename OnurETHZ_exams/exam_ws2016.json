@@ -1,0 +1,43 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "1",
+  "problem_figures": [
+    "OnurETHZ_exams/exam_ws2016/chart_p1_0.png"
+  ],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n(\u221248)10 using 8-bit sign magnitude: (1011 0000)2\n\n(155)10 using 8-bit unsigned: (1001 1011)2\n\n(\u221228)10 using 8-bit two's complement: (1110 0100)2\n\n(BA)16 using 8-bit unsigned: (1011 1010)2",
+          "subproblem_figures": [
+            "OnurETHZ_exams/exam_ws2016/chart_p7_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n\u2022 Both two's complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\n\u2022 Using N bits it is possible to represent 2N different numbers when a sign/magnitude number system is used.\n\n\u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.",
+          "subproblem_figures": [
+            "OnurETHZ_exams/exam_ws2016/chart_p5_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n\nFalse, 0 is represented twice.\n\nFalse, fixed and floating point number systems can be used to represent such numbers.",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}
