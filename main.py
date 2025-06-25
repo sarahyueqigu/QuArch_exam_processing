@@ -3,9 +3,10 @@ import text_extraction
 import image_extraction_singlepdf
 import subprocess
 import image_identifing
+import problem_page_extraction
 
 if __name__ == "__main__":
-    # subprocess.run(["python3", "problem_page_extraction.py"])
+    problem_page_extraction.split_exams("OnurETHZ_exams")
 
     parent_folder = "OnurETHZ_exams"
     print(os.listdir(parent_folder))
