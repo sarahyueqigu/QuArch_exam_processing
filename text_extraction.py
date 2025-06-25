@@ -51,63 +51,61 @@ client = boto3.client("bedrock-runtime", region_name="us-east-2")
 def claud_37_processing(path, filename):
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-    prompt = """You are a language model assisting with the digitization of academic exam content. The input is an exam which has been parsed into Markdown text. The exam contains one or more problems from a Computer Architecture assessment. A problem may include any combination of the following:
-    A context paragraph, or just a short statement (e.g., “Convert the number 42 to binary”)
-    One or more sub-questions, or be a single standalone question
-    Context for sub-questions separate from the sub-question and separate from the original problem context
-    Multiple questions within a subquestion
-    Point value associations for the problem or subproblems, including extra credit points
-    Solutions, either typed or handwritten
-    Tables, diagrams, circuit schematics, or block diagrams
-    Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, figures, and solutions. At times, a subquestion can have nested subparts. Ignore any point values for any problem, question, or sub-question. Format your response using the template below. If the particular exam question lacks any of the listed components, do not include them.
+    prompt = """<role>
+You are a language model assisting with the digitization of academic exam content.
+</role>
 
-    Please format the data so that it can be exported into a JSON file. It should follow the following template.
+<input>
+The input is an exam which has been parsed into Markdown text. The exam contains one or more problems from a Computer Architecture assessment. A problem may include any combination of the following:
+A context paragraph, or just a short statement (e.g., “Convert the number 42 to binary”)
+One or more sub-questions, or be a single standalone question
+Context for sub-questions separate from the sub-question and separate from the original problem context
+Multiple questions within a subquestion
+Point value associations for the problem or subproblems, including extra credit points
+Solutions, either typed or handwritten
+Tables, diagrams, circuit schematics, or block diagrams
+</input>
 
-    {
-      "exam_name": <Copy the exact name of the file>,
-      "problem": <Copy the problem number and/or information>,
-      "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
-      "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence. If there are none, include this field as an empty array.]
-      "parts": [
-        {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "subproblem": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
-            }
-          ]
-        }
-        {
-          "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
-          "subproblem": [
-            {
-              "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
-              "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
-              "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
-              }
-          ]
-          "answer": [
-            {
-              "solution": <Insert the full solution exactly as shown in the original>,
-              "solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence.  If there are none, include this field as an empty array.]
-            }
-          ]
-            // ...repeat as needed for additional Q&A pairs within this part
-        }
-      ]
-    }
+<task>
+Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, figures, and solutions. At times, a subquestion can have nested subparts. Ignore any point values for any problem, question, or sub-question. Format your response using the template below. If the particular exam question lacks any of the listed components, do not include them.
+</task>
+
+<output>
+Please format the data so that it can be exported into a JSON file. It should follow the following template.
+ {
+ "exam_name": <Copy the exact name of the file>,
+ "problems": [
+   {
+     "problem": <Copy the problem number and/or information>,
+     "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
+     "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+     "parts": [
+       {
+         "part": <Insert part number or letter, e.g., 1 or a. If no subproblem parts exist, just use the below question and solutions structure>,
+          "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
+          "subproblem_question": <Insert the full text of the question, exactly as it appears in the original>,
+          "subproblem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to this specific subproblem’s context only by stating "IMAGE" or "TABLE" for each occurence]
+          "subproblem_solution": <Insert the full solution exactly as shown in the original>,
+          "subproblem_solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to this specific subproblem’s solution only by stating "IMAGE" or "TABLE" for each occurence]
+        },
+        ...repeat as needed for additional Q&A parts within this problem
+         ]
+ },
+{
+"problem": <Copy the problem number and/or information>,
+     "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
+     "problem_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem context only by stating "IMAGE" or "TABLE" for each occurence]
+     "problem_answer": <Insert the full solution exactly as shown in the original>,
+     "problem_solution_figures": [Indicate if there is a table(s) and/or image(s) here pertaining to the general problem solution by stating "IMAGE" or "TABLE" for each occurence]
+    },
+           ...repeat as needed for additional Q&A problems within this exam
+  ]
+}
+</output>
 
     """
 
-    prompt += "\nThere may be multiple problems in the pdf, or only one. If there are multiple, do this for " + filename + "only."
+    # prompt += "\nThere may be multiple problems in the pdf, or only one. If there are multiple, do this for " + filename + "only."
      # Load the document
     with open(path, "rb") as file:
         document_bytes = file.read()
