@@ -43,6 +43,7 @@ Your output should be a dictionary like this:
   {
     "name": "image_name.png",
     "type": "problem_figure",
+    "problem_number": 1
     "part": ""
   }
 ]
@@ -53,10 +54,10 @@ If the figure is part of a subproblem, its output should represent the following
   {
     "name": "image_name.png",
     "type": "subproblem_figure",
+    "problem_number": 2
     "part": "a"
   }
 ]
-
 
 Be as precise as possible in your associations. Only include the dictionary; don't include the reasoning.
 """
@@ -119,12 +120,25 @@ def encode_image(image_path):
 
 
 
-def process(image_file, input_dir):
+def process(image_file, input_dir, question_name):
     print(input_dir)
     # Read bytes from the document
     with open(input_dir + ".pdf", "rb") as f:
         document_bytes = f.read()
+    
+    revised_prompt = prompt + """
+    At times, there may be multiple problems included in a single PDF. 
+    If the image is not relevant in {question_name}, then your response should look like:
 
+    [
+        {
+            "name": "image_name.png",
+            "type": None,
+            "problem_number": None
+            "part": None
+        }
+    ]
+    """
 
     # Read the JSON file; don't process it if it's a bad JSON
     try:
@@ -153,7 +167,7 @@ def process(image_file, input_dir):
             {
                 "role": "user",
                 "content": [
-                    {"text": prompt},
+                    {"text": revised_prompt},
                     {
                         "document": {
                             # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
@@ -192,23 +206,22 @@ def process(image_file, input_dir):
             exit(1)
         
 
-        image_info = json.loads(response_text)
-
-        # image_info["name"] = input_dir + "/" + image
-
-        if image_info[0]["type"] == "problem_figure":
-            json_data["problem_figures"].append(input_dir + "/" + image)
-        else:
-            # Find the specific part of probelm and extract its subproblem_figures
-            # TODO: is there an easier/more efficient way to do this?
-            for part in json_data.get("parts", []):
-                if part.get("part") == image_info[0]["part"]:
-                    for subproblem in part.get("subproblem", []):
-                        subproblem_figures = subproblem.get("subproblem_figures", [])
-                        subproblem_figures.append(input_dir + "/" + image)
         
-        with open(input_dir + ".json", "w") as f:
-            json.dump(json_data, f, indent=2)  # indent=2 makes it pretty-printed
+        # image_info = json.loads(response_text)
+
+        # if image_info[0]["type"] == "problem_figure":
+        #     json_data["problem_figures"].append(input_dir + "/" + image)
+        # else:
+        #     # Find the specific part of probelm and extract its subproblem_figures
+        #     # TODO: is there an easier/more efficient way to do this?
+        #     for part in json_data.get("parts", []):
+        #         if part.get("part") == image_info[0]["part"]:
+        #             for subproblem in part.get("subproblem", []):
+        #                 subproblem_figures = subproblem.get("subproblem_figures", [])
+        #                 subproblem_figures.append(input_dir + "/" + image)
+        
+        # with open(input_dir + ".json", "w") as f:
+        #     json.dump(json_data, f, indent=2)  # indent=2 makes it pretty-printed
 
 
 

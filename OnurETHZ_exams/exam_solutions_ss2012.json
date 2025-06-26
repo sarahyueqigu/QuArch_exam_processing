@@ -149,4 +149,35 @@
       ],
       "answer": [
         {
-          "solution": "Current State Next State\nS2 S1 S0 N2 N1 N0\n0 0 0 0 0 1\n0 0 1 0 1 0\n0 1 0 0 1 1\n0 1 1 1 0 0\n1 0 0 1 0 1\n1 0 1 1 1 0\n1 1 0 1 1 1\n1 1 1 0 0 0\n\nN2 = S2'S1S0 + S2S1' + S2S0'  \nN1 = S1
+          "solution": "Current State Next State\nS2 S1 S0 N2 N1 N0\n0 0 0 0 0 1\n0 0 1 0 1 0\n0 1 0 0 1 1\n0 1 1 1 0 0\n1 0 0 1 0 1\n1 0 1 1 1 0\n1 1 0 1 1 1\n1 1 1 0 0 0\n\nN2 = S2'S1S0 + S2S1' + S2S0'  \nN1 = S1'S0 + S1S0' \nN0 = S0'",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "G2 = S2\nG1 = S2S1' + S2'S1\nG0 = S1'S0 + S1S0'",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "d",
+      "subproblem": [
+        {
+          "subproblem_context": "In step b), we have used a binary coding for the states. As a result, we needed a additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required.",
+          "subproblem_question": "Make a new state transition table and determine the next state equations using the gray code as state encoding.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Current State Next State\nS2 S1 S0 N2 N1 N0\n0 0 0 0 0 1\n0 0 1 0 1 1\n0 1 0 1 1 0\n0 1 1 0 1 0\n1 0 0 0 0 0\n1 0 1 1 0 0\n1 1 0 1 1 1\n1 1 1 1 0 1\n\nN2 = S2S0

@@ -1,4 +1,4 @@
-I'll analyze the Computer Architecture exam and format it according to the requested template. The document contains multiple problems, and I'll focus on extracting and structuring them properly.
+I'll analyze the Computer Architecture exam document and format it according to the requested template.
 
 {
   "exam_name": "Computer Architecture Exam.pdf",
@@ -16,7 +16,7 @@ I'll analyze the Computer Architecture exam and format it according to the reque
       ],
       "answer": [
         {
-          "solution": "F = (B.C.D) + (A.(C +B))\n\nExplanation:\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) +\n(A.B.C.D)\n\nF = (B.C.D).(A+A)+(A.C).(B.D+B.D+B.D+B.D)+(A.B).(C.D+C.D+C.D+C.D)\n\nF = (B.C.D) + (A.C) + (A.B)\n\nF = (B.C.D) + (A.(C +B))",
+          "solution": "F = (B.C.D) + (A.(C +B))\n\nExplanation:\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D)\n\nF = (B.C.D).(A+A)+(A.C).(B.D+B.D+B.D+B.D)+(A.B).(C.D+C.D+C.D+C.D)\n\nF = (B.C.D) + (A.C) + (A.B)\n\nF = (B.C.D) + (A.(C +B))",
           "solution_figures": []
         }
       ]
@@ -50,4 +50,20 @@ I'll analyze the Computer Architecture exam and format it according to the reque
       "subproblem": [
         {
           "subproblem_context": "Complete the Verilog code [30 points]",
-          "subproblem_question": "For each numbered blank 1 - 5 in the following Verilog code, mark the choice below (i.e., one of options A, B, C, D) that makes the Verilog module operate as described in the comments. The resulting code must have correct syntax.\n\n1 module my_module (input clk, input rst,\n2 input[15:0] idata, input[1:0] op, 1 [31:0] odata);\n3\n4 2 nval = 32'd0; // defining a 32-bit signal with an initial value of 0\n5\n6 always@* begin\n7 case (op)\n8 2'b00:\n9 nval = odata + idata; // when 'op' is decimal 0, add 'idata' to\n10 // 'odata' and assign the result to 'nval'\n11 2'b01:\n12 nval = odata - idata; // when 'op' is decimal 1, subtract 'idata'\n13 // from 'odata' and assign the result to 'nval'\n14 2'b10:\n15 nval = idata; // when 'op' is decimal 2, assign 'idata' to 'nval'\n16 3 :\n17 nval = 0; // when 'op' is decimal 3, assign 0 to 'nval'\n18 endcase\n19 end\n20\n21 // executing the following always block on the rising edge of 'clk'\n22 always@ (posedge clk) begin\n23 if (rst)\n24 4 // resetting 'odata' to 0 for the next cycle\n25 else\n26 5 // assigning 'nval' to 'odata' for the next cycle\n27 end\n28 endmodule\n\nProvide your choice for each blank 1 - 5 below:\n\n1 : A. output B. output reg C. output wire D. input reg\n2 : A. reg[31:0] B. input[31:0] C. wire[31:0] D. int[31:0]\n3 : A. 2'b3 B. 3'b3 C. 2'h11 D. default\n4 : A. assign odata <= 0; B. assign odata = 0; C. odata == 0; D. odata <= 0;\n
+          "subproblem_question": "For each numbered blank 1 - 5 in the following Verilog code, mark the choice below (i.e., one of options A, B, C, D) that makes the Verilog module operate as described in the comments. The resulting code must have correct syntax.\n\n1 module my_module (input clk, input rst,\n2 input[15:0] idata, input[1:0] op, 1 [31:0] odata);\n3\n4 2 nval = 32'd0; // defining a 32-bit signal with an initial value of 0\n5\n6 always@* begin\n7 case (op)\n8 2'b00:\n9 nval = odata + idata; // when 'op' is decimal 0, add 'idata' to\n10 // 'odata' and assign the result to 'nval'\n11 2'b01:\n12 nval = odata - idata; // when 'op' is decimal 1, subtract 'idata'\n13 // from 'odata' and assign the result to 'nval'\n14 2'b10:\n15 nval = idata; // when 'op' is decimal 2, assign 'idata' to 'nval'\n16 3 :\n17 nval = 0; // when 'op' is decimal 3, assign 0 to 'nval'\n18 endcase\n19 end\n20\n21 // executing the following always block on the rising edge of 'clk'\n22 always@ (posedge clk) begin\n23 if (rst)\n24 4 // resetting 'odata' to 0 for the next cycle\n25 else\n26 5 // assigning 'nval' to 'odata' for the next cycle\n27 end\n28 endmodule\n\nProvide your choice for each blank 1 - 5 below:\n\n1 : A. output B. output reg C. output wire D. input reg\n2 : A. reg[31:0] B. input[31:0] C. wire[31:0] D. int[31:0]\n3 : A. 2'b3 B. 3'b3 C. 2'h11 D. default\n4 : A. assign odata <= 0; B. assign odata = 0; C. odata == 0; D. odata <= 0;\n5 : A. assign odata <= nval; B. assign odata = nval; C. odata == nval; D. odata <= nval;",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Explanation.\n\n1 : odata must be declared as an output signal since values are assigned to it in the second always block. It cannot be an input signal since inputs are read-only signals and no assignments are allowed to them. odata must be also declared as reg since the assignments are made inside an always block.\n\n2 : nval must be declared as reg[31:0] since values are assigned to it inside the first always block.\n3 : default is a correct choice since all other cases for a 2-bit values (i.e., 2'b00, 2'b01, and 2'b10) are defined in the case statement. The other choices are not correct since they do not properly specify the value of 3. For example, in 2'b3, the problem is that 3 is not a valid binary digit but 2'b must be followed by a 2-bit binary value.\n\n4 : Choices with assign are not valid since the assign keyword cannot be used in an always block. Choice C does not specify an assignment operator but an equality comparison, hence it is not a valid choice either. The correct choice is D, which assigns 0 to odata using non-blocking assignment operator.\n\n5 : The correct choice is D due to the same reasons as in 4 .",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "2.2",
+      "subproblem": [
+        {
+          "subproblem_context": "What Does This Code Do? [30 points]",
+          "subproblem_question": "You are given a Verilog code that you are asked to analyze and find out what it does.\n\n1 module my_module2 (input clk, output[1:0] out);\n2\n3 reg state = 1'b0;\n4 reg[1:0

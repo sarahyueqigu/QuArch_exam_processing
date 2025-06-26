@@ -135,9 +135,8 @@ def claud_37_processing(path, filename):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 20000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 2000, "temperature": 0.3},
         )
-        #6/25/2025 changing max tokens to 20000 to capture more content, both text and image
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]

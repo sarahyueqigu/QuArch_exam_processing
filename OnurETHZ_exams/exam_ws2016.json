@@ -1,19 +1,23 @@
 {
   "exam_name": "Computer Architecture Exam.pdf",
   "problem": "1",
-  "problem_figures": [],
+  "problem_figures": [
+    "OnurETHZ_exams/exam_ws2016/chart_p1_0.png"
+  ],
   "parts": [
     {
       "part": "a",
       "subproblem": [
         {
-          "subproblem_question": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.",
-          "subproblem_figures": []
+          "subproblem_question": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n(\u221248)10 using 8-bit sign magnitude: (1011 0000)2\n\n(155)10 using 8-bit unsigned: (1001 1011)2\n\n(\u221228)10 using 8-bit two's complement: (1110 0100)2\n\n(BA)16 using 8-bit unsigned: (1011 1010)2",
+          "subproblem_figures": [
+            "OnurETHZ_exams/exam_ws2016/chart_p7_0.png"
+          ]
         }
       ],
       "answer": [
         {
-          "solution": "(−48)10 using 8-bit sign magnitude: (1011 0000)2\n\n(155)10 using 8-bit unsigned: (1001 1011)2\n\n(−28)10 using 8-bit two's complement: (1110 0100)2\n\n(BA)16 using 8-bit unsigned: (1011 1010)2",
+          "solution": "",
           "solution_figures": []
         }
       ]
@@ -22,79 +26,18 @@
       "part": "b",
       "subproblem": [
         {
-          "subproblem_question": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.",
-          "subproblem_figures": []
+          "subproblem_question": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n\u2022 Both two's complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\n\u2022 Using N bits it is possible to represent 2N different numbers when a sign/magnitude number system is used.\n\n\u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.",
+          "subproblem_figures": [
+            "OnurETHZ_exams/exam_ws2016/chart_p5_0.png"
+          ]
         }
       ],
       "answer": [
         {
-          "solution": "• Both two's complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\nSolution: True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n\n• Using N bits it is possible to represent 2N different numbers when a sign/magnitude number system is used.\n\nSolution: False, 0 is represented twice.\n\n• While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.",
+          "solution": "True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n\nFalse, 0 is represented twice.\n\nFalse, fixed and floating point number systems can be used to represent such numbers.",
           "solution_figures": []
         }
       ]
     }
   ]
 }
-
-{
-  "exam_name": "Computer Architecture Exam.pdf",
-  "problem": "2",
-  "problem_context": "Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).",
-  "problem_figures": ["IMAGE"],
-  "parts": [
-    {
-      "part": "a",
-      "subproblem": [
-        {
-          "subproblem_question": "Is this a Moore or Mealy type FSM? Briefly explain.",
-          "subproblem_figures": []
-        }
-      ],
-      "answer": [
-        {
-          "solution": "Moore, outputs depend only on the present state and nothing else.",
-          "solution_figures": []
-        }
-      ]
-    },
-    {
-      "part": "b",
-      "subproblem": [
-        {
-          "subproblem_question": "Fill in the following state transition table that determines the next state vector N = N2 N1 N0 based on the current state S and the input I.",
-          "subproblem_figures": ["TABLE"]
-        }
-      ],
-      "answer": [
-        {
-          "solution": "State Input Next State\nname S2 S1 S0 I name N2 N1 N0\nA 0 0 0 X B 0 0 1\nB 0 0 1 0 C 0 1 0\nB 0 0 1 1 E 1 0 0\nC 0 1 0 0 D 0 1 1\nC 0 1 0 1 A 0 0 0\nD 0 1 1 0 D 0 1 1\nD 0 1 1 1 A 0 0 0\nE 1 0 0 X F 1 0 1\nF 1 0 1 0 E 1 0 0\nF 1 0 1 1 C 0 1 0\nNote that there are different ways of writing this table to represent the same result.",
-          "solution_figures": []
-        }
-      ]
-    },
-    {
-      "part": "c",
-      "subproblem": [
-        {
-          "subproblem_question": "Write the Next State Equations from the table you have filled above using either Sum of Products (SOP) or Product of Sums (POS) form. Do not spend time minimizing the equations, this will be next question.",
-          "subproblem_figures": []
-        }
-      ],
-      "answer": [
-        {
-          "solution": "N0 = S2 S1 S0 + S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0\n\nN1 = S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0 I\n\nN2 = S2 S1 S0 I + S2 S1 S0 + S2 S1 S0 I",
-          "solution_figures": []
-        }
-      ]
-    },
-    {
-      "part": "d",
-      "subproblem": [
-        {
-          "subproblem_question": "Minimize the Next State Equations from the previous part. Note that the FSM requires only six states. This means that there are several State (S) / Input(I) combinations for which the outputs can be treated as Don't Care, which should help minimizing the boolean equations.\nHint: Consider using Karnaugh diagrams to solve this problem.",
-          "subproblem_figures": []
-        }
-      ],
-      "answer": [
-        {
-          "solution": "It is important to note that for S2 S1 = 11 the next state N can be taken as N2 N1 N0 = XXX. This

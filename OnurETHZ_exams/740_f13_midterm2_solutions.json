@@ -1,6 +1,8 @@
 {
   "exam_name": "Computer Architecture Exam.pdf",
   "problem": "Problem 1: Potpourri (55 pts)",
+  "problem_context": "",
+  "problem_figures": [],
   "parts": [
     {
       "part": "A",
@@ -135,3 +137,49 @@
           "subproblem_question": "What is the purpose of token tagging in dynamic dataflow architectures?",
           "subproblem_figures": []
         }
+      ],
+      "answer": [
+        {
+          "solution": "Supporting re-entrant code. Ensuring that tokens come from same context.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "G",
+      "subproblem": [
+        {
+          "subproblem_context": "Alpha 21264\n\nThe Alpha 21264 had a \"Prefetch and evict next\" instruction that \"prefetched data into the L1 cache except that the block will be evicted from the L1 data cache on the next access to the same data cache set.\"",
+          "subproblem_question": "1) What access patterns could benefit from this instruction? Explain well.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Streaming or striding access pattern (no data reuse)",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "G",
+      "subproblem": [
+        {
+          "subproblem_question": "2) The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Allow speculative scheduling of consumers of the load",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Problem 2: Multithreading (28 pts)",
+  "problem_context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n• The pipeline has 22 stages and is 1 instruction wide.\n• Branches are resolved at the end of the 18th stage and there is a
