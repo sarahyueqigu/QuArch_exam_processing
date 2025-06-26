@@ -1,0 +1,76 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "1",
+  "problem_context": "",
+  "problem_figures": [
+    "OnurETHZ_exams_parsed1/exam_ws2012_solutions/img_p14_1.png",
+    "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p1_0.png",
+    "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p5_0.png",
+    "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p4_0.png"
+  ],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "(2 points) For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.",
+          "subproblem_figures": [
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p13_1.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p3_0.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p13_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "(\u22125)10 using six-bit sign magnitude: (10 0101)2\n\n(38)10 using six-bit unsigned: (10 0110)2\n\n(\u221228)10 using six-bit two's complement: (10 0100)2\n\nHexadecimal (2C)16 using six-bit unsigned: (10 1100)2",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "(2 points) Consider the transistor level schematic below. What is the output going to be when:\n\nA=1, B=0, C=1 Z = ?\n\nA=0, B=1, C=1 Z = ?",
+          "subproblem_figures": [
+            "IMAGE",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p13_2.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p13_3.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p2_0.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p6_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "A=1, B=0, C=1 Z = 1\n\nA=0, B=1, C=1 Z = 1",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "(1 point) Find a simplified Boolean function realized by the following circuit. (Hint: use bubble pushing to simplify the circuit)",
+          "subproblem_figures": [
+            "IMAGE",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p8_0.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p9_0.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p3_1.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p2_1.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p14_1.png",
+            "OnurETHZ_exams_parsed1/exam_ws2012_solutions/chart_p14_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Z = (A + B + C) + (DF)",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}

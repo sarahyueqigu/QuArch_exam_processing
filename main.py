@@ -7,7 +7,7 @@ import image_identifing
 if __name__ == "__main__":
     # subprocess.run(["python3", "problem_page_extraction.py"])
 
-    parent_folder = "OnurETHZ_exams"
+    parent_folder = "OnurETHZ_exams_parsed1"
     print(os.listdir(parent_folder))
     # os.makedirs("OnurETHZ_exams", exist_ok=True)
     input_dir = parent_folder

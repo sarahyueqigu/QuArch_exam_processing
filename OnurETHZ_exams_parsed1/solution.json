@@ -1,0 +1,156 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "Problem 1: Potpourri (50 pts)",
+  "problem_context": "",
+  "problem_figures": [
+    "OnurETHZ_exams_parsed1/solution/chart_p8_0.png"
+  ],
+  "parts": [
+    {
+      "part": "A",
+      "subproblem": [
+        {
+          "subproblem_context": "Amdahl's Law",
+          "subproblem_question": "What assumption is made by Amdahl's Law about the parallelizable fraction of a program?",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "What are the three major reasons why this assumption may not hold?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "That it is perfectly parallelizable.",
+          "solution_figures": []
+        },
+        {
+          "solution": "1) Synchronization overhead\n\n2) Load imbalance overhead\n\n3) Resource sharing overhead",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "B",
+      "subproblem": [
+        {
+          "subproblem_context": "Locking",
+          "subproblem_question": "Give three reasons why a lock may be required statically for program correctness but may not be needed dynamically?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "1) Threads may not update the shared data protected by the lock.\n\n2) Threads may update disjoint parts of the shared data structure protected by the lock.\n\n3) Threads may not contend for the lock.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "C",
+      "subproblem": [
+        {
+          "subproblem_context": "Memory Consistency",
+          "subproblem_question": "Consider the following statement:\n\n\"A sequentially consistent multiprocessor guarantees that different executions of the same multithreaded program produce the same architecturally-exposed ordering of memory operations.\"\n\n1) Is this statement true or false?",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "2) Explain your reasoning (less than 15 words).",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "3) Why do we want the property described above; i.e., the property that \"different executions of the same multithreaded program produce the same architecturally-exposed ordering of memory operations\"?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "FALSE",
+          "solution_figures": []
+        },
+        {
+          "solution": "Sequential consistency makes no guarantees across different executions. (It is about the ordering of operations within the same execution)",
+          "solution_figures": []
+        },
+        {
+          "solution": "Debugging ease.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "D",
+      "subproblem": [
+        {
+          "subproblem_context": "SLE vs. TM",
+          "subproblem_question": "1) What is the major difference between speculative lock elision (SLE) and transactional memory (TM)?",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "2) What benefit does TM provide that SLE does not?",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "3) What benefit does SLE provide that TM does not?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "TM requires the programmer to mark transactions. SLE preserves conventional lock based programming.",
+          "solution_figures": []
+        },
+        {
+          "solution": "No need for reasoning about locks and getting them correct.",
+          "solution_figures": []
+        },
+        {
+          "solution": "No need to modify existing lock-based program.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "E",
+      "subproblem": [
+        {
+          "subproblem_context": "A Refreshing Problem\n\nRecall from lecture that RAIDR is a mechanism that uses profiled DRAM cell retention times to identify and skip unnecessary refreshes. Below is a plot with two independent variables\u2014application memory intensity and DRAM capacity.",
+          "subproblem_question": "1) Identify the point (A, B, C, D, or E) where a mechanism like RAIDR would buy the most performance relative to a system without RAIDR.",
+          "subproblem_figures": [
+            "IMAGE"
+          ]
+        },
+        {
+          "subproblem_question": "Why (15 words or less)?",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "2) Identify the point (A, B, C, D, or E) where the most energy is spent on refreshes (relative to total DRAM energy).",
+          "subproblem_figures": []
+        },
+        {
+          "subproblem_question": "Why (15 words or less)?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "E",
+          "solution_figures": []
+        },
+        {
+          "solution": "There is much DRAM to refresh and many memory accesses with which refreshes would contend.",
+          "solution_figures": []
+        },
+        {
+          "solution": "C",
+          "solution_figures": []
+        },
+        {
+          "solution": "There is much DRAM to refresh and few memory accesses, so refresh energy dominates.",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}
