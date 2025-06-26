@@ -1,8 +1,16 @@
 import ast
 import boto3
-import fitz  # PyMuPDF
+import fitz
 import os
 from botocore.exceptions import ClientError
+import json
+import nest_asyncio
+from dotenv import load_dotenv
+from llama_cloud_services import LlamaParse
+
+
+load_dotenv()
+nest_asyncio.apply()
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     """
@@ -21,6 +29,7 @@ def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     print(f"Extracted pages {start_page} to {end_page} into '{output_pdf_path}'")
 
 
+
 client = boto3.client("bedrock-runtime", region_name="us-east-2")
 
 #PROMPT
@@ -33,9 +42,7 @@ The problem number
 
 The start and end page numbers (inclusive) that cover that problem and all its subproblems
 
-Use the headings or clear visual cues such as “Problem X”, “Question X”, or similar phrases to detect problem boundaries. If a problem spans multiple pages, include all relevant pages in its range.
-
-IMPORTANT: Ignore any page numbers written in the corners of the exam, if any (such as Page 1 out of 20)
+Use the headings or clear textual cues such as “Problem X”, “Question X”, or similar phrases to detect problem boundaries. If a problem spans multiple pages, include all relevant pages in its range.
 
 Output your result as dictionary like this:
 {
@@ -46,6 +53,23 @@ Output your result as dictionary like this:
 """
 
 def claud_37_processing(path):
+    # get json version of PDF from Llamaparse
+    parser = LlamaParse(
+    api_key=os.getenv("LLAMAPARSE_API_KEY"),
+    parse_mode="parse_page_with_llm",
+    num_workers=4,       # if multiple files passed, split in `num_workers` API calls
+    verbose=True,
+    )
+
+    result = parser.parse(path)
+
+    # create a temporary .txt file for storing the json (since claude doesn't take json input)
+    txt_path = path[:-4] + ".txt"
+    with open(txt_path, "w") as file:
+        # Use json.dump() to write the data to the file
+        json.dump(result.model_dump(), file, indent=4)
+
+
     # # Create a Bedrock Runtime client in the AWS Region you want to use.
     # client = boto3.client("bedrock-runtime", region_name="us-east-1")
 
@@ -54,8 +78,8 @@ def claud_37_processing(path):
    
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-     # Load the document
-    with open(path, "rb") as file:
+     # Load the txt document
+    with open(txt_path, "rb") as file:
         document_bytes = file.read()
 
     # Start a conversation with a user message and the document
@@ -67,7 +91,7 @@ def claud_37_processing(path):
                 {
                     "document": {
                         # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
-                        "format": "pdf",
+                        "format": "txt",
                         "name": "Computer Architecture Exam",
                         "source": {"bytes": document_bytes},
                     }
