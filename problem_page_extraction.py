@@ -65,9 +65,9 @@ def claud_37_processing(path, filename):
 
     # create a temporary .txt file for storing the json (since claude doesn't take json input)
     
-    txt_path = "page_numbers" + "/" + filename[:-4] + ".json"
+    page_numbers_path = "page_numbers" + "/" + filename[:-4] + ".json"
 
-    with open(txt_path, "w") as file:
+    with open(page_numbers_path, "w") as file:
         # Use json.dump() to write the data to the file
         json.dump(result.model_dump(), file, indent=4)
 
@@ -81,7 +81,7 @@ def claud_37_processing(path, filename):
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
      # Load the txt document
-    with open(txt_path, "rb") as file:
+    with open(page_numbers_path, "rb") as file:
         document_bytes = file.read()
 
     # Start a conversation with a user message and the document
@@ -124,42 +124,47 @@ def claud_37_processing(path, filename):
     # print(response_claude_thinking)
 
 
+# Call this in main.py for testing
+def execute_single(input_dir, filename):
+    # Build full path
+    input_path = os.path.join(input_dir, filename)
+
+    
+    # Only process PDFs
+    if input_path.lower().endswith(".pdf"):
+    # if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
+        print("Processing:", input_path)
+        string_output = claud_37_processing(input_path, filename)
+        print(string_output)
+
+    
+        # find the first “{” and the last “}”
+        start = string_output.index("{")
+        end   = string_output.rindex("}") + 1
+        dict_text = string_output[start:end]
+
+        # safely evaluate as a Python literal
+        data = ast.literal_eval(dict_text)
+        print(data)
+        
+        for problem in data:
+
+            child_pdf_filename = problem + ".pdf"
+            # output_dir = "extracted_problems/" + filename[:-4] + "/" + child_pdf_filename[:-4]
+            output_dir = "extracted_problems/" + filename[:-4]
+
+            # Create the target directory if it doesn't exist
+            os.makedirs(output_dir, exist_ok=True)
+
+            output_path = os.path.join(output_dir, child_pdf_filename)
+            extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+
+
 
 def execute(input_dir):
     # input_dir = "OnurETHZ_exams"
 
-    os.makedirs("txt_files", exist_ok=True)
+    os.makedirs("page_numbers", exist_ok=True)
 
     for filename in os.listdir(input_dir):
-        # Build full path
-        input_path = os.path.join(input_dir, filename)
-
-        
-        # Only process PDFs
-        if input_path.lower().endswith(".pdf"):
-        # if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
-            print("Processing:", input_path)
-            string_output = claud_37_processing(input_path, filename)
-            print(string_output)
-
-        
-            # find the first “{” and the last “}”
-            start = string_output.index("{")
-            end   = string_output.rindex("}") + 1
-            dict_text = string_output[start:end]
-
-            # safely evaluate as a Python literal
-            data = ast.literal_eval(dict_text)
-            print(data)
-            
-            for problem in data:
-
-                child_pdf_filename = problem + ".pdf"
-                # output_dir = "extracted_problems/" + filename[:-4] + "/" + child_pdf_filename[:-4]
-                output_dir = "extracted_problems/" + filename[:-4]
-
-                # Create the target directory if it doesn't exist
-                os.makedirs(output_dir, exist_ok=True)
-
-                output_path = os.path.join(output_dir, child_pdf_filename)
-                extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+        execute_single(input_dir, filename)

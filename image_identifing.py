@@ -7,16 +7,7 @@ import os
 
 client = boto3.client("bedrock-runtime", region_name="us-east-2")
 
-prompt = """
-You are a language model assisting with the digitization of academic exam content in Computer Architecture.
-Input:
- You are provided with:
-A PDF file containing one problem.
-
-
-PNG images containing tables, diagrams, circuit schematics, or block diagrams that were part of this problem.
-
-
+old_prompt = """
 Each problem in the exam may contain:
 A main context paragraph or a brief statement (e.g., “Convert the number 42 to binary”).
 One or more sub-questions, or a single standalone question.
@@ -31,9 +22,9 @@ Your task:
 Match each visual element (table, diagram, circuit schematic, or block diagram) to its correct association in the exam. There are three main associations: the main problem, the sub-problem question, and the sub-problem solution. 
 
 Specifically, determine whether each visual belongs to one of the following:
-The main problem context (labelled as problem_figure)
-A sub-problem context (subproblem_figure)  
-A solution (solution_figure)
+- The main problem context (labelled as problem_figure)
+- A sub-problem context (subproblem_figure)  
+- A solution (solution_figure)
 
 At times, the context or question in the main problem, sub-problem, sub-problem question, and/or sub-problem solution will include phrases (such as “The table below” or “The following diagram”) that indicate a visual image falls under that category. 
 
@@ -43,7 +34,7 @@ Your output should be a dictionary like this:
   {
     "name": "image_name.png",
     "type": "problem_figure",
-    "problem_number": 1
+    "problem_name": 1
     "part": ""
   }
 ]
@@ -54,7 +45,7 @@ If the figure is part of a subproblem, its output should represent the following
   {
     "name": "image_name.png",
     "type": "subproblem_figure",
-    "problem_number": 2
+    "problem_name": 2
     "part": "a"
   }
 ]
@@ -120,25 +111,71 @@ def encode_image(image_path):
 
 
 
-def process(image_file, input_dir, question_name):
+def process(image_file, input_dir):
     print(input_dir)
     # Read bytes from the document
     with open(input_dir + ".pdf", "rb") as f:
         document_bytes = f.read()
     
-    revised_prompt = prompt + """
-    At times, there may be multiple problems included in a single PDF. 
-    If the image is not relevant in {question_name}, then your response should look like:
+    question_name = image_file[:-4]
+    prompt = """
+    You are a language model assisting with allocating an image to the problem context, subproblem, or solution of a problem in question.
+
+
+    You are provided with:
+    A PDF file containing one or more problems
+    PNG images containing tables, diagrams, circuit schematics, or block diagrams that may or may not be a part of this problem.
+
+    Your task is to match each visual element (table, diagram, circuit schematic, or block diagram) to its correct association in the exam. There are three main associations: the main problem, the sub-problem question, and the sub-problem solution. 
+
+    Specifically, determine whether each visual belongs to one of the following:
+    - The main problem context (labelled as problem_figure)
+    - A sub-problem context (subproblem_figure)  
+    - A solution (solution_figure)
+
+    At times, the context or question in the main problem, sub-problem, sub-problem question, and/or sub-problem solution will include phrases (such as “The table below” or “The following diagram”) that indicate a visual image falls under that category. 
+
+    Your output should be a dictionary like this:
 
     [
         {
             "name": "image_name.png",
-            "type": None,
-            "problem_number": None
-            "part": None
+            "type": "problem_figure",
+            "part": "",
+            "problem_name": """ + question_name + """
         }
     ]
+
+
+    If the figure is part of a subproblem, its output should represent the following, in which the "part" field is left unempty:
+    [
+        {
+            "name": "image_name.png",
+            "type": "subproblem_figure",
+            "part": "a",
+            "problem_name": """ + question_name + """
+            
+        }
+    ]
+
+    You are currently only looking for the images relevant to """ + question_name + """. IF the image is not relevant to """ + question_name + """, then insert whatever problen name it's associated with in the "problem_name" field. For example:
+
+    [
+        {
+            "name": "image_name.png",
+            "type": subproblem_figure,
+            "part": a,
+            "problem_name": """ + question_name + """1
+        }
+    ]
+
+    Be as precise as possible in your associations. Only include the dictionary; don't include the reasoning.
     """
+
+    # Included the 1 after the {qeustion_name} intentionally so the problem_name is different
+    # from the acutal name (e.g. Question_4 v.s. Question_41)
+
+    print(prompt)
 
     # Read the JSON file; don't process it if it's a bad JSON
     try:
@@ -167,7 +204,7 @@ def process(image_file, input_dir, question_name):
             {
                 "role": "user",
                 "content": [
-                    {"text": revised_prompt},
+                    {"text": prompt},
                     {
                         "document": {
                             # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
@@ -207,23 +244,24 @@ def process(image_file, input_dir, question_name):
         
 
         
-        # image_info = json.loads(response_text)
+        image_info = json.loads(response_text)
+        # If the image is relevant to the probelm in question...
+        if image_info[0]["problem_name"] == question_name:
 
-        # if image_info[0]["type"] == "problem_figure":
-        #     json_data["problem_figures"].append(input_dir + "/" + image)
-        # else:
-        #     # Find the specific part of probelm and extract its subproblem_figures
-        #     # TODO: is there an easier/more efficient way to do this?
-        #     for part in json_data.get("parts", []):
-        #         if part.get("part") == image_info[0]["part"]:
-        #             for subproblem in part.get("subproblem", []):
-        #                 subproblem_figures = subproblem.get("subproblem_figures", [])
-        #                 subproblem_figures.append(input_dir + "/" + image)
-        
-        # with open(input_dir + ".json", "w") as f:
-        #     json.dump(json_data, f, indent=2)  # indent=2 makes it pretty-printed
-
-
+            # Sort the image into wherever it belongs in the JSON hierarchy
+            if image_info[0]["type"] == "problem_figure":
+                json_data["problem_figures"].append(input_dir + "/" + image)
+            else:
+                # Find the specific part of probelm and extract its subproblem_figures
+                # TODO: is there an easier/more efficient way to do this?
+                for part in json_data.get("parts", []):
+                    if part.get("part") == image_info[0]["part"]:
+                        for subproblem in part.get("subproblem", []):
+                            subproblem_figures = subproblem.get("subproblem_figures", [])
+                            subproblem_figures.append(input_dir + "/" + image)
+            
+            with open(input_dir + ".json", "w") as f:
+                json.dump(json_data, f, indent=2)
 
 
 if __name__ == "__main__":

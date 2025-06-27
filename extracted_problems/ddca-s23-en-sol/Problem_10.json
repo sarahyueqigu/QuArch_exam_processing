@@ -1,7 +1,7 @@
 {
   "exam_name": "Computer Architecture Exam.pdf",
   "problem": "10 Cache [50 points]",
-  "problem_context": "Consider a processor using a 4-block LRU-based L1 data cache with a block size of 1 byte. Starting with an empty cache, an application accesses three cache blocks with the following addresses in the order given below:\n\n0 → 2 → 4\n\nA malicious programmer tries to reverse-engineer the number of sets and ways in the L1 data cache by issuing only two more accesses and observing the cache hit rate across these two accesses. Assume that the programmer can insert the malicious accesses only after the above three accesses of the application.",
+  "problem_context": "Consider a processor using a 4-block LRU-based L1 data cache with a block size of 1 byte. Starting with an empty cache, an application accesses three cache blocks with the following addresses in the order given below:\n\n0 \u2192 2 \u2192 4\n\nA malicious programmer tries to reverse-engineer the number of sets and ways in the L1 data cache by issuing only two more accesses and observing the cache hit rate across these two accesses. Assume that the programmer can insert the malicious accesses only after the above three accesses of the application.",
   "problem_figures": [],
   "parts": [
     {
@@ -9,12 +9,47 @@
       "subproblem": [
         {
           "subproblem_question": "What are the addresses of the next two cache blocks that should be accessed to successfully reverse-engineer the number of sets and ways in the cache? There may be multiple solutions; please give the lowest possible addresses that can enable the identification of the number of sets and ways. Please explain every step in detail to get full points.",
+          "subproblem_figures": [
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p1_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "0 \u2192 2\n\nExplanation. There are two possible answers:\n\n\u02c6 [0 \u2192 2]\n\n\u02c6 [0 \u2192 4]\n\nThere are three possible set/way configurations, shown below labeled by their respective sets/ways. Each configuration shows a drawing of the cache state after the three initial accesses. Rows and columns represent sets and ways, respectively, and the LRU address is shown for each occupied set:\n(a) (4 sets, 1 way)\n\n4\n-\n2\n-\n\n(b) (2 sets, 2 ways)\n4 2\n- -\n\n(c) (1 set, 4 ways)\n0 2 4 -\n\nAt this point, all three configurations have a 100% miss rate since they started cold. In order to differentiate between the three configurations with just two more accesses, we need to induce different hit/miss counts in each of them. The only way this is possible is if one configuration experiences two hits, another two misses, and the last one hit and one miss.\nOnly two solutions exist to produce this case:\n\n\u02c6 [0 \u2192 2]\n\n(a) 0 miss, 2 hit = 50% miss rate\n(b) 0 miss, 2 miss = 100% miss rate\n(c) 0 hit, 2 hit = 0% miss rate\n\n\u02c6 [0 \u2192 4]\n\n(a) 0 miss, 4 miss = 100% miss rate\n(b) 0 miss, 4 hit = 50% miss rate\n(c) 0 hit, 4 hit = 0% miss rate\n\nChoosing the lowest possible addresses, the correct solution is 0 \u2192 2",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "What is the number of sets and ways if the cache hit rate observed over the two extra addresses accessed in Part (1) were:\n\nL1 hit rate # sets # ways\n\n100%\n\n50%\n\n0%\n\nExplain your reasoning:",
+          "subproblem_figures": [
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p2_1.png",
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p2_0.png"
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Based on the solution to Part (1), these are the number of sets and ways corresponding to different hit rates.\n\nSolution:\n\nL1 hit rate # sets # ways\n\n100% 1 4\n\n50% 4 1\n\n0% 2 2",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Is it possible to reverse-engineer the number of sets and ways of the cache using two accesses (after the application's first three accesses) if the Most Recently Used (MRU) block is replaced first? Explain your reasoning.",
           "subproblem_figures": []
         }
       ],
       "answer": [
         {
-          "solution": "0 → 2\n\nExplanation. There are two possible answers:\n\nˆ [0 → 2]\n\nˆ [0 → 4]\n\nThere are three possible set/way configurations, shown below labeled by their respective sets/ways. Each configuration shows a drawing of the cache state after the three initial accesses. Rows and columns represent sets and ways, respectively, and the LRU address is shown for each occupied set:\n(a) (4 sets, 1 way)\n\n4\n-\n2\n-\n\n(b) (2 sets, 2 ways)\n4 2\n- -\n\n(c) (1 set, 4 ways)\n0 2 4 -\n\nAt this point, all three configurations have a 100% miss rate since they started cold. In order to differentiate between the three configurations with just two more accesses, we need to induce different hit/miss counts in each of them. The only way this is possible is if one configuration experiences two hits, another two misses, and the last one hit and one miss.\nOnly two solutions exist to produce this case:\n\nˆ [0 → 2]\n\n(a) 0 miss, 2 hit = 50% miss rate\n(b) 0 miss, 2 miss = 100% miss rate\n(c) 0 hit, 2 hit = 0% miss rate\n\nˆ [0 → 4]\n\n(a) 0 miss, 4 miss = 100% miss rate\n(b) 0 miss, 4 hit = 50% miss rate\n(c) 0 hit, 4 hit = 0% miss rate\n\nChoosing the lowest possible addresses, the correct solution is 0 → 2",
+          "solution": "No. There is no solution for just two more accesses because with an MRU policy, no permutation of two more accesses is able to assign a unique L1 hit rate to each of the three cache configurations.",
           "solution_figures": []
         }
       ]

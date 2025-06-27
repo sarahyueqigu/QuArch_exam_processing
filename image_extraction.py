@@ -47,6 +47,8 @@ async def process_files(file_batch):
 
 def process(folder):
 
+    print("went here")
+
     file_batch = [
         os.path.join(folder, f)
         for f in os.listdir(folder)

@@ -1,0 +1,1975 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "text": "                                                  Full Name:\n                                 Andrew ID (print clearly!):\n                               740: Computer Architecture, Fall 2013\n                                      SOLUTIONS TO Midterm II\n                                         November 25, 2013\nInstructions:\n   \u2022  Make sure that your exam has 14 pages and is not missing any sheets, then write your full name and\n      Andrew login ID on the front.\n   \u2022  This exam is closed book. You may not use any electronic devices. You may use one single-sided\n      page of notes that you bring to the exam.\n   \u2022  Write your answers in the box provided below the problem. If you make a mess, clearly indicate your\n      final answer.\n   \u2022  Be concise. You will be penalized for excessive verbosity. Use no more than 15 words per answer,\n      unless otherwise stated.\n   \u2022  The exam lasts 1 hour 20 minutes.\n   \u2022  The problems are of varying difficulty. The point value of each problem is indicated. Do not spend\n      too much time on one question. Good luck!\n                             Problem      Your Score      Possible Points\n                                1                               55\n                                2                               28\n                                3                               30\n                                4                               30\n                                5                               42\n                                6                               20\n                              Total                            205\nPlease read the following sentence carefully and sign in the provided box:\n         \u201cI promise not to discuss this exam with other students until Wednesday, November 27.\u201d\nSignature:\n                                   1 of 14",
+            "md": "# 740: Computer Architecture, Fall 2013\n\n# SOLUTIONS TO Midterm II\n\n# November 25, 2013\n\nInstructions:\n\n- Make sure that your exam has 14 pages and is not missing any sheets, then write your full name and Andrew login ID on the front.\n- This exam is closed book. You may not use any electronic devices. You may use one single-sided page of notes that you bring to the exam.\n- Write your answers in the box provided below the problem. If you make a mess, clearly indicate your final answer.\n- Be concise. You will be penalized for excessive verbosity. Use no more than 15 words per answer, unless otherwise stated.\n- The exam lasts 1 hour 20 minutes.\n- The problems are of varying difficulty. The point value of each problem is indicated. Do not spend too much time on one question. Good luck!\n\n| Problem | Your Score | Possible Points |\n| ------- | ---------- | --------------- |\n| 1       |            | 55              |\n| 2       |            | 28              |\n| 3       |            | 30              |\n| 4       |            | 30              |\n| 5       |            | 42              |\n| 6       |            | 20              |\n| Total   |            | 205             |\n\nPlease read the following sentence carefully and sign in the provided box:\n\n\u201cI promise not to discuss this exam with other students until Wednesday, November 27.\u201d\n\nSignature:\n\n1 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "740: Computer Architecture, Fall 2013",
+                    "md": "# 740: Computer Architecture, Fall 2013",
+                    "rows": null,
+                    "bBox": {
+                        "x": 162.92,
+                        "y": 113.22,
+                        "w": 284.98,
+                        "h": 432.06
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "SOLUTIONS TO Midterm II",
+                    "md": "# SOLUTIONS TO Midterm II",
+                    "rows": null,
+                    "bBox": {
+                        "x": 196.98,
+                        "y": 145.46,
+                        "w": 216.9,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "November 25, 2013",
+                    "md": "# November 25, 2013",
+                    "rows": null,
+                    "bBox": {
+                        "x": 221.35,
+                        "y": 175.13,
+                        "w": 156.65,
+                        "h": 370.15
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Instructions:\n\n- Make sure that your exam has 14 pages and is not missing any sheets, then write your full name and Andrew login ID on the front.\n- This exam is closed book. You may not use any electronic devices. You may use one single-sided page of notes that you bring to the exam.\n- Write your answers in the box provided below the problem. If you make a mess, clearly indicate your final answer.\n- Be concise. You will be penalized for excessive verbosity. Use no more than 15 words per answer, unless otherwise stated.\n- The exam lasts 1 hour 20 minutes.\n- The problems are of varying difficulty. The point value of each problem is indicated. Do not spend too much time on one question. Good luck!",
+                    "md": "Instructions:\n\n- Make sure that your exam has 14 pages and is not missing any sheets, then write your full name and Andrew login ID on the front.\n- This exam is closed book. You may not use any electronic devices. You may use one single-sided page of notes that you bring to the exam.\n- Write your answers in the box provided below the problem. If you make a mess, clearly indicate your final answer.\n- Be concise. You will be penalized for excessive verbosity. Use no more than 15 words per answer, unless otherwise stated.\n- The exam lasts 1 hour 20 minutes.\n- The problems are of varying difficulty. The point value of each problem is indicated. Do not spend too much time on one question. Good luck!",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 204.13,
+                        "w": 467.69,
+                        "h": 341.15
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Problem | Your Score | Possible Points |\n| ------- | ---------- | --------------- |\n| 1       |            | 55              |\n| 2       |            | 28              |\n| 3       |            | 30              |\n| 4       |            | 30              |\n| 5       |            | 42              |\n| 6       |            | 20              |\n| Total   |            | 205             |",
+                    "rows": [
+                        [
+                            "Problem",
+                            "Your Score",
+                            "Possible Points"
+                        ],
+                        [
+                            "1",
+                            "",
+                            "55"
+                        ],
+                        [
+                            "2",
+                            "",
+                            "28"
+                        ],
+                        [
+                            "3",
+                            "",
+                            "30"
+                        ],
+                        [
+                            "4",
+                            "",
+                            "30"
+                        ],
+                        [
+                            "5",
+                            "",
+                            "42"
+                        ],
+                        [
+                            "6",
+                            "",
+                            "20"
+                        ],
+                        [
+                            "Total",
+                            "",
+                            "205"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 56.19,
+                        "w": 467.69,
+                        "h": 671.17
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please read the following sentence carefully and sign in the provided box:\n\n\u201cI promise not to discuss this exam with other students until Wednesday, November 27.\u201d\n\nSignature:\n\n1 of 14",
+                    "md": "Please read the following sentence carefully and sign in the provided box:\n\n\u201cI promise not to discuss this exam with other students until Wednesday, November 27.\u201d\n\nSignature:\n\n1 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 417.12,
+                        "w": 426.56,
+                        "h": 310.24
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 2,
+            "text": "Problem 1: Potpourri (55 pts)\nA) [10 pts] Thread prioritization\nSuppose we are running a multithreaded application where threads are part of the same application on a\nmulticore processor. The memory controller is shared between the cores.\n1) Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the\nmemory controller would improve performance. If this is not possible, write N/A and explain why.\n    Prioritizing latency-sensitive (memory non-intensive) threads can increase system throughput\n2) Provide one reason why doing the same would degrade performance. If this is not possible, write N/A\nand explain why.\n    Can delay the critical/bottleneck thread which may not be memory non-intensive\nB) [4 pts] Memory bandwidth\nUnder what conditions would an application\u2019s performance increase linearly as memory bandwidth is in-\ncreased?\n    If memory bandwidth is the performance bottleneck\nC) [4 pts] Fat trees\nWhat problem does the fat tree interconnect solve that is present in the tree interconnect?\n    High link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links\nD) [10 pts] Interconnect\nYou are observing a system with many processing elements connected through a network. There is currently\nno activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message\ndestined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that\nthis message has not departed the source location. Assume that all components are enabled (not powered\noff) and operating at full speed. There are no other messages present in the system at this time. Why could\nthis be?\n    The system is using circuit switching, and there is a large delay to set up all links between source\n    and destination.\n                                      2 of 14                       Continued . . .",
+            "md": "# Problem 1: Potpourri (55 pts)\n\n# A) [10 pts] Thread prioritization\n\nSuppose we are running a multithreaded application where threads are part of the same application on a multicore processor. The memory controller is shared between the cores.\n\n1. Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.\n\nPrioritizing latency-sensitive (memory non-intensive) threads can increase system throughput.\n2. Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why.\n\nCan delay the critical/bottleneck thread which may not be memory non-intensive.\n\n# B) [4 pts] Memory bandwidth\n\nUnder what conditions would an application\u2019s performance increase linearly as memory bandwidth is increased?\n\nIf memory bandwidth is the performance bottleneck.\n\n# C) [4 pts] Fat trees\n\nWhat problem does the fat tree interconnect solve that is present in the tree interconnect?\n\nHigh link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links.\n\n# D) [10 pts] Interconnect\n\nYou are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?\n\nThe system is using circuit switching, and there is a large delay to set up all links between source and destination.\n\n2 of 14 Continued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 1: Potpourri (55 pts)",
+                    "md": "# Problem 1: Potpourri (55 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 58.78,
+                        "w": 146.5,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [10 pts] Thread prioritization",
+                    "md": "# A) [10 pts] Thread prioritization",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.08,
+                        "w": 153.61,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Suppose we are running a multithreaded application where threads are part of the same application on a multicore processor. The memory controller is shared between the cores.\n\n1. Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.\n\nPrioritizing latency-sensitive (memory non-intensive) threads can increase system throughput.\n2. Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why.\n\nCan delay the critical/bottleneck thread which may not be memory non-intensive.",
+                    "md": "Suppose we are running a multithreaded application where threads are part of the same application on a multicore processor. The memory controller is shared between the cores.\n\n1. Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.\n\nPrioritizing latency-sensitive (memory non-intensive) threads can increase system throughput.\n2. Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why.\n\nCan delay the critical/bottleneck thread which may not be memory non-intensive.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 112.32,
+                        "w": 467.4,
+                        "h": 158.17
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [4 pts] Memory bandwidth",
+                    "md": "# B) [4 pts] Memory bandwidth",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 293.2,
+                        "w": 141.19,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Under what conditions would an application\u2019s performance increase linearly as memory bandwidth is increased?\n\nIf memory bandwidth is the performance bottleneck.",
+                    "md": "Under what conditions would an application\u2019s performance increase linearly as memory bandwidth is increased?\n\nIf memory bandwidth is the performance bottleneck.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 324.99,
+                        "w": 244.4,
+                        "h": 36.05
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "C) [4 pts] Fat trees",
+                    "md": "# C) [4 pts] Fat trees",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 383.75,
+                        "w": 89.29,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What problem does the fat tree interconnect solve that is present in the tree interconnect?\n\nHigh link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links.",
+                    "md": "What problem does the fat tree interconnect solve that is present in the tree interconnect?\n\nHigh link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 401.99,
+                        "w": 446.32,
+                        "h": 38.28
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "D) [10 pts] Interconnect",
+                    "md": "# D) [10 pts] Interconnect",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 462.99,
+                        "w": 113.53,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "You are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?\n\nThe system is using circuit switching, and there is a large delay to set up all links between source and destination.\n\n2 of 14 Continued . . .",
+                    "md": "You are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?\n\nThe system is using circuit switching, and there is a large delay to set up all links between source and destination.\n\n2 of 14 Continued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 481.23,
+                        "w": 467.29,
+                        "h": 246.13
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 3,
+            "text": "(Question 1 cont\u2019d)\nE) [12 pts] Slack\nAs you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In\nfact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has\nthe least slack over others in the router, where the slack of a packet (ideally) is defined as the number of\ncycles the packet can be delayed without hurting performance.\nThe concept of slack is actually more general. It can be applied to prioritization at any shared resource,\nassuming the slack of a \u201cmemory request\u201d can be estimated well.\n1) Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request\nis injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might\nbe difficult:\n    The exact latency of the request may not be known at the time of injection \u2013 the slack may change\n    based on the state of the shared resources and the decisions made by them\n    How much the packet would affect performance may not be known at the time of injection \u2013 the\n    overlap of latency of the packet may not be known at the time of injection\n2) What performance issue can slack-based prioritization cause to other processors in the system? Why?\n    Can cause starvation to some threads\n3) How can you solve this problem?\n    Batching\nF) [5 pts] Dataflow\nWhat is the purpose of token tagging in dynamic dataflow architectures?\n    Supporting re-entrant code. Ensuring that tokens come from same context.\n                                     3 of 14                        Continued . . .",
+            "md": "# Question 1 cont\u2019d\n\n# E) [12 pts] Slack\n\nAs you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In fact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has the least slack over others in the router, where the slack of a packet (ideally) is defined as the number of cycles the packet can be delayed without hurting performance.\n\nThe concept of slack is actually more general. It can be applied to prioritization at any shared resource, assuming the slack of a \u201cmemory request\u201d can be estimated well.\n\n1. Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:\n- The exact latency of the request may not be known at the time of injection \u2013 the slack may change based on the state of the shared resources and the decisions made by them.\n- How much the packet would affect performance may not be known at the time of injection \u2013 the overlap of latency of the packet may not be known at the time of injection.\n2. What performance issue can slack-based prioritization cause to other processors in the system? Why?\n- Can cause starvation to some threads.\n3. How can you solve this problem?\n- Batching.\n\n# F) [5 pts] Dataflow\n\nWhat is the purpose of token tagging in dynamic dataflow architectures?\n\n- Supporting re-entrant code. Ensuring that tokens come from same context.\n\n3 of 14 Continued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Question 1 cont\u2019d",
+                    "md": "# Question 1 cont\u2019d",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "E) [12 pts] Slack",
+                    "md": "# E) [12 pts] Slack",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 78.93,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "As you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In fact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has the least slack over others in the router, where the slack of a packet (ideally) is defined as the number of cycles the packet can be delayed without hurting performance.\n\nThe concept of slack is actually more general. It can be applied to prioritization at any shared resource, assuming the slack of a \u201cmemory request\u201d can be estimated well.\n\n1. Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:\n- The exact latency of the request may not be known at the time of injection \u2013 the slack may change based on the state of the shared resources and the decisions made by them.\n- How much the packet would affect performance may not be known at the time of injection \u2013 the overlap of latency of the packet may not be known at the time of injection.\n2. What performance issue can slack-based prioritization cause to other processors in the system? Why?\n- Can cause starvation to some threads.\n3. How can you solve this problem?\n- Batching.",
+                    "md": "As you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In fact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has the least slack over others in the router, where the slack of a packet (ideally) is defined as the number of cycles the packet can be delayed without hurting performance.\n\nThe concept of slack is actually more general. It can be applied to prioritization at any shared resource, assuming the slack of a \u201cmemory request\u201d can be estimated well.\n\n1. Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:\n- The exact latency of the request may not be known at the time of injection \u2013 the slack may change based on the state of the shared resources and the decisions made by them.\n- How much the packet would affect performance may not be known at the time of injection \u2013 the overlap of latency of the packet may not be known at the time of injection.\n2. What performance issue can slack-based prioritization cause to other processors in the system? Why?\n- Can cause starvation to some threads.\n3. How can you solve this problem?\n- Batching.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 467.71,
+                        "h": 319.59
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "F) [5 pts] Dataflow",
+                    "md": "# F) [5 pts] Dataflow",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 420.37,
+                        "w": 89.87,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What is the purpose of token tagging in dynamic dataflow architectures?\n\n- Supporting re-entrant code. Ensuring that tokens come from same context.\n\n3 of 14 Continued . . .",
+                    "md": "What is the purpose of token tagging in dynamic dataflow architectures?\n\n- Supporting re-entrant code. Ensuring that tokens come from same context.\n\n3 of 14 Continued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 438.61,
+                        "w": 357.29,
+                        "h": 288.75
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 4,
+            "text": "(Question 1 cont\u2019d)\nG) [10 pts] Alpha 21264\nThe Alpha 21264 had a \u201cPrefetch and evict next\u201d instruction that \u201cprefetched data into the L1 cache except\nthat the block will be evicted from the L1 data cache on the next access to the same data cache set.\u201d\n1) What access patterns could benefit from this instruction? Explain well.\n    Streaming or striding access pattern (no data reuse)\n2) The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the\ncache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely\nbut with enough detail.\n    Allow speculative scheduling of consumers of the load\n                                      4 of 14",
+            "md": "# Question 1 cont\u2019d\n\n# G) [10 pts] Alpha 21264\n\nThe Alpha 21264 had a \u201cPrefetch and evict next\u201d instruction that \u201cprefetched data into the L1 cache except that the block will be evicted from the L1 data cache on the next access to the same data cache set.\u201d\n\n1. What access patterns could benefit from this instruction? Explain well.\n\nStreaming or striding access pattern (no data reuse)\n2. The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail.\n\nAllow speculative scheduling of consumers of the load\n\n4 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Question 1 cont\u2019d",
+                    "md": "# Question 1 cont\u2019d",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "G) [10 pts] Alpha 21264",
+                    "md": "# G) [10 pts] Alpha 21264",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 113.37,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The Alpha 21264 had a \u201cPrefetch and evict next\u201d instruction that \u201cprefetched data into the L1 cache except that the block will be evicted from the L1 data cache on the next access to the same data cache set.\u201d\n\n1. What access patterns could benefit from this instruction? Explain well.\n\nStreaming or striding access pattern (no data reuse)\n2. The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail.\n\nAllow speculative scheduling of consumers of the load\n\n4 of 14",
+                    "md": "The Alpha 21264 had a \u201cPrefetch and evict next\u201d instruction that \u201cprefetched data into the L1 cache except that the block will be evicted from the L1 data cache on the next access to the same data cache set.\u201d\n\n1. What access patterns could benefit from this instruction? Explain well.\n\nStreaming or striding access pattern (no data reuse)\n2. The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail.\n\nAllow speculative scheduling of consumers of the load\n\n4 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 467.04,
+                        "h": 649.29
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 5,
+            "text": "Problem 2: Multithreading (28 pts)\nSuppose your friend designed the following fine-grained multithreaded machine:\n    \u2022  The pipeline has 22 stages and is 1 instruction wide.\n    \u2022  Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n       the branch target to the fetch stage.\n    \u2022  The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n       stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\n       requests.\n    \u2022  The number of hardware contexts is 200.\nAssuming that there are always enough threads present, answer the following questions:\nA) [7 pts]  Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the\nworst case execution characteristics.)\nCIRCLE ONE:              YES            NO\n     NO - will stall when more than 16 outstanding misses in pipe\nB) [7 pts]  Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or\nwhy not?\nCIRCLE ONE:               YES            NO\n     YES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay\nC) [7 pts]  Assume that all accesses hit in the cache and your friend wants to keep the pipeline always\nfull and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while\nminimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific\nwith numerical answers. If nothing is necessary, justify why this is the case.\n     Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling\nD) [7 pts]  Assume that all accesses miss in the cache and your friend wants to keep the pipeline always\nfull and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while\nminimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific\nwith numerical answers. If nothing is necessary, justify why this is the case.\n     Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling.      Increase\n     capability to support 100 outstanding misses\n                                      5 of 14",
+            "md": "# Problem 2: Multithreading (28 pts)\n\nSuppose your friend designed the following fine-grained multithreaded machine:\n\n- The pipeline has 22 stages and is 1 instruction wide.\n- Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n- The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n- The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n\n# A) [7 pts] Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)\n\nCIRCLE ONE: YES NO\n\nNO - will stall when more than 16 outstanding misses in pipe\n\n# B) [7 pts] Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?\n\nCIRCLE ONE: YES NO\n\nYES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay\n\n# C) [7 pts] Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.\n\nReduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling\n\n# D) [7 pts] Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.\n\nReduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 2: Multithreading (28 pts)",
+                    "md": "# Problem 2: Multithreading (28 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 58.78,
+                        "w": 174.42,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n- The pipeline has 22 stages and is 1 instruction wide.\n- Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n- The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n- The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:",
+                    "md": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n- The pipeline has 22 stages and is 1 instruction wide.\n- Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n- The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n- The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.08,
+                        "w": 467.47,
+                        "h": 286.23
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [7 pts] Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)",
+                    "md": "# A) [7 pts] Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 231.39,
+                        "w": 466.92,
+                        "h": 148.92
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CIRCLE ONE: YES NO\n\nNO - will stall when more than 16 outstanding misses in pipe",
+                    "md": "CIRCLE ONE: YES NO\n\nNO - will stall when more than 16 outstanding misses in pipe",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.18,
+                        "w": 285.41,
+                        "h": 117.12
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [7 pts] Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?",
+                    "md": "# B) [7 pts] Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.18,
+                        "w": 467.16,
+                        "h": 117.12
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CIRCLE ONE: YES NO\n\nYES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
+                    "md": "CIRCLE ONE: YES NO\n\nYES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.18,
+                        "w": 420.85,
+                        "h": 154.15
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "C) [7 pts] Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+                    "md": "# C) [7 pts] Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.18,
+                        "w": 467.73,
+                        "h": 351.74
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
+                    "md": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.62,
+                        "y": 263.18,
+                        "w": 362.3,
+                        "h": 268.38
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "D) [7 pts] Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+                    "md": "# D) [7 pts] Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.18,
+                        "w": 467.73,
+                        "h": 351.74
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
+                    "md": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.62,
+                        "y": 263.18,
+                        "w": 431.66,
+                        "h": 394.8
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 6,
+            "text": "  Problem 3: Return of Tomasulo\u2019s Algorithm (30 pts)\n  The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and\n  register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the\n  spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor\n  is supplied with a seven instruction program following reset. The state below was captured at some point in\n  time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be\n  relied upon for your answer. You should assume that the bottommost instruction in the reservation station\n  arrived earliest and the topmost instruction in the reservation station arrived last.\n       SRC 1                  SRC 2                            SRC 1                  SRC 2\nID      V       Tag    Val     V       Tag     Val       ID     V       Tag     Val     V       Tag    Val\n-       -       -      -       -       -       -         -      -       -       -       -       -      -\nE       0       C      -       0       A       -         D      0       B       -       0       E      -\nF       0       A      -       1       -       20        B      1       -       20      0       F      -\nC       0       A      -       0       A       -         A      1       -       20      1       -      30\n                                                   RAT\n                                       Reg      V       Tag     Val\n                                       R0       1       -       5\n                                       R1       0       A       10\n                                       R2       0       B       20\n                                       R3       1       -       30\n                                       R4       0       C       40\n                                       R5       0       D       50\n                                       R6       1       -       60\n                                       R7       1       -       70\n                                      6 of 14                       Continued . . .",
+            "md": "# Problem 3: Return of Tomasulo\u2019s Algorithm (30 pts)\n\nThe diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n\n| SRC 1 |   |     | SRC 2 |   |     |     |   |   |\n| ----- | - | --- | ----- | - | --- | --- | - | - |\n| ID    | V | Tag | Val   | V | Tag | Val |   |   |\n|       |   | -   | -     | - | -   | -   | - | - |\n| E     | 0 | C   | -     | 0 | A   | -   |   |   |\n| F     | 0 | A   | -     | 1 | -   | 20  |   |   |\n| C     | 0 | A   | -     | 0 | A   | -   |   |   |\n|       |   |     | A     | 1 | -   | 20  |   |   |\n|       |   |     | 1     | - | 30  |     |   |   |\n\n# RAT\n\n| Reg | V | Tag | Val |\n| --- | - | --- | --- |\n| R0  | 1 | -   | 5   |\n| R1  | 0 | A   | 10  |\n| R2  | 0 | B   | 20  |\n| R3  | 1 | -   | 30  |\n| R4  | 0 | C   | 40  |\n| R5  | 0 | D   | 50  |\n| R6  | 1 | -   | 60  |\n| R7  | 1 | -   | 70  |\n\n6 of 14\n\nContinued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 3: Return of Tomasulo\u2019s Algorithm (30 pts)",
+                    "md": "# Problem 3: Return of Tomasulo\u2019s Algorithm (30 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 63.02,
+                        "y": 58.78,
+                        "w": 474.17,
+                        "h": 501.35
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.",
+                    "md": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 63.02,
+                        "y": 94.08,
+                        "w": 476.48,
+                        "h": 502.1
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| SRC 1 |   |     | SRC 2 |   |     |     |   |   |\n| ----- | - | --- | ----- | - | --- | --- | - | - |\n| ID    | V | Tag | Val   | V | Tag | Val |   |   |\n|       |   | -   | -     | - | -   | -   | - | - |\n| E     | 0 | C   | -     | 0 | A   | -   |   |   |\n| F     | 0 | A   | -     | 1 | -   | 20  |   |   |\n| C     | 0 | A   | -     | 0 | A   | -   |   |   |\n|       |   |     | A     | 1 | -   | 20  |   |   |\n|       |   |     | 1     | - | 30  |     |   |   |",
+                    "rows": [
+                        [
+                            "SRC 1",
+                            "",
+                            "",
+                            "SRC 2",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "ID",
+                            "V",
+                            "Tag",
+                            "Val",
+                            "V",
+                            "Tag",
+                            "Val",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "-",
+                            "-",
+                            "-",
+                            "-",
+                            "-",
+                            "-",
+                            "-"
+                        ],
+                        [
+                            "E",
+                            "0",
+                            "C",
+                            "-",
+                            "0",
+                            "A",
+                            "-",
+                            "",
+                            ""
+                        ],
+                        [
+                            "F",
+                            "0",
+                            "A",
+                            "-",
+                            "1",
+                            "-",
+                            "20",
+                            "",
+                            ""
+                        ],
+                        [
+                            "C",
+                            "0",
+                            "A",
+                            "-",
+                            "0",
+                            "A",
+                            "-",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "",
+                            "A",
+                            "1",
+                            "-",
+                            "20",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "",
+                            "1",
+                            "-",
+                            "30",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 63.02,
+                        "y": 58.78,
+                        "w": 477.17,
+                        "h": 668.58
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "RAT",
+                    "md": "# RAT",
+                    "rows": null,
+                    "bBox": {
+                        "x": 133.05,
+                        "y": 311.02,
+                        "w": 190.07,
+                        "h": 177.11
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Reg | V | Tag | Val |\n| --- | - | --- | --- |\n| R0  | 1 | -   | 5   |\n| R1  | 0 | A   | 10  |\n| R2  | 0 | B   | 20  |\n| R3  | 1 | -   | 30  |\n| R4  | 0 | C   | 40  |\n| R5  | 0 | D   | 50  |\n| R6  | 1 | -   | 60  |\n| R7  | 1 | -   | 70  |",
+                    "rows": [
+                        [
+                            "Reg",
+                            "V",
+                            "Tag",
+                            "Val"
+                        ],
+                        [
+                            "R0",
+                            "1",
+                            "-",
+                            "5"
+                        ],
+                        [
+                            "R1",
+                            "0",
+                            "A",
+                            "10"
+                        ],
+                        [
+                            "R2",
+                            "0",
+                            "B",
+                            "20"
+                        ],
+                        [
+                            "R3",
+                            "1",
+                            "-",
+                            "30"
+                        ],
+                        [
+                            "R4",
+                            "0",
+                            "C",
+                            "40"
+                        ],
+                        [
+                            "R5",
+                            "0",
+                            "D",
+                            "50"
+                        ],
+                        [
+                            "R6",
+                            "1",
+                            "-",
+                            "60"
+                        ],
+                        [
+                            "R7",
+                            "1",
+                            "-",
+                            "70"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 63.02,
+                        "y": 58.78,
+                        "w": 477.17,
+                        "h": 668.58
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "6 of 14\n\nContinued . . .",
+                    "md": "6 of 14\n\nContinued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 63.02,
+                        "y": 311.02,
+                        "w": 434.17,
+                        "h": 416.35
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 7,
+            "text": "(Question 3 cont\u2019d)\nA) [15 pts] Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD\nand * for MUL). Please label the edges of the data flow graph with the destination register tag if known.\nLabel with register number if the tag is not known. Note that the first instruction is an ADD with destination\nregister R3.\n                                      R1        R2\n                                           +\n                                          R3\n                                               +\n                                                     a\n                                               a\n                                                  *         *\n                                            *   e c        +\u1da0   b +\n                                                             d\nB) [15 pts] Fill in the instruction opcodes, source, and destination registers in the table below.\n                                           Instructions\n                                   OP      DEST     SRC1    SRC2\n                                   ADD     R3       R1      R2\n                                   ADD     R1       R2      R3\n                                   MUL     R4       R1      R1\n                                   MUL     R5       R2      R1\n                                   ADD     R2       R2      R5\n                                   MUL     R5       R4      R1\n                                   ADD     R5       R2      R5\n                                   7 of 14",
+            "md": "# Question 3 cont\u2019d\n\n# A) [15 pts]\n\nIdentify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.\n\nR1        R2\n+\nR3\n+\na\na\n*         *\n*   e c        +\u1da0   b +\nd\n\n# B) [15 pts]\n\nFill in the instruction opcodes, source, and destination registers in the table below.\n\n| Instructions | OP  | DEST | SRC1 | SRC2 |    |    |\n| ------------ | --- | ---- | ---- | ---- | -- | -- |\n|              | ADD | R3   | R1   | R2   |    |    |\n|              | ADD |      | R1   | R2   | R3 |    |\n|              | MUL | R4   | R1   | R1   |    |    |\n|              | MUL | R5   | R2   | R1   |    |    |\n|              | ADD | R2   | R2   | R5   |    |    |\n|              | MUL | R5   | R4   | R1   |    |    |\n|              | ADD |      |      | R5   | R2 | R5 |\n\n7 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Question 3 cont\u2019d",
+                    "md": "# Question 3 cont\u2019d",
+                    "rows": null,
+                    "bBox": {
+                        "x": 355.21,
+                        "y": 387.68,
+                        "w": 6.0,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [15 pts]",
+                    "md": "# A) [15 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 250.7,
+                        "h": 218.78
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.\n\nR1        R2\n+\nR3\n+\na\na\n*         *\n*   e c        +\u1da0   b +\nd",
+                    "md": "Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.\n\nR1        R2\n+\nR3\n+\na\na\n*         *\n*   e c        +\u1da0   b +\nd",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 467.62,
+                        "h": 596.01
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [15 pts]",
+                    "md": "# B) [15 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 445.96,
+                        "w": 48.91,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Fill in the instruction opcodes, source, and destination registers in the table below.",
+                    "md": "Fill in the instruction opcodes, source, and destination registers in the table below.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.93,
+                        "y": 255.61,
+                        "w": 357.51,
+                        "h": 261.55
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Instructions | OP  | DEST | SRC1 | SRC2 |    |    |\n| ------------ | --- | ---- | ---- | ---- | -- | -- |\n|              | ADD | R3   | R1   | R2   |    |    |\n|              | ADD |      | R1   | R2   | R3 |    |\n|              | MUL | R4   | R1   | R1   |    |    |\n|              | MUL | R5   | R2   | R1   |    |    |\n|              | ADD | R2   | R2   | R5   |    |    |\n|              | MUL | R5   | R4   | R1   |    |    |\n|              | ADD |      |      | R5   | R2 | R5 |",
+                    "rows": [
+                        [
+                            "Instructions",
+                            "OP",
+                            "DEST",
+                            "SRC1",
+                            "SRC2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "ADD",
+                            "R3",
+                            "R1",
+                            "R2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "ADD",
+                            "",
+                            "R1",
+                            "R2",
+                            "R3",
+                            ""
+                        ],
+                        [
+                            "",
+                            "MUL",
+                            "R4",
+                            "R1",
+                            "R1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "MUL",
+                            "R5",
+                            "R2",
+                            "R1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "ADD",
+                            "R2",
+                            "R2",
+                            "R5",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "MUL",
+                            "R5",
+                            "R4",
+                            "R1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "ADD",
+                            "",
+                            "",
+                            "R5",
+                            "R2",
+                            "R5"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 19.89,
+                        "w": 467.62,
+                        "h": 707.47
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "7 of 14",
+                    "md": "7 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 235.88,
+                        "y": 716.36,
+                        "w": 31.0,
+                        "h": 11.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 8,
+            "text": "Problem 4: Tiered-difficulty (30 pts)\nRecall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each\ncontaining some number of rows. Assume a very simplified memory model where there is just one bank\nand there are two rows in the near segment and four rows in the far segment. The time to activate and\nprecharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation\nto reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible\nfor this problem. Given the following memory request stream, determine the optimal assignment (minimize\naverage latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot\nmigrate, a closed-row policy, and the far segment is inclusive).\n time 0ns:  row 0  read\n time 10ns:  row 1 read\n time 100ns:  row  2  read\n time 105ns:  row  1  read\n time 200ns:  row  3  read\n time 300ns:  row  1  read\nDetailed solution\nIf you were to map 0 and 2 (this is the answer) to near segment:\n row  0:  activated at time = 0\n row  0:  read at time = 10 (10ns latency)\n row  1:  activated at time = 25\n row  1:  read at time = 40 (30ns latency)\n row  2:  activated at time = 100\n row  2:  read at time = 110 (10ns latency)\n row  1:  activated at time = 125\n row  1:  read at time = 140 (35ns latency)\n row  3:  activated at time = 200\n row  3:  read at time = 215 (15ns latency)\n row  1:  activated at time = 300\n row  1:  read at time = 315 (15 ns latency)\ntotal latency is 115ns\nIf you were to map 1 and 2 (an example incorrect answer) to near segment:\n row  0:  activated at time = 0\n row  0:  read at time = 15 (15ns latency)\n row  1:  activated at time = 50\n row  1:  read at time = 60 (50ns latency)\n row  2:  activated at time = 100\n row  2:  read at time = 110 (10ns latency)\n row  1:  activated at time = 125\n row  1:  read at time = 135 (30ns latency)\n row  3:  activated at time = 200\n row  3:  read at time = 215 (15ns latency)\n row  1:  activated at time = 300\n row  1:  read at time = 310 (10 ns latency)\ntotal latency is 130ns\n                               8 of 14",
+            "md": "# Problem 4: Tiered-difficulty (30 pts)\n\nRecall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive).\n\ntime 0ns: row 0 read\n\ntime 10ns: row 1 read\n\ntime 100ns: row 2 read\n\ntime 105ns: row 1 read\n\ntime 200ns: row 3 read\n\ntime 300ns: row 1 read\n\n# Detailed solution\n\nIf you were to map 0 and 2 (this is the answer) to near segment:\n\n| row 0: | activated at time = 0              |\n| ------ | ---------------------------------- |\n| row 0: | read at time = 10 (10ns latency)   |\n| row 1: | activated at time = 25             |\n| row 1: | read at time = 40 (30ns latency)   |\n| row 2: | activated at time = 100            |\n| row 2: | read at time = 110 (10ns latency)  |\n| row 1: | activated at time = 125            |\n| row 1: | read at time = 140 (35ns latency)  |\n| row 3: | activated at time = 200            |\n| row 3: | read at time = 215 (15ns latency)  |\n| row 1: | activated at time = 300            |\n| row 1: | read at time = 315 (15 ns latency) |\n\nTotal latency is 115ns\n\nIf you were to map 1 and 2 (an example incorrect answer) to near segment:\n\n| row 0: | activated at time = 0              |\n| ------ | ---------------------------------- |\n| row 0: | read at time = 15 (15ns latency)   |\n| row 1: | activated at time = 50             |\n| row 1: | read at time = 60 (50ns latency)   |\n| row 2: | activated at time = 100            |\n| row 2: | read at time = 110 (10ns latency)  |\n| row 1: | activated at time = 125            |\n| row 1: | read at time = 135 (30ns latency)  |\n| row 3: | activated at time = 200            |\n| row 3: | read at time = 215 (15ns latency)  |\n| row 1: | activated at time = 300            |\n| row 1: | read at time = 310 (10 ns latency) |\n\nTotal latency is 130ns",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 4: Tiered-difficulty (30 pts)",
+                    "md": "# Problem 4: Tiered-difficulty (30 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 58.78,
+                        "w": 179.52,
+                        "h": 490.64
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive).\n\ntime 0ns: row 0 read\n\ntime 10ns: row 1 read\n\ntime 100ns: row 2 read\n\ntime 105ns: row 1 read\n\ntime 200ns: row 3 read\n\ntime 300ns: row 1 read",
+                    "md": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive).\n\ntime 0ns: row 0 read\n\ntime 10ns: row 1 read\n\ntime 100ns: row 2 read\n\ntime 105ns: row 1 read\n\ntime 200ns: row 3 read\n\ntime 300ns: row 1 read",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.08,
+                        "w": 467.49,
+                        "h": 575.9
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Detailed solution",
+                    "md": "# Detailed solution",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 298.77,
+                        "w": 78.51,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "If you were to map 0 and 2 (this is the answer) to near segment:",
+                    "md": "If you were to map 0 and 2 (this is the answer) to near segment:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 218.47,
+                        "w": 294.84,
+                        "h": 330.95
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| row 0: | activated at time = 0              |\n| ------ | ---------------------------------- |\n| row 0: | read at time = 10 (10ns latency)   |\n| row 1: | activated at time = 25             |\n| row 1: | read at time = 40 (30ns latency)   |\n| row 2: | activated at time = 100            |\n| row 2: | read at time = 110 (10ns latency)  |\n| row 1: | activated at time = 125            |\n| row 1: | read at time = 140 (35ns latency)  |\n| row 3: | activated at time = 200            |\n| row 3: | read at time = 215 (15ns latency)  |\n| row 1: | activated at time = 300            |\n| row 1: | read at time = 315 (15 ns latency) |",
+                    "rows": [
+                        [
+                            "row 0:",
+                            "activated at time = 0"
+                        ],
+                        [
+                            "row 0:",
+                            "read at time = 10 (10ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 25"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 40 (30ns latency)"
+                        ],
+                        [
+                            "row 2:",
+                            "activated at time = 100"
+                        ],
+                        [
+                            "row 2:",
+                            "read at time = 110 (10ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 125"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 140 (35ns latency)"
+                        ],
+                        [
+                            "row 3:",
+                            "activated at time = 200"
+                        ],
+                        [
+                            "row 3:",
+                            "read at time = 215 (15ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 300"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 315 (15 ns latency)"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Total latency is 115ns\n\nIf you were to map 1 and 2 (an example incorrect answer) to near segment:",
+                    "md": "Total latency is 115ns\n\nIf you were to map 1 and 2 (an example incorrect answer) to near segment:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 229.43,
+                        "w": 348.56,
+                        "h": 292.44
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| row 0: | activated at time = 0              |\n| ------ | ---------------------------------- |\n| row 0: | read at time = 15 (15ns latency)   |\n| row 1: | activated at time = 50             |\n| row 1: | read at time = 60 (50ns latency)   |\n| row 2: | activated at time = 100            |\n| row 2: | read at time = 110 (10ns latency)  |\n| row 1: | activated at time = 125            |\n| row 1: | read at time = 135 (30ns latency)  |\n| row 3: | activated at time = 200            |\n| row 3: | read at time = 215 (15ns latency)  |\n| row 1: | activated at time = 300            |\n| row 1: | read at time = 310 (10 ns latency) |",
+                    "rows": [
+                        [
+                            "row 0:",
+                            "activated at time = 0"
+                        ],
+                        [
+                            "row 0:",
+                            "read at time = 15 (15ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 50"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 60 (50ns latency)"
+                        ],
+                        [
+                            "row 2:",
+                            "activated at time = 100"
+                        ],
+                        [
+                            "row 2:",
+                            "read at time = 110 (10ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 125"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 135 (30ns latency)"
+                        ],
+                        [
+                            "row 3:",
+                            "activated at time = 200"
+                        ],
+                        [
+                            "row 3:",
+                            "read at time = 215 (15ns latency)"
+                        ],
+                        [
+                            "row 1:",
+                            "activated at time = 300"
+                        ],
+                        [
+                            "row 1:",
+                            "read at time = 310 (10 ns latency)"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Total latency is 130ns",
+                    "md": "Total latency is 130ns",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 218.47,
+                        "w": 161.02,
+                        "h": 479.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 9,
+            "text": "A) [6 pts] What rows would you place in near segment? Hint: draw a timeline.\n                                          rows 0 and 2. see above\nB) [6 pts] What rows would you place in far segment?\n                        rows 1 and 3 (also rows 0 and 2 since inclusive). see above\nC) [6 pts]  In 15 words or less, describe the insight in your mapping?\n    See TL-DRAM\u2019s WMC policy \u2013 the first access in near simultaneous requests causes the second to\n    wait activation + precharge time. minimizing this wait by caching first row in near segment is better\n    than caching second row in near segment (this decreases only time to read from start of activation),\n    even if second row is accessed more frequently (see example above)\nD) [6 pts]  Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an\ninclusive design? Name one advantage and one disadvantage for each.\n      Exclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.\n                                      9 of 14                       Continued . . .",
+            "md": "# A) [6 pts] What rows would you place in near segment?\n\nrows 0 and 2. see above\n\n# B) [6 pts] What rows would you place in far segment?\n\nrows 1 and 3 (also rows 0 and 2 since inclusive). see above\n\n# C) [6 pts] In 15 words or less, describe the insight in your mapping?\n\nSee TL-DRAM\u2019s WMC policy \u2013 the first access in near simultaneous requests causes the second to wait activation + precharge time. minimizing this wait by caching first row in near segment is better than caching second row in near segment (this decreases only time to read from start of activation), even if second row is accessed more frequently (see example above)\n\n# D) [6 pts] Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an inclusive design? Name one advantage and one disadvantage for each.\n\nExclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.\n\n9 of 14 Continued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [6 pts] What rows would you place in near segment?",
+                    "md": "# A) [6 pts] What rows would you place in near segment?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "rows 0 and 2. see above",
+                    "md": "rows 0 and 2. see above",
+                    "rows": null,
+                    "bBox": {
+                        "x": 253.49,
+                        "y": 97.21,
+                        "w": 104.55,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [6 pts] What rows would you place in far segment?",
+                    "md": "# B) [6 pts] What rows would you place in far segment?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 138.82,
+                        "w": 240.17,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "rows 1 and 3 (also rows 0 and 2 since inclusive). see above",
+                    "md": "rows 1 and 3 (also rows 0 and 2 since inclusive). see above",
+                    "rows": null,
+                    "bBox": {
+                        "x": 177.04,
+                        "y": 175.31,
+                        "w": 257.45,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "C) [6 pts] In 15 words or less, describe the insight in your mapping?",
+                    "md": "# C) [6 pts] In 15 words or less, describe the insight in your mapping?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 217.81,
+                        "w": 301.95,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "See TL-DRAM\u2019s WMC policy \u2013 the first access in near simultaneous requests causes the second to wait activation + precharge time. minimizing this wait by caching first row in near segment is better than caching second row in near segment (this decreases only time to read from start of activation), even if second row is accessed more frequently (see example above)",
+                    "md": "See TL-DRAM\u2019s WMC policy \u2013 the first access in near simultaneous requests causes the second to wait activation + precharge time. minimizing this wait by caching first row in near segment is better than caching second row in near segment (this decreases only time to read from start of activation), even if second row is accessed more frequently (see example above)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.62,
+                        "y": 278.77,
+                        "w": 432.16,
+                        "h": 51.65
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "D) [6 pts] Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an inclusive design? Name one advantage and one disadvantage for each.",
+                    "md": "# D) [6 pts] Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an inclusive design? Name one advantage and one disadvantage for each.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 386.8,
+                        "w": 466.95,
+                        "h": 24.55
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Exclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.\n\n9 of 14 Continued . . .",
+                    "md": "Exclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.\n\n9 of 14 Continued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 95.81,
+                        "y": 436.63,
+                        "w": 419.94,
+                        "h": 290.73
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 10,
+            "text": "(Question 4 cont\u2019d)\nE) [6 pts]  Assume now that there are eight (8) rows in the near segment. Below is a plot showing the\nnumber of misses to the near segment for three applications (A, B, and C) when run alone with the specified\nnumber of rows allocated to the application in the near segment. This is similar to the plots you saw in your\nUtility-Based Cache Partitioning reading except for TL-DRAM instead of a cache. Determine the optimal\nstatic partitioning of the near segment when all three of these applications are run together on the system.\nIn other words, how many rows would you allocate for each application? Hint: this should sum to eight.\nOptimal for this problem is defined as minimizing total misses across all applications.\n                    9\n                              A\n                  Number of near segment misses\n                    8\n                    7\n                    6        B\n                    5\n                    4                                                                      A\n                    3                                                                      B\n                    2        C                                                             C\n                    1\n                    0\n                          0      1       2      3      4      5      6      7      8\n                             Number of rows in near segment allocated to application when run alone\n1) How many near segment rows would you allocate to A?\n                                                      5\n2) How many near segment rows would you allocate to B?\n                                                      3\n3) How many near segment rows would you allocate to C?\n                                                      0\n                                      10 of 14",
+            "md": "# Question 4 cont\u2019d\n\n# E) [6 pts]\n\nAssume now that there are eight (8) rows in the near segment. Below is a plot showing the number of misses to the near segment for three applications (A, B, and C) when run alone with the specified number of rows allocated to the application in the near segment. This is similar to the plots you saw in your Utility-Based Cache Partitioning reading except for TL-DRAM instead of a cache. Determine the optimal static partitioning of the near segment when all three of these applications are run together on the system. In other words, how many rows would you allocate for each application? Hint: this should sum to eight. Optimal for this problem is defined as minimizing total misses across all applications.\n\n| Number of near segment misses |   |\n| ----------------------------- | - |\n| 9                             | A |\n| 8                             |   |\n| 7                             |   |\n| 6                             | B |\n| 5                             |   |\n| 4                             | A |\n| 3                             | B |\n| 2                             | C |\n| 1                             |   |\n| 0                             |   |\n\n0      1       2      3      4      5      6      7      8\n\nNumber of rows in near segment allocated to application when run alone\n\n1. How many near segment rows would you allocate to A? 5\n2. How many near segment rows would you allocate to B? 3\n3. How many near segment rows would you allocate to C? 0\n\n10 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Question 4 cont\u2019d",
+                    "md": "# Question 4 cont\u2019d",
+                    "rows": null,
+                    "bBox": {
+                        "x": 159.16,
+                        "y": 227.63,
+                        "w": 303.89,
+                        "h": 67.33
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "E) [6 pts]",
+                    "md": "# E) [6 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 298.21,
+                        "h": 235.13
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Assume now that there are eight (8) rows in the near segment. Below is a plot showing the number of misses to the near segment for three applications (A, B, and C) when run alone with the specified number of rows allocated to the application in the near segment. This is similar to the plots you saw in your Utility-Based Cache Partitioning reading except for TL-DRAM instead of a cache. Determine the optimal static partitioning of the near segment when all three of these applications are run together on the system. In other words, how many rows would you allocate for each application? Hint: this should sum to eight. Optimal for this problem is defined as minimizing total misses across all applications.",
+                    "md": "Assume now that there are eight (8) rows in the near segment. Below is a plot showing the number of misses to the near segment for three applications (A, B, and C) when run alone with the specified number of rows allocated to the application in the near segment. This is similar to the plots you saw in your Utility-Based Cache Partitioning reading except for TL-DRAM instead of a cache. Determine the optimal static partitioning of the near segment when all three of these applications are run together on the system. In other words, how many rows would you allocate for each application? Hint: this should sum to eight. Optimal for this problem is defined as minimizing total misses across all applications.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 467.7,
+                        "h": 235.13
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Number of near segment misses |   |\n| ----------------------------- | - |\n| 9                             | A |\n| 8                             |   |\n| 7                             |   |\n| 6                             | B |\n| 5                             |   |\n| 4                             | A |\n| 3                             | B |\n| 2                             | C |\n| 1                             |   |\n| 0                             |   |",
+                    "rows": [
+                        [
+                            "Number of near segment misses",
+                            ""
+                        ],
+                        [
+                            "9",
+                            "A"
+                        ],
+                        [
+                            "8",
+                            ""
+                        ],
+                        [
+                            "7",
+                            ""
+                        ],
+                        [
+                            "6",
+                            "B"
+                        ],
+                        [
+                            "5",
+                            ""
+                        ],
+                        [
+                            "4",
+                            "A"
+                        ],
+                        [
+                            "3",
+                            "B"
+                        ],
+                        [
+                            "2",
+                            "C"
+                        ],
+                        [
+                            "1",
+                            ""
+                        ],
+                        [
+                            "0",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 19.89,
+                        "w": 467.7,
+                        "h": 707.47
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "0      1       2      3      4      5      6      7      8\n\nNumber of rows in near segment allocated to application when run alone\n\n1. How many near segment rows would you allocate to A? 5\n2. How many near segment rows would you allocate to B? 3\n3. How many near segment rows would you allocate to C? 0\n\n10 of 14",
+                    "md": "0      1       2      3      4      5      6      7      8\n\nNumber of rows in near segment allocated to application when run alone\n\n1. How many near segment rows would you allocate to A? 5\n2. How many near segment rows would you allocate to B? 3\n3. How many near segment rows would you allocate to C? 0\n\n10 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 159.16,
+                        "y": 176.35,
+                        "w": 304.89,
+                        "h": 551.01
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 11,
+            "text": "Problem 5: GPUs (42 pts)\nWe define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept\nbusy with active threads during the run of a program.\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop.\nAssume that the data values of the arrays A, B, and C are already in vector registers so there are no loads\nand stores in this program. (Hint: Notice that there are 5 instructions in each thread as labled below.) A\nwarp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n for  (i =  0; i <  16384;  i++) {\n   if (A[i]   > 0)  {              //Instruction                     1\n      A[i] =  A[i] *  C[i];        //Instruction                     2\n      B[i] =  A[i] +  B[i];        //Instruction                     3\n      C[i] =  B[i] +  1;           //Instruction                     4\n      D[i] =  C[i] *  B[i];        //Instruction                     5\n   }\n }\nA) [2 pts] How many warps does it take to execute this program?\n                                           16384/64 = 256\nB) [10 pts] As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96\nzeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones\nrepetitively. What is the SIMD utilization of this program?\n              A:  1   1   ...29 1s...  1 0   0   ...93 0s...  0  ...32 1s...  96 0s...  ...\n              B:  0   0   ...61 0s...  0 1   1   ...61 1s...  1  ...64 0s  ...64 1s...  ...\n                       When a warp is working on a segment of array A that has 64 0s, none of the threads in the warp\n                      will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization\n    of this particular input set is (64 + 64 + 32 \u2217 4)/(64 + 64 \u2217 5) = 66.7%\n                                   11 of 14                      Continued . . .",
+            "md": "# Problem 5: GPUs (42 pts)\n\nWe define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) {              //Instruction                     1\nA[i] = A[i] * C[i];        //Instruction                     2\nB[i] = A[i] + B[i];        //Instruction                     3\nC[i] = B[i] + 1;           //Instruction                     4\nD[i] = C[i] * B[i];        //Instruction                     5\n}\n}\n\n# A) [2 pts] How many warps does it take to execute this program?\n\n16384/64 = 256\n\n# B) [10 pts] As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively. What is the SIMD utilization of this program?\n\nA:  1   1   ...29 1s...  1 0   0   ...93 0s...  0  ...32 1s...  96 0s...  ...\nB:  0   0   ...61 0s...  0 1   1   ...61 1s...  1  ...64 0s  ...64 1s...  ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 \u2217 4)/(64 + 64 \u2217 5) = 66.7%\n\n11 of 14 Continued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 5: GPUs (42 pts)",
+                    "md": "# Problem 5: GPUs (42 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 58.78,
+                        "w": 236.33,
+                        "h": 201.09
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) {              //Instruction                     1\nA[i] = A[i] * C[i];        //Instruction                     2\nB[i] = A[i] + B[i];        //Instruction                     3\nC[i] = B[i] + 1;           //Instruction                     4\nD[i] = C[i] * B[i];        //Instruction                     5\n}\n}",
+                    "md": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) {              //Instruction                     1\nA[i] = A[i] * C[i];        //Instruction                     2\nB[i] = A[i] + B[i];        //Instruction                     3\nC[i] = B[i] + 1;           //Instruction                     4\nD[i] = C[i] * B[i];        //Instruction                     5\n}\n}",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.08,
+                        "w": 467.58,
+                        "h": 341.88
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [2 pts] How many warps does it take to execute this program?",
+                    "md": "# A) [2 pts] How many warps does it take to execute this program?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 196.07,
+                        "w": 287.95,
+                        "h": 115.97
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "16384/64 = 256",
+                    "md": "16384/64 = 256",
+                    "rows": null,
+                    "bBox": {
+                        "x": 115.04,
+                        "y": 196.07,
+                        "w": 237.92,
+                        "h": 239.88
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [10 pts] As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively. What is the SIMD utilization of this program?",
+                    "md": "# B) [10 pts] As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively. What is the SIMD utilization of this program?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 196.07,
+                        "w": 467.34,
+                        "h": 239.88
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "A:  1   1   ...29 1s...  1 0   0   ...93 0s...  0  ...32 1s...  96 0s...  ...\nB:  0   0   ...61 0s...  0 1   1   ...61 1s...  1  ...64 0s  ...64 1s...  ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 \u2217 4)/(64 + 64 \u2217 5) = 66.7%\n\n11 of 14 Continued . . .",
+                    "md": "A:  1   1   ...29 1s...  1 0   0   ...93 0s...  0  ...32 1s...  96 0s...  ...\nB:  0   0   ...61 0s...  0 1   1   ...61 1s...  1  ...64 0s  ...64 1s...  ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 \u2217 4)/(64 + 64 \u2217 5) = 66.7%\n\n11 of 14 Continued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.62,
+                        "y": 196.07,
+                        "w": 432.3,
+                        "h": 531.29
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 12,
+            "text": "(Question 5 cont\u2019d)\nC) [10 pts] Is it possible for this program to yield a SIMD utilization of 25%?\nCIRCLE ONE:              YES            NO\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show\nyour work. If NO, explain why not.\n    Yes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD\n    utilization of (64 + 4 \u2217 4)/(64 \u2217 5) = 25%.\nD) [10 pts] Is it possible for this program to yield a SIMD utilization of 20%?\nCIRCLE ONE:             YES            NO\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show\nyour work. If NO, explain why not.\n    No. The smallest SIMD utilization one can get is to have one and only one element in every 64\n    elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 \u2217 4)/(64 \u2217 5) =\n    21.25%, which is still greater than 20%.\nE) [10 pts] During an execution with a particular input array A, which has exactly 24 positive elements in\nevery 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation,\nHongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50%\nSIMD utilization. Is Hongyi correct?\nCIRCLE ONE:             YES            NO\nIf YES, show your work. If NO, provide a counterexample.\n    Hongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous\n    0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the\n    program will be 83.3% rather than 50%.\n                                    12 of 14",
+            "md": "# (Question 5 cont\u2019d)\n\n# C) [10 pts] Is it possible for this program to yield a SIMD utilization of 25%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show your work. If NO, explain why not.\n\nYes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD utilization of (64 + 4 \u2217 4)/(64 \u2217 5) = 25%.\n\n# D) [10 pts] Is it possible for this program to yield a SIMD utilization of 20%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show your work. If NO, explain why not.\n\nNo. The smallest SIMD utilization one can get is to have one and only one element in every 64 elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 \u2217 4)/(64 \u2217 5) = 21.25%, which is still greater than 20%.\n\n# E) [10 pts] During an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.\n\nHongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.\n\n12 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(Question 5 cont\u2019d)",
+                    "md": "# (Question 5 cont\u2019d)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 19.89,
+                        "w": 84.93,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "C) [10 pts] Is it possible for this program to yield a SIMD utilization of 25%?",
+                    "md": "# C) [10 pts] Is it possible for this program to yield a SIMD utilization of 25%?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 59.83,
+                        "w": 343.16,
+                        "h": 435.96
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show your work. If NO, explain why not.\n\nYes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD utilization of (64 + 4 \u2217 4)/(64 \u2217 5) = 25%.",
+                    "md": "CIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show your work. If NO, explain why not.\n\nYes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD utilization of (64 + 4 \u2217 4)/(64 \u2217 5) = 25%.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 467.49,
+                        "h": 417.71
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "D) [10 pts] Is it possible for this program to yield a SIMD utilization of 20%?",
+                    "md": "# D) [10 pts] Is it possible for this program to yield a SIMD utilization of 20%?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 343.16,
+                        "h": 417.71
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show your work. If NO, explain why not.\n\nNo. The smallest SIMD utilization one can get is to have one and only one element in every 64 elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 \u2217 4)/(64 \u2217 5) = 21.25%, which is still greater than 20%.",
+                    "md": "CIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show your work. If NO, explain why not.\n\nNo. The smallest SIMD utilization one can get is to have one and only one element in every 64 elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 \u2217 4)/(64 \u2217 5) = 21.25%, which is still greater than 20%.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 467.49,
+                        "h": 417.71
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "E) [10 pts] During an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?",
+                    "md": "# E) [10 pts] During an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 467.25,
+                        "h": 417.71
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.\n\nHongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.\n\n12 of 14",
+                    "md": "CIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.\n\nHongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.\n\n12 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 78.07,
+                        "w": 449.74,
+                        "h": 649.29
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 13,
+            "text": "Problem 6: Hyperblock (20 pts)\nAs described in class, Hyperblock scheduling uses predication support to replace unbiased branches with\npredicates, which enables larger code blocks.\nA) [2 pts] In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code\nblocks provide?\n    Larger scheduling code blocks enable greater flexibility for instruction scheduling.\nOne optimization that can be applied to Hyperblock is Instruction Promotion. Instruction Promotion hoists\nthe operation from a predicated instruction and replaces the original predicated instruction with a conditional\nmove.   With Instruction Promotion, operations can be scheduled and issued before their corresponding\npredicates are determined. Below shows an example of Instruction Promotion.\nBefore:\n           cmplt B6,B7-> B0\n [B0]      ld MEM1->   A5\n [!B0]     ld MEM2->   A5\n           nop 4\n           addi A5,8 -> A8\nAfter Instruction Promotion:\n           ld MEM1->   A5\n           ld MEM2->   A6\n           cmplt B6,B7-> B0\n [!B0]     mv A6-> A5\n           nop 4\n           addi A5,8 -> A8\nAssume we run this code on a processor that supports predication but can only issue a predicated instruction\nafter its corresponding predicate has been resolved.\nB) [4 pts] For the example above, can Instruction Promotion ever improve system performance? Why or\nwhy not?\n    Yes it can. With Instruction Promotion, the program can hide some of the load latency.\nC) [4 pts] For the example above, can Instruction Promotion ever degrade system performance? Why or\nwhy not?\n    Yes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register\n    pressure. [Note that extra instructions may not always increase register pressure]\n                                    13 of 14                      Continued . . .",
+            "md": "# Problem 6: Hyperblock (20 pts)\n\nAs described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.\n\n# A) [2 pts]\n\nIn one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?\n\nLarger scheduling code blocks enable greater flexibility for instruction scheduling.\n\nOne optimization that can be applied to Hyperblock is Instruction Promotion. Instruction Promotion hoists the operation from a predicated instruction and replaces the original predicated instruction with a conditional move. Below shows an example of Instruction Promotion.\n\n# Before:\n\ncmplt B6,B7-> B0\n[B0]      ld MEM1->   A5\n[!B0]     ld MEM2->   A5\nnop 4\naddi A5,8 -> A8\n\n# After Instruction Promotion:\n\nld MEM1->   A5\nld MEM2->   A6\ncmplt B6,B7-> B0\n[!B0]     mv A6-> A5\nnop 4\naddi A5,8 -> A8\n\nAssume we run this code on a processor that supports predication but can only issue a predicated instruction after its corresponding predicate has been resolved.\n\n# B) [4 pts]\n\nFor the example above, can Instruction Promotion ever improve system performance? Why or why not?\n\nYes it can. With Instruction Promotion, the program can hide some of the load latency.\n\n# C) [4 pts]\n\nFor the example above, can Instruction Promotion ever degrade system performance? Why or why not?\n\nYes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]\n\n13 of 14 Continued . . .",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 6: Hyperblock (20 pts)",
+                    "md": "# Problem 6: Hyperblock (20 pts)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 58.78,
+                        "w": 156.71,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.",
+                    "md": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.08,
+                        "w": 466.85,
+                        "h": 24.55
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A) [2 pts]",
+                    "md": "# A) [2 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?\n\nLarger scheduling code blocks enable greater flexibility for instruction scheduling.\n\nOne optimization that can be applied to Hyperblock is Instruction Promotion. Instruction Promotion hoists the operation from a predicated instruction and replaces the original predicated instruction with a conditional move. Below shows an example of Instruction Promotion.",
+                    "md": "In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?\n\nLarger scheduling code blocks enable greater flexibility for instruction scheduling.\n\nOne optimization that can be applied to Hyperblock is Instruction Promotion. Instruction Promotion hoists the operation from a predicated instruction and replaces the original predicated instruction with a conditional move. Below shows an example of Instruction Promotion.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 139.42,
+                        "w": 467.16,
+                        "h": 113.49
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Before:",
+                    "md": "# Before:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 271.11,
+                        "w": 33.0,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "cmplt B6,B7-> B0\n[B0]      ld MEM1->   A5\n[!B0]     ld MEM2->   A5\nnop 4\naddi A5,8 -> A8",
+                    "md": "cmplt B6,B7-> B0\n[B0]      ld MEM1->   A5\n[!B0]     ld MEM2->   A5\nnop 4\naddi A5,8 -> A8",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.38,
+                        "y": 297.68,
+                        "w": 129.36,
+                        "h": 156.88
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "After Instruction Promotion:",
+                    "md": "# After Instruction Promotion:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 364.19,
+                        "w": 124.74,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "ld MEM1->   A5\nld MEM2->   A6\ncmplt B6,B7-> B0\n[!B0]     mv A6-> A5\nnop 4\naddi A5,8 -> A8\n\nAssume we run this code on a processor that supports predication but can only issue a predicated instruction after its corresponding predicate has been resolved.",
+                    "md": "ld MEM1->   A5\nld MEM2->   A6\ncmplt B6,B7-> B0\n[!B0]     mv A6-> A5\nnop 4\naddi A5,8 -> A8\n\nAssume we run this code on a processor that supports predication but can only issue a predicated instruction after its corresponding predicate has been resolved.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 297.68,
+                        "w": 467.58,
+                        "h": 197.69
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "B) [4 pts]",
+                    "md": "# B) [4 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 330.56,
+                        "w": 74.94,
+                        "h": 183.06
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the example above, can Instruction Promotion ever improve system performance? Why or why not?\n\nYes it can. With Instruction Promotion, the program can hide some of the load latency.",
+                    "md": "For the example above, can Instruction Promotion ever improve system performance? Why or why not?\n\nYes it can. With Instruction Promotion, the program can hide some of the load latency.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 502.62,
+                        "w": 467.16,
+                        "h": 113.49
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "C) [4 pts]",
+                    "md": "# C) [4 pts]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 330.56,
+                        "w": 74.94,
+                        "h": 272.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the example above, can Instruction Promotion ever degrade system performance? Why or why not?\n\nYes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]\n\n13 of 14 Continued . . .",
+                    "md": "For the example above, can Instruction Promotion ever degrade system performance? Why or why not?\n\nYes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]\n\n13 of 14 Continued . . .",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 330.56,
+                        "w": 467.16,
+                        "h": 396.81
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 14,
+            "text": "(Question 6 cont\u2019d)\n                 3\n             Speedup\n                 2\n                 1\n                                                                           Basic Block\n                                                                           Superblock\n                 0                                                         \u0397yperblock\n                        \u0399ssue 2\n                        \u0399ssue 2         \u0399ssue 4\n                                        \u0399ssue 4        \u0399ssue 8\n                                                       \u0399ssue 8\n                                      \u0399ssue Width\n                                      \u0399ssue Width\n                           D) [10 pts] The graph above shows the performance comparison of a program optimized using Hyperblock\n                        and Superblock respectively with different issue widths. With all other factors being equal, as the figure\n                          shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when\n                        the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?\n                            A wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the\n    superblock (all else being equal).\n                             A more detailed explanation: Hyperblock uses predication which increases the total number of in-\n                           structions to execute. When the issue width is low, executing extra predicated instructions requires\n                           extra work, which slows down the processor as all resources of the processor has already been fully\n    utilized. When the issue width is high, however, Hyperblock provides a greater number of inde-\n                          pendent instructions from the multiple paths of control to fill the available processor resources. As\n                             Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyper-\n    block provides better speedup.\n                                     14 of 14",
+            "md": "# (Question 6 cont\u2019d)\n\n|             | Speedup     |            |\n| ----------- | ----------- | ---------- |\n|             | 3           |            |\n|             | 2           |            |\n|             | 1           |            |\n| Basic Block | Superblock  | \u0397yperblock |\n| 0           | Issue 2     | Issue 2    |\n|             | Issue 4     | Issue 4    |\n|             | Issue 8     | Issue 8    |\n|             | Issue Width |            |\n\nD) [10 pts] The graph above shows the performance comparison of a program optimized using Hyperblock and Superblock respectively with different issue widths. With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?\n\nA wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.\n\n14 of 14",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(Question 6 cont\u2019d)",
+                    "md": "# (Question 6 cont\u2019d)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 19.89,
+                        "w": 84.93,
+                        "h": 11.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "|             | Speedup     |            |\n| ----------- | ----------- | ---------- |\n|             | 3           |            |\n|             | 2           |            |\n|             | 1           |            |\n| Basic Block | Superblock  | \u0397yperblock |\n| 0           | Issue 2     | Issue 2    |\n|             | Issue 4     | Issue 4    |\n|             | Issue 8     | Issue 8    |\n|             | Issue Width |            |",
+                    "rows": [
+                        [
+                            "",
+                            "Speedup",
+                            ""
+                        ],
+                        [
+                            "",
+                            "3",
+                            ""
+                        ],
+                        [
+                            "",
+                            "2",
+                            ""
+                        ],
+                        [
+                            "",
+                            "1",
+                            ""
+                        ],
+                        [
+                            "Basic Block",
+                            "Superblock",
+                            "\u0397yperblock"
+                        ],
+                        [
+                            "0",
+                            "Issue 2",
+                            "Issue 2"
+                        ],
+                        [
+                            "",
+                            "Issue 4",
+                            "Issue 4"
+                        ],
+                        [
+                            "",
+                            "Issue 8",
+                            "Issue 8"
+                        ],
+                        [
+                            "",
+                            "Issue Width",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 19.89,
+                        "w": 467.74,
+                        "h": 707.47
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "D) [10 pts] The graph above shows the performance comparison of a program optimized using Hyperblock and Superblock respectively with different issue widths. With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?\n\nA wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.\n\n14 of 14",
+                    "md": "D) [10 pts] The graph above shows the performance comparison of a program optimized using Hyperblock and Superblock respectively with different issue widths. With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?\n\nA wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.\n\n14 of 14",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 118.16,
+                        "w": 467.74,
+                        "h": 609.2
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        }
+    ],
+    "job_metadata": {
+        "job_pages": 0,
+        "job_auto_mode_triggered_pages": 0,
+        "job_is_cache_hit": true
+    },
+    "file_name": "data/740_f13_midterm2_solutions copy.pdf",
+    "job_id": "76acf173-d0cd-48ec-8570-8c65cf9992fd",
+    "is_done": false,
+    "error": null
+}
