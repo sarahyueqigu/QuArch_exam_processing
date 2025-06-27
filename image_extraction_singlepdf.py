@@ -18,7 +18,6 @@ parser = LlamaParse(
     verbose=True,
 )
 
-# file_path = "/data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf"
 async def process_files(filename, file_path, output_dir):
     # parse all the files asynchronously
     results = await parser.aparse(file_path)

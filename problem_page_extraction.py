@@ -2,15 +2,25 @@ import ast
 import boto3
 import fitz
 import os
+import asyncio
 from botocore.exceptions import ClientError
 import json
 import nest_asyncio
 from dotenv import load_dotenv
 from llama_cloud_services import LlamaParse
 
-
 load_dotenv()
 nest_asyncio.apply()
+
+parser = LlamaParse(
+    api_key="llx-K1mUygWh37kvgzJbCvvdROrM8N5XBfQFdM3mXfgye1GzYJtZ",
+    parse_mode="parse_page_with_llm",
+    extract_charts=True,
+    num_workers=4,       # if multiple files passed, split in `num_workers` API calls
+    verbose=True,
+    )
+
+
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     """
@@ -51,36 +61,27 @@ Output your result as dictionary like this:
     "Problem_3": [6, 7]
 }
 """
+async def llama_processing(file_path, output_dir):
+    # get json version of PDF from Llamaparse 
+    # store the json for document input into the claude prompt   
+    result = await parser.aparse(file_path)
 
-def claud_37_processing(path):
-    # get json version of PDF from Llamaparse
-    parser = LlamaParse(
-    api_key=os.getenv("LLAMAPARSE_API_KEY"),
-    parse_mode="parse_page_with_llm",
-    num_workers=4,       # if multiple files passed, split in `num_workers` API calls
-    verbose=True,
-    )
+    #Save all images in the exam to a designated folder
+    await result.asave_all_images(output_dir)
 
-    result = parser.parse(path)
+    # then save each chart image by name
+    for page in result.pages:
+        for chart in page.charts:
+            await result.asave_image(chart.name, output_dir)
+    
+    print("Saved exam images to ", output_dir)
 
-    # create a temporary .txt file for storing the json (since claude doesn't take json input)
-    txt_path = path[:-4] + ".txt"
-    with open(txt_path, "w") as file:
-        # Use json.dump() to write the data to the file
-        json.dump(result.model_dump(), file, indent=4)
+    #Also return the document json
+    return result
 
 
-    # # Create a Bedrock Runtime client in the AWS Region you want to use.
-    # client = boto3.client("bedrock-runtime", region_name="us-east-1")
-
-    # # Set the model ID, e.g. Claude 3 Haiku.
-    # model_id = "anthropic.claude-3-7-sonnet-20250219-v1:0"
-   
+def claud_37_processing(document_bytes):
     claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
-
-     # Load the txt document
-    with open(txt_path, "rb") as file:
-        document_bytes = file.read()
 
     # Start a conversation with a user message and the document
     conversation = [
@@ -117,45 +118,43 @@ def claud_37_processing(path):
         exit(1)
 
 
-    # response_claude_thinking = invoke_model(claude_inference_profile_arn, conversation)
-    # print("=== Claude 3.7 Sonnet With Thinking ===")
-    # print(response_claude_thinking)
+def process(input_path):
+    print("\nPROBLEM_PAGE_EXTRACTION: ", input_path)
+    
+    filename = os.path.basename(input_path)
 
+    # Save all images first
+    document_json = asyncio.run(llama_processing(input_path, "images/"+filename[:-4]))
+    # Convert the json to byte form for Claude input
+    document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
+    #get the dictionary of split page numbers
+    string_output = claud_37_processing(document_bytes)
 
-if __name__ == "__main__":
-    input_dir = "OnurETHZ_exams"
+    # find the first “{” and the last “}”
+    start = string_output.index("{")
+    end   = string_output.rindex("}") + 1
+    dict_text = string_output[start:end]
 
-    for filename in os.listdir(input_dir):
-        # Build full path
-        input_path = os.path.join(input_dir, filename)
+    # convert to a real Python dictionary
+    data = ast.literal_eval(dict_text)
+    print(data)
+    
 
-        
-        # Only process PDFs
-        if input_path.lower().endswith(".pdf"):
-        # if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
-            print("Processing:", input_path)
-            string_output = claud_37_processing(input_path)
-            print(string_output)
+    output_dir = "extracted_problems/" + filename[:-4]
+    for problem in data:
+        child_pdf_filename = problem + ".pdf"
 
-        
-            # find the first “{” and the last “}”
-            start = string_output.index("{")
-            end   = string_output.rindex("}") + 1
-            dict_text = string_output[start:end]
+        # Create the target directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
 
-            # safely evaluate as a Python literal
-            data = ast.literal_eval(dict_text)
-            print(data)
-            
-            for problem in data:
+        output_path = os.path.join(output_dir, child_pdf_filename)
+        extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+        # Also sort all images from the relevant page ranges into the data dict
+        for pagenum in range(data[problem][0]-1, data[problem][1]):
+            for image in document_json.pages[pagenum].images:
+                data[problem].append(image.name)
+            for chart in document_json.pages[pagenum].charts:
+                data[problem].append(chart.name)
 
-                child_pdf_filename = problem + ".pdf"
-                # output_dir = "extracted_problems/" + filename[:-4] + "/" + child_pdf_filename[:-4]
-                output_dir = "extracted_problems/" + filename[:-4]
-
-                # Create the target directory if it doesn't exist
-                os.makedirs(output_dir, exist_ok=True)
-
-                output_path = os.path.join(output_dir, child_pdf_filename)
-                extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+    return data
