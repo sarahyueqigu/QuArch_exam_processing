@@ -1,0 +1,2158 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "text": "Name:\nFirst Name:\nStudent ID:\n                                  2nd session examination\n                             Design of Digital Circuits WS2016\n                                       (252-0014-00L)\n                             Srdjan Capkun, Frank K. G\u00fcrkaynak\nExamination Rules:\n   1. Written exam, 90 minutes in total.\n   2. No books, no calculators, no computers or communication devices. Six pages of hand-\n     written notes are allowed.\n   3. Write all your answers on this document, space is reserved for your answers after each\n     question. Blank pages are available at the end of the exam.\n   4. Put your Student ID card visible on the desk during the exam.\n   5. If you feel disturbed, immediately call an assistant.\n   6. Answers will only be evaluated if they are readable.\n   7. Write with a black or blue pen (no pencil, no green or red color).\n   8. Show all your work.  For some questions, you may get partial credit even if the end\n     result is wrong due to a calculation mistake.\n   9. Points for every part are indicated in the exam. They should correspond to the expected\n     difficulty of the questions. Consider this when allocating your time.\n                Question:    1      2      3     4       5     6    Total\n                Points:      5      16     24    10      8     12     75\n                Score:",
+            "md": "# 2nd session examination\n\n# Design of Digital Circuits WS2016\n\n# (252-0014-00L)\n\n# Srdjan Capkun, Frank K. G\u00fcrkaynak\n\n# Examination Rules:\n\n1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.\n\n| Question: | 1 | 2  | 3  | 4  | 5 | 6  | Total |   |   |   |   |   |\n| --------- | - | -- | -- | -- | - | -- | ----- | - | - | - | - | - |\n| Points:   | 5 | 16 | 24 | 10 | 8 | 12 | 75    |   |   |   |   |   |\n| Score:    |   |    |    |    |   |    |       |   |   |   |   |   |\n",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2nd session examination",
+                    "md": "# 2nd session examination",
+                    "rows": null,
+                    "bBox": {
+                        "x": 207.39,
+                        "y": 195.12,
+                        "w": 197.47,
+                        "h": 446.54
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits WS2016",
+                    "md": "# Design of Digital Circuits WS2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 140.14,
+                        "y": 220.52,
+                        "w": 331.97,
+                        "h": 443.21
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(252-0014-00L)",
+                    "md": "# (252-0014-00L)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 224.58,
+                        "y": 256.15,
+                        "w": 149.06,
+                        "h": 407.57
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Srdjan Capkun, Frank K. G\u00fcrkaynak",
+                    "md": "# Srdjan Capkun, Frank K. G\u00fcrkaynak",
+                    "rows": null,
+                    "bBox": {
+                        "x": 194.91,
+                        "y": 287.87,
+                        "w": 221.85,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Examination Rules:",
+                    "md": "# Examination Rules:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 333.95,
+                        "w": 100.4,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.",
+                    "md": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 86.31,
+                        "y": 358.36,
+                        "w": 453.82,
+                        "h": 305.36
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Question: | 1 | 2  | 3  | 4  | 5 | 6  | Total |   |   |   |   |   |\n| --------- | - | -- | -- | -- | - | -- | ----- | - | - | - | - | - |\n| Points:   | 5 | 16 | 24 | 10 | 8 | 12 | 75    |   |   |   |   |   |\n| Score:    |   |    |    |    |   |    |       |   |   |   |   |   |",
+                    "rows": [
+                        [
+                            "Question:",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "Total",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Points:",
+                            "5",
+                            "16",
+                            "24",
+                            "10",
+                            "8",
+                            "12",
+                            "75",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Score:",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 86.45,
+                        "w": 468.13,
+                        "h": 599.35
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 2,
+            "text": "Design of Digital Circuits                                           8th of February 2017\n                             This page intentionally left blank\nSecond Session Exam                                                           Page 1 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\nThis page intentionally left blank\n\n# Second Session Exam\n\nPage 1 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017\n\nThis page intentionally left blank",
+                    "md": "8th of February 2017\n\nThis page intentionally left blank",
+                    "rows": null,
+                    "bBox": {
+                        "x": 221.39,
+                        "y": 40.37,
+                        "w": 318.2,
+                        "h": 43.63
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 1 of 12",
+                    "md": "Page 1 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 476.77,
+                        "y": 734.16,
+                        "w": 63.53,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 3,
+            "text": "Design of Digital Circuits                                            8th of February 2017\n 1.  (a) (2 points) For the following four numbers given in decimal or hexadecimal notation,\n         write the corresponding binary number using the indicated format.\n         (\u221248)\u2081\u2080 using 8-bit sign magnitude:                       (1011 0000)\u2082\n         (155)\u2081\u2080 using 8-bit unsigned:                             (1001 1011)\u2082\n         (\u221228)\u2081\u2080 using 8-bit two\u2019s complement:                     (1110 0100)\u2082\n         (BA)\u2081\u2086 using 8-bit unsigned:                              (1011 1010)\u2082\n       (b) (3 points) State whether the following statements about the binary representation\n         of numbers are true  or false. Give brief  explanations for the statements that are\n         false.\n           \u2022 Both two\u2019s complement and sign/magnitude representation can be used to rep-\n              resent negative numbers in binary.\n               Solution:  True, however it is more difficult to design arithmetic circuits\n               that work with sign/magnitude format. Still they are used.\n           \u2022 Using N  bits it is possible to represent 2\u1d3a different numbers when a sign/mag-\n              nitude number system is used.\n               Solution:  False, 0 is represented twice.\n           \u2022  While there are methods to represent both positive and negative integers, it is\n              not possible to represent fractions or real numbers using binary numbers.\n               Solution:  False, fixed and floating point number systems can be used to\n               represent such numbers.\nSecond Session Exam                                                            Page 2 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 1.\n\n# (a) (2 points)\n\nFor the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n- (\u221248)\u2081\u2080 using 8-bit sign magnitude: (1011 0000)\u2082\n- (155)\u2081\u2080 using 8-bit unsigned: (1001 1011)\u2082\n- (\u221228)\u2081\u2080 using 8-bit two\u2019s complement: (1110 0100)\u2082\n- (BA)\u2081\u2086 using 8-bit unsigned: (1011 1010)\u2082\n\n# (b) (3 points)\n\nState whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n- \u2022 Both two\u2019s complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\nSolution: True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n- \u2022 Using N bits it is possible to represent 2\u1d3a different numbers when a sign/magnitude number system is used.\n\nSolution: False, 0 is represented twice.\n- \u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.\n\nSecond Session Exam\n\nPage 2 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.",
+                    "md": "# 1.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points)",
+                    "md": "# (a) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n- (\u221248)\u2081\u2080 using 8-bit sign magnitude: (1011 0000)\u2082\n- (155)\u2081\u2080 using 8-bit unsigned: (1001 1011)\u2082\n- (\u221228)\u2081\u2080 using 8-bit two\u2019s complement: (1110 0100)\u2082\n- (BA)\u2081\u2086 using 8-bit unsigned: (1011 1010)\u2082",
+                    "md": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n- (\u221248)\u2081\u2080 using 8-bit sign magnitude: (1011 0000)\u2082\n- (155)\u2081\u2080 using 8-bit unsigned: (1001 1011)\u2082\n- (\u221228)\u2081\u2080 using 8-bit two\u2019s complement: (1110 0100)\u2082\n- (BA)\u2081\u2086 using 8-bit unsigned: (1011 1010)\u2082",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 363.08,
+                        "h": 143.43
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (3 points)",
+                    "md": "# (b) (3 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n- \u2022 Both two\u2019s complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\nSolution: True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n- \u2022 Using N bits it is possible to represent 2\u1d3a different numbers when a sign/magnitude number system is used.\n\nSolution: False, 0 is represented twice.\n- \u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.\n\nSecond Session Exam\n\nPage 2 of 12",
+                    "md": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n- \u2022 Both two\u2019s complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\nSolution: True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n- \u2022 Using N bits it is possible to represent 2\u1d3a different numbers when a sign/magnitude number system is used.\n\nSolution: False, 0 is represented twice.\n- \u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.\n\nSecond Session Exam\n\nPage 2 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 217.87,
+                        "w": 468.44,
+                        "h": 528.29
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 4,
+            "text": "Design of Digital Circuits                                    8th of February 2017\n 2. Consider the following state diagram of an FSM with 1-bit input (I ) and 1-bit output\n   (Z).\n             Reset                                  I=1\n                \u0391                        B                        \u0395\n               Z=1                      Z=0                      Z=0\n                                 I=1           I=0\n           I=1                                            I=0\n                D                        C                        F\n               Z=0                      Z=1                      Z=1\n                             I=0                      I=1\n               I=0\n   The state has been coded using a 3-bit vector S = S\u2082 S\u2081 S\u2080 according to the following\n   table:\n                                       State\n                               name     S\u2082   S\u2081    S\u2080\n                               A        0    0     0\n                               B        0    0     1\n                               C        0    1     0\n                               D        0    1     1\n                               E        1    0     0\n                               F        1    0     1\n    (a) (1 point) Is this a Moore or Mealy type FSM? Briefly explain.\n         Solution: Moore, outputs depend only on the present state and nothing else.\nSecond Session Exam                                                   Page 3 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 2. Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).\n\nReset\n\n| State name | S\u2082 | S\u2081 | S\u2080 |\n| ---------- | -- | -- | -- |\n| A          | 0  | 0  | 0  |\n| B          | 0  | 0  | 1  |\n| C          | 0  | 1  | 0  |\n| D          | 0  | 1  | 1  |\n| E          | 1  | 0  | 0  |\n| F          | 1  | 0  | 1  |\n\n# (a) (1 point) Is this a Moore or Mealy type FSM? Briefly explain.\n\nSolution: Moore, outputs depend only on the present state and nothing else.\n\nSecond Session Exam\n\nPage 3 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 392.47,
+                        "h": 517.4
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 254.37,
+                        "y": 40.37,
+                        "w": 285.23,
+                        "h": 517.4
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2. Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).",
+                    "md": "# 2. Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 461.69,
+                        "h": 485.77
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Reset",
+                    "md": "Reset",
+                    "rows": null,
+                    "bBox": {
+                        "x": 151.53,
+                        "y": 119.74,
+                        "w": 109.84,
+                        "h": 419.58
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| State name | S\u2082 | S\u2081 | S\u2080 |\n| ---------- | -- | -- | -- |\n| A          | 0  | 0  | 0  |\n| B          | 0  | 0  | 1  |\n| C          | 0  | 1  | 0  |\n| D          | 0  | 1  | 1  |\n| E          | 1  | 0  | 0  |\n| F          | 1  | 0  | 1  |",
+                    "rows": [
+                        [
+                            "State name",
+                            "S\u2082",
+                            "S\u2081",
+                            "S\u2080"
+                        ],
+                        [
+                            "A",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "B",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "C",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "D",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "E",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "F",
+                            "1",
+                            "0",
+                            "1"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.49,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (1 point) Is this a Moore or Mealy type FSM? Briefly explain.",
+                    "md": "# (a) (1 point) Is this a Moore or Mealy type FSM? Briefly explain.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.71,
+                        "y": 155.74,
+                        "w": 367.76,
+                        "h": 427.77
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Solution: Moore, outputs depend only on the present state and nothing else.\n\nSecond Session Exam\n\nPage 3 of 12",
+                    "md": "Solution: Moore, outputs depend only on the present state and nothing else.\n\nSecond Session Exam\n\nPage 3 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 263.73,
+                        "w": 468.3,
+                        "h": 482.42
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 5,
+            "text": "Design of Digital Circuits                                  8th of February 2017\n    (b) (6 points) Fill in the following state transition table that determines the next state\n        vector N = N\u2082 N\u2081 N\u2080 based on the current state S and the input I .\n                    State              Input             Next State\n          name     S\u2082     S\u2081     S\u2080       I       name     N\u2082     N\u2081      N\u2080\n          A         0     0      0       X        B        0       0      1\n          B         0     0      1       0        C        0       1      0\n          B         0     0      1       1        E        1       0      0\n          C         0     1      0       0        D        0       1      1\n          C         0     1      0       1        A        0       0      0\n          D         0     1      1       0        D        0       1      1\n          D         0     1      1       1        A        0       0      0\n          E         1     0      0       X        F        1       0      1\n          F         1     0      1       0        E        1       0      0\n          F         1     0      1       1        C        0       1      0\n        Note that there are different ways of writing this table to represent the same result.\n    (c) (3 points) Write the Next State Equations from the table you have filled above\n        using either Sum of Products (SOP) or Product of Sums (POS) form. Do not\n        spend time minimizing the equations, this will be next question.\n         Solution:\n         N\u2080 = S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080  ~~I</s> + S\u2082 S\u2081 S\u2080 <s>I~~   + S\u2082 S\u2081 S\u2080\n         N\u2081 = S\u2082 S\u2081 S\u2080  ~~I</s> + S\u2082 S\u2081 S\u2080  ~~I~~   + S\u2082 S\u2081 S\u2080 <s>I~~   + S\u2082 S\u2081 S\u2080 I\n         N\u2082 = S\u2082 S\u2081 S\u2080 I + S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080  <s>I</s>\nSecond Session Exam                                                Page 4 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# (b) (6 points)\n\nFill in the following state transition table that determines the next state vector N = N\u2082 N\u2081 N\u2080 based on the current state S and the input I.\n\n| State name | S\u2082 | S\u2081 | S\u2080 | Input I | Next State name | N\u2082 | N\u2081 | N\u2080 |\n| ---------- | -- | -- | -- | ------- | --------------- | -- | -- | -- |\n| A          | 0  | 0  | 0  | X       | B               | 0  | 0  | 1  |\n| B          | 0  | 0  | 1  | 0       | C               | 0  | 1  | 0  |\n| B          | 0  | 0  | 1  | 1       | E               | 1  | 0  | 0  |\n| C          | 0  | 1  | 0  | 0       | D               | 0  | 1  | 1  |\n| C          | 0  | 1  | 0  | 1       | A               | 0  | 0  | 0  |\n| D          | 0  | 1  | 1  | 0       | D               | 0  | 1  | 1  |\n| D          | 0  | 1  | 1  | 1       | A               | 0  | 0  | 0  |\n| E          | 1  | 0  | 0  | X       | F               | 1  | 0  | 1  |\n| F          | 1  | 0  | 1  | 0       | E               | 1  | 0  | 0  |\n| F          | 1  | 0  | 1  | 1       | C               | 0  | 1  | 0  |\n\nNote that there are different ways of writing this table to represent the same result.\n\n# (c) (3 points)\n\nWrite the Next State Equations from the table you have filled above using either Sum of Products (SOP) or Product of Sums (POS) form. Do not spend time minimizing the equations, this will be next question.\n\n# Solution:\n\nN\u2080 = S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080\n\nN\u2081 = S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 ~~I~~ + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080 I\n\nN\u2082 = S\u2082 S\u2081 S\u2080 I + S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 4 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 306.47,
+                        "h": 442.9
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 131.86,
+                        "y": 40.37,
+                        "w": 407.73,
+                        "h": 442.9
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (6 points)",
+                    "md": "# (b) (6 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 131.86,
+                        "y": 147.08,
+                        "w": 246.61,
+                        "h": 110.93
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Fill in the following state transition table that determines the next state vector N = N\u2082 N\u2081 N\u2080 based on the current state S and the input I.",
+                    "md": "Fill in the following state transition table that determines the next state vector N = N\u2082 N\u2081 N\u2080 based on the current state S and the input I.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 407.73,
+                        "h": 449.85
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| State name | S\u2082 | S\u2081 | S\u2080 | Input I | Next State name | N\u2082 | N\u2081 | N\u2080 |\n| ---------- | -- | -- | -- | ------- | --------------- | -- | -- | -- |\n| A          | 0  | 0  | 0  | X       | B               | 0  | 0  | 1  |\n| B          | 0  | 0  | 1  | 0       | C               | 0  | 1  | 0  |\n| B          | 0  | 0  | 1  | 1       | E               | 1  | 0  | 0  |\n| C          | 0  | 1  | 0  | 0       | D               | 0  | 1  | 1  |\n| C          | 0  | 1  | 0  | 1       | A               | 0  | 0  | 0  |\n| D          | 0  | 1  | 1  | 0       | D               | 0  | 1  | 1  |\n| D          | 0  | 1  | 1  | 1       | A               | 0  | 0  | 0  |\n| E          | 1  | 0  | 0  | X       | F               | 1  | 0  | 1  |\n| F          | 1  | 0  | 1  | 0       | E               | 1  | 0  | 0  |\n| F          | 1  | 0  | 1  | 1       | C               | 0  | 1  | 0  |",
+                    "rows": [
+                        [
+                            "State name",
+                            "S\u2082",
+                            "S\u2081",
+                            "S\u2080",
+                            "Input I",
+                            "Next State name",
+                            "N\u2082",
+                            "N\u2081",
+                            "N\u2080"
+                        ],
+                        [
+                            "A",
+                            "0",
+                            "0",
+                            "0",
+                            "X",
+                            "B",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "B",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "C",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "B",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "E",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "C",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "D",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "C",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "A",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "D",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "D",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "D",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "A",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "E",
+                            "1",
+                            "0",
+                            "0",
+                            "X",
+                            "F",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "F",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "E",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "F",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "C",
+                            "0",
+                            "1",
+                            "0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Note that there are different ways of writing this table to represent the same result.",
+                    "md": "Note that there are different ways of writing this table to represent the same result.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 147.08,
+                        "w": 422.15,
+                        "h": 389.22
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) (3 points)",
+                    "md": "# (c) (3 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 131.86,
+                        "y": 147.08,
+                        "w": 246.61,
+                        "h": 336.18
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Write the Next State Equations from the table you have filled above using either Sum of Products (SOP) or Product of Sums (POS) form. Do not spend time minimizing the equations, this will be next question.",
+                    "md": "Write the Next State Equations from the table you have filled above using either Sum of Products (SOP) or Product of Sums (POS) form. Do not spend time minimizing the equations, this will be next question.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 114.9,
+                        "w": 422.06,
+                        "h": 435.84
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 147.08,
+                        "w": 199.53,
+                        "h": 432.24
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "N\u2080 = S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080\n\nN\u2081 = S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 ~~I~~ + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080 I\n\nN\u2082 = S\u2082 S\u2081 S\u2080 I + S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 4 of 12",
+                    "md": "N\u2080 = S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080\n\nN\u2081 = S\u2082 S\u2081 S\u2080 ~~I + S\u2082 S\u2081 S\u2080 ~~I~~ + S\u2082 S\u2081 S\u2080 I~~ + S\u2082 S\u2081 S\u2080 I\n\nN\u2082 = S\u2082 S\u2081 S\u2080 I + S\u2082 S\u2081 S\u2080 + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 4 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 147.08,
+                        "w": 468.3,
+                        "h": 599.08
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 6,
+            "text": "Design of Digital Circuits                                               8th of February 2017\n     (d) (6 points) Minimize the Next State Equations from the previous part. Note that\n         the FSM requires only six states.    This means that there are several State (S) /\n         Input(I ) combinations for which the outputs can be treated as Don\u2019t Care, which\n         should help minimizing the boolean equations.\n         Hint: Consider using Karnaugh diagrams to solve this problem.\n           Solution:\n           It is important to note that for S\u2082 S\u2081 = 11 the next state N     can be taken as\n           N\u2082 N\u2081 N\u2080 = XXX. This can simplify the Boolean equations significantly. It is\n           best to use a Karnaugh map to find the simplifications.\n           S\u2082SS\u2070I 00  01  11 10         S SS\u2070I 00  01 11  10         S SS\u2070I 00  01 11  10\n               1                          2  1                         2  1\n               00  1  1   0  0              00  0  0  0   1              00  0  0  1   0\n               01  1  0   0  1              01  1  0  0   1              01  0  0  0   0\n               11  \u03a7  \u03a7   \u03a7  \u03a7              11  \u03a7  \u03a7  \u03a7   \u03a7              11  \u03a7  \u03a7  \u03a7   \u03a7\n               10  1  1   0  0              10  0  0  1   0              10  1  1  0   1\n                       N\u2080                           N\u2081                           N\u2082\n           N\u2080 = S\u2081 S\u2080 + S\u2081   ~~I~~  \n           N\u2081 = S\u2081   ~~I</s> + S\u2082 S\u2080 I + S\u2082 S\u2080  <s>I~~  \n           N\u2082 = S\u2082 S\u2080 + S\u2082   ~~I~~   + S\u2082 S\u2081 S\u2080 I\nSecond Session Exam                                                              Page 5 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# (d) (6 points)\n\nMinimize the Next State Equations from the previous part. Note that the FSM requires only six states. This means that there are several State (S) / Input (I) combinations for which the outputs can be treated as Don\u2019t Care, which should help minimizing the boolean equations.\n\nHint: Consider using Karnaugh diagrams to solve this problem.\n\n# Solution:\n\nIt is important to note that for S\u2082 S\u2081 = 11 the next state N can be taken as N\u2082 N\u2081 N\u2080 = XXX. This can simplify the Boolean equations significantly. It is best to use a Karnaugh map to find the simplifications.\n\n| S\u2082 S\u2081 | I  |    |    |   |   |   |\n| ----- | -- | -- | -- | - | - | - |\n| 00    | 01 | 11 | 10 |   |   |   |\n|       |    | 1  | 1  | 0 | 0 | 1 |\n|       |    | 2  | 0  | 0 | 0 | 1 |\n|       |    | 1  | 0  | 0 | 1 | 0 |\n| 11    | \u03a7  | \u03a7  | \u03a7  | \u03a7 |   |   |\n| 10    | 1  | 1  | 0  | 0 |   |   |\n\nN\u2080 = S\u2081 S\u2080 + S\u2081 ~~I~~\n\nN\u2081 = S\u2081 ~~I + S\u2082 S\u2080 I + S\u2082 S\u2080 I~~\n\nN\u2082 = S\u2082 S\u2080 + S\u2082 ~~I~~ + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 5 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 146.0,
+                        "y": 40.37,
+                        "w": 393.6,
+                        "h": 272.05
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) (6 points)",
+                    "md": "# (d) (6 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Minimize the Next State Equations from the previous part. Note that the FSM requires only six states. This means that there are several State (S) / Input (I) combinations for which the outputs can be treated as Don\u2019t Care, which should help minimizing the boolean equations.\n\nHint: Consider using Karnaugh diagrams to solve this problem.",
+                    "md": "Minimize the Next State Equations from the previous part. Note that the FSM requires only six states. This means that there are several State (S) / Input (I) combinations for which the outputs can be treated as Don\u2019t Care, which should help minimizing the boolean equations.\n\nHint: Consider using Karnaugh diagrams to solve this problem.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 422.9,
+                        "h": 55.34
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 158.36,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "It is important to note that for S\u2082 S\u2081 = 11 the next state N can be taken as N\u2082 N\u2081 N\u2080 = XXX. This can simplify the Boolean equations significantly. It is best to use a Karnaugh map to find the simplifications.",
+                    "md": "It is important to note that for S\u2082 S\u2081 = 11 the next state N can be taken as N\u2082 N\u2081 N\u2080 = XXX. This can simplify the Boolean equations significantly. It is best to use a Karnaugh map to find the simplifications.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 175.29,
+                        "w": 403.89,
+                        "h": 166.94
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| S\u2082 S\u2081 | I  |    |    |   |   |   |\n| ----- | -- | -- | -- | - | - | - |\n| 00    | 01 | 11 | 10 |   |   |   |\n|       |    | 1  | 1  | 0 | 0 | 1 |\n|       |    | 2  | 0  | 0 | 0 | 1 |\n|       |    | 1  | 0  | 0 | 1 | 0 |\n| 11    | \u03a7  | \u03a7  | \u03a7  | \u03a7 |   |   |\n| 10    | 1  | 1  | 0  | 0 |   |   |",
+                    "rows": [
+                        [
+                            "S\u2082 S\u2081",
+                            "I",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "00",
+                            "01",
+                            "11",
+                            "10",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "11",
+                            "\u03a7",
+                            "\u03a7",
+                            "\u03a7",
+                            "\u03a7",
+                            "",
+                            ""
+                        ],
+                        [
+                            "10",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.41,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "N\u2080 = S\u2081 S\u2080 + S\u2081 ~~I~~\n\nN\u2081 = S\u2081 ~~I + S\u2082 S\u2080 I + S\u2082 S\u2080 I~~\n\nN\u2082 = S\u2082 S\u2080 + S\u2082 ~~I~~ + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 5 of 12",
+                    "md": "N\u2080 = S\u2081 S\u2080 + S\u2081 ~~I~~\n\nN\u2081 = S\u2081 ~~I + S\u2082 S\u2080 I + S\u2082 S\u2080 I~~\n\nN\u2082 = S\u2082 S\u2080 + S\u2082 ~~I~~ + S\u2082 S\u2081 S\u2080 I\n\nSecond Session Exam\n\nPage 5 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 239.98,
+                        "w": 468.3,
+                        "h": 506.18
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 7,
+            "text": "Design of Digital Circuits                                         8th of February 2017\n 3. This question is about SRAMs.   Subquestions can be answered independently.  If you\n   have skipped the previous part, and think you need to make some assumptions, please\n   clearly state your assumptions.\n    (a) (2 points) For the design of a microprocessor you are given a pre-designed SRAM\n        with 16-bit wide data inputs (din) and outputs ( dout), fourteen address bits(addr),\n        as well as the write enable (we) signal that is set to 1 when data is written to mem-\n        ory. The Verilog secription of this module is given below:\n        module   sram (input [15:0] din,\n                        input [13:0] addr,\n                        input we,\n                        input clk,\n                        output   [15:0] dout);\n            // description of the module\n        endmodule\n        How many bytes can be stored in this memory (in Kilobytes)?\n          Solution:  Each address stores 16/8 = 2 bytes. There are 14 address bits, that\n          allow 2\u00b9\u2074 addresses, which equals to 2\u2074 \u00d7 2\u00b9\u2070 = 16 \u00d7 1024 = 16k addresses. In\n          total this makes 16k \u00d7 2bytes = 32kBytes.\n    (b) (2 points) Using the memory sram    described in 3.a we want to build a larger\n        memory called bigram, that will have the following interface.\n        module   bigram (input [31:0] din,\n                          input [14:0] addr,\n                          input we,\n                          input clk,\n                          output   [31:0] dout);\n            // description of the module\n        endmodule\n        How many instances of the sram module do you need to create to build bigram?\n        Why?\n          Solution: The bigram stores twice the number of bits, 32 instead of 16. So\n          we will need to use two sram instances. Then the bigram also uses one more\n          bit for the address, doubling the number of locations. So we will need to double\n          the number of sram instances once again, for a total of 4.\nSecond Session Exam                                                        Page 6 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 3. This question is about SRAMs.\n\nSubquestions can be answered independently. If you have skipped the previous part, and think you need to make some assumptions, please clearly state your assumptions.\n\n# (a) (2 points)\n\nFor the design of a microprocessor you are given a pre-designed SRAM with 16-bit wide data inputs (din) and outputs (dout), fourteen address bits (addr), as well as the write enable (we) signal that is set to 1 when data is written to memory. The Verilog description of this module is given below:\n\nmodule sram (input [15:0] din,\ninput [13:0] addr,\ninput we,\ninput clk,\noutput [15:0] dout);\n// description of the module\nendmodule\n\nHow many bytes can be stored in this memory (in Kilobytes)?\n\nSolution: Each address stores 16/8 = 2 bytes. There are 14 address bits, that allow 2\u00b9\u2074 addresses, which equals to 2\u2074 \u00d7 2\u00b9\u2070 = 16 \u00d7 1024 = 16k addresses. In total this makes 16k \u00d7 2bytes = 32kBytes.\n\n# (b) (2 points)\n\nUsing the memory sram described in 3.a we want to build a larger memory called bigram, that will have the following interface.\n\nmodule bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput [31:0] dout);\n// description of the module\nendmodule\n\nHow many instances of the sram module do you need to create to build bigram? Why?\n\nSolution: The bigram stores twice the number of bits, 32 instead of 16. So we will need to use two sram instances. Then the bigram also uses one more bit for the address, doubling the number of locations. So we will need to double the number of sram instances once again, for a total of 4.\n\nSecond Session Exam\n\nPage 6 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "3. This question is about SRAMs.",
+                    "md": "# 3. This question is about SRAMs.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 178.92,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Subquestions can be answered independently. If you have skipped the previous part, and think you need to make some assumptions, please clearly state your assumptions.",
+                    "md": "Subquestions can be answered independently. If you have skipped the previous part, and think you need to make some assumptions, please clearly state your assumptions.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 72.0,
+                        "w": 447.57,
+                        "h": 40.89
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points)",
+                    "md": "# (a) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the design of a microprocessor you are given a pre-designed SRAM with 16-bit wide data inputs (din) and outputs (dout), fourteen address bits (addr), as well as the write enable (we) signal that is set to 1 when data is written to memory. The Verilog description of this module is given below:\n\nmodule sram (input [15:0] din,\ninput [13:0] addr,\ninput we,\ninput clk,\noutput [15:0] dout);\n// description of the module\nendmodule\n\nHow many bytes can be stored in this memory (in Kilobytes)?\n\nSolution: Each address stores 16/8 = 2 bytes. There are 14 address bits, that allow 2\u00b9\u2074 addresses, which equals to 2\u2074 \u00d7 2\u00b9\u2070 = 16 \u00d7 1024 = 16k addresses. In total this makes 16k \u00d7 2bytes = 32kBytes.",
+                    "md": "For the design of a microprocessor you are given a pre-designed SRAM with 16-bit wide data inputs (din) and outputs (dout), fourteen address bits (addr), as well as the write enable (we) signal that is set to 1 when data is written to memory. The Verilog description of this module is given below:\n\nmodule sram (input [15:0] din,\ninput [13:0] addr,\ninput we,\ninput clk,\noutput [15:0] dout);\n// description of the module\nendmodule\n\nHow many bytes can be stored in this memory (in Kilobytes)?\n\nSolution: Each address stores 16/8 = 2 bytes. There are 14 address bits, that allow 2\u00b9\u2074 addresses, which equals to 2\u2074 \u00d7 2\u00b9\u2070 = 16 \u00d7 1024 = 16k addresses. In total this makes 16k \u00d7 2bytes = 32kBytes.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 134.76,
+                        "w": 431.76,
+                        "h": 401.04
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (2 points)",
+                    "md": "# (b) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Using the memory sram described in 3.a we want to build a larger memory called bigram, that will have the following interface.\n\nmodule bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput [31:0] dout);\n// description of the module\nendmodule\n\nHow many instances of the sram module do you need to create to build bigram? Why?\n\nSolution: The bigram stores twice the number of bits, 32 instead of 16. So we will need to use two sram instances. Then the bigram also uses one more bit for the address, doubling the number of locations. So we will need to double the number of sram instances once again, for a total of 4.\n\nSecond Session Exam\n\nPage 6 of 12",
+                    "md": "Using the memory sram described in 3.a we want to build a larger memory called bigram, that will have the following interface.\n\nmodule bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput [31:0] dout);\n// description of the module\nendmodule\n\nHow many instances of the sram module do you need to create to build bigram? Why?\n\nSolution: The bigram stores twice the number of bits, 32 instead of 16. So we will need to use two sram instances. Then the bigram also uses one more bit for the address, doubling the number of locations. So we will need to double the number of sram instances once again, for a total of 4.\n\nSecond Session Exam\n\nPage 6 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 184.55,
+                        "w": 468.47,
+                        "h": 561.61
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 8,
+            "text": "Design of Digital Circuits                                               8th of February 2017\n     (c) (10 points) Draw a block diagram of the bigram and show in detail how it can\n         be obtained by combining sufficient number of sram instances. To make your life\n         easier, consider what needs to be done for the data input, data output and write\n         enable separately.\n                 bigsram                                              up[15:0]             up[31:0]\n                                                                                       up[31:16]\n                                                            d0                    d0\n                                                    sram                  sram\n          addr\n                                                     addr  di  we  clk     addr  di  we  clk\n                                  14 bits = addr[13:0]\n           clk                              di[15:0]\n            di                             di[31:16]\n                                                     addr  di  we  clk     addr  di  we  clk\n                                                    sram                  sram\n                                                            d0                    d0\n           we                                                                         low[31:16]\n                                                                     low[15:0]             low[31:0]\n                                      1 bit = addr[14]\nSecond Session Exam                                                              Page 7 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n(c) (10 points) Draw a block diagram of the bigram and show in detail how it can be obtained by combining sufficient number of sram instances. To make your life easier, consider what needs to be done for the data input, data output and write enable separately.\n\n| bigsram               | up\\[15:0]  |            | up\\[31:0]  |     |   |   |   |   |\n| --------------------- | ---------- | ---------- | ---------- | --- | - | - | - | - |\n| up\\[31:16]            |            | d0         | d0         |     |   |   |   |   |\n| sram                  | addr       | di         | we         | clk |   |   |   |   |\n| 14 bits = addr\\[13:0] |            |            |            |     |   |   |   |   |\n| clk                   | di         | di\\[15:0]  | di\\[31:16] |     |   |   |   |   |\n| sram                  | addr       | di         | we         | clk |   |   |   |   |\n| low\\[31:16]           |            |            |            |     |   |   |   |   |\n| we                    | low\\[15:0] | low\\[31:0] |            |     |   |   |   |   |\n| 1 bit = addr\\[14]     |            |            |            |     |   |   |   |   |\n\nSecond Session Exam\n\nPage 7 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 405.95,
+                        "h": 308.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017\n\n(c) (10 points) Draw a block diagram of the bigram and show in detail how it can be obtained by combining sufficient number of sram instances. To make your life easier, consider what needs to be done for the data input, data output and write enable separately.",
+                    "md": "8th of February 2017\n\n(c) (10 points) Draw a block diagram of the bigram and show in detail how it can be obtained by combining sufficient number of sram instances. To make your life easier, consider what needs to be done for the data input, data output and write enable separately.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 97.36,
+                        "y": 40.37,
+                        "w": 443.06,
+                        "h": 326.52
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| bigsram               | up\\[15:0]  |            | up\\[31:0]  |     |   |   |   |   |\n| --------------------- | ---------- | ---------- | ---------- | --- | - | - | - | - |\n| up\\[31:16]            |            | d0         | d0         |     |   |   |   |   |\n| sram                  | addr       | di         | we         | clk |   |   |   |   |\n| 14 bits = addr\\[13:0] |            |            |            |     |   |   |   |   |\n| clk                   | di         | di\\[15:0]  | di\\[31:16] |     |   |   |   |   |\n| sram                  | addr       | di         | we         | clk |   |   |   |   |\n| low\\[31:16]           |            |            |            |     |   |   |   |   |\n| we                    | low\\[15:0] | low\\[31:0] |            |     |   |   |   |   |\n| 1 bit = addr\\[14]     |            |            |            |     |   |   |   |   |",
+                    "rows": [
+                        [
+                            "bigsram",
+                            "up[15:0]",
+                            "",
+                            "up[31:0]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "up[31:16]",
+                            "",
+                            "d0",
+                            "d0",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "sram",
+                            "addr",
+                            "di",
+                            "we",
+                            "clk",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "14 bits = addr[13:0]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "clk",
+                            "di",
+                            "di[15:0]",
+                            "di[31:16]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "sram",
+                            "addr",
+                            "di",
+                            "we",
+                            "clk",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "low[31:16]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "we",
+                            "low[15:0]",
+                            "low[31:0]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "1 bit = addr[14]",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 489.29,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Second Session Exam\n\nPage 7 of 12",
+                    "md": "Second Session Exam\n\nPage 7 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 468.3,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 9,
+            "text": "Design of Digital Circuits                              8th of February 2017\n    (d) (10 points) Write the Verilog code that assembles bigram from sufficient number\n       of instances of sram\n       module bigram (input [31:0] din,\n                      input [14:0] addr,\n                      input we,\n                      input clk,\n                      output  [31:0] dout);\n       // declare signals if  necessary\n         wire [31:0]  up, low;\n         wire         we_up,  we_low;\n       // instantiate sram instances\n         sram up0  (.din(din[15:0]),  .dout( up[15:0]),\n                    .addr(addr[13:0]), .we(we_up),  .clk(clk) );\n         sram up1  (.din(din[31:16]), .dout( up[31:16]),\n                    .addr(addr[13:0]), .we(we_up),  .clk(clk) );\n         sram low0 (.din(din[15:0]),  .dout(low[15:0]),\n                    .addr(addr[13:0]), .we(we_low), .clk(clk) );\n         sram low1 (.din(din[31:16]), .dout(low[31:16]),\n                    .addr(addr[13:0]), .we(we_low), .clk(clk) );\n       // write enable\n         assign  we_up = addr[14] ? we : 0;\n         assign  we_low = addr[14] ? 0 : we;\n       // select output\n         assign  dout = addr[14] ? up : low;\n       endmodule\nSecond Session Exam                                           Page 8 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# (d) (10 points) Write the Verilog code that assembles bigram from sufficient number of instances of sram\n\nmodule bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput  [31:0] dout);\n// declare signals if necessary\nwire [31:0]  up, low;\nwire         we_up,  we_low;\n// instantiate sram instances\nsram up0  (.din(din[15:0]),  .dout( up[15:0]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram up1  (.din(din[31:16]), .dout( up[31:16]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram low0 (.din(din[15:0]),  .dout(low[15:0]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\nsram low1 (.din(din[31:16]), .dout(low[31:16]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\n// write enable\nassign  we_up = addr[14] ? we : 0;\nassign  we_low = addr[14] ? 0 : we;\n// select output\nassign  dout = addr[14] ? up : low;\nendmodule\n\n# Second Session Exam\n\nPage 8 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) (10 points) Write the Verilog code that assembles bigram from sufficient number of instances of sram",
+                    "md": "# (d) (10 points) Write the Verilog code that assembles bigram from sufficient number of instances of sram",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 72.0,
+                        "w": 444.28,
+                        "h": 26.45
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "module bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput  [31:0] dout);\n// declare signals if necessary\nwire [31:0]  up, low;\nwire         we_up,  we_low;\n// instantiate sram instances\nsram up0  (.din(din[15:0]),  .dout( up[15:0]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram up1  (.din(din[31:16]), .dout( up[31:16]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram low0 (.din(din[15:0]),  .dout(low[15:0]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\nsram low1 (.din(din[31:16]), .dout(low[31:16]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\n// write enable\nassign  we_up = addr[14] ? we : 0;\nassign  we_low = addr[14] ? 0 : we;\n// select output\nassign  dout = addr[14] ? up : low;\nendmodule",
+                    "md": "module bigram (input [31:0] din,\ninput [14:0] addr,\ninput we,\ninput clk,\noutput  [31:0] dout);\n// declare signals if necessary\nwire [31:0]  up, low;\nwire         we_up,  we_low;\n// instantiate sram instances\nsram up0  (.din(din[15:0]),  .dout( up[15:0]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram up1  (.din(din[31:16]), .dout( up[31:16]),\n.addr(addr[13:0]), .we(we_up),  .clk(clk) );\nsram low0 (.din(din[15:0]),  .dout(low[15:0]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\nsram low1 (.din(din[31:16]), .dout(low[31:16]),\n.addr(addr[13:0]), .we(we_low), .clk(clk) );\n// write enable\nassign  we_up = addr[14] ? we : 0;\nassign  we_low = addr[14] ? 0 : we;\n// select output\nassign  dout = addr[14] ? up : low;\nendmodule",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 107.34,
+                        "w": 373.0,
+                        "h": 376.83
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 8 of 12",
+                    "md": "Page 8 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 476.77,
+                        "y": 734.16,
+                        "w": 63.53,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 10,
+            "text": "Design of Digital Circuits                              8th of February 2017\n 4. In this section, you will be given a task and two code snippets in MIPS assembly lan-\n   guage. You will have to decide which of the code snippets can be used for the task.\n   For all the questions assume the following initial values:\n   Registers:                           Memory:\n    Register  Value                      Address        Value\n    $s0       0x0000 00FF                0x0000 00000   0x0000 FF00\n    $s1       0x0000 0004                0x0000 00004   0x0000 00FF\n    $s2       0x0000 0008                0x0000 00008   0xFFFF FFF7\n    $s3       0x0000 000C                0x0000 0000C   0x1234 5678\n    (a) (2 points) Set the content of the register $t1 to 0x0000 1234:\n                    (A)                                 (B)\n          lw  $t1, 0xC($0)                    xor $t1, $t1, $t1\n          srl $t1, $t1, 4                     addi $t1, $0, 0x1234\n       \u21e4 none       \u21e4 A          \u2305 B           \u21e4  Both A and B\n       A is wrong since it is shifting the value by 4 bits. It should shift the value by 16 bits\n       instead.\n    (b) (2 points) Starting from the address 0x0000 4000 write all zeroes to 1024 con-\n       secutive memory locations (until 0x0000 5000):\n                    (A)                                 (B)\n             addi  $s0, $s0, 0x1000              addi  $s0, $s0, 0x4000\n       LOOP: sw    $0, 0x4000($s0)               addi  $s1, $s0, 0x1000\n             addi  $s0, $s0, -1                  addi  $s2, $0, 1\n             bne   $s0, $0, LOOP           LOOP: sw    $0, $s1\n                                                 sub   $s1, $s1, $s2\n                                                 bne   $s0, $s1, LOOP\n       \u21e4 none       \u21e4 A          \u21e4 B          \u2305 Both A and B\nSecond Session Exam                                           Page 9 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 4.\n\nIn this section, you will be given a task and two code snippets in MIPS assembly language. You will have to decide which of the code snippets can be used for the task. For all the questions assume the following initial values:\n\n# Registers:\n\n| Register | Value       |\n| -------- | ----------- |\n| $s0      | 0x0000 00FF |\n| $s1      | 0x0000 0004 |\n| $s2      | 0x0000 0008 |\n| $s3      | 0x0000 000C |\n\n# Memory:\n\n| Address      | Value       |\n| ------------ | ----------- |\n| 0x0000 00000 | 0x0000 FF00 |\n| 0x0000 00004 | 0x0000 00FF |\n| 0x0000 00008 | 0xFFFF FFF7 |\n| 0x0000 0000C | 0x1234 5678 |\n\n# (a) (2 points)\n\nSet the content of the register $t1 to 0x0000 1234:\n\n| (A)             | (B)                  |\n| --------------- | -------------------- |\n| lw $t1, 0xC($0) | xor $t1, $t1, $t1    |\n| srl $t1, $t1, 4 | addi $t1, $0, 0x1234 |\n\n\u21e4 none       \u21e4 A          \u2305 B           \u21e4  Both A and B\n\nA is wrong since it is shifting the value by 4 bits. It should shift the value by 16 bits instead.\n\n# (b) (2 points)\n\nStarting from the address 0x0000 4000 write all zeroes to 1024 consecutive memory locations (until 0x0000 5000):\n\n| (A)                      | (B)                   |\n| ------------------------ | --------------------- |\n| addi $s0, $s0, 0x1000    | addi $s0, $s0, 0x4000 |\n| LOOP: sw $0, 0x4000($s0) | addi $s1, $s0, 0x1000 |\n| addi $s0, $s0, -1        | addi $s2, $0, 1       |\n| bne $s0, $0, LOOP        | LOOP: sw $0, $s1      |\n|                          | sub $s1, $s1, $s2     |\n|                          | bne $s0, $s1, LOOP    |\n\n\u21e4 none       \u21e4 A          \u21e4 B          \u2305 Both A and B\n\nSecond Session Exam                                           Page 9 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 458.02
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "4.",
+                    "md": "# 4.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this section, you will be given a task and two code snippets in MIPS assembly language. You will have to decide which of the code snippets can be used for the task. For all the questions assume the following initial values:",
+                    "md": "In this section, you will be given a task and two code snippets in MIPS assembly language. You will have to decide which of the code snippets can be used for the task. For all the questions assume the following initial values:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 426.98,
+                        "h": 70.67
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Registers:",
+                    "md": "# Registers:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 127.41,
+                        "w": 58.0,
+                        "h": 29.71
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Register | Value       |\n| -------- | ----------- |\n| $s0      | 0x0000 00FF |\n| $s1      | 0x0000 0004 |\n| $s2      | 0x0000 0008 |\n| $s3      | 0x0000 000C |",
+                    "rows": [
+                        [
+                            "Register",
+                            "Value"
+                        ],
+                        [
+                            "$s0",
+                            "0x0000 00FF"
+                        ],
+                        [
+                            "$s1",
+                            "0x0000 0004"
+                        ],
+                        [
+                            "$s2",
+                            "0x0000 0008"
+                        ],
+                        [
+                            "$s3",
+                            "0x0000 000C"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 100.89,
+                        "w": 447.42,
+                        "h": 438.15
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Memory:",
+                    "md": "# Memory:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 329.4,
+                        "y": 127.41,
+                        "w": 53.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Address      | Value       |\n| ------------ | ----------- |\n| 0x0000 00000 | 0x0000 FF00 |\n| 0x0000 00004 | 0x0000 00FF |\n| 0x0000 00008 | 0xFFFF FFF7 |\n| 0x0000 0000C | 0x1234 5678 |",
+                    "rows": [
+                        [
+                            "Address",
+                            "Value"
+                        ],
+                        [
+                            "0x0000 00000",
+                            "0x0000 FF00"
+                        ],
+                        [
+                            "0x0000 00004",
+                            "0x0000 00FF"
+                        ],
+                        [
+                            "0x0000 00008",
+                            "0xFFFF FFF7"
+                        ],
+                        [
+                            "0x0000 0000C",
+                            "0x1234 5678"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 100.89,
+                        "w": 447.42,
+                        "h": 319.13
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points)",
+                    "md": "# (a) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 200.68,
+                        "y": 284.3,
+                        "w": 21.0,
+                        "h": 166.71
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Set the content of the register $t1 to 0x0000 1234:",
+                    "md": "Set the content of the register $t1 to 0x0000 1234:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 98.79,
+                        "y": 145.12,
+                        "w": 398.47,
+                        "h": 353.27
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (A)             | (B)                  |\n| --------------- | -------------------- |\n| lw $t1, 0xC($0) | xor $t1, $t1, $t1    |\n| srl $t1, $t1, 4 | addi $t1, $0, 0x1234 |",
+                    "rows": [
+                        [
+                            "(A)",
+                            "(B)"
+                        ],
+                        [
+                            "lw $t1, 0xC($0)",
+                            "xor $t1, $t1, $t1"
+                        ],
+                        [
+                            "srl $t1, $t1, 4",
+                            "addi $t1, $0, 0x1234"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 269.47,
+                        "w": 443.49,
+                        "h": 181.54
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u21e4 none       \u21e4 A          \u2305 B           \u21e4  Both A and B\n\nA is wrong since it is shifting the value by 4 bits. It should shift the value by 16 bits instead.",
+                    "md": "\u21e4 none       \u21e4 A          \u2305 B           \u21e4  Both A and B\n\nA is wrong since it is shifting the value by 4 bits. It should shift the value by 16 bits instead.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 145.12,
+                        "w": 422.71,
+                        "h": 419.04
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (2 points)",
+                    "md": "# (b) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 436.26,
+                        "y": 284.3,
+                        "w": 20.0,
+                        "h": 166.71
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Starting from the address 0x0000 4000 write all zeroes to 1024 consecutive memory locations (until 0x0000 5000):",
+                    "md": "Starting from the address 0x0000 4000 write all zeroes to 1024 consecutive memory locations (until 0x0000 5000):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 145.12,
+                        "w": 379.74,
+                        "h": 353.27
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (A)                      | (B)                   |\n| ------------------------ | --------------------- |\n| addi $s0, $s0, 0x1000    | addi $s0, $s0, 0x4000 |\n| LOOP: sw $0, 0x4000($s0) | addi $s1, $s0, 0x1000 |\n| addi $s0, $s0, -1        | addi $s2, $0, 1       |\n| bne $s0, $0, LOOP        | LOOP: sw $0, $s1      |\n|                          | sub $s1, $s1, $s2     |\n|                          | bne $s0, $s1, LOOP    |",
+                    "rows": [
+                        [
+                            "(A)",
+                            "(B)"
+                        ],
+                        [
+                            "addi $s0, $s0, 0x1000",
+                            "addi $s0, $s0, 0x4000"
+                        ],
+                        [
+                            "LOOP: sw $0, 0x4000($s0)",
+                            "addi $s1, $s0, 0x1000"
+                        ],
+                        [
+                            "addi $s0, $s0, -1",
+                            "addi $s2, $0, 1"
+                        ],
+                        [
+                            "bne $s0, $0, LOOP",
+                            "LOOP: sw $0, $s1"
+                        ],
+                        [
+                            "",
+                            "sub $s1, $s1, $s2"
+                        ],
+                        [
+                            "",
+                            "bne $s0, $s1, LOOP"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.49,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u21e4 none       \u21e4 A          \u21e4 B          \u2305 Both A and B\n\nSecond Session Exam                                           Page 9 of 12",
+                    "md": "\u21e4 none       \u21e4 A          \u21e4 B          \u2305 Both A and B\n\nSecond Session Exam                                           Page 9 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 345.25,
+                        "w": 468.3,
+                        "h": 400.9
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 11,
+            "text": "Design of Digital Circuits                                    8th of February 2017\n     (c) (2 points) Add all the numbers from 0 to 255:\n                      (A)                                     (B)\n               lw     $s1, $s0                         addi  $s1, $0, 255\n               xor    $s0, $s0,  $s0                   lw    $s0, $0\n        LOOP: add     $s0, $s0,  $s1            LOOP: addi   $s0, $0, $s1\n               addi   $s1, $s1,  -1                    addi  $s1, $s1, -1\n               bne    $s1, $0, LOOP                    beq   $s1, $0, DONE\n                                                       j     LOOP\n                                                DONE:\n        \u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n        A is wrong since the lw command loads the memory pointed by the register s0, not\n        the value stored in s0. B is wrong since addi takes an immediate number as the\n        third argument, not a register.\n    (d) (2 points) Jump to subroutine STOP if only the 4th bit from the right (representing\n        2\u00b3) of the byte written at address 0x0000 0020 is 1 while other bits are all 0.\n        Otherwise continue with the program at CONT:\n                      (A)                                     (B)\n               lw    $s0, 0x20($0)                     addi  $s0, $0, 0x20\n               srl   $s0, $s0, 3                       lw    $s1, $s0\n               addi  $s1, $0, 1                        lw    $s2, 0x8($0)\n               beq   $s0, $s1, CONT                    and   $s3, $s1, $s2\n               j     STOP                              beq   $s3, $0, CONT\n        CONT: ...                                      jal   STOP\n        STOP: ...                               CONT: ...\n                                                STOP: ...\n        \u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n        A looks ok, but it would also work if other bits (higher than 4) are one as well, the\n        jump is not to a subroutine, and the condition is inverse. B would be okay if it were\n        bne instead of beq.\n     (e) (2 points) Save the two registers $s0 and $s1 to the stack:\n                      (A)                                     (B)\n               sw     $sp, $s0                     addi  $sp, $sp, -8\n               addi   $sp, $sp,  -4                sw    $s0, 8($sp)\n               sw     $sp, $s1                     sw    $s1, 4($sp)\n        \u21e4  none        \u21e4 A           \u2305 B            \u21e4  Both A and B\n        A is incorrect since the stack pointer itself is overwritten instead of the actual mem-\n        ory pointed by the stack pointer.\nSecond Session Exam                                                 Page 10 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# (c) (2 points) Add all the numbers from 0 to 255:\n\n| (A)                     | (B)                     |\n| ----------------------- | ----------------------- |\n| lw $s1, $s0             | addi $s1, $0, 255       |\n| xor $s0, $s0, $s0       | lw $s0, $0              |\n| LOOP: add $s0, $s0, $s1 | LOOP: addi $s0, $0, $s1 |\n| addi $s1, $s1, -1       | addi $s1, $s1, -1       |\n| bne $s1, $0, LOOP       | beq $s1, $0, DONE       |\n|                         | j LOOP                  |\n| DONE:                   |                         |\n\n\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA is wrong since the lw command loads the memory pointed by the register s0, not the value stored in s0. B is wrong since addi takes an immediate number as the third argument, not a register.\n\n# (d) (2 points) Jump to subroutine STOP if only the 4th bit from the right (representing 2\u00b3) of the byte written at address 0x0000 0020 is 1 while other bits are all 0. Otherwise continue with the program at CONT:\n\n| (A)                | (B)                |\n| ------------------ | ------------------ |\n| lw $s0, 0x20($0)   | addi $s0, $0, 0x20 |\n| srl $s0, $s0, 3    | lw $s1, $s0        |\n| addi $s1, $0, 1    | lw $s2, 0x8($0)    |\n| beq $s0, $s1, CONT | and $s3, $s1, $s2  |\n| j STOP             | beq $s3, $0, CONT  |\n| CONT: ...          | jal STOP           |\n| STOP: ...          | CONT: ...          |\n|                    | STOP: ...          |\n\n\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA looks ok, but it would also work if other bits (higher than 4) are one as well, the jump is not to a subroutine, and the condition is inverse. B would be okay if it were bne instead of beq.\n\n# (e) (2 points) Save the two registers $s0 and $s1 to the stack:\n\n| (A)               | (B)               |\n| ----------------- | ----------------- |\n| sw $sp, $s0       | addi $sp, $sp, -8 |\n| addi $sp, $sp, -4 | sw $s0, 8($sp)    |\n| sw $sp, $s1       | sw $s1, 4($sp)    |\n\n\u21e4  none        \u21e4 A           \u2305 B            \u21e4  Both A and B\n\nA is incorrect since the stack pointer itself is overwritten instead of the actual memory pointed by the stack pointer.\n\n# Second Session Exam\n\nPage 10 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) (2 points) Add all the numbers from 0 to 255:",
+                    "md": "# (c) (2 points) Add all the numbers from 0 to 255:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 97.36,
+                        "y": 72.0,
+                        "w": 257.75,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (A)                     | (B)                     |\n| ----------------------- | ----------------------- |\n| lw $s1, $s0             | addi $s1, $0, 255       |\n| xor $s0, $s0, $s0       | lw $s0, $0              |\n| LOOP: add $s0, $s0, $s1 | LOOP: addi $s0, $0, $s1 |\n| addi $s1, $s1, -1       | addi $s1, $s1, -1       |\n| bne $s1, $0, LOOP       | beq $s1, $0, DONE       |\n|                         | j LOOP                  |\n| DONE:                   |                         |",
+                    "rows": [
+                        [
+                            "(A)",
+                            "(B)"
+                        ],
+                        [
+                            "lw $s1, $s0",
+                            "addi $s1, $0, 255"
+                        ],
+                        [
+                            "xor $s0, $s0, $s0",
+                            "lw $s0, $0"
+                        ],
+                        [
+                            "LOOP: add $s0, $s0, $s1",
+                            "LOOP: addi $s0, $0, $s1"
+                        ],
+                        [
+                            "addi $s1, $s1, -1",
+                            "addi $s1, $s1, -1"
+                        ],
+                        [
+                            "bne $s1, $0, LOOP",
+                            "beq $s1, $0, DONE"
+                        ],
+                        [
+                            "",
+                            "j LOOP"
+                        ],
+                        [
+                            "DONE:",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA is wrong since the lw command loads the memory pointed by the register s0, not the value stored in s0. B is wrong since addi takes an immediate number as the third argument, not a register.",
+                    "md": "\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA is wrong since the lw command loads the memory pointed by the register s0, not the value stored in s0. B is wrong since addi takes an immediate number as the third argument, not a register.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 109.83,
+                        "w": 422.24,
+                        "h": 546.54
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) (2 points) Jump to subroutine STOP if only the 4th bit from the right (representing 2\u00b3) of the byte written at address 0x0000 0020 is 1 while other bits are all 0. Otherwise continue with the program at CONT:",
+                    "md": "# (d) (2 points) Jump to subroutine STOP if only the 4th bit from the right (representing 2\u00b3) of the byte written at address 0x0000 0020 is 1 while other bits are all 0. Otherwise continue with the program at CONT:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 177.57,
+                        "w": 444.23,
+                        "h": 260.33
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (A)                | (B)                |\n| ------------------ | ------------------ |\n| lw $s0, 0x20($0)   | addi $s0, $0, 0x20 |\n| srl $s0, $s0, 3    | lw $s1, $s0        |\n| addi $s1, $0, 1    | lw $s2, 0x8($0)    |\n| beq $s0, $s1, CONT | and $s3, $s1, $s2  |\n| j STOP             | beq $s3, $0, CONT  |\n| CONT: ...          | jal STOP           |\n| STOP: ...          | CONT: ...          |\n|                    | STOP: ...          |",
+                    "rows": [
+                        [
+                            "(A)",
+                            "(B)"
+                        ],
+                        [
+                            "lw $s0, 0x20($0)",
+                            "addi $s0, $0, 0x20"
+                        ],
+                        [
+                            "srl $s0, $s0, 3",
+                            "lw $s1, $s0"
+                        ],
+                        [
+                            "addi $s1, $0, 1",
+                            "lw $s2, 0x8($0)"
+                        ],
+                        [
+                            "beq $s0, $s1, CONT",
+                            "and $s3, $s1, $s2"
+                        ],
+                        [
+                            "j STOP",
+                            "beq $s3, $0, CONT"
+                        ],
+                        [
+                            "CONT: ...",
+                            "jal STOP"
+                        ],
+                        [
+                            "STOP: ...",
+                            "CONT: ..."
+                        ],
+                        [
+                            "",
+                            "STOP: ..."
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA looks ok, but it would also work if other bits (higher than 4) are one as well, the jump is not to a subroutine, and the condition is inverse. B would be okay if it were bne instead of beq.",
+                    "md": "\u2305  none         \u21e4 A           \u21e4 B           \u21e4  Both A and B\n\nA looks ok, but it would also work if other bits (higher than 4) are one as well, the jump is not to a subroutine, and the condition is inverse. B would be okay if it were bne instead of beq.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 164.02,
+                        "w": 422.62,
+                        "h": 492.34
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(e) (2 points) Save the two registers $s0 and $s1 to the stack:",
+                    "md": "# (e) (2 points) Save the two registers $s0 and $s1 to the stack:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 97.36,
+                        "y": 123.38,
+                        "w": 328.73,
+                        "h": 443.94
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (A)               | (B)               |\n| ----------------- | ----------------- |\n| sw $sp, $s0       | addi $sp, $sp, -8 |\n| addi $sp, $sp, -4 | sw $s0, 8($sp)    |\n| sw $sp, $s1       | sw $s1, 4($sp)    |",
+                    "rows": [
+                        [
+                            "(A)",
+                            "(B)"
+                        ],
+                        [
+                            "sw $sp, $s0",
+                            "addi $sp, $sp, -8"
+                        ],
+                        [
+                            "addi $sp, $sp, -4",
+                            "sw $s0, 8($sp)"
+                        ],
+                        [
+                            "sw $sp, $s1",
+                            "sw $s1, 4($sp)"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 200.68,
+                        "y": 86.55,
+                        "w": 255.57,
+                        "h": 497.32
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u21e4  none        \u21e4 A           \u2305 B            \u21e4  Both A and B\n\nA is incorrect since the stack pointer itself is overwritten instead of the actual memory pointed by the stack pointer.",
+                    "md": "\u21e4  none        \u21e4 A           \u2305 B            \u21e4  Both A and B\n\nA is incorrect since the stack pointer itself is overwritten instead of the actual memory pointed by the stack pointer.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 215.23,
+                        "w": 348.95,
+                        "h": 470.03
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 10 of 12",
+                    "md": "Page 10 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 470.93,
+                        "y": 734.16,
+                        "w": 69.37,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 12,
+            "text": "Design of Digital Circuits                                             8th of February 2017\n 5.  (a) (3 points) Briefly explain two advantages of a multi-cycle architecture when com-\n         pared to a single-cycle architecture.\n           Solution:\n               \u2022  In a single-cycle architecture, all instructions are given 1-cycle to execute,\n                  therefore the slowest instruction determines the speed of the processor.\n               \u2022  In a multi-cycle processor, instructions are broken down into smaller pieces,\n                  decreasing the cycle time. Simpler instructions can be executed faster, re-\n                  ducing the average cycle time.\n               \u2022  A single cycle processor, needs multiple instances of memories, and adders\n                  which may be quite large.   A multi-cycle processor can share these re-\n                  sources, using only a single memory and ALU. This reduces the area\n     (b) (5 points) For each of the following statements about microarchitectures, write if\n         their TRUE or FALSE. If they are FALSE, explain why.\n           \u2022  In a pipelined architecture, a given instruction is executed faster than in a\n              single-cycle architecture.\n                Solution: FALSE, a given instruction runs even slightly slower, due to the\n                overhead, but the throughput increases\n           \u2022  Control and Data Hazards can not occur in single or multi-cycle architectures.\n                Solution: TRUE, they only occur when instructions are executed at the\n                same time in parallel, like in pipelined architectures.\n           \u2022 The higher the Cycles per Instruction (CPI) of a micro-architecture, the faster\n              it will finish its operation.\n                Solution: FALSE, all other things being equal, a high CPI will lower the\n                execution speed.\n           \u2022 A single-cycle architecture has less control overhead than a multi-cycle archi-\n              tecture\n                Solution: TRUE, a multi-cycle architecture has more resources to be shared,\n                and there is overhead for the sequential processing.\nSecond Session Exam                                                            Page 11 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 5.\n\n# (a) (3 points) Briefly explain two advantages of a multi-cycle architecture when compared to a single-cycle architecture.\n\nSolution:\n\n- In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.\n- In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time.\n- A single cycle processor needs multiple instances of memories and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.\n\n# (b) (5 points) For each of the following statements about microarchitectures, write if their TRUE or FALSE. If they are FALSE, explain why.\n\n- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture.\nSolution: FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases.\n- Control and Data Hazards can not occur in single or multi-cycle architectures.\nSolution: TRUE, they only occur when instructions are executed at the same time in parallel, like in pipelined architectures.\n- The higher the Cycles per Instruction (CPI) of a micro-architecture, the faster it will finish its operation.\nSolution: FALSE, all other things being equal, a high CPI will lower the execution speed.\n- A single-cycle architecture has less control overhead than a multi-cycle architecture.\nSolution: TRUE, a multi-cycle architecture has more resources to be shared, and there is overhead for the sequential processing.\n\nSecond Session Exam\n\nPage 11 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.",
+                    "md": "# 5.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (3 points) Briefly explain two advantages of a multi-cycle architecture when compared to a single-cycle architecture.",
+                    "md": "# (a) (3 points) Briefly explain two advantages of a multi-cycle architecture when compared to a single-cycle architecture.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 182.07,
+                        "h": 526.23
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Solution:\n\n- In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.\n- In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time.\n- A single cycle processor needs multiple instances of memories and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.",
+                    "md": "Solution:\n\n- In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.\n- In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time.\n- A single cycle processor needs multiple instances of memories and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 115.02,
+                        "w": 404.84,
+                        "h": 497.65
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (5 points) For each of the following statements about microarchitectures, write if their TRUE or FALSE. If they are FALSE, explain why.",
+                    "md": "# (b) (5 points) For each of the following statements about microarchitectures, write if their TRUE or FALSE. If they are FALSE, explain why.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 294.08,
+                        "w": 444.12,
+                        "h": 318.59
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture.\nSolution: FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases.\n- Control and Data Hazards can not occur in single or multi-cycle architectures.\nSolution: TRUE, they only occur when instructions are executed at the same time in parallel, like in pipelined architectures.\n- The higher the Cycles per Instruction (CPI) of a micro-architecture, the faster it will finish its operation.\nSolution: FALSE, all other things being equal, a high CPI will lower the execution speed.\n- A single-cycle architecture has less control overhead than a multi-cycle architecture.\nSolution: TRUE, a multi-cycle architecture has more resources to be shared, and there is overhead for the sequential processing.\n\nSecond Session Exam\n\nPage 11 of 12",
+                    "md": "- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture.\nSolution: FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases.\n- Control and Data Hazards can not occur in single or multi-cycle architectures.\nSolution: TRUE, they only occur when instructions are executed at the same time in parallel, like in pipelined architectures.\n- The higher the Cycles per Instruction (CPI) of a micro-architecture, the faster it will finish its operation.\nSolution: FALSE, all other things being equal, a high CPI will lower the execution speed.\n- A single-cycle architecture has less control overhead than a multi-cycle architecture.\nSolution: TRUE, a multi-cycle architecture has more resources to be shared, and there is overhead for the sequential processing.\n\nSecond Session Exam\n\nPage 11 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 115.02,
+                        "w": 468.34,
+                        "h": 631.14
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 13,
+            "text": "Design of Digital Circuits                                               8th of February 2017\n  6. (a) (5 points) Consider a 2-way set associative cache (N) with a memory word size of\n         4 bytes, and a block size of 64 words (b). What is the capacity (C) of this cache in\n         bytes, if you want to have 128 sets (S) in the cache?\n           Solution:   A cache of Capacity C contains B = C/b blocks where b is the block\n           size. In our example b is 64 x 4bytes = 256 Bytes. An N-way set associative\n           cache has S= B/N sets. In our case for S=128, and N=2, we need 256 blocks.\n           So the capacity is 256 x 256 Bytes = 64 kBytes.\n     (b) (7 points) Explain what the function of the tag  is in a cache. How many bits would\n         a cache for a 32-bit word addressed MIPS architecture need to store the tags for\n         the cache configuration described in part a)\n           Solution:   The cache only stores a small part of the memory. Only one part of\n           the address is used to address the data in the cache. Since many addresses can\n           map to the same location, the rest of the address has to be stored with the data\n           everytime a cache block is updated. This part of the address is called tag and\n           is stored alongside the data in the cache.\n           A 32-bit MIPS processor uses 32 bits for addressing, and due to the word ad-\n           dressing the last of these address bits are always zero, leaving 30 effective address\n           bits. There are 64 words in a block of our cache, so 6 bits (2\u2076 = 64) will be\n           needed to select the words in a block. There are 128 sets in our cache, so 7 bits\n           (2\u2077 = 128) of the address will be used to select the set. This leaves 17 bits (32\n           -2 -6 -7) for the tag in each way. There are two ways and 128 sets so 256 x 17\n           == 4352 bits will be needed to store the tags for this cache.\nSecond Session Exam                                                             Page 12 of 12",
+            "md": "# Design of Digital Circuits\n\n8th of February 2017\n\n# 6. (a) (5 points)\n\nConsider a 2-way set associative cache (N) with a memory word size of 4 bytes, and a block size of 64 words (b). What is the capacity (C) of this cache in bytes, if you want to have 128 sets (S) in the cache?\n\nSolution: A cache of Capacity C contains B = C/b blocks where b is the block size. In our example b is 64 x 4 bytes = 256 Bytes. An N-way set associative cache has S= B/N sets. In our case for S=128, and N=2, we need 256 blocks. So the capacity is 256 x 256 Bytes = 64 kBytes.\n\n# (b) (7 points)\n\nExplain what the function of the tag is in a cache. How many bits would a cache for a 32-bit word addressed MIPS architecture need to store the tags for the cache configuration described in part a)\n\nSolution: The cache only stores a small part of the memory. Only one part of the address is used to address the data in the cache. Since many addresses can map to the same location, the rest of the address has to be stored with the data every time a cache block is updated. This part of the address is called tag and is stored alongside the data in the cache.\n\nA 32-bit MIPS processor uses 32 bits for addressing, and due to the word addressing the last of these address bits are always zero, leaving 30 effective address bits. There are 64 words in a block of our cache, so 6 bits (26 = 64) will be needed to select the words in a block. There are 128 sets in our cache, so 7 bits (27 = 128) of the address will be used to select the set. This leaves 17 bits (32 - 2 - 6 - 7) for the tag in each way. There are two ways and 128 sets so 256 x 17 = 4352 bits will be needed to store the tags for this cache.\n\nSecond Session Exam\n\nPage 12 of 12",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "8th of February 2017",
+                    "md": "8th of February 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 432.55,
+                        "y": 40.37,
+                        "w": 107.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "6. (a) (5 points)",
+                    "md": "# 6. (a) (5 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Consider a 2-way set associative cache (N) with a memory word size of 4 bytes, and a block size of 64 words (b). What is the capacity (C) of this cache in bytes, if you want to have 128 sets (S) in the cache?\n\nSolution: A cache of Capacity C contains B = C/b blocks where b is the block size. In our example b is 64 x 4 bytes = 256 Bytes. An N-way set associative cache has S= B/N sets. In our case for S=128, and N=2, we need 256 blocks. So the capacity is 256 x 256 Bytes = 64 kBytes.",
+                    "md": "Consider a 2-way set associative cache (N) with a memory word size of 4 bytes, and a block size of 64 words (b). What is the capacity (C) of this cache in bytes, if you want to have 128 sets (S) in the cache?\n\nSolution: A cache of Capacity C contains B = C/b blocks where b is the block size. In our example b is 64 x 4 bytes = 256 Bytes. An N-way set associative cache has S= B/N sets. In our case for S=128, and N=2, we need 256 blocks. So the capacity is 256 x 256 Bytes = 64 kBytes.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 422.73,
+                        "h": 187.65
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (7 points)",
+                    "md": "# (b) (7 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Explain what the function of the tag is in a cache. How many bits would a cache for a 32-bit word addressed MIPS architecture need to store the tags for the cache configuration described in part a)\n\nSolution: The cache only stores a small part of the memory. Only one part of the address is used to address the data in the cache. Since many addresses can map to the same location, the rest of the address has to be stored with the data every time a cache block is updated. This part of the address is called tag and is stored alongside the data in the cache.\n\nA 32-bit MIPS processor uses 32 bits for addressing, and due to the word addressing the last of these address bits are always zero, leaving 30 effective address bits. There are 64 words in a block of our cache, so 6 bits (26 = 64) will be needed to select the words in a block. There are 128 sets in our cache, so 7 bits (27 = 128) of the address will be used to select the set. This leaves 17 bits (32 - 2 - 6 - 7) for the tag in each way. There are two ways and 128 sets so 256 x 17 = 4352 bits will be needed to store the tags for this cache.\n\nSecond Session Exam\n\nPage 12 of 12",
+                    "md": "Explain what the function of the tag is in a cache. How many bits would a cache for a 32-bit word addressed MIPS architecture need to store the tags for the cache configuration described in part a)\n\nSolution: The cache only stores a small part of the memory. Only one part of the address is used to address the data in the cache. Since many addresses can map to the same location, the rest of the address has to be stored with the data every time a cache block is updated. This part of the address is called tag and is stored alongside the data in the cache.\n\nA 32-bit MIPS processor uses 32 bits for addressing, and due to the word addressing the last of these address bits are always zero, leaving 30 effective address bits. There are 64 words in a block of our cache, so 6 bits (26 = 64) will be needed to select the words in a block. There are 128 sets in our cache, so 7 bits (27 = 128) of the address will be used to select the set. This leaves 17 bits (32 - 2 - 6 - 7) for the tag in each way. There are two ways and 128 sets so 256 x 17 = 4352 bits will be needed to store the tags for this cache.\n\nSecond Session Exam\n\nPage 12 of 12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 130.18,
+                        "w": 468.3,
+                        "h": 615.98
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        }
+    ],
+    "job_metadata": {
+        "job_pages": 0,
+        "job_auto_mode_triggered_pages": 0,
+        "job_is_cache_hit": true
+    },
+    "file_name": "OnurETHZ_exams/exam_ws2016.pdf",
+    "job_id": "969007bb-acd8-4a06-b09e-abf2b140750a",
+    "is_done": false,
+    "error": null
+}

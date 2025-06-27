@@ -52,7 +52,7 @@ Output your result as dictionary like this:
 }
 """
 
-def claud_37_processing(path):
+def claud_37_processing(path, filename):
     # get json version of PDF from Llamaparse
     parser = LlamaParse(
     api_key=os.getenv("LLAMAPARSE_API_KEY"),
@@ -64,7 +64,9 @@ def claud_37_processing(path):
     result = parser.parse(path)
 
     # create a temporary .txt file for storing the json (since claude doesn't take json input)
-    txt_path = path[:-4] + ".txt"
+    
+    txt_path = "page_numbers" + "/" + filename[:-4] + ".json"
+
     with open(txt_path, "w") as file:
         # Use json.dump() to write the data to the file
         json.dump(result.model_dump(), file, indent=4)
@@ -123,8 +125,10 @@ def claud_37_processing(path):
 
 
 
-if __name__ == "__main__":
-    input_dir = "OnurETHZ_exams"
+def execute(input_dir):
+    # input_dir = "OnurETHZ_exams"
+
+    os.makedirs("txt_files", exist_ok=True)
 
     for filename in os.listdir(input_dir):
         # Build full path
@@ -135,7 +139,7 @@ if __name__ == "__main__":
         if input_path.lower().endswith(".pdf"):
         # if input_path == "data/CDA 4205 Computer Architecture Exam 2 Practice Solution-3.pdf":
             print("Processing:", input_path)
-            string_output = claud_37_processing(input_path)
+            string_output = claud_37_processing(input_path, filename)
             print(string_output)
 
         

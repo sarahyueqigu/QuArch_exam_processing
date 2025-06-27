@@ -1,0 +1,2460 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "text": "    Name:    SOLUTIONS                                        Student ID:\n                               Final Examination\n                         Design of Digital Circuits (252-0028-00L)\n                                  ETH Z\u00fcrich, Spring 2017\n                          Professors Onur Mutlu and Srdjan Capkun\n                         Problem 1 (70 Points):\n                         Problem 2 (50 Points):\n                         Problem 3 (40 Points):\n                         Problem 4 (40 Points):\n                         Problem 5 (60 Points):\n                         Problem 6 (60 Points):\n                            Total (320 Points):\nExamination Rules:\n   1. Written exam, 90 minutes in total.\n   2. No books, no calculators, no computers or communication devices.   Six pages of hand-\n      written notes are allowed.\n   3. Write all your answers on this document, space is reserved for your answers after each\n      question. Blank pages are available at the end of the exam.\n   4. Clearly indicate your final answer for each problem. Answers will only be evaluated if\n      they are readable.\n   5. Put your Student ID card visible on the desk during the exam.\n   6. If you feel disturbed, immediately call an assistant.\n   7. Write with a black or blue pen (no pencil, no green or red color).\n   8. Show all your work. For some questions, you may get partial credit even if the end result\n      is wrong due to a calculation mistake.\n   9. Please write your initials at the top of every page.\n   Tips:\n \u2022 Be cognizant of time. Do not spend too much time on one question.\n \u2022 Be concise. You may be penalized for verbosity.\n \u2022 Show work when needed.            You will receive partial credit at the instructors\u2019 discre-\n   tion.\n \u2022 Write legibly. Show your final answer.",
+            "md": "# SOLUTIONS\n\nStudent ID:\n\n# Final Examination\n\n# Design of Digital Circuits (252-0028-00L)\n\nETH Z\u00fcrich, Spring 2017\n\nProfessors Onur Mutlu and Srdjan Capkun\n\n# Problem 1 (70 Points):\n\n# Problem 2 (50 Points):\n\n# Problem 3 (40 Points):\n\n# Problem 4 (40 Points):\n\n# Problem 5 (60 Points):\n\n# Problem 6 (60 Points):\n\n# Total (320 Points):\n\n# Examination Rules:\n\n1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Clearly indicate your final answer for each problem. Answers will only be evaluated if they are readable.\n5. Put your Student ID card visible on the desk during the exam.\n6. If you feel disturbed, immediately call an assistant.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Please write your initials at the top of every page.\n\n# Tips:\n\n- Be cognizant of time. Do not spend too much time on one question.\n- Be concise. You may be penalized for verbosity.\n- Show work when needed. You will receive partial credit at the instructors\u2019 discretion.\n- Write legibly. Show your final answer.",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "SOLUTIONS",
+                    "md": "# SOLUTIONS",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.92,
+                        "y": 43.1,
+                        "w": 69.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Student ID:",
+                    "md": "Student ID:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 382.17,
+                        "y": 43.1,
+                        "w": 59.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Final Examination",
+                    "md": "# Final Examination",
+                    "rows": null,
+                    "bBox": {
+                        "x": 221.99,
+                        "y": 68.0,
+                        "w": 150.79,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits (252-0028-00L)",
+                    "md": "# Design of Digital Circuits (252-0028-00L)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 99.35,
+                        "y": 95.29,
+                        "w": 397.03,
+                        "h": 21.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "ETH Z\u00fcrich, Spring 2017\n\nProfessors Onur Mutlu and Srdjan Capkun",
+                    "md": "ETH Z\u00fcrich, Spring 2017\n\nProfessors Onur Mutlu and Srdjan Capkun",
+                    "rows": null,
+                    "bBox": {
+                        "x": 168.65,
+                        "y": 130.11,
+                        "w": 258.31,
+                        "h": 49.16
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 1 (70 Points):",
+                    "md": "# Problem 1 (70 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 201.0,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 2 (50 Points):",
+                    "md": "# Problem 2 (50 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 225.33,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 3 (40 Points):",
+                    "md": "# Problem 3 (40 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 249.66,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 4 (40 Points):",
+                    "md": "# Problem 4 (40 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 273.99,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 5 (60 Points):",
+                    "md": "# Problem 5 (60 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 298.32,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Problem 6 (60 Points):",
+                    "md": "# Problem 6 (60 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 189.47,
+                        "y": 322.65,
+                        "w": 116.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Total (320 Points):",
+                    "md": "# Total (320 Points):",
+                    "rows": null,
+                    "bBox": {
+                        "x": 209.47,
+                        "y": 347.37,
+                        "w": 96.89,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Examination Rules:",
+                    "md": "# Examination Rules:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 57.6,
+                        "y": 406.75,
+                        "w": 115.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Clearly indicate your final answer for each problem. Answers will only be evaluated if they are readable.\n5. Put your Student ID card visible on the desk during the exam.\n6. If you feel disturbed, immediately call an assistant.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Please write your initials at the top of every page.",
+                    "md": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Clearly indicate your final answer for each problem. Answers will only be evaluated if they are readable.\n5. Put your Student ID card visible on the desk during the exam.\n6. If you feel disturbed, immediately call an assistant.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Please write your initials at the top of every page.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 71.91,
+                        "y": 431.16,
+                        "w": 466.09,
+                        "h": 316.36
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Tips:",
+                    "md": "# Tips:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.16,
+                        "y": 668.77,
+                        "w": 30.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "- Be cognizant of time. Do not spend too much time on one question.\n- Be concise. You may be penalized for verbosity.\n- Show work when needed. You will receive partial credit at the instructors\u2019 discretion.\n- Write legibly. Show your final answer.",
+                    "md": "- Be cognizant of time. Do not spend too much time on one question.\n- Be concise. You may be penalized for verbosity.\n- Show work when needed. You will receive partial credit at the instructors\u2019 discretion.\n- Write legibly. Show your final answer.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.16,
+                        "y": 735.52,
+                        "w": 23.0,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 2,
+            "text": "Initials: Solutions           Design of Digital Circuits             August 25th, 2017\n                          This page intentionally left blank\nFinal Exam                                                                Page 1 of 16",
+            "md": "# Design of Digital Circuits\n\nInitials: Solutions\n\nDate: August 25th, 2017\n\nThis page intentionally left blank\n\n# Final Exam\n\nPage 1 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Initials: Solutions\n\nDate: August 25th, 2017\n\nThis page intentionally left blank",
+                    "md": "Initials: Solutions\n\nDate: August 25th, 2017\n\nThis page intentionally left blank",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 450.87,
+                        "h": 43.63
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Final Exam",
+                    "md": "# Final Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 784.05,
+                        "w": 60.39,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 1 of 16",
+                    "md": "Page 1 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 460.05,
+                        "y": 784.05,
+                        "w": 63.52,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 3,
+            "text": "Initials: Solutions            Design of Digital Circuits            August 25th, 2017\n1    Potpourri\n1.1    Processor Design [20 points]\nCircle the lines including terms that are compatible with each other and it makes sense\nfor a processor design to include both.\n \u2022  superscalar execution \u2014 in-order execution 2 points\n \u2022  superscalar execution \u2014 out-of-order execution 2 points\n \u2022  single-cycle machine \u2014 branch prediction 2 points\n \u2022  reservation station \u2014 microprogramming 2 points\n \u2022  fine-grained multithreading \u2014 single-core processor 2 points\n \u2022  Tomasulo\u2019s algorithm \u2014 in-order execution 2 points\n \u2022  precise exceptions \u2014 out-of-order instruction retirement 2 points\n \u2022  branch prediction \u2014 fine-grained multithreading 2 points\n \u2022  direct-mapped cache \u2014 LRU replacement policy 2 points\n \u2022  fine-grained multithreading \u2014 pipelining 2 points\n1.2    Pipelining [6 points]\nWhat are the three major causes of pipeline stalls?\n     Data/Control Flow dependences (other possible answer: Data flow dependence)\n     2 points\n     Multi-cycle operations (other possible answer: Control flow dependence) 2 points\n     Resource contention 2 points\n1.3    Caches I [5 points]\nPlease reason about the following statements about a possible processor cache one can\ndesign.\n    Can a cache be 5-way set associative?\n                              YES                       NO\n    Explain your reasoning. Be concise. Show your work.\n     Answer: we just need 5 tag comparators.\n     Explanation: Nothing wrong with a non-power-of-two associativity.\nFinal Exam                                                                Page 2 of 16",
+            "md": "# Initials: Solutions\n\n# Design of Digital Circuits\n\n# August 25th, 2017\n\n# 1 Potpourri\n\n# 1.1 Processor Design [20 points]\n\nCircle the lines including terms that are compatible with each other and it makes sense for a processor design to include both.\n\n- superscalar execution \u2014 in-order execution 2 points\n- superscalar execution \u2014 out-of-order execution 2 points\n- single-cycle machine \u2014 branch prediction 2 points\n- reservation station \u2014 microprogramming 2 points\n- fine-grained multithreading \u2014 single-core processor 2 points\n- Tomasulo\u2019s algorithm \u2014 in-order execution 2 points\n- precise exceptions \u2014 out-of-order instruction retirement 2 points\n- branch prediction \u2014 fine-grained multithreading 2 points\n- direct-mapped cache \u2014 LRU replacement policy 2 points\n- fine-grained multithreading \u2014 pipelining 2 points\n\n# 1.2 Pipelining [6 points]\n\nWhat are the three major causes of pipeline stalls?\n\n- Data/Control Flow dependences (other possible answer: Data flow dependence) 2 points\n- Multi-cycle operations (other possible answer: Control flow dependence) 2 points\n- Resource contention 2 points\n\n# 1.3 Caches I [5 points]\n\nPlease reason about the following statements about a possible processor cache one can design.\n\nCan a cache be 5-way set associative?\n\n| YES | NO |\n| --- | -- |\n\nExplain your reasoning. Be concise. Show your work.\n\nAnswer: we just need 5 tag comparators.\n\nExplanation: Nothing wrong with a non-power-of-two associativity.\n\n# Final Exam\n\nPage 2 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Initials: Solutions",
+                    "md": "# Initials: Solutions",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 90.95,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 147.86,
+                        "h": 561.14
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "August 25th, 2017",
+                    "md": "# August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 450.87,
+                        "h": 43.37
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1 Potpourri",
+                    "md": "# 1 Potpourri",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 106.86,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.1 Processor Design [20 points]",
+                    "md": "# 1.1 Processor Design [20 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 221.07,
+                        "h": 46.64
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Circle the lines including terms that are compatible with each other and it makes sense for a processor design to include both.\n\n- superscalar execution \u2014 in-order execution 2 points\n- superscalar execution \u2014 out-of-order execution 2 points\n- single-cycle machine \u2014 branch prediction 2 points\n- reservation station \u2014 microprogramming 2 points\n- fine-grained multithreading \u2014 single-core processor 2 points\n- Tomasulo\u2019s algorithm \u2014 in-order execution 2 points\n- precise exceptions \u2014 out-of-order instruction retirement 2 points\n- branch prediction \u2014 fine-grained multithreading 2 points\n- direct-mapped cache \u2014 LRU replacement policy 2 points\n- fine-grained multithreading \u2014 pipelining 2 points",
+                    "md": "Circle the lines including terms that are compatible with each other and it makes sense for a processor design to include both.\n\n- superscalar execution \u2014 in-order execution 2 points\n- superscalar execution \u2014 out-of-order execution 2 points\n- single-cycle machine \u2014 branch prediction 2 points\n- reservation station \u2014 microprogramming 2 points\n- fine-grained multithreading \u2014 single-core processor 2 points\n- Tomasulo\u2019s algorithm \u2014 in-order execution 2 points\n- precise exceptions \u2014 out-of-order instruction retirement 2 points\n- branch prediction \u2014 fine-grained multithreading 2 points\n- direct-mapped cache \u2014 LRU replacement policy 2 points\n- fine-grained multithreading \u2014 pipelining 2 points",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 123.93,
+                        "w": 451.14,
+                        "h": 288.56
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.2 Pipelining [6 points]",
+                    "md": "# 1.2 Pipelining [6 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 166.24,
+                        "h": 292.25
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What are the three major causes of pipeline stalls?\n\n- Data/Control Flow dependences (other possible answer: Data flow dependence) 2 points\n- Multi-cycle operations (other possible answer: Control flow dependence) 2 points\n- Resource contention 2 points",
+                    "md": "What are the three major causes of pipeline stalls?\n\n- Data/Control Flow dependences (other possible answer: Data flow dependence) 2 points\n- Multi-cycle operations (other possible answer: Control flow dependence) 2 points\n- Resource contention 2 points",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 369.55,
+                        "w": 428.43,
+                        "h": 111.35
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.3 Caches I [5 points]",
+                    "md": "# 1.3 Caches I [5 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 155.22,
+                        "h": 455.93
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please reason about the following statements about a possible processor cache one can design.\n\nCan a cache be 5-way set associative?",
+                    "md": "Please reason about the following statements about a possible processor cache one can design.\n\nCan a cache be 5-way set associative?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 533.22,
+                        "w": 451.72,
+                        "h": 40.89
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| YES | NO |\n| --- | -- |",
+                    "rows": [
+                        [
+                            "YES",
+                            "NO"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 94.57,
+                        "y": 40.37,
+                        "w": 353.79,
+                        "h": 642.53
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Explain your reasoning. Be concise. Show your work.\n\nAnswer: we just need 5 tag comparators.\n\nExplanation: Nothing wrong with a non-power-of-two associativity.",
+                    "md": "Explain your reasoning. Be concise. Show your work.\n\nAnswer: we just need 5 tag comparators.\n\nExplanation: Nothing wrong with a non-power-of-two associativity.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.56,
+                        "y": 589.51,
+                        "w": 358.8,
+                        "h": 93.39
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Final Exam",
+                    "md": "# Final Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 784.05,
+                        "w": 60.39,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 2 of 16",
+                    "md": "Page 2 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 451.57,
+                        "h": 729.31
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 4,
+            "text": "Initials: Solutions           Design of Digital Circuits           August 25th, 2017\n1.4   Caches II [10 points]\nAssume a processor where instructions operate on 8-byte operands. An instruction is also\nencoded using 8 bytes. Assume that the designed processor implements a 16 kilo-byte,\n4-way set associative cache that contains 1024 sets.\n   How effective is this cache? Explain your reasoning. Be concise. Show your work.\n    Answer:\n    1) The cache requires two accesses to be effective. (5 points)\n    2) The cache cannot exploit spatial locality. (5 points)\n    Explanation: The cache has 4 \u2217 1024 = 4096 cache lines in total. That means,\n    each cache line is 16KB/4096 = 4 bytes. With 4-byte cache lines, each operand\n    and each instruction needs to be stored in two cache lines, which will require 2\n    accesses to the cache for each load/store operation and instruction fetches. The\n    cache cannot exploit spatial locality, but only can provide benefit by exploiting\n    temporal locality (albeit requiring two accesses).\n1.5   Performance Analysis [15 points]\nA multi-cycle processor executes arithmetic instructions in 5 cycles, branch instructions\nin 4 cycles and memory instructions in 10 cycles. You have a program where 30% of all\ninstructions are arithmetic instructions, 35% of all instructions are memory instructions,\nand the rest are branch instructions. You figured out that the processor cannot execute\nthe program fast enough to meet your performance goals.    Your goal is to reduce the\nexecution time of this program by at least 10%. Hence, you decide to change the processor\ndesign to improve the performance of arithmetic instructions.\n   In the new processor design, at most how many cycles should the execution of a\nsingle arithmetic instruction take to reduce the execution time of the entire program\nby at least 10%? Show your work.\n    Answer: 2 cycles. (10 points)\n    Explanation: Let the total number of instructions be X.\n    The processor will execute the program in:\n    5 \u2217 0.3 \u2217 X + 4 \u2217 0.35 \u2217 X + 10 \u2217 0.35 \u2217 X = 6.4 \u2217 X cycles.\n    To improve the execution time by 10%, the program should complete in:\n    6.4 \u2217 X \u2217 0.1 = 0.64 \u2217 X less cycles.\n    The cost of executing the arithmetic instructions was 5 \u2217 0.3 \u2217 X = 1.5 \u2217 X cy-\n    cles. To improve the program\u2019s performance by 10%, the arithmetic instructions\n    should complete execution at least in 1.5 \u2217 X \u2212 0.64\u2217 X = 0.86\u2217 X cycles. Hence,\n    A \u2217 0.3 \u2217 X <= 0.86 \u2217 X, A <= 2.87, where A is the new number of cycles that\n    the processor should execute an arithmetic instruction in. So, to improve the\n    overall performance by 10%, an arithmetic instruction needs to execute 3 cycles\n    faster. Hence, it should take at most 5 - 3 = 2 cycles. (a correct explanation\n    that proves the student\u2019s understanding may receive 13/14 points.)\nFinal Exam                                                               Page 3 of 16",
+            "md": "# Design of Digital Circuits\n\nDate: August 25th, 2017\n\n# 1.4 Caches II [10 points]\n\nAssume a processor where instructions operate on 8-byte operands. An instruction is also encoded using 8 bytes. Assume that the designed processor implements a 16 kilo-byte, 4-way set associative cache that contains 1024 sets.\n\nHow effective is this cache? Explain your reasoning. Be concise. Show your work.\n\n# Answer:\n\n1. The cache requires two accesses to be effective. (5 points)\n2. The cache cannot exploit spatial locality. (5 points)\n\nExplanation: The cache has 4 \u2217 1024 = 4096 cache lines in total. That means, each cache line is 16KB/4096 = 4 bytes. With 4-byte cache lines, each operand and each instruction needs to be stored in two cache lines, which will require 2 accesses to the cache for each load/store operation and instruction fetches. The cache cannot exploit spatial locality, but only can provide benefit by exploiting temporal locality (albeit requiring two accesses).\n\n# 1.5 Performance Analysis [15 points]\n\nA multi-cycle processor executes arithmetic instructions in 5 cycles, branch instructions in 4 cycles and memory instructions in 10 cycles. You have a program where 30% of all instructions are arithmetic instructions, 35% of all instructions are memory instructions, and the rest are branch instructions. You figured out that the processor cannot execute the program fast enough to meet your performance goals. Your goal is to reduce the execution time of this program by at least 10%. Hence, you decide to change the processor design to improve the performance of arithmetic instructions.\n\nIn the new processor design, at most how many cycles should the execution of a single arithmetic instruction take to reduce the execution time of the entire program by at least 10%? Show your work.\n\n# Answer:\n\n2 cycles. (10 points)\n\nExplanation: Let the total number of instructions be X. The processor will execute the program in:\n\n5 \u2217 0.3 \u2217 X + 4 \u2217 0.35 \u2217 X + 10 \u2217 0.35 \u2217 X = 6.4 \u2217 X cycles.\n\nTo improve the execution time by 10%, the program should complete in:\n\n6.4 \u2217 X \u2217 0.1 = 0.64 \u2217 X less cycles.\n\nThe cost of executing the arithmetic instructions was 5 \u2217 0.3 \u2217 X = 1.5 \u2217 X cycles. To improve the program\u2019s performance by 10%, the arithmetic instructions should complete execution at least in 1.5 \u2217 X \u2212 0.64\u2217 X = 0.86\u2217 X cycles. Hence, A \u2217 0.3 \u2217 X <= 0.86 \u2217 X, A <= 2.87, where A is the new number of cycles that the processor should execute an arithmetic instruction in. So, to improve the overall performance by 10%, an arithmetic instruction needs to execute 3 cycles faster. Hence, it should take at most 5 - 3 = 2 cycles. (a correct explanation that proves the student\u2019s understanding may receive 13/14 points.)\n\nFinal Exam\n\nPage 3 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Date: August 25th, 2017",
+                    "md": "Date: August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 429.26,
+                        "y": 40.37,
+                        "w": 93.61,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.4 Caches II [10 points]",
+                    "md": "# 1.4 Caches II [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 69.61,
+                        "w": 168.2,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Assume a processor where instructions operate on 8-byte operands. An instruction is also encoded using 8 bytes. Assume that the designed processor implements a 16 kilo-byte, 4-way set associative cache that contains 1024 sets.\n\nHow effective is this cache? Explain your reasoning. Be concise. Show your work.",
+                    "md": "Assume a processor where instructions operate on 8-byte operands. An instruction is also encoded using 8 bytes. Assume that the designed processor implements a 16 kilo-byte, 4-way set associative cache that contains 1024 sets.\n\nHow effective is this cache? Explain your reasoning. Be concise. Show your work.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.16,
+                        "w": 451.7,
+                        "h": 55.34
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Answer:",
+                    "md": "# Answer:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 94.57,
+                        "y": 155.42,
+                        "w": 48.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. The cache requires two accesses to be effective. (5 points)\n2. The cache cannot exploit spatial locality. (5 points)\n\nExplanation: The cache has 4 \u2217 1024 = 4096 cache lines in total. That means, each cache line is 16KB/4096 = 4 bytes. With 4-byte cache lines, each operand and each instruction needs to be stored in two cache lines, which will require 2 accesses to the cache for each load/store operation and instruction fetches. The cache cannot exploit spatial locality, but only can provide benefit by exploiting temporal locality (albeit requiring two accesses).",
+                    "md": "1. The cache requires two accesses to be effective. (5 points)\n2. The cache cannot exploit spatial locality. (5 points)\n\nExplanation: The cache has 4 \u2217 1024 = 4096 cache lines in total. That means, each cache line is 16KB/4096 = 4 bytes. With 4-byte cache lines, each operand and each instruction needs to be stored in two cache lines, which will require 2 accesses to the cache for each load/store operation and instruction fetches. The cache cannot exploit spatial locality, but only can provide benefit by exploiting temporal locality (albeit requiring two accesses).",
+                    "rows": null,
+                    "bBox": {
+                        "x": 94.56,
+                        "y": 198.76,
+                        "w": 406.3,
+                        "h": 84.23
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.5 Performance Analysis [15 points]",
+                    "md": "# 1.5 Performance Analysis [15 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 305.96,
+                        "w": 253.24,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "A multi-cycle processor executes arithmetic instructions in 5 cycles, branch instructions in 4 cycles and memory instructions in 10 cycles. You have a program where 30% of all instructions are arithmetic instructions, 35% of all instructions are memory instructions, and the rest are branch instructions. You figured out that the processor cannot execute the program fast enough to meet your performance goals. Your goal is to reduce the execution time of this program by at least 10%. Hence, you decide to change the processor design to improve the performance of arithmetic instructions.\n\nIn the new processor design, at most how many cycles should the execution of a single arithmetic instruction take to reduce the execution time of the entire program by at least 10%? Show your work.",
+                    "md": "A multi-cycle processor executes arithmetic instructions in 5 cycles, branch instructions in 4 cycles and memory instructions in 10 cycles. You have a program where 30% of all instructions are arithmetic instructions, 35% of all instructions are memory instructions, and the rest are branch instructions. You figured out that the processor cannot execute the program fast enough to meet your performance goals. Your goal is to reduce the execution time of this program by at least 10%. Hence, you decide to change the processor design to improve the performance of arithmetic instructions.\n\nIn the new processor design, at most how many cycles should the execution of a single arithmetic instruction take to reduce the execution time of the entire program by at least 10%? Show your work.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 330.51,
+                        "w": 451.74,
+                        "h": 142.01
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Answer:",
+                    "md": "# Answer:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 94.57,
+                        "y": 155.42,
+                        "w": 48.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "2 cycles. (10 points)\n\nExplanation: Let the total number of instructions be X. The processor will execute the program in:\n\n5 \u2217 0.3 \u2217 X + 4 \u2217 0.35 \u2217 X + 10 \u2217 0.35 \u2217 X = 6.4 \u2217 X cycles.\n\nTo improve the execution time by 10%, the program should complete in:\n\n6.4 \u2217 X \u2217 0.1 = 0.64 \u2217 X less cycles.\n\nThe cost of executing the arithmetic instructions was 5 \u2217 0.3 \u2217 X = 1.5 \u2217 X cycles. To improve the program\u2019s performance by 10%, the arithmetic instructions should complete execution at least in 1.5 \u2217 X \u2212 0.64\u2217 X = 0.86\u2217 X cycles. Hence, A \u2217 0.3 \u2217 X <= 0.86 \u2217 X, A <= 2.87, where A is the new number of cycles that the processor should execute an arithmetic instruction in. So, to improve the overall performance by 10%, an arithmetic instruction needs to execute 3 cycles faster. Hence, it should take at most 5 - 3 = 2 cycles. (a correct explanation that proves the student\u2019s understanding may receive 13/14 points.)\n\nFinal Exam\n\nPage 3 of 16",
+                    "md": "2 cycles. (10 points)\n\nExplanation: Let the total number of instructions be X. The processor will execute the program in:\n\n5 \u2217 0.3 \u2217 X + 4 \u2217 0.35 \u2217 X + 10 \u2217 0.35 \u2217 X = 6.4 \u2217 X cycles.\n\nTo improve the execution time by 10%, the program should complete in:\n\n6.4 \u2217 X \u2217 0.1 = 0.64 \u2217 X less cycles.\n\nThe cost of executing the arithmetic instructions was 5 \u2217 0.3 \u2217 X = 1.5 \u2217 X cycles. To improve the program\u2019s performance by 10%, the arithmetic instructions should complete execution at least in 1.5 \u2217 X \u2212 0.64\u2217 X = 0.86\u2217 X cycles. Hence, A \u2217 0.3 \u2217 X <= 0.86 \u2217 X, A <= 2.87, where A is the new number of cycles that the processor should execute an arithmetic instruction in. So, to improve the overall performance by 10%, an arithmetic instruction needs to execute 3 cycles faster. Hence, it should take at most 5 - 3 = 2 cycles. (a correct explanation that proves the student\u2019s understanding may receive 13/14 points.)\n\nFinal Exam\n\nPage 3 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 305.96,
+                        "w": 451.57,
+                        "h": 490.09
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 5,
+            "text": "Initials: Solutions           Design of Digital Circuits            August 25th, 2017\n1.6    Microprogrammed Design [4 points]\nIn lecture, we discussed a design principle for microprogrammed processors. We said that\nit is a good design principle to generate the control signals for cycle N + 1 in cycle N .\n   Why is this a good design principle? Be concise in your answer.\n    Answer: Likely keeps the critical path short (it follows the critical path design\n    principle).\n    Explanation: By generating the control signals in advance, we can make the\n    critical path of the circuit likely shorter. Shorter critical path can increase the\n    frequency of the processor.\n1.7    Processor Performance [10 points]\nAssume that we test the performance of two processors, A and B, on a benchmark\nprogram. We find the following about each:\n   \u2022  Processor A has a CPI of 2 and executes 4 Billion Instructions per Second.\n   \u2022  Processor B has a CPI of 1 and executes 8 Billion Instructions per Second.\n   Which processor has higher performance on this program? Circle one.\nRecall that CPI stands for Cycles Per Instruction.\nA. Processor A\nB. Processor B\nC. They have equal performance\nD. Not enough      information to tell\n   Explain concisely your answer in the box provided below. Show your work.\n    Answer: Neither of these metrics nor their combination provide execution time.\n    Explanation: Although information about the CPI and the instructions/second\n    is provided, it is not enough to reason about the processors\u2019 performance. The\n    processors may support different Instruction Set Architectures, in which case\n    the benchmark program will be compiled into a different assembly code.    The\n    fact that one of the processors execute more instructions per second does not\n    necessarily mean that the processor makes more progress on the benchmark.\nFinal Exam                                                                Page 4 of 16",
+            "md": "# Design of Digital Circuits\n\nDate: August 25th, 2017\n\n# 1.6 Microprogrammed Design [4 points]\n\nIn lecture, we discussed a design principle for microprogrammed processors. We said that it is a good design principle to generate the control signals for cycle N + 1 in cycle N.\n\nWhy is this a good design principle? Be concise in your answer.\n\nAnswer: Likely keeps the critical path short (it follows the critical path design principle).\n\nExplanation: By generating the control signals in advance, we can make the critical path of the circuit likely shorter. Shorter critical path can increase the frequency of the processor.\n\n# 1.7 Processor Performance [10 points]\n\nAssume that we test the performance of two processors, A and B, on a benchmark program. We find the following about each:\n\n- Processor A has a CPI of 2 and executes 4 Billion Instructions per Second.\n- Processor B has a CPI of 1 and executes 8 Billion Instructions per Second.\n\nWhich processor has higher performance on this program? Circle one.\n\nRecall that CPI stands for Cycles Per Instruction.\n\nA. Processor A\n\nB. Processor B\n\nC. They have equal performance\n\nD. Not enough information to tell\n\nExplain concisely your answer in the box provided below. Show your work.\n\nAnswer: Neither of these metrics nor their combination provide execution time.\n\nExplanation: Although information about the CPI and the instructions/second is provided, it is not enough to reason about the processors\u2019 performance. The processors may support different Instruction Set Architectures, in which case the benchmark program will be compiled into a different assembly code. The fact that one of the processors executes more instructions per second does not necessarily mean that the processor makes more progress on the benchmark.\n\nFinal Exam\n\nPage 4 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Date: August 25th, 2017",
+                    "md": "Date: August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 429.26,
+                        "y": 40.37,
+                        "w": 93.61,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.6 Microprogrammed Design [4 points]",
+                    "md": "# 1.6 Microprogrammed Design [4 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 69.61,
+                        "w": 276.04,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In lecture, we discussed a design principle for microprogrammed processors. We said that it is a good design principle to generate the control signals for cycle N + 1 in cycle N.\n\nWhy is this a good design principle? Be concise in your answer.\n\nAnswer: Likely keeps the critical path short (it follows the critical path design principle).\n\nExplanation: By generating the control signals in advance, we can make the critical path of the circuit likely shorter. Shorter critical path can increase the frequency of the processor.",
+                    "md": "In lecture, we discussed a design principle for microprogrammed processors. We said that it is a good design principle to generate the control signals for cycle N + 1 in cycle N.\n\nWhy is this a good design principle? Be concise in your answer.\n\nAnswer: Likely keeps the critical path short (it follows the critical path design principle).\n\nExplanation: By generating the control signals in advance, we can make the critical path of the circuit likely shorter. Shorter critical path can increase the frequency of the processor.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 94.16,
+                        "w": 450.82,
+                        "h": 524.75
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.7 Processor Performance [10 points]",
+                    "md": "# 1.7 Processor Performance [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 268.1,
+                        "w": 261.56,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Assume that we test the performance of two processors, A and B, on a benchmark program. We find the following about each:\n\n- Processor A has a CPI of 2 and executes 4 Billion Instructions per Second.\n- Processor B has a CPI of 1 and executes 8 Billion Instructions per Second.\n\nWhich processor has higher performance on this program? Circle one.\n\nRecall that CPI stands for Cycles Per Instruction.\n\nA. Processor A\n\nB. Processor B\n\nC. They have equal performance\n\nD. Not enough information to tell\n\nExplain concisely your answer in the box provided below. Show your work.\n\nAnswer: Neither of these metrics nor their combination provide execution time.\n\nExplanation: Although information about the CPI and the instructions/second is provided, it is not enough to reason about the processors\u2019 performance. The processors may support different Instruction Set Architectures, in which case the benchmark program will be compiled into a different assembly code. The fact that one of the processors executes more instructions per second does not necessarily mean that the processor makes more progress on the benchmark.\n\nFinal Exam\n\nPage 4 of 16",
+                    "md": "Assume that we test the performance of two processors, A and B, on a benchmark program. We find the following about each:\n\n- Processor A has a CPI of 2 and executes 4 Billion Instructions per Second.\n- Processor B has a CPI of 1 and executes 8 Billion Instructions per Second.\n\nWhich processor has higher performance on this program? Circle one.\n\nRecall that CPI stands for Cycles Per Instruction.\n\nA. Processor A\n\nB. Processor B\n\nC. They have equal performance\n\nD. Not enough information to tell\n\nExplain concisely your answer in the box provided below. Show your work.\n\nAnswer: Neither of these metrics nor their combination provide execution time.\n\nExplanation: Although information about the CPI and the instructions/second is provided, it is not enough to reason about the processors\u2019 performance. The processors may support different Instruction Set Architectures, in which case the benchmark program will be compiled into a different assembly code. The fact that one of the processors executes more instructions per second does not necessarily mean that the processor makes more progress on the benchmark.\n\nFinal Exam\n\nPage 4 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 292.66,
+                        "w": 451.57,
+                        "h": 503.39
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 6,
+            "text": "Initials: Solutions            Design of Digital Circuits             August 25th, 2017\n2     Finite State Machines\nThis question has three parts.\n(a) [20 points] An engineer has designed a deterministic finite state machine with a one-\n    bit input (A) and a two-bit output (Z). He started the design by drawing the following\n    state transition diagram:\n                                 A=0                                      A=1\n                 A=1\n                        S4                   S0                   S1\n                       Z=00                 Z=01                 Z=01\n                                                            A=0        A=1\n                     A=1,Z=11\n                                 A=0,Z=10\n                        S3                                        S2\n                       Z=00                                      Z=00\n    Although the exact functionality of the FSM is not known to you, there are at least\n    three mistakes in this diagram. Please list all the mistakes.\n        There are four problems with this diagram\n         (a) Most states have a Moore labelling (output state in the bubble), one has\n             a Mealy type labelling (output given with input transitions) (5 points)\n         (b) There are two different transitions both with A = 1 from state S1.\n             What will happen with A = 0 is missing (5 points)\n         (c) There are two different transitions from state S2, without labeling which\n             input triggers them (5 points)\n         (d) There is no reset state (5 points)\nFinal Exam                                                                  Page 5 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n# 2 Finite State Machines\n\nThis question has three parts.\n\n# (a) [20 points]\n\nAn engineer has designed a deterministic finite state machine with a one-bit input (A) and a two-bit output (Z). He started the design by drawing the following state transition diagram:\n\n|      | A=0  | A=1  |\n| ---- | ---- | ---- |\n| A=1  | S4   | S0   |\n| Z=00 | Z=01 | Z=01 |\n|      | A=0  | A=1  |\n|      | S3   | S2   |\n| Z=00 | Z=00 |      |\n\nAlthough the exact functionality of the FSM is not known to you, there are at least three mistakes in this diagram. Please list all the mistakes.\n\nThere are four problems with this diagram:\n\n1. Most states have a Moore labelling (output state in the bubble), one has a Mealy type labelling (output given with input transitions) (5 points)\n2. There are two different transitions both with A = 1 from state S1. What will happen with A = 0 is missing (5 points)\n3. There are two different transitions from state S2, without labeling which input triggers them (5 points)\n4. There is no reset state (5 points)\n\nFinal Exam\n\nPage 5 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 450.87,
+                        "h": 43.37
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2 Finite State Machines",
+                    "md": "# 2 Finite State Machines",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 206.66,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "This question has three parts.",
+                    "md": "This question has three parts.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 98.28,
+                        "w": 153.05,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) [20 points]",
+                    "md": "# (a) [20 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 9.0,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "An engineer has designed a deterministic finite state machine with a one-bit input (A) and a two-bit output (Z). He started the design by drawing the following state transition diagram:",
+                    "md": "An engineer has designed a deterministic finite state machine with a one-bit input (A) and a two-bit output (Z). He started the design by drawing the following state transition diagram:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 140.12,
+                        "w": 430.96,
+                        "h": 26.45
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "|      | A=0  | A=1  |\n| ---- | ---- | ---- |\n| A=1  | S4   | S0   |\n| Z=00 | Z=01 | Z=01 |\n|      | A=0  | A=1  |\n|      | S3   | S2   |\n| Z=00 | Z=00 |      |",
+                    "rows": [
+                        [
+                            "",
+                            "A=0",
+                            "A=1"
+                        ],
+                        [
+                            "A=1",
+                            "S4",
+                            "S0"
+                        ],
+                        [
+                            "Z=00",
+                            "Z=01",
+                            "Z=01"
+                        ],
+                        [
+                            "",
+                            "A=0",
+                            "A=1"
+                        ],
+                        [
+                            "",
+                            "S3",
+                            "S2"
+                        ],
+                        [
+                            "Z=00",
+                            "Z=00",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 451.77,
+                        "h": 755.68
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Although the exact functionality of the FSM is not known to you, there are at least three mistakes in this diagram. Please list all the mistakes.\n\nThere are four problems with this diagram:\n\n1. Most states have a Moore labelling (output state in the bubble), one has a Mealy type labelling (output given with input transitions) (5 points)\n2. There are two different transitions both with A = 1 from state S1. What will happen with A = 0 is missing (5 points)\n3. There are two different transitions from state S2, without labeling which input triggers them (5 points)\n4. There is no reset state (5 points)\n\nFinal Exam\n\nPage 5 of 16",
+                    "md": "Although the exact functionality of the FSM is not known to you, there are at least three mistakes in this diagram. Please list all the mistakes.\n\nThere are four problems with this diagram:\n\n1. Most states have a Moore labelling (output state in the bubble), one has a Mealy type labelling (output given with input transitions) (5 points)\n2. There are two different transitions both with A = 1 from state S1. What will happen with A = 0 is missing (5 points)\n3. There are two different transitions from state S2, without labeling which input triggers them (5 points)\n4. There is no reset state (5 points)\n\nFinal Exam\n\nPage 5 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 451.57,
+                        "h": 729.31
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 7,
+            "text": "Initials: Solutions                                    Design of Digital Circuits  August 25th, 2017\n                        (b) [25 points] After learning from his mistakes, your colleague has proceeded to write\n     the following Verilog code for a much better (and different) FSM. The code has\n     been verified for syntax errors and found to be OK.\n  1  module fsm (input CLK, RST, A, output [1:0] Z);\n  2\n  3   reg [2:0] nextState, presentState;\n  4\n  5   parameter start   = 3\u2019b000;\n  6   parameter flash1 = 3\u2019b010;\n  7   parameter flash2 = 3\u2019b011;\n  8   parameter prepare  = 3\u2019b100;\n  9   parameter recovery = 3\u2019b110;\n 10   parameter error = 3\u2019b111;\n 11\n 12   always  @ (posedge CLK, posedge RST)\n 13     if (RST)  presentState <= start;\n 14     else      presentState <= nextState;\n 15\n 16   assign  Z = (presentState == recovery) ? 2\u2019b11 :\n 17             (presentState == error)    ? 2\u2019b11 :\n 18             (presentState == flash1)   ? 2\u2019b01 :\n 19             (presentState == flash2)   ? 2\u2019b10 : 2\u2019b00;\n 20\n 21   always  @ (presentState, A)\n 22    case   (presentState)\n 23      start    : nextState <= prepare;\n 24      prepare  : if  (A) nextState <= flash1;\n 25      flash1   : if  (A) nextState <= flash2;\n 26                 else   nextState <= recovery;\n 27      flash2   : if  (A) nextState <= flash1;\n 28                 else   nextState <= recovery;\n 29      recovery : if  (A) nextState <= prepare;\n 30                 else   nextState <= error;\n 31      error    : if  (~A) nextState <=start;\n 32      default  : nextState <= presentState;\n 33    endcase\n 34\n 35  endmodule\nFinal Exam                                                  Page 6 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n# (b) [25 points]\n\nAfter learning from his mistakes, your colleague has proceeded to write the following Verilog code for a much better (and different) FSM. The code has been verified for syntax errors and found to be OK.\n\n1  module fsm (input CLK, RST, A, output [1:0] Z);\n2\n3   reg [2:0] nextState, presentState;\n4\n5   parameter start   = 3\u2019b000;\n6   parameter flash1 = 3\u2019b010;\n7   parameter flash2 = 3\u2019b011;\n8   parameter prepare  = 3\u2019b100;\n9   parameter recovery = 3\u2019b110;\n10  parameter error = 3\u2019b111;\n11\n12   always  @ (posedge CLK, posedge RST)\n13     if (RST)  presentState <= start;\n14     else      presentState <= nextState;\n15\n16   assign  Z = (presentState == recovery) ? 2\u2019b11 :\n17             (presentState == error)    ? 2\u2019b11 :\n18             (presentState == flash1)   ? 2\u2019b01 :\n19             (presentState == flash2)   ? 2\u2019b10 : 2\u2019b00;\n20\n21   always  @ (presentState, A)\n22    case   (presentState)\n23      start    : nextState <= prepare;\n24      prepare  : if  (A) nextState <= flash1;\n25      flash1   : if  (A) nextState <= flash2;\n26                 else   nextState <= recovery;\n27      flash2   : if  (A) nextState <= flash1;\n28                 else   nextState <= recovery;\n29      recovery : if  (A) nextState <= prepare;\n30                 else   nextState <= error;\n31      error    : if  (~A) nextState <=start;\n32      default  : nextState <= presentState;\n33    endcase\n34\n35  endmodule\n\nFinal Exam\n\nPage 6 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 40.37,
+                        "w": 447.33,
+                        "h": 417.53
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) [25 points]",
+                    "md": "# (b) [25 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 140.26,
+                        "w": 7.65,
+                        "h": 317.63
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "After learning from his mistakes, your colleague has proceeded to write the following Verilog code for a much better (and different) FSM. The code has been verified for syntax errors and found to be OK.\n\n1  module fsm (input CLK, RST, A, output [1:0] Z);\n2\n3   reg [2:0] nextState, presentState;\n4\n5   parameter start   = 3\u2019b000;\n6   parameter flash1 = 3\u2019b010;\n7   parameter flash2 = 3\u2019b011;\n8   parameter prepare  = 3\u2019b100;\n9   parameter recovery = 3\u2019b110;\n10  parameter error = 3\u2019b111;\n11\n12   always  @ (posedge CLK, posedge RST)\n13     if (RST)  presentState <= start;\n14     else      presentState <= nextState;\n15\n16   assign  Z = (presentState == recovery) ? 2\u2019b11 :\n17             (presentState == error)    ? 2\u2019b11 :\n18             (presentState == flash1)   ? 2\u2019b01 :\n19             (presentState == flash2)   ? 2\u2019b10 : 2\u2019b00;\n20\n21   always  @ (presentState, A)\n22    case   (presentState)\n23      start    : nextState <= prepare;\n24      prepare  : if  (A) nextState <= flash1;\n25      flash1   : if  (A) nextState <= flash2;\n26                 else   nextState <= recovery;\n27      flash2   : if  (A) nextState <= flash1;\n28                 else   nextState <= recovery;\n29      recovery : if  (A) nextState <= prepare;\n30                 else   nextState <= error;\n31      error    : if  (~A) nextState <=start;\n32      default  : nextState <= presentState;\n33    endcase\n34\n35  endmodule\n\nFinal Exam\n\nPage 6 of 16",
+                    "md": "After learning from his mistakes, your colleague has proceeded to write the following Verilog code for a much better (and different) FSM. The code has been verified for syntax errors and found to be OK.\n\n1  module fsm (input CLK, RST, A, output [1:0] Z);\n2\n3   reg [2:0] nextState, presentState;\n4\n5   parameter start   = 3\u2019b000;\n6   parameter flash1 = 3\u2019b010;\n7   parameter flash2 = 3\u2019b011;\n8   parameter prepare  = 3\u2019b100;\n9   parameter recovery = 3\u2019b110;\n10  parameter error = 3\u2019b111;\n11\n12   always  @ (posedge CLK, posedge RST)\n13     if (RST)  presentState <= start;\n14     else      presentState <= nextState;\n15\n16   assign  Z = (presentState == recovery) ? 2\u2019b11 :\n17             (presentState == error)    ? 2\u2019b11 :\n18             (presentState == flash1)   ? 2\u2019b01 :\n19             (presentState == flash2)   ? 2\u2019b10 : 2\u2019b00;\n20\n21   always  @ (presentState, A)\n22    case   (presentState)\n23      start    : nextState <= prepare;\n24      prepare  : if  (A) nextState <= flash1;\n25      flash1   : if  (A) nextState <= flash2;\n26                 else   nextState <= recovery;\n27      flash2   : if  (A) nextState <= flash1;\n28                 else   nextState <= recovery;\n29      recovery : if  (A) nextState <= prepare;\n30                 else   nextState <= error;\n31      error    : if  (~A) nextState <=start;\n32      default  : nextState <= presentState;\n33    endcase\n34\n35  endmodule\n\nFinal Exam\n\nPage 6 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 86.45,
+                        "w": 451.57,
+                        "h": 709.6
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 8,
+            "text": "Initials: Solutions             Design of Digital Circuits              August 25th, 2017\n    Draw a proper state transition diagram that corresponds to the FSM described in\n    this Verilog code.\n         (25 points should be given only if the diagram is absolutely correct)\n            RST                                      A=0         A=1\n                    init                       prepare                       flash1\n                    Z=00                         Z=00                         Z=01\n                                                          A=0\n                                                                                   A=1\n                 A=0                         A=1                          A=1\n                   error                       recovery                      flash2\n                    Z=11                         Z=11                         Z=10\n                A=1                A=0                            A=0\n (c) [5 points] Is the FSM described by the previous Verilog code a Moore or a Mealy\n     FSM? Why?\n         Moore, the output Z only depends on the state (presentState) and not on\n         the input (A).\nFinal Exam                                                                    Page 7 of 16",
+            "md": "# Initials: Solutions\n\n# Design of Digital Circuits\n\n# August 25th, 2017\n\nDraw a proper state transition diagram that corresponds to the FSM described in this Verilog code.\n\n(25 points should be given only if the diagram is absolutely correct)\n\n| RST  | A=0     | A=1      |\n| ---- | ------- | -------- |\n| init | prepare |          |\n| Z=00 | Z=00    |          |\n|      | A=0     | A=1      |\n|      | error   | recovery |\n|      | Z=11    | Z=11     |\n| A=1  | A=0     | A=1      |\n|      | flash1  | flash2   |\n|      | Z=01    | Z=10     |\n|      | A=0     | A=0      |\n\n# (c) [5 points] Is the FSM described by the previous Verilog code a Moore or a Mealy FSM? Why?\n\nMoore, the output Z only depends on the state (presentState) and not on the input (A).\n\n# Final Exam\n\nPage 7 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Initials: Solutions",
+                    "md": "# Initials: Solutions",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 117.59,
+                        "h": 234.43
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "August 25th, 2017",
+                    "md": "# August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 429.26,
+                        "y": 40.37,
+                        "w": 93.61,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Draw a proper state transition diagram that corresponds to the FSM described in this Verilog code.\n\n(25 points should be given only if the diagram is absolutely correct)",
+                    "md": "Draw a proper state transition diagram that corresponds to the FSM described in this Verilog code.\n\n(25 points should be given only if the diagram is absolutely correct)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 72.0,
+                        "w": 430.72,
+                        "h": 178.05
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| RST  | A=0     | A=1      |\n| ---- | ------- | -------- |\n| init | prepare |          |\n| Z=00 | Z=00    |          |\n|      | A=0     | A=1      |\n|      | error   | recovery |\n|      | Z=11    | Z=11     |\n| A=1  | A=0     | A=1      |\n|      | flash1  | flash2   |\n|      | Z=01    | Z=10     |\n|      | A=0     | A=0      |",
+                    "rows": [
+                        [
+                            "RST",
+                            "A=0",
+                            "A=1"
+                        ],
+                        [
+                            "init",
+                            "prepare",
+                            ""
+                        ],
+                        [
+                            "Z=00",
+                            "Z=00",
+                            ""
+                        ],
+                        [
+                            "",
+                            "A=0",
+                            "A=1"
+                        ],
+                        [
+                            "",
+                            "error",
+                            "recovery"
+                        ],
+                        [
+                            "",
+                            "Z=11",
+                            "Z=11"
+                        ],
+                        [
+                            "A=1",
+                            "A=0",
+                            "A=1"
+                        ],
+                        [
+                            "",
+                            "flash1",
+                            "flash2"
+                        ],
+                        [
+                            "",
+                            "Z=01",
+                            "Z=10"
+                        ],
+                        [
+                            "",
+                            "A=0",
+                            "A=0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 451.57,
+                        "h": 755.68
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) [5 points] Is the FSM described by the previous Verilog code a Moore or a Mealy FSM? Why?",
+                    "md": "# (c) [5 points] Is the FSM described by the previous Verilog code a Moore or a Mealy FSM? Why?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.65,
+                        "y": 583.03,
+                        "w": 450.42,
+                        "h": 26.45
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Moore, the output Z only depends on the state (presentState) and not on the input (A).",
+                    "md": "Moore, the output Z only depends on the state (presentState) and not on the input (A).",
+                    "rows": null,
+                    "bBox": {
+                        "x": 114.33,
+                        "y": 647.88,
+                        "w": 387.06,
+                        "h": 26.45
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Final Exam",
+                    "md": "# Final Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 784.05,
+                        "w": 60.39,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 7 of 16",
+                    "md": "Page 7 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 460.05,
+                        "y": 784.05,
+                        "w": 63.52,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 9,
+            "text": "Initials: Solutions           Design of Digital Circuits          August 25th, 2017\n3    Verilog\nPlease answer the following four questions about Verilog.\n(a) [10 points] Does the following code result in a sequential circuit or a combinational\n     circuit? Please explain why.\n  1  module  one (input clk,    input a,   input b,   output reg [1:0] q);\n  2  always   @ (*)\n  3     if (b)\n  4        q <= 2\u2019b01;\n  5     else if (a)\n  6        q <= 2\u2019b10;\n  7  endmodule\n     Answer and concise explanation:\n         This code results in a sequential circuit because a latch is required to store\n         the old value of q if both conditions are not satisfied.\n(b) [10 points] What is the value of the output z if the input c is 10101111 and d is\n     01010101?\n  1  module  two (input [7:0] c,     input [7:0] d,    output reg [7:0] z);\n  2  always  @ (c,d)\n  3   begin\n  4       z = 8\u2019b00000001;\n  5       z[7:5] = c[5:3];\n  6       z[4] = d[7];\n  7       z[3] = d[7];\n  8   end\n  9  endmodule\n     Please answer below. Show your work.\n         10100001. Last assignment of a bit overrides all previous assignments.\nFinal Exam                                                              Page 8 of 16",
+            "md": "# Design of Digital Circuits\n\n# August 25th, 2017\n\n# 3 Verilog\n\nPlease answer the following four questions about Verilog.\n\n# (a) [10 points]\n\nDoes the following code result in a sequential circuit or a combinational circuit? Please explain why.\n\nmodule  one (input clk,    input a,   input b,   output reg [1:0] q);\nalways   @ (*)\nif (b)\nq <= 2\u2019b01;\nelse if (a)\nq <= 2\u2019b10;\nendmodule\n\nAnswer and concise explanation:\n\nThis code results in a sequential circuit because a latch is required to store the old value of q if both conditions are not satisfied.\n\n# (b) [10 points]\n\nWhat is the value of the output z if the input c is 10101111 and d is 01010101?\n\nmodule  two (input [7:0] c,     input [7:0] d,    output reg [7:0] z);\nalways  @ (c,d)\nbegin\nz = 8\u2019b00000001;\nz[7:5] = c[5:3];\nz[4] = d[7];\nz[3] = d[7];\nend\nendmodule\n\nPlease answer below. Show your work.\n\n10100001. Last assignment of a bit overrides all previous assignments.\n\nFinal Exam\n\nPage 8 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "August 25th, 2017",
+                    "md": "# August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 40.37,
+                        "w": 443.68,
+                        "h": 480.01
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "3 Verilog",
+                    "md": "# 3 Verilog",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 84.86,
+                        "h": 399.44
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please answer the following four questions about Verilog.",
+                    "md": "Please answer the following four questions about Verilog.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 292.34,
+                        "h": 43.54
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) [10 points]",
+                    "md": "# (a) [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 165.95,
+                        "w": 4.0,
+                        "h": 273.13
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Does the following code result in a sequential circuit or a combinational circuit? Please explain why.\n\nmodule  one (input clk,    input a,   input b,   output reg [1:0] q);\nalways   @ (*)\nif (b)\nq <= 2\u2019b01;\nelse if (a)\nq <= 2\u2019b10;\nendmodule\n\nAnswer and concise explanation:\n\nThis code results in a sequential circuit because a latch is required to store the old value of q if both conditions are not satisfied.",
+                    "md": "Does the following code result in a sequential circuit or a combinational circuit? Please explain why.\n\nmodule  one (input clk,    input a,   input b,   output reg [1:0] q);\nalways   @ (*)\nif (b)\nq <= 2\u2019b01;\nelse if (a)\nq <= 2\u2019b10;\nendmodule\n\nAnswer and concise explanation:\n\nThis code results in a sequential circuit because a latch is required to store the old value of q if both conditions are not satisfied.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 140.12,
+                        "w": 444.22,
+                        "h": 407.42
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) [10 points]",
+                    "md": "# (b) [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 165.95,
+                        "w": 4.0,
+                        "h": 273.13
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What is the value of the output z if the input c is 10101111 and d is 01010101?\n\nmodule  two (input [7:0] c,     input [7:0] d,    output reg [7:0] z);\nalways  @ (c,d)\nbegin\nz = 8\u2019b00000001;\nz[7:5] = c[5:3];\nz[4] = d[7];\nz[3] = d[7];\nend\nendmodule\n\nPlease answer below. Show your work.\n\n10100001. Last assignment of a bit overrides all previous assignments.\n\nFinal Exam\n\nPage 8 of 16",
+                    "md": "What is the value of the output z if the input c is 10101111 and d is 01010101?\n\nmodule  two (input [7:0] c,     input [7:0] d,    output reg [7:0] z);\nalways  @ (c,d)\nbegin\nz = 8\u2019b00000001;\nz[7:5] = c[5:3];\nz[4] = d[7];\nz[3] = d[7];\nend\nendmodule\n\nPlease answer below. Show your work.\n\n10100001. Last assignment of a bit overrides all previous assignments.\n\nFinal Exam\n\nPage 8 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 451.57,
+                        "h": 729.31
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 10,
+            "text": "Initials: Solutions         Design of Digital Circuits         August 25th, 2017\n(c) [10 points] Is the following code correct? If not, please explain the mistake and how\n    to fix it.\n 1  module  mux2 ( input [1:0] i,    input sel,   output  z);\n 2    assign  z= (sel) ? i[1]:i[0];\n 3  endmodule\n 4\n 5  module  three ( input [3:0] data, input sel1, input sel2, output         z);\n 6\n 7    wire  m;\n 8\n 9    mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10    mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11    mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n13  endmodule\n    Answer and concise explanation:\n       No.  The wire m is declared to be only 1-bit wide but it needs to be 2-bit\n       wide.\n(d) [10 points] Does the following code correctly implement a multiplexer?\n 1  module  four (input sel,   input [1:0] data, output reg z);\n 2    always@(sel)\n 3    begin\n 4      if(sel == 1\u2019b0)\n 5        z = data[0];\n 6      else\n 7        z = data[1];\n 8    end\n 9  endmodule\n    Answer and concise explanation:\n       No. The input data  is not in the sensitivity list and therefore changes to\n       the input would not be reflected in the output z.\nFinal Exam                                                          Page 9 of 16",
+            "md": "# Design of Digital Circuits\n\nDate: August 25th, 2017\n\n# (c) [10 points] Is the following code correct? If not, please explain the mistake and how to fix it.\n\n1  module  mux2 ( input [1:0] i,    input sel,   output  z);\n2    assign  z= (sel) ? i[1]:i[0];\n3  endmodule\n4\n5  module  three ( input [3:0] data, input sel1, input sel2, output         z);\n6\n7    wire  m;\n8\n9    mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10   mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11   mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n13  endmodule\n\nAnswer and concise explanation:\n\nNo. The wire m is declared to be only 1-bit wide but it needs to be 2-bit wide.\n\n# (d) [10 points] Does the following code correctly implement a multiplexer?\n\n1  module  four (input sel,   input [1:0] data, output reg z);\n2    always@(sel)\n3    begin\n4      if(sel == 1\u2019b0)\n5        z = data[0];\n6      else\n7        z = data[1];\n8    end\n9  endmodule\n\nAnswer and concise explanation:\n\nNo. The input data is not in the sensitivity list and therefore changes to the input would not be reflected in the output z.\n\nFinal Exam                                                          Page 9 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Date: August 25th, 2017",
+                    "md": "Date: August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 40.37,
+                        "w": 443.68,
+                        "h": 493.18
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) [10 points] Is the following code correct? If not, please explain the mistake and how to fix it.",
+                    "md": "# (c) [10 points] Is the following code correct? If not, please explain the mistake and how to fix it.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.65,
+                        "y": 72.0,
+                        "w": 450.15,
+                        "h": 380.25
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1  module  mux2 ( input [1:0] i,    input sel,   output  z);\n2    assign  z= (sel) ? i[1]:i[0];\n3  endmodule\n4\n5  module  three ( input [3:0] data, input sel1, input sel2, output         z);\n6\n7    wire  m;\n8\n9    mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10   mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11   mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n13  endmodule\n\nAnswer and concise explanation:\n\nNo. The wire m is declared to be only 1-bit wide but it needs to be 2-bit wide.",
+                    "md": "1  module  mux2 ( input [1:0] i,    input sel,   output  z);\n2    assign  z= (sel) ? i[1]:i[0];\n3  endmodule\n4\n5  module  three ( input [3:0] data, input sel1, input sel2, output         z);\n6\n7    wire  m;\n8\n9    mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10   mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11   mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n13  endmodule\n\nAnswer and concise explanation:\n\nNo. The wire m is declared to be only 1-bit wide but it needs to be 2-bit wide.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 107.34,
+                        "w": 456.18,
+                        "h": 482.8
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) [10 points] Does the following code correctly implement a multiplexer?",
+                    "md": "# (d) [10 points] Does the following code correctly implement a multiplexer?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 71.35,
+                        "y": 112.27,
+                        "w": 382.86,
+                        "h": 339.98
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1  module  four (input sel,   input [1:0] data, output reg z);\n2    always@(sel)\n3    begin\n4      if(sel == 1\u2019b0)\n5        z = data[0];\n6      else\n7        z = data[1];\n8    end\n9  endmodule\n\nAnswer and concise explanation:\n\nNo. The input data is not in the sensitivity list and therefore changes to the input would not be reflected in the output z.\n\nFinal Exam                                                          Page 9 of 16",
+                    "md": "1  module  four (input sel,   input [1:0] data, output reg z);\n2    always@(sel)\n3    begin\n4      if(sel == 1\u2019b0)\n5        z = data[0];\n6      else\n7        z = data[1];\n8    end\n9  endmodule\n\nAnswer and concise explanation:\n\nNo. The input data is not in the sensitivity list and therefore changes to the input would not be reflected in the output z.\n\nFinal Exam                                                          Page 9 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 107.34,
+                        "w": 459.72,
+                        "h": 688.71
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 11,
+            "text": "Initials: Solutions        Design of Digital Circuits       August 25th, 2017\n4    Boolean Logic and Truth Tables\nYou will be asked to derive the Boolean Equations for two 4-input logic functions, X and\nY. Please use the Truth Table below for the following three questions.\n                             Inputs          Outputs\n                      A\u2083    A\u2082    A\u2081   A\u2080    X     Y\n                      0     0     0    0      1    0\n                      0     0     0    1      1    0\n                      0     0     1    0      1    0\n                      0     0     1    1      1    0\n                      0     1     0    0      1    0\n                      0     1     0    1      1    1\n                      0     1     1    0      1    0\n                      0     1     1    1      0    0\n                      1     0     0    0      1    0\n                      1     0     0    1      1    0\n                      1     0     1    0      1    1\n                      1     0     1    1      1    0\n                      1     1     0    0      1    0\n                      1     1     0    1      1    0\n                      1     1     1    0      0    0\n                      1     1     1    1      0    0\nFinal Exam                                                      Page 10 of 16",
+            "md": "# Design of Digital Circuits\n\n# Boolean Logic and Truth Tables\n\nYou will be asked to derive the Boolean Equations for two 4-input logic functions, X and Y. Please use the Truth Table below for the following three questions.\n\n| Inputs | A\u2083 | A\u2082 | A\u2081 | A\u2080 | X | Y |\n| ------ | -- | -- | -- | -- | - | - |\n|        | 0  | 0  | 0  | 0  | 1 | 0 |\n|        | 0  | 0  | 0  | 1  | 1 | 0 |\n|        | 0  | 0  | 1  | 0  | 1 | 0 |\n|        | 0  | 0  | 1  | 1  | 1 | 0 |\n|        | 0  | 1  | 0  | 0  | 1 | 0 |\n|        | 0  | 1  | 0  | 1  | 1 | 1 |\n|        | 0  | 1  | 1  | 0  | 1 | 0 |\n|        | 0  | 1  | 1  | 1  | 0 | 0 |\n|        | 1  | 0  | 0  | 0  | 1 | 0 |\n|        | 1  | 0  | 0  | 1  | 1 | 0 |\n|        | 1  | 0  | 1  | 0  | 1 | 1 |\n|        | 1  | 0  | 1  | 1  | 1 | 0 |\n|        | 1  | 1  | 0  | 0  | 1 | 0 |\n|        | 1  | 1  | 0  | 1  | 1 | 0 |\n|        | 1  | 1  | 1  | 0  | 0 | 0 |\n|        | 1  | 1  | 1  | 1  | 0 | 0 |\n\nFinal Exam                                                      Page 10 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Boolean Logic and Truth Tables",
+                    "md": "# Boolean Logic and Truth Tables",
+                    "rows": null,
+                    "bBox": {
+                        "x": 99.86,
+                        "y": 66.74,
+                        "w": 262.02,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "You will be asked to derive the Boolean Equations for two 4-input logic functions, X and Y. Please use the Truth Table below for the following three questions.",
+                    "md": "You will be asked to derive the Boolean Equations for two 4-input logic functions, X and Y. Please use the Truth Table below for the following three questions.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 451.42,
+                        "h": 136.29
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Inputs | A\u2083 | A\u2082 | A\u2081 | A\u2080 | X | Y |\n| ------ | -- | -- | -- | -- | - | - |\n|        | 0  | 0  | 0  | 0  | 1 | 0 |\n|        | 0  | 0  | 0  | 1  | 1 | 0 |\n|        | 0  | 0  | 1  | 0  | 1 | 0 |\n|        | 0  | 0  | 1  | 1  | 1 | 0 |\n|        | 0  | 1  | 0  | 0  | 1 | 0 |\n|        | 0  | 1  | 0  | 1  | 1 | 1 |\n|        | 0  | 1  | 1  | 0  | 1 | 0 |\n|        | 0  | 1  | 1  | 1  | 0 | 0 |\n|        | 1  | 0  | 0  | 0  | 1 | 0 |\n|        | 1  | 0  | 0  | 1  | 1 | 0 |\n|        | 1  | 0  | 1  | 0  | 1 | 1 |\n|        | 1  | 0  | 1  | 1  | 1 | 0 |\n|        | 1  | 1  | 0  | 0  | 1 | 0 |\n|        | 1  | 1  | 0  | 1  | 1 | 0 |\n|        | 1  | 1  | 1  | 0  | 0 | 0 |\n|        | 1  | 1  | 1  | 1  | 0 | 0 |",
+                    "rows": [
+                        [
+                            "Inputs",
+                            "A\u2083",
+                            "A\u2082",
+                            "A\u2081",
+                            "A\u2080",
+                            "X",
+                            "Y"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 451.58,
+                        "h": 755.68
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Final Exam                                                      Page 10 of 16",
+                    "md": "Final Exam                                                      Page 10 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 191.03,
+                        "w": 451.58,
+                        "h": 605.01
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 12,
+            "text": " Initials: Solutions           Design of Digital Circuits          August 25th, 2017\n (a) [15 points] The output X is one when the input does not contain 3 consecutive 1\u2019s in\n    the word A\u2083, A\u2082, A\u2081, A\u2080. The output X  is zero, otherwise. Fill in the truth table\n    on the previous page and write the Boolean equation in the box below for\n    X using the Sum of Products form. (No simplification needed.)\n        X = (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080)\n(b) [15 points] The output Y is one when no two adjacent bits in the word A\u2083, A\u2082, A\u2081, A\u2080\n    are the same (e.g., if A\u2082 is 0 then A\u2083 and A\u2081 cannot be 0). The output Y  is zero,\n    otherwise (for example 0000). Fill in the truth table on the previous page and\n    write the Boolean equation in the box below for Y       using the Sum of Products\n    form. (No simplification needed.)\n        Y = A\u2083A\u2082A\u2081A\u2080 + A\u2083A\u2082A\u2081A\u2080\n (c) [10 points] Please represent the circuit of Y using only 2-input XOR and AND gates.\n             A;                                         ~ B\n               Az\n               A^\n              A,\n Final Exam                                                             Page 11 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n# (a) [15 points]\n\nThe output X is one when the input does not contain 3 consecutive 1\u2019s in the word A\u2083, A\u2082, A\u2081, A\u2080. The output X is zero, otherwise. Fill in the truth table on the previous page and write the Boolean equation in the box below for X using the Sum of Products form. (No simplification needed.)\n\nX = (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080)\n\n# (b) [15 points]\n\nThe output Y is one when no two adjacent bits in the word A\u2083, A\u2082, A\u2081, A\u2080 are the same (e.g., if A\u2082 is 0 then A\u2083 and A\u2081 cannot be 0). The output Y is zero, otherwise (for example 0000). Fill in the truth table on the previous page and write the Boolean equation in the box below for Y using the Sum of Products form. (No simplification needed.)\n\nY = A\u2083A\u2082A\u2081A\u2080 + A\u2083A\u2082A\u2081A\u2080\n\n# (c) [10 points]\n\nPlease represent the circuit of Y using only 2-input XOR and AND gates.\n\nA; ~ B\n\nAz\n\nA^\n\nAi\n\n# Final Exam\n\nPage 11 of 16",
+            "images": [
+                {
+                    "name": "img_p11_1.png",
+                    "height": 708.0,
+                    "width": 1074.0,
+                    "x": 114.332,
+                    "y": 498.77296,
+                    "original_width": 1074,
+                    "original_height": 708,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 429.26,
+                        "y": 40.37,
+                        "w": 93.61,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) [15 points]",
+                    "md": "# (a) [15 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The output X is one when the input does not contain 3 consecutive 1\u2019s in the word A\u2083, A\u2082, A\u2081, A\u2080. The output X is zero, otherwise. Fill in the truth table on the previous page and write the Boolean equation in the box below for X using the Sum of Products form. (No simplification needed.)\n\nX = (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080)",
+                    "md": "The output X is one when the input does not contain 3 consecutive 1\u2019s in the word A\u2083, A\u2082, A\u2081, A\u2080. The output X is zero, otherwise. Fill in the truth table on the previous page and write the Boolean equation in the box below for X using the Sum of Products form. (No simplification needed.)\n\nX = (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080) \u00b7 (A\u2083 + A\u2082 + A\u2081 + A\u2080)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 430.61,
+                        "h": 244.82
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) [15 points]",
+                    "md": "# (b) [15 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The output Y is one when no two adjacent bits in the word A\u2083, A\u2082, A\u2081, A\u2080 are the same (e.g., if A\u2082 is 0 then A\u2083 and A\u2081 cannot be 0). The output Y is zero, otherwise (for example 0000). Fill in the truth table on the previous page and write the Boolean equation in the box below for Y using the Sum of Products form. (No simplification needed.)\n\nY = A\u2083A\u2082A\u2081A\u2080 + A\u2083A\u2082A\u2081A\u2080",
+                    "md": "The output Y is one when no two adjacent bits in the word A\u2083, A\u2082, A\u2081, A\u2080 are the same (e.g., if A\u2082 is 0 then A\u2083 and A\u2081 cannot be 0). The output Y is zero, otherwise (for example 0000). Fill in the truth table on the previous page and write the Boolean equation in the box below for Y using the Sum of Products form. (No simplification needed.)\n\nY = A\u2083A\u2082A\u2081A\u2080 + A\u2083A\u2082A\u2081A\u2080",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 430.61,
+                        "h": 316.22
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) [10 points]",
+                    "md": "# (c) [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please represent the circuit of Y using only 2-input XOR and AND gates.\n\nA; ~ B\n\nAz\n\nA^\n\nAi",
+                    "md": "Please represent the circuit of Y using only 2-input XOR and AND gates.\n\nA; ~ B\n\nAz\n\nA^\n\nAi",
+                    "rows": null,
+                    "bBox": {
+                        "x": 138.0,
+                        "y": 465.41,
+                        "w": 380.03,
+                        "h": 169.59
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Final Exam",
+                    "md": "# Final Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 784.05,
+                        "w": 60.39,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 11 of 16",
+                    "md": "Page 11 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 454.19,
+                        "y": 784.05,
+                        "w": 69.38,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 13,
+            "text": "Initials: Solutions            Design of Digital Circuits            August 25th, 2017\n5    Tomasulo\u2019s Algorithm\nIn this problem, we consider an in-order fetch, out-of-order dispatch, and in-order re-\ntirement execution engine that employs Tomasulo\u2019s algorithm.    This engine behaves as\nfollows:\n   \u2022 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and\n      Write-back (W).\n   \u2022 The engine can fetch one instruction per cycle, decode one instruction per cycle,\n      and write back the result of one instruction per cycle.\n   \u2022 The engine has two execution units: 1) an adder for executing ADD instructions\n      and 2) a multiplier for executing MUL instructions.\n   \u2022 The execution units are fully pipelined. The adder has two stages (E1-E2) and the\n      multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n   \u2022 The adder has a two-entry reservation station and the multiplier has a four-entry\n      reservation station.\n   \u2022 An instruction always allocates the first available entry of the reservation station\n      (in top-to-bottom order) of the corresponding execution unit.\n   \u2022  Full data forwarding is available, i.e., during the last cycle of the E stage, the tags\n      and data are broadcast to the reservation station and the Register Alias Table\n      (RAT). For example, an ADD instruction updates the reservation station entries\n      of the dependent instructions in E2 stage. So, the updated value can be read from\n      the reservation station entry in the next cycle. Therefore, a dependent instruction\n      can potentially begin its execution in the next cycle (after E2).\n   \u2022 The multiplier and adder have separate output data buses, which allow both the\n      adder and the multiplier to update the reservation station and the RAT in the same\n      cycle.\n   \u2022 An instruction continues to occupy a reservation station slot until it finishes the\n      Write-back (W) stage. The reservation station entry is deallocated after the Write-\n      back (W) stage.\n5.1    Problem Definition\nThe processor is about to fetch and execute   six instructions. Assume the  reservation\nstations (RS) are all initially empty and the initial state of the register alias table (RAT)\nis given below in Figure (a). Instructions are fetched, decoded and executed as discussed\nin class. At some point during the execution of the six instructions, a snapshot of the\nstate of the RS and the RAT is taken. Figures (b) and (c) show the state of the RS and\nthe RAT at the snapshot time.    A dash (\u2013) indicates that a value has been cleared. A\nquestion mark (?) indicates that a value is unknown.\nFinal Exam                                                                Page 12 of 16",
+            "md": "# Initials: Solutions\n\n# Design of Digital Circuits\n\n# August 25th, 2017\n\n# 5 Tomasulo\u2019s Algorithm\n\nIn this problem, we consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo\u2019s algorithm. This engine behaves as follows:\n\n- The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n- The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n- The engine has two execution units: 1) an adder for executing ADD instructions and 2) a multiplier for executing MUL instructions.\n- The execution units are fully pipelined. The adder has two stages (E1-E2) and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n- The adder has a two-entry reservation station and the multiplier has a four-entry reservation station.\n- An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n- Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n- The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n- An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.\n\n# 5.1 Problem Definition\n\nThe processor is about to fetch and execute six instructions. Assume the reservation stations (RS) are all initially empty and the initial state of the register alias table (RAT) is given below in Figure (a). Instructions are fetched, decoded and executed as discussed in class. At some point during the execution of the six instructions, a snapshot of the state of the RS and the RAT is taken. Figures (b) and (c) show the state of the RS and the RAT at the snapshot time. A dash (\u2013) indicates that a value has been cleared. A question mark (?) indicates that a value is unknown.\n\nFinal Exam Page 12 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Initials: Solutions",
+                    "md": "# Initials: Solutions",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 90.95,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "August 25th, 2017",
+                    "md": "# August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 450.87,
+                        "h": 43.37
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5 Tomasulo\u2019s Algorithm",
+                    "md": "# 5 Tomasulo\u2019s Algorithm",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 207.04,
+                        "h": 17.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this problem, we consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo\u2019s algorithm. This engine behaves as follows:\n\n- The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n- The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n- The engine has two execution units: 1) an adder for executing ADD instructions and 2) a multiplier for executing MUL instructions.\n- The execution units are fully pipelined. The adder has two stages (E1-E2) and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n- The adder has a two-entry reservation station and the multiplier has a four-entry reservation station.\n- An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n- Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n- The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n- An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.",
+                    "md": "In this problem, we consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo\u2019s algorithm. This engine behaves as follows:\n\n- The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n- The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n- The engine has two execution units: 1) an adder for executing ADD instructions and 2) a multiplier for executing MUL instructions.\n- The execution units are fully pipelined. The adder has two stages (E1-E2) and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n- The adder has a two-entry reservation station and the multiplier has a four-entry reservation station.\n- An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n- Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n- The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n- An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 451.77,
+                        "h": 568.61
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.1 Problem Definition",
+                    "md": "# 5.1 Problem Definition",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 167.73,
+                        "h": 546.05
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The processor is about to fetch and execute six instructions. Assume the reservation stations (RS) are all initially empty and the initial state of the register alias table (RAT) is given below in Figure (a). Instructions are fetched, decoded and executed as discussed in class. At some point during the execution of the six instructions, a snapshot of the state of the RS and the RAT is taken. Figures (b) and (c) show the state of the RS and the RAT at the snapshot time. A dash (\u2013) indicates that a value has been cleared. A question mark (?) indicates that a value is unknown.\n\nFinal Exam Page 12 of 16",
+                    "md": "The processor is about to fetch and execute six instructions. Assume the reservation stations (RS) are all initially empty and the initial state of the register alias table (RAT) is given below in Figure (a). Instructions are fetched, decoded and executed as discussed in class. At some point during the execution of the six instructions, a snapshot of the state of the RS and the RAT is taken. Figures (b) and (c) show the state of the RS and the RAT at the snapshot time. A dash (\u2013) indicates that a value has been cleared. A question mark (?) indicates that a value is unknown.\n\nFinal Exam Page 12 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 623.35,
+                        "w": 451.58,
+                        "h": 172.7
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 14,
+            "text": "                                                                        \u00d7\n   Initials: Solutions             Design of Digital Circuits              August 25th, 2017\n                                                                ID   V Tag  Value V Tag  Value\n                                                         ID    V    Tag    \u2013               \u2013\n                                                                D   0   T  Value  0 VH  Tag  Value\nReg   Valid   Tag  Value       Reg     Valid Tag Value   A      1    ?       350   1     ?     12\n                                                         B      0K  0A D   \u2013      0 Z      \u2013\n R0     1      \u2013    1900        R0       1    ?   1900                        ?    0     Z     ?\n R1     1      \u2013     82         R1       0    Z    ?                       +\n R2     1      \u2013     1          R2       1    ?    12\n R3     1      \u2013     3          R3       1    ?    3            ID   V Tag Value  V    Tag  Value\n R4     1      \u2013     10         R4       1    ?    10    ID    VE    1 \u2013      7   1     \u2013  35\n                                                                    Tag    Value  V     Tag  Value\n R5     1      \u2013     5          R5       0    B    ?     \u2013      \u2013T   1\u2013 \u2013     \u2013    \u2013\u2013    \u2013     \u2013\n                                                                              14  1        35\n R6     1      \u2013     23         R6       1    ?    23    T      1H   1? \u2013     10   1\u2013    ?     35\n                                                                              35  1        35\n R7     1      \u2013     35         R7       0    H    ?     H      1Z   1? \u2013     35   0\u2013    A     ?\n                                                                              82  0      H\n R8     1      \u2013     61         R8       1    ?   350    Z      1    ?        82   0     H     ?\n R9     1      \u2013     4          R9       0    A    ?                       \u00d7\n (a) Initial state of the RAT  (b) State of the RAT at the\n                               snapshot time              (c) State of the RS at the snapshot time\n   5.2     Questions                                                 ID V  Tag    Value V Tag Value\n   5.2.1    Data Flow Graph [40 points]                              D  0   T       \u2013   0  H    \u2013\n                                                                     K  0   D       \u2013   0  Z    \u2013\n   Based on the information provided above, identify the instructions and complete the\n   dataflow graph below for the six instructions that have been fetched.      +\n                                                                           Please appropriately\n   connect the nodes using edges and specify the direction of each edge.     Label each edge\n   with the destination architectural register and the corresponding Tag. Note that you may\n   not need to use all registers and/or nodes provided below.       (40 points if everything is\n   correct. Deduct 2 points per mistake.)\n       Register IDs:    R3           Rg           Ra          Rz           R1\n                                                            HIRZ\n                               E/RZ  TIR8_ A/R9         ZRI\n                                   ATR9          BIRS\n                                                    Output\n   Final Exam                                                                     Page 13 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n| ID | V Tag | Value | V Tag | Value |\n| -- | ----- | ----- | ----- | ----- |\n| A  | 1     | ?     | 350   | 1     |\n| B  | 0K    | 0A    | D     | -     |\n| R0 | 1     | -     | 1900  |       |\n| R1 | 1     | -     | 82    |       |\n| R2 | 1     | -     | 1     |       |\n| R3 | 1     | -     | 3     |       |\n| R4 | 1     | -     | 10    |       |\n| R5 | 1     | -     | 5     |       |\n| R6 | 1     | -     | 23    |       |\n| R7 | 1     | -     | 35    |       |\n| R8 | 1     | -     | 61    |       |\n| R9 | 1     | -     | 4     |       |\n\n(a) Initial state of the RAT\n\n(b) State of the RAT at the snapshot time\n\n(c) State of the RS at the snapshot time\n\n# 5.2 Questions\n\n# 5.2.1 Data Flow Graph [40 points]\n\nBased on the information provided above, identify the instructions and complete the dataflow graph below for the six instructions that have been fetched.\n\nPlease appropriately connect the nodes using edges and specify the direction of each edge. Label each edge with the destination architectural register and the corresponding Tag. Note that you may not need to use all registers and/or nodes provided below. (40 points if everything is correct. Deduct 2 points per mistake.)\n\nRegister IDs: R3 Rg Ra Rz R1\n\nHIRZ\n\nE/RZ TIR8_ A/R9 ZRI\n\nATR9 BIRS\n\nOutput\n\nFinal Exam\n\nPage 13 of 16",
+            "images": [
+                {
+                    "name": "img_p13_1.png",
+                    "height": 618.0,
+                    "width": 1424.0,
+                    "x": 83.283,
+                    "y": 423.68868399999997,
+                    "original_width": 1424,
+                    "original_height": 618,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 255.54,
+                        "h": 275.38
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 98.3,
+                        "y": 40.37,
+                        "w": 424.57,
+                        "h": 275.38
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| ID | V Tag | Value | V Tag | Value |\n| -- | ----- | ----- | ----- | ----- |\n| A  | 1     | ?     | 350   | 1     |\n| B  | 0K    | 0A    | D     | -     |\n| R0 | 1     | -     | 1900  |       |\n| R1 | 1     | -     | 82    |       |\n| R2 | 1     | -     | 1     |       |\n| R3 | 1     | -     | 3     |       |\n| R4 | 1     | -     | 10    |       |\n| R5 | 1     | -     | 5     |       |\n| R6 | 1     | -     | 23    |       |\n| R7 | 1     | -     | 35    |       |\n| R8 | 1     | -     | 61    |       |\n| R9 | 1     | -     | 4     |       |",
+                    "rows": [
+                        [
+                            "ID",
+                            "V Tag",
+                            "Value",
+                            "V Tag",
+                            "Value"
+                        ],
+                        [
+                            "A",
+                            "1",
+                            "?",
+                            "350",
+                            "1"
+                        ],
+                        [
+                            "B",
+                            "0K",
+                            "0A",
+                            "D",
+                            "-"
+                        ],
+                        [
+                            "R0",
+                            "1",
+                            "-",
+                            "1900",
+                            ""
+                        ],
+                        [
+                            "R1",
+                            "1",
+                            "-",
+                            "82",
+                            ""
+                        ],
+                        [
+                            "R2",
+                            "1",
+                            "-",
+                            "1",
+                            ""
+                        ],
+                        [
+                            "R3",
+                            "1",
+                            "-",
+                            "3",
+                            ""
+                        ],
+                        [
+                            "R4",
+                            "1",
+                            "-",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "R5",
+                            "1",
+                            "-",
+                            "5",
+                            ""
+                        ],
+                        [
+                            "R6",
+                            "1",
+                            "-",
+                            "23",
+                            ""
+                        ],
+                        [
+                            "R7",
+                            "1",
+                            "-",
+                            "35",
+                            ""
+                        ],
+                        [
+                            "R8",
+                            "1",
+                            "-",
+                            "61",
+                            ""
+                        ],
+                        [
+                            "R9",
+                            "1",
+                            "-",
+                            "4",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 57.59,
+                        "y": 3.39,
+                        "w": 471.44,
+                        "h": 792.66
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "(a) Initial state of the RAT\n\n(b) State of the RAT at the snapshot time\n\n(c) State of the RS at the snapshot time",
+                    "md": "(a) Initial state of the RAT\n\n(b) State of the RAT at the snapshot time\n\n(c) State of the RS at the snapshot time",
+                    "rows": null,
+                    "bBox": {
+                        "x": 57.59,
+                        "y": 82.19,
+                        "w": 464.52,
+                        "h": 358.81
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.2 Questions",
+                    "md": "# 5.2 Questions",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 82.19,
+                        "w": 356.16,
+                        "h": 220.39
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.2.1 Data Flow Graph [40 points]",
+                    "md": "# 5.2.1 Data Flow Graph [40 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 82.19,
+                        "w": 420.26,
+                        "h": 358.81
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Based on the information provided above, identify the instructions and complete the dataflow graph below for the six instructions that have been fetched.\n\nPlease appropriately connect the nodes using edges and specify the direction of each edge. Label each edge with the destination architectural register and the corresponding Tag. Note that you may not need to use all registers and/or nodes provided below. (40 points if everything is correct. Deduct 2 points per mistake.)\n\nRegister IDs: R3 Rg Ra Rz R1\n\nHIRZ\n\nE/RZ TIR8_ A/R9 ZRI\n\nATR9 BIRS\n\nOutput\n\nFinal Exam\n\nPage 13 of 16",
+                    "md": "Based on the information provided above, identify the instructions and complete the dataflow graph below for the six instructions that have been fetched.\n\nPlease appropriately connect the nodes using edges and specify the direction of each edge. Label each edge with the destination architectural register and the corresponding Tag. Note that you may not need to use all registers and/or nodes provided below. (40 points if everything is correct. Deduct 2 points per mistake.)\n\nRegister IDs: R3 Rg Ra Rz R1\n\nHIRZ\n\nE/RZ TIR8_ A/R9 ZRI\n\nATR9 BIRS\n\nOutput\n\nFinal Exam\n\nPage 13 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 57.96,
+                        "y": 70.45,
+                        "w": 465.73,
+                        "h": 725.6
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 15,
+            "text": "Initials: Solutions           Design of Digital Circuits          August 25th, 2017\n5.2.2   Program Instructions [20 points]\nFill in the blanks below with the six-instruction sequence in program order. When refer-\nring to registers, please use their architectural names (R0 through R9). Place the register\nwith the smaller architectural name on the left source register box.\nFor example, ADD R8 \u21d0 R1, R5.      (20 points if everything is correct.)\n        MUL          R2    \u21d0     R3   ,   R9\n        MUL          R8    \u21d0     R4   ,   R7\n        ADD          R9    \u21d0     R2   ,   R8\n        MUL          R7    \u21d0     R7   ,   R9\n        MUL          R1    \u21d0     R1   ,   R7\n        ADD          R5    \u21d0     R1   ,   R9\nFinal Exam                                                             Page 14 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n# 5.2.2 Program Instructions [20 points]\n\nFill in the blanks below with the six-instruction sequence in program order. When referring to registers, please use their architectural names (R0 through R9). Place the register with the smaller architectural name on the left source register box.\n\nFor example, ADD R8 \u21d0 R1, R5. (20 points if everything is correct.)\n\n| MUL | R2 | \u21d0 | R3 | , | R9 |\n| --- | -- | - | -- | - | -- |\n| MUL | R8 | \u21d0 | R4 | , | R7 |\n| ADD | R9 | \u21d0 | R2 | , | R8 |\n| MUL | R7 | \u21d0 | R7 | , | R9 |\n| MUL | R1 | \u21d0 | R1 | , | R7 |\n| ADD | R5 | \u21d0 | R1 | , | R9 |\n\nFinal Exam\n\nPage 14 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 276.72,
+                        "y": 40.37,
+                        "w": 246.15,
+                        "h": 212.44
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.2.2 Program Instructions [20 points]",
+                    "md": "# 5.2.2 Program Instructions [20 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 72.0,
+                        "w": 233.48,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Fill in the blanks below with the six-instruction sequence in program order. When referring to registers, please use their architectural names (R0 through R9). Place the register with the smaller architectural name on the left source register box.\n\nFor example, ADD R8 \u21d0 R1, R5. (20 points if everything is correct.)",
+                    "md": "Fill in the blanks below with the six-instruction sequence in program order. When referring to registers, please use their architectural names (R0 through R9). Place the register with the smaller architectural name on the left source register box.\n\nFor example, ADD R8 \u21d0 R1, R5. (20 points if everything is correct.)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 108.61,
+                        "w": 451.5,
+                        "h": 144.19
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| MUL | R2 | \u21d0 | R3 | , | R9 |\n| --- | -- | - | -- | - | -- |\n| MUL | R8 | \u21d0 | R4 | , | R7 |\n| ADD | R9 | \u21d0 | R2 | , | R8 |\n| MUL | R7 | \u21d0 | R7 | , | R9 |\n| MUL | R1 | \u21d0 | R1 | , | R7 |\n| ADD | R5 | \u21d0 | R1 | , | R9 |",
+                    "rows": [
+                        [
+                            "MUL",
+                            "R2",
+                            "\u21d0",
+                            "R3",
+                            ",",
+                            "R9"
+                        ],
+                        [
+                            "MUL",
+                            "R8",
+                            "\u21d0",
+                            "R4",
+                            ",",
+                            "R7"
+                        ],
+                        [
+                            "ADD",
+                            "R9",
+                            "\u21d0",
+                            "R2",
+                            ",",
+                            "R8"
+                        ],
+                        [
+                            "MUL",
+                            "R7",
+                            "\u21d0",
+                            "R7",
+                            ",",
+                            "R9"
+                        ],
+                        [
+                            "MUL",
+                            "R1",
+                            "\u21d0",
+                            "R1",
+                            ",",
+                            "R7"
+                        ],
+                        [
+                            "ADD",
+                            "R5",
+                            "\u21d0",
+                            "R1",
+                            ",",
+                            "R9"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 451.5,
+                        "h": 212.44
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Final Exam\n\nPage 14 of 16",
+                    "md": "Final Exam\n\nPage 14 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 784.05,
+                        "w": 451.58,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 16,
+            "text": "Initials: Solutions           Design of Digital Circuits            August 25th, 2017\n6    GPUs and SIMD\nWe define the SIMD utilization  of a program run on a GPU as the fraction of SIMD\nlanes that are kept busy with active threads during the run of a program. As we saw in\nlecture and practice exercises, the SIMD utilization of a program is computed across the\ncomplete run of the program.\n   The following code segment is run on a GPU. Each thread executes a single iteration\nof the shown loop. Assume that the data values of the arrays A, B, and C are already in\nvector registers so there are no loads and stores in this program. (Hint: Notice that there\nare 6 instructions in each thread.) A warp in the GPU consists of 64 threads, and there\nare 64 SIMD lanes in the GPU. Please assume that all values in array B have magnitudes\nless than 10 (i.e., |B[i]| < 10, for all i).\nfor (i =    0;  i  <  1024; i++) {\n     A[i] =    B[i] * B[i];\n     if (A[i]    >  0)  {\n           C[i] =   A[i] * B[i];\n           if  (C[i]   <  0)  {\n                  A[i] =  A[i] +   1;\n           }\n           A[i] =   A[i] -    2;\n     }\n}\n   Please answer the following five questions.\n(a) [5 points] How many warps does it take to execute this program?\n        Warps = (Number of threads) / (Number of threads per warp)\n        Number of threads = 2\u00b9\u2070  (i.e., one thread per loop iteration).\n        Number of threads per warp = 64 = 2\u2076 (given).\n        Warps = 2\u00b9\u2070/2\u2076 = 2\u2074\n(b) [5 points] What is the maximum possible SIMD utilization of this program?\n        100%\nFinal Exam                                                               Page 15 of 16",
+            "md": "# Design of Digital Circuits\n\n# 6 GPUs and SIMD\n\nWe define the SIMD utilization of a program run on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 6 instructions in each thread.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU. Please assume that all values in array B have magnitudes less than 10 (i.e., |B[i]| &lt; 10, for all i).\n\nfor (i = 0; i &lt; 1024; i++) {\nA[i] = B[i] * B[i];\nif (A[i] &gt; 0) {\nC[i] = A[i] * B[i];\nif (C[i] &lt; 0) {\nA[i] = A[i] + 1;\n}\nA[i] = A[i] - 2;\n}\n}\n\nPlease answer the following five questions.\n\n1. (a) [5 points] How many warps does it take to execute this program?\n\nWarps = (Number of threads) / (Number of threads per warp)\n\nNumber of threads = 210 (i.e., one thread per loop iteration).\n\nNumber of threads per warp = 64 = 26 (given).\n\nWarps = 210/26 = 24\n2. (b) [5 points] What is the maximum possible SIMD utilization of this program?\n\n100%\n\nFinal Exam\n\nPage 15 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 158.08,
+                        "y": 40.37,
+                        "w": 204.59,
+                        "h": 227.32
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "6 GPUs and SIMD",
+                    "md": "# 6 GPUs and SIMD",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 66.74,
+                        "w": 168.04,
+                        "h": 200.95
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "We define the SIMD utilization of a program run on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 6 instructions in each thread.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU. Please assume that all values in array B have magnitudes less than 10 (i.e., |B[i]| &lt; 10, for all i).\n\nfor (i = 0; i &lt; 1024; i++) {\nA[i] = B[i] * B[i];\nif (A[i] &gt; 0) {\nC[i] = A[i] * B[i];\nif (C[i] &lt; 0) {\nA[i] = A[i] + 1;\n}\nA[i] = A[i] - 2;\n}\n}\n\nPlease answer the following five questions.\n\n1. (a) [5 points] How many warps does it take to execute this program?\n\nWarps = (Number of threads) / (Number of threads per warp)\n\nNumber of threads = 210 (i.e., one thread per loop iteration).\n\nNumber of threads per warp = 64 = 26 (given).\n\nWarps = 210/26 = 24\n2. (b) [5 points] What is the maximum possible SIMD utilization of this program?\n\n100%\n\nFinal Exam\n\nPage 15 of 16",
+                    "md": "We define the SIMD utilization of a program run on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 6 instructions in each thread.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU. Please assume that all values in array B have magnitudes less than 10 (i.e., |B[i]| &lt; 10, for all i).\n\nfor (i = 0; i &lt; 1024; i++) {\nA[i] = B[i] * B[i];\nif (A[i] &gt; 0) {\nC[i] = A[i] * B[i];\nif (C[i] &lt; 0) {\nA[i] = A[i] + 1;\n}\nA[i] = A[i] - 2;\n}\n}\n\nPlease answer the following five questions.\n\n1. (a) [5 points] How many warps does it take to execute this program?\n\nWarps = (Number of threads) / (Number of threads per warp)\n\nNumber of threads = 210 (i.e., one thread per loop iteration).\n\nNumber of threads per warp = 64 = 26 (given).\n\nWarps = 210/26 = 24\n2. (b) [5 points] What is the maximum possible SIMD utilization of this program?\n\n100%\n\nFinal Exam\n\nPage 15 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 71.35,
+                        "y": 66.74,
+                        "w": 452.34,
+                        "h": 729.31
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 17,
+            "text": "Initials: Solutions             Design of Digital Circuits              August 25th, 2017\n (c) [20 points] Please describe what needs to be true about array B to reach the maximum\n    possible SIMD utilization asked in part (b). (Please cover all cases in your answer)\n    B:      For every 64 consecutive elements: every value is 0, every value is positive,\n            or every value is negative. Must give all three of these.\n(d) [10 points] What is the minimum possible SIMD utilization of this program?\n         Answer: 132/384\n         Explanation:     The first two lines must be executed by every thread in\n         a warp (64/64 utilization for each line).   The minimum utilization results\n         when a single thread from each warp passes both conditions on lines 2 and\n         4, and every other thread fails to meet the condition on line 2. The thread\n         per warp that meets both conditions, executes lines 3-6 resulting in a SIMD\n         utilization of 1/64 for each line. The minimum SIMD utilization sums to\n         (64 \u2217 2 + 1 \u2217 4)/(64 \u2217 6) = 132/384\n (e) [20 points] Please describe what needs to be true about array B to reach the minimum\n    possible SIMD utilization asked in part (d). (Please cover all cases in your answer)\n    B:      Exactly 1 of every 64 consecutive elements must be negative.      The rest\n            must be zero. This is the only case that this holds true.\nFinal Exam                                                                   Page 16 of 16",
+            "md": "# Design of Digital Circuits\n\nAugust 25th, 2017\n\n# (c) [20 points]\n\nPlease describe what needs to be true about array B to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer)\n\nB: For every 64 consecutive elements: every value is 0, every value is positive, or every value is negative. Must give all three of these.\n\n# (d) [10 points]\n\nWhat is the minimum possible SIMD utilization of this program?\n\nAnswer: 132/384\n\nExplanation: The first two lines must be executed by every thread in a warp (64/64 utilization for each line). The minimum utilization results when a single thread from each warp passes both conditions on lines 2 and 4, and every other thread fails to meet the condition on line 2. The thread per warp that meets both conditions executes lines 3-6 resulting in a SIMD utilization of 1/64 for each line. The minimum SIMD utilization sums to (64 \u2217 2 + 1 \u2217 4)/(64 \u2217 6) = 132/384\n\n# (e) [20 points]\n\nPlease describe what needs to be true about array B to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer)\n\nB: Exactly 1 of every 64 consecutive elements must be negative. The rest must be zero. This is the only case that this holds true.\n\nFinal Exam\n\nPage 16 of 16",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 232.23,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "August 25th, 2017",
+                    "md": "August 25th, 2017",
+                    "rows": null,
+                    "bBox": {
+                        "x": 429.26,
+                        "y": 40.37,
+                        "w": 93.61,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) [20 points]",
+                    "md": "# (c) [20 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please describe what needs to be true about array B to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer)\n\nB: For every 64 consecutive elements: every value is 0, every value is positive, or every value is negative. Must give all three of these.",
+                    "md": "Please describe what needs to be true about array B to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer)\n\nB: For every 64 consecutive elements: every value is 0, every value is positive, or every value is negative. Must give all three of these.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 424.93,
+                        "h": 369.52
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) [10 points]",
+                    "md": "# (d) [10 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What is the minimum possible SIMD utilization of this program?\n\nAnswer: 132/384\n\nExplanation: The first two lines must be executed by every thread in a warp (64/64 utilization for each line). The minimum utilization results when a single thread from each warp passes both conditions on lines 2 and 4, and every other thread fails to meet the condition on line 2. The thread per warp that meets both conditions executes lines 3-6 resulting in a SIMD utilization of 1/64 for each line. The minimum SIMD utilization sums to (64 \u2217 2 + 1 \u2217 4)/(64 \u2217 6) = 132/384",
+                    "md": "What is the minimum possible SIMD utilization of this program?\n\nAnswer: 132/384\n\nExplanation: The first two lines must be executed by every thread in a warp (64/64 utilization for each line). The minimum utilization results when a single thread from each warp passes both conditions on lines 2 and 4, and every other thread fails to meet the condition on line 2. The thread per warp that meets both conditions executes lines 3-6 resulting in a SIMD utilization of 1/64 for each line. The minimum SIMD utilization sums to (64 \u2217 2 + 1 \u2217 4)/(64 \u2217 6) = 132/384",
+                    "rows": null,
+                    "bBox": {
+                        "x": 114.33,
+                        "y": 240.65,
+                        "w": 387.67,
+                        "h": 113.12
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(e) [20 points]",
+                    "md": "# (e) [20 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Please describe what needs to be true about array B to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer)\n\nB: Exactly 1 of every 64 consecutive elements must be negative. The rest must be zero. This is the only case that this holds true.\n\nFinal Exam\n\nPage 16 of 16",
+                    "md": "Please describe what needs to be true about array B to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer)\n\nB: Exactly 1 of every 64 consecutive elements must be negative. The rest must be zero. This is the only case that this holds true.\n\nFinal Exam\n\nPage 16 of 16",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 148.6,
+                        "w": 451.58,
+                        "h": 647.45
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.276,
+            "height": 841.89,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        }
+    ],
+    "job_metadata": {
+        "job_pages": 0,
+        "job_auto_mode_triggered_pages": 0,
+        "job_is_cache_hit": true
+    },
+    "file_name": "OnurETHZ_exams/main-spring2017-sol (1).pdf",
+    "job_id": "c736ab99-6fc9-4f14-88df-fe4a195046a7",
+    "is_done": false,
+    "error": null
+}

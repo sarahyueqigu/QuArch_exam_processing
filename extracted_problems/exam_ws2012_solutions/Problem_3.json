@@ -1,0 +1,38 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "3",
+  "problem_context": "In this question we will investigate a circuit that can calculate the multiplication of two complex numbers expressed in the form (a + bi) where a and b are integers expressed in 8-bit two's complement form and i is the complex number which satisfies the equation i² = −1. As you may remember the multiplication of two complex numbers is\n\n(e + fi) = (a + bi) × (c + di)\n\n= (ac− bd) + (ad + bc)i\n\nThe circuit that we will build has four separate 8-bit inputs (A, B, C, D) for the two complex numbers. A START signal is used to tell the circuit that a new pair of complex numbers are ready to be processed. The circuit has two 16-bit outputs (E, F) for the complex result, and a FINISH signal that tells that the circuit has result has been calculated and the result is ready at outputs E and F.",
+  "problem_figures": ["IMAGE", "IMAGE", "IMAGE"],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "In your own words describe how the circuit works. For each of the calculation states (AC, BD, CB, AD), explain which operations take place:\n\nWhen the Reset signal is active the circuit moves to the INIT state. The ClrAccu signal is '0' clearing the accumulator while in this state. The circuit stays in this state as long as START signal remains '0'...",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "As soons as START is active, we first move to state AC. In this state, input A and C are selected and multiplied. The result goes to the accumulator. In the next state BD, this time inputs B and D are selected. This is subtracted from the accumulator, and the result is written to output registerE. At the same time the accumulator is cleared. In the cycle CB, this time C and B are selected, multiplied and added to the accumulator. In the last cycle AD, inputs A and D are selected, multiplied and added to the accumulator. The output FINISH is set to 1. If the signal START is 1, the accumulator is cleared and the system moves to AC. Otherwise, the system moves to INIT state.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "Complete the following table, so that we can determine how to design the FSM.",
+          "subproblem_figures": ["TABLE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["TABLE"]
+        }
+      ]
+    }
+  ]
+}

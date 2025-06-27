@@ -1,0 +1,85 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "5",
+  "problem_context": "In this question, based on the topics we have covered in class, you will be asked to evaluate what would change if we modified the standard single cycle MIPS architecture from 32-bits to 64-bits.",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_context": "Using one or more of the following single port SRAM memories with 512-entries of 32-bit words",
+          "subproblem_question": "Draw the schematic of a main memory of 4 Kbytes capacity that is suitable for a 64-bit processor that operates on 64-bit words. You can use any combinational logic gates such as AND, OR, NOT gates and multiplexers if necessary.",
+          "subproblem_figures": ["IMAGE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["IMAGE"]
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "If we were to modify the ALU for the 64-bit MIPS processor, what changes would have to be made inside the ALU so that it could process 64-bits at a time? How would this affect the size of the ALU?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "All arithmetic logic operations need to be defined over 64 bits. More or less the ALU would double in size.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Would the changes to the ALU that you have outlined above, also impact the propagation delay of the arithmetic and logic functions? Would the 64-bit ALU be faster, slower or exactly the same speed as a 32-bit adder.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "The core of the ALU is an adder. For the 64-bit ALU we will need a 64-bit adder which will need more time to perform the operation (in the worst case twice as much). The propagation delay of the ALU will increase, ALU will be slower.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "d",
+      "subproblem": [
+        {
+          "subproblem_question": "Assuming that the ALU is on the critical path of the processor, how would the clock frequency of the new 64-bit processor compare to the original 32-bit processor?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "The propagation delay of the ALU will increase, which will decrease the maximum clock frequency of the processor.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "e",
+      "subproblem": [
+        {
+          "subproblem_context": "As covered in class, the execution speed of a program on a processor can be given as:\n\nExecution Time = N × CPI × 1/f\n\nWhere N is the number of instructions, CPI is clocks per instruction and f is the clock frequency.",
+          "subproblem_question": "Taking into account your answers from the previous parts, comment on the execution time of a program running on a single-cycle 64-bit MIPS architecture when compared to the same program running on a single-cycle 32-bit MIPS architecture. Do you expect the execution time to increase, to decrease, or would it stay the same? Briefly explain why. Assume that only the width of the operands have changed, and the instructions were only modified to cope with the larger data width. No new instructions were added",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Since both architectures are single cycle CPI will be 1 for both architectures, so the CPI will not affect the performance. Since the ALU is more complex, the clock frequency will be lower, which will increase the execution time. If the number of instructions can not be decreased by the same proportion the 64-bit processor will be slower.\nThere are cases when operating on larger numbers could reduce the number of instructions (N). I.e. a number exceeding 4 billion can not be expressed with only 32 bit. If you need to process such a number (for example add two such numbers) a 32-bit architecture will need multiple instructions, whereas a 64-bit architecture could use a single instruction. Reducing the run time.",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "2",
+  "problem_context": "A circuit has four inputs and two outputs. The inputs A3:0 represent a number from 0 to 15. Output P should be TRUE if the number is prime (0 and 1 are not prime, but 2,3,5 and so on are prime). Output D should be TRUE if the number is divisible by 3. (hint: 0 is not divisible by 3 ).",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "Complete the following truth table",
+          "subproblem_figures": ["TABLE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "Write Sums of Products (SOP) representation for P and D. No simplification required here.",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "P = A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0\n\nD = A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "Write simplified equations for both P and D. (Hint: you can use Karnaugh maps to simplify equations)",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "P = A3A2A0 + A3A1A0 + A3A2A1 + A2A1A0 or P = A3A1A0 + A3A2A1 + A2A1A0 + A2A1A0\n\nD can not be simplified further!\nD = A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0 + A3A2A1A0",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}

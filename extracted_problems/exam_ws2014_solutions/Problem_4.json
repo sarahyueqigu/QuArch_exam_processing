@@ -1,0 +1,68 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "4. (10 points)",
+  "problem_context": "There are four Verilog code snippets in this section. Some of these codes have a problem with the syntax. For each code, first state whether or not there is a mistake. If there is a mistake explain how to correct it. Note: Assume that the behavior as described, is correct",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "1 module one (input sel, input [1:0] data, output z);\n2\n\n3 always @ (*)\n4 begin\n5 assign z= (sel) ? data[1]:data[0];\n6 end\n7 endmodule",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "This code has mistakes. sequential assignments do not start with assign, these are reserved for combinational statements. In addition, if z was assigned in an always statement, it should have been declared as reg.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "1 module two (input [1:0] sel, output reg [7:0] z);\n2\n\n3 always @ (sel)\n4 if (sel == 2'b01) z=8'b01010101;\n5 else if (sel == 2'b10) z=8'hAA;\n6 else z=8'd0;\n7\n\n8 endmodule",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "This code is correct, it is OK to write constants using different representations.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "subproblem": [
+        {
+          "subproblem_question": "1 module three ( input [3:0] data, input sel1, input sel2, output z);\n2\n\n3 wire [1:0] m; // actual exam had (a typo) : wire m;\n4\n\n5 module mux2 ( input [1:0] i, input sel, output z);\n6 assign z= (sel) ? i[1]:i[0];\n7 endmodule\n8\n\n9 mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10 mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11 mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n\n13 endmodule",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "This code has mistakes. The sub module mux2 should be defined outside the module three and not be part of it. Only the instantiations are part of the code. In the actual exam, there was a typo here, and m was declared as a single bit. Students that pointed out this typo got full points. This is the intended version.",
+          "solution_figures": []
+        }
+      ]
+    },
+    {
+      "part": "d",
+      "subproblem": [
+        {
+          "subproblem_question": "1 module four (input [3:0] data, input [1:0] sel, output reg [3:0] z);\n2\n\n3 always @ (data, sel)\n4 z = data;\n5 if (sel[0]) z = ~data;\n6 else if (sel[1]) z = 4'b0000;\n7\n\n8 endmodule",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "This code has mistakes. If there is no begin following the always statement, then only the first statement will be a sequential statement, the rest starting with the if will be interpreted as a separate combinational statement.",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}

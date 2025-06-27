@@ -1,0 +1,2900 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "text": "Name:\nFirst Name:\nStudent ID:\n                                2nd session examination\n                           Design of Digital Circuits WS2015\n                                     (252-0014-00S)\n                           Srdjan Capkun, Frank K. G\u00fcrkaynak\nExamination Rules:\n  1. Written exam, 90 minutes in total.\n  2. No books, no calculators, no computers or communication devices. Six pages of hand-\n     written notes are allowed.\n  3. Write all your answers on this document, space is reserved for your answers after each\n     question. Blank pages are available at the end of the exam.\n  4. Put your Student ID card visible on the desk during the exam.\n  5. If you feel disturbed, immediately call an assistant.\n  6. Answers will only be evaluated if they are readable.\n  7. Write with a black or blue pen (no pencil, no green or red color).\n  8. Show all your work.   For some questions, you may get partial credit even if the end\n     result is wrong due to a calculation mistake.\n  9. Points for every part are indicated in the exam. They should correspond to the expected\n     difficulty of the questions. Consider this when allocating your time.\n            Question:    1      2      3     4      5      6      7    Total\n            Points:      5      18     12    10     10     10     10     75\n            Score:",
+            "md": "# 2nd session examination\n\n# Design of Digital Circuits WS2015\n\n# (252-0014-00S)\n\n# Srdjan Capkun, Frank K. G\u00fcrkaynak\n\n# Examination Rules:\n\n1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.\n\n| Question: | 1 | 2  | 3  | 4  | 5  | 6  | 7  | Total |   |   |   |   |   |   |\n| --------- | - | -- | -- | -- | -- | -- | -- | ----- | - | - | - | - | - | - |\n| Points:   | 5 | 18 | 12 | 10 | 10 | 10 | 10 | 75    |   |   |   |   |   |   |\n| Score:    |   |    |    |    |    |    |    |       |   |   |   |   |   |   |\n",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2nd session examination",
+                    "md": "# 2nd session examination",
+                    "rows": null,
+                    "bBox": {
+                        "x": 207.39,
+                        "y": 195.12,
+                        "w": 197.47,
+                        "h": 446.54
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits WS2015",
+                    "md": "# Design of Digital Circuits WS2015",
+                    "rows": null,
+                    "bBox": {
+                        "x": 140.14,
+                        "y": 220.52,
+                        "w": 332.03,
+                        "h": 443.21
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(252-0014-00S)",
+                    "md": "# (252-0014-00S)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 206.7,
+                        "y": 256.15,
+                        "w": 159.94,
+                        "h": 407.57
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Srdjan Capkun, Frank K. G\u00fcrkaynak",
+                    "md": "# Srdjan Capkun, Frank K. G\u00fcrkaynak",
+                    "rows": null,
+                    "bBox": {
+                        "x": 194.91,
+                        "y": 287.87,
+                        "w": 221.84,
+                        "h": 14.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Examination Rules:",
+                    "md": "# Examination Rules:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 333.95,
+                        "w": 100.4,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.",
+                    "md": "1. Written exam, 90 minutes in total.\n2. No books, no calculators, no computers or communication devices. Six pages of hand-written notes are allowed.\n3. Write all your answers on this document, space is reserved for your answers after each question. Blank pages are available at the end of the exam.\n4. Put your Student ID card visible on the desk during the exam.\n5. If you feel disturbed, immediately call an assistant.\n6. Answers will only be evaluated if they are readable.\n7. Write with a black or blue pen (no pencil, no green or red color).\n8. Show all your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n9. Points for every part are indicated in the exam. They should correspond to the expected difficulty of the questions. Consider this when allocating your time.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 86.31,
+                        "y": 358.36,
+                        "w": 453.82,
+                        "h": 305.36
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Question: | 1 | 2  | 3  | 4  | 5  | 6  | 7  | Total |   |   |   |   |   |   |\n| --------- | - | -- | -- | -- | -- | -- | -- | ----- | - | - | - | - | - | - |\n| Points:   | 5 | 18 | 12 | 10 | 10 | 10 | 10 | 75    |   |   |   |   |   |   |\n| Score:    |   |    |    |    |    |    |    |       |   |   |   |   |   |   |",
+                    "rows": [
+                        [
+                            "Question:",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "Total",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Points:",
+                            "5",
+                            "18",
+                            "12",
+                            "10",
+                            "10",
+                            "10",
+                            "10",
+                            "75",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Score:",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 86.45,
+                        "w": 468.13,
+                        "h": 599.35
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 2,
+            "text": "Design of Digital Circuits                                          10th of February 2016\n                             This page intentionally left blank\nSecond Session Exam                                                           Page 1 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\nThis page intentionally left blank\n\n# Second Session Exam\n\nPage 1 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016\n\nThis page intentionally left blank",
+                    "md": "10th of February 2016\n\nThis page intentionally left blank",
+                    "rows": null,
+                    "bBox": {
+                        "x": 221.39,
+                        "y": 40.37,
+                        "w": 318.2,
+                        "h": 43.63
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 1 of 18",
+                    "md": "Page 1 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 476.77,
+                        "y": 734.16,
+                        "w": 63.53,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 3,
+            "text": "Design of Digital Circuits                                          10th of February 2016\n 1.  (a) (4 points) For the following four numbers given in decimal or hexadecimal notation,\n         write the corresponding binary number using the indicated format.\n         (\u221211)\u2081\u2080 using 6-bit two\u2019s complement:                      (11 0101)\u2082\n         (51)\u2081\u2080 using 6-bit unsigned:                               (11 0011)\u2082\n         (\u221217)\u2081\u2080 using 6-bit sign magnitude:                        (11 0001)\u2082\n         (39)\u2081\u2086 using 6-bit unsigned:                               (11 1001)\u2082\n    (b) (1 point) What are the problems with the sign/magnitude representation of binary\n         numbers, why are they not used more often than two\u2019s complement representation?\n          Solution:\n          Zero is represented twice (+0, -0), and more importantly subtraction is more\n          complex when you have sign/magnitude. In two\u2019s complement the same circuit\n          can handle both positive and negative numbers exactly the same way.\nSecond Session Exam                                                           Page 2 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 1.\n\n# (a) (4 points)\n\nFor the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n| (\u221211)\u2081\u2080 using 6-bit two\u2019s complement: | (11 0101)\u2082 |\n| ------------------------------------- | ---------- |\n| (51)\u2081\u2080 using 6-bit unsigned:          | (11 0011)\u2082 |\n| (\u221217)\u2081\u2080 using 6-bit sign magnitude:   | (11 0001)\u2082 |\n| (39)\u2081\u2086 using 6-bit unsigned:          | (11 1001)\u2082 |\n\n# (b) (1 point)\n\nWhat are the problems with the sign/magnitude representation of binary numbers, why are they not used more often than two\u2019s complement representation?\n\nSolution:\n\nZero is represented twice (+0, -0), and more importantly subtraction is more complex when you have sign/magnitude. In two\u2019s complement the same circuit can handle both positive and negative numbers exactly the same way.\n\nSecond Session Exam\n\nPage 2 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 426.71,
+                        "y": 40.37,
+                        "w": 112.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.",
+                    "md": "# 1.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (4 points)",
+                    "md": "# (a) (4 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.",
+                    "md": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 343.04,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| (\u221211)\u2081\u2080 using 6-bit two\u2019s complement: | (11 0101)\u2082 |\n| ------------------------------------- | ---------- |\n| (51)\u2081\u2080 using 6-bit unsigned:          | (11 0011)\u2082 |\n| (\u221217)\u2081\u2080 using 6-bit sign magnitude:   | (11 0001)\u2082 |\n| (39)\u2081\u2086 using 6-bit unsigned:          | (11 1001)\u2082 |",
+                    "rows": [
+                        [
+                            "(\u221211)\u2081\u2080 using 6-bit two\u2019s complement:",
+                            "(11 0101)\u2082"
+                        ],
+                        [
+                            "(51)\u2081\u2080 using 6-bit unsigned:",
+                            "(11 0011)\u2082"
+                        ],
+                        [
+                            "(\u221217)\u2081\u2080 using 6-bit sign magnitude:",
+                            "(11 0001)\u2082"
+                        ],
+                        [
+                            "(39)\u2081\u2086 using 6-bit unsigned:",
+                            "(11 1001)\u2082"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 117.51,
+                        "y": 114.99,
+                        "w": 357.23,
+                        "h": 78.17
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (1 point)",
+                    "md": "# (b) (1 point)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What are the problems with the sign/magnitude representation of binary numbers, why are they not used more often than two\u2019s complement representation?\n\nSolution:\n\nZero is represented twice (+0, -0), and more importantly subtraction is more complex when you have sign/magnitude. In two\u2019s complement the same circuit can handle both positive and negative numbers exactly the same way.\n\nSecond Session Exam\n\nPage 2 of 18",
+                    "md": "What are the problems with the sign/magnitude representation of binary numbers, why are they not used more often than two\u2019s complement representation?\n\nSolution:\n\nZero is represented twice (+0, -0), and more importantly subtraction is more complex when you have sign/magnitude. In two\u2019s complement the same circuit can handle both positive and negative numbers exactly the same way.\n\nSecond Session Exam\n\nPage 2 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 217.87,
+                        "w": 468.3,
+                        "h": 528.29
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 4,
+            "text": "Design of Digital Circuits                                 10th of February 2016\n 2. A circuit has four inputs (A, B, C , D) and two outputs (E, T ).\n      \u2022 Output E should be \u20191\u2019 if there are equal number of \u20191\u2019s and \u20190\u2019s in the input.\n      \u2022 Output T should be \u20191\u2019 if two or more of the inputs are \u20191\u2019\n    (a) (2 points) Complete the following truth table\n                                 Inputs              Outputs\n                        A      B      C      D       E      T\n                        0      0       0     0       0      0\n                        0      0       0     1       0      0\n                        0      0       1     0       0      0\n                        0      0       1     1       1      1\n                        0      1       0     0       0      0\n                        0      1       0     1       1      1\n                        0      1       1     0       1      1\n                        0      1       1     1       0      1\n                        1      0       0     0       0      0\n                        1      0       0     1       1      1\n                        1      0       1     0       1      1\n                        1      0       1     1       0      1\n                        1      1       0     0       1      1\n                        1      1       0     1       0      1\n                        1      1       1     0       0      1\n                        1      1       1     1       0      1\nSecond Session Exam                                                Page 3 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 2.\n\nA circuit has four inputs (A, B, C, D) and two outputs (E, T).\n\n- Output E should be \u20191\u2019 if there are equal number of \u20191\u2019s and \u20190\u2019s in the input.\n- Output T should be \u20191\u2019 if two or more of the inputs are \u20191\u2019.\n\n# (a) (2 points) Complete the following truth table\n\n| Inputs | A | B | C | D | E | T |\n| ------ | - | - | - | - | - | - |\n|        | 0 | 0 | 0 | 0 | 0 | 0 |\n|        | 0 | 0 | 0 | 1 | 0 | 0 |\n|        | 0 | 0 | 1 | 0 | 0 | 0 |\n|        | 0 | 0 | 1 | 1 | 1 | 1 |\n|        | 0 | 1 | 0 | 0 | 0 | 0 |\n|        | 0 | 1 | 0 | 1 | 1 | 1 |\n|        | 0 | 1 | 1 | 0 | 1 | 1 |\n|        | 0 | 1 | 1 | 1 | 0 | 1 |\n|        | 1 | 0 | 0 | 0 | 0 | 0 |\n|        | 1 | 0 | 0 | 1 | 1 | 1 |\n|        | 1 | 0 | 1 | 0 | 1 | 1 |\n|        | 1 | 0 | 1 | 1 | 0 | 1 |\n|        | 1 | 1 | 0 | 0 | 1 | 1 |\n|        | 1 | 1 | 0 | 1 | 0 | 1 |\n|        | 1 | 1 | 1 | 0 | 0 | 1 |\n|        | 1 | 1 | 1 | 1 | 0 | 1 |\n\nSecond Session Exam\n\nPage 3 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 364.87,
+                        "h": 163.28
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 219.16,
+                        "y": 40.37,
+                        "w": 320.43,
+                        "h": 641.49
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2.",
+                    "md": "# 2.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "A circuit has four inputs (A, B, C, D) and two outputs (E, T).\n\n- Output E should be \u20191\u2019 if there are equal number of \u20191\u2019s and \u20190\u2019s in the input.\n- Output T should be \u20191\u2019 if two or more of the inputs are \u20191\u2019.",
+                    "md": "A circuit has four inputs (A, B, C, D) and two outputs (E, T).\n\n- Output E should be \u20191\u2019 if there are equal number of \u20191\u2019s and \u20190\u2019s in the input.\n- Output T should be \u20191\u2019 if two or more of the inputs are \u20191\u2019.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 172.56,
+                        "y": 115.84,
+                        "w": 264.79,
+                        "h": 566.02
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points) Complete the following truth table",
+                    "md": "# (a) (2 points) Complete the following truth table",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.71,
+                        "y": 135.26,
+                        "w": 340.16,
+                        "h": 68.39
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Inputs | A | B | C | D | E | T |\n| ------ | - | - | - | - | - | - |\n|        | 0 | 0 | 0 | 0 | 0 | 0 |\n|        | 0 | 0 | 0 | 1 | 0 | 0 |\n|        | 0 | 0 | 1 | 0 | 0 | 0 |\n|        | 0 | 0 | 1 | 1 | 1 | 1 |\n|        | 0 | 1 | 0 | 0 | 0 | 0 |\n|        | 0 | 1 | 0 | 1 | 1 | 1 |\n|        | 0 | 1 | 1 | 0 | 1 | 1 |\n|        | 0 | 1 | 1 | 1 | 0 | 1 |\n|        | 1 | 0 | 0 | 0 | 0 | 0 |\n|        | 1 | 0 | 0 | 1 | 1 | 1 |\n|        | 1 | 0 | 1 | 0 | 1 | 1 |\n|        | 1 | 0 | 1 | 1 | 0 | 1 |\n|        | 1 | 1 | 0 | 0 | 1 | 1 |\n|        | 1 | 1 | 0 | 1 | 0 | 1 |\n|        | 1 | 1 | 1 | 0 | 0 | 1 |\n|        | 1 | 1 | 1 | 1 | 0 | 1 |",
+                    "rows": [
+                        [
+                            "Inputs",
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E",
+                            "T"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "1"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Second Session Exam\n\nPage 3 of 18",
+                    "md": "Second Session Exam\n\nPage 3 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 191.65,
+                        "w": 468.3,
+                        "h": 554.51
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 5,
+            "text": "Design of Digital Circuits                                             10th of February 2016\n     (b) (3 points) Write a Boolean equation for E using either SOP or POS representation.\n          (Hint: use a Karnaugh map)\n           Solution: One possible solution is:\n           E = ( ~~A</s> \u00b7 <s>B</s> \u00b7 C \u00b7 D) + (<s>A</s> \u00b7 B \u00b7  <s>C</s> \u00b7 D) + (<s>A</s> \u00b7 B \u00b7 C \u00b7 <s>D</s>) + (A \u00b7 <s>B</s> \u00b7  <s>C~~   \u00b7 D) + (A \u00b7 B \u00b7\n            ~~C</s> \u00b7 <s>D</s>) + (A \u00b7  <s>B</s> \u00b7 C \u00b7 <s>D~~  )\n     (c) (3 points) Write a Boolean equation for T using either SOP or POS representation.\n          (Hint: use a Karnaugh map)\n           Solution: One possible solution is:\n           T = (A \u00b7 B) + (A \u00b7 C ) + (A \u00b7 D) + (B  \u00b7 C ) + (B \u00b7 D) + (C \u02d9\n                                                                      D)\n     (d) (3 points) Draw a gate level diagram implementing T using only two-input AND,\n          OR gates and/or inverters.\n           Solution:\n             \u0391    B    C    D\n                                                                                          \u03a4\nSecond Session Exam                                                              Page 4 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# (b) (3 points) Write a Boolean equation for E using either SOP or POS representation.\n\nHint: use a Karnaugh map\n\n# Solution:\n\nOne possible solution is:\n\nE = (~~A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D~~)\n\n# (c) (3 points) Write a Boolean equation for T using either SOP or POS representation.\n\nHint: use a Karnaugh map\n\n# Solution:\n\nOne possible solution is:\n\nT = (A \u00b7 B) + (A \u00b7 C) + (A \u00b7 D) + (B \u00b7 C) + (B \u00b7 D) + (C \u00b7 D)\n\n# (d) (3 points) Draw a gate level diagram implementing T using only two-input AND, OR gates and/or inverters.\n\n# Solution:\n\n\u0391 B C D\n\n\u03a4\n\n# Second Session Exam\n\nPage 4 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 146.43,
+                        "h": 299.25
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 159.13,
+                        "y": 40.37,
+                        "w": 380.46,
+                        "h": 299.25
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (3 points) Write a Boolean equation for E using either SOP or POS representation.",
+                    "md": "# (b) (3 points) Write a Boolean equation for E using either SOP or POS representation.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 72.0,
+                        "w": 444.13,
+                        "h": 267.62
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Hint: use a Karnaugh map",
+                    "md": "Hint: use a Karnaugh map",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 312.94,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "One possible solution is:\n\nE = (~~A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D~~)",
+                    "md": "One possible solution is:\n\nE = (~~A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7 C \u00b7 D~~)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 138.77,
+                        "y": 131.96,
+                        "w": 391.54,
+                        "h": 207.66
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) (3 points) Write a Boolean equation for T using either SOP or POS representation.",
+                    "md": "# (c) (3 points) Write a Boolean equation for T using either SOP or POS representation.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 97.36,
+                        "y": 178.18,
+                        "w": 442.83,
+                        "h": 161.44
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Hint: use a Karnaugh map",
+                    "md": "Hint: use a Karnaugh map",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 312.94,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "One possible solution is:\n\nT = (A \u00b7 B) + (A \u00b7 C) + (A \u00b7 D) + (B \u00b7 C) + (B \u00b7 D) + (C \u00b7 D)",
+                    "md": "One possible solution is:\n\nT = (A \u00b7 B) + (A \u00b7 C) + (A \u00b7 D) + (B \u00b7 C) + (B \u00b7 D) + (C \u00b7 D)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 131.96,
+                        "w": 307.22,
+                        "h": 207.66
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(d) (3 points) Draw a gate level diagram implementing T using only two-input AND, OR gates and/or inverters.",
+                    "md": "# (d) (3 points) Draw a gate level diagram implementing T using only two-input AND, OR gates and/or inverters.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.06,
+                        "y": 238.14,
+                        "w": 444.21,
+                        "h": 101.48
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 312.94,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u0391 B C D\n\n\u03a4",
+                    "md": "\u0391 B C D\n\n\u03a4",
+                    "rows": null,
+                    "bBox": {
+                        "x": 133.48,
+                        "y": 328.62,
+                        "w": 392.34,
+                        "h": 62.3
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 328.62,
+                        "w": 146.43,
+                        "h": 417.54
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 4 of 18",
+                    "md": "Page 4 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 476.77,
+                        "y": 734.16,
+                        "w": 63.53,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 6,
+            "text": "Design of Digital Circuits                                        10th of February 2016\n    (e) (2 points) Assuming that the propagation of all 2-input gates and inverters is 100 ps\n        and the contamination delay is 50 ps, what is the critical path (longest path), and\n        the shortest path of the circuit you have drawn in Question 2d?\n          Solution:\n          For the solution given in Question 2d, the critical path goes through 1 AND\n          gate and 3 OR gates = 4 propagation delays = 400ps.\n          The shortest path goes through one AND gate and two OR gates = 3 contami-\n          nation delays = 150ps.\n    (f) (5 points) Note that the function T contains E (meaning T  is \u20191\u2019 for every input\n        that results in a \u20191\u2019 for E). Assume that you already have a small circuit that\n        implements E, design a simpler Boolean function that implements T by using the\n        output of E and draw the gate level schematic once again only using E, 2-input\n        AND/OR gates and inverters.\n          Solution: One of the simpler solutions is: T = (A \u00b7 D) + (B \u00b7 C ) + E\n                  \u0391    B    C    D\n                                                                             \u03a4\n                       \u0395(\u0391,B,C,D)  \u0395\nSecond Session Exam                                                        Page 5 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# (e) (2 points)\n\nAssuming that the propagation of all 2-input gates and inverters is 100 ps and the contamination delay is 50 ps, what is the critical path (longest path), and the shortest path of the circuit you have drawn in Question 2d?\n\n# Solution:\n\nFor the solution given in Question 2d, the critical path goes through 1 AND gate and 3 OR gates = 4 propagation delays = 400 ps. The shortest path goes through one AND gate and two OR gates = 3 contamination delays = 150 ps.\n\n# (f) (5 points)\n\nNote that the function T contains E (meaning T is \u20191\u2019 for every input that results in a \u20191\u2019 for E). Assume that you already have a small circuit that implements E, design a simpler Boolean function that implements T by using the output of E and draw the gate level schematic once again only using E, 2-input AND/OR gates and inverters.\n\n# Solution:\n\nOne of the simpler solutions is: T = (A \u00b7 D) + (B \u00b7 C) + E\n\n| \u0391          | B | C | D | \u03a4 |\n| ---------- | - | - | - | - |\n| \u0395(\u0391,B,C,D) | \u0395 |   |   |   |\n\n# Second Session Exam\n\nPage 5 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 184.9,
+                        "h": 299.72
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 197.6,
+                        "y": 40.37,
+                        "w": 341.99,
+                        "h": 299.72
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(e) (2 points)",
+                    "md": "# (e) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Assuming that the propagation of all 2-input gates and inverters is 100 ps and the contamination delay is 50 ps, what is the critical path (longest path), and the shortest path of the circuit you have drawn in Question 2d?",
+                    "md": "Assuming that the propagation of all 2-input gates and inverters is 100 ps and the contamination delay is 50 ps, what is the critical path (longest path), and the shortest path of the circuit you have drawn in Question 2d?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 86.45,
+                        "w": 422.63,
+                        "h": 253.64
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 129.47,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "For the solution given in Question 2d, the critical path goes through 1 AND gate and 3 OR gates = 4 propagation delays = 400 ps. The shortest path goes through one AND gate and two OR gates = 3 contamination delays = 150 ps.",
+                    "md": "For the solution given in Question 2d, the critical path goes through 1 AND gate and 3 OR gates = 4 propagation delays = 400 ps. The shortest path goes through one AND gate and two OR gates = 3 contamination delays = 150 ps.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 146.4,
+                        "w": 403.27,
+                        "h": 193.69
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(f) (5 points)",
+                    "md": "# (f) (5 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Note that the function T contains E (meaning T is \u20191\u2019 for every input that results in a \u20191\u2019 for E). Assume that you already have a small circuit that implements E, design a simpler Boolean function that implements T by using the output of E and draw the gate level schematic once again only using E, 2-input AND/OR gates and inverters.",
+                    "md": "Note that the function T contains E (meaning T is \u20191\u2019 for every input that results in a \u20191\u2019 for E). Assume that you already have a small circuit that implements E, design a simpler Boolean function that implements T by using the output of E and draw the gate level schematic once again only using E, 2-input AND/OR gates and inverters.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.51,
+                        "y": 223.35,
+                        "w": 422.42,
+                        "h": 116.74
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 129.47,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "One of the simpler solutions is: T = (A \u00b7 D) + (B \u00b7 C) + E",
+                    "md": "One of the simpler solutions is: T = (A \u00b7 D) + (B \u00b7 C) + E",
+                    "rows": null,
+                    "bBox": {
+                        "x": 197.6,
+                        "y": 310.42,
+                        "w": 286.95,
+                        "h": 29.67
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| \u0391          | B | C | D | \u03a4 |\n| ---------- | - | - | - | - |\n| \u0395(\u0391,B,C,D) | \u0395 |   |   |   |",
+                    "rows": [
+                        [
+                            "\u0391",
+                            "B",
+                            "C",
+                            "D",
+                            "\u03a4"
+                        ],
+                        [
+                            "\u0395(\u0391,B,C,D)",
+                            "\u0395",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 329.09,
+                        "w": 184.9,
+                        "h": 417.07
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 5 of 18",
+                    "md": "Page 5 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 476.77,
+                        "y": 734.16,
+                        "w": 63.53,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 7,
+            "text": "Design of Digital Circuits                                        10th of February 2016\n 3. In this question you will be given the state transition diagram for a Finite State Machine\n    (FSM). The FSM has a two-bit output \"out[1:0]\" as well as a single bit input \"in\".\n                            reset\n                                         in=0/                             in=0/\n                                         out=00                           out=00\n                       init                                 zero\n                                in=1/             in=1/\n                                out=01            out=10\n           in=0/                          mid                         in=0/\n          out=00                                                     out=00\n                                 in=1/\n                                 out=11\n                                           in=0/\n                                           out=01\n                       two                                   one\n            in=1/                        in=1/\n            out=11                       out=11\n     (a) (2 points) Is this a Mealy or Moore type of FSM, briefly explain why?\n          Solution:  This is a Mealy type of FSM, as the output depends not only on the\n          state but also on the present value of the input.\n     (b) (5 points) Using the following state encoding table, complete the state transition\n         and output table on the following page.\n                                State            Encoding\n                                 Name        S\u2082      S\u2081      S\u2080\n                                 init        1       1        1\n                                 mid         1       0        0\n                                 zero        0       0        0\n                                 one         0       0        1\n                                 two         0       1        0\nSecond Session Exam                                                        Page 6 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 3.\n\nIn this question you will be given the state transition diagram for a Finite State Machine (FSM). The FSM has a two-bit output \"out[1:0]\" as well as a single bit input \"in\".\n\n| reset | in=0/  | in=0/  | out=00 |        |        |\n| ----- | ------ | ------ | ------ | ------ | ------ |\n| init  |        | zero   | out=00 |        |        |\n| in=1/ | out=01 | mid    | in=0/  | out=00 |        |\n|       | in=1/  | out=11 | two    | in=1/  | out=11 |\n|       | in=0/  | out=01 | one    | in=1/  | out=11 |\n\n# (a) (2 points)\n\nIs this a Mealy or Moore type of FSM, briefly explain why?\n\nSolution: This is a Mealy type of FSM, as the output depends not only on the state but also on the present value of the input.\n\n# (b) (5 points)\n\nUsing the following state encoding table, complete the state transition and output table on the following page.\n\n| State | Encoding | S\u2082 | S\u2081 | S\u2080 |\n| ----- | -------- | -- | -- | -- |\n| init  | 1        | 1  | 1  |    |\n| mid   | 1        | 0  | 0  |    |\n| zero  | 0        | 0  | 0  |    |\n| one   | 0        | 0  | 1  |    |\n| two   | 0        | 1  | 0  |    |\n\nSecond Session Exam\n\nPage 6 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 316.15,
+                        "y": 40.37,
+                        "w": 223.44,
+                        "h": 648.93
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "3.",
+                    "md": "# 3.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this question you will be given the state transition diagram for a Finite State Machine (FSM). The FSM has a two-bit output \"out[1:0]\" as well as a single bit input \"in\".",
+                    "md": "In this question you will be given the state transition diagram for a Finite State Machine (FSM). The FSM has a two-bit output \"out[1:0]\" as well as a single bit input \"in\".",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 447.09,
+                        "h": 602.85
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| reset | in=0/  | in=0/  | out=00 |        |        |\n| ----- | ------ | ------ | ------ | ------ | ------ |\n| init  |        | zero   | out=00 |        |        |\n| in=1/ | out=01 | mid    | in=0/  | out=00 |        |\n|       | in=1/  | out=11 | two    | in=1/  | out=11 |\n|       | in=0/  | out=01 | one    | in=1/  | out=11 |",
+                    "rows": [
+                        [
+                            "reset",
+                            "in=0/",
+                            "in=0/",
+                            "out=00",
+                            "",
+                            ""
+                        ],
+                        [
+                            "init",
+                            "",
+                            "zero",
+                            "out=00",
+                            "",
+                            ""
+                        ],
+                        [
+                            "in=1/",
+                            "out=01",
+                            "mid",
+                            "in=0/",
+                            "out=00",
+                            ""
+                        ],
+                        [
+                            "",
+                            "in=1/",
+                            "out=11",
+                            "two",
+                            "in=1/",
+                            "out=11"
+                        ],
+                        [
+                            "",
+                            "in=0/",
+                            "out=01",
+                            "one",
+                            "in=1/",
+                            "out=11"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points)",
+                    "md": "# (a) (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Is this a Mealy or Moore type of FSM, briefly explain why?\n\nSolution: This is a Mealy type of FSM, as the output depends not only on the state but also on the present value of the input.",
+                    "md": "Is this a Mealy or Moore type of FSM, briefly explain why?\n\nSolution: This is a Mealy type of FSM, as the output depends not only on the state but also on the present value of the input.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 490.15,
+                        "w": 403.5,
+                        "h": 90.35
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (5 points)",
+                    "md": "# (b) (5 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Using the following state encoding table, complete the state transition and output table on the following page.",
+                    "md": "Using the following state encoding table, complete the state transition and output table on the following page.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 550.16,
+                        "w": 273.5,
+                        "h": 30.34
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| State | Encoding | S\u2082 | S\u2081 | S\u2080 |\n| ----- | -------- | -- | -- | -- |\n| init  | 1        | 1  | 1  |    |\n| mid   | 1        | 0  | 0  |    |\n| zero  | 0        | 0  | 0  |    |\n| one   | 0        | 0  | 1  |    |\n| two   | 0        | 1  | 0  |    |",
+                    "rows": [
+                        [
+                            "State",
+                            "Encoding",
+                            "S\u2082",
+                            "S\u2081",
+                            "S\u2080"
+                        ],
+                        [
+                            "init",
+                            "1",
+                            "1",
+                            "1",
+                            ""
+                        ],
+                        [
+                            "mid",
+                            "1",
+                            "0",
+                            "0",
+                            ""
+                        ],
+                        [
+                            "zero",
+                            "0",
+                            "0",
+                            "0",
+                            ""
+                        ],
+                        [
+                            "one",
+                            "0",
+                            "0",
+                            "1",
+                            ""
+                        ],
+                        [
+                            "two",
+                            "0",
+                            "1",
+                            "0",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Second Session Exam\n\nPage 6 of 18",
+                    "md": "Second Session Exam\n\nPage 6 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 378.25,
+                        "w": 468.3,
+                        "h": 367.91
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 8,
+            "text": "Design of Digital Circuits                                 10th of February 2016\n            Present State        Input          Next State            Outputs\n          P\u2082      P\u2081     P\u2080        in       N\u2082      N\u2081      N\u2080      out\u2081     out\u2080\n          1       1      1         0        0        0      0        0        0\n          1       1      1         1        1        0      0        0        1\n          1       0      0         0        0        0      1        0        1\n          1       0      0         1        0        1      0        1        1\n          0       0      0         0        0        0      0        0        0\n          0       0      0         1        0        0      1        1        0\n          0       0      1         0        0        0      0        0        0\n          0       0      1         1        0        1      0        1        1\n          0       1      0         0        1        1      1        0        0\n          0       1      0         1        0        1      0        1        1\nSecond Session Exam                                                Page 7 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n| Present State | Input | Next State | Outputs |    |    |    |      |      |   |   |\n| ------------- | ----- | ---------- | ------- | -- | -- | -- | ---- | ---- | - | - |\n| P\u2082            | P\u2081    | P\u2080         | in      | N\u2082 | N\u2081 | N\u2080 | out\u2081 | out\u2080 |   |   |\n|               |       | 1          | 1       | 1  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 1          | 1       | 1  | 1  | 1  | 0    | 0    | 0 | 1 |\n|               |       | 1          | 0       | 0  | 0  | 0  | 0    | 1    | 0 | 1 |\n|               |       | 1          | 0       | 0  | 1  | 0  | 1    | 0    | 1 | 1 |\n|               |       | 0          | 0       | 0  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 0          | 0       | 0  | 1  | 0  | 0    | 1    | 1 | 0 |\n|               |       | 0          | 0       | 1  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 0          | 0       | 1  | 1  | 0  | 1    | 0    | 1 | 1 |\n|               |       | 0          | 1       | 0  | 0  | 1  | 1    | 1    | 0 | 0 |\n|               |       | 0          | 1       | 0  | 1  | 0  | 1    | 0    | 1 | 1 |\n\nSecond Session Exam\n\nPage 7 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 137.07,
+                        "y": 40.37,
+                        "w": 408.94,
+                        "h": 389.83
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Present State | Input | Next State | Outputs |    |    |    |      |      |   |   |\n| ------------- | ----- | ---------- | ------- | -- | -- | -- | ---- | ---- | - | - |\n| P\u2082            | P\u2081    | P\u2080         | in      | N\u2082 | N\u2081 | N\u2080 | out\u2081 | out\u2080 |   |   |\n|               |       | 1          | 1       | 1  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 1          | 1       | 1  | 1  | 1  | 0    | 0    | 0 | 1 |\n|               |       | 1          | 0       | 0  | 0  | 0  | 0    | 1    | 0 | 1 |\n|               |       | 1          | 0       | 0  | 1  | 0  | 1    | 0    | 1 | 1 |\n|               |       | 0          | 0       | 0  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 0          | 0       | 0  | 1  | 0  | 0    | 1    | 1 | 0 |\n|               |       | 0          | 0       | 1  | 0  | 0  | 0    | 0    | 0 | 0 |\n|               |       | 0          | 0       | 1  | 1  | 0  | 1    | 0    | 1 | 1 |\n|               |       | 0          | 1       | 0  | 0  | 1  | 1    | 1    | 0 | 0 |\n|               |       | 0          | 1       | 0  | 1  | 0  | 1    | 0    | 1 | 1 |",
+                    "rows": [
+                        [
+                            "Present State",
+                            "Input",
+                            "Next State",
+                            "Outputs",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "P\u2082",
+                            "P\u2081",
+                            "P\u2080",
+                            "in",
+                            "N\u2082",
+                            "N\u2081",
+                            "N\u2080",
+                            "out\u2081",
+                            "out\u2080",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 480.82,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Second Session Exam\n\nPage 7 of 18",
+                    "md": "Second Session Exam\n\nPage 7 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 154.59,
+                        "w": 474.01,
+                        "h": 591.57
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 9,
+            "text": "Design of Digital Circuits                                     10th of February 2016\n    (c) (5 points) Draw a new state transition diagram for this FSM using a different type\n        (if the original was a Moore, then draw a Mealy type or vice versa) that has the\n        same functionality.\n          Solution: This is one possible solution. Note that states ZeroA and ZeroB\n          can be merged, however this organization is slightly more regular, and shows\n          the thinking behind the original FSM.\n                                               reset\n                                          init\n                                          \"00\"\n                               in=1                          in=0\n           in=0\n                         mid                              zeroA\n                         \"01\"                              \"00\"\n                   in=1            in=0               in=1            in=0\n                two              oneA             oneB     in=1    zeroB\n                \"11\"     in=1    \"01\"             \"10\"              \"00\"    in=0\n                                                          in=0\n            in=1              in=1\n                                                   in=0\nSecond Session Exam                                                     Page 8 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n(c) (5 points) Draw a new state transition diagram for this FSM using a different type (if the original was a Moore, then draw a Mealy type or vice versa) that has the same functionality.\n\nSolution: This is one possible solution. Note that states ZeroA and ZeroB can be merged, however this organization is slightly more regular, and shows the thinking behind the original FSM.\n\n| reset | init | \"00\" |\n| ----- | ---- | ---- |\n| in=1  | in=0 | mid  |\n| \"01\"  | in=1 | two  |\n| oneA  | in=0 | \"11\" |\n| oneB  | in=1 | \"01\" |\n| zeroA | in=0 | \"00\" |\n| zeroB | in=1 | \"10\" |\n| in=0  | \"00\" | in=0 |\n\nSecond Session Exam\n\nPage 8 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016\n\n(c) (5 points) Draw a new state transition diagram for this FSM using a different type (if the original was a Moore, then draw a Mealy type or vice versa) that has the same functionality.\n\nSolution: This is one possible solution. Note that states ZeroA and ZeroB can be merged, however this organization is slightly more regular, and shows the thinking behind the original FSM.",
+                    "md": "10th of February 2016\n\n(c) (5 points) Draw a new state transition diagram for this FSM using a different type (if the original was a Moore, then draw a Mealy type or vice versa) that has the same functionality.\n\nSolution: This is one possible solution. Note that states ZeroA and ZeroB can be merged, however this organization is slightly more regular, and shows the thinking behind the original FSM.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 97.36,
+                        "y": 40.37,
+                        "w": 442.38,
+                        "h": 399.77
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| reset | init | \"00\" |\n| ----- | ---- | ---- |\n| in=1  | in=0 | mid  |\n| \"01\"  | in=1 | two  |\n| oneA  | in=0 | \"11\" |\n| oneB  | in=1 | \"01\" |\n| zeroA | in=0 | \"00\" |\n| zeroB | in=1 | \"10\" |\n| in=0  | \"00\" | in=0 |",
+                    "rows": [
+                        [
+                            "reset",
+                            "init",
+                            "\"00\""
+                        ],
+                        [
+                            "in=1",
+                            "in=0",
+                            "mid"
+                        ],
+                        [
+                            "\"01\"",
+                            "in=1",
+                            "two"
+                        ],
+                        [
+                            "oneA",
+                            "in=0",
+                            "\"11\""
+                        ],
+                        [
+                            "oneB",
+                            "in=1",
+                            "\"01\""
+                        ],
+                        [
+                            "zeroA",
+                            "in=0",
+                            "\"00\""
+                        ],
+                        [
+                            "zeroB",
+                            "in=1",
+                            "\"10\""
+                        ],
+                        [
+                            "in=0",
+                            "\"00\"",
+                            "in=0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 133.6,
+                        "y": 129.47,
+                        "w": 397.17,
+                        "h": 379.5
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Second Session Exam\n\nPage 8 of 18",
+                    "md": "Second Session Exam\n\nPage 8 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 468.3,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 10,
+            "text": "Design of Digital Circuits                                         10th of February 2016\n 4. (10 points) There are four Verilog code snippets in this section. For each code, first\n    state whether or not there is a mistake. If there is a mistake explain how to correct it.\n    Note: Assume that the behavior as described, is correct\n    (a)\n 1  module  mux2 ( input [1:0] i,        output   s,  input z);\n 2    assign   s= (z) ? i[1]:i[0];\n 3  endmodule\n 4\n 5  module  one (input [3:0] data, input sel1, input sel2, output               z );\n 6    wire  [1:0] temp ;\n 7\n 8    mux2 i0 (data[1:0], sel1, temp[0]);\n 9    mux2 i1 (data[3:2], sel1, temp[1]);\n10    mux2 final (temp, sel2, z);\n11  endmodule\n     Solution:   This code is not correct. It uses an ordered instantiation template where\n     the ordering of the pins should correspond to the order they are declared. This itself\n     is not wrong, but the input signals on the second position (sel1,sel2) connect to the\n     output  of the instance mux. Either the ordering of mux2  needs to be changed, or\n     the ordering of the elements the instantiation. The better option would be to use a\n     connect by name.\n    (b)\n 1  module  two (input [3:0] a,      input [0:3] b,     output reg [3:0] z);\n 2   always   @ ( *)\n 3        if (a == 0)\n 4          z={b[0],b[1],b[2],b[3]};\n 5        else\n 6          z=a+b;\n 7  endmodule\n     Solution:\n     The code is syntactically correct. There is a lot of unnecessary code: using one input\n     as [0:3] and the other as [3:0] is not the smartest choice, the entire code could be\n     written as assign z=a+b, but syntactically the code is correct.\nSecond Session Exam                                                          Page 9 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 4. (10 points)\n\nThere are four Verilog code snippets in this section. For each code, first state whether or not there is a mistake. If there is a mistake explain how to correct it. Note: Assume that the behavior as described, is correct.\n\n# (a)\n\nmodule mux2 ( input [1:0] i, output s, input z);\nassign s= (z) ? i[1]:i[0];\nendmodule\n\nmodule one (input [3:0] data, input sel1, input sel2, output z);\nwire [1:0] temp;\n\nmux2 i0 (data[1:0], sel1, temp[0]);\nmux2 i1 (data[3:2], sel1, temp[1]);\nmux2 final (temp, sel2, z);\nendmodule\n\nSolution: This code is not correct. It uses an ordered instantiation template where the ordering of the pins should correspond to the order they are declared. This itself is not wrong, but the input signals on the second position (sel1, sel2) connect to the output of the instance mux. Either the ordering of mux2 needs to be changed, or the ordering of the elements the instantiation. The better option would be to use a connect by name.\n\n# (b)\n\nmodule two (input [3:0] a, input [0:3] b, output reg [3:0] z);\nalways @ ( *)\nif (a == 0)\nz={b[0],b[1],b[2],b[3]};\nelse\nz=a+b;\nendmodule\n\nSolution: The code is syntactically correct. There is a lot of unnecessary code: using one input as [0:3] and the other as [3:0] is not the smartest choice, the entire code could be written as assign z=a+b, but syntactically the code is correct.\n\nSecond Session Exam\n\nPage 9 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 40.37,
+                        "w": 464.05,
+                        "h": 499.23
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "4. (10 points)",
+                    "md": "# 4. (10 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 146.14,
+                        "w": 7.65,
+                        "h": 366.36
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "There are four Verilog code snippets in this section. For each code, first state whether or not there is a mistake. If there is a mistake explain how to correct it. Note: Assume that the behavior as described, is correct.",
+                    "md": "There are four Verilog code snippets in this section. For each code, first state whether or not there is a mistake. If there is a mistake explain how to correct it. Note: Assume that the behavior as described, is correct.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 72.0,
+                        "w": 446.97,
+                        "h": 40.89
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a)",
+                    "md": "# (a)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 120.32,
+                        "w": 15.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "module mux2 ( input [1:0] i, output s, input z);\nassign s= (z) ? i[1]:i[0];\nendmodule\n\nmodule one (input [3:0] data, input sel1, input sel2, output z);\nwire [1:0] temp;\n\nmux2 i0 (data[1:0], sel1, temp[0]);\nmux2 i1 (data[3:2], sel1, temp[1]);\nmux2 final (temp, sel2, z);\nendmodule\n\nSolution: This code is not correct. It uses an ordered instantiation template where the ordering of the pins should correspond to the order they are declared. This itself is not wrong, but the input signals on the second position (sel1, sel2) connect to the output of the instance mux. Either the ordering of mux2 needs to be changed, or the ordering of the elements the instantiation. The better option would be to use a connect by name.",
+                    "md": "module mux2 ( input [1:0] i, output s, input z);\nassign s= (z) ? i[1]:i[0];\nendmodule\n\nmodule one (input [3:0] data, input sel1, input sel2, output z);\nwire [1:0] temp;\n\nmux2 i0 (data[1:0], sel1, temp[0]);\nmux2 i1 (data[3:2], sel1, temp[1]);\nmux2 final (temp, sel2, z);\nendmodule\n\nSolution: This code is not correct. It uses an ordered instantiation template where the ordering of the pins should correspond to the order they are declared. This itself is not wrong, but the input signals on the second position (sel1, sel2) connect to the output of the instance mux. Either the ordering of mux2 needs to be changed, or the ordering of the elements the instantiation. The better option would be to use a connect by name.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 141.21,
+                        "w": 451.6,
+                        "h": 463.03
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b)",
+                    "md": "# (b)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 440.03,
+                        "w": 16.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "module two (input [3:0] a, input [0:3] b, output reg [3:0] z);\nalways @ ( *)\nif (a == 0)\nz={b[0],b[1],b[2],b[3]};\nelse\nz=a+b;\nendmodule\n\nSolution: The code is syntactically correct. There is a lot of unnecessary code: using one input as [0:3] and the other as [3:0] is not the smartest choice, the entire code could be written as assign z=a+b, but syntactically the code is correct.\n\nSecond Session Exam\n\nPage 9 of 18",
+                    "md": "module two (input [3:0] a, input [0:3] b, output reg [3:0] z);\nalways @ ( *)\nif (a == 0)\nz={b[0],b[1],b[2],b[3]};\nelse\nz=a+b;\nendmodule\n\nSolution: The code is syntactically correct. There is a lot of unnecessary code: using one input as [0:3] and the other as [3:0] is not the smartest choice, the entire code could be written as assign z=a+b, but syntactically the code is correct.\n\nSecond Session Exam\n\nPage 9 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 141.21,
+                        "w": 468.3,
+                        "h": 604.95
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 11,
+            "text": "Design of Digital Circuits                                 10th of February 2016\n     (c)\n  1  module three (clk, rst, a, b, c, z);\n  2     input a,b,c,clk,rst;\n  3     output reg z;\n  4     reg q;\n  5\n  6     always  @ (*)\n  7       begin\n  8         q <= a ^ b;\n  9         if  (c) q <= ~(a^b);\n 10       end\n 11     always  @ (negedge clk)\n 12        if (rst) z= 1\u2019b0;\n 13        else    z= q;\n 14  endmodule\n       Solution: The code is syntactically correct. Once again, it is a bit unconventional.\n       One always block use blocking statements and the other non-blocking statements.\n       Both would work, although it would probably be more efficient to write them other-\n       wise.\n     (d)\n  1  module four (input [2:0] sel,  output reg [5:0] z);\n  2   case  (sel)\n  3      0: z = 6\u2019b00_0000;\n  4      1: z = 6\u2019b00_0001;\n  5      2: z = 6\u2019b00_0011;\n  6      3: z = 6\u2019b00_0111;\n  7      4: z = 6\u2019b00_1111;\n  8      5: z = 6\u2019b01_1111;\n  9      6: z = 6\u2019b11_1111;\n 10      default: z= 6\u2019b00_0000;\n 11   endcase\n 12  endmodule\n       Solution: This code is not correct. The case statement is a sequential statement\n       that needs to be within an always statement.\nSecond Session Exam                                               Page 10 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n1  module three (clk, rst, a, b, c, z);\n2     input a,b,c,clk,rst;\n3     output reg z;\n4     reg q;\n5\n6     always  @ (*)\n7       begin\n8         q <= a ^ b;\n9         if  (c) q <= ~(a^b);\n10       end\n11     always  @ (negedge clk)\n12        if (rst) z= 1\u2019b0;\n13        else    z= q;\n14  endmodule\n\nSolution: The code is syntactically correct. Once again, it is a bit unconventional. One always block use blocking statements and the other non-blocking statements. Both would work, although it would probably be more efficient to write them otherwise.\n\n1  module four (input [2:0] sel,  output reg [5:0] z);\n2   case  (sel)\n3      0: z = 6\u2019b00_0000;\n4      1: z = 6\u2019b00_0001;\n5      2: z = 6\u2019b00_0011;\n6      3: z = 6\u2019b00_0111;\n7      4: z = 6\u2019b00_1111;\n8      5: z = 6\u2019b01_1111;\n9      6: z = 6\u2019b11_1111;\n10      default: z= 6\u2019b00_0000;\n11   endcase\n12  endmodule\n\nSolution: This code is not correct. The case statement is a sequential statement that needs to be within an always statement.\n\n# Second Session Exam\n\nPage 10 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016\n\n1  module three (clk, rst, a, b, c, z);\n2     input a,b,c,clk,rst;\n3     output reg z;\n4     reg q;\n5\n6     always  @ (*)\n7       begin\n8         q <= a ^ b;\n9         if  (c) q <= ~(a^b);\n10       end\n11     always  @ (negedge clk)\n12        if (rst) z= 1\u2019b0;\n13        else    z= q;\n14  endmodule\n\nSolution: The code is syntactically correct. Once again, it is a bit unconventional. One always block use blocking statements and the other non-blocking statements. Both would work, although it would probably be more efficient to write them otherwise.\n\n1  module four (input [2:0] sel,  output reg [5:0] z);\n2   case  (sel)\n3      0: z = 6\u2019b00_0000;\n4      1: z = 6\u2019b00_0001;\n5      2: z = 6\u2019b00_0011;\n6      3: z = 6\u2019b00_0111;\n7      4: z = 6\u2019b00_1111;\n8      5: z = 6\u2019b01_1111;\n9      6: z = 6\u2019b11_1111;\n10      default: z= 6\u2019b00_0000;\n11   endcase\n12  endmodule\n\nSolution: This code is not correct. The case statement is a sequential statement that needs to be within an always statement.",
+                    "md": "10th of February 2016\n\n1  module three (clk, rst, a, b, c, z);\n2     input a,b,c,clk,rst;\n3     output reg z;\n4     reg q;\n5\n6     always  @ (*)\n7       begin\n8         q <= a ^ b;\n9         if  (c) q <= ~(a^b);\n10       end\n11     always  @ (negedge clk)\n12        if (rst) z= 1\u2019b0;\n13        else    z= q;\n14  endmodule\n\nSolution: The code is syntactically correct. Once again, it is a bit unconventional. One always block use blocking statements and the other non-blocking statements. Both would work, although it would probably be more efficient to write them otherwise.\n\n1  module four (input [2:0] sel,  output reg [5:0] z);\n2   case  (sel)\n3      0: z = 6\u2019b00_0000;\n4      1: z = 6\u2019b00_0001;\n5      2: z = 6\u2019b00_0011;\n6      3: z = 6\u2019b00_0111;\n7      4: z = 6\u2019b00_1111;\n8      5: z = 6\u2019b01_1111;\n9      6: z = 6\u2019b11_1111;\n10      default: z= 6\u2019b00_0000;\n11   endcase\n12  endmodule\n\nSolution: This code is not correct. The case statement is a sequential statement that needs to be within an always statement.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 40.37,
+                        "w": 464.05,
+                        "h": 607.18
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 10 of 18",
+                    "md": "Page 10 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 97.82,
+                        "w": 464.76,
+                        "h": 648.33
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 12,
+            "text": "Design of Digital Circuits                                        10th of February 2016\n   For the following questions 5 and 6 we will attempt to add a simple peripheral to a\n   standard single cycle MIPS processor.  In question 5 you will make the modifications\n   to the hardware and in question 6 you will write MIPS code to help you access this\n   peripheral. Note that, you can answer the questions independently. i.e. it is possible to\n   answer 6 even if you have not answered 5.\n   The peripheral we want to add is a simple Analog to Digital converter (ADC) as shown\n   below.\n                                     \u0391nalog Digital Converter\n                                 Start\n                                 Done\n                                                            \u0391nalog\u0399n\n                                 DataOut[7:0]\n                                   Clk\n                         Clk\n                        Start\n                        Done\n               DataOut[7:0]\n                                      Conversion is taking place  Value Ready\n      \u2022 The ADC has to be initiated by setting the Start signal to \u20191\u2019.\n      \u2022 The ADC will then start converting the AnalogIn signal into a digital value. This\n         could take several clock cycles to finish. You do not need to know in advance exactly\n         how many clock cycles the conversion will require.\n      \u2022  As soon as the conversion is done, the ADC will pull the Done signal to \u20191\u2019.\n      \u2022 At this point the analog input has been converted to an 8-bit value that will be\n         available as the DataOut signal and can safely be read back.\n      \u2022 The DataOut    will stay valid as long as the Start  signal is 1. Once you have\n         recovered the data, you can complete the action by resetting the Start   signal\n         back to \u20190\u2019.\n      \u2022 As soon as you reset the Start signal the ADC will also lower the Done signal\n         back to \u20190\u2019 and the ADC will be ready to make another conversion.\nSecond Session Exam                                                       Page 11 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\nFor the following questions 5 and 6 we will attempt to add a simple peripheral to a standard single cycle MIPS processor. In question 5 you will make the modifications to the hardware and in question 6 you will write MIPS code to help you access this peripheral. Note that, you can answer the questions independently. i.e. it is possible to answer 6 even if you have not answered 5.\n\nThe peripheral we want to add is a simple Analog to Digital converter (ADC) as shown below.\n\n# Analog Digital Converter\n\n| Start         | Done          |\n| ------------- | ------------- |\n| AnalogIn      | DataOut\\[7:0] |\n| Clk           | Clk           |\n| Start         | Done          |\n| DataOut\\[7:0] |               |\n\nConversion is taking place  Value Ready\n\n- The ADC has to be initiated by setting the Start signal to \u20191\u2019.\n- The ADC will then start converting the AnalogIn signal into a digital value. This could take several clock cycles to finish. You do not need to know in advance exactly how many clock cycles the conversion will require.\n- As soon as the conversion is done, the ADC will pull the Done signal to \u20191\u2019.\n- At this point the analog input has been converted to an 8-bit value that will be available as the DataOut signal and can safely be read back.\n- The DataOut will stay valid as long as the Start signal is 1. Once you have recovered the data, you can complete the action by resetting the Start signal back to \u20190\u2019.\n- As soon as you reset the Start signal the ADC will also lower the Done signal back to \u20190\u2019 and the ADC will be ready to make another conversion.\n\nSecond Session Exam\n\nPage 11 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016\n\nFor the following questions 5 and 6 we will attempt to add a simple peripheral to a standard single cycle MIPS processor. In question 5 you will make the modifications to the hardware and in question 6 you will write MIPS code to help you access this peripheral. Note that, you can answer the questions independently. i.e. it is possible to answer 6 even if you have not answered 5.\n\nThe peripheral we want to add is a simple Analog to Digital converter (ADC) as shown below.",
+                    "md": "10th of February 2016\n\nFor the following questions 5 and 6 we will attempt to add a simple peripheral to a standard single cycle MIPS processor. In question 5 you will make the modifications to the hardware and in question 6 you will write MIPS code to help you access this peripheral. Note that, you can answer the questions independently. i.e. it is possible to answer 6 even if you have not answered 5.\n\nThe peripheral we want to add is a simple Analog to Digital converter (ADC) as shown below.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 40.37,
+                        "w": 447.6,
+                        "h": 135.29
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Analog Digital Converter",
+                    "md": "# Analog Digital Converter",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Start         | Done          |\n| ------------- | ------------- |\n| AnalogIn      | DataOut\\[7:0] |\n| Clk           | Clk           |\n| Start         | Done          |\n| DataOut\\[7:0] |               |",
+                    "rows": [
+                        [
+                            "Start",
+                            "Done"
+                        ],
+                        [
+                            "AnalogIn",
+                            "DataOut[7:0]"
+                        ],
+                        [
+                            "Clk",
+                            "Clk"
+                        ],
+                        [
+                            "Start",
+                            "Done"
+                        ],
+                        [
+                            "DataOut[7:0]",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.4,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Conversion is taking place  Value Ready\n\n- The ADC has to be initiated by setting the Start signal to \u20191\u2019.\n- The ADC will then start converting the AnalogIn signal into a digital value. This could take several clock cycles to finish. You do not need to know in advance exactly how many clock cycles the conversion will require.\n- As soon as the conversion is done, the ADC will pull the Done signal to \u20191\u2019.\n- At this point the analog input has been converted to an 8-bit value that will be available as the DataOut signal and can safely be read back.\n- The DataOut will stay valid as long as the Start signal is 1. Once you have recovered the data, you can complete the action by resetting the Start signal back to \u20190\u2019.\n- As soon as you reset the Start signal the ADC will also lower the Done signal back to \u20190\u2019 and the ADC will be ready to make another conversion.\n\nSecond Session Exam\n\nPage 11 of 18",
+                    "md": "Conversion is taking place  Value Ready\n\n- The ADC has to be initiated by setting the Start signal to \u20191\u2019.\n- The ADC will then start converting the AnalogIn signal into a digital value. This could take several clock cycles to finish. You do not need to know in advance exactly how many clock cycles the conversion will require.\n- As soon as the conversion is done, the ADC will pull the Done signal to \u20191\u2019.\n- At this point the analog input has been converted to an 8-bit value that will be available as the DataOut signal and can safely be read back.\n- The DataOut will stay valid as long as the Start signal is 1. Once you have recovered the data, you can complete the action by resetting the Start signal back to \u20190\u2019.\n- As soon as you reset the Start signal the ADC will also lower the Done signal back to \u20190\u2019 and the ADC will be ready to make another conversion.\n\nSecond Session Exam\n\nPage 11 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 211.85,
+                        "w": 468.3,
+                        "h": 534.31
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 13,
+            "text": "Design of Digital Circuits                                         10th of February 2016\n 5. (10 points) Seen below is a simplified block diagram of a single-cycle MIPS architecture\n    showing the core to memory interface as covered in the class and lab exercises.\n            MIPS core       WE         MemWrite              WE      Memory\n                       Address[31:0]   ALUResult[31:0]       A[31:0]\n           DataIn[31:0]  Data[31:0]    WriteData[31:0]       DI[31:0]       DO[31:0]\n             Clk                                               Clk\n                                        ReadData[31:0]\n    The ADC is connected to the system through a memory mapped interface:\n      \u2022 The MIPS processor can write to Start pin of the ADC.\n      \u2022 The MIPS processor can read the Done pin and the 8-bit DataOut value from the\n         ADC.\n    The three pins of the ADC are mapped to the following memory addresses:\n    Start      0xFFFF FF00\n    Done       0xFFFF FF40\n    DataOut    0xFFFF FF80\n    Make the necessary connections and if necessary add multiplexers, registers, flip-flops\n    so that the processor can read and write to the ADC just as reading/writing to the\n    memory without interfering with the memory. In case you need to compare a value with\n    a memory address, you may use a comparator block that takes two 32-bit inputs and\n    outputs 1 if they match, as shown below.\n                                              =\n    More specifically, complete the following two functions:\n     (a) The input for Start\n    (b) The reading of the output for Done and DataOut\n    Please draw on the schematic on the next page.\nSecond Session Exam                                                         Page 12 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 5. (10 points)\n\nSeen below is a simplified block diagram of a single-cycle MIPS architecture showing the core to memory interface as covered in the class and lab exercises.\n\nMIPS core       WE         MemWrite              WE      Memory\nAddress[31:0]   ALUResult[31:0]       A[31:0]\nDataIn[31:0]  Data[31:0]    WriteData[31:0]       DI[31:0]       DO[31:0]\nClk                                               Clk\nReadData[31:0]\n\nThe ADC is connected to the system through a memory mapped interface:\n\n- The MIPS processor can write to Start pin of the ADC.\n- The MIPS processor can read the Done pin and the 8-bit DataOut value from the ADC.\n\nThe three pins of the ADC are mapped to the following memory addresses:\n\n| Start   | 0xFFFF FF00 |\n| ------- | ----------- |\n| Done    | 0xFFFF FF40 |\n| DataOut | 0xFFFF FF80 |\n\nMake the necessary connections and if necessary add multiplexers, registers, flip-flops so that the processor can read and write to the ADC just as reading/writing to the memory without interfering with the memory. In case you need to compare a value with a memory address, you may use a comparator block that takes two 32-bit inputs and outputs 1 if they match, as shown below.\n\n=\n\nMore specifically, complete the following two functions:\n\n1. (a) The input for Start\n2. (b) The reading of the output for Done and DataOut\n\nPlease draw on the schematic on the next page.\n\nSecond Session Exam                                                         Page 12 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 426.71,
+                        "y": 40.37,
+                        "w": 112.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5. (10 points)",
+                    "md": "# 5. (10 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Seen below is a simplified block diagram of a single-cycle MIPS architecture showing the core to memory interface as covered in the class and lab exercises.\n\nMIPS core       WE         MemWrite              WE      Memory\nAddress[31:0]   ALUResult[31:0]       A[31:0]\nDataIn[31:0]  Data[31:0]    WriteData[31:0]       DI[31:0]       DO[31:0]\nClk                                               Clk\nReadData[31:0]\n\nThe ADC is connected to the system through a memory mapped interface:\n\n- The MIPS processor can write to Start pin of the ADC.\n- The MIPS processor can read the Done pin and the 8-bit DataOut value from the ADC.\n\nThe three pins of the ADC are mapped to the following memory addresses:",
+                    "md": "Seen below is a simplified block diagram of a single-cycle MIPS architecture showing the core to memory interface as covered in the class and lab exercises.\n\nMIPS core       WE         MemWrite              WE      Memory\nAddress[31:0]   ALUResult[31:0]       A[31:0]\nDataIn[31:0]  Data[31:0]    WriteData[31:0]       DI[31:0]       DO[31:0]\nClk                                               Clk\nReadData[31:0]\n\nThe ADC is connected to the system through a memory mapped interface:\n\n- The MIPS processor can write to Start pin of the ADC.\n- The MIPS processor can read the Done pin and the 8-bit DataOut value from the ADC.\n\nThe three pins of the ADC are mapped to the following memory addresses:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 405.54,
+                        "h": 296.63
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Start   | 0xFFFF FF00 |\n| ------- | ----------- |\n| Done    | 0xFFFF FF40 |\n| DataOut | 0xFFFF FF80 |",
+                    "rows": [
+                        [
+                            "Start",
+                            "0xFFFF FF00"
+                        ],
+                        [
+                            "Done",
+                            "0xFFFF FF40"
+                        ],
+                        [
+                            "DataOut",
+                            "0xFFFF FF80"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 254.51,
+                        "w": 446.94,
+                        "h": 329.73
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Make the necessary connections and if necessary add multiplexers, registers, flip-flops so that the processor can read and write to the ADC just as reading/writing to the memory without interfering with the memory. In case you need to compare a value with a memory address, you may use a comparator block that takes two 32-bit inputs and outputs 1 if they match, as shown below.\n\n=\n\nMore specifically, complete the following two functions:\n\n1. (a) The input for Start\n2. (b) The reading of the output for Done and DataOut\n\nPlease draw on the schematic on the next page.\n\nSecond Session Exam                                                         Page 12 of 18",
+                    "md": "Make the necessary connections and if necessary add multiplexers, registers, flip-flops so that the processor can read and write to the ADC just as reading/writing to the memory without interfering with the memory. In case you need to compare a value with a memory address, you may use a comparator block that takes two 32-bit inputs and outputs 1 if they match, as shown below.\n\n=\n\nMore specifically, complete the following two functions:\n\n1. (a) The input for Start\n2. (b) The reading of the output for Done and DataOut\n\nPlease draw on the schematic on the next page.\n\nSecond Session Exam                                                         Page 12 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 123.74,
+                        "w": 468.37,
+                        "h": 622.41
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 14,
+            "text": "Design of Digital Circuits                                                                     10th of February 2016\n                                                                                        Analog Digital Converter\n                                                                                     Start\n                                                                                     Done                AnalogIn  External\n                                                                                     DataOut[7:0]                 Connection\n                                                                                       Clk\n                                                             ReadData[31:0]\n               MIPS core              WE                       MemWrite              WE        Memory\n                               Address[31:0]               ALUResult[31:0]           A[31:0]\n               DataIn[31:0]      Data[31:0]                WriteData[31:0]           DI[31:0]            DO[31:0]\n                Clk                                                                    Clk\n        Solution:\nSecond Session Exam                                                                                        Page 13 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# Analog Digital Converter\n\nStart\n\nDone\n\nAnalogIn\n\nExternal\n\nDataOut[7:0]\n\nClk\n\nReadData[31:0]\n\n| MIPS core        | WE               | MemWrite  | WE            | Memory      |\n| ---------------- | ---------------- | --------- | ------------- | ----------- |\n| Address\\[31:0]   | ALUResult\\[31:0] | A\\[31:0]  | DataIn\\[31:0] | Data\\[31:0] |\n| WriteData\\[31:0] | DI\\[31:0]        | DO\\[31:0] | Clk           |             |\n\nSolution:\n\n# Second Session Exam\n\nPage 13 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 426.71,
+                        "y": 40.37,
+                        "w": 112.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Analog Digital Converter",
+                    "md": "# Analog Digital Converter",
+                    "rows": null,
+                    "bBox": {
+                        "x": 402.47,
+                        "y": 72.33,
+                        "w": 84.21,
+                        "h": 7.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Start\n\nDone\n\nAnalogIn\n\nExternal\n\nDataOut[7:0]\n\nClk\n\nReadData[31:0]",
+                    "md": "Start\n\nDone\n\nAnalogIn\n\nExternal\n\nDataOut[7:0]\n\nClk\n\nReadData[31:0]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 132.89,
+                        "y": 82.87,
+                        "w": 399.84,
+                        "h": 336.75
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| MIPS core        | WE               | MemWrite  | WE            | Memory      |\n| ---------------- | ---------------- | --------- | ------------- | ----------- |\n| Address\\[31:0]   | ALUResult\\[31:0] | A\\[31:0]  | DataIn\\[31:0] | Data\\[31:0] |\n| WriteData\\[31:0] | DI\\[31:0]        | DO\\[31:0] | Clk           |             |",
+                    "rows": [
+                        [
+                            "MIPS core",
+                            "WE",
+                            "MemWrite",
+                            "WE",
+                            "Memory"
+                        ],
+                        [
+                            "Address[31:0]",
+                            "ALUResult[31:0]",
+                            "A[31:0]",
+                            "DataIn[31:0]",
+                            "Data[31:0]"
+                        ],
+                        [
+                            "WriteData[31:0]",
+                            "DI[31:0]",
+                            "DO[31:0]",
+                            "Clk",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 468.3,
+                        "h": 705.79
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Solution:",
+                    "md": "Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 102.17,
+                        "y": 484.53,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 110.1,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 13 of 18",
+                    "md": "Page 13 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 470.93,
+                        "y": 734.16,
+                        "w": 69.37,
+                        "h": 12.0
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 15,
+            "text": "Design of Digital Circuits\n                              0xFFFFFF00\n                                            =\n                              0xFFFFFF40\n                                            =\n                              0xFFFFFF80\n                                            =\n                           MIPS core              WE\n                                           Address[31:0]\n                          DataIn[31:0]        Data[31:0]\n                            Clk\nSecond Session Exam\n                                                                                                                                                                           WriteData[0]\n                                                                                                                   10th of February 2016\n                                                                0                                      Analog Digital Converter\n                                                                        D  Q                       Start\n                                                                1\n                                                                                         Q  D      Done                  AnalogIn   External\n                                                                                                   DataOut[7:0]                    Connection\n                                                                                                     Clk\n                                                                                 31\u2019b0,Done\n                                                                                         Q  D\n                                                                                    24\u2019b0,Data[7:0]\n                                                                               1\n                                                                         1\n                                                                               0\n                                                                         0\n                                                               \u20190\u2019   1\n                                                                     0                  MemWrite   WE          Memory\n                                                                         ALUResult[31:0]           A[31:0]\n                                                                         WriteData[31:0]           DI[31:0]              DO[31:0]\n                                                                                                     Clk\n                                                                                                                                 Page 14 of 18",
+            "md": "# Design of Digital Circuits\n\n| 0xFFFFFF00 | = | 0xFFFFFF40 | = | 0xFFFFFF80 |\n| ---------- | - | ---------- | - | ---------- |\n\n# MIPS core\n\n| WE | Address\\[31:0] | DataIn\\[31:0] | Data\\[31:0] | Clk |\n| -- | -------------- | ------------- | ----------- | --- |\n\n# Second Session Exam\n\n10th of February 2016\n\nWriteData[0]\n|                  |     |                  | Analog Digital Converter |           |           |                     |\n| ---------------- | --- | ---------------- | ------------------------ | --------- | --------- | ------------------- |\n|                  |     | D                | Q                        | Start     |           |                     |\n| 1                |     | Q                | D                        | Done      | AnalogIn  | External Connection |\n| DataOut\\[7:0]    | Clk |                  |                          |           |           |                     |\n| 31\u2019b0,Done       |     | Q                | D                        |           |           |                     |\n| 24\u2019b0,Data\\[7:0] | 1   |                  |                          |           |           |                     |\n|                  | 1   | 0                | 0                        |           |           |                     |\n| \u20190\u2019              | 1   | 0                | MemWrite                 | WE        | Memory    |                     |\n| ALUResult\\[31:0] |     | WriteData\\[31:0] | A\\[31:0]                 | DI\\[31:0] | DO\\[31:0] | Clk                 |\n\nPage 14 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 284.65,
+                        "h": 2730.89
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| 0xFFFFFF00 | = | 0xFFFFFF40 | = | 0xFFFFFF80 |\n| ---------- | - | ---------- | - | ---------- |",
+                    "rows": [
+                        [
+                            "0xFFFFFF00",
+                            "=",
+                            "0xFFFFFF40",
+                            "=",
+                            "0xFFFFFF80"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 163.58,
+                        "y": 135.15,
+                        "w": 50.07,
+                        "h": 157.37
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "MIPS core",
+                    "md": "# MIPS core",
+                    "rows": null,
+                    "bBox": {
+                        "x": 153.67,
+                        "y": 350.87,
+                        "w": 29.93,
+                        "h": 6.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| WE | Address\\[31:0] | DataIn\\[31:0] | Data\\[31:0] | Clk |\n| -- | -------------- | ------------- | ----------- | --- |",
+                    "rows": [
+                        [
+                            "WE",
+                            "Address[31:0]",
+                            "DataIn[31:0]",
+                            "Data[31:0]",
+                            "Clk"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 151.51,
+                        "y": 354.16,
+                        "w": 242.0,
+                        "h": 2657.85
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Second Session Exam",
+                    "md": "# Second Session Exam",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 734.16,
+                        "w": 284.65,
+                        "h": 2037.1
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016\n\nWriteData[0]",
+                    "md": "10th of February 2016\n\nWriteData[0]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 270.56,
+                        "y": 1793.87,
+                        "w": 368.44,
+                        "h": 1181.78
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "|                  |     |                  | Analog Digital Converter |           |           |                     |\n| ---------------- | --- | ---------------- | ------------------------ | --------- | --------- | ------------------- |\n|                  |     | D                | Q                        | Start     |           |                     |\n| 1                |     | Q                | D                        | Done      | AnalogIn  | External Connection |\n| DataOut\\[7:0]    | Clk |                  |                          |           |           |                     |\n| 31\u2019b0,Done       |     | Q                | D                        |           |           |                     |\n| 24\u2019b0,Data\\[7:0] | 1   |                  |                          |           |           |                     |\n|                  | 1   | 0                | 0                        |           |           |                     |\n| \u20190\u2019              | 1   | 0                | MemWrite                 | WE        | Memory    |                     |\n| ALUResult\\[31:0] |     | WriteData\\[31:0] | A\\[31:0]                 | DI\\[31:0] | DO\\[31:0] | Clk                 |",
+                    "rows": [
+                        [
+                            "",
+                            "",
+                            "",
+                            "Analog Digital Converter",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "D",
+                            "Q",
+                            "Start",
+                            "",
+                            ""
+                        ],
+                        [
+                            "1",
+                            "",
+                            "Q",
+                            "D",
+                            "Done",
+                            "AnalogIn",
+                            "External Connection"
+                        ],
+                        [
+                            "DataOut[7:0]",
+                            "Clk",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "31\u2019b0,Done",
+                            "",
+                            "Q",
+                            "D",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "24\u2019b0,Data[7:0]",
+                            "1",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "\u20190\u2019",
+                            "1",
+                            "0",
+                            "MemWrite",
+                            "WE",
+                            "Memory",
+                            ""
+                        ],
+                        [
+                            "ALUResult[31:0]",
+                            "",
+                            "WriteData[31:0]",
+                            "A[31:0]",
+                            "DI[31:0]",
+                            "DO[31:0]",
+                            "Clk"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 567.0,
+                        "h": 3323.54
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Page 14 of 18",
+                    "md": "Page 14 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 270.56,
+                        "y": 2727.68,
+                        "w": 269.74,
+                        "h": 636.23
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 16,
+            "text": "Design of Digital Circuits                             10th of February 2016\n 6. In this question, we will write subroutines to access the ADC we have added to our\n   MIPS system. As before, the three pins are mapped to the following addresses:\n   Start    0xFFFF FF00\n   Done     0xFFFF FF40\n   DataOut  0xFFFF FF80\n    (a) (5 points) Write a subroutine called readADC that will\n        1. Activate the ADC\n        2. Wait until the conversion is over\n        3. Read the Value converted by the ADC and return it to the calling program.\n          Solution:\n       1  readADC:   addi  $t1, $0, 1       # We need \u20191\u2019 in one register\n       2                                    # Optionally check if \u2019Done\u2019=0\n       3             sw    $t1, 0xff00($0)  # Activate ADC by writing \u20191\u2019 to \u2019Start\u2019\n       4  waitloop:  lw    $t2, 0xff40($0)  # Read \u2019Done\u2019\n       5             beq   $t2, $0, waitloop # if \u2019Done\u2019= 0 keep waiting\n       6             lw    $v0, 0xff80($0)  # Read the \u2019DataOut\u2019\n       7             sw    $0, 0xff00($0)   # Set \u2019Start\u2019 back to 0\n       8             jr    $ra              # Return to $ra\nSecond Session Exam                                           Page 15 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 6.\n\nIn this question, we will write subroutines to access the ADC we have added to our MIPS system. As before, the three pins are mapped to the following addresses:\n\n| Start   | 0xFFFF FF00 |\n| ------- | ----------- |\n| Done    | 0xFFFF FF40 |\n| DataOut | 0xFFFF FF80 |\n\n(a) (5 points) Write a subroutine called readADC that will\n\n1. Activate the ADC\n2. Wait until the conversion is over\n3. Read the Value converted by the ADC and return it to the calling program.\n\nSolution:\n\n1  readADC:   addi  $t1, $0, 1       # We need \u20191\u2019 in one register\n2                                    # Optionally check if \u2019Done\u2019=0\n3             sw    $t1, 0xff00($0)  # Activate ADC by writing \u20191\u2019 to \u2019Start\u2019\n4  waitloop:  lw    $t2, 0xff40($0)  # Read \u2019Done\u2019\n5             beq   $t2, $0, waitloop # if \u2019Done\u2019= 0 keep waiting\n6             lw    $v0, 0xff80($0)  # Read the \u2019DataOut\u2019\n7             sw    $0, 0xff00($0)   # Set \u2019Start\u2019 back to 0\n8             jr    $ra              # Return to $ra\n\nSecond Session Exam\n\nPage 15 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 113.27,
+                        "y": 40.37,
+                        "w": 426.32,
+                        "h": 312.7
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "6.",
+                    "md": "# 6.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 113.27,
+                        "y": 347.07,
+                        "w": 4.0,
+                        "h": 6.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this question, we will write subroutines to access the ADC we have added to our MIPS system. As before, the three pins are mapped to the following addresses:",
+                    "md": "In this question, we will write subroutines to access the ADC we have added to our MIPS system. As before, the three pins are mapped to the following addresses:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 86.45,
+                        "w": 406.08,
+                        "h": 266.69
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Start   | 0xFFFF FF00 |\n| ------- | ----------- |\n| Done    | 0xFFFF FF40 |\n| DataOut | 0xFFFF FF80 |",
+                    "rows": [
+                        [
+                            "Start",
+                            "0xFFFF FF00"
+                        ],
+                        [
+                            "Done",
+                            "0xFFFF FF40"
+                        ],
+                        [
+                            "DataOut",
+                            "0xFFFF FF80"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 92.81,
+                        "y": 115.84,
+                        "w": 518.62,
+                        "h": 250.85
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "(a) (5 points) Write a subroutine called readADC that will\n\n1. Activate the ADC\n2. Wait until the conversion is over\n3. Read the Value converted by the ADC and return it to the calling program.\n\nSolution:\n\n1  readADC:   addi  $t1, $0, 1       # We need \u20191\u2019 in one register\n2                                    # Optionally check if \u2019Done\u2019=0\n3             sw    $t1, 0xff00($0)  # Activate ADC by writing \u20191\u2019 to \u2019Start\u2019\n4  waitloop:  lw    $t2, 0xff40($0)  # Read \u2019Done\u2019\n5             beq   $t2, $0, waitloop # if \u2019Done\u2019= 0 keep waiting\n6             lw    $v0, 0xff80($0)  # Read the \u2019DataOut\u2019\n7             sw    $0, 0xff00($0)   # Set \u2019Start\u2019 back to 0\n8             jr    $ra              # Return to $ra\n\nSecond Session Exam\n\nPage 15 of 18",
+                    "md": "(a) (5 points) Write a subroutine called readADC that will\n\n1. Activate the ADC\n2. Wait until the conversion is over\n3. Read the Value converted by the ADC and return it to the calling program.\n\nSolution:\n\n1  readADC:   addi  $t1, $0, 1       # We need \u20191\u2019 in one register\n2                                    # Optionally check if \u2019Done\u2019=0\n3             sw    $t1, 0xff00($0)  # Activate ADC by writing \u20191\u2019 to \u2019Start\u2019\n4  waitloop:  lw    $t2, 0xff40($0)  # Read \u2019Done\u2019\n5             beq   $t2, $0, waitloop # if \u2019Done\u2019= 0 keep waiting\n6             lw    $v0, 0xff80($0)  # Read the \u2019DataOut\u2019\n7             sw    $0, 0xff00($0)   # Set \u2019Start\u2019 back to 0\n8             jr    $ra              # Return to $ra\n\nSecond Session Exam\n\nPage 15 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 115.84,
+                        "w": 539.43,
+                        "h": 630.32
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 17,
+            "text": "Design of Digital Circuits                             10th of February 2016\n    (b) (5 points) Now write a function averageADC that will collect 256 values from the\n        ADC by calling the subroutine you have written above. Average these 256 values\n        and return the result back to a calling subroutine.\n          Solution:\n       1  averageADC : addi  $s0, $0, 0     # this will be our count\n       2              addi   $sp, $sp, -4   # make room on stack\n       3              sw     $ra, 0($sp)    # push the return address\n       4              addi   $s2, $0, 256   # end count for the loop\n       5     loop :   jal    readADC        # call subroutine we have written\n       6              add    $s0, $v0, $s0  # accumulate values in $s0\n       7              addi   $s2, $s2, -1   # reduce count\n       8              beq    $s2, $0, fin   # jump to loop end\n       9              j      loop\n      10       fin :  sra    $v0, $s0, 8    # divide by 256 for averaging\n      11              lw     $ra, 0($sp)    # read back the return address\n      12              addi   $sp, $sp, 4    # restore stackpointer\n      13              jr     $ra            # return to $ra\nSecond Session Exam                                          Page 16 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# (b) (5 points)\n\nNow write a function averageADC that will collect 256 values from the ADC by calling the subroutine you have written above. Average these 256 values and return the result back to a calling subroutine.\n\n# Solution:\n\n1  averageADC : addi  $s0, $0, 0     # this will be our count\n2              addi   $sp, $sp, -4   # make room on stack\n3              sw     $ra, 0($sp)    # push the return address\n4              addi   $s2, $0, 256   # end count for the loop\n5     loop :   jal    readADC        # call subroutine we have written\n6              add    $s0, $v0, $s0  # accumulate values in $s0\n7              addi   $s2, $s2, -1   # reduce count\n8              beq    $s2, $0, fin   # jump to loop end\n9              j      loop\n10       fin :  sra    $v0, $s0, 8    # divide by 256 for averaging\n11              lw     $ra, 0($sp)    # read back the return address\n12              addi   $sp, $sp, 4    # restore stackpointer\n13              jr     $ra            # return to $ra\n\nSecond Session Exam\n\nPage 16 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 109.61,
+                        "y": 40.37,
+                        "w": 429.98,
+                        "h": 242.86
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (5 points)",
+                    "md": "# (b) (5 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 113.27,
+                        "y": 209.49,
+                        "w": 4.0,
+                        "h": 6.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Now write a function averageADC that will collect 256 values from the ADC by calling the subroutine you have written above. Average these 256 values and return the result back to a calling subroutine.",
+                    "md": "Now write a function averageADC that will collect 256 values from the ADC by calling the subroutine you have written above. Average these 256 values and return the result back to a calling subroutine.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 113.27,
+                        "y": 86.45,
+                        "w": 452.34,
+                        "h": 142.59
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 129.47,
+                        "w": 52.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1  averageADC : addi  $s0, $0, 0     # this will be our count\n2              addi   $sp, $sp, -4   # make room on stack\n3              sw     $ra, 0($sp)    # push the return address\n4              addi   $s2, $0, 256   # end count for the loop\n5     loop :   jal    readADC        # call subroutine we have written\n6              add    $s0, $v0, $s0  # accumulate values in $s0\n7              addi   $s2, $s2, -1   # reduce count\n8              beq    $s2, $0, fin   # jump to loop end\n9              j      loop\n10       fin :  sra    $v0, $s0, 8    # divide by 256 for averaging\n11              lw     $ra, 0($sp)    # read back the return address\n12              addi   $sp, $sp, 4    # restore stackpointer\n13              jr     $ra            # return to $ra\n\nSecond Session Exam\n\nPage 16 of 18",
+                    "md": "1  averageADC : addi  $s0, $0, 0     # this will be our count\n2              addi   $sp, $sp, -4   # make room on stack\n3              sw     $ra, 0($sp)    # push the return address\n4              addi   $s2, $0, 256   # end count for the loop\n5     loop :   jal    readADC        # call subroutine we have written\n6              add    $s0, $v0, $s0  # accumulate values in $s0\n7              addi   $s2, $s2, -1   # reduce count\n8              beq    $s2, $0, fin   # jump to loop end\n9              j      loop\n10       fin :  sra    $v0, $s0, 8    # divide by 256 for averaging\n11              lw     $ra, 0($sp)    # read back the return address\n12              addi   $sp, $sp, 4    # restore stackpointer\n13              jr     $ra            # return to $ra\n\nSecond Session Exam\n\nPage 16 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 150.36,
+                        "w": 493.61,
+                        "h": 595.8
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 18,
+            "text": "Design of Digital Circuits                               10th of February 2016\n 7. For this question consider the following MIPS assembly code.\n 1       lui   $s0, 0x2000   # Initialize addresses\n 2       ori   $s0, 0x0000   # First vector\n 3       lui   $s1, 0x1001\n 4       ori   $s1, 0x5000   # Second vector\n 5       lui   $s2, 0x1001\n 6       ori   $s2, 0x6000   # End address\n 7       addi  $s3, $0, 0    # initialize\n 8  loop: lw   $t0, 0($s0)   # Read vector 1\n 9       lw    $t1, 0($s1)   # Read vector 2\n10       add   $t2, $t0, $t1 # Add both to $t2\n11       add   $s3, $s3, $t2 # Accumulate at $s3\n12       addi  $s0, $s0, 4   # increment vector 1\n13       addi  $s1, $s1, 4   # increment vector 2\n14       beq   $s1, $s2, end # end reached?\n15       j     loop          # no, loop.\n16  end:\n    This code is being executed on a MIPS processor that executes all instructions in a\n    single cycle, except for memory accesses (i.e. lw and sw instructions) which take 20\n    clock cycles. The processor will be waiting during this time.\n    (a) (2 points) How many clock cycles (approximately) does it take to execute the above\n       mentioned program?\n        Solution: There are 7 instructions before the loop. The loop is executed 1024\n        times. There are 6 instructions that take 1 clock cycle and 2 lw instructions\n        that take 20 cycles so the total is:\n           Total  =  7 + 1024 * (2*20 + 6)\n                  =  47111\n                  ~  45000 - 50000 cycles\nSecond Session Exam                                             Page 17 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# 7. For this question consider the following MIPS assembly code.\n\n1       lui   $s0, 0x2000   # Initialize addresses\n2       ori   $s0, 0x0000   # First vector\n3       lui   $s1, 0x1001\n4       ori   $s1, 0x5000   # Second vector\n5       lui   $s2, 0x1001\n6       ori   $s2, 0x6000   # End address\n7       addi  $s3, $0, 0    # initialize\n8  loop: lw   $t0, 0($s0)   # Read vector 1\n9       lw    $t1, 0($s1)   # Read vector 2\n10      add   $t2, $t0, $t1 # Add both to $t2\n11      add   $s3, $s3, $t2 # Accumulate at $s3\n12      addi  $s0, $s0, 4   # increment vector 1\n13      addi  $s1, $s1, 4   # increment vector 2\n14      beq   $s1, $s2, end # end reached?\n15      j     loop          # no, loop.\n16  end:\n\nThis code is being executed on a MIPS processor that executes all instructions in a single cycle, except for memory accesses (i.e. lw and sw instructions) which take 20 clock cycles. The processor will be waiting during this time.\n\n# (a) (2 points) How many clock cycles (approximately) does it take to execute the above mentioned program?\n\nSolution: There are 7 instructions before the loop. The loop is executed 1024 times. There are 6 instructions that take 1 clock cycle and 2 lw instructions that take 20 cycles so the total is:\n\nTotal  =  7 + 1024 * (2*20 + 6)\n=  47111\n~  45000 - 50000 cycles\n\nSecond Session Exam\n\nPage 17 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 40.37,
+                        "w": 464.05,
+                        "h": 266.69
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "7. For this question consider the following MIPS assembly code.",
+                    "md": "# 7. For this question consider the following MIPS assembly code.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 77.85,
+                        "y": 72.0,
+                        "w": 329.29,
+                        "h": 401.72
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1       lui   $s0, 0x2000   # Initialize addresses\n2       ori   $s0, 0x0000   # First vector\n3       lui   $s1, 0x1001\n4       ori   $s1, 0x5000   # Second vector\n5       lui   $s2, 0x1001\n6       ori   $s2, 0x6000   # End address\n7       addi  $s3, $0, 0    # initialize\n8  loop: lw   $t0, 0($s0)   # Read vector 1\n9       lw    $t1, 0($s1)   # Read vector 2\n10      add   $t2, $t0, $t1 # Add both to $t2\n11      add   $s3, $s3, $t2 # Accumulate at $s3\n12      addi  $s0, $s0, 4   # increment vector 1\n13      addi  $s1, $s1, 4   # increment vector 2\n14      beq   $s1, $s2, end # end reached?\n15      j     loop          # no, loop.\n16  end:\n\nThis code is being executed on a MIPS processor that executes all instructions in a single cycle, except for memory accesses (i.e. lw and sw instructions) which take 20 clock cycles. The processor will be waiting during this time.",
+                    "md": "1       lui   $s0, 0x2000   # Initialize addresses\n2       ori   $s0, 0x0000   # First vector\n3       lui   $s1, 0x1001\n4       ori   $s1, 0x5000   # Second vector\n5       lui   $s2, 0x1001\n6       ori   $s2, 0x6000   # End address\n7       addi  $s3, $0, 0    # initialize\n8  loop: lw   $t0, 0($s0)   # Read vector 1\n9       lw    $t1, 0($s1)   # Read vector 2\n10      add   $t2, $t0, $t1 # Add both to $t2\n11      add   $s3, $s3, $t2 # Accumulate at $s3\n12      addi  $s0, $s0, 4   # increment vector 1\n13      addi  $s1, $s1, 4   # increment vector 2\n14      beq   $s1, $s2, end # end reached?\n15      j     loop          # no, loop.\n16  end:\n\nThis code is being executed on a MIPS processor that executes all instructions in a single cycle, except for memory accesses (i.e. lw and sw instructions) which take 20 clock cycles. The processor will be waiting during this time.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 75.54,
+                        "y": 92.89,
+                        "w": 464.76,
+                        "h": 380.83
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(a) (2 points) How many clock cycles (approximately) does it take to execute the above mentioned program?",
+                    "md": "# (a) (2 points) How many clock cycles (approximately) does it take to execute the above mentioned program?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 79.19,
+                        "y": 111.37,
+                        "w": 460.55,
+                        "h": 287.95
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Solution: There are 7 instructions before the loop. The loop is executed 1024 times. There are 6 instructions that take 1 clock cycle and 2 lw instructions that take 20 cycles so the total is:\n\nTotal  =  7 + 1024 * (2*20 + 6)\n=  47111\n~  45000 - 50000 cycles\n\nSecond Session Exam\n\nPage 17 of 18",
+                    "md": "Solution: There are 7 instructions before the loop. The loop is executed 1024 times. There are 6 instructions that take 1 clock cycle and 2 lw instructions that take 20 cycles so the total is:\n\nTotal  =  7 + 1024 * (2*20 + 6)\n=  47111\n~  45000 - 50000 cycles\n\nSecond Session Exam\n\nPage 17 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 97.82,
+                        "w": 468.3,
+                        "h": 648.33
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 19,
+            "text": "Design of Digital Circuits                                         10th of February 2016\n    (b) (4 points) We want to speed up the operation by using a cache memory. By using\n                        a cache with a capacity of 256 words, we can achieve 1 clock cycle memory accesses\n        for data that is within the cache.\n                        How fast would the above program execute if a direct mapped cache with block size\n        of one word is used?\n          Solution:\n          In principle, all memory accesses would be cache misses, no data is read twice\n          (no temporal locality), and block size is one word so no spatial locality can be\n          exploited. In fact each lw instruction will be longer, as now we have one cycle\n          for the cache miss (21 instead of 20 cycles).\n             Total   =  7  + 1024 * (2*21 + 6)\n                     =  49159\n                     ~  50000 cycles\n     (c) (4 points) What would be the best possible cache configuration with a capacity of\n        256 words for running this program?\n          Solution:\n          There are two independent memory locations being read. So the cache needs to\n          be 2-way set associative so that the consecutive lw accesses on $s0 and $s1\n          do not invalidate the data.\n          Since there is no temporal locality (data is not read again in this program),\n          spatial locality is the only way to speed up. The block size should be as large as\n          possible. Since we have 2-ways, the largest block size we can have is 128 words.\n          In this case we would have 2 cache misses for each way every 128 memory\n          accesses that will require 21 cycles each. All other accesses will have a single\n          cycle access time.\n             Total   =  7  + 8  * (2 * 21 +6) + 1016 * 8\n                     =  8519\n                     ~  8000-9000 cycles\nSecond Session Exam                                                         Page 18 of 18",
+            "md": "# Design of Digital Circuits\n\n10th of February 2016\n\n# (b) (4 points)\n\nWe want to speed up the operation by using a cache memory. By using a cache with a capacity of 256 words, we can achieve 1 clock cycle memory accesses for data that is within the cache.\n\nHow fast would the above program execute if a direct mapped cache with block size of one word is used?\n\n# Solution:\n\nIn principle, all memory accesses would be cache misses, no data is read twice (no temporal locality), and block size is one word so no spatial locality can be exploited. In fact each lw instruction will be longer, as now we have one cycle for the cache miss (21 instead of 20 cycles).\n\nTotal = 7 + 1024 * (2*21 + 6) = 49159 ~ 50000 cycles\n\n# (c) (4 points)\n\nWhat would be the best possible cache configuration with a capacity of 256 words for running this program?\n\n# Solution:\n\nThere are two independent memory locations being read. So the cache needs to be 2-way set associative so that the consecutive lw accesses on $s0 and $s1 do not invalidate the data.\n\nSince there is no temporal locality (data is not read again in this program), spatial locality is the only way to speed up. The block size should be as large as possible. Since we have 2-ways, the largest block size we can have is 128 words.\n\nIn this case we would have 2 cache misses for each way every 128 memory accesses that will require 21 cycles each. All other accesses will have a single cycle access time.\n\nTotal = 7 + 8 * (2 * 21 + 6) + 1016 * 8 = 8519 ~ 8000-9000 cycles\n\nSecond Session Exam\n\nPage 18 of 18",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits",
+                    "md": "# Design of Digital Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 40.37,
+                        "w": 130.44,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "10th of February 2016",
+                    "md": "10th of February 2016",
+                    "rows": null,
+                    "bBox": {
+                        "x": 426.71,
+                        "y": 40.37,
+                        "w": 112.88,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(b) (4 points)",
+                    "md": "# (b) (4 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "We want to speed up the operation by using a cache memory. By using a cache with a capacity of 256 words, we can achieve 1 clock cycle memory accesses for data that is within the cache.\n\nHow fast would the above program execute if a direct mapped cache with block size of one word is used?",
+                    "md": "We want to speed up the operation by using a cache memory. By using a cache with a capacity of 256 words, we can achieve 1 clock cycle memory accesses for data that is within the cache.\n\nHow fast would the above program execute if a direct mapped cache with block size of one word is used?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.51,
+                        "y": 86.45,
+                        "w": 422.97,
+                        "h": 57.83
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 160.85,
+                        "w": 52.0,
+                        "h": 191.76
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In principle, all memory accesses would be cache misses, no data is read twice (no temporal locality), and block size is one word so no spatial locality can be exploited. In fact each lw instruction will be longer, as now we have one cycle for the cache miss (21 instead of 20 cycles).\n\nTotal = 7 + 1024 * (2*21 + 6) = 49159 ~ 50000 cycles",
+                    "md": "In principle, all memory accesses would be cache misses, no data is read twice (no temporal locality), and block size is one word so no spatial locality can be exploited. In fact each lw instruction will be longer, as now we have one cycle for the cache miss (21 instead of 20 cycles).\n\nTotal = 7 + 1024 * (2*21 + 6) = 49159 ~ 50000 cycles",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 177.78,
+                        "w": 403.73,
+                        "h": 358.13
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(c) (4 points)",
+                    "md": "# (c) (4 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "What would be the best possible cache configuration with a capacity of 256 words for running this program?",
+                    "md": "What would be the best possible cache configuration with a capacity of 256 words for running this program?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 117.52,
+                        "y": 312.03,
+                        "w": 187.27,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Solution:",
+                    "md": "# Solution:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.88,
+                        "y": 160.85,
+                        "w": 52.0,
+                        "h": 191.76
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "There are two independent memory locations being read. So the cache needs to be 2-way set associative so that the consecutive lw accesses on $s0 and $s1 do not invalidate the data.\n\nSince there is no temporal locality (data is not read again in this program), spatial locality is the only way to speed up. The block size should be as large as possible. Since we have 2-ways, the largest block size we can have is 128 words.\n\nIn this case we would have 2 cache misses for each way every 128 memory accesses that will require 21 cycles each. All other accesses will have a single cycle access time.\n\nTotal = 7 + 8 * (2 * 21 + 6) + 1016 * 8 = 8519 ~ 8000-9000 cycles\n\nSecond Session Exam\n\nPage 18 of 18",
+                    "md": "There are two independent memory locations being read. So the cache needs to be 2-way set associative so that the consecutive lw accesses on $s0 and $s1 do not invalidate the data.\n\nSince there is no temporal locality (data is not read again in this program), spatial locality is the only way to speed up. The block size should be as large as possible. Since we have 2-ways, the largest block size we can have is 128 words.\n\nIn this case we would have 2 cache misses for each way every 128 memory accesses that will require 21 cycles each. All other accesses will have a single cycle access time.\n\nTotal = 7 + 8 * (2 * 21 + 6) + 1016 * 8 = 8519 ~ 8000-9000 cycles\n\nSecond Session Exam\n\nPage 18 of 18",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 238.06,
+                        "w": 468.3,
+                        "h": 508.1
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 612.0,
+            "height": 792.0,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        }
+    ],
+    "job_metadata": {
+        "job_pages": 0,
+        "job_auto_mode_triggered_pages": 0,
+        "job_is_cache_hit": true
+    },
+    "file_name": "OnurETHZ_exams/exam_ws2015.pdf",
+    "job_id": "be7d96ad-6bac-48b6-9b4d-046b107a4b5b",
+    "is_done": false,
+    "error": null
+}

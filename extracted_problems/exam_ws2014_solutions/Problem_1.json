@@ -1,0 +1,37 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "1",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_question": "Through a digital communication channel you have received the following information in hexadecimal format:\n\n0x002E 61A7 E82F\n\nHow many bits of information have been transmitted?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "There are 12 hex digits, each hex digit contains 4 bits, in total 48 bits\n\nUsing the table below, for each byte enter the corresponding binary information:\n\nHex Binary\n\n0x00 0 0 0 0 0 0 0 0\n\n0x2E 0 0 1 0 1 1 1 0\n\n0x61 0 1 1 0 0 0 0 1\n\n0xA7 1 0 1 0 0 1 1 1\n\n0xE8 1 1 1 0 1 0 0 0\n\n0x2F 0 0 1 0 1 1 1 1",
+          "solution_figures": ["TABLE"]
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "How can you express decimal 171 and −40 using two's complement binary representation?",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "171 == 0 1010 1011\n\nNote that you have to have a leading zero, otherwise it would be a negative number (twos complement -85). Any number of leading zeroes is fine, but there should be at least one.\n-40 == 101 1000\n\nSimilarly you need to have at least one leading '1' here as well.",
+          "solution_figures": []
+        }
+      ]
+    }
+  ]
+}

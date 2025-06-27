@@ -1,0 +1,39 @@
+{
+  "exam_name": "Computer Architecture Exam.pdf",
+  "problem": "3",
+  "problem_context": "In this question you will be asked to draw design the FSM for a power saving control module of a mobile device.",
+  "problem_figures": [],
+  "parts": [
+    {
+      "part": "a",
+      "subproblem": [
+        {
+          "subproblem_context": "We want to design the power saving control module of a mobile device.\n\n• There are two inputs: C (charging) and D (discharging)\n• There are four power levels (0,1,2,3) for the device\n• When both inputs (C, D) are the same the power level does not change\n• When only C is active, power level increases until the last level (3) is reached\n• When only D is active, power level decreases until the lowest level (0) is reached\n• There are 3 outputs: DIM (dimmer), LOW (low power), ANIM (animations)\n• DIM is active at power level 1 or lower\n• LOW is active at power level 0 only and signals that we are at low power\n• ANIM is active at power level 3 only and enables power hungry animations\n\non the device\n• the reset state corresponds to power level 2.",
+          "subproblem_question": "Draw the State Transition Diagram for a Moore type FSM that implements this state machine",
+          "subproblem_figures": []
+        }
+      ],
+      "answer": [
+        {
+          "solution": "Solution:",
+          "solution_figures": ["IMAGE"]
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "subproblem": [
+        {
+          "subproblem_question": "Using the State Transition Diagram, complete the following table for both State Transitions and the outputs.",
+          "subproblem_figures": ["TABLE"]
+        }
+      ],
+      "answer": [
+        {
+          "solution": "",
+          "solution_figures": ["TABLE"]
+        }
+      ]
+    }
+  ]
+}

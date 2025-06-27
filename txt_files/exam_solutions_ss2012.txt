@@ -1,0 +1,2279 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "text": "*Wednesday 22-08-2012     15:00-16:30\nHPH G1, HPH G2, HPH G3\nName    :\nFirst name :\nStudent ID:\n                     1st session examination\n                               Answers in Red\n                      Design of Digital Circuits SS12\n                               (252-0014-00S)\n                         S. Capkun, F.K. Gurkaynak\nExamination rules:\n    1.  written 90 minutes\n    2. No books, no calculators, no computers or communication\n         devices. 5 pages handwritten notes are allowed.\n    3.  Write your answers on this document, space is reserved for your\n         answers after the questions, if you write your answers somewhere else\n         (e.g. draft pages) specify it.\n    4.  Put your student card visible on the desk during the exam.\n    5.  Immediately call an assistant, if you feel disturbed.\n    6.  Answers will only be evaluated if they are readable.\n    7.  Write with black or blue ink (no pencil, no green or red color).\n    8. Show your work. For some questions, you may get partial credit even       if\n         the end result is wrong due to a calculation mistake\n                                                       Question   Total Points   Points\n                                                       1          5\n                                                       2          5\n                                                       3          15\n                                                       4          10\n                                                       5          10\n                                                       6          10\n                                                       7          10\n                                                       8          10\n                                                       Total      75",
+            "md": "# Wednesday 22-08-2012\n\n# 15:00-16:30\n\n# HPH G1, HPH G2, HPH G3\n\nName:\n\nFirst name:\n\nStudent ID:\n\n# 1st session examination\n\n# Answers in Red\n\n# Design of Digital Circuits SS12\n\n# (252-0014-00S)\n\n# S. Capkun, F.K. Gurkaynak\n\n# Examination rules:\n\n1. written 90 minutes\n2. No books, no calculators, no computers or communication devices. 5 pages handwritten notes are allowed.\n3. Write your answers on this document, space is reserved for your answers after the questions, if you write your answers somewhere else (e.g. draft pages) specify it.\n4. Put your student card visible on the desk during the exam.\n5. Immediately call an assistant, if you feel disturbed.\n6. Answers will only be evaluated if they are readable.\n7. Write with black or blue ink (no pencil, no green or red color).\n8. Show your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.\n\n| Question | Total Points | Points |\n| -------- | ------------ | ------ |\n| 1        | 5            |        |\n| 2        | 5            |        |\n| 3        | 15           |        |\n| 4        | 10           |        |\n| 5        | 10           |        |\n| 6        | 10           |        |\n| 7        | 10           |        |\n| 8        | 10           |        |\n| Total    | 75           |        |\n",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Wednesday 22-08-2012",
+                    "md": "# Wednesday 22-08-2012",
+                    "rows": null,
+                    "bBox": {
+                        "x": 388.87,
+                        "y": 585.07,
+                        "w": 7.04,
+                        "h": 129.07
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "15:00-16:30",
+                    "md": "# 15:00-16:30",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 85.1,
+                        "w": 322.0,
+                        "h": 594.96
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "HPH G1, HPH G2, HPH G3",
+                    "md": "# HPH G1, HPH G2, HPH G3",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 98.9,
+                        "w": 305.89,
+                        "h": 530.16
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Name:\n\nFirst name:\n\nStudent ID:",
+                    "md": "Name:\n\nFirst name:\n\nStudent ID:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 126.5,
+                        "w": 63.12,
+                        "h": 39.6
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1st session examination",
+                    "md": "# 1st session examination",
+                    "rows": null,
+                    "bBox": {
+                        "x": 205.13,
+                        "y": 207.26,
+                        "w": 190.78,
+                        "h": 387.81
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Answers in Red",
+                    "md": "# Answers in Red",
+                    "rows": null,
+                    "bBox": {
+                        "x": 255.65,
+                        "y": 231.86,
+                        "w": 84.18,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design of Digital Circuits SS12",
+                    "md": "# Design of Digital Circuits SS12",
+                    "rows": null,
+                    "bBox": {
+                        "x": 180.74,
+                        "y": 263.45,
+                        "w": 233.69,
+                        "h": 348.66
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "(252-0014-00S)",
+                    "md": "# (252-0014-00S)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 241.61,
+                        "y": 299.93,
+                        "w": 200.89,
+                        "h": 363.21
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "S. Capkun, F.K. Gurkaynak",
+                    "md": "# S. Capkun, F.K. Gurkaynak",
+                    "rows": null,
+                    "bBox": {
+                        "x": 225.29,
+                        "y": 324.53,
+                        "w": 144.78,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Examination rules:",
+                    "md": "# Examination rules:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 126.5,
+                        "w": 98.48,
+                        "h": 257.43
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. written 90 minutes\n2. No books, no calculators, no computers or communication devices. 5 pages handwritten notes are allowed.\n3. Write your answers on this document, space is reserved for your answers after the questions, if you write your answers somewhere else (e.g. draft pages) specify it.\n4. Put your student card visible on the desk during the exam.\n5. Immediately call an assistant, if you feel disturbed.\n6. Answers will only be evaluated if they are readable.\n7. Write with black or blue ink (no pencil, no green or red color).\n8. Show your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.",
+                    "md": "1. written 90 minutes\n2. No books, no calculators, no computers or communication devices. 5 pages handwritten notes are allowed.\n3. Write your answers on this document, space is reserved for your answers after the questions, if you write your answers somewhere else (e.g. draft pages) specify it.\n4. Put your student card visible on the desk during the exam.\n5. Immediately call an assistant, if you feel disturbed.\n6. Answers will only be evaluated if they are readable.\n7. Write with black or blue ink (no pencil, no green or red color).\n8. Show your work. For some questions, you may get partial credit even if the end result is wrong due to a calculation mistake.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 385.73,
+                        "w": 394.56,
+                        "h": 328.41
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Question | Total Points | Points |\n| -------- | ------------ | ------ |\n| 1        | 5            |        |\n| 2        | 5            |        |\n| 3        | 15           |        |\n| 4        | 10           |        |\n| 5        | 10           |        |\n| 6        | 10           |        |\n| 7        | 10           |        |\n| 8        | 10           |        |\n| Total    | 75           |        |",
+                    "rows": [
+                        [
+                            "Question",
+                            "Total Points",
+                            "Points"
+                        ],
+                        [
+                            "1",
+                            "5",
+                            ""
+                        ],
+                        [
+                            "2",
+                            "5",
+                            ""
+                        ],
+                        [
+                            "3",
+                            "15",
+                            ""
+                        ],
+                        [
+                            "4",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "5",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "6",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "7",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "8",
+                            "10",
+                            ""
+                        ],
+                        [
+                            "Total",
+                            "75",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 85.1,
+                        "w": 429.4,
+                        "h": 644.96
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 2,
+            "text": "1.\n    a)  Below you can see on the left four binary numbers and on the right 4\n         interpretations of these numbers and a corresponding value. Match the number\n         on the left to the descriptions on the right. (2 points)\n             Binary Number                            Value, Interpretation\n          1            11110               A    Decimal -1, 5-bit two\u2019s complement\n          2            10001               B    Decimal -1, 5 bit sign magnitude\n          3            10010               C    Decimal 30, 5 bit unsigned\n          4            11111               D    Hexadecimal 0x12, 5 bit unsigned\n                 1-C      2-B      3-D      4-A\n    b)  Consider the transistor level schematic below. What is the output going to be\n         when A=1, B=0, C=1? (1 point)\n\n         0\n    c)  Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic\n         that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
+            "md": "# 1.\n\n# a)\n\nBelow you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right. (2 points)\n\n| Binary Number |       | Value, Interpretation |                                    |\n| ------------- | ----- | --------------------- | ---------------------------------- |\n| 1             | 11110 | A                     | Decimal -1, 5-bit two\u2019s complement |\n| 2             | 10001 | B                     | Decimal -1, 5 bit sign magnitude   |\n| 3             | 10010 | C                     | Decimal 30, 5 bit unsigned         |\n| 4             | 11111 | D                     | Hexadecimal 0x12, 5 bit unsigned   |\n\n1-C 2-B 3-D 4-A\n\n# b)\n\nConsider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1? (1 point)\n\n0\n\n# c)\n\nUsing only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "1.",
+                    "md": "# 1.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 47.88,
+                        "h": 100.22
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "a)",
+                    "md": "# a)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 84.98,
+                        "w": 163.95,
+                        "h": 86.4
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right. (2 points)",
+                    "md": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right. (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 84.98,
+                        "w": 380.6,
+                        "h": 156.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Binary Number |       | Value, Interpretation |                                    |\n| ------------- | ----- | --------------------- | ---------------------------------- |\n| 1             | 11110 | A                     | Decimal -1, 5-bit two\u2019s complement |\n| 2             | 10001 | B                     | Decimal -1, 5 bit sign magnitude   |\n| 3             | 10010 | C                     | Decimal 30, 5 bit unsigned         |\n| 4             | 11111 | D                     | Hexadecimal 0x12, 5 bit unsigned   |",
+                    "rows": [
+                        [
+                            "Binary Number",
+                            "",
+                            "Value, Interpretation",
+                            ""
+                        ],
+                        [
+                            "1",
+                            "11110",
+                            "A",
+                            "Decimal -1, 5-bit two\u2019s complement"
+                        ],
+                        [
+                            "2",
+                            "10001",
+                            "B",
+                            "Decimal -1, 5 bit sign magnitude"
+                        ],
+                        [
+                            "3",
+                            "10010",
+                            "C",
+                            "Decimal 30, 5 bit unsigned"
+                        ],
+                        [
+                            "4",
+                            "11111",
+                            "D",
+                            "Hexadecimal 0x12, 5 bit unsigned"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 417.43,
+                        "h": 545.95
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1-C 2-B 3-D 4-A",
+                    "md": "1-C 2-B 3-D 4-A",
+                    "rows": null,
+                    "bBox": {
+                        "x": 128.9,
+                        "y": 159.38,
+                        "w": 160.11,
+                        "h": 114.27
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "b)",
+                    "md": "# b)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 182.66,
+                        "w": 163.59,
+                        "h": 132.39
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1? (1 point)\n\n0",
+                    "md": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1? (1 point)\n\n0",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 159.38,
+                        "w": 371.84,
+                        "h": 416.33
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "c)",
+                    "md": "# c)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 205.82,
+                        "w": 163.59,
+                        "h": 397.49
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
+                    "md": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 159.38,
+                        "w": 399.43,
+                        "h": 457.73
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 3,
+            "text": "2.\n    a)  Write the truth table for the function Z= B\u2019(C\u2019 + A) + BC\u2019. (1 point)\n                                  A      B     C     Z\n                                  0      0     0     1\n                                  0      0     1     0\n                                  0      1     0     1\n                                  0      1     1     0\n                                  1      0     0     1\n                                  1      0     1     1\n                                  1      1     0     1\n                                  1      1     1     0\n    b)  Compose a Karnaugh Map for the truth table from question 2(a).  (1 point)\n                   A\\BC          00          01          11          10\n                     0           1           0            0           1\n                     1           1           1            0           1\n\n    c)  Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the\n         Boolean Equation (2 (a)) for Z (1 point)\n                Z = AB\u2019 + C\u2019\n    d)  Examine the circuit below. We want to find out the Boolean equation by\n         inspection. You can use bubble-pushing methods to simplify the circuit. Write\n         the Boolean equation. (2 points)\n\n                                               Z = A + B + C + D\u2019 + E\u2019FG",
+            "md": "# 2.\n\n1. Write the truth table for the function Z= B\u2019(C\u2019 + A) + BC\u2019. (1 point)\n| A | B | C | Z |\n| - | - | - | - |\n| 0 | 0 | 0 | 1 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | 1 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 0 |\n2. Compose a Karnaugh Map for the truth table from question 2(a). (1 point)\n| A\\BC | 00 | 01 | 11 | 10 |\n| ---- | -- | -- | -- | -- |\n| 0    | 1  | 0  | 0  | 1  |\n| 1    | 1  | 1  | 0  | 1  |\n3. Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z (1 point)\nZ = AB\u2019 + C\u2019\n4. Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation. (2 points)\nZ = A + B + C + D\u2019 + E\u2019FG",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "2.",
+                    "md": "# 2.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 15.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1. Write the truth table for the function Z= B\u2019(C\u2019 + A) + BC\u2019. (1 point)",
+                    "md": "1. Write the truth table for the function Z= B\u2019(C\u2019 + A) + BC\u2019. (1 point)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 84.98,
+                        "w": 350.0,
+                        "h": 337.23
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| A | B | C | Z |\n| - | - | - | - |\n| 0 | 0 | 0 | 1 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | 1 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 0 |",
+                    "rows": [
+                        [
+                            "A",
+                            "B",
+                            "C",
+                            "Z"
+                        ],
+                        [
+                            "0",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "0",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "0",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "0",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "1",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "1",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "1",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "1",
+                            "1",
+                            "1",
+                            "0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 84.98,
+                        "w": 394.73,
+                        "h": 680.72
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "2. Compose a Karnaugh Map for the truth table from question 2(a). (1 point)",
+                    "md": "2. Compose a Karnaugh Map for the truth table from question 2(a). (1 point)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 397.04,
+                        "h": 351.05
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| A\\BC | 00 | 01 | 11 | 10 |\n| ---- | -- | -- | -- | -- |\n| 0    | 1  | 0  | 0  | 1  |\n| 1    | 1  | 1  | 0  | 1  |",
+                    "rows": [
+                        [
+                            "A\\BC",
+                            "00",
+                            "01",
+                            "11",
+                            "10"
+                        ],
+                        [
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "1"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 84.98,
+                        "w": 361.64,
+                        "h": 409.37
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "3. Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z (1 point)\nZ = AB\u2019 + C\u2019\n4. Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation. (2 points)\nZ = A + B + C + D\u2019 + E\u2019FG",
+                    "md": "3. Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z (1 point)\nZ = AB\u2019 + C\u2019\n4. Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation. (2 points)\nZ = A + B + C + D\u2019 + E\u2019FG",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 84.98,
+                        "w": 394.73,
+                        "h": 680.72
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 4,
+            "text": "3. In this question you will design a simple Finite State Machine (FSM) that\nimplements a 3-bit Gray Code counter. The FSM will not have any inputs and have\nthree  output  bits  G\u2082,  G\u2081,  G\u2080.  Gray  codes  are  specialized  codes  where  consecutive\nnumbers differ in only one bit position as seen in the table below.\n                                 State            Gray Code Output\n                                   S              G\u2082         G\u2081        G\u2080\n                                  S\u2080               0          0         0\n                                  S\u2081               0          0         1\n                                  S\u2082               0          1         1\n                                  S\u2083               0          1         0\n                                  S\u2084               1          1         0\n                                  S\u2085               1          1         1\n                                  S\u2086               1          0         1\n                                  S\u2087               1          0         0\nThe following is a state transition diagram of this FSM with the states named S\u2080 to S\u2087.\n\na) Is this a Moore or Mealy type FSM? (1 point)\nMoore type, since the output G only depends on the state as there are no inputs",
+            "md": "# 3.\n\nIn this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G\u2082, G\u2081, G\u2080. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\n| State | Gray Code Output | G\u2082 | G\u2081 | G\u2080 |\n| ----- | ---------------- | -- | -- | -- |\n| S\u2080    |                  | 0  | 0  | 0  |\n| S\u2081    |                  | 0  | 0  | 1  |\n| S\u2082    |                  | 0  | 1  | 1  |\n| S\u2083    |                  | 0  | 1  | 0  |\n| S\u2084    |                  | 1  | 1  | 0  |\n| S\u2085    |                  | 1  | 1  | 1  |\n| S\u2086    |                  | 1  | 0  | 1  |\n| S\u2087    |                  | 1  | 0  | 0  |\n\nThe following is a state transition diagram of this FSM with the states named S\u2080 to S\u2087.\n\na) Is this a Moore or Mealy type FSM? (1 point)\n\nMoore type, since the output G only depends on the state as there are no inputs.",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "3.",
+                    "md": "# 3.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.32,
+                        "h": 841.92
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G\u2082, G\u2081, G\u2080. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.",
+                    "md": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G\u2082, G\u2081, G\u2080. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 418.56,
+                        "h": 93.24
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| State | Gray Code Output | G\u2082 | G\u2081 | G\u2080 |\n| ----- | ---------------- | -- | -- | -- |\n| S\u2080    |                  | 0  | 0  | 0  |\n| S\u2081    |                  | 0  | 0  | 1  |\n| S\u2082    |                  | 0  | 1  | 1  |\n| S\u2083    |                  | 0  | 1  | 0  |\n| S\u2084    |                  | 1  | 1  | 0  |\n| S\u2085    |                  | 1  | 1  | 1  |\n| S\u2086    |                  | 1  | 0  | 1  |\n| S\u2087    |                  | 1  | 0  | 0  |",
+                    "rows": [
+                        [
+                            "State",
+                            "Gray Code Output",
+                            "G\u2082",
+                            "G\u2081",
+                            "G\u2080"
+                        ],
+                        [
+                            "S\u2080",
+                            "",
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "S\u2081",
+                            "",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "S\u2082",
+                            "",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "S\u2083",
+                            "",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "S\u2084",
+                            "",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "S\u2085",
+                            "",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "S\u2086",
+                            "",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "S\u2087",
+                            "",
+                            "1",
+                            "0",
+                            "0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 418.56,
+                        "h": 539.83
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "The following is a state transition diagram of this FSM with the states named S\u2080 to S\u2087.\n\na) Is this a Moore or Mealy type FSM? (1 point)\n\nMoore type, since the output G only depends on the state as there are no inputs.",
+                    "md": "The following is a state transition diagram of this FSM with the states named S\u2080 to S\u2087.\n\na) Is this a Moore or Mealy type FSM? (1 point)\n\nMoore type, since the output G only depends on the state as there are no inputs.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 144.38,
+                        "w": 416.12,
+                        "h": 466.61
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 5,
+            "text": "b) It has been decided to use a simple binary state encoding using 3-bits where each\nstate is encoded in standard binary. I.e. S\u2080 = 000, S\u2081 = 001, \u2026 , S\u2086= 110, S\u2087 = 111.\nMake a state transition table using the binary state encodings given above. Determine\nthe next state equations. (4 points)\n                   Current State                                 Next State\n         S2             S1             S\u2080             N\u2082             N1             N0\n          0              0              0              0              0              1\n          0              0              1              0              1              0\n          0              1              0              0              1              1\n          0              1              1              1              0              0\n          1              0              0              1              0              1\n          1              0              1              1              1              0\n          1              1              0              1              1              1\n          1              1              1              0              0              0\nN2 = S2\u2019S1S0 + S2S1\u2019 + S2S0\u2019\nN1 = S1\u2019S0 + S1S0\u2019\nN0 = S0\u2019\nc) Now determine the output equations that calculate the outputs G2, G1, G0 from the\nstate bits S0, S1, S2.  (3 points)\nG2 = S2\nG1 = S2S1\u2019 + S2\u2019S1\nG0 = S1\u2019S0 + S1S0\u2019",
+            "md": "b) It has been decided to use a simple binary state encoding using 3-bits where each state is encoded in standard binary. I.e. S\u2080 = 000, S\u2081 = 001, \u2026 , S\u2086= 110, S\u2087 = 111. Make a state transition table using the binary state encodings given above. Determine the next state equations. (4 points)\n\n| Current State | S2 | S1 | S\u2080 | Next State | N\u2082 | N1 | N0 |\n| ------------- | -- | -- | -- | ---------- | -- | -- | -- |\n|               |    | 0  | 0  | 0          | 0  | 0  | 1  |\n|               |    | 0  | 0  | 1          | 0  | 1  | 0  |\n|               |    | 0  | 1  | 0          | 0  | 1  | 1  |\n|               |    | 0  | 1  | 1          | 1  | 0  | 0  |\n|               |    | 1  | 0  | 0          | 1  | 0  | 1  |\n|               |    | 1  | 0  | 1          | 1  | 1  | 0  |\n|               |    | 1  | 1  | 0          | 1  | 1  | 1  |\n|               |    | 1  | 1  | 1          | 0  | 0  | 0  |\n\nN2 = S2\u2019S1S0 + S2S1\u2019 + S2S0\u2019\n\nN1 = S1\u2019S0 + S1S0\u2019\n\nN0 = S0\u2019\n\nc) Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2. (3 points)\n\nG2 = S2\n\nG1 = S2S1\u2019 + S2\u2019S1\n\nG0 = S1\u2019S0 + S1S0\u2019",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "b) It has been decided to use a simple binary state encoding using 3-bits where each state is encoded in standard binary. I.e. S\u2080 = 000, S\u2081 = 001, \u2026 , S\u2086= 110, S\u2087 = 111. Make a state transition table using the binary state encodings given above. Determine the next state equations. (4 points)",
+                    "md": "b) It has been decided to use a simple binary state encoding using 3-bits where each state is encoded in standard binary. I.e. S\u2080 = 000, S\u2081 = 001, \u2026 , S\u2086= 110, S\u2087 = 111. Make a state transition table using the binary state encodings given above. Determine the next state equations. (4 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 413.0,
+                        "h": 314.31
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Current State | S2 | S1 | S\u2080 | Next State | N\u2082 | N1 | N0 |\n| ------------- | -- | -- | -- | ---------- | -- | -- | -- |\n|               |    | 0  | 0  | 0          | 0  | 0  | 1  |\n|               |    | 0  | 0  | 1          | 0  | 1  | 0  |\n|               |    | 0  | 1  | 0          | 0  | 1  | 1  |\n|               |    | 0  | 1  | 1          | 1  | 0  | 0  |\n|               |    | 1  | 0  | 0          | 1  | 0  | 1  |\n|               |    | 1  | 0  | 1          | 1  | 1  | 0  |\n|               |    | 1  | 1  | 0          | 1  | 1  | 1  |\n|               |    | 1  | 1  | 1          | 0  | 0  | 0  |",
+                    "rows": [
+                        [
+                            "Current State",
+                            "S2",
+                            "S1",
+                            "S\u2080",
+                            "Next State",
+                            "N\u2082",
+                            "N1",
+                            "N0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "1",
+                            "0"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "1",
+                            "0",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "",
+                            "",
+                            "1",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 415.24,
+                        "h": 486.29
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "N2 = S2\u2019S1S0 + S2S1\u2019 + S2S0\u2019\n\nN1 = S1\u2019S0 + S1S0\u2019\n\nN0 = S0\u2019\n\nc) Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2. (3 points)\n\nG2 = S2\n\nG1 = S2S1\u2019 + S2\u2019S1\n\nG0 = S1\u2019S0 + S1S0\u2019",
+                    "md": "N2 = S2\u2019S1S0 + S2S1\u2019 + S2S0\u2019\n\nN1 = S1\u2019S0 + S1S0\u2019\n\nN0 = S0\u2019\n\nc) Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2. (3 points)\n\nG2 = S2\n\nG1 = S2S1\u2019 + S2\u2019S1\n\nG0 = S1\u2019S0 + S1S0\u2019",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 185.54,
+                        "w": 415.24,
+                        "h": 385.73
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 6,
+            "text": "d) In step b), we have used a binary coding for the states. As a result, we needed a\nadditional circuit to calculate the outputs from the State bits. In this part we will\ndirectly use the gray code for the state encoding. In this way, the state will directly be\nthe required gray code, and no additional output encoding will be required.\nMake a new state transition table and determine the next state equations using the\ngray code as state encoding. (5 points)\n                      Current State                                       Next State\n          S2               S1               S\u2080               N\u2082               N1               N0\n          0                 0                0                0                0                1\n          0                 0                1                0                1                1\n          0                 1                0                1                1                0\n          0                 1                1                0                1                0\n          1                 0                0                0                0                0\n          1                 0                1                1                0                0\n          1                 1                0                1                1                1\n          1                 1                1                1                0                1\n\nN2 = S2S0 + S1S0\u2019\nN1 = S2\u2019S0 + S1S0\u2019\nN2 = S2\u2019S1\u2019 + S2S1\n\n\ne) Which solution would you prefer (using binary coding for the states as in b or gray\ncoding as in d)? Explain with a short sentence. (2 points)\nUsing the gray code as the state encoding results in a simpler circuit with fewer gates,\nit would be better to use that one.",
+            "md": "d) In step b), we have used a binary coding for the states. As a result, we needed an additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required. Make a new state transition table and determine the next state equations using the gray code as state encoding. (5 points)\n\n| Current State | N2    | N1    | N0    |\n| ------------- | ----- | ----- | ----- |\n| S2 S1 S0      | 0 0 0 | 0 0 1 | 0 0 0 |\n| 0 0 1         | 0 1 1 | 0 1 1 | 0 0 0 |\n| 0 1 0         | 1 1 0 | 1 1 0 | 0 0 0 |\n| 0 1 1         | 0 1 0 | 1 1 0 | 0 0 0 |\n| 1 0 0         | 0 0 0 | 0 0 0 | 0 0 0 |\n| 1 0 1         | 1 0 0 | 1 0 0 | 0 0 0 |\n| 1 1 0         | 1 1 1 | 1 1 1 | 0 0 0 |\n| 1 1 1         | 1 0 1 | 1 0 1 | 0 0 0 |\n\nN2 = S2S0 + S1S0\u2019\n\nN1 = S2\u2019S0 + S1S0\u2019\n\nN2 = S2\u2019S1\u2019 + S2S1\n\ne) Which solution would you prefer (using binary coding for the states as in b or gray coding as in d)? Explain with a short sentence. (2 points)\n\nUsing the gray code as the state encoding results in a simpler circuit with fewer gates, it would be better to use that one.",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "d) In step b), we have used a binary coding for the states. As a result, we needed an additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required. Make a new state transition table and determine the next state equations using the gray code as state encoding. (5 points)",
+                    "md": "d) In step b), we have used a binary coding for the states. As a result, we needed an additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required. Make a new state transition table and determine the next state equations using the gray code as state encoding. (5 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 413.0,
+                        "h": 122.9
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Current State | N2    | N1    | N0    |\n| ------------- | ----- | ----- | ----- |\n| S2 S1 S0      | 0 0 0 | 0 0 1 | 0 0 0 |\n| 0 0 1         | 0 1 1 | 0 1 1 | 0 0 0 |\n| 0 1 0         | 1 1 0 | 1 1 0 | 0 0 0 |\n| 0 1 1         | 0 1 0 | 1 1 0 | 0 0 0 |\n| 1 0 0         | 0 0 0 | 0 0 0 | 0 0 0 |\n| 1 0 1         | 1 0 0 | 1 0 0 | 0 0 0 |\n| 1 1 0         | 1 1 1 | 1 1 1 | 0 0 0 |\n| 1 1 1         | 1 0 1 | 1 0 1 | 0 0 0 |",
+                    "rows": [
+                        [
+                            "Current State",
+                            "N2",
+                            "N1",
+                            "N0"
+                        ],
+                        [
+                            "S2 S1 S0",
+                            "0 0 0",
+                            "0 0 1",
+                            "0 0 0"
+                        ],
+                        [
+                            "0 0 1",
+                            "0 1 1",
+                            "0 1 1",
+                            "0 0 0"
+                        ],
+                        [
+                            "0 1 0",
+                            "1 1 0",
+                            "1 1 0",
+                            "0 0 0"
+                        ],
+                        [
+                            "0 1 1",
+                            "0 1 0",
+                            "1 1 0",
+                            "0 0 0"
+                        ],
+                        [
+                            "1 0 0",
+                            "0 0 0",
+                            "0 0 0",
+                            "0 0 0"
+                        ],
+                        [
+                            "1 0 1",
+                            "1 0 0",
+                            "1 0 0",
+                            "0 0 0"
+                        ],
+                        [
+                            "1 1 0",
+                            "1 1 1",
+                            "1 1 1",
+                            "0 0 0"
+                        ],
+                        [
+                            "1 1 1",
+                            "1 0 1",
+                            "1 0 1",
+                            "0 0 0"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 182.06,
+                        "w": 395.32,
+                        "h": 320.21
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "N2 = S2S0 + S1S0\u2019\n\nN1 = S2\u2019S0 + S1S0\u2019\n\nN2 = S2\u2019S1\u2019 + S2S1\n\ne) Which solution would you prefer (using binary coding for the states as in b or gray coding as in d)? Explain with a short sentence. (2 points)\n\nUsing the gray code as the state encoding results in a simpler circuit with fewer gates, it would be better to use that one.",
+                    "md": "N2 = S2S0 + S1S0\u2019\n\nN1 = S2\u2019S0 + S1S0\u2019\n\nN2 = S2\u2019S1\u2019 + S2S1\n\ne) Which solution would you prefer (using binary coding for the states as in b or gray coding as in d)? Explain with a short sentence. (2 points)\n\nUsing the gray code as the state encoding results in a simpler circuit with fewer gates, it would be better to use that one.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 199.34,
+                        "w": 415.0,
+                        "h": 427.16
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 7,
+            "text": "                4. In this question for each part there will be two Verilog code snippets. For each part\n                you will have to say whether both, only one, or none of the code snippets fulfill what\n                is being asked. All code snippets are syntactically correct. They will compile and\n                produce either a sequential circuit or a combinational circuit. (2 points each)\n                    a) Which code snippet(s) realizes the following hierarchy of three instances\n                        given in the figure below? (Note the function \u201ctiny\u201d realizes a simple AND\n                        function)\n                                                       tiny\n                                                                       small\n                                                                                    big\n            Code Snippet (A)\n   module big (input A,B,\n                  output C);\n   module small (input P,Q\n                   output  R);\n   module tiny    (input X,Y,\n                  output  Z);\n\n   assign  Z  =  X & Y;\n   assign  R  =  Z;\n   assign  C  =  R;\n\n   endmodule\n   endmodule\n   endmodule\n\u2610 Only A          \u2610  Only B\n             Code Snippet (B)\n   module tiny  (input X,Y,\n                  output  Z);\n   assign  Z = X &  Y;\n   endmodule;\n\n   module small (input P,Q\n                   output  R);\n   tiny tim (P,Q,R);\n   endmodule\n\n   module big (input A,B,\n                output  C);\n   small sam  (A,B,C);\n   endmodule\n\u2610  Both A and B   \u2610   None\n                    b) Which code snippet(s) will produce a four input multiplexer?\n                                Code Snippet (A)                      Code Snippet (B)\n                       assign z = sel[0] ?                  always @ (*)\n                                      (sel[1] ? c : d )           case  (sel)\n                                      :                             2\u2019b00:                z = a;\n                                      (sel[1] ? b : a);             2\u2019b10:                z = b;\n                                                                    2\u2019b11:                z = c;\n                                                                    default: z = d;\n                                                                   endcase\n                    \u2610 Only A          \u2610  Only B          \u2610  Both A and B   \u2610   None",
+            "md": "# 4. In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit. (2 points each)\n\n# a) Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \u201ctiny\u201d realizes a simple AND function)\n\ntiny\nsmall\nbig\n\n# Code Snippet (A)\n\nmodule big (input A,B,\noutput C);\nmodule small (input P,Q\noutput  R);\nmodule tiny    (input X,Y,\noutput  Z);\n\nassign  Z  =  X & Y;\nassign  R  =  Z;\nassign  C  =  R;\n\nendmodule\nendmodule\nendmodule\n\n\u2610 Only A          \u2610  Only B\n\n# Code Snippet (B)\n\nmodule tiny  (input X,Y,\noutput  Z);\nassign  Z = X &  Y;\nendmodule;\n\nmodule small (input P,Q\noutput  R);\ntiny tim (P,Q,R);\nendmodule\n\nmodule big (input A,B,\noutput  C);\nsmall sam  (A,B,C);\nendmodule\n\n\u2610  Both A and B   \u2610   None\n\n# b) Which code snippet(s) will produce a four input multiplexer?\n\n| Code Snippet (A)     | Code Snippet (B) |\n| -------------------- | ---------------- |\n| assign z = sel\\[0] ? | always @ (\\*)    |\n| (sel\\[1] ? c : d )   | case (sel)       |\n| :                    | 2\u2019b00: z = a;    |\n| (sel\\[1] ? b : a);   | 2\u2019b10: z = b;    |\n|                      | 2\u2019b11: z = c;    |\n|                      | default: z = d;  |\n|                      | endcase          |\n\n\u2610 Only A          \u2610  Only B          \u2610  Both A and B   \u2610   None",
+            "images": [
+                {
+                    "name": "img_p6_1.png",
+                    "height": 308.0,
+                    "width": 858.0,
+                    "x": 126.0,
+                    "y": 196.2,
+                    "original_width": 858,
+                    "original_height": 308,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "4. In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit. (2 points each)",
+                    "md": "# 4. In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit. (2 points each)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 412.04,
+                        "h": 686.5
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "a) Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \u201ctiny\u201d realizes a simple AND function)",
+                    "md": "# a) Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \u201ctiny\u201d realizes a simple AND function)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 140.18,
+                        "w": 381.29,
+                        "h": 351.13
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "tiny\nsmall\nbig",
+                    "md": "tiny\nsmall\nbig",
+                    "rows": null,
+                    "bBox": {
+                        "x": 301.0,
+                        "y": 252.0,
+                        "w": 189.0,
+                        "h": 76.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Code Snippet (A)",
+                    "md": "# Code Snippet (A)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 140.18,
+                        "w": 158.31,
+                        "h": 499.88
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "module big (input A,B,\noutput C);\nmodule small (input P,Q\noutput  R);\nmodule tiny    (input X,Y,\noutput  Z);\n\nassign  Z  =  X & Y;\nassign  R  =  Z;\nassign  C  =  R;\n\nendmodule\nendmodule\nendmodule\n\n\u2610 Only A          \u2610  Only B",
+                    "md": "module big (input A,B,\noutput C);\nmodule small (input P,Q\noutput  R);\nmodule tiny    (input X,Y,\noutput  Z);\n\nassign  Z  =  X & Y;\nassign  R  =  Z;\nassign  C  =  R;\n\nendmodule\nendmodule\nendmodule\n\n\u2610 Only A          \u2610  Only B",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 252.0,
+                        "w": 381.98,
+                        "h": 505.66
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Code Snippet (B)",
+                    "md": "# Code Snippet (B)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 359.93,
+                        "w": 362.96,
+                        "h": 280.13
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "module tiny  (input X,Y,\noutput  Z);\nassign  Z = X &  Y;\nendmodule;\n\nmodule small (input P,Q\noutput  R);\ntiny tim (P,Q,R);\nendmodule\n\nmodule big (input A,B,\noutput  C);\nsmall sam  (A,B,C);\nendmodule\n\n\u2610  Both A and B   \u2610   None",
+                    "md": "module tiny  (input X,Y,\noutput  Z);\nassign  Z = X &  Y;\nendmodule;\n\nmodule small (input P,Q\noutput  R);\ntiny tim (P,Q,R);\nendmodule\n\nmodule big (input A,B,\noutput  C);\nsmall sam  (A,B,C);\nendmodule\n\n\u2610  Both A and B   \u2610   None",
+                    "rows": null,
+                    "bBox": {
+                        "x": 124.58,
+                        "y": 252.0,
+                        "w": 365.42,
+                        "h": 505.66
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "b) Which code snippet(s) will produce a four input multiplexer?",
+                    "md": "# b) Which code snippet(s) will produce a four input multiplexer?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 468.43,
+                        "w": 314.33,
+                        "h": 143.52
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Code Snippet (A)     | Code Snippet (B) |\n| -------------------- | ---------------- |\n| assign z = sel\\[0] ? | always @ (\\*)    |\n| (sel\\[1] ? c : d )   | case (sel)       |\n| :                    | 2\u2019b00: z = a;    |\n| (sel\\[1] ? b : a);   | 2\u2019b10: z = b;    |\n|                      | 2\u2019b11: z = c;    |\n|                      | default: z = d;  |\n|                      | endcase          |",
+                    "rows": [
+                        [
+                            "Code Snippet (A)",
+                            "Code Snippet (B)"
+                        ],
+                        [
+                            "assign z = sel[0] ?",
+                            "always @ (*)"
+                        ],
+                        [
+                            "(sel[1] ? c : d )",
+                            "case (sel)"
+                        ],
+                        [
+                            ":",
+                            "2\u2019b00: z = a;"
+                        ],
+                        [
+                            "(sel[1] ? b : a);",
+                            "2\u2019b10: z = b;"
+                        ],
+                        [
+                            "",
+                            "2\u2019b11: z = c;"
+                        ],
+                        [
+                            "",
+                            "default: z = d;"
+                        ],
+                        [
+                            "",
+                            "endcase"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 412.04,
+                        "h": 686.5
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2610 Only A          \u2610  Only B          \u2610  Both A and B   \u2610   None",
+                    "md": "\u2610 Only A          \u2610  Only B          \u2610  Both A and B   \u2610   None",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 556.87,
+                        "w": 355.88,
+                        "h": 200.79
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 8,
+            "text": "c) Which code snippet(s) will produce a 8-bit value which is composed of (from\n   MSB to LSB), c\u2082c\u2081d\u2080d\u2080d\u2080001 (c and d are both 8-bit values)?\n             Code Snippet (A)                      Code Snippet (B)\n   always @ (*)                          assign z = { c[2:1],\n      begin                                              {3{d[0]}},\n        z   <= 8\u2019b00000001;                              3b\u2019001};\n        c2 <= c << 6;\n        d2 <= d << 3;\n        z   <= z & c2 & d2;\n      end\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\nd) Which code snippet(s) will produce a sequential circuit?\n             Code Snippet (A)                      Code Snippet (B)\n   always @ (some, signal)               always @ (posedge     clk)\n          if (signal)                          en  <=  data;\n            lone  <= some;\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\ne) Which code snippet(s) will produce a falling edge triggered D-type flip-flop\n   with an asynchronous reset?\n             Code Snippet (A)                      Code Snippet (B)\n   always @ (posedge     clk)            always @ (negedge     clk)\n         if  (reset) q <= 1\u2019b0                 if  (reset) q <=    data;\n         else          q <=  data;\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None",
+            "md": "c) Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c\u2082c\u2081d\u2080d\u2080d\u2080001 (c and d are both 8-bit values)?\n\n| Code Snippet (A)                                                                        | Code Snippet (B)                           |\n| --------------------------------------------------------------------------------------- | ------------------------------------------ |\n| always @ (\\*) begin z <= 8\u2019b00000001; c2 <= c << 6; d2 <= d << 3; z <= z & c2 & d2; end | assign z = { c\\[2:1], {3{d\\[0]}}}; 3b\u2019001; |\n\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\nd) Which code snippet(s) will produce a sequential circuit?\n\n| Code Snippet (A)                                  | Code Snippet (B)                   |\n| ------------------------------------------------- | ---------------------------------- |\n| always @ (some, signal) if (signal) lone <= some; | always @ (posedge clk) en <= data; |\n\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\ne) Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?\n\n| Code Snippet (A)                                            | Code Snippet (B)                             |\n| ----------------------------------------------------------- | -------------------------------------------- |\n| always @ (posedge clk) if (reset) q <= 1\u2019b0 else q <= data; | always @ (negedge clk) if (reset) q <= data; |\n\n\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "c) Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c\u2082c\u2081d\u2080d\u2080d\u2080001 (c and d are both 8-bit values)?",
+                    "md": "c) Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c\u2082c\u2081d\u2080d\u2080d\u2080001 (c and d are both 8-bit values)?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 85.82,
+                        "w": 393.08,
+                        "h": 25.8
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Code Snippet (A)                                                                        | Code Snippet (B)                           |\n| --------------------------------------------------------------------------------------- | ------------------------------------------ |\n| always @ (\\*) begin z <= 8\u2019b00000001; c2 <= c << 6; d2 <= d << 3; z <= z & c2 & d2; end | assign z = { c\\[2:1], {3{d\\[0]}}}; 3b\u2019001; |",
+                    "rows": [
+                        [
+                            "Code Snippet (A)",
+                            "Code Snippet (B)"
+                        ],
+                        [
+                            "always @ (*) begin z <= 8\u2019b00000001; c2 <= c << 6; d2 <= d << 3; z <= z & c2 & d2; end",
+                            "assign z = { c[2:1], {3{d[0]}}}; 3b\u2019001;"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 178.58,
+                        "y": 127.7,
+                        "w": 292.4,
+                        "h": 365.21
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\nd) Which code snippet(s) will produce a sequential circuit?",
+                    "md": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\nd) Which code snippet(s) will produce a sequential circuit?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 245.3,
+                        "w": 355.88,
+                        "h": 315.41
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Code Snippet (A)                                  | Code Snippet (B)                   |\n| ------------------------------------------------- | ---------------------------------- |\n| always @ (some, signal) if (signal) lone <= some; | always @ (posedge clk) en <= data; |",
+                    "rows": [
+                        [
+                            "Code Snippet (A)",
+                            "Code Snippet (B)"
+                        ],
+                        [
+                            "always @ (some, signal) if (signal) lone <= some;",
+                            "always @ (posedge clk) en <= data;"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 178.58,
+                        "y": 127.7,
+                        "w": 292.4,
+                        "h": 365.21
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\ne) Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
+                    "md": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None\n\ne) Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 245.3,
+                        "w": 385.76,
+                        "h": 315.41
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Code Snippet (A)                                            | Code Snippet (B)                             |\n| ----------------------------------------------------------- | -------------------------------------------- |\n| always @ (posedge clk) if (reset) q <= 1\u2019b0 else q <= data; | always @ (negedge clk) if (reset) q <= data; |",
+                    "rows": [
+                        [
+                            "Code Snippet (A)",
+                            "Code Snippet (B)"
+                        ],
+                        [
+                            "always @ (posedge clk) if (reset) q <= 1\u2019b0 else q <= data;",
+                            "always @ (negedge clk) if (reset) q <= data;"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 178.58,
+                        "y": 127.7,
+                        "w": 292.4,
+                        "h": 365.21
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None",
+                    "md": "\u2610 Only A           \u2610  Only B          \u2610  Both A and B    \u2610  None",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 245.3,
+                        "w": 355.88,
+                        "h": 315.41
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 9,
+            "text": "5. In this question we will compute the Area and Delay of different adder components.\nTo calculate the Area and the Speed use the values in the following table:\n         Gate                   Delay (all paths)       Area\n         2-input AND            15ps                    1.8 um\u00b2\n         2-input OR             15ps                    1.8\u25a1um\u00b2\n         2-input XOR            20ps                    2.3\u25a1um\u00b2\n    a)  The figure below is a gate level schematic of a 1-bit full adder. Using the table\n        above: Determine the total area of the 1-bit full adder, identify the critical path\n        in this circuit by drawing on the schematic, and calculate the critical path\n        using the table. (3 points)\n                                                   S\nAFA  = 2.3um\u00b2+ 2.3um\u00b2 + 1.8um\u00b2 + 1.8um\u00b2 + 1.8um\u00b2 = 10um\u00b2\nCritical path from A/B to Co\ntcrit= tXOR + tAND +tOR = 20ps + 15ps + 15ps = 50ps\n    b)  An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the\n        previous question 5a. If this adder is used to add 8-bit two\u2019s complement\n        numbers, what is the total area and the critical path of this 8-bit adder? (3\n        points)\n          AzBz      AsBs     AsBs     AB4       AgBa     AzBz     A,B1      AoBo\n                                                                                   \"0\n           A B C;  A B C;   A B C;   A B C;     A B C    A B C;  A B C;   A B C;\n            FA       FA       FA        FA       FA       FA       FA        FA\n           C  S         S        S        S     C  S        S         S        S\n              Sz                Ss       S4        S3                S1",
+            "md": "# 5.\n\nIn this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table:\n\n| Gate        | Delay (all paths) | Area    |\n| ----------- | ----------------- | ------- |\n| 2-input AND | 15ps              | 1.8 um\u00b2 |\n| 2-input OR  | 15ps              | 1.8 um\u00b2 |\n| 2-input XOR | 20ps              | 2.3 um\u00b2 |\n\na) The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)\n\nAFA = 2.3 um\u00b2 + 2.3 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 = 10 um\u00b2\n\nCritical path from A/B to Co\n\ntcrit = tXOR + tAND + tOR = 20ps + 15ps + 15ps = 50ps\n\nb) An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two\u2019s complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)\n\nAzBz AsBs AsBs AB4 AgBa AzBz AB1 AoBo\n\nA B C; A B C; A B C; A B C; A B C; A B C; A B C; A B C;\n\nFA FA FA FA FA FA FA FA\n\nC S S S C S S S S\n\nSz Ss S4 S3 S1",
+            "images": [
+                {
+                    "name": "img_p8_1.png",
+                    "height": 608.0,
+                    "width": 258.0,
+                    "x": 257.3,
+                    "y": 242.99999999999997,
+                    "original_width": 258,
+                    "original_height": 608,
+                    "type": null
+                },
+                {
+                    "name": "img_p8_2.png",
+                    "height": 486.0,
+                    "width": 1283.0,
+                    "x": 125.65,
+                    "y": 613.8,
+                    "original_width": 1283,
+                    "original_height": 486,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "5.",
+                    "md": "# 5.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.32,
+                        "h": 841.92
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table:",
+                    "md": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 360.98,
+                        "h": 619.02
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Gate        | Delay (all paths) | Area    |\n| ----------- | ----------------- | ------- |\n| 2-input AND | 15ps              | 1.8 um\u00b2 |\n| 2-input OR  | 15ps              | 1.8 um\u00b2 |\n| 2-input XOR | 20ps              | 2.3 um\u00b2 |",
+                    "rows": [
+                        [
+                            "Gate",
+                            "Delay (all paths)",
+                            "Area"
+                        ],
+                        [
+                            "2-input AND",
+                            "15ps",
+                            "1.8 um\u00b2"
+                        ],
+                        [
+                            "2-input OR",
+                            "15ps",
+                            "1.8 um\u00b2"
+                        ],
+                        [
+                            "2-input XOR",
+                            "20ps",
+                            "2.3 um\u00b2"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 417.92,
+                        "h": 512.47
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "a) The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)\n\nAFA = 2.3 um\u00b2 + 2.3 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 = 10 um\u00b2\n\nCritical path from A/B to Co\n\ntcrit = tXOR + tAND + tOR = 20ps + 15ps + 15ps = 50ps\n\nb) An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two\u2019s complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)\n\nAzBz AsBs AsBs AB4 AgBa AzBz AB1 AoBo\n\nA B C; A B C; A B C; A B C; A B C; A B C; A B C; A B C;\n\nFA FA FA FA FA FA FA FA\n\nC S S S C S S S S\n\nSz Ss S4 S3 S1",
+                    "md": "a) The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)\n\nAFA = 2.3 um\u00b2 + 2.3 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 + 1.8 um\u00b2 = 10 um\u00b2\n\nCritical path from A/B to Co\n\ntcrit = tXOR + tAND + tOR = 20ps + 15ps + 15ps = 50ps\n\nb) An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two\u2019s complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)\n\nAzBz AsBs AsBs AB4 AgBa AzBz AB1 AoBo\n\nA B C; A B C; A B C; A B C; A B C; A B C; A B C; A B C;\n\nFA FA FA FA FA FA FA FA\n\nC S S S C S S S S\n\nSz Ss S4 S3 S1",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 99.26,
+                        "w": 415.65,
+                        "h": 647.74
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 10,
+            "text": "    ATot = 8 x AFA = 80\u25a1um\u00b2\n    Tcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates\n    through a shorter path (One AND and one OR gate =30ps),\n    Since only Two\u2019s complement numbers are used, the carry out S8 is not used, For\n    the MSB, only A/B to S delay is relevant = 40ps\n    Tcrit=tMSB + 6 x tFA + 1 x tLSB = 40+ 6 x 50ps + 30ps = 370ps.\n    8 x tFA = 400ps is also acceptable should give them -1 point\nc)   A multi-operand adder to add four 8-bit two\u2019s complement numbers is constructed\n     using the 8-bit ripple carry adder structure from the question 5b as shown in the\n     figure below. What is the total area and the critical path of this multi-operand\n     adder? (4 points)\n                                                 C[7:0]    B[7:0] A[7:0]\n                                                         A[7:0]   B[7:0]\n                                                              8-bitRippleCarryAdder\n                                                                      S[7:0]\n                                             A[7:0]  B[7:0]\n                                         8-bitRipple 'CarryAdder\n                                                  S[7:0]\n                                A[7:0]   B[7:0]\n                              I8-bitRipple Carry Adder\n                                   S[7:0]\n                                   S[7:0]\nTotal Area = 3x Eightbit RCA = 3 x 80\u25a1um2  = 240 \u25a1um\u00b2\nThe timing is trickier. The critical path goes through the LSB of the first adder, and\nthen the second LSB to the S\u2080 outputs (40ps each). Then you have the normal critical\npath of the eight-bit RCA calculated in the previous question (370ps). Together it is\nTcrit = tB,S + tB,S +T8bitRCA = 40ps + 40ps + 370ps = 450ps.\n     Note:       1ps      = 0.000 000 000 001s                = 1.10\u207b\u00b9\u00b2s\n                 1um\u00b2  = 0.000 000 000 001m\u00b2                  = 1.10\u207b\u00b9\u00b2 m\u00b2",
+            "md": "ATot = 8 x AFA = 80 &micro;m\u00b2\n\nTcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate = 30ps). Since only Two\u2019s complement numbers are used, the carry out S8 is not used. For the MSB, only A/B to S delay is relevant = 40ps.\n\nTcrit = tMSB + 6 x tFA + 1 x tLSB = 40 + 6 x 50ps + 30ps = 370ps.\n\n8 x tFA = 400ps is also acceptable should give them -1 point.\n\n# c) A multi-operand adder to add four 8-bit two\u2019s complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)\n\nC[7:0] B[7:0] A[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nS[7:0]\n\nTotal Area = 3 x Eight-bit RCA = 3 x 80 &micro;m\u00b2 = 240 &micro;m\u00b2\n\nThe timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is Tcrit = tB,S + tB,S + T8bitRCA = 40ps + 40ps + 370ps = 450ps.\n\nNote: 1ps = 0.000 000 000 001s = 1.10-12s\n\n1 &micro;m\u00b2 = 0.000 000 000 001m\u00b2 = 1.10-12 m\u00b2",
+            "images": [
+                {
+                    "name": "img_p9_1.png",
+                    "height": 678.0,
+                    "width": 608.0,
+                    "x": 210.7,
+                    "y": 293.65,
+                    "original_width": 608,
+                    "original_height": 678,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "ATot = 8 x AFA = 80 &micro;m\u00b2\n\nTcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate = 30ps). Since only Two\u2019s complement numbers are used, the carry out S8 is not used. For the MSB, only A/B to S delay is relevant = 40ps.\n\nTcrit = tMSB + 6 x tFA + 1 x tLSB = 40 + 6 x 50ps + 30ps = 370ps.\n\n8 x tFA = 400ps is also acceptable should give them -1 point.",
+                    "md": "ATot = 8 x AFA = 80 &micro;m\u00b2\n\nTcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate = 30ps). Since only Two\u2019s complement numbers are used, the carry out S8 is not used. For the MSB, only A/B to S delay is relevant = 40ps.\n\nTcrit = tMSB + 6 x tFA + 1 x tLSB = 40 + 6 x 50ps + 30ps = 370ps.\n\n8 x tFA = 400ps is also acceptable should give them -1 point.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 113.42,
+                        "w": 362.35,
+                        "h": 94.8
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "c) A multi-operand adder to add four 8-bit two\u2019s complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)",
+                    "md": "# c) A multi-operand adder to add four 8-bit two\u2019s complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 223.94,
+                        "w": 412.57,
+                        "h": 118.06
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "C[7:0] B[7:0] A[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nS[7:0]\n\nTotal Area = 3 x Eight-bit RCA = 3 x 80 &micro;m\u00b2 = 240 &micro;m\u00b2\n\nThe timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is Tcrit = tB,S + tB,S + T8bitRCA = 40ps + 40ps + 370ps = 450ps.\n\nNote: 1ps = 0.000 000 000 001s = 1.10-12s\n\n1 &micro;m\u00b2 = 0.000 000 000 001m\u00b2 = 1.10-12 m\u00b2",
+                    "md": "C[7:0] B[7:0] A[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nA[7:0] B[7:0]\n\n8-bit Ripple Carry Adder\n\nS[7:0]\n\nS[7:0]\n\nTotal Area = 3 x Eight-bit RCA = 3 x 80 &micro;m\u00b2 = 240 &micro;m\u00b2\n\nThe timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is Tcrit = tB,S + tB,S + T8bitRCA = 40ps + 40ps + 370ps = 450ps.\n\nNote: 1ps = 0.000 000 000 001s = 1.10-12s\n\n1 &micro;m\u00b2 = 0.000 000 000 001m\u00b2 = 1.10-12 m\u00b2",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 292.0,
+                        "w": 403.4,
+                        "h": 318.15
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 11,
+            "text": "6. This exercise uses MIPS assembly instructions. The relevant entries from the\nAppendix B of your book are given for the instructions used in this exercise.\nGiven below is an assembly program to perform a certain operation.  Go through the\nprogram step by step to answer the following questions.\n                             A MIPS Assembly Program\n                         begin:     addi   $t1, $0, 0\n                                    addi   $t2, $0, 1\n                         loop:      slt $t3, $t5, $t2\n                                    bne $t3, $0, output\n                                    add $t1, $t1, $t2\n                                    addi   $t2, $t2, 2\n                                    j loop\n                         output: add $t6, $t1, $0\na) What does the above MIPS assembly program do? What is the value stored in\noutput register $t6 at the end of program execution if the input register $t5 contains\nthe decimal value 10?  (3 points)\n\n\n\n\n\n\n\nb) Modify the program to load input from memory address 0x00000010 and store the\noutput in memory address 0x00000020 instead of the registers $t5 and $t6. (2 points)",
+            "md": "# 6.\n\nThis exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\n# A MIPS Assembly Program\n\nbegin:     addi   $t1, $0, 0\naddi   $t2, $0, 1\nloop:      slt $t3, $t5, $t2\nbne $t3, $0, output\nadd $t1, $t1, $t2\naddi   $t2, $t2, 2\nj loop\noutput:    add $t6, $t1, $0\n\na) What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?  (3 points)\n\nb) Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6. (2 points)",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "6.",
+                    "md": "# 6.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.32,
+                        "h": 841.92
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.",
+                    "md": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 409.53,
+                        "h": 53.4
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "A MIPS Assembly Program",
+                    "md": "# A MIPS Assembly Program",
+                    "rows": null,
+                    "bBox": {
+                        "x": 233.69,
+                        "y": 155.54,
+                        "w": 127.54,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "begin:     addi   $t1, $0, 0\naddi   $t2, $0, 1\nloop:      slt $t3, $t5, $t2\nbne $t3, $0, output\nadd $t1, $t1, $t2\naddi   $t2, $t2, 2\nj loop\noutput:    add $t6, $t1, $0\n\na) What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?  (3 points)\n\nb) Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6. (2 points)",
+                    "md": "begin:     addi   $t1, $0, 0\naddi   $t2, $0, 1\nloop:      slt $t3, $t5, $t2\nbne $t3, $0, output\nadd $t1, $t1, $t2\naddi   $t2, $t2, 2\nj loop\noutput:    add $t6, $t1, $0\n\na) What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?  (3 points)\n\nb) Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6. (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 169.34,
+                        "w": 412.0,
+                        "h": 358.85
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 12,
+            "text": "c) For reusability of code, we rewrite the assembly program given in (a) using\nsubroutines (procedures). The functionality of the code remains the same.\nComplete the modified assembly code below by filling in the empty blocks. (2\npoints)\n                     Assembly program using subroutines\n       begin       : add $a0, $t1, 10 #       $t1  is the  input  reg\n                      jal function\n                      add $t6, $v0, $0\n       halt        : j    halt\n       function    : addi   $t1, $0, 0\n                      addi  $t2, $0, 1\n          loop     : slt $t3, $a0, $t2\n                      bne $t3, $0, exit_func\n                      add  $t1, $t1, $t2\n                      addi  $t2, $t2, 2\n                      j loop\n       exit_func   : add $v0, $t1, $0\n                     jr    $ra\nd) What is the value stored in register $t1 at the end of program execution for the\n   code given in (c)? (1 point)\n\n\ne) As you can observe that the subroutine function overwrites register $t1, suggest\nmodifications to the code to preserve $t1\u2019s contents. (2 points)",
+            "md": "# c) For reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same.\n\n# Complete the modified assembly code below by filling in the empty blocks. (2 points)\n\nAssembly program using subroutines\nbegin       : add $a0, $t1, 10 #       $t1  is the  input  reg\njal function\nadd $t6, $v0, $0\nhalt        : j    halt\nfunction    : addi   $t1, $0, 0\naddi  $t2, $0, 1\nloop     : slt $t3, $a0, $t2\nbne $t3, $0, exit_func\nadd  $t1, $t1, $t2\naddi  $t2, $t2, 2\nj loop\nexit_func   : add $v0, $t1, $0\njr    $ra\n\n# d) What is the value stored in register $t1 at the end of program execution for the code given in (c)? (1 point)\n\n# e) As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1\u2019s contents. (2 points)",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "c) For reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same.",
+                    "md": "# c) For reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 83.06,
+                        "w": 377.24,
+                        "h": 155.96
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Complete the modified assembly code below by filling in the empty blocks. (2 points)",
+                    "md": "# Complete the modified assembly code below by filling in the empty blocks. (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 110.66,
+                        "w": 379.92,
+                        "h": 66.16
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Assembly program using subroutines\nbegin       : add $a0, $t1, 10 #       $t1  is the  input  reg\njal function\nadd $t6, $v0, $0\nhalt        : j    halt\nfunction    : addi   $t1, $0, 0\naddi  $t2, $0, 1\nloop     : slt $t3, $a0, $t2\nbne $t3, $0, exit_func\nadd  $t1, $t1, $t2\naddi  $t2, $t2, 2\nj loop\nexit_func   : add $v0, $t1, $0\njr    $ra",
+                    "md": "Assembly program using subroutines\nbegin       : add $a0, $t1, 10 #       $t1  is the  input  reg\njal function\nadd $t6, $v0, $0\nhalt        : j    halt\nfunction    : addi   $t1, $0, 0\naddi  $t2, $0, 1\nloop     : slt $t3, $a0, $t2\nbne $t3, $0, exit_func\nadd  $t1, $t1, $t2\naddi  $t2, $t2, 2\nj loop\nexit_func   : add $v0, $t1, $0\njr    $ra",
+                    "rows": null,
+                    "bBox": {
+                        "x": 143.9,
+                        "y": 152.54,
+                        "w": 324.68,
+                        "h": 211.19
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "d) What is the value stored in register $t1 at the end of program execution for the code given in (c)? (1 point)",
+                    "md": "# d) What is the value stored in register $t1 at the end of program execution for the code given in (c)? (1 point)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 166.82,
+                        "w": 396.17,
+                        "h": 256.35
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "e) As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1\u2019s contents. (2 points)",
+                    "md": "# e) As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1\u2019s contents. (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 124.46,
+                        "w": 396.17,
+                        "h": 381.41
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 13,
+            "text": "                  Relevant entries from Appendix B\n [reg]:       contents of register\n SignImm:     sign-extended immediate ={{16{imm[15]}},imm}\n [Address]:   contents of memory location Address\n BTA:         branch target address = PC + 4 + SignImm <<2)\n JTA:         jump target address = {(PC+4)[31:28], addr, 2\u2019b0}\nName             Description      Operation\nj                Jump             $ra = PC  +4, PC  =JTA\njal              Jump and link    $ra = PC  +4, PC  =JTA\nbeq              Branch if equal  If ([rs]  ==  [rt]) PC = BTA\naddi             Add immediate    [rt]  = [rs]  + SignImm\nlw               Load word        [rt]  = [Address]\nsw               Store word       [Address] = [rt]\njr               Jump register    PC = [rs]\nand              And              [rd]  = [rs]  & [rt]\nxor              Xor              [rd]  = [rs]  ^ [rt]",
+            "md": "# Relevant entries from Appendix B\n\n| Name | Description     | Operation                    |\n| ---- | --------------- | ---------------------------- |\n| j    | Jump            | $ra = PC + 4, PC = JTA       |\n| jal  | Jump and link   | $ra = PC + 4, PC = JTA       |\n| beq  | Branch if equal | If (\\[rs] == \\[rt]) PC = BTA |\n| addi | Add immediate   | \\[rt] = \\[rs] + SignImm      |\n| lw   | Load word       | \\[rt] = \\[Address]           |\n| sw   | Store word      | \\[Address] = \\[rt]           |\n| jr   | Jump register   | PC = \\[rs]                   |\n| and  | And             | \\[rd] = \\[rs] & \\[rt]        |\n| xor  | Xor             | \\[rd] = \\[rs] ^ \\[rt]        |\n\n[reg]: contents of register\n\nSignImm: sign-extended immediate ={{16{imm[15]}},imm}\n\n[Address]: contents of memory location Address\n\nBTA: branch target address = PC + 4 + SignImm <<2)\n\nJTA: jump target address = {(PC+4)[31:28], addr, 2\u2019b0}",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Relevant entries from Appendix B",
+                    "md": "# Relevant entries from Appendix B",
+                    "rows": null,
+                    "bBox": {
+                        "x": 219.41,
+                        "y": 84.98,
+                        "w": 177.38,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Name | Description     | Operation                    |\n| ---- | --------------- | ---------------------------- |\n| j    | Jump            | $ra = PC + 4, PC = JTA       |\n| jal  | Jump and link   | $ra = PC + 4, PC = JTA       |\n| beq  | Branch if equal | If (\\[rs] == \\[rt]) PC = BTA |\n| addi | Add immediate   | \\[rt] = \\[rs] + SignImm      |\n| lw   | Load word       | \\[rt] = \\[Address]           |\n| sw   | Store word      | \\[Address] = \\[rt]           |\n| jr   | Jump register   | PC = \\[rs]                   |\n| and  | And             | \\[rd] = \\[rs] & \\[rt]        |\n| xor  | Xor             | \\[rd] = \\[rs] ^ \\[rt]        |",
+                    "rows": [
+                        [
+                            "Name",
+                            "Description",
+                            "Operation"
+                        ],
+                        [
+                            "j",
+                            "Jump",
+                            "$ra = PC + 4, PC = JTA"
+                        ],
+                        [
+                            "jal",
+                            "Jump and link",
+                            "$ra = PC + 4, PC = JTA"
+                        ],
+                        [
+                            "beq",
+                            "Branch if equal",
+                            "If ([rs] == [rt]) PC = BTA"
+                        ],
+                        [
+                            "addi",
+                            "Add immediate",
+                            "[rt] = [rs] + SignImm"
+                        ],
+                        [
+                            "lw",
+                            "Load word",
+                            "[rt] = [Address]"
+                        ],
+                        [
+                            "sw",
+                            "Store word",
+                            "[Address] = [rt]"
+                        ],
+                        [
+                            "jr",
+                            "Jump register",
+                            "PC = [rs]"
+                        ],
+                        [
+                            "and",
+                            "And",
+                            "[rd] = [rs] & [rt]"
+                        ],
+                        [
+                            "xor",
+                            "Xor",
+                            "[rd] = [rs] ^ [rt]"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 106.58,
+                        "y": 172.58,
+                        "w": 381.52,
+                        "h": 178.23
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "[reg]: contents of register\n\nSignImm: sign-extended immediate ={{16{imm[15]}},imm}\n\n[Address]: contents of memory location Address\n\nBTA: branch target address = PC + 4 + SignImm <<2)\n\nJTA: jump target address = {(PC+4)[31:28], addr, 2\u2019b0}",
+                    "md": "[reg]: contents of register\n\nSignImm: sign-extended immediate ={{16{imm[15]}},imm}\n\n[Address]: contents of memory location Address\n\nBTA: branch target address = PC + 4 + SignImm <<2)\n\nJTA: jump target address = {(PC+4)[31:28], addr, 2\u2019b0}",
+                    "rows": null,
+                    "bBox": {
+                        "x": 106.58,
+                        "y": 113.66,
+                        "w": 381.52,
+                        "h": 189.35
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 14,
+            "text": "7. The following is a diagram of a single cycle MIPS architecture that is able to\nexecute R-type and I-type instructions.\n                                              Contro MemtoReg\n                                               Unit  IMenWrite\n                                                     Branch                                    PCSrc\n                                              Op     ALUcontrolzo\n                                                     JALUSrc\n                                              Funct RegDst\n                                                     RegWrite\n                 CLK                          CLK                                                 CLK\n                              RD   Instr           WE3 RDI                SrcA       Zero               WE ReadData\n                       Instruction        F-16 A2       RD2                          ALUResult          RD\n                          Memory               A3                         SrcB                      Data\n                                               WD3Register                          WriteData      Memory\n                                                     File                                         WD\n                                          3 16\n                             PCPlus4      1511       WriteReg4o\n                                                Sign Extend  Signlmm                 PCBranch\n                                                                                                                  Result\na)  Determine the value of the control signals when this architecture executes a beq\n    instruction, and fill in the table below. Note that the ALU can be programmed to\n    perform the following functions:  addition, subtraction, and, or. (3 points)\n    Control Signal                                      Value\n    RegDst                                              X\n    ALUSrc                                              0\n    MemWrite                                            0\n    MemtoReg                                            X\n    RegWrite                                            0\n    Branch                                              1\n    AluOperation (Add/Sub/And/Or)                       Sub\n    b)  Draw the data flow on the block diagram above (2 points)",
+            "md": "# 7. The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.\n\nControl Signals:\n\n| Control Signal                | Value |\n| ----------------------------- | ----- |\n| RegDst                        | X     |\n| ALUSrc                        | 0     |\n| MemWrite                      | 0     |\n| MemtoReg                      | X     |\n| RegWrite                      | 0     |\n| Branch                        | 1     |\n| AluOperation (Add/Sub/And/Or) | Sub   |\n\nb) Draw the data flow on the block diagram above (2 points)",
+            "images": [
+                {
+                    "name": "img_p13_1.png",
+                    "height": 593.0,
+                    "width": 1139.0,
+                    "x": 96.95,
+                    "y": 103.54999999999993,
+                    "original_width": 1139,
+                    "original_height": 593,
+                    "type": null
+                }
+            ],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "7. The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.",
+                    "md": "# 7. The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 71.16,
+                        "w": 383.76,
+                        "h": 436.75
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Control Signals:",
+                    "md": "Control Signals:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.14,
+                        "y": 416.81,
+                        "w": 77.76,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Control Signal                | Value |\n| ----------------------------- | ----- |\n| RegDst                        | X     |\n| ALUSrc                        | 0     |\n| MemWrite                      | 0     |\n| MemtoReg                      | X     |\n| RegWrite                      | 0     |\n| Branch                        | 1     |\n| AluOperation (Add/Sub/And/Or) | Sub   |",
+                    "rows": [
+                        [
+                            "Control Signal",
+                            "Value"
+                        ],
+                        [
+                            "RegDst",
+                            "X"
+                        ],
+                        [
+                            "ALUSrc",
+                            "0"
+                        ],
+                        [
+                            "MemWrite",
+                            "0"
+                        ],
+                        [
+                            "MemtoReg",
+                            "X"
+                        ],
+                        [
+                            "RegWrite",
+                            "0"
+                        ],
+                        [
+                            "Branch",
+                            "1"
+                        ],
+                        [
+                            "AluOperation (Add/Sub/And/Or)",
+                            "Sub"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 84.98,
+                        "w": 405.8,
+                        "h": 482.09
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "b) Draw the data flow on the block diagram above (2 points)",
+                    "md": "b) Draw the data flow on the block diagram above (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 228.0,
+                        "w": 398.98,
+                        "h": 386.47
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 15,
+            "text": "c)  Briefly explain the advantages of a multi-cycle architecture when compared to the\n    single-cycle architecture shown above. (3 points)\n    In a single-cycle architecture, all instructions are given 1-cycle to execute,\n    therefore the slowest instruction determines the speed of the processor.\n    In a multi-cycle processor, instructions are broken down into smaller pieces,\n    decreasing the cycle time. Simpler instructions can be executed faster, reducing\n    the average cycle time.\n    A single cycle processor, needs multiple instances of memories, and adders which\n    may be quite large. A multi-cycle processor can share these resources, using only a\n    single memory and ALU. This reduces the area\n\n\n\n\n\n\nd)  Which of the following statements about microarchitectures are TRUE (Mark all\n    that apply)? (2 points)\n    In a pipelined architecture, a given instruction is executed faster than in a single-\n    cycle architecture. (FALSE, a given instruction runs even slightly slower, due to\n    the overhead, but the throughput increases)\n    In a pipelined architecture, control hazards can occur following the branch\n    instruction, since the next instruction address may not be determined in time.\n    (TRUE)\n    The Clocks per Instruction (CPI) of a micro-architecture is calculated as a\n    weighted average of instructions executed in a given program/benchmark, and\n    therefore is program dependent. (TRUE)\n    A multi-cycle architecture has less control overhead than a single-cycle\n    architecture. (FALSE, first there are more resources to be shared, and there is\n    overhead for the sequential processing)",
+            "md": "# c) Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above. (3 points)\n\nIn a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor. In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time. A single cycle processor needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.\n\n# d) Which of the following statements about microarchitectures are TRUE (Mark all that apply)? (2 points)\n\n- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases)\n- In a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE)\n- The Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE)\n- A multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "c) Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above. (3 points)",
+                    "md": "# c) Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above. (3 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 89.9,
+                        "y": 71.16,
+                        "w": 414.95,
+                        "h": 25.82
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor. In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time. A single cycle processor needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.",
+                    "md": "In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor. In a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time. A single cycle processor needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 112.58,
+                        "w": 400.55,
+                        "h": 136.2
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "d) Which of the following statements about microarchitectures are TRUE (Mark all that apply)? (2 points)",
+                    "md": "# d) Which of the following statements about microarchitectures are TRUE (Mark all that apply)? (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.02,
+                        "y": 361.01,
+                        "w": 410.84,
+                        "h": 25.8
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases)\n- In a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE)\n- The Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE)\n- A multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
+                    "md": "- In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases)\n- In a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE)\n- The Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE)\n- A multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 416.21,
+                        "w": 387.87,
+                        "h": 205.25
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 16,
+            "text": " 8. In this exercise we will evaluate the memory access time of a small program\n under different cache configurations. The program will access the following 20\n addresses in order (addresses are given as 8-bit hex numbers for simplicity):\n     0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44\u2192\n     0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C\nIn this system one main memory access takes 20ns.\n a)  If the system has no cache, how much time will it make all memory accesses\n      in the program given above? (1 point)\n           t\u209c\u2092\u209c\u2090\u2097 =  N x t\u2098\u2091\u2098.\n           t\u209c\u2092\u209c\u2090\u2097 =  20 x 20ns. = 400 ns\n b)  As an alternative, it was decided to use a direct mapped cache with capacity of\n      8 words and a block size of 1. The cache access time for this cache is 2ns.\n      Using the table below, show the final content of this cache memory after\n      executing the program above. (2 points)\n                Location                   Content\n                 Set 7\n                 Set 6\n                 Set 5       14\n                 Set 4       10\n                 Set 3       0C    4C    0C    4C\n                 Set 2       08    48    08    48\n                 Set 1       04    44    04\n                 Set 0       00    40    00\n c)  How many compulsory cache misses were there? (1 point)\n      There are six compulsory misses: the first four accesses to 00 04 08 0C and\n      then the accesses to 10 14 on the 7\u1d57\u02b0 and 8\u1d57\u02b0 cycles.\n d)  How many conflict misses were there? (1 point)\n      There are 10 conflict misses: 8\u1d57\u02b0 cycle 40 conflicts with 00, 9\u1d57\u02b0 cycle 44\n      conflicts with 04, 10\u1d57\u02b0 cycle 00 conflicts with 40, 11\u1d57\u02b0 cycle 04 conflicts with\n      44, 12\u1d57\u02b0 cycle 48 conflicts with 08, 13\u1d57\u02b0 cycle 4C conflicts with 0C, 14\u1d57\u02b0 cycle\n      08 conflicts with 48, 15\u1d57\u02b0 cycle 0C conflicts with 4C,18\u1d57\u02b0 cycle 48 conflicts\n      with 08, 19\u1d57\u02b0 cycle 4C conflicts with 0C",
+            "md": "# 8.\n\nIn this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity):\n\n0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44\u2192\n\n0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C\n\nIn this system one main memory access takes 20ns.\n\n# a)\n\nIf the system has no cache, how much time will it make all memory accesses in the program given above? (1 point)\n\nttotal = N x tmem.\n\nttotal = 20 x 20ns = 400 ns\n\n# b)\n\nAs an alternative, it was decided to use a direct mapped cache with capacity of 8 words and a block size of 1. The cache access time for this cache is 2ns. Using the table below, show the final content of this cache memory after executing the program above. (2 points)\n\n| Location |    |    |    | Content |\n| -------- | -- | -- | -- | ------- |\n| Set 7    |    |    |    |         |\n| Set 6    |    |    |    |         |\n| Set 5    | 14 |    |    |         |\n| Set 4    | 10 |    |    |         |\n| Set 3    | 0C | 4C | 0C | 4C      |\n| Set 2    | 08 | 48 | 08 | 48      |\n| Set 1    | 04 | 44 | 04 |         |\n| Set 0    | 00 | 40 | 00 |         |\n\n# c)\n\nHow many compulsory cache misses were there? (1 point)\n\nThere are six compulsory misses: the first four accesses to 00 04 08 0C and then the accesses to 10 14 on the 7th and 8th cycles.\n\n# d)\n\nHow many conflict misses were there? (1 point)\n\nThere are 10 conflict misses: 8th cycle 40 conflicts with 00, 9th cycle 44 conflicts with 04, 10th cycle 00 conflicts with 40, 11th cycle 04 conflicts with 44, 12th cycle 48 conflicts with 08, 13th cycle 4C conflicts with 0C, 14th cycle 08 conflicts with 48, 15th cycle 0C conflicts with 4C, 18th cycle 48 conflicts with 08, 19th cycle 4C conflicts with 0C.",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "8.",
+                    "md": "# 8.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.32,
+                        "h": 841.92
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity):\n\n0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44\u2192\n\n0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C\n\nIn this system one main memory access takes 20ns.",
+                    "md": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity):\n\n0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44\u2192\n\n0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C\n\nIn this system one main memory access takes 20ns.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 85.82,
+                        "w": 383.12,
+                        "h": 425.57
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "a)",
+                    "md": "# a)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 197.9,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "If the system has no cache, how much time will it make all memory accesses in the program given above? (1 point)\n\nttotal = N x tmem.\n\nttotal = 20 x 20ns = 400 ns",
+                    "md": "If the system has no cache, how much time will it make all memory accesses in the program given above? (1 point)\n\nttotal = N x tmem.\n\nttotal = 20 x 20ns = 400 ns",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 197.9,
+                        "w": 372.0,
+                        "h": 313.49
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "b)",
+                    "md": "# b)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 280.97,
+                        "w": 10.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "As an alternative, it was decided to use a direct mapped cache with capacity of 8 words and a block size of 1. The cache access time for this cache is 2ns. Using the table below, show the final content of this cache memory after executing the program above. (2 points)",
+                    "md": "As an alternative, it was decided to use a direct mapped cache with capacity of 8 words and a block size of 1. The cache access time for this cache is 2ns. Using the table below, show the final content of this cache memory after executing the program above. (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 280.97,
+                        "w": 380.0,
+                        "h": 82.56
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "| Location |    |    |    | Content |\n| -------- | -- | -- | -- | ------- |\n| Set 7    |    |    |    |         |\n| Set 6    |    |    |    |         |\n| Set 5    | 14 |    |    |         |\n| Set 4    | 10 |    |    |         |\n| Set 3    | 0C | 4C | 0C | 4C      |\n| Set 2    | 08 | 48 | 08 | 48      |\n| Set 1    | 04 | 44 | 04 |         |\n| Set 0    | 00 | 40 | 00 |         |",
+                    "rows": [
+                        [
+                            "Location",
+                            "",
+                            "",
+                            "",
+                            "Content"
+                        ],
+                        [
+                            "Set 7",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Set 6",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Set 5",
+                            "14",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Set 4",
+                            "10",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Set 3",
+                            "0C",
+                            "4C",
+                            "0C",
+                            "4C"
+                        ],
+                        [
+                            "Set 2",
+                            "08",
+                            "48",
+                            "08",
+                            "48"
+                        ],
+                        [
+                            "Set 1",
+                            "04",
+                            "44",
+                            "04",
+                            ""
+                        ],
+                        [
+                            "Set 0",
+                            "00",
+                            "40",
+                            "00",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 107.9,
+                        "y": 71.4,
+                        "w": 397.52,
+                        "h": 641.98
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "c)",
+                    "md": "# c)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 534.67,
+                        "w": 9.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "How many compulsory cache misses were there? (1 point)\n\nThere are six compulsory misses: the first four accesses to 00 04 08 0C and then the accesses to 10 14 on the 7th and 8th cycles.",
+                    "md": "How many compulsory cache misses were there? (1 point)\n\nThere are six compulsory misses: the first four accesses to 00 04 08 0C and then the accesses to 10 14 on the 7th and 8th cycles.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 403.49,
+                        "w": 365.89,
+                        "h": 170.78
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "d)",
+                    "md": "# d)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 618.58,
+                        "w": 10.0,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "How many conflict misses were there? (1 point)\n\nThere are 10 conflict misses: 8th cycle 40 conflicts with 00, 9th cycle 44 conflicts with 04, 10th cycle 00 conflicts with 40, 11th cycle 04 conflicts with 44, 12th cycle 48 conflicts with 08, 13th cycle 4C conflicts with 0C, 14th cycle 08 conflicts with 48, 15th cycle 0C conflicts with 4C, 18th cycle 48 conflicts with 08, 19th cycle 4C conflicts with 0C.",
+                    "md": "How many conflict misses were there? (1 point)\n\nThere are 10 conflict misses: 8th cycle 40 conflicts with 00, 9th cycle 44 conflicts with 04, 10th cycle 00 conflicts with 40, 11th cycle 04 conflicts with 44, 12th cycle 48 conflicts with 08, 13th cycle 4C conflicts with 0C, 14th cycle 08 conflicts with 48, 15th cycle 0C conflicts with 4C, 18th cycle 48 conflicts with 08, 19th cycle 4C conflicts with 0C.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 125.42,
+                        "y": 403.49,
+                        "w": 233.93,
+                        "h": 227.09
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        },
+        {
+            "page": 17,
+            "text": "e)  What is the Miss Ratio for this cache? (1 points)\n     There are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%\nf)  How long will it take to make all the memory accesses for the program given\n     above? (2 points)\n     There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\n     There are 16 cache misses, each resulting in a memory access=16x20ns=320ns\n     Total is 40ns + 320ns = 360ns\n     OR = AMAT = tcache + (MR x t\u2098\u2091\u2098) = 2ns + (0.8 x 20ns) = 18ns.\n     Total time memory access x AMAT = 20 x 18ns = 360ns\ng)  There are four suggestions below. In each case only one parameter of the\n     cache will be changed. Which of the following changes would improve the\n     total memory access time of this system running the above program,\n     indicate all that apply? (2 points)\n        a.  Increasing the Capacity from 8 to 16\n        b.  Increasing Block size from 1 to 2\n        c.  Increasing Set Associativity from 1 (direct mapped) to 2\n        d.  Increasing Cache Access Time 1ns to 2 ns\nNote:       1ns     = 0.000 000 001s       = 1.10\u207b\u2079s\n            1MHz  = 1 000 000 Hz           = 1.10\u2076 Hz",
+            "md": "# e) What is the Miss Ratio for this cache? (1 points)\n\nThere are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%\n\n# f) How long will it take to make all the memory accesses for the program given above? (2 points)\n\nThere are 20 cache accesses each 2ns = 2 x 20ns = 40ns\n\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\n\nTotal is 40ns + 320ns = 360ns\n\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.\n\nTotal time memory access x AMAT = 20 x 18ns = 360ns\n\n# g) There are four suggestions below. In each case only one parameter of the cache will be changed. Which of the following changes would improve the total memory access time of this system running the above program, indicate all that apply? (2 points)\n\n- a. Increasing the Capacity from 8 to 16\n- b. Increasing Block size from 1 to 2\n- c. Increasing Set Associativity from 1 (direct mapped) to 2\n- d. Increasing Cache Access Time 1ns to 2 ns\n\nNote: 1ns = 0.000 000 001s = 1.10-9s\n\n1MHz = 1 000 000 Hz = 1.106 Hz",
+            "images": [],
+            "charts": [],
+            "tables": [],
+            "layout": [],
+            "items": [
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "e) What is the Miss Ratio for this cache? (1 points)",
+                    "md": "# e) What is the Miss Ratio for this cache? (1 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 71.4,
+                        "w": 252.77,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "There are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%",
+                    "md": "There are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.02,
+                        "y": 99.02,
+                        "w": 352.52,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "f) How long will it take to make all the memory accesses for the program given above? (2 points)",
+                    "md": "# f) How long will it take to make all the memory accesses for the program given above? (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 141.5,
+                        "w": 390.4,
+                        "h": 25.8
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\n\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\n\nTotal is 40ns + 320ns = 360ns\n\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.\n\nTotal time memory access x AMAT = 20 x 18ns = 360ns",
+                    "md": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\n\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\n\nTotal is 40ns + 320ns = 360ns\n\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.\n\nTotal time memory access x AMAT = 20 x 18ns = 360ns",
+                    "rows": null,
+                    "bBox": {
+                        "x": 126.02,
+                        "y": 182.9,
+                        "w": 382.16,
+                        "h": 67.2
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "g) There are four suggestions below. In each case only one parameter of the cache will be changed. Which of the following changes would improve the total memory access time of this system running the above program, indicate all that apply? (2 points)",
+                    "md": "# g) There are four suggestions below. In each case only one parameter of the cache will be changed. Which of the following changes would improve the total memory access time of this system running the above program, indicate all that apply? (2 points)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 280.61,
+                        "w": 381.0,
+                        "h": 124.08
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "- a. Increasing the Capacity from 8 to 16\n- b. Increasing Block size from 1 to 2\n- c. Increasing Set Associativity from 1 (direct mapped) to 2\n- d. Increasing Cache Access Time 1ns to 2 ns\n\nNote: 1ns = 0.000 000 001s = 1.10-9s\n\n1MHz = 1 000 000 Hz = 1.106 Hz",
+                    "md": "- a. Increasing the Capacity from 8 to 16\n- b. Increasing Block size from 1 to 2\n- c. Increasing Set Associativity from 1 (direct mapped) to 2\n- d. Increasing Cache Access Time 1ns to 2 ns\n\nNote: 1ns = 0.000 000 001s = 1.10-9s\n\n1MHz = 1 000 000 Hz = 1.106 Hz",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.02,
+                        "y": 350.57,
+                        "w": 322.92,
+                        "h": 140.3
+                    }
+                }
+            ],
+            "status": "OK",
+            "links": [],
+            "width": 595.32,
+            "height": 841.92,
+            "triggeredAutoMode": false,
+            "parsingMode": "accurate",
+            "structuredData": null,
+            "noStructuredContent": false,
+            "noTextContent": false
+        }
+    ],
+    "job_metadata": {
+        "job_pages": 0,
+        "job_auto_mode_triggered_pages": 0,
+        "job_is_cache_hit": true
+    },
+    "file_name": "OnurETHZ_exams/exam_solutions_ss2012.pdf",
+    "job_id": "ea90da4d-a81b-4ece-a39f-cf5360d461d9",
+    "is_done": false,
+    "error": null
+}
