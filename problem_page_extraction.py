@@ -1,6 +1,6 @@
 import ast
 import boto3
-import fitz # pymupdf, was previously called fitz
+import fitz
 import os
 import asyncio
 from botocore.exceptions import ClientError
@@ -66,8 +66,6 @@ async def llama_processing(file_path, output_dir):
     # store the json for document input into the claude prompt   
     result = await parser.aparse(file_path)
 
-    # Create the image directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
     #Save all images in the exam to a designated folder
     await result.asave_all_images(output_dir)
 
@@ -108,7 +106,7 @@ def claud_37_processing(document_bytes):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 8000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
         )
 
         # Extract and print the response text.
@@ -126,8 +124,7 @@ def process(input_path):
     filename = os.path.basename(input_path)
 
     # Save all images first
-    images_path = os.path.join("extracted_problems", filename[:-4], "images")
-    document_json = asyncio.run(llama_processing(input_path, images_path))
+    document_json = asyncio.run(llama_processing(input_path, "images/"+filename[:-4]))
     # Convert the json to byte form for Claude input
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
