@@ -45,7 +45,7 @@ prompt = """
         {{
             "name": "image_name.png",
             "type": "subproblem_figure",
-            "part": "a"
+            "part": "a" (or "A" or "1"; insert the part number/letter exactly as it appears)
         }}
     ]
 
@@ -134,5 +134,5 @@ def process(exam_path, pages_data):
                 print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
                 exit(1)
     
-    print(matches)
+    print("Matches: ", matches)
     return matches
