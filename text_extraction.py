@@ -102,72 +102,66 @@ def strip_json_code_block(text: str) -> str:
 
 
 
-def process(file_path, matches):
+def process(file_path, output_dir, matches):
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
   problems_path = os.path.join("extracted_problems", filename)
+  output_path = os.path.join(output_dir, filename + ".json")
   output = [] # List of all problems separated, will be pushed to final json
 
   for problem in os.listdir(problems_path):
-      # Only process the problem PDFs, ignore the images folder
-      if problem.lower().endswith(".pdf"):
-        print("Processing text in:", problem)
-        json_text = claud_37_processing(os.path.join(problems_path, problem))
-        stripped_json = strip_json_code_block(json_text)
-        print(stripped_json)
-        problem_dict = json.loads(stripped_json)
+      print("Processing text in:", problem)
+      json_text = claud_37_processing(os.path.join(problems_path, problem))
+      stripped_json = strip_json_code_block(json_text)
+      print(stripped_json)
+      problem_dict = json.loads(stripped_json)
 
-        problem_output = {}  # we will later append this to output
-        #Deconstruct the json into standalone QA pairs
-        if problem_dict.get("subproblems") != None: # if there are subproblems
-          for subproblem in problem_dict["subproblems"]:
-              subproblem_output = {}
-              subproblem_output["question_id"] = filename + "/" + problem[:-4] + "/" + subproblem.get("subproblem", "")             # Ensure main problem context is included
-              subproblem_output["context"] = problem_dict.get("problem_context", "") + "\n" + subproblem.get("subproblem_context", "")
-              subproblem_output["context_figures"] = []
-              subproblem_output["question"] = subproblem.get("subproblem_question", "")
-              subproblem_output["solution"] = subproblem.get("subproblem_solution", "")
-              subproblem_output["solution_figures"] = []
-              subproblem_output["correctly_parsed"] = None
-              problem_output[subproblem["subproblem"]] = subproblem_output
+      problem_output = {}  # we will later append this to output
+      #Deconstruct the json into standalone QA pairs
+      if problem_dict.get("subproblems") != None: # if there are subproblems
+        for subproblem in problem_dict["subproblems"]:
+            subproblem_output = {}
+            subproblem_output["question_id"] = filename + "/" + problem[:-4] + "/" + subproblem.get("subproblem", "")             # Ensure main problem context is included
+            subproblem_output["context"] = problem_dict.get("problem_context", "") + "\n" + subproblem.get("subproblem_context", "")
+            subproblem_output["context_figures"] = []
+            subproblem_output["question"] = subproblem.get("subproblem_question", "")
+            subproblem_output["solution"] = subproblem.get("subproblem_solution", "")
+            subproblem_output["solution_figures"] = []
+            subproblem_output["correctly_parsed"] = None
+            problem_output[subproblem["subproblem"]] = subproblem_output
 
-        else: # if this is a standalone question
-          problem_output["problem"] = {
-            "question_id" : filename + "/" + problem[:-4],
-            "context" : problem_dict.get("problem_context", ""),
-            "context_figures" : [],
-            "question" : problem_dict.get("problem_question", ""),
-            "solution" : problem_dict.get("problem_solution", ""),
-            "solution_figures" : [],
-            "correctly_parsed" : None
-          }
+      else: # if this is a standalone question
+        problem_output["problem"] = {
+          "question_id" : filename + "/" + problem[:-4],
+          "context" : problem_dict.get("problem_context", ""),
+          "context_figures" : [],
+          "question" : problem_dict.get("problem_question", ""),
+          "solution" : problem_dict.get("problem_solution", ""),
+          "solution_figures" : [],
+          "correctly_parsed" : None
+        }
 
-        # Insert correct images using the 'matches' dictionary
-        for figure in matches.get(problem, []):
-            figure_path = os.path.join("images", filename, figure["name"])
-            # Add main-context & main-solution figures to ALL problems/subproblems
-            if figure["type"] == "problem_figure":
-              for key in problem_output:
-                problem_output[key]["context_figures"].append(figure_path)
-            elif figure["type"] == "problem_solution":
-              for key in problem_output:
-                problem_output[key]["solution_figures"].append(figure_path)
-            # Add subproblem-specific figures to only that subproblem
-            elif figure["type"] == "subproblem_figure":
-              problem_output[figure["part"]]["context_figures"].append(figure_path)
-            elif figure["type"] == "subproblem_solution":
-              problem_output[figure["part"]]["solution_figures"].append(figure_path)
+      # Insert correct images using the 'matches' dictionary
+      for figure in matches.get(problem, []):
+          figure_path = os.path.join("images", filename, figure["name"])
+          # Add main-context & main-solution figures to ALL problems/subproblems
+          if figure["type"] == "problem_figure":
+            for key in problem_output:
+              problem_output[key]["context_figures"].append(figure_path)
+          elif figure["type"] == "problem_solution":
+            for key in problem_output:
+              problem_output[key]["solution_figures"].append(figure_path)
+          # Add subproblem-specific figures to only that subproblem
+          elif figure["type"] == "subproblem_figure":
+            problem_output[figure["part"]]["context_figures"].append(figure_path)
+          elif figure["type"] == "subproblem_solution":
+            problem_output[figure["part"]]["solution_figures"].append(figure_path)
 
-        print(problem_output)
-        # Now add all these questions to the final out object
-        for key in problem_output:
-            output.append(problem_output[key])
-        
+      print(problem_output)
+      # Now add all these questions to the final out object
+      for key in problem_output:
+          output.append(problem_output[key])
+      
     
-  with open(os.path.join(problems_path, filename + ".json"), 'w') as file:
+  with open(output_path, 'w') as file:
     json.dump(output, file, indent=4)
-    
-    
-  
-
-
