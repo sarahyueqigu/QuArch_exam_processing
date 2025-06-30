@@ -1,0 +1,241 @@
+[
+    {
+        "question_id": "solution/Problem_2/A",
+        "context": "Assume we have a dual-core processor with a 2MB shared set-associative last-level cache that has 64B cachelines and 4096 sets. The cache uses LRU cache replacement policy.\n",
+        "context_figures": [
+            "images/solution/chart_p5_0.png"
+        ],
+        "question": "What is the associativity of the last-level cache (how many ways are there in a set)? Show your calculation.",
+        "solution": "8",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_2/B",
+        "context": "Assume we have a dual-core processor with a 2MB shared set-associative last-level cache that has 64B cachelines and 4096 sets. The cache uses LRU cache replacement policy.\nAssume we have an OS which does not support virtual memory and all cores write directly to physical memory. Sleep-deprived Hongyi wrote a simple program called USELESS and he wants to run 2 USELESS processes simultaneously on the processor.\n\nfunction USELESS(int processID)\n{\nADDRESS base = 1048576 * processID; // This is a physical address\n\nmalloc(base, sizeof(BYTE) * 2097152); // Alloc some physical space\n\nint i = 0;\n\nwhile (1) {\n\n*(base + (i % 6) * 262144)++; // access physical memory directly (no virtual memory)\n\ni++;\n}\n\n}\n\nHint\u2014Power of 2 table:\n211 212 213 214 215 216 217 218 219 220 221\n\n2048 4096 8192 16384 32768 65536 131702 262144 524288 1048576 2097152",
+        "context_figures": [
+            "images/solution/chart_p5_0.png"
+        ],
+        "question": "What is the steady-state last-level cache miss rate of a USELESS process when it is running alone on the system? Show your work.",
+        "solution": "0%",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_2/C",
+        "context": "Assume we have a dual-core processor with a 2MB shared set-associative last-level cache that has 64B cachelines and 4096 sets. The cache uses LRU cache replacement policy.\nIn order to maximize the system performance running two USELESS processes, Hongyi considers three configurations:\n\n\u2022 Static cache partitioning: Two processes execute concurrently on separate cores sharing the last-level cache and the cache is statically partitioned. Each process is assigned an equal number of ways in each set.\n\n\u2022 Utility-based cache partitioning: Two processes execute concurrently on separate cores sharing the last-level cache and the cache is partitioned using the Utility Based Cache Partitioning mechanism that was discussed in class and that was also part of your required readings.\n\n\u2022 Thread multiplexing: Both processes are active in the system but only one process executes at a given time. Every 1000 cache accesses, the other process is switched in. Assume that the context switch does not incur any overhead or extra cache accesses to switch in the other thread.",
+        "context_figures": [
+            "images/solution/chart_p5_0.png"
+        ],
+        "question": "Calculate the steady-state cache miss rates of both processes for each configuration, and show your work:",
+        "solution": "1) Static cache partitioning:\n\n100%\n\n100%\n\n2) Utility-based cache partitioning:\n\n100%\n\n0%\n\n3) Thread multiplexing:\n\n0.6%\n\n0.6%",
+        "solution_figures": [
+            "images/solution/chart_p6_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_2/D",
+        "context": "Assume we have a dual-core processor with a 2MB shared set-associative last-level cache that has 64B cachelines and 4096 sets. The cache uses LRU cache replacement policy.\nHongyi also proposes a fourth configuration with virtual memory support:\n\n\u2022 Page coloring: Two processes execute concurrently on separate cores sharing the last-level cache and the cache is partitioned using the Page Coloring mechanism that was discussed in class.",
+        "context_figures": [
+            "images/solution/chart_p5_0.png"
+        ],
+        "question": "Calculate the steady-state cache miss rate of both processes for this new configuration, and show your work:",
+        "solution": "0%\n\n0%",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/A",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\n",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "Why might the normalized IPC of workload A be less than 1.0? (15 words or less)",
+        "solution": "Decompression latency",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/B",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\n",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "Why might the normalized IPC of workload B be greater than the normalized IPC of workload C? (15 words or less)",
+        "solution": "B is more sensitive to cache size",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/C",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\n",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "Why might the normalized IPC of workload C be greater than the normalized IPC of workload D? (15 words or less)",
+        "solution": "C is more sensitive to cache size",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/D",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\nAssume just for the next two subquestions that most of Workload C's data is of type Flow and most of Workload D's data is of type Node:\n\nstruct Flow { // defined in Workload C\nlong flow_time;\nPipe * inlet;\nPipe * outlet;\nchar identifier;\nfloat flow_rate;\n\n}\n\nstruct Node { // defined in Workload D\nNode * right_sibling;\nAncestor * parent;\nDescendent * child;\nNode * left_sibling;\nNode * metadata;\n\n}",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "Just from looking at the above code, which workload's data is likely more compressible?\n\nCIRCLE ONE: C D\n\nWhy? (15 words or less)",
+        "solution": "Pointers often have low dynamic range, so D has more compressible data.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/E",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\n",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "For a new workload E, is it possible that the LLC MPKI in System Y is greater than the LLC MPKI in System X?\n\nCIRCLE ONE: YES NO\n\nWhy or why not? (15 words or less)",
+        "solution": "Yes, depends on replacement policy.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_3/F",
+        "context": "A researcher is studying compression in on-chip caches. You may assume it's very similar to Base-Delta-Immediate compression studied in this course, with an implementation that allows one base per cache line. She's considering four workloads: A, B, C, and D. She builds a baseline System X, without compression, and compares this against System Y, which is employing on-chip compression in the last-level cache (the modifications required to support compression, such as doubling the number of tags, are the only differences between System X and System Y).\n\n\u2022 Figure 0 shows the branch prediction accuracy in System X of the four workloads.\n\n\u2022 Figure 1 shows the accuracy of System X's stream prefetcher. As a reminder, a stream prefetcher identifies that the processor is continuously accessing consecutive cache lines (i.e., streaming) and prefetches future cache lines into the cache before the processor requests them.\n\n\u2022 Figure 2 shows the misses per thousand instructions (MPKI) in the last-level cache (LLC) of System X.\n\n\u2022 Figure 3 shows the effective cache capacity in the compressed LLC in System Y.\n\n\u2022 Figure 4 shows the instructions per cycle (IPC) of System Y normalized to the IPC of System X.\n\n\u2022 Figure 5 shows the normalized LLC MPKI of System Y normalized to the LLC MPKI of System X.\n\nAnswer the following questions, providing the most likely explanation for each considering the information provided in the figures.\n",
+        "context_figures": [
+            "images/solution/chart_p8_0.png",
+            "images/solution/chart_p8_1.png"
+        ],
+        "question": "The results in the figures were determined through simulation. To increase simulation speed, the researcher was using a fixed 300 cycle latency for all memory requests. Now, she decides to model the DRAM system accurately. Across all workloads, the average memory access latency with this new model is 300 cycles. Which workload's performance in System X do you expect to change the most, compared to the old simulation results? State your assumptions for partial credit (15 words or less).\n\nCIRCLE ONE: A B C D",
+        "solution": "A, high streaming prefetcher accuracy may indiciate good row buffer locality (average latency will be less than 300 cycles)",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_1/A",
+        "context": "Potpourri (50 pts)\n",
+        "context_figures": [],
+        "question": "What are the three major reasons why this assumption may not hold?",
+        "solution": "1) Synchronization overhead\n\n2) Load imbalance overhead\n\n3) Resource sharing overhead",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_1/B",
+        "context": "Potpourri (50 pts)\nLocking",
+        "context_figures": [],
+        "question": "Give three reasons why a lock may be required statically for program correctness but may not be needed dynamically?",
+        "solution": "1) Threads may not update the shared data protected by the lock.\n\n2) Threads may update disjoint parts of the shared data structure protected by the lock.\n\n3) Threads may not contend for the lock.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_1/C",
+        "context": "Potpourri (50 pts)\n",
+        "context_figures": [],
+        "question": "3) Why do we want the property described above; i.e., the property that \"different executions of the same multithreaded program produce the same architecturally-exposed ordering of memory operations\"?",
+        "solution": "Debugging ease.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_1/D",
+        "context": "Potpourri (50 pts)\n",
+        "context_figures": [],
+        "question": "3) What benefit does SLE provide that TM does not?",
+        "solution": "No need to modify existing lock-based program.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_1/E",
+        "context": "Potpourri (50 pts)\n",
+        "context_figures": [
+            "images/solution/chart_p3_0.png"
+        ],
+        "question": "2) Identify the point (A, B, C, D, or E) where the most energy is spent on refreshes (relative to total DRAM energy).\n\nCIRCLE ONE: A B C D E\n\nCIRCLE ONE: A B C D E\n\nWhy (15 words or less)?",
+        "solution": "D\n\nThere is much DRAM to refresh and few memory accesses, so refresh energy dominates.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_4",
+        "context": "Assume you are designing a MESI snoopy bus cache coherence protocol for write-back private caches in a multi-core processor. Each private cache is connected to its own processor core as well as a common bus that is shared among other private caches.\n\nThere are 4 input commands a private cache may get for a cacheline. Assume that bus commands and core commands will not arrive at the same time:\n\nCoreRd: Read request from the cache's core\nCoreWr: Write request from the cache's core\nBusGet: Read request from the bus\nBusGetI: Read and Invalidate request from the bus (invalidates shared data in the cache that receives the request)\n\nThere are 4 actions a cache can take while transferring to another state:\n\nFlush: Write back the cacheline to lower-level cache\nBusGet: Issue a BusGet request to the bus\nBusGetI: Issue a BusGetI request to the bus\nNone: Take no action\n\nThere is also an \"is shared (S)\" signal on the bus. S is asserted upon a BusGet request when at least one of the private caches shares a copy of the data (BusGet (S)). Otherwise S is deasserted (BusGet (not S)).\n\nAssume upon a BusGet or BusGetI request, the inclusive lower-level cache will eventually supply the data and there are no private cache to private cache transfers.",
+        "context_figures": [
+            "images/solution/chart_p12_0.png"
+        ],
+        "question": "On the next page, Hongyi drew a MESI state diagram. There are 4 mistakes in his diagram. Please show the mistakes and correct them. You may want to practice on the scratch paper first before finalizing your answer. If you made a mess, clearly write down the mistakes and the changes below.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_5/A",
+        "context": "Suppose you have three different core designs which you can use to build a heterogeneous multicore system.\n\n\u2022 An OoO core (OoO-Fixed) that can execute instructions out-of-order.\n\n\u2022 An in-order core (IO-Fixed) that can execute instructions in order. The area of IO-Fixed is 1/4th the size of OoO-Fixed.\n\n\u2022 Morphy: a hybrid core which can dynamically switch between two modes of execution: out-of-order with a single thread (OoO-Morphy) and in-order with 4 threads (IO-Morphy).\n\nThe implementations of out-of-order execution in OoO-Morphy and OoO-Fixed are the same, except OoO-Morphy requires the ability to switch between out-of-order and in-order modes. Likewise, the implementations of in-order execution in IO-Morphy and IO-Fixed are the same except for the ability to switch modes.\n",
+        "context_figures": [],
+        "question": "The peak single-threaded performance of OoO-Morphy mode could be less than the peak single-thread performance of OoO-Fixed.\n\nCIRCLE ONE: TRUE FALSE\n\nWhy? Explain your reasoning.",
+        "solution": "True, the OoO-Morphy may have a slower peak frequency due to extra logic for morphing.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_5/B",
+        "context": "Suppose you have three different core designs which you can use to build a heterogeneous multicore system.\n\n\u2022 An OoO core (OoO-Fixed) that can execute instructions out-of-order.\n\n\u2022 An in-order core (IO-Fixed) that can execute instructions in order. The area of IO-Fixed is 1/4th the size of OoO-Fixed.\n\n\u2022 Morphy: a hybrid core which can dynamically switch between two modes of execution: out-of-order with a single thread (OoO-Morphy) and in-order with 4 threads (IO-Morphy).\n\nThe implementations of out-of-order execution in OoO-Morphy and OoO-Fixed are the same, except OoO-Morphy requires the ability to switch between out-of-order and in-order modes. Likewise, the implementations of in-order execution in IO-Morphy and IO-Fixed are the same except for the ability to switch modes.\nImagine a heterogeneous multicore system Fixed with 12 IO-Fixed cores and 1 OoO-Fixed core. Imagine a homogeneous multicore system Morphy with four Morphy cores.\n\nSuppose we want to accelerate critical sections on both systems using an OoO core.",
+        "context_figures": [],
+        "question": "Could the same critical section that is accelerated run faster on System Fixed than on System Morphy? Why? Explain.\n\nCIRCLE ONE: YES NO\n\nCould the same critical section that is accelerated run faster on System Morphy than on System Fixed? Why? Explain.\n\nCIRCLE ONE: YES NO",
+        "solution": "True, from above, if OoO-Fixed has a higher peak frequency than OoO-Morphy.\n\nTrue, due to preservation of cache contents when IO-Morphy changes to OoO-Morphy.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_6/A",
+        "context": "A researcher has developed a new type of nonvolatile memory, BossMem. He is considering BossMem as a replacement for DRAM. BossMem is 10x faster (all memory timings are 10x faster) than DRAM, but since BossMem is so fast, it has to frequently power-off to cool down. Overheating is only a function of time, not a function of activity\u2014an idle stick of BossMem has to power-off just as frequently as an active stick. When powered-off, BossMem retains its data, but can't service requests. Both DRAM and BossMem are banked and otherwise architecturally similar. To the researcher's dismay, he finds that a system with 1GB of DRAM performs considerably better than the same system with 1GB of BossMem.\n",
+        "context_figures": [],
+        "question": "What can the researcher change or improve in the core (he can't change BossMem or anything beyond the memory controller) that will make his BossMem perform more favorably compared to DRAM, realizing that he will have to be fair and evaluate DRAM with his enhanced core as well? (15 words or less)",
+        "solution": "Prefetcher degree or other speculation techniques so that misses can be serviced before memory powered off",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_6/B",
+        "context": "A researcher has developed a new type of nonvolatile memory, BossMem. He is considering BossMem as a replacement for DRAM. BossMem is 10x faster (all memory timings are 10x faster) than DRAM, but since BossMem is so fast, it has to frequently power-off to cool down. Overheating is only a function of time, not a function of activity\u2014an idle stick of BossMem has to power-off just as frequently as an active stick. When powered-off, BossMem retains its data, but can't service requests. Both DRAM and BossMem are banked and otherwise architecturally similar. To the researcher's dismay, he finds that a system with 1GB of DRAM performs considerably better than the same system with 1GB of BossMem.\n",
+        "context_figures": [],
+        "question": "A colleague proposes he build a hybrid memory system, with both DRAM and BossMem. He decides to place data that exhibits low row buffer locality in DRAM and data that exhibits high row buffer locality in BossMem. Assume 50% of requests are row buffer hits. Is this a good or bad idea? CIRCLE ONE: GOOD BAD Show your work.",
+        "solution": "No, it may be better idea to place data with high row buffer locality in DRAM and low row buffer locality data in BossMem since row buffer misses are less costly",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_6/C",
+        "context": "A researcher has developed a new type of nonvolatile memory, BossMem. He is considering BossMem as a replacement for DRAM. BossMem is 10x faster (all memory timings are 10x faster) than DRAM, but since BossMem is so fast, it has to frequently power-off to cool down. Overheating is only a function of time, not a function of activity\u2014an idle stick of BossMem has to power-off just as frequently as an active stick. When powered-off, BossMem retains its data, but can't service requests. Both DRAM and BossMem are banked and otherwise architecturally similar. To the researcher's dismay, he finds that a system with 1GB of DRAM performs considerably better than the same system with 1GB of BossMem.\n",
+        "context_figures": [],
+        "question": "Now a colleague suggests trying to improve the last-level cache replacement policy in the system with the hybrid memory system. Like before, he wants to improve the performance of this system relative to one that uses just DRAM and he will have to be fair in his evaluation. Can he design a cache replacement policy that makes the hybrid memory system look more favorable? CIRCLE ONE: YES NO In 15 words or less, justify NO or describe a cache replacement policy that would improve the performance of the hybrid memory system more than it would DRAM.",
+        "solution": "Yes, this is possible. Cost-based replacement where cost to replace is dependent on data allocation between DRAM and BossMem",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_6/D",
+        "context": "A researcher has developed a new type of nonvolatile memory, BossMem. He is considering BossMem as a replacement for DRAM. BossMem is 10x faster (all memory timings are 10x faster) than DRAM, but since BossMem is so fast, it has to frequently power-off to cool down. Overheating is only a function of time, not a function of activity\u2014an idle stick of BossMem has to power-off just as frequently as an active stick. When powered-off, BossMem retains its data, but can't service requests. Both DRAM and BossMem are banked and otherwise architecturally similar. To the researcher's dismay, he finds that a system with 1GB of DRAM performs considerably better than the same system with 1GB of BossMem.\n",
+        "context_figures": [],
+        "question": "In class we talked about another nonvolatile memory technology, phase-change memory (PCM). Which technology, PCM, BossMem, or DRAM requires the greatest attention to security? CIRCLE ONE: PCM BossMEM DRAM What is the vulnerability (less than 10 words)?",
+        "solution": "PCM is nonvolatile and has potential endurance attacks.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "solution/Problem_6/E",
+        "context": "A researcher has developed a new type of nonvolatile memory, BossMem. He is considering BossMem as a replacement for DRAM. BossMem is 10x faster (all memory timings are 10x faster) than DRAM, but since BossMem is so fast, it has to frequently power-off to cool down. Overheating is only a function of time, not a function of activity\u2014an idle stick of BossMem has to power-off just as frequently as an active stick. When powered-off, BossMem retains its data, but can't service requests. Both DRAM and BossMem are banked and otherwise architecturally similar. To the researcher's dismay, he finds that a system with 1GB of DRAM performs considerably better than the same system with 1GB of BossMem.\n",
+        "context_figures": [],
+        "question": "Which is likely of least concern to a security researcher? CIRCLE ONE: PCM BossMEM DRAM Why (less than 10 words)?",
+        "solution": "DRAM is likely least vulnerable, as BossMem also has nonvolatility concerns.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    }
+]

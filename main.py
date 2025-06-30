@@ -4,6 +4,11 @@ import image_extraction_singlepdf
 import subprocess
 import image_identifing
 import problem_page_extraction
+import problem_image_extraction
+#6/30 SUPPORTED list of supported file types added so that the script doesnt try to run on files that aren't pdf files
+#the added lines i marked with a #6/30 comment
+
+SUPPORTED = ('.pdf',)   #supported file types #6/30
 
 if __name__ == "__main__":
     parent_folder = "/Users/aliceguo/Documents/QuArch_exam_processing/OnurETHZ_exams_test2"
@@ -11,11 +16,14 @@ if __name__ == "__main__":
     input_dir = parent_folder
 
     # Parse through each file in the subfolder
-    for filename in os.listdir(input_dir): # TODO: may cause some delays when .json files are added
-        # Build path             
+    for filename in os.listdir(input_dir):
+        path = os.path.join(input_dir, filename)
+        # skip anything that isn’t a file or doesn’t end with .pdf
+        if not os.path.isfile(path) or not filename.lower().endswith(SUPPORTED): #6/30
+            continue #6/30
         file_dir = input_dir + "/" + filename
 
-        data = problem_page_extraction.process(file_dir)
+        data = problem_image_extraction.process(file_dir)
         matches = image_identifing.process(file_dir, data)
         text_extraction.process(file_dir, matches)
         
