@@ -1,6 +1,6 @@
 import ast
 import boto3
-import fitz
+import fitz # pymupdf, was previously called fitz
 import os
 import asyncio
 from botocore.exceptions import ClientError
@@ -108,7 +108,7 @@ def claud_37_processing(document_bytes):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 8000, "temperature": 0.3},
         )
 
         # Extract and print the response text.

@@ -6,7 +6,7 @@ import image_identifing
 import problem_page_extraction
 
 if __name__ == "__main__":
-    parent_folder = "in"
+    parent_folder = "/Users/aliceguo/Documents/QuArch_exam_processing/OnurETHZ_exams_test2"
     print(os.listdir(parent_folder))
     input_dir = parent_folder
 
