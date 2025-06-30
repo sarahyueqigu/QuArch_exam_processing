@@ -70,69 +70,69 @@ def process(exam_path, pages_data):
 
     # Repeat for every problem that was extracted from exam
     for problem in os.listdir(problems_path):
-        # Only process the problem PDFs, ignore the images folder
-        if problem.lower().endswith(".pdf"):
-            with open(os.path.join(problems_path, problem), "rb") as f:
-                document_bytes = f.read()
+        # get the problem pdf
+        with open(os.path.join(problems_path,problem), "rb") as f:
+            document_bytes = f.read()
 
-            # Start a conversation with a user message and the document
-            conversation = [
-                {
-                    "role": "user",
-                    "content": [
-                        {"text": prompt.format(filename = problem[:-4])},
-                        {
-                            "document": {
-                                # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
-                                "format": "pdf",
-                                "name": "Computer Architecture Exam Problem",
-                                "source": {"bytes": document_bytes},
-                            }
-                        }
-                    ],
-                }
-            ]
-
-            # Add all relevant images to the AI "chat"
-            problem_range = pages_data[problem[:-4]]
-
-            # Only make this AI call if the problem has images to match
-            if len(problem_range) > 2:
-                for image_name in problem_range[2:]:
-                    image_path = os.path.join("extracted_problems", filename[:-4], "images", image_name)
-                    with open(image_path, "rb") as image_file:
-                        image_bytes = image_file.read()
-
-                    # Append image to conversation
-                    conversation[0]["content"].append(
+        # Start a conversation with a user message and the document
+        conversation = [
+            {
+                "role": "user",
+                "content": [
+                    {"text": prompt.format(filename = problem[:-4])},
                     {
-                        "image": {
-                            "format": "png",
-                            "source": {
-                                "bytes": image_bytes 
-                            }
+                        "document": {
+                            # Available formats: html, md, pdf, doc/docx, xls/xlsx, csv, and txt
+                            "format": "pdf",
+                            "name": "Computer Architecture Exam Problem",
+                            "source": {"bytes": document_bytes},
                         }
                     }
-                    )
+                ],
+            }
+        ]
 
-                    # Also append image name to prompt, for easier identification
-                    conversation[0]["content"][0]["text"] += image_name + "\n"
+        # Add all relevant images to the AI "chat"
+        problem_range = pages_data[problem[:-4]]
 
-                try:
-                    # Send the message to the model, using a basic inference configuration.
-                    response = client.converse(
-                        modelId=claude_inference_profile_arn,
-                        messages=conversation,
-                        inferenceConfig={"maxTokens": 800, "temperature": 0.3},
-                    )
+        # Only make this AI call if the problem has images to match
+        if len(problem_range) > 2:
+            for image_name in problem_range[2:]:
+                image_path = os.path.join("images", filename[:-4], image_name)
+                with open(image_path, "rb") as image_file:
+                    image_bytes = image_file.read()
 
-                    # Extract and print the response text.
-                    response_text = response["output"]["message"]["content"][0]["text"]
-                    matches[problem] = json.loads(response_text)
+                # Append image to conversation
+                conversation[0]["content"].append(
+                {
+                    "image": {
+                        "format": "png",
+                        "source": {
+                            "bytes": image_bytes 
+                        }
+                    }
+                }
+                )
 
-                except (ClientError, Exception) as e:
-                    print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
-                    exit(1)
+                # Also append image name to prompt, for easier identification
+                conversation[0]["content"][0]["text"] += image_name + "\n"
+
+
+            try:
+                # Send the message to the model, using a basic inference configuration.
+                response = client.converse(
+                    modelId=claude_inference_profile_arn,
+                    messages=conversation,
+                    inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+                )
+
+                # Extract and print the response text.
+                response_text = response["output"]["message"]["content"][0]["text"]
+                matches[problem] = json.loads(response_text)
+
+            except (ClientError, Exception) as e:
+                print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+                exit(1)
     
     print(matches)
     return matches
