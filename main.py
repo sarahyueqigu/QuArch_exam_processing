@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
         data = problem_page_extraction.process(file_dir)
         matches = image_identifing.process(file_dir, data)
-        text_extraction.process(file_dir, matches)
+        text_extraction.process(file_dir, "output", matches)
         
     
     
