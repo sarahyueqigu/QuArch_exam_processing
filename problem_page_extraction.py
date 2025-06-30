@@ -66,6 +66,8 @@ async def llama_processing(file_path, output_dir):
     # store the json for document input into the claude prompt   
     result = await parser.aparse(file_path)
 
+    # Create the image directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
     #Save all images in the exam to a designated folder
     await result.asave_all_images(output_dir)
 
@@ -124,7 +126,8 @@ def process(input_path):
     filename = os.path.basename(input_path)
 
     # Save all images first
-    document_json = asyncio.run(llama_processing(input_path, "images/"+filename[:-4]))
+    images_path = os.path.join("extracted_problems", filename[:-4], "images")
+    document_json = asyncio.run(llama_processing(input_path, images_path))
     # Convert the json to byte form for Claude input
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
