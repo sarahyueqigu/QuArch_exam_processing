@@ -10,7 +10,10 @@
         {
           "subproblem_question": "What are the addresses of the next two cache blocks that should be accessed to successfully reverse-engineer the number of sets and ways in the cache? There may be multiple solutions; please give the lowest possible addresses that can enable the identification of the number of sets and ways. Please explain every step in detail to get full points.",
           "subproblem_figures": [
-            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p1_0.png"
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p1_0.png",
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p1_0.png",
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p2_1.png",
+            "extracted_problems/ddca-s23-en-sol/Problem_10/chart_p2_0.png"
           ]
         }
       ],

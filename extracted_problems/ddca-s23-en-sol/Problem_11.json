@@ -14,6 +14,7 @@
           "subproblem_question": "Fill in the blanks only with relevant information. Input cells left blank are interpreted as 0.",
           "subproblem_figures": [
             "TABLE",
+            "extracted_problems/ddca-s23-en-sol/Problem_11/chart_p1_0.png",
             "extracted_problems/ddca-s23-en-sol/Problem_11/chart_p1_0.png"
           ]
         }
@@ -31,6 +32,7 @@
         {
           "subproblem_question": "Suppose that the same systolic array from Figure 2 is used to compute the multiplication of two 4\u00d7 4 matrices. How many cycles does it take to perform the multiplication? Assume that the register in a PE resets to 0 immediately after an output is generated, i.e., PEs can start accumulating for the next output element in the next cycle without waiting for an extra cycle to reset the register to 0. Show your work.",
           "subproblem_figures": [
+            "extracted_problems/ddca-s23-en-sol/Problem_11/chart_p2_0.png",
             "extracted_problems/ddca-s23-en-sol/Problem_11/chart_p2_0.png"
           ]
         }

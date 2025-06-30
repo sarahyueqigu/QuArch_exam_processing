@@ -13,7 +13,7 @@
       ],
       "answer": [
         {
-          "solution": "SUvector = Tscalar/Tvector = 1/((1-f) + f/10) = 1/(f/10 + (1-f)) ≥ 3\n\nf ≥ 7/9 ≈ 74%",
+          "solution": "SUvector = Tscalar/Tvector = 1/((1-f) + f/10) = 1/(f/10 + (1-f)) ≥ 3\nf ≥ 7/9 ≈ 74%",
           "solution_figures": []
         }
       ]

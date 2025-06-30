@@ -3,7 +3,7 @@
         {
             "page": 1,
             "text": "                             CS252 \u2013 Graduate Computer\n                                    Architecture\n                              University of California\n               Dept. of Electrical Engineering and Computer Sciences\nDavid E. Culler                                                         Spring 2005\nLast name: ____Solutions                   First name_______________________\nI certify that my answers to this exam are my own work. If I am taking this exam early, I\ncertify that I shall not discuss the exam questions, the exam answers, or the content of the\nexam with anyone until after the scheduled exam time. If I am taking this exam in\nscheduled time, I certify that I have not discussed the exam with anyone who took it early.\nSignature: ______________________________________\nThe exam has five problems, which range from concrete to conceptual. Please read the\nproblems and take your time in formulating an answer. The answers are not long.\nPlease show your work and your line of reasoning. There are a total of eight pages,\nincluding space for your work. Feel free to write on the backs of sheets, if you need\nmore space.\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.\nProblem     Points            Score\n1           10\n2           15\n3           15\n4           25\n5           35\n                                                                 CS252 S05 p. 1 of 9",
-            "md": "# CS252 \u2013 Graduate Computer Architecture\n\n# University of California\n\n# Dept. of Electrical Engineering and Computer Sciences\n\nDavid E. Culler\n\nSpring 2005\n\nLast name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.\n\n| Problem | Points | Score |\n| ------- | ------ | ----- |\n| 1       | 10     |       |\n| 2       | 15     |       |\n| 3       | 15     |       |\n| 4       | 25     |       |\n| 5       | 35     |       |\n\nCS252 S05 p. 1 of 9",
+            "md": "\n# CS252 \u2013 Graduate Computer Architecture\n\n# University of California\n\n# Dept. of Electrical Engineering and Computer Sciences\n\n# David E. Culler\n\n# Spring 2005\n\n\n\nLast name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.\n\n| Problem | Points | Score |\n| ------- | ------ | ----- |\n| 1       | 10     |       |\n| 2       | 15     |       |\n| 3       | 15     |       |\n| 4       | 25     |       |\n| 5       | 35     |       |\n\n\nCS252 S05 p. 1 of 9\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -49,16 +49,42 @@
                     }
                 },
                 {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "David E. Culler\n\nSpring 2005\n\nLast name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.",
-                    "md": "David E. Culler\n\nSpring 2005\n\nLast name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.",
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "David E. Culler",
+                    "md": "# David E. Culler",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
                         "y": 173.7,
-                        "w": 423.25,
+                        "w": 80.69,
+                        "h": 12.0
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Spring 2005",
+                    "md": "# Spring 2005",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.0,
+                        "y": 173.7,
+                        "w": 420.0,
                         "h": 368.94
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Last name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.",
+                    "md": "Last name: ____Solutions                   First name_______________________\n\nI certify that my answers to this exam are my own work. If I am taking this exam early, I certify that I shall not discuss the exam questions, the exam answers, or the content of the exam with anyone until after the scheduled exam time. If I am taking this exam in scheduled time, I certify that I have not discussed the exam with anyone who took it early.\n\nSignature: ______________________________________\n\nThe exam has five problems, which range from concrete to conceptual. Please read the problems and take your time in formulating an answer. The answers are not long. Please show your work and your line of reasoning. There are a total of eight pages, including space for your work. Feel free to write on the backs of sheets, if you need more space.\n\nThe exam is open book. You may use your textbook, lecture slides, or a calculator.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 90.0,
+                        "y": 203.4,
+                        "w": 423.25,
+                        "h": 267.72
                     }
                 },
                 {
@@ -132,7 +158,7 @@
         {
             "page": 2,
             "text": "Problem 1: State and define the hazards presented by instruction level parallelism.\nFor each one, indicate how it can be resolved.\n1. Data Hazards\n       \u2022   RAW (Data dependence) cannot use a value before it is computed. Resolve\n           by forwarding or stalling\n       \u2022   WAW (Output dependence) cannot write a value if a logically preceding\n           instruction might overwrite it Resolve by pipeline design (in-order op-fetch\n           + in-order WB), stalling on potential write to pending register, or renaming\n       \u2022   WAR (anti-dependence) cannot write a value before logically preceding\n           instruction reading the previous value have done so. Resolve by pipeline\n           design (in-order issue with in-order operand fetch), stalling or renaming.\n2. Structural Hazards\n       Attempt to use the same hardware resource for two different purposes at once.\n       Resolve by adding hardware resources (as design time) or stalling\n3. Control Hazards\n       Cannot determine the control flow until the condition of the branch is resolved.\n       Resolve by stalling. Mitigated by predicting and discarding miss-predicts.\nProblem 2. Your current version of ZippyCAD runs through a benchmark design in 43\nminutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell\nto you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the\nZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of\nZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so\nyou are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010\nto beat the ZIPS30?\nSUvector = Tscalar =         1       =      1       \u2265 3\n            Tvector    (1 \u2212 f ) + f / x  1 \u2212 f + f / 10\nf \u2265 20 / 27 \u2248 74%\n                                                                  CS252 S05 p. 2 of 9",
-            "md": "# Problem 1: State and define the hazards presented by instruction level parallelism.\n\nFor each one, indicate how it can be resolved.\n\n# 1. Data Hazards\n\n- RAW (Data dependence) cannot use a value before it is computed. Resolve by forwarding or stalling.\n- WAW (Output dependence) cannot write a value if a logically preceding instruction might overwrite it. Resolve by pipeline design (in-order op-fetch + in-order WB), stalling on potential write to pending register, or renaming.\n- WAR (anti-dependence) cannot write a value before logically preceding instruction reading the previous value have done so. Resolve by pipeline design (in-order issue with in-order operand fetch), stalling or renaming.\n\n# 2. Structural Hazards\n\nAttempt to use the same hardware resource for two different purposes at once. Resolve by adding hardware resources (as design time) or stalling.\n\n# 3. Control Hazards\n\nCannot determine the control flow until the condition of the branch is resolved. Resolve by stalling. Mitigated by predicting and discarding miss-predicts.\n\n# Problem 2.\n\nYour current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?\n\n| SUvector = Tscalar = 1 | = 1      | \u2265 3     |\n| ---------------------- | -------- | ------- |\n| Tvector                | (1 \u2212 f)  | + f / x |\n| 1 \u2212 f                  | + f / 10 |         |\n\nf \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
+            "md": "\n# Problem 1: State and define the hazards presented by instruction level parallelism.\n\nFor each one, indicate how it can be resolved.\n\n# 1. Data Hazards\n\n- RAW (Data dependence) cannot use a value before it is computed. Resolve by forwarding or stalling.\n- WAW (Output dependence) cannot write a value if a logically preceding instruction might overwrite it. Resolve by pipeline design (in-order op-fetch + in-order WB), stalling on potential write to pending register, or renaming.\n- WAR (anti-dependence) cannot write a value before logically preceding instruction reading the previous value have done so. Resolve by pipeline design (in-order issue with in-order operand fetch), stalling or renaming.\n\n# 2. Structural Hazards\n\nAttempt to use the same hardware resource for two different purposes at once. Resolve by adding hardware resources (as design time) or stalling.\n\n# 3. Control Hazards\n\nCannot determine the control flow until the condition of the branch is resolved. Resolve by stalling. Mitigated by predicting and discarding miss-predicts.\n\n# Problem 2.\n\nYour current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?\n\nSUvector = Tscalar = 1 = 1 \u2265 3\n\nTvector (1 \u2212 f) + f / x 1 \u2212 f + f / 10\n\nf \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
             "images": [],
             "charts": [],
             "tables": [],
@@ -258,56 +284,14 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "Your current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?",
-                    "md": "Your current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?",
+                    "value": "Your current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?\n\nSUvector = Tscalar = 1 = 1 \u2265 3\n\nTvector (1 \u2212 f) + f / x 1 \u2212 f + f / 10\n\nf \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
+                    "md": "Your current version of ZippyCAD runs through a benchmark design in 43 minutes on your ZIPS10 computer. ZIPS has a new model that they are offering to sell to you. ZIPS30 is a scalar machine like ZIPS10, but 3 times faster. Or you can get the ZIPS1010 vector upgrade that performs vectorized code at 10 times the performance of ZIPS10. You know that ZippyCAD spends a lot of time in its numerical library, so you are intrigued. How much of ZippyCAD would need to vectorize for the ZIPS1010 to beat the ZIPS30?\n\nSUvector = Tscalar = 1 = 1 \u2265 3\n\nTvector (1 \u2212 f) + f / x 1 \u2212 f + f / 10\n\nf \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
                         "y": 418.62,
-                        "w": 419.33,
-                        "h": 126.65
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "| SUvector = Tscalar = 1 | = 1      | \u2265 3     |\n| ---------------------- | -------- | ------- |\n| Tvector                | (1 \u2212 f)  | + f / x |\n| 1 \u2212 f                  | + f / 10 |         |",
-                    "rows": [
-                        [
-                            "SUvector = Tscalar = 1",
-                            "= 1",
-                            "\u2265 3"
-                        ],
-                        [
-                            "Tvector",
-                            "(1 \u2212 f)",
-                            "+ f / x"
-                        ],
-                        [
-                            "1 \u2212 f",
-                            "+ f / 10",
-                            ""
-                        ]
-                    ],
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 71.04,
                         "w": 420.02,
-                        "h": 682.2
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "f \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
-                    "md": "f \u2265 20 / 27 \u2248 74%\n\nCS252 S05 p. 2 of 9",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.08,
-                        "y": 533.27,
-                        "w": 415.94,
-                        "h": 219.97
+                        "h": 334.62
                     }
                 }
             ],
@@ -324,17 +308,30 @@
         {
             "page": 3,
             "text": "Problem 3: Diagram a correlating branch predictor that uses 3 bits of global\ninformation, 5 bits of local information, 3-bit saturating counters. Include the\ndimensions of all the machine data structures. Diagram the state machine. Give brief\npseudo code for how this operates.\nIndex a 256 x 3-bit RAM using the low 5 bits of the PC concatenated with 3 bits from\nthe branch history shift register. The shift register has as input the branch direction.\nThe book draws this as a two dimensional table. Same thing.\nOn decode, combine the 8 bits as above, index the prediction table, read the value and\npredict based on the most significant bit.\nRetain prediction table index into the execute stage. At that point, update the table\nentry according to the saturating counter state-transition-diagram. Write the result to\nthe table. Shift the taken/not-taken bit into the shift history.\nThere are two reasonable state machine. Both have state encodings going from 000 at\nthe bottom to 111 at the top. The one on the right provides some hysteresis. You don\u2019t\nget stuck toggling between 011 and 100. Even a branch that alternates between taken\nand not-taken will get predicted right about half the time.\n                                                 3\n                                                 3\n                                    3\n                    5               3\n                    5        Taken\n PC                          Taken\n PC                                         8\n                                            8         256\n                                                      256\n                                                                        taken\n                     taken                                              taken\n                     taken                                       Take\n              Take                                               Take\n              Take                                                       taken\n                                                         not             taken\n      not                                                not\n      not             taken\n                      taken                                      Take\n              Take                                               Take\n              Take                                         not\n                                                           not             taken\n        not                                                                taken\n        not             taken\n                        taken                                     Take\n                Take                                              Take\n                Take                                      not\n                                                          not             taken\n       not                                                                taken\n       not             taken\n                       taken                                      Take\n                                                     not          Take\n                Take                                 not\n                Take                                                           taken\n         not                                                                   taken\n         not             taken\n                         taken                                     No\n                 No                                                No\n                 No                                          not\n                                                             not             taken\n           not                                                               taken\n           not             taken\n                           taken                                   No\n               No                                                  No\n               No                                           not\n                                                            not             taken\n          not                                                               taken\n          not             taken\n                          taken                                    No\n                 No                                                No\n                 No                                           not\n                                                              not             taken\n            not                                                               taken\n            not             taken\n                            taken                                  No\n                No                                                 No\n                No                                             not\n             not                                               not\n             not\n                                                               CS252 S05 p. 3 of 9",
-            "md": "# Problem 3\n\nDiagram a correlating branch predictor that uses 3 bits of global information, 5 bits of local information, 3-bit saturating counters. Include the dimensions of all the machine data structures. Diagram the state machine. Give brief pseudo code for how this operates.\n\nIndex a 256 x 3-bit RAM using the low 5 bits of the PC concatenated with 3 bits from the branch history shift register. The shift register has as input the branch direction. The book draws this as a two dimensional table. Same thing.\n\nOn decode, combine the 8 bits as above, index the prediction table, read the value and predict based on the most significant bit.\n\nRetain prediction table index into the execute stage. At that point, update the table entry according to the saturating counter state-transition-diagram. Write the result to the table. Shift the taken/not-taken bit into the shift history.\n\nThere are two reasonable state machine. Both have state encodings going from 000 at the bottom to 111 at the top. The one on the right provides some hysteresis. You don\u2019t get stuck toggling between 011 and 100. Even a branch that alternates between taken and not-taken will get predicted right about half the time.\n\n|       | 3     | 3     | 3     |       |       |   |   |   |   |\n| ----- | ----- | ----- | ----- | ----- | ----- | - | - | - | - |\n| 5     |       |       |       |       | 3     |   |   |   |   |\n| PC    | Taken |       | PC    | 8     |       |   |   |   |   |\n| 256   |       |       | taken |       |       |   |   |   |   |\n| taken |       |       | Take  | Take  | taken |   |   |   |   |\n| not   | not   | taken | Take  | Take  | not   |   |   |   |   |\n| not   | taken | Take  | Take  | not   | not   |   |   |   |   |\n| taken | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n\nCS252 S05 p. 3 of 9",
+            "md": "\nCS252 S05 p. 3 of 9\n\n\n# Problem 3:\n\nDiagram a correlating branch predictor that uses 3 bits of global information, 5 bits of local information, 3-bit saturating counters. Include the dimensions of all the machine data structures. Diagram the state machine. Give brief pseudo code for how this operates.\n\nIndex a 256 x 3-bit RAM using the low 5 bits of the PC concatenated with 3 bits from the branch history shift register. The shift register has as input the branch direction. The book draws this as a two dimensional table. Same thing.\n\nOn decode, combine the 8 bits as above, index the prediction table, read the value and predict based on the most significant bit.\n\nRetain prediction table index into the execute stage. At that point, update the table entry according to the saturating counter state-transition-diagram. Write the result to the table. Shift the taken/not-taken bit into the shift history.\n\nThere are two reasonable state machine. Both have state encodings going from 000 at the bottom to 111 at the top. The one on the right provides some hysteresis. You don\u2019t get stuck toggling between 011 and 100. Even a branch that alternates between taken and not-taken will get predicted right about half the time.\n\n|       | 3     | 3     | 5 | 3 |\n| ----- | ----- | ----- | - | - |\n| PC    | Taken | PC    |   |   |\n| 8     | 256   | taken |   |   |\n| taken | taken | Take  |   |   |\n|       | Take  |       |   |   |\n|       | not   |       |   |   |\n| not   | not   | taken |   |   |\n| taken | Take  | not   |   |   |\n| not   | taken | Take  |   |   |\n| not   | not   | taken |   |   |\n| taken | Take  | not   |   |   |\n| not   | not   | taken |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |\n\n\n",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CS252 S05 p. 3 of 9",
+                    "md": "CS252 S05 p. 3 of 9",
+                    "rows": null,
+                    "bBox": {
+                        "x": 194.52,
+                        "y": 377.61,
+                        "w": 315.51,
+                        "h": 375.61
+                    }
+                },
+                {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Problem 3",
-                    "md": "# Problem 3",
+                    "value": "Problem 3:",
+                    "md": "# Problem 3:",
                     "rows": null,
                     "bBox": {
                         "x": 278.28,
@@ -360,125 +357,82 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|       | 3     | 3     | 3     |       |       |   |   |   |   |\n| ----- | ----- | ----- | ----- | ----- | ----- | - | - | - | - |\n| 5     |       |       |       |       | 3     |   |   |   |   |\n| PC    | Taken |       | PC    | 8     |       |   |   |   |   |\n| 256   |       |       | taken |       |       |   |   |   |   |\n| taken |       |       | Take  | Take  | taken |   |   |   |   |\n| not   | not   | taken | Take  | Take  | not   |   |   |   |   |\n| not   | taken | Take  | Take  | not   | not   |   |   |   |   |\n| taken | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |\n| taken | not   | taken | No    | No    | No    |   |   |   |   |\n| not   | not   | taken | not   | taken | not   |   |   |   |   |",
+                    "md": "|       | 3     | 3     | 5 | 3 |\n| ----- | ----- | ----- | - | - |\n| PC    | Taken | PC    |   |   |\n| 8     | 256   | taken |   |   |\n| taken | taken | Take  |   |   |\n|       | Take  |       |   |   |\n|       | not   |       |   |   |\n| not   | not   | taken |   |   |\n| taken | Take  | not   |   |   |\n| not   | taken | Take  |   |   |\n| not   | not   | taken |   |   |\n| taken | Take  | not   |   |   |\n| not   | not   | taken |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |\n| No    | not   | not   |   |   |\n| not   | taken | No    |   |   |",
                     "rows": [
                         [
                             "",
                             "3",
                             "3",
-                            "3",
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
                             "5",
-                            "",
-                            "",
-                            "",
-                            "",
-                            "3",
-                            "",
-                            "",
-                            "",
-                            ""
+                            "3"
                         ],
                         [
                             "PC",
                             "Taken",
-                            "",
                             "PC",
+                            "",
+                            ""
+                        ],
+                        [
                             "8",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
                             "256",
-                            "",
-                            "",
                             "taken",
-                            "",
-                            "",
-                            "",
-                            "",
                             "",
                             ""
                         ],
                         [
                             "taken",
-                            "",
-                            "",
-                            "Take",
-                            "Take",
-                            "taken",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "not",
-                            "not",
                             "taken",
                             "Take",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "Take",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "not",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "not",
+                            "not",
+                            "taken",
+                            "",
+                            ""
+                        ],
+                        [
+                            "taken",
                             "Take",
                             "not",
                             "",
-                            "",
-                            "",
                             ""
                         ],
                         [
                             "not",
                             "taken",
                             "Take",
+                            "",
+                            ""
+                        ],
+                        [
+                            "not",
+                            "not",
+                            "taken",
+                            "",
+                            ""
+                        ],
+                        [
+                            "taken",
                             "Take",
                             "not",
-                            "not",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "taken",
-                            "not",
-                            "taken",
-                            "No",
-                            "No",
-                            "No",
-                            "",
-                            "",
                             "",
                             ""
                         ],
@@ -486,107 +440,55 @@
                             "not",
                             "not",
                             "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "taken",
-                            "not",
-                            "taken",
-                            "No",
-                            "No",
-                            "No",
-                            "",
-                            "",
                             "",
                             ""
                         ],
                         [
                             "not",
-                            "not",
                             "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
+                            "No",
                             "",
                             ""
                         ],
                         [
-                            "taken",
+                            "No",
                             "not",
-                            "taken",
-                            "No",
-                            "No",
-                            "No",
-                            "",
-                            "",
+                            "not",
                             "",
                             ""
                         ],
                         [
                             "not",
-                            "not",
                             "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
+                            "No",
                             "",
                             ""
                         ],
                         [
-                            "taken",
+                            "No",
                             "not",
-                            "taken",
-                            "No",
-                            "No",
-                            "No",
-                            "",
-                            "",
+                            "not",
                             "",
                             ""
                         ],
                         [
                             "not",
-                            "not",
                             "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
+                            "No",
                             "",
                             ""
                         ],
                         [
-                            "taken",
+                            "No",
                             "not",
-                            "taken",
-                            "No",
-                            "No",
-                            "No",
-                            "",
-                            "",
+                            "not",
                             "",
                             ""
                         ],
                         [
                             "not",
-                            "not",
                             "taken",
-                            "not",
-                            "taken",
-                            "not",
-                            "",
-                            "",
+                            "No",
                             "",
                             ""
                         ]
@@ -596,19 +498,6 @@
                         "y": 71.04,
                         "w": 425.54,
                         "h": 682.19
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "CS252 S05 p. 3 of 9",
-                    "md": "CS252 S05 p. 3 of 9",
-                    "rows": null,
-                    "bBox": {
-                        "x": 194.52,
-                        "y": 377.61,
-                        "w": 315.51,
-                        "h": 375.61
                     }
                 }
             ],
@@ -625,7 +514,7 @@
         {
             "page": 4,
             "text": "Problem 4. Having fallen in love with the IBM360 early in the course, you\u2019ve\nanalyzed a dynamic instruction trace of the EGGSELL spreadsheet running your\nValentine\u2019s Day order list on your MIPS machine in order to consider resurrecting\nsome aspects of the 360. You find that the benchmark executed 1,000,000 instructions\nin 2,200,000 cycles and that instruction frequencies were:\n       Arithmetic     50%\n       Branch         20%\n       Load           20%\n       Store          10%\nUnder more careful analysis you find that 25% of the loads are used to add a value to a\nsingle register. Putting these two important discoveries together, you have decided to\nadd a LADD instruction to your old flame MIPS machine. The instruction\n       LADD rt, rs, offset\nhas the RTL semantics\n       REG[rt] := REG[rt] + MEM[REG[rs] + offset]\nHaving also become an expert in micro-architecture, you believe that you can support\nthis instruction without increasing the clock cycle time of your MIPS.\nAssuming you can pull this off, how low must be the CPI of the new machine for this\nenhancement to improve performance of the application?\nGive a couple of reasons why you expect the CPI to increase with this enhancement.\nGive a brief sketch of how you might modify the microarchitecture of the basic MIPS\npipelined datapath to support this instruction without severely impacting the cycle time.\nWhat changes are required to make hazard resolution work properly? What are likely\nto be the aspects that make it difficult to maintain the cycle time?\nInitial CPI = 2.2 LADD eliminates 5% of instructions.\nAt same CT, new CPI must be < 2.2/.95 ~ 2.3\nIn a general sense you might imagine that doing the same work in fewer instructions\nmight raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as\nwell as the old instructions, maintaining the same CPI and just improving execution\ntime. The reason that almost works is that instructions dependent on the LADD will\nstall because you cannot forward the value till later. However, such an instruction\nwould otherwise be dependent on the ADD following the load. More accurate is that\nthe load and the add can no longer be separated by independent instructions. The new\nstall is when the data operand of the LADD itself (not the address operand) is\ndependent on a previous instruction. Now the LADD will stall even though the LOAD\nportion could go forward. Also, data misses will be amortized over few instructions.\n                                                                  CS252 S05 p. 4 of 9",
-            "md": "# Problem 4\n\nHaving fallen in love with the IBM360 early in the course, you\u2019ve analyzed a dynamic instruction trace of the EGGSELL spreadsheet running your Valentine\u2019s Day order list on your MIPS machine in order to consider resurrecting some aspects of the 360. You find that the benchmark executed 1,000,000 instructions in 2,200,000 cycles and that instruction frequencies were:\n\n| Arithmetic | 50% |\n| ---------- | --- |\n| Branch     | 20% |\n| Load       | 20% |\n| Store      | 10% |\n\nUnder more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2 / 0.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
+            "md": "\n# Problem 4\n\nHaving fallen in love with the IBM360 early in the course, you\u2019ve analyzed a dynamic instruction trace of the EGGSELL spreadsheet running your Valentine\u2019s Day order list on your MIPS machine in order to consider resurrecting some aspects of the 360. You find that the benchmark executed 1,000,000 instructions in 2,200,000 cycles and that instruction frequencies were:\n\n| Arithmetic | 50% |\n| ---------- | --- |\n| Branch     | 20% |\n| Load       | 20% |\n| Store      | 10% |\n\nUnder more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2/.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
             "images": [],
             "charts": [],
             "tables": [],
@@ -690,8 +579,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "Under more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2 / 0.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
-                    "md": "Under more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2 / 0.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
+                    "value": "Under more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2/.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
+                    "md": "Under more careful analysis you find that 25% of the loads are used to add a value to a single register. Putting these two important discoveries together, you have decided to add a LADD instruction to your old flame MIPS machine. The instruction\n\nLADD rt, rs, offset\n\nhas the RTL semantics\n\nREG[rt] := REG[rt] + MEM[REG[rs] + offset]\n\nHaving also become an expert in micro-architecture, you believe that you can support this instruction without increasing the clock cycle time of your MIPS. Assuming you can pull this off, how low must be the CPI of the new machine for this enhancement to improve performance of the application?\n\nGive a couple of reasons why you expect the CPI to increase with this enhancement. Give a brief sketch of how you might modify the microarchitecture of the basic MIPS pipelined datapath to support this instruction without severely impacting the cycle time. What changes are required to make hazard resolution work properly? What are likely to be the aspects that make it difficult to maintain the cycle time?\n\nInitial CPI = 2.2 LADD eliminates 5% of instructions. At same CT, new CPI must be &lt; 2.2/.95 ~ 2.3\n\nIn a general sense you might imagine that doing the same work in fewer instructions might raise the CPI, but that doesn\u2019t answer the question. They might pipeline just as well as the old instructions, maintaining the same CPI and just improving execution time. The reason that almost works is that instructions dependent on the LADD will stall because you cannot forward the value till later. However, such an instruction would otherwise be dependent on the ADD following the load. More accurate is that the load and the add can no longer be separated by independent instructions. The new stall is when the data operand of the LADD itself (not the address operand) is dependent on a previous instruction. Now the LADD will stall even though the LOAD portion could go forward. Also, data misses will be amortized over few instructions.\n\nCS252 S05 p. 4 of 9",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
@@ -714,17 +603,30 @@
         {
             "page": 5,
             "text": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a\nsixth stage between MEM and writeback to do that ADD. The data operand, which is\ncarried to MEM for the STORE, must be carried to the ADD stage.\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply\nmeans that more values will be forwarded, since WB is further delayed. The change\nrequired is another level of forwarding. This requires an additional set of data wires\nalong the length of the datapath and widens the forwarding mux. The logic for\ndetermining the mux selects is hardly any worse. LADDs cannot forward except from\nthe ADD stage. The increase in cycle time is due to widening each bit slice of the\ndatapath and the additional steering logic on the mux.\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage\ninto three micro ops. The first is essentially a load, the second is a NOP, and the third\nis the ADD. Observe that the third brings the data operand into the EX stage as the\nloaded value is produced from the MEM stage. No new wiring is required. We simply\nfeed the loaded value back. Of course, this is no faster than issuing two instruction \u2013\nand it prevents the compiler from filling the load delay slot, but it does reduce code\nsize. It has no impact on the cycle time.\n                                                                   CS252 S05 p. 5 of 9",
-            "md": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instruction \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
+            "md": "\n# Design Solutions\n\nThere are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instructions \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Design Solutions",
+                    "md": "# Design Solutions",
+                    "rows": null,
+                    "bBox": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 612.0,
+                        "h": 792.0
+                    }
+                },
+                {
                     "type": "text",
                     "lvl": null,
-                    "value": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instruction \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
-                    "md": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instruction \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
+                    "value": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instructions \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
+                    "md": "There are two good design solutions. The \u201cStanford MIPS style\u201d option is to add a sixth stage between MEM and writeback to do that ADD. The data operand, which is carried to MEM for the STORE, must be carried to the ADD stage.\n\nNote that adding a stage does not increase the CPI if no LADDs were used. It simply means that more values will be forwarded, since WB is further delayed. The change required is another level of forwarding. This requires an additional set of data wires along the length of the datapath and widens the forwarding mux. The logic for determining the mux selects is hardly any worse. LADDs cannot forward except from the ADD stage. The increase in cycle time is due to widening each bit slice of the datapath and the additional steering logic on the mux.\n\nThe \u201cBerkeley/Sun RISC/Sparc style\u201d would be to split the LADD at the decode stage into three micro ops. The first is essentially a load, the second is a NOP, and the third is the ADD. Observe that the third brings the data operand into the EX stage as the loaded value is produced from the MEM stage. No new wiring is required. We simply feed the loaded value back. Of course, this is no faster than issuing two instructions \u2013 and it prevents the compiler from filling the load delay slot, but it does reduce code size. It has no impact on the cycle time.\n\nCS252 S05 p. 5 of 9",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
@@ -747,7 +649,7 @@
         {
             "page": 6,
             "text": "Problem 5: Now the wide open design problem. The haunting elegance of the stack\narchitecture has stayed in the back of your mind ever since the debate. Now that you\nhave seen superscalar execution, register renaming, forwarding, Tomasulo and all that,\nyou wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction\nlevel parallelism there too?\u201d You grab your favorite loop as a test case\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\nwhich, of course, compiles as\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\nOn entry to this loop there are three values at the Top of Stack:\n TOS-8:   Alpha\n TOS-4:   ArrayEnd\n   TOS:   Ptr\nThe stack code for the loop is as follows.\nvscal:\n       push @0       ; push a copy of Ptr\n       load          ; Load the array value (replacing Ptr)\n       push @12      ; push a copy of the scale value, alpha\n       fadd          ; alpha + *ptr\n       push @4       ; push a copy of Ptr\n       store         ; *ptr := alpha + *ptr\n       pushIm 4      ; pointer increment value\n       add           ; ptr++ (update on the stack)\n       push @4       ; push ArrayEnd\n       push @4       ; push ptr\n       sub\n       blt vscal\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM\nX pushes immediate value X. All other operations pop their operands from the top of\nstack, remove them, and push a result, if one is generated.\nYour starting point for your design is based roughly on the MIPS R10000. It has\nseveral function units with a reservation station per function unit and forwarding of\nresults to the function units, as indicated in the diagram below. A large collection of\nphysical registers are provided. They are not in the instruction set architecture. The\narchitected state is the stack and PC. You are to describe how to do the renaming such\nthat you could overlap the execution of multiple iterations of this loop. You will need\nto invent the mechanism to perform the necessary renaming. You may assume there\nare enough physical registers to perform one or more iterations of the loop, but not an\n                                                                 CS252 S05 p. 6 of 9",
-            "md": "# Problem 5\n\nNow the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\n\nwhich, of course, compiles as\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\n\nOn entry to this loop there are three values at the Top of Stack:\n\n| TOS-8: | Alpha    |\n| ------ | -------- |\n| TOS-4: | ArrayEnd |\n| TOS:   | Ptr      |\n\nThe stack code for the loop is as follows.\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\n\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an\n\nCS252 S05 p. 6 of 9",
+            "md": "\n# Problem 5:\n\nNow the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case:\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\nwhich, of course, compiles as:\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\nOn entry to this loop there are three values at the Top of Stack:\n\n- TOS-8: Alpha\n- TOS-4: ArrayEnd\n- TOS: Ptr\n\nThe stack code for the loop is as follows:\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an.\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -756,8 +658,8 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Problem 5",
-                    "md": "# Problem 5",
+                    "value": "Problem 5:",
+                    "md": "# Problem 5:",
                     "rows": null,
                     "bBox": {
                         "x": 0.0,
@@ -769,53 +671,14 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "Now the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\n\nwhich, of course, compiles as\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\n\nOn entry to this loop there are three values at the Top of Stack:",
-                    "md": "Now the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\n\nwhich, of course, compiles as\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\n\nOn entry to this loop there are three values at the Top of Stack:",
+                    "value": "Now the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case:\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\nwhich, of course, compiles as:\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\nOn entry to this loop there are three values at the Top of Stack:\n\n- TOS-8: Alpha\n- TOS-4: ArrayEnd\n- TOS: Ptr\n\nThe stack code for the loop is as follows:\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an.",
+                    "md": "Now the wide open design problem. The haunting elegance of the stack architecture has stayed in the back of your mind ever since the debate. Now that you have seen superscalar execution, register renaming, forwarding, Tomasulo and all that, you wonder \u201cwhy can\u2019t I apply these techniques to stack machines to find instruction level parallelism there too?\u201d You grab your favorite loop as a test case:\n\nfor (i = 0; i < n; i++) A[i] = A[i] + alpha;\nwhich, of course, compiles as:\n\nfor (ptr = A; ptr < &A[n]; ptr++) *ptr += alpha;\nOn entry to this loop there are three values at the Top of Stack:\n\n- TOS-8: Alpha\n- TOS-4: ArrayEnd\n- TOS: Ptr\n\nThe stack code for the loop is as follows:\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an.",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
                         "y": 84.83,
-                        "w": 416.53,
-                        "h": 209.16
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "| TOS-8: | Alpha    |\n| ------ | -------- |\n| TOS-4: | ArrayEnd |\n| TOS:   | Ptr      |",
-                    "rows": [
-                        [
-                            "TOS-8:",
-                            "Alpha"
-                        ],
-                        [
-                            "TOS-4:",
-                            "ArrayEnd"
-                        ],
-                        [
-                            "TOS:",
-                            "Ptr"
-                        ]
-                    ],
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 153.06,
-                        "w": 388.75,
-                        "h": 334.26
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "The stack code for the loop is as follows.\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\n\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an\n\nCS252 S05 p. 6 of 9",
-                    "md": "The stack code for the loop is as follows.\n\nvscal:\npush @0       ; push a copy of Ptr\nload          ; Load the array value (replacing Ptr)\npush @12      ; push a copy of the scale value, alpha\nfadd          ; alpha + *ptr\npush @4       ; push a copy of Ptr\nstore         ; *ptr := alpha + *ptr\npushIm 4      ; pointer increment value\nadd           ; ptr++ (update on the stack)\npush @4       ; push ArrayEnd\npush @4       ; push ptr\nsub\nblt vscal\n\nThe push @X instruction pushes the value at offset X from the top of stack. pushIM X pushes immediate value X. All other operations pop their operands from the top of stack, remove them, and push a result, if one is generated.\n\nYour starting point for your design is based roughly on the MIPS R10000. It has several function units with a reservation station per function unit and forwarding of results to the function units, as indicated in the diagram below. A large collection of physical registers are provided. They are not in the instruction set architecture. The architected state is the stack and PC. You are to describe how to do the renaming such that you could overlap the execution of multiple iterations of this loop. You will need to invent the mechanism to perform the necessary renaming. You may assume there are enough physical registers to perform one or more iterations of the loop, but not an\n\nCS252 S05 p. 6 of 9",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 250.25,
-                        "w": 420.03,
-                        "h": 502.98
+                        "w": 417.34,
+                        "h": 625.44
                     }
                 }
             ],
@@ -832,7 +695,7 @@
         {
             "page": 7,
             "text": "arbitrary number of overlapping iterations. You may assume there is a mechanism\nALLOC that will allocate a free register and provide that register number, if one is\navailable. If none are free, it will indicate a failure. You may, similarly, assume there\nis an operation FREE(Reg) which frees the specified register.\nHow much stack space is required to execute this loop?   Because of this, you don\u2019t\nneed to worry about stack overflow/underflow. You do need to deal with limits on the\navailable physical registers and function units.\nDescribe the instruction issue and operand fetch process for different kinds of\ninstructions that appear in the example.\nUnder what conditions will the machine wait \u2013 holding the issue of an instruction?\nExplain when a physical register can be freed.\nExplain what limits the number of iterations of the loop that can potentially execute\nconcurrently.\n                                     Instruction\n                                     Instruction\n                                     queue\n                                     queue\n               Inst\n               Inst\n               Issue\n               Issue\n               and\n               and reg\n                    reg\n               mapping\n               mapping                    Physical\n                                          Physical\n                                          Registers\n                                          Registers\n                                           *\n                                           * *\n                                             * *\n                                               *                 fwd\n                                                                 fwd\n                                ROB\n                                ROB\n                                                                   CS252 S05 p. 7 of 9",
-            "md": "arbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.\n\n# How much stack space is required to execute this loop?\n\nBecause of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.\n\n# Describe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.\n\n# Under what conditions will the machine wait \u2013 holding the issue of an instruction?\n\n# Explain when a physical register can be freed.\n\n# Explain what limits the number of iterations of the loop that can potentially execute concurrently.\n\n| Instruction | Instruction |\n| ----------- | ----------- |\n| queue       | queue       |\n| Inst        | Inst        |\n| Issue       | Issue       |\n| and         | reg         |\n| mapping     | mapping     |\n| Physical    | Physical    |\n| Registers   | Registers   |\n| \\*          | \\*          |\n| \\*          | \\*          |\n| \\*          |             |\n| fwd         | fwd         |\n| ROB         | ROB         |\n\nCS252 S05 p. 7 of 9",
+            "md": "\narbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.\n\nHow much stack space is required to execute this loop? Because of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.\n\nDescribe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.\n\nUnder what conditions will the machine wait \u2013 holding the issue of an instruction?\n\nExplain when a physical register can be freed.\n\nExplain what limits the number of iterations of the loop that can potentially execute concurrently.\n\n| Instruction | Instruction |\n| ----------- | ----------- |\n| queue       | queue       |\n| Inst        | Inst        |\n| Issue       | Issue       |\n| and         | reg         |\n| mapping     | mapping     |\n| Physical    | Physical    |\n| Registers   | Registers   |\n| \\*          | \\*          |\n| \\*          | \\*          |\n| \\*          |             |\n| fwd         | fwd         |\n\nROB\n\nROB\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -841,99 +704,21 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "arbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.",
-                    "md": "arbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.",
+                    "value": "arbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.\n\nHow much stack space is required to execute this loop? Because of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.\n\nDescribe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.\n\nUnder what conditions will the machine wait \u2013 holding the issue of an instruction?\n\nExplain when a physical register can be freed.\n\nExplain what limits the number of iterations of the loop that can potentially execute concurrently.",
+                    "md": "arbitrary number of overlapping iterations. You may assume there is a mechanism ALLOC that will allocate a free register and provide that register number, if one is available. If none are free, it will indicate a failure. You may, similarly, assume there is an operation FREE(Reg) which frees the specified register.\n\nHow much stack space is required to execute this loop? Because of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.\n\nDescribe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.\n\nUnder what conditions will the machine wait \u2013 holding the issue of an instruction?\n\nExplain when a physical register can be freed.\n\nExplain what limits the number of iterations of the loop that can potentially execute concurrently.",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
                         "y": 71.03,
-                        "w": 411.22,
-                        "h": 365.42
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "How much stack space is required to execute this loop?",
-                    "md": "# How much stack space is required to execute this loop?",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 140.03,
-                        "w": 266.6,
-                        "h": 12.0
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "Because of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.",
-                    "md": "Because of this, you don\u2019t need to worry about stack overflow/underflow. You do need to deal with limits on the available physical registers and function units.",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 140.03,
                         "w": 416.29,
-                        "h": 325.7
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Describe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.",
-                    "md": "# Describe the instruction issue and operand fetch process for different kinds of instructions that appear in the example.",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 195.29,
-                        "w": 373.92,
-                        "h": 241.16
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Under what conditions will the machine wait \u2013 holding the issue of an instruction?",
-                    "md": "# Under what conditions will the machine wait \u2013 holding the issue of an instruction?",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 236.69,
-                        "w": 397.84,
-                        "h": 185.54
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Explain when a physical register can be freed.",
-                    "md": "# Explain when a physical register can be freed.",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 264.29,
-                        "w": 244.7,
-                        "h": 187.1
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Explain what limits the number of iterations of the loop that can potentially execute concurrently.",
-                    "md": "# Explain what limits the number of iterations of the loop that can potentially execute concurrently.",
-                    "rows": null,
-                    "bBox": {
-                        "x": 90.0,
-                        "y": 291.89,
-                        "w": 401.65,
-                        "h": 25.74
+                        "h": 394.7
                     }
                 },
                 {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Instruction | Instruction |\n| ----------- | ----------- |\n| queue       | queue       |\n| Inst        | Inst        |\n| Issue       | Issue       |\n| and         | reg         |\n| mapping     | mapping     |\n| Physical    | Physical    |\n| Registers   | Registers   |\n| \\*          | \\*          |\n| \\*          | \\*          |\n| \\*          |             |\n| fwd         | fwd         |\n| ROB         | ROB         |",
+                    "md": "| Instruction | Instruction |\n| ----------- | ----------- |\n| queue       | queue       |\n| Inst        | Inst        |\n| Issue       | Issue       |\n| and         | reg         |\n| mapping     | mapping     |\n| Physical    | Physical    |\n| Registers   | Registers   |\n| \\*          | \\*          |\n| \\*          | \\*          |\n| \\*          |             |\n| fwd         | fwd         |",
                     "rows": [
                         [
                             "Instruction",
@@ -982,10 +767,6 @@
                         [
                             "fwd",
                             "fwd"
-                        ],
-                        [
-                            "ROB",
-                            "ROB"
                         ]
                     ],
                     "bBox": {
@@ -998,13 +779,13 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "CS252 S05 p. 7 of 9",
-                    "md": "CS252 S05 p. 7 of 9",
+                    "value": "ROB\n\nROB",
+                    "md": "ROB\n\nROB",
                     "rows": null,
                     "bBox": {
-                        "x": 412.68,
-                        "y": 741.23,
-                        "w": 97.35,
+                        "x": 242.28,
+                        "y": 604.14,
+                        "w": 26.0,
                         "h": 12.0
                     }
                 }
@@ -1022,7 +803,7 @@
         {
             "page": 8,
             "text": "The key idea is to introducing a \u201crenaming stack\u201d of physical register names. A\nphysical register may be freed when its name is popped off the renaming stack AND\nthe instruction that produces it enters the ROB. A single state bit will do. The latter of\nthe two events will free place the physical register back on the free list.\nThe key optimization is that PUSH just shares the previously allocated physical\nregister. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all.\nHere\u2019s a nice student solution.\n                                41          1  7     3 5                          9\u2083 j48 &\n            7 2           2              }333      4      8    1                         4\n     3 7 376              57    3 1Je         7    3 1       3  3 { 83\n       F1    :               4           34 1          J     3 8\n           4 1            33 6R            3  3     2 3    3      2 {\n     84 h%i8             2 Ki      0  30   { 5 {77           018    1\n     j 4                    4 1   7 4 7 0 #           4      42\n       {\n     4  1    4  5       4     8  3 8\u2084\u2080              3 {  J      J\n    42    1   3 c8       0   3 3     88    J 3j3               ha2\n             3          +          63}\n      3       2  1       135_\u2074\u00b9 3                      4              9\n      34 4 7    {       9  3 1     64      841\u2c7d    9\n          7    8    47k 2                  ~0 F  j4 3\n       Jui:          3 2     0 2           52 C   (2    3 4\n       9                                      6\n                     e4                       8\n                     H\n                                              CS252 S05 p. 8 of 9",
-            "md": "The key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.\n\n|      | 41 | 1   | 7       | 3    | 5   | 9\u2083   | j48 | &   |    |     |   |\n| ---- | -- | --- | ------- | ---- | --- | ---- | --- | --- | -- | --- | - |\n| 7    | 2  | 2   |         | 3    | 3   | 4    | 8   | 1   | 4  |     |   |\n| 3    | 7  | 376 | 57      | 3    | 1Je | 7    | 3   | 1   | 3  |     |   |\n|      | 3  | {   | 83      | F1   | :   | 4    | 34  | 1   | J  | 3   |   |\n|      |    | 8   | 4       | 1    | 33  | 6R   | 3   | 3   | 2  | 3   | 3 |\n|      | 2  | {   | 84      | h%i8 | 2   | Ki   | 0   | 30  | {  | 5   |   |\n| {    | 4  | 1   | 7       | 4    | 7   | 0    | #   | 4   | 42 |     |   |\n|      |    | {   | 4       | 1    | 4   | 5    | 4   | 8   | 3  | 8\u2084\u2080 | 3 |\n| {    | J  | J   | 42      | 1    | 3   | c8   | 0   | 3   | 3  |     |   |\n|      | 88 | J   | 3j3     |      | ha2 | 3    | +   | 63} |    |     |   |\n| 3    | 2  | 1   | 135\\_\u2074\u00b9 | 3    |     | 4    | 9   | 34  | 4  |     |   |\n| 7    | {  | 9   | 3       | 1    | 64  | 841\u2c7d | 9   | 7   | 8  |     |   |\n| 47k  | 2  | \\~0 | F       | j4   | 3   |      |     |     |    |     |   |\n| Jui: | 3  | 2   | 0       | 2    | 52  | C    | (2  | 3   | 4  |     |   |\n| 9    |    |     | 6       |      | e4  |      | 8   |     |    |     |   |\n\nCS252 S05 p. 8 of 9",
+            "md": "\nCS252 S05 p. 8 of 9\n\nThe key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.\n\n|      | 41 | 1   | 7       | 3   | 5    | 9\u2083 | j48 | &    |    |    |\n| ---- | -- | --- | ------- | --- | ---- | -- | --- | ---- | -- | -- |\n| 7    | 2  | 2   |         | 3   | 3    | 4  | 8   | 1    | 4  |    |\n| 3    | 7  | 376 | 57      | 3   | 1Je  | 7  | 3   | 1    | 3  |    |\n|      | 3  | 3   | {       | 83  | F1   | :  | 4   | 34   | 1  | J  |\n|      | 3  | 8   | 4       | 1   | 33   | 6R | 3   | 3    | 2  | 3  |\n|      | 3  | 2   | {       | 84  | h%i8 | 2  | Ki  | 0    | 30 | {  |\n|      | 5  | {   | 77      | 018 | 1    | j  | 4   | 4    | 1  | 7  |\n| 4    | 1  | 4   | 5       | 4   | 8    | 3  | 8\u2084\u2080 | 3    | {  |    |\n|      | J  | J   | 42      | 1   | 3    | c8 | 0   | 3    | 3  | 88 |\n|      | J  | 3j3 |         |     | ha2  | 3  | +   | 63}  |    |    |\n| 3    | 2  | 1   | 135\\_\u2074\u00b9 | 3   |      | 4  |     | 9    |    |    |\n| 34   | 4  | 7   | {       | 9   | 3    | 1  | 64  | 841\u2c7d | 9  |    |\n| 7    | 8  | 47k | 2       |     | \\~0  | F  | j4  | 3    |    |    |\n| Jui: | 3  | 2   | 0       | 2   | 52   | C  | (2  | 3    | 4  |    |\n| 9    |    |     | 6       |     | e4   |    | 8   |      | H  |    |\n\n\n",
             "images": [
                 {
                     "name": "img_p7_1.png",
@@ -1042,21 +823,21 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "The key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.",
-                    "md": "The key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.",
+                    "value": "CS252 S05 p. 8 of 9\n\nThe key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.",
+                    "md": "CS252 S05 p. 8 of 9\n\nThe key idea is to introducing a \u201crenaming stack\u201d of physical register names. A physical register may be freed when its name is popped off the renaming stack AND the instruction that produces it enters the ROB. A single state bit will do. The latter of the two events will free place the physical register back on the free list. The key optimization is that PUSH just shares the previously allocated physical register. PUSH, POP, and PUSH_IM don\u2019t need to enter the execution section at all. Here\u2019s a nice student solution.",
                     "rows": null,
                     "bBox": {
                         "x": 90.0,
                         "y": 71.03,
-                        "w": 476.0,
-                        "h": 509.97
+                        "w": 499.0,
+                        "h": 682.2
                     }
                 },
                 {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|      | 41 | 1   | 7       | 3    | 5   | 9\u2083   | j48 | &   |    |     |   |\n| ---- | -- | --- | ------- | ---- | --- | ---- | --- | --- | -- | --- | - |\n| 7    | 2  | 2   |         | 3    | 3   | 4    | 8   | 1   | 4  |     |   |\n| 3    | 7  | 376 | 57      | 3    | 1Je | 7    | 3   | 1   | 3  |     |   |\n|      | 3  | {   | 83      | F1   | :   | 4    | 34  | 1   | J  | 3   |   |\n|      |    | 8   | 4       | 1    | 33  | 6R   | 3   | 3   | 2  | 3   | 3 |\n|      | 2  | {   | 84      | h%i8 | 2   | Ki   | 0   | 30  | {  | 5   |   |\n| {    | 4  | 1   | 7       | 4    | 7   | 0    | #   | 4   | 42 |     |   |\n|      |    | {   | 4       | 1    | 4   | 5    | 4   | 8   | 3  | 8\u2084\u2080 | 3 |\n| {    | J  | J   | 42      | 1    | 3   | c8   | 0   | 3   | 3  |     |   |\n|      | 88 | J   | 3j3     |      | ha2 | 3    | +   | 63} |    |     |   |\n| 3    | 2  | 1   | 135\\_\u2074\u00b9 | 3    |     | 4    | 9   | 34  | 4  |     |   |\n| 7    | {  | 9   | 3       | 1    | 64  | 841\u2c7d | 9   | 7   | 8  |     |   |\n| 47k  | 2  | \\~0 | F       | j4   | 3   |      |     |     |    |     |   |\n| Jui: | 3  | 2   | 0       | 2    | 52  | C    | (2  | 3   | 4  |     |   |\n| 9    |    |     | 6       |      | e4  |      | 8   |     |    |     |   |",
+                    "md": "|      | 41 | 1   | 7       | 3   | 5    | 9\u2083 | j48 | &    |    |    |\n| ---- | -- | --- | ------- | --- | ---- | -- | --- | ---- | -- | -- |\n| 7    | 2  | 2   |         | 3   | 3    | 4  | 8   | 1    | 4  |    |\n| 3    | 7  | 376 | 57      | 3   | 1Je  | 7  | 3   | 1    | 3  |    |\n|      | 3  | 3   | {       | 83  | F1   | :  | 4   | 34   | 1  | J  |\n|      | 3  | 8   | 4       | 1   | 33   | 6R | 3   | 3    | 2  | 3  |\n|      | 3  | 2   | {       | 84  | h%i8 | 2  | Ki  | 0    | 30 | {  |\n|      | 5  | {   | 77      | 018 | 1    | j  | 4   | 4    | 1  | 7  |\n| 4    | 1  | 4   | 5       | 4   | 8    | 3  | 8\u2084\u2080 | 3    | {  |    |\n|      | J  | J   | 42      | 1   | 3    | c8 | 0   | 3    | 3  | 88 |\n|      | J  | 3j3 |         |     | ha2  | 3  | +   | 63}  |    |    |\n| 3    | 2  | 1   | 135\\_\u2074\u00b9 | 3   |      | 4  |     | 9    |    |    |\n| 34   | 4  | 7   | {       | 9   | 3    | 1  | 64  | 841\u2c7d | 9  |    |\n| 7    | 8  | 47k | 2       |     | \\~0  | F  | j4  | 3    |    |    |\n| Jui: | 3  | 2   | 0       | 2   | 52   | C  | (2  | 3    | 4  |    |\n| 9    |    |     | 6       |     | e4   |    | 8   |      | H  |    |",
                     "rows": [
                         [
                             "",
@@ -1068,7 +849,6 @@
                             "9\u2083",
                             "j48",
                             "&",
-                            "",
                             "",
                             ""
                         ],
@@ -1083,7 +863,6 @@
                             "8",
                             "1",
                             "4",
-                            "",
                             ""
                         ],
                         [
@@ -1097,11 +876,11 @@
                             "3",
                             "1",
                             "3",
-                            "",
                             ""
                         ],
                         [
                             "",
+                            "3",
                             "3",
                             "{",
                             "83",
@@ -1110,13 +889,11 @@
                             "4",
                             "34",
                             "1",
-                            "J",
-                            "3",
-                            ""
+                            "J"
                         ],
                         [
                             "",
-                            "",
+                            "3",
                             "8",
                             "4",
                             "1",
@@ -1125,11 +902,11 @@
                             "3",
                             "3",
                             "2",
-                            "3",
                             "3"
                         ],
                         [
                             "",
+                            "3",
                             "2",
                             "{",
                             "84",
@@ -1138,28 +915,22 @@
                             "Ki",
                             "0",
                             "30",
-                            "{",
-                            "5",
-                            ""
+                            "{"
                         ],
                         [
+                            "",
+                            "5",
                             "{",
+                            "77",
+                            "018",
+                            "1",
+                            "j",
+                            "4",
                             "4",
                             "1",
-                            "7",
-                            "4",
-                            "7",
-                            "0",
-                            "#",
-                            "4",
-                            "42",
-                            "",
-                            ""
+                            "7"
                         ],
                         [
-                            "",
-                            "",
-                            "{",
                             "4",
                             "1",
                             "4",
@@ -1168,10 +939,12 @@
                             "8",
                             "3",
                             "8\u2084\u2080",
-                            "3"
+                            "3",
+                            "{",
+                            ""
                         ],
                         [
-                            "{",
+                            "",
                             "J",
                             "J",
                             "42",
@@ -1181,20 +954,18 @@
                             "0",
                             "3",
                             "3",
-                            "",
-                            ""
+                            "88"
                         ],
                         [
                             "",
-                            "88",
                             "J",
                             "3j3",
+                            "",
                             "",
                             "ha2",
                             "3",
                             "+",
                             "63}",
-                            "",
                             "",
                             ""
                         ],
@@ -1206,13 +977,14 @@
                             "3",
                             "",
                             "4",
+                            "",
                             "9",
-                            "34",
-                            "4",
                             "",
                             ""
                         ],
                         [
+                            "34",
+                            "4",
                             "7",
                             "{",
                             "9",
@@ -1221,22 +993,18 @@
                             "64",
                             "841\u2c7d",
                             "9",
-                            "7",
-                            "8",
-                            "",
                             ""
                         ],
                         [
+                            "7",
+                            "8",
                             "47k",
                             "2",
+                            "",
                             "~0",
                             "F",
                             "j4",
                             "3",
-                            "",
-                            "",
-                            "",
-                            "",
                             "",
                             ""
                         ],
@@ -1251,7 +1019,6 @@
                             "(2",
                             "3",
                             "4",
-                            "",
                             ""
                         ],
                         [
@@ -1264,8 +1031,7 @@
                             "",
                             "8",
                             "",
-                            "",
-                            "",
+                            "H",
                             ""
                         ]
                     ],
@@ -1274,19 +1040,6 @@
                         "y": 71.03,
                         "w": 500.0,
                         "h": 682.2
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "CS252 S05 p. 8 of 9",
-                    "md": "CS252 S05 p. 8 of 9",
-                    "rows": null,
-                    "bBox": {
-                        "x": 140.0,
-                        "y": 207.0,
-                        "w": 449.0,
-                        "h": 546.23
                     }
                 }
             ],
@@ -1303,7 +1056,7 @@
         {
             "page": 9,
             "text": "       8   0       {             1      | %d\n 14     3                                    4\n 68          0 32   2 3 8  6 7  8 3       3  {   U\"\n        ] 4  3  5i    Hl   19                    1\n  [ 8  8   9 8 8 34  1\u2091\u2080  9 2 3  { c     4 ]      6\n t  1  { 3 1 4 3 J 35  38 1 '13  M 14  {  0 1  3 0\n 4 2    4  53/ na    0 1 J 3 1 3 4      5     67 j8\n 3  4 3 {     J89  J 4        M 4 3    7 3 { 4\n        K 83    j   ^  8  J : 3\u2084                 2\n  {;j     0p $    4 3           5          4  9 Q {\n 7      8]3  } La 4   1   1 1 X 5  p   3 ~0  3 3 3\u2070\n441       $       3     4  3Li 0   0 @  0 3 {  j 3\n        4           #     3    j 6 8     a3;\n  7 4       9    4 4          3     1 4      8 4\n         4 Vii               6   }    IJi3k\n F  }   $  3     K 5 ~1 3  3 22  1            4\n                             CS252 S05 p. 9 of 9",
-            "md": "8 0 { 1 | %d\n\n14 3 4\n\n68 0 32 2 3 8 6 7 8 3 3 { U\"\n\n] 4 3 5i Hl 19 1\n\n[ 8 8 9 8 8 34 1\u2091\u2080 9 2 3 { c 4 ] 6\n\nt 1 { 3 1 4 3 J 35 38 1 '13 M 14 { 0 1 3 0\n\n4 2 4 53/ na 0 1 J 3 1 3 4 5 67 j8\n\n3 4 3 { J89 J 4 M 4 3 7 3 { 4\n\nK 83 j ^ 8 J : 3\u2084 2\n\n{;j 0p $ 4 3 5 4 9 Q {\n\n7 8]3 } La 4 1 1 1 X 5 p 3 ~0 3 3 3\u2070\n\n441 $ 3 4 3Li 0 0 @ 0 3 { j 3\n\n4 # 3 j 6 8 a3;\n\n7 4 9 4 4 3 1 4 8 4\n\n4 Vii 6 } IJi3k\n\nF } $ 3 K 5 ~1 3 3 22 1 4\n\nCS252 S05 p. 9 of 9",
+            "md": "\nCS252 S05 p. 9 of 9\n\n\n\n",
             "images": [
                 {
                     "name": "img_p8_1.png",
@@ -1323,14 +1076,14 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "8 0 { 1 | %d\n\n14 3 4\n\n68 0 32 2 3 8 6 7 8 3 3 { U\"\n\n] 4 3 5i Hl 19 1\n\n[ 8 8 9 8 8 34 1\u2091\u2080 9 2 3 { c 4 ] 6\n\nt 1 { 3 1 4 3 J 35 38 1 '13 M 14 { 0 1 3 0\n\n4 2 4 53/ na 0 1 J 3 1 3 4 5 67 j8\n\n3 4 3 { J89 J 4 M 4 3 7 3 { 4\n\nK 83 j ^ 8 J : 3\u2084 2\n\n{;j 0p $ 4 3 5 4 9 Q {\n\n7 8]3 } La 4 1 1 1 X 5 p 3 ~0 3 3 3\u2070\n\n441 $ 3 4 3Li 0 0 @ 0 3 { j 3\n\n4 # 3 j 6 8 a3;\n\n7 4 9 4 4 3 1 4 8 4\n\n4 Vii 6 } IJi3k\n\nF } $ 3 K 5 ~1 3 3 22 1 4\n\nCS252 S05 p. 9 of 9",
-                    "md": "8 0 { 1 | %d\n\n14 3 4\n\n68 0 32 2 3 8 6 7 8 3 3 { U\"\n\n] 4 3 5i Hl 19 1\n\n[ 8 8 9 8 8 34 1\u2091\u2080 9 2 3 { c 4 ] 6\n\nt 1 { 3 1 4 3 J 35 38 1 '13 M 14 { 0 1 3 0\n\n4 2 4 53/ na 0 1 J 3 1 3 4 5 67 j8\n\n3 4 3 { J89 J 4 M 4 3 7 3 { 4\n\nK 83 j ^ 8 J : 3\u2084 2\n\n{;j 0p $ 4 3 5 4 9 Q {\n\n7 8]3 } La 4 1 1 1 X 5 p 3 ~0 3 3 3\u2070\n\n441 $ 3 4 3Li 0 0 @ 0 3 { j 3\n\n4 # 3 j 6 8 a3;\n\n7 4 9 4 4 3 1 4 8 4\n\n4 Vii 6 } IJi3k\n\nF } $ 3 K 5 ~1 3 3 22 1 4\n\nCS252 S05 p. 9 of 9",
+                    "value": "CS252 S05 p. 9 of 9",
+                    "md": "CS252 S05 p. 9 of 9",
                     "rows": null,
                     "bBox": {
-                        "x": 122.0,
-                        "y": 88.0,
-                        "w": 501.0,
-                        "h": 665.23
+                        "x": 125.0,
+                        "y": 92.0,
+                        "w": 494.0,
+                        "h": 661.23
                     }
                 }
             ],
@@ -1346,12 +1099,12 @@
         }
     ],
     "job_metadata": {
-        "job_pages": 0,
+        "job_pages": 9,
         "job_auto_mode_triggered_pages": 0,
-        "job_is_cache_hit": true
+        "job_is_cache_hit": false
     },
     "file_name": "data/Culler_mid1-soln.pdf",
-    "job_id": "bf5e1291-ac8a-49a6-b36b-ca0c006bbff5",
+    "job_id": "e5e828fe-deb3-4a48-8e4c-45f6aa4abb25",
     "is_done": false,
     "error": null
 }

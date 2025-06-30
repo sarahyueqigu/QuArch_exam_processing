@@ -3,62 +3,23 @@
         {
             "page": 1,
             "text": "                                                                        Final Exam\n                                                 Digital Design and Computer Architecture (252-0028-00L)\n                                                                 ETH Z\u00fcrich, Spring 2023\n                                                                     Prof. Onur Mutlu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExamination Rules:\n    No books, no calculators, no computers or communication devices\n                                                                              We will not collect them\n\n\n\n\n\nTips:\n \u2022 Be cognizant of time.\n \u2022 Be concise.\n \u2022 Show work when needed.\n \u2022 Write legibly.",
-            "md": "# Final Exam\n\n# Digital Design and Computer Architecture (252-0028-00L)\n\n# ETH Z\u00fcrich, Spring 2023\n\n# Prof. Onur Mutlu\n\n# Examination Rules:\n\nNo books, no calculators, no computers or communication devices\n\nWe will not collect them\n\n# Tips:\n\n- Be cognizant of time.\n- Be concise.\n- Show work when needed.\n- Write legibly.",
+            "md": "\nFinal Exam\nDigital Design and Computer Architecture (252-0028-00L)\nETH Z\u00fcrich, Spring 2023\nProf. Onur Mutlu\n\n\n# Examination Rules:\n\nNo books, no calculators, no computers or communication devices\n\nWe will not collect them\n\n# Tips:\n\n- Be cognizant of time.\n- Be concise.\n- Show work when needed.\n- Write legibly.\n\n",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Final Exam",
-                    "md": "# Final Exam",
-                    "rows": null,
-                    "bBox": {
-                        "x": 257.49,
-                        "y": 59.18,
-                        "w": 80.6,
-                        "h": 14.0
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Digital Design and Computer Architecture (252-0028-00L)",
-                    "md": "# Digital Design and Computer Architecture (252-0028-00L)",
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Final Exam\nDigital Design and Computer Architecture (252-0028-00L)\nETH Z\u00fcrich, Spring 2023\nProf. Onur Mutlu",
+                    "md": "Final Exam\nDigital Design and Computer Architecture (252-0028-00L)\nETH Z\u00fcrich, Spring 2023\nProf. Onur Mutlu",
                     "rows": null,
                     "bBox": {
                         "x": 59.27,
-                        "y": 84.48,
+                        "y": 59.18,
                         "w": 477.18,
-                        "h": 17.0
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "ETH Z\u00fcrich, Spring 2023",
-                    "md": "# ETH Z\u00fcrich, Spring 2023",
-                    "rows": null,
-                    "bBox": {
-                        "x": 194.75,
-                        "y": 116.06,
-                        "w": 205.64,
-                        "h": 17.0
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Prof. Onur Mutlu",
-                    "md": "# Prof. Onur Mutlu",
-                    "rows": null,
-                    "bBox": {
-                        "x": 251.56,
-                        "y": 147.68,
-                        "w": 92.63,
-                        "h": 12.0
+                        "h": 100.5
                     }
                 },
                 {
@@ -127,7 +88,7 @@
         {
             "page": 2,
             "text": "This page intentionally left blank",
-            "md": "This page intentionally left blank",
+            "md": "\nThis page intentionally left blank\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -147,43 +108,56 @@
                     }
                 }
             ],
-            "status": "WARNING",
+            "status": "OK",
             "links": [],
             "width": 595.276,
             "height": 841.89,
             "triggeredAutoMode": false,
             "parsingMode": "accurate",
             "structuredData": null,
-            "noStructuredContent": true,
+            "noStructuredContent": false,
             "noTextContent": false
         },
         {
             "page": 3,
             "text": "1    Boolean Logic Circuits           [45 points]\n A, B, C, D   A                               D\nF ib    G3\n              F ib\n                                  f(0) = 0 f(1) = 1     f(n) = f(n \u2212 1) + f(n \u2212 2)    n \u2265 2\n              G3\n\n                                     F ib       sum of products\n                                      Inputs             Outputs\n                                A     B     C     D     F ib    G3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n         F ib  ( ~~A</s> \u00b7<s>B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + (<s>A</s> \u00b7<s>B</s> \u00b7<s>C</s> \u00b7 D) + (<s>A</s> \u00b7<s>B</s> \u00b7 C \u00b7<s>D</s>) + (<s>A</s> \u00b7<s>B</s> \u00b7 C \u00b7 D) + (<s>A</s> \u00b7 B \u00b7<s>C~~   \u00b7 D) +\n         (A \u00b7 ~~B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + (A \u00b7 B \u00b7<s>C~~             \u00b7 D)",
-            "md": "# 1 Boolean Logic Circuits\n\n[45 points]\n\n| A | B | C | D | F ib | G3 |\n| - | - | - | - | ---- | -- |\n\nf(0) = 0\n\nf(1) = 1\n\nf(n) = f(n \u2212 1) + f(n \u2212 2)    n \u2265 2\n\nF ib  (~~A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~           \u00b7 D)",
+            "md": "\n1    Boolean Logic Circuits           [45 points]\n\n\n# Boolean Logic Circuits\n\n# [45 points]\n\n| A | B | C | D | F ib | G3 |\n| - | - | - | - | ---- | -- |\n\nf(0) = 0\n\nf(1) = 1\n\nf(n) = f(n \u2212 1) + f(n \u2212 2)    n \u2265 2\n\nF ib  (~~A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~           \u00b7 D)\n\n\n",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "1 Boolean Logic Circuits",
-                    "md": "# 1 Boolean Logic Circuits",
+                    "type": "text",
+                    "lvl": null,
+                    "value": "1    Boolean Logic Circuits           [45 points]",
+                    "md": "1    Boolean Logic Circuits           [45 points]",
                     "rows": null,
                     "bBox": {
                         "x": 72.0,
                         "y": 67.62,
-                        "w": 219.16,
+                        "w": 238.88,
                         "h": 230.64
                     }
                 },
                 {
-                    "type": "text",
-                    "lvl": null,
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Boolean Logic Circuits",
+                    "md": "# Boolean Logic Circuits",
+                    "rows": null,
+                    "bBox": {
+                        "x": 95.67,
+                        "y": 67.62,
+                        "w": 195.49,
+                        "h": 230.64
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
                     "value": "[45 points]",
-                    "md": "[45 points]",
+                    "md": "# [45 points]",
                     "rows": null,
                     "bBox": {
                         "x": 258.43,
@@ -241,7 +215,7 @@
         {
             "page": 4,
             "text": "                  F ib\nF ib  ( ~~A</s> \u00b7<s>B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + ( ~~A</s> \u00b7<s>B~~   \u00b7<s>C</s> \u00b7 D) + (<s>A</s> \u00b7<s>B</s> \u00b7 C \u00b7<s>D</s>) + (<s>A</s> \u00b7<s>B</s> \u00b7 C \u00b7 D) + (<s>A</s> \u00b7 B \u00b7<s>C~~   \u00b7 D) +\n(A \u00b7 ~~B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + (A \u00b7 B \u00b7<s>C~~   \u00b7 D)\nF ib  (( ~~A</s>\u00b7<s>B</s>)\u00b7((<s>C</s> \u00b7<s>D</s>)+(<s>C</s> \u00b7D)+(C \u00b7<s>D</s>)+(C \u00b7D)))+(<s>A</s>\u00b7B\u00b7<s>C</s> \u00b7D)+(A\u00b7<s>B</s>\u00b7<s>C</s> \u00b7<s>D</s>)+(A\u00b7B\u00b7<s>C~~   \u00b7D)\nF ib  (( ~~A</s> \u00b7<s>B</s>) \u00b7 (1)) + (<s>A</s> \u00b7 B \u00b7<s>C</s> \u00b7 D) + (A \u00b7                <s>B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + (A \u00b7 B \u00b7<s>C~~   \u00b7 D)\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (<s>A</s> \u00b7 B \u00b7<s>C</s> \u00b7 D) + (A \u00b7<s>B</s> \u00b7             <s>C</s> \u00b7<s>D</s>) + (A \u00b7 B \u00b7<s>C~~   \u00b7 D)\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (<s>C</s>  \u00b7 ((<s>A</s> \u00b7 B \u00b7 D) + (A \u00b7<s>B</s> \u00b7         <s>D~~  ) + (A \u00b7 B \u00b7 D)))\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (<s>C</s>  \u00b7 ((B \u00b7 D) + (A \u00b7<s>B</s> \u00b7<s>D~~  )))\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (B \u00b7        <s>C</s> \u00b7 D) + (A \u00b7      <s>B</s> \u00b7<s>C</s>  \u00b7<s>D~~  )\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (A \u00b7        <s>B</s> \u00b7<s>C</s> \u00b7<s>D</s>) + (B \u00b7<s>C~~    \u00b7 D)\nF ib  ( ~~A</s> \u00b7 <s>B</s>) + (<s>B</s> \u00b7 <s>C</s> \u00b7<s>D</s>) + (B \u00b7<s>C~~      \u00b7 D)\n                                             G3                only\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)\nExplanation:\nG3  ( ~~A</s> \u00b7B \u00b7<s>C</s> \u00b7<s>D</s>)+(<s>A</s> \u00b7B \u00b7<s>C</s> \u00b7D)+(<s>A</s> \u00b7B \u00b7C \u00b7<s>D</s>)+(<s>A</s> \u00b7B \u00b7C \u00b7D)+(A \u00b7<s>B</s> \u00b7<s>C</s> \u00b7<s>D</s>)+(A \u00b7<s>B</s> \u00b7<s>C~~   \u00b7\nD)+(A \u00b7 ~~B</s>\u00b7C \u00b7<s>D</s>)+(A \u00b7<s>B</s>\u00b7C \u00b7D)+(A \u00b7B\u00b7<s>C</s> \u00b7<s>D</s>)+(A \u00b7B\u00b7<s>C</s> \u00b7D)+(A \u00b7B\u00b7C \u00b7<s>D~~  )+(A \u00b7B\u00b7C \u00b7D)\nG3  ( ~~A</s> \u00b7 B \u00b7 ((<s>C</s> \u00b7<s>D</s>) + (<s>C</s> \u00b7 D) + (C \u00b7<s>D</s>) + (C \u00b7 D))) + (A \u00b7<s>B</s> \u00b7 ((<s>C</s> \u00b7<s>D</s>) + (<s>C~~   \u00b7 D) + (C \u00b7\n ~~D</s>) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((<s>C</s> \u00b7<s>D</s>) + (<s>C</s> \u00b7 D) + (C            \u00b7<s>D~~  ) + (C \u00b7 D)))\nG3  ( ~~A</s> \u00b7 B \u00b7 (1)) + (A \u00b7           <s>B~~   \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\nG3  ( ~~A</s> \u00b7 B) + (A \u00b7 <s>B~~  ) + (A \u00b7 B)\nG3  A + B\nG3  A + B\nG3    <s>A</s> \u00b7<s>B</s>\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
-            "md": "# F ib\n\n(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib (~~A \u00b7 B) + (B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C  \u00b7D~~)\n\nF ib (~~A \u00b7 B) + (A \u00b7B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)\n\n# G3\n\n(A \u00b7 A) \u00b7 (B \u00b7 B)\n\nExplanation:\n\nG3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
+            "md": "\n# F ib\n\n(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib  ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib  (~~A \u00b7 B) + (B \u00b7        C \u00b7 D) + (A \u00b7      B \u00b7C  \u00b7D~~)\n\nF ib  (~~A \u00b7 B) + (A \u00b7        B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (B \u00b7 C \u00b7D) + (B \u00b7C~~    \u00b7 D)\n\n# G3\n\n(A \u00b7 A) \u00b7 (B \u00b7 B)\n\n# Explanation:\n\nG3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -263,8 +237,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib (~~A \u00b7 B) + (B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C  \u00b7D~~)\n\nF ib (~~A \u00b7 B) + (A \u00b7B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)",
-                    "md": "(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib (~~A \u00b7 B) + (B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C  \u00b7D~~)\n\nF ib (~~A \u00b7 B) + (A \u00b7B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)",
+                    "value": "(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib  ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib  (~~A \u00b7 B) + (B \u00b7        C \u00b7 D) + (A \u00b7      B \u00b7C  \u00b7D~~)\n\nF ib  (~~A \u00b7 B) + (A \u00b7        B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (B \u00b7 C \u00b7D) + (B \u00b7C~~    \u00b7 D)",
+                    "md": "(~~A \u00b7B \u00b7C \u00b7D) + (~~A \u00b7B~~ \u00b7C \u00b7 D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7 D) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  ((~~A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C~~ \u00b7D)\n\nF ib  ((~~A \u00b7B) \u00b7 (1)) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (A \u00b7 B \u00b7C \u00b7 D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7 B \u00b7C~~ \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((A \u00b7 B \u00b7 D) + (A \u00b7B \u00b7D~~) + (A \u00b7 B \u00b7 D)))\n\nF ib  (~~A \u00b7 B) + (C  \u00b7 ((B \u00b7 D) + (A \u00b7B \u00b7D~~)))\n\nF ib  (~~A \u00b7 B) + (B \u00b7        C \u00b7 D) + (A \u00b7      B \u00b7C  \u00b7D~~)\n\nF ib  (~~A \u00b7 B) + (A \u00b7        B \u00b7C \u00b7D) + (B \u00b7C~~  \u00b7 D)\n\nF ib  (~~A \u00b7 B) + (B \u00b7 C \u00b7D) + (B \u00b7C~~    \u00b7 D)",
                     "rows": null,
                     "bBox": {
                         "x": 78.65,
@@ -289,8 +263,34 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "(A \u00b7 A) \u00b7 (B \u00b7 B)\n\nExplanation:\n\nG3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
-                    "md": "(A \u00b7 A) \u00b7 (B \u00b7 B)\n\nExplanation:\n\nG3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
+                    "value": "(A \u00b7 A) \u00b7 (B \u00b7 B)",
+                    "md": "(A \u00b7 A) \u00b7 (B \u00b7 B)",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 163.99,
+                        "w": 220.45,
+                        "h": 374.04
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Explanation:",
+                    "md": "# Explanation:",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 462.59,
+                        "w": 64.0,
+                        "h": 10.0
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "G3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
+                    "md": "G3  (~~A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7 D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D)+(A \u00b7B\u00b7C \u00b7D~~)+(A \u00b7B\u00b7C \u00b7D)\n\nG3  (~~A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D) + (C \u00b7 D))) + (A \u00b7 B \u00b7 ((C \u00b7D) + (C \u00b7 D) + (C \u00b7D~~) + (C \u00b7 D)))\n\nG3  (~~A \u00b7 B \u00b7 (1)) + (A \u00b7           B~~ \u00b7 (1)) + (A \u00b7 B \u00b7 (1))\n\nG3  (~~A \u00b7 B) + (A \u00b7 B~~) + (A \u00b7 B)\n\nG3  A + B\n\nG3  A + B\n\nG3    A \u00b7B\n\nG3  (A \u00b7 A) \u00b7 (B \u00b7 B)",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
@@ -313,7 +313,7 @@
         {
             "page": 5,
             "text": "2     Finite State Machines                [45 points]\n2.1    Simplifying an FSM [20 points]\n                                          one input / one output\n                                             0/1                 1/0\n                                                      1/0\n                                              A         0/1      B\n                                         1/0            0/1         1/0\n                                    Reset     C                  D\n                                                       0/1\n\n  not                   not\n\n           Current State Input Next State Output\n                 A         0       A        1\n                 A         1       B        0\n                 B         0       A        1\n                 B         1       B        0\n                 C         0       D        1\n                 C         1       A        0\n                 D         0       A        1\n                 D         1       B        0\n\n\n\n           Current State Input Next State Output\n                 X         0       X        1\n                 X         1       X        0\n                 C         0       X        1\n                 C         1       X        0\n                                                                     only\n      1/0\n      0/1\n             S",
-            "md": "# Finite State Machines\n\n# Simplifying an FSM\n\n[45 points]\n\n[20 points]\n\n|   | one input / one output |     |     |   |\n| - | ---------------------- | --- | --- | - |\n|   | 0/1                    | 1/0 |     |   |\n|   | A                      | 0/1 | B   |   |\n|   | 1/0                    | C   | 0/1 | D |\n|   |                        | 0/1 |     |   |\n\n# Current State Input Next State Output\n\n| A | 0 | A | 1 |\n| - | - | - | - |\n| A | 1 | B | 0 |\n| B | 0 | A | 1 |\n| B | 1 | B | 0 |\n| C | 0 | D | 1 |\n| C | 1 | A | 0 |\n| D | 0 | A | 1 |\n| D | 1 | B | 0 |\n\n# Current State Input Next State Output\n\n| X | 0 | X | 1 |\n| - | - | - | - |\n| X | 1 | X | 0 |\n| C | 0 | X | 1 |\n| C | 1 | X | 0 |\n\nonly\n\n1/0\n\n0/1\n\nS",
+            "md": "\n# 2 Finite State Machines\n\n# 2.1 Simplifying an FSM\n\n[45 points]\n\n[20 points]\n\n|       | one input / one output |     |\n| ----- | ---------------------- | --- |\n|       | 0/1                    | 1/0 |\n| A     | 0/1                    | B   |\n| 1/0   | 0/1                    | 1/0 |\n| Reset | C                      | D   |\n|       | 0/1                    |     |\n\nnot\n\nnot\n\n| Current State | Input | Next State | Output |\n| ------------- | ----- | ---------- | ------ |\n| A             | 0     | A          | 1      |\n| A             | 1     | B          | 0      |\n| B             | 0     | A          | 1      |\n| B             | 1     | B          | 0      |\n| C             | 0     | D          | 1      |\n| C             | 1     | A          | 0      |\n| D             | 0     | A          | 1      |\n| D             | 1     | B          | 0      |\n\n| Current State | Input | Next State | Output |\n| ------------- | ----- | ---------- | ------ |\n| X             | 0     | X          | 1      |\n| X             | 1     | X          | 0      |\n| C             | 0     | X          | 1      |\n| C             | 1     | X          | 0      |\n\nonly\n\n1/0\n\n0/1\n\nS\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -322,27 +322,27 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Finite State Machines",
-                    "md": "# Finite State Machines",
+                    "value": "2 Finite State Machines",
+                    "md": "# 2 Finite State Machines",
                     "rows": null,
                     "bBox": {
-                        "x": 95.67,
+                        "x": 72.0,
                         "y": 67.62,
-                        "w": 175.03,
+                        "w": 198.69,
                         "h": 600.82
                     }
                 },
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Simplifying an FSM",
-                    "md": "# Simplifying an FSM",
+                    "value": "2.1 Simplifying an FSM",
+                    "md": "# 2.1 Simplifying an FSM",
                     "rows": null,
                     "bBox": {
-                        "x": 122.89,
-                        "y": 177.62,
-                        "w": 147.8,
-                        "h": 490.82
+                        "x": 72.0,
+                        "y": 67.62,
+                        "w": 198.69,
+                        "h": 600.82
                     }
                 },
                 {
@@ -362,41 +362,36 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|   | one input / one output |     |     |   |\n| - | ---------------------- | --- | --- | - |\n|   | 0/1                    | 1/0 |     |   |\n|   | A                      | 0/1 | B   |   |\n|   | 1/0                    | C   | 0/1 | D |\n|   |                        | 0/1 |     |   |",
+                    "md": "|       | one input / one output |     |\n| ----- | ---------------------- | --- |\n|       | 0/1                    | 1/0 |\n| A     | 0/1                    | B   |\n| 1/0   | 0/1                    | 1/0 |\n| Reset | C                      | D   |\n|       | 0/1                    |     |",
                     "rows": [
                         [
                             "",
                             "one input / one output",
-                            "",
-                            "",
                             ""
                         ],
                         [
                             "",
                             "0/1",
-                            "1/0",
-                            "",
-                            ""
+                            "1/0"
                         ],
                         [
-                            "",
                             "A",
                             "0/1",
-                            "B",
-                            ""
+                            "B"
                         ],
                         [
-                            "",
                             "1/0",
-                            "C",
                             "0/1",
+                            "1/0"
+                        ],
+                        [
+                            "Reset",
+                            "C",
                             "D"
                         ],
                         [
                             "",
-                            "",
                             "0/1",
-                            "",
                             ""
                         ]
                     ],
@@ -408,24 +403,30 @@
                     }
                 },
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Current State Input Next State Output",
-                    "md": "# Current State Input Next State Output",
+                    "type": "text",
+                    "lvl": null,
+                    "value": "not\n\nnot",
+                    "md": "not\n\nnot",
                     "rows": null,
                     "bBox": {
-                        "x": 100.54,
-                        "y": 177.62,
-                        "w": 174.73,
-                        "h": 490.82
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 595.28,
+                        "h": 841.89
                     }
                 },
                 {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| A | 0 | A | 1 |\n| - | - | - | - |\n| A | 1 | B | 0 |\n| B | 0 | A | 1 |\n| B | 1 | B | 0 |\n| C | 0 | D | 1 |\n| C | 1 | A | 0 |\n| D | 0 | A | 1 |\n| D | 1 | B | 0 |",
+                    "md": "| Current State | Input | Next State | Output |\n| ------------- | ----- | ---------- | ------ |\n| A             | 0     | A          | 1      |\n| A             | 1     | B          | 0      |\n| B             | 0     | A          | 1      |\n| B             | 1     | B          | 0      |\n| C             | 0     | D          | 1      |\n| C             | 1     | A          | 0      |\n| D             | 0     | A          | 1      |\n| D             | 1     | B          | 0      |",
                     "rows": [
+                        [
+                            "Current State",
+                            "Input",
+                            "Next State",
+                            "Output"
+                        ],
                         [
                             "A",
                             "0",
@@ -483,24 +484,17 @@
                     }
                 },
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Current State Input Next State Output",
-                    "md": "# Current State Input Next State Output",
-                    "rows": null,
-                    "bBox": {
-                        "x": 100.54,
-                        "y": 177.62,
-                        "w": 174.73,
-                        "h": 490.82
-                    }
-                },
-                {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| X | 0 | X | 1 |\n| - | - | - | - |\n| X | 1 | X | 0 |\n| C | 0 | X | 1 |\n| C | 1 | X | 0 |",
+                    "md": "| Current State | Input | Next State | Output |\n| ------------- | ----- | ---------- | ------ |\n| X             | 0     | X          | 1      |\n| X             | 1     | X          | 0      |\n| C             | 0     | X          | 1      |\n| C             | 1     | X          | 0      |",
                     "rows": [
+                        [
+                            "Current State",
+                            "Input",
+                            "Next State",
+                            "Output"
+                        ],
                         [
                             "X",
                             "0",
@@ -656,7 +650,7 @@
         {
             "page": 7,
             "text": "3    ISA vs. Microarchitecture                  [45 points]\nNote:  we will subtract 2 points for each incorrect answer and award 0 points for each unanswered\nquestion.\n                                 1. ISA              Microarchitecture\n                                    ISA           2. Microarchitecture\n                                 1. ISA              Microarchitecture\n                                    ISA           2. Microarchitecture\n                                    ISA           2. Microarchitecture\n                                 1. ISA              Microarchitecture\n                                 1. ISA              Microarchitecture\n                                    ISA           2. Microarchitecture\n                                    ISA           2. Microarchitecture\n                                    ISA           2. Microarchitecture\n                                 1. ISA              Microarchitecture\n                                    ISA           2. Microarchitecture\n                                    ISA           2. Microarchitecture\n                                    ISA           2. Microarchitecture\n                                 1. ISA              Microarchitecture",
-            "md": "# 3 ISA vs. Microarchitecture\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n\n| 1. ISA | Microarchitecture    |\n| ------ | -------------------- |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n",
+            "md": "# 3 ISA vs. Microarchitecture\n\n[45 points]\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n\n| 1. ISA | Microarchitecture    |\n| ------ | -------------------- |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| ISA    | 2. Microarchitecture |\n| 1. ISA | Microarchitecture    |\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -678,14 +672,14 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.",
-                    "md": "Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.",
+                    "value": "[45 points]\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.",
+                    "md": "[45 points]\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.",
                     "rows": null,
                     "bBox": {
                         "x": 72.0,
-                        "y": 111.75,
+                        "y": 70.85,
                         "w": 451.51,
-                        "h": 21.96
+                        "h": 62.85
                     }
                 },
                 {
@@ -776,7 +770,7 @@
         {
             "page": 8,
             "text": "   4     Verilog   [60 points]\n   4.1    What Does This Code Do?          [30 points]\n 1   module  module_x  (input wire clk, input wire rst,\n 2      input wire [7:0] in,  output  wire [7:0] out);\n 3\n 4   reg  [7:0] var1, var2, var3, var4;\n 5\n 6   assign  out =  (var4 == in)  ?  var3 : var4;\n 7\n 8   always  @(posedge clk) begin\n 9      if (rst) begin\n10        var1  <= 8\u2019b0;     var2    <= 8\u2019b1;\n11        var3  <= 8\u2019b0;     var4    <= 8\u2019b0;\n12      end else begin\n13        var1  <= var2;     var2    <= var1 + var2;\n14        var3  <= var1 +  var2;\n15        var4  <= var4 +  8\u2019b1;\n16      end\n17   end\n18   endmodule\n                        in always\n   in = 8\u2019h09\n       unsigned decimal                out\n                     out               clk\n     posedge 0 posedge 1 \u2026\n       clk\n       rst\n       out         0    1    2    3    4    5    6    7    8   55\n                                           \u2026\n                  fill in all 10 empty boxes\n\n         Explanation.\n                               inth                                       in\n                               in                        out\n         0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
-            "md": "# Verilog [60 points]\n\n# 4.1 What Does This Code Do? [30 points]\n\nmodule module_x (input wire clk, input wire rst,\ninput wire [7:0] in, output wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out = (var4 == in) ? var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1 <= 8'b0;     var2 <= 8'b1;\nvar3 <= 8'b0;     var4 <= 8'b0;\nend else begin\nvar1 <= var2;     var2 <= var1 + var2;\nvar3 <= var1 + var2;\nvar4 <= var4 + 8'b1;\nend\nend\nendmodule\n\n| in        | unsigned decimal | out | clk |\n| --------- | ---------------- | --- | --- |\n| posedge 0 | 0                | 1   | 2   |\n| 3         | 4                | 5   | 6   |\n| 7         | 8                | 55  |     |\n\nExplanation.\n\ninth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
+            "md": "\n# Verilog\n\n# 4.1 What Does This Code Do?\n\nmodule module_x (input wire clk, input wire rst,\ninput wire [7:0] in,  output  wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out =  (var4 == in)  ?  var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1  <= 8'b0;     var2    <= 8'b1;\nvar3  <= 8'b0;     var4    <= 8'b0;\nend else begin\nvar1  <= var2;     var2    <= var1 + var2;\nvar3  <= var1 +  var2;\nvar4  <= var4 +  8'b1;\nend\nend\nendmodule\n\n|   |           | in                         | unsigned decimal | out | clk |   |   |   |   |    |\n| - | --------- | -------------------------- | ---------------- | --- | --- | - | - | - | - | -- |\n|   | posedge 0 | posedge 1                  | \u2026                | out |     |   |   |   |   |    |\n|   | 0         | 1                          | 2                | 3   | 4   | 5 | 6 | 7 | 8 | 55 |\n|   |           | fill in all 10 empty boxes |                  |     |     |   |   |   |   |    |\n\n# Explanation.\n\ninth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55\n\n",
             "images": [
                 {
                     "name": "img_p7_1.png",
@@ -796,34 +790,34 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Verilog [60 points]",
-                    "md": "# Verilog [60 points]",
+                    "value": "Verilog",
+                    "md": "# Verilog",
                     "rows": null,
                     "bBox": {
-                        "x": 58.65,
+                        "x": 95.67,
                         "y": 67.62,
-                        "w": 245.67,
-                        "h": 584.63
+                        "w": 49.0,
+                        "h": 14.0
                     }
                 },
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "4.1 What Does This Code Do? [30 points]",
-                    "md": "# 4.1 What Does This Code Do? [30 points]",
+                    "value": "4.1 What Does This Code Do?",
+                    "md": "# 4.1 What Does This Code Do?",
                     "rows": null,
                     "bBox": {
                         "x": 58.65,
                         "y": 67.62,
-                        "w": 261.96,
-                        "h": 584.63
+                        "w": 203.15,
+                        "h": 411.03
                     }
                 },
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "module module_x (input wire clk, input wire rst,\ninput wire [7:0] in, output wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out = (var4 == in) ? var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1 <= 8'b0;     var2 <= 8'b1;\nvar3 <= 8'b0;     var4 <= 8'b0;\nend else begin\nvar1 <= var2;     var2 <= var1 + var2;\nvar3 <= var1 + var2;\nvar4 <= var4 + 8'b1;\nend\nend\nendmodule",
-                    "md": "module module_x (input wire clk, input wire rst,\ninput wire [7:0] in, output wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out = (var4 == in) ? var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1 <= 8'b0;     var2 <= 8'b1;\nvar3 <= 8'b0;     var4 <= 8'b0;\nend else begin\nvar1 <= var2;     var2 <= var1 + var2;\nvar3 <= var1 + var2;\nvar4 <= var4 + 8'b1;\nend\nend\nendmodule",
+                    "value": "module module_x (input wire clk, input wire rst,\ninput wire [7:0] in,  output  wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out =  (var4 == in)  ?  var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1  <= 8'b0;     var2    <= 8'b1;\nvar3  <= 8'b0;     var4    <= 8'b0;\nend else begin\nvar1  <= var2;     var2    <= var1 + var2;\nvar3  <= var1 +  var2;\nvar4  <= var4 +  8'b1;\nend\nend\nendmodule",
+                    "md": "module module_x (input wire clk, input wire rst,\ninput wire [7:0] in,  output  wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out =  (var4 == in)  ?  var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1  <= 8'b0;     var2    <= 8'b1;\nvar3  <= 8'b0;     var4    <= 8'b0;\nend else begin\nvar1  <= var2;     var2    <= var1 + var2;\nvar3  <= var1 +  var2;\nvar4  <= var4 +  8'b1;\nend\nend\nendmodule",
                     "rows": null,
                     "bBox": {
                         "x": 58.65,
@@ -836,30 +830,58 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| in        | unsigned decimal | out | clk |\n| --------- | ---------------- | --- | --- |\n| posedge 0 | 0                | 1   | 2   |\n| 3         | 4                | 5   | 6   |\n| 7         | 8                | 55  |     |",
+                    "md": "|   |           | in                         | unsigned decimal | out | clk |   |   |   |   |    |\n| - | --------- | -------------------------- | ---------------- | --- | --- | - | - | - | - | -- |\n|   | posedge 0 | posedge 1                  | \u2026                | out |     |   |   |   |   |    |\n|   | 0         | 1                          | 2                | 3   | 4   | 5 | 6 | 7 | 8 | 55 |\n|   |           | fill in all 10 empty boxes |                  |     |     |   |   |   |   |    |",
                     "rows": [
                         [
+                            "",
+                            "",
                             "in",
                             "unsigned decimal",
                             "out",
-                            "clk"
+                            "clk",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
                         ],
                         [
+                            "",
                             "posedge 0",
+                            "posedge 1",
+                            "\u2026",
+                            "out",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
                             "0",
                             "1",
-                            "2"
-                        ],
-                        [
+                            "2",
                             "3",
                             "4",
                             "5",
-                            "6"
-                        ],
-                        [
+                            "6",
                             "7",
                             "8",
-                            "55",
+                            "55"
+                        ],
+                        [
+                            "",
+                            "",
+                            "fill in all 10 empty boxes",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                             ""
                         ]
                     ],
@@ -871,10 +893,23 @@
                     }
                 },
                 {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Explanation.",
+                    "md": "# Explanation.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 94.57,
+                        "y": 606.39,
+                        "w": 64.0,
+                        "h": 10.0
+                    }
+                },
+                {
                     "type": "text",
                     "lvl": null,
-                    "value": "Explanation.\n\ninth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
-                    "md": "Explanation.\n\ninth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
+                    "value": "inth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
+                    "md": "inth\nin\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
                     "rows": null,
                     "bBox": {
                         "x": 58.65,
@@ -897,7 +932,7 @@
         {
             "page": 9,
             "text": "    4.2   Is ChatGPT not Right?        [30 points]\n\n\n\n\n1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\n                            Hint:                           ?\n\n\n\n                    stride != 3\u2019b0 ?     stride :     3\u2019b1;\n                           assign       ==                  let",
-            "md": "# 4.2 Is ChatGPT not Right? [30 points]\n\n1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\nHint:                           ?\n\nstride != 3\u2019b0 ?     stride :     3\u2019b1;\n\nassign       ==                  let",
+            "md": "# 4.2 Is ChatGPT not Right? [30 points]\n\n1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\n\nHint: ?\n\nstride != 3\u2019b0 ? stride : 3\u2019b1; assign == let",
             "images": [],
             "charts": [],
             "tables": [],
@@ -919,8 +954,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\nHint:                           ?\n\nstride != 3\u2019b0 ?     stride :     3\u2019b1;\n\nassign       ==                  let",
-                    "md": "1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\nHint:                           ?\n\nstride != 3\u2019b0 ?     stride :     3\u2019b1;\n\nassign       ==                  let",
+                    "value": "1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\n\nHint: ?\n\nstride != 3\u2019b0 ? stride : 3\u2019b1; assign == let",
+                    "md": "1   module movement  (\n2     input clk,     input rst,\n3     input up,      input down,\n4     input left,    input right,\n5     1  stride,\n6     output  [7:0] x_coord,\n7     output  [7:0] y_coord\n8   );\n9    2  x_internal, y_internal;  // 8-bit signals\n10  wire [2:0] move_amount  =    3 ; // if stride is not zero, move by stride  amount, else move by 1\n11  always @(posedge clk) begin\n12    if (rst) begin\n13       x_internal <= 0; y_internal <= 0;\n14    end else begin\n15       if (up) y_internal <= y_internal   + move_amount;\n16       else if (down)  y_internal <= y_internal  -  move_amount;\n17       else if (left)  x_internal <= x_internal  -  move_amount;\n18       x_internal <= x_internal  + move_amount;\n19    end\n20  end\n21   4  x_coord  =  x_internal;  // output  coordinate\n22   4  y_coord  =  y_internal;  // output  coordinate\n23  endmodule\n\nHint: ?\n\nstride != 3\u2019b0 ? stride : 3\u2019b1; assign == let",
                     "rows": null,
                     "bBox": {
                         "x": 55.26,
@@ -943,7 +978,7 @@
         {
             "page": 10,
             "text": "Explanation.\n           stride\n                                                    input reg\nreg [7:0]\n                                                          stride != 3\u2019b0 ?          stride\n:   3\u2019b1;                                                                      stride\n                                                          3\u2019b1\n                                                                      assign x_coord =\nx_internal;\n\n\nExplanation.                                               x_internal\n         move_amount",
-            "md": "# Explanation\n\n| stride          | input reg                       |\n| --------------- | ------------------------------- |\n| reg \\[7:0]      | stride != 3\u2019b0 ? stride : 3\u2019b1; |\n| stride          | 3\u2019b1                            |\n| assign x\\_coord | x\\_internal;                    |\n\n# Explanation\n\n| move\\_amount | x\\_internal |\n| ------------ | ----------- |\n",
+            "md": "\n\n# Explanation\n\nstride\n\n| input reg        | reg \\[7:0] |\n| ---------------- | ---------- |\n| stride != 3\u2019b0 ? | stride     |\n| :                | 3\u2019b1;      |\n| stride           | 3\u2019b1       |\n\nassign x_coord = x_internal;\n\n# Explanation\n\nx_internal\n\nmove_amount\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -963,33 +998,59 @@
                     }
                 },
                 {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "stride",
+                    "md": "stride",
+                    "rows": null,
+                    "bBox": {
+                        "x": 108.66,
+                        "y": 146.17,
+                        "w": 392.19,
+                        "h": 59.59
+                    }
+                },
+                {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| stride          | input reg                       |\n| --------------- | ------------------------------- |\n| reg \\[7:0]      | stride != 3\u2019b0 ? stride : 3\u2019b1; |\n| stride          | 3\u2019b1                            |\n| assign x\\_coord | x\\_internal;                    |",
+                    "md": "| input reg        | reg \\[7:0] |\n| ---------------- | ---------- |\n| stride != 3\u2019b0 ? | stride     |\n| :                | 3\u2019b1;      |\n| stride           | 3\u2019b1       |",
                     "rows": [
                         [
-                            "stride",
-                            "input reg"
+                            "input reg",
+                            "reg [7:0]"
                         ],
                         [
-                            "reg [7:0]",
-                            "stride != 3\u2019b0 ? stride : 3\u2019b1;"
+                            "stride != 3\u2019b0 ?",
+                            "stride"
+                        ],
+                        [
+                            ":",
+                            "3\u2019b1;"
                         ],
                         [
                             "stride",
                             "3\u2019b1"
-                        ],
-                        [
-                            "assign x_coord",
-                            "x_internal;"
                         ]
                     ],
                     "bBox": {
                         "x": 94.56,
                         "y": 146.17,
                         "w": 406.31,
-                        "h": 109.19
+                        "h": 83.5
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "assign x_coord = x_internal;",
+                    "md": "assign x_coord = x_internal;",
+                    "rows": null,
+                    "bBox": {
+                        "x": 94.56,
+                        "y": 233.4,
+                        "w": 406.17,
+                        "h": 150.39
                     }
                 },
                 {
@@ -1006,21 +1067,16 @@
                     }
                 },
                 {
-                    "type": "table",
+                    "type": "text",
                     "lvl": null,
-                    "value": null,
-                    "md": "| move\\_amount | x\\_internal |\n| ------------ | ----------- |",
-                    "rows": [
-                        [
-                            "move_amount",
-                            "x_internal"
-                        ]
-                    ],
+                    "value": "x_internal\n\nmove_amount",
+                    "md": "x_internal\n\nmove_amount",
+                    "rows": null,
                     "bBox": {
-                        "x": 94.56,
-                        "y": 245.36,
+                        "x": 94.57,
+                        "y": 373.79,
                         "w": 405.77,
-                        "h": 150.39
+                        "h": 21.95
                     }
                 }
             ],
@@ -1037,12 +1093,25 @@
         {
             "page": 11,
             "text": "5     Memory Potpourri               [45 points]\n                               Note: we will subtract 2 points for each incorrect answer and award 0\npoints for each unanswered question.\n       1. True              False\n        True             2. False\n        True             2. False\n        True             2. False\n       1. True              False\n        True             2. False\n        True             2. False\n       1. True              False\n                                            not\n        True             2. False\n        True             2. False\n        True             2. False\n        True             2. False\n       1. True              False\n        True             2. False\n       1. True              False",
-            "md": "# Memory Potpourri\n\n[45 points]\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n\n| 1.   | True | False |\n| ---- | ---- | ----- |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| 1.   | True | False |\n",
+            "md": "\nMemory Potpourri\n\n# Memory Potpourri\n\n[45 points]\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n\n| 1.   | True | False |\n| ---- | ---- | ----- |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| True | 2.   | False |\n| 1.   | True | False |\n| True | 2.   | False |\n| 1.   | True | False |\n\n\n",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Memory Potpourri",
+                    "md": "Memory Potpourri",
+                    "rows": null,
+                    "bBox": {
+                        "x": 95.67,
+                        "y": 67.62,
+                        "w": 130.15,
+                        "h": 14.0
+                    }
+                },
                 {
                     "type": "heading",
                     "lvl": 1,
@@ -1172,7 +1241,7 @@
         {
             "page": 12,
             "text": "6    Performance Evaluation               [50 points]\n                       P 1         load instructions   6 cycles store instructions   6 cycles arith-\nmetic instructions   2 cycles     branch instructions   2 cycles                         A\n                                                                       A\n     P 1\n          CP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n          CP I = 4.4\n                                                                            P 1\n     all                                                              P 2\n                     P 2                   P 1\n                A                                  A                            P 2\n          CP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n          CP I = 8.4\n                                            P 1   P 2\n          P 2        \u00d7            P 1\n          Explanation.\n          Execution T ime P 1 = instructions \u00d7 CP IP 1 \u00d7 clock time\n          Execution T ime P 2 = instructions \u00d7 CP IP 2 \u00d7 clock_time\n          clock time = clock_f 1                              2\n                              requency\n                             Execution T ime P 2      <     Execution T ime P 1           =\n                                                                                           \u21d2\n           Execution_T ime_P 1 > 1\n           Execution_T ime_P 2\n          =    instructions\u00d7CP I  \u00d7clock_time\n            \u21d2  instructions\u00d7CP IP 1 \u00d7 clock_time\n          =    4.4\u00d7clock_time  P 2   2\n            \u21d2  8.4\u00d7 clock_time\n          =    4.4    2\n            \u21d2  4.2\n          =\n            \u21d2 1.05",
-            "md": "# 6 Performance Evaluation\n\n| load instructions       | 6 cycles |\n| ----------------------- | -------- |\n| store instructions      | 6 cycles |\n| arithmetic instructions | 2 cycles |\n| branch instructions     | 2 cycles |\n\nP 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nA\n\nA\n\nP 2\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1\n\n# Explanation.\n\nExecution Time P 1 = instructions \u00d7 CP I P 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP I P 2 \u00d7 clock time\n\nclock time = clock frequency\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock time\n\ninstructions \u00d7 CP I P 1 \u00d7 clock time\n\n4.4 \u00d7 clock time P 2\n\n8.4 \u00d7 clock time\n\n4.4\n\n4.2\n\n1.05",
+            "md": "# 6 Performance Evaluation\n\n| load instructions       | 6 cycles |\n| ----------------------- | -------- |\n| store instructions      | 6 cycles |\n| arithmetic instructions | 2 cycles |\n| branch instructions     | 2 cycles |\n\nP 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1\n\n# Explanation.\n\nExecution Time P 1 = instructions \u00d7 CP IP 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP IP 2 \u00d7 clock_time\n\nclock time = clock_f 1\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock_time\n\n\u21d2 instructions \u00d7 CP IP 1 \u00d7 clock_time\n\n= 4.4 \u00d7 clock_time\n\nP 2 2\n\n\u21d2 8.4 \u00d7 clock_time\n\n= 4.4 2\n\n\u21d2 4.2\n\n\u21d2 1.05",
             "images": [],
             "charts": [],
             "tables": [],
@@ -1224,8 +1293,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "P 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nA\n\nA\n\nP 2\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1",
-                    "md": "P 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nA\n\nA\n\nP 2\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1",
+                    "value": "P 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1",
+                    "md": "P 1\n\nCP I = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP I = 4.4\n\nP 1\n\nall\n\nP 2\n\nP 2\n\nP 1\n\nCP I = 0.4 \u00d7 10 + 0.2 \u00d7 10 + 0.3 \u00d7 6 + 0.1 \u00d7 6\n\nCP I = 8.4\n\nP 1 P 2\n\nP 2 \u00d7 P 1",
                     "rows": null,
                     "bBox": {
                         "x": 72.0,
@@ -1250,8 +1319,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "Execution Time P 1 = instructions \u00d7 CP I P 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP I P 2 \u00d7 clock time\n\nclock time = clock frequency\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock time\n\ninstructions \u00d7 CP I P 1 \u00d7 clock time\n\n4.4 \u00d7 clock time P 2\n\n8.4 \u00d7 clock time\n\n4.4\n\n4.2\n\n1.05",
-                    "md": "Execution Time P 1 = instructions \u00d7 CP I P 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP I P 2 \u00d7 clock time\n\nclock time = clock frequency\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock time\n\ninstructions \u00d7 CP I P 1 \u00d7 clock time\n\n4.4 \u00d7 clock time P 2\n\n8.4 \u00d7 clock time\n\n4.4\n\n4.2\n\n1.05",
+                    "value": "Execution Time P 1 = instructions \u00d7 CP IP 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP IP 2 \u00d7 clock_time\n\nclock time = clock_f 1\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock_time\n\n\u21d2 instructions \u00d7 CP IP 1 \u00d7 clock_time\n\n= 4.4 \u00d7 clock_time\n\nP 2 2\n\n\u21d2 8.4 \u00d7 clock_time\n\n= 4.4 2\n\n\u21d2 4.2\n\n\u21d2 1.05",
+                    "md": "Execution Time P 1 = instructions \u00d7 CP IP 1 \u00d7 clock time\n\nExecution Time P 2 = instructions \u00d7 CP IP 2 \u00d7 clock_time\n\nclock time = clock_f 1\n\nExecution Time P 2 &lt; Execution Time P 1\n\nExecution Time P 1 &gt; 1\n\nExecution Time P 2 = instructions \u00d7 CP I \u00d7 clock_time\n\n\u21d2 instructions \u00d7 CP IP 1 \u00d7 clock_time\n\n= 4.4 \u00d7 clock_time\n\nP 2 2\n\n\u21d2 8.4 \u00d7 clock_time\n\n= 4.4 2\n\n\u21d2 4.2\n\n\u21d2 1.05",
                     "rows": null,
                     "bBox": {
                         "x": 78.65,
@@ -1274,7 +1343,7 @@
         {
             "page": 13,
             "text": "                                        P 1                                         without\n                                        only one\nALU              ALU       halves\nLSU    asymmetric load-store unit       halves                                   doubles\n                            P 1                A\n\n Explanation.\n            A\n\n SpeedupALU = (1\u22120.3\u22120.1   0.3+0.1 = 1.25\n                        1)+  2\n SpeedupLSU = (1\u22120.4\u22120.  1 0.4      = 1.0\n                        2)+ 2 +0.2\u00d72\n                                   \u00d7\n Alternative Solution.\n                                       P 1\n CP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n CP IALU = 4.0                       ~~2</s>  <s>2~~  \n                                       P 1\n CP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n CP ILSU = 4.4    ~~2~~  \n       CP IALU   <  CP ILSU",
-            "md": "# Current Page\n\nwithout only one\n\n| ALU | ALU | halves | LSU | asymmetric load-store unit | halves | doubles |\n| --- | --- | ------ | --- | -------------------------- | ------ | ------- |\n\n# Explanation\n\nA\n\nSpeedupALU = (1\u22120.3\u22120.1)/(1+0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(2)+2+0.2\u00d72 = 1.0\n\n# Alternative Solution\n\nP 1\n\nCP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0\n\n~~2 2~~\n\nP 1\n\nCP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU < CP ILSU",
+            "md": "\n\n# 1\n\nwithout only one\n\n| ALU | ALU | halves | LSU | asymmetric load-store unit | halves | doubles |\n| --- | --- | ------ | --- | -------------------------- | ------ | ------- |\n\n# A\n\nExplanation.\n\n# A\n\nSpeedupALU = (1\u22120.3\u22120.1)/(0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(0.4) = 1.0\n\n# Alternative Solution.\n\n# P 1\n\nCP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0\n\n# P 1\n\nCP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU &lt; CP ILSU\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -1283,14 +1352,14 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Current Page",
-                    "md": "# Current Page",
+                    "value": "1",
+                    "md": "# 1",
                     "rows": null,
                     "bBox": {
-                        "x": 118.23,
-                        "y": 324.39,
-                        "w": 383.45,
-                        "h": 10.0
+                        "x": 228.74,
+                        "y": 387.6,
+                        "w": 4.0,
+                        "h": 7.0
                     }
                 },
                 {
@@ -1332,8 +1401,8 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Explanation",
-                    "md": "# Explanation",
+                    "value": "A",
+                    "md": "# A",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
@@ -1345,21 +1414,21 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "A\n\nSpeedupALU = (1\u22120.3\u22120.1)/(1+0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(2)+2+0.2\u00d72 = 1.0",
-                    "md": "A\n\nSpeedupALU = (1\u22120.3\u22120.1)/(1+0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(2)+2+0.2\u00d72 = 1.0",
+                    "value": "Explanation.",
+                    "md": "Explanation.",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
-                        "y": 324.39,
+                        "y": 312.43,
                         "w": 383.45,
-                        "h": 98.05
+                        "h": 21.95
                     }
                 },
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "Alternative Solution",
-                    "md": "# Alternative Solution",
+                    "value": "A",
+                    "md": "# A",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
@@ -1371,8 +1440,73 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "P 1\n\nCP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0\n\n~~2 2~~\n\nP 1\n\nCP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU < CP ILSU",
-                    "md": "P 1\n\nCP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0\n\n~~2 2~~\n\nP 1\n\nCP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU < CP ILSU",
+                    "value": "SpeedupALU = (1\u22120.3\u22120.1)/(0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(0.4) = 1.0",
+                    "md": "SpeedupALU = (1\u22120.3\u22120.1)/(0.3+0.1) = 1.25\n\nSpeedupLSU = (1\u22120.4\u22120.1)/(0.4) = 1.0",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 324.39,
+                        "w": 383.45,
+                        "h": 80.52
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Alternative Solution.",
+                    "md": "# Alternative Solution.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 324.39,
+                        "w": 383.45,
+                        "h": 121.96
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "P 1",
+                    "md": "# P 1",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 387.6,
+                        "w": 231.49,
+                        "h": 118.53
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0",
+                    "md": "CP IALU = 0.4 \u00d7 6 + 0.2 \u00d7 6 + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP IALU = 4.0",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 324.39,
+                        "w": 383.45,
+                        "h": 229.56
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "P 1",
+                    "md": "# P 1",
+                    "rows": null,
+                    "bBox": {
+                        "x": 118.23,
+                        "y": 387.6,
+                        "w": 231.49,
+                        "h": 118.53
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "CP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU &lt; CP ILSU",
+                    "md": "CP ILSU = 0.4 \u00d7 6 + 0.2 \u00d7 (6 \u00d7 2) + 0.3 \u00d7 2 + 0.1 \u00d7 2\n\nCP ILSU = 4.4\n\nCP IALU &lt; CP ILSU",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
@@ -1668,7 +1802,7 @@
         {
             "page": 15,
             "text": "\u2022\n\u2022\n\u2022\n                     T\n\u2022\n\u2022                                               N         MUL R4, R1, R1\n                                  T\n\n    Explanation.\n                   MUL R4, R1, R1\n\n                   JNZ L1                                      MUL R4, R1, R1\n\n\n\n                  T                                     MUL R4, R1, R1\n         T = 12 + 7 \u00d7 10 = 82",
-            "md": "T\n\nMUL R4, R1, R1\n\n# Explanation\n\nMUL R4, R1, R1\n\nJNZ L1\n\nMUL R4, R1, R1\n\nT = 12 + 7 \u00d7 10 = 82",
+            "md": "\n\nT\n\u2022\n\u2022                                               N         MUL R4, R1, R1\nT\n\nExplanation.\nMUL R4, R1, R1\n\nJNZ L1                                      MUL R4, R1, R1\n\nT                                     MUL R4, R1, R1\nT = 12 + 7 \u00d7 10 = 82\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -1677,40 +1811,14 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "T\n\nMUL R4, R1, R1",
-                    "md": "T\n\nMUL R4, R1, R1",
+                    "value": "T\n\u2022\n\u2022                                               N         MUL R4, R1, R1\nT\n\nExplanation.\nMUL R4, R1, R1\n\nJNZ L1                                      MUL R4, R1, R1\n\nT                                     MUL R4, R1, R1\nT = 12 + 7 \u00d7 10 = 82",
+                    "md": "T\n\u2022\n\u2022                                               N         MUL R4, R1, R1\nT\n\nExplanation.\nMUL R4, R1, R1\n\nJNZ L1                                      MUL R4, R1, R1\n\nT                                     MUL R4, R1, R1\nT = 12 + 7 \u00d7 10 = 82",
                     "rows": null,
                     "bBox": {
                         "x": 79.75,
-                        "y": 336.7,
-                        "w": 422.49,
-                        "h": 263.16
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Explanation",
-                    "md": "# Explanation",
-                    "rows": null,
-                    "bBox": {
-                        "x": 79.75,
-                        "y": 336.7,
-                        "w": 170.4,
-                        "h": 263.16
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "MUL R4, R1, R1\n\nJNZ L1\n\nMUL R4, R1, R1\n\nT = 12 + 7 \u00d7 10 = 82",
-                    "md": "MUL R4, R1, R1\n\nJNZ L1\n\nMUL R4, R1, R1\n\nT = 12 + 7 \u00d7 10 = 82",
-                    "rows": null,
-                    "bBox": {
-                        "x": 79.75,
-                        "y": 336.7,
-                        "w": 422.49,
-                        "h": 299.03
+                        "y": 285.89,
+                        "w": 422.63,
+                        "h": 349.84
                     }
                 }
             ],
@@ -1727,23 +1835,62 @@
         {
             "page": 16,
             "text": "                             N\nT\n\nExplanation.\n                                                                     T\n\n     N = 2 + 8 \u00d7 6 + 1 = 51\n\n\n\n\nExplanation.\n\n\n\n\n\n\n     T = 19 + 8 \u00d7 10 + 1 = 100",
-            "md": "N = 2 + 8 \u00d7 6 + 1 = 51\n\nT = 19 + 8 \u00d7 10 + 1 = 100",
+            "md": "\n# Explanation.\n\nN = 2 + 8 \u00d7 6 + 1 = 51\n\n# Explanation.\n\nT = 19 + 8 \u00d7 10 + 1 = 100\n\n",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "N = 2 + 8 \u00d7 6 + 1 = 51\n\nT = 19 + 8 \u00d7 10 + 1 = 100",
-                    "md": "N = 2 + 8 \u00d7 6 + 1 = 51\n\nT = 19 + 8 \u00d7 10 + 1 = 100",
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Explanation.",
+                    "md": "# Explanation.",
                     "rows": null,
                     "bBox": {
                         "x": 78.65,
                         "y": 72.0,
                         "w": 444.78,
-                        "h": 495.02
+                        "h": 387.42
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "N = 2 + 8 \u00d7 6 + 1 = 51",
+                    "md": "N = 2 + 8 \u00d7 6 + 1 = 51",
+                    "rows": null,
+                    "bBox": {
+                        "x": 78.65,
+                        "y": 72.0,
+                        "w": 444.78,
+                        "h": 195.14
+                    }
+                },
+                {
+                    "type": "heading",
+                    "lvl": 1,
+                    "value": "Explanation.",
+                    "md": "# Explanation.",
+                    "rows": null,
+                    "bBox": {
+                        "x": 78.65,
+                        "y": 72.0,
+                        "w": 444.78,
+                        "h": 387.42
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "T = 19 + 8 \u00d7 10 + 1 = 100",
+                    "md": "T = 19 + 8 \u00d7 10 + 1 = 100",
+                    "rows": null,
+                    "bBox": {
+                        "x": 96.91,
+                        "y": 83.96,
+                        "w": 329.81,
+                        "h": 483.07
                     }
                 }
             ],
@@ -1760,7 +1907,7 @@
         {
             "page": 17,
             "text": "8     Vector Processing            [80 points]\n\n\n             Vst                                                     Vst \u2190    Vst\n             Vln                                                     Vln \u2190    Vln\n                Vi                                               VM SK \u2190 LSB(Vi)  VM SK\n              Vi                                                               Vi \u2190 M em[Address]\n              Vi                                                               M em[Address] \u2190 Vi\n            Vi Vj  Vk                                                             Vi \u2190 Vj \u2217 Vk\n            Vi Vj  Vk                                                             Vi \u2190 Vj + Vk\n              Vi Vj                                                               Vi \u2190 Vj >> 1\n                Vi                                                           Vi \u2190 BitwiseN OT (Vi)\n              Vi, Vj                                                   Vj      Vi \u2190             Vi \u2190\n                                    V0 V1 V2 V3 V4 V5 V6 V7\n    Vst    Vln\n                 does not\n                                                                                        Vi\n                               VM SK\n                                  N\n\n\n\n                                          A             B                     A + 4\n      (B + 1)%N                                     N\n\n\n\n\n                                                                              dierent vectors\n                            VM SK",
-            "md": "# 8 Vector Processing\n\n[80 points]\n\n|                   | Vst      | Vst \u2190 Vst               |       |              |   |\n| ----------------- | -------- | ----------------------- | ----- | ------------ | - |\n|                   | Vln      | Vln \u2190 Vln               |       |              |   |\n|                   | Vi       | VM SK \u2190 LSB(Vi) VM SK   |       |              |   |\n|                   | Vi       | Vi \u2190 Mem\\[Address]      |       |              |   |\n|                   | Vi       | Mem\\[Address] \u2190 Vi      |       |              |   |\n| Vi Vj Vk          |          |                         |       | Vi \u2190 Vj \u2217 Vk |   |\n| Vi Vj Vk          |          |                         |       | Vi \u2190 Vj + Vk |   |\n|                   | Vi Vj    |                         |       | Vi \u2190 Vj >> 1 |   |\n|                   | Vi       | Vi \u2190 Bitwise NOT (Vi)   |       |              |   |\n|                   | Vi, Vj   | Vj Vi \u2190 Vi \u2190            |       |              |   |\n|                   |          | V0 V1 V2 V3 V4 V5 V6 V7 |       |              |   |\n| Vst               | Vln      |                         |       |              |   |\n|                   | does not |                         |       |              |   |\n|                   | Vi       |                         |       |              |   |\n|                   |          |                         | VM SK | N            |   |\n|                   |          | A                       | B     | A + 4        |   |\n| (B + 1)%N         |          | N                       |       |              |   |\n| different vectors |          |                         |       |              |   |\n|                   |          |                         | VM SK |              |   |\n",
+            "md": "\n# 8 Vector Processing\n\n[80 points]\n\n|          | Vst   | Vst \u2190 Vst             |              |    |    |    |    |    |\n| -------- | ----- | --------------------- | ------------ | -- | -- | -- | -- | -- |\n|          | Vln   | Vln \u2190 Vln             |              |    |    |    |    |    |\n|          | Vi    | VM SK \u2190 LSB(Vi)       | VM SK        |    |    |    |    |    |\n|          | Vi    | Vi \u2190 Mem\\[Address]    |              |    |    |    |    |    |\n|          | Vi    | Mem\\[Address] \u2190 Vi    |              |    |    |    |    |    |\n| Vi Vj Vk |       |                       | Vi \u2190 Vj \u2217 Vk |    |    |    |    |    |\n| Vi Vj Vk |       |                       | Vi \u2190 Vj + Vk |    |    |    |    |    |\n|          | Vi Vj |                       | Vi \u2190 Vj >> 1 |    |    |    |    |    |\n|          | Vi    | Vi \u2190 Bitwise NOT (Vi) |              |    |    |    |    |    |\n| Vi, Vj   | Vj    | Vi \u2190                  | Vi \u2190         |    |    |    |    |    |\n|          | V0    | V1                    | V2           | V3 | V4 | V5 | V6 | V7 |\n\nVst Vln\n\ndoes not\n\nVi\n\nVM SK\n\nN\n\n|           | A | B | A + 4 |\n| --------- | - | - | ----- |\n| (B + 1)%N | N |   |       |\n\ndierent vectors\n\nVM SK\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -1796,12 +1943,15 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|                   | Vst      | Vst \u2190 Vst               |       |              |   |\n| ----------------- | -------- | ----------------------- | ----- | ------------ | - |\n|                   | Vln      | Vln \u2190 Vln               |       |              |   |\n|                   | Vi       | VM SK \u2190 LSB(Vi) VM SK   |       |              |   |\n|                   | Vi       | Vi \u2190 Mem\\[Address]      |       |              |   |\n|                   | Vi       | Mem\\[Address] \u2190 Vi      |       |              |   |\n| Vi Vj Vk          |          |                         |       | Vi \u2190 Vj \u2217 Vk |   |\n| Vi Vj Vk          |          |                         |       | Vi \u2190 Vj + Vk |   |\n|                   | Vi Vj    |                         |       | Vi \u2190 Vj >> 1 |   |\n|                   | Vi       | Vi \u2190 Bitwise NOT (Vi)   |       |              |   |\n|                   | Vi, Vj   | Vj Vi \u2190 Vi \u2190            |       |              |   |\n|                   |          | V0 V1 V2 V3 V4 V5 V6 V7 |       |              |   |\n| Vst               | Vln      |                         |       |              |   |\n|                   | does not |                         |       |              |   |\n|                   | Vi       |                         |       |              |   |\n|                   |          |                         | VM SK | N            |   |\n|                   |          | A                       | B     | A + 4        |   |\n| (B + 1)%N         |          | N                       |       |              |   |\n| different vectors |          |                         |       |              |   |\n|                   |          |                         | VM SK |              |   |",
+                    "md": "|          | Vst   | Vst \u2190 Vst             |              |    |    |    |    |    |\n| -------- | ----- | --------------------- | ------------ | -- | -- | -- | -- | -- |\n|          | Vln   | Vln \u2190 Vln             |              |    |    |    |    |    |\n|          | Vi    | VM SK \u2190 LSB(Vi)       | VM SK        |    |    |    |    |    |\n|          | Vi    | Vi \u2190 Mem\\[Address]    |              |    |    |    |    |    |\n|          | Vi    | Mem\\[Address] \u2190 Vi    |              |    |    |    |    |    |\n| Vi Vj Vk |       |                       | Vi \u2190 Vj \u2217 Vk |    |    |    |    |    |\n| Vi Vj Vk |       |                       | Vi \u2190 Vj + Vk |    |    |    |    |    |\n|          | Vi Vj |                       | Vi \u2190 Vj >> 1 |    |    |    |    |    |\n|          | Vi    | Vi \u2190 Bitwise NOT (Vi) |              |    |    |    |    |    |\n| Vi, Vj   | Vj    | Vi \u2190                  | Vi \u2190         |    |    |    |    |    |\n|          | V0    | V1                    | V2           | V3 | V4 | V5 | V6 | V7 |",
                     "rows": [
                         [
                             "",
                             "Vst",
                             "Vst \u2190 Vst",
+                            "",
+                            "",
+                            "",
                             "",
                             "",
                             ""
@@ -1812,12 +1962,18 @@
                             "Vln \u2190 Vln",
                             "",
                             "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
                             "",
                             "Vi",
-                            "VM SK \u2190 LSB(Vi) VM SK",
+                            "VM SK \u2190 LSB(Vi)",
+                            "VM SK",
+                            "",
+                            "",
                             "",
                             "",
                             ""
@@ -1828,6 +1984,9 @@
                             "Vi \u2190 Mem[Address]",
                             "",
                             "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
@@ -1836,30 +1995,42 @@
                             "Mem[Address] \u2190 Vi",
                             "",
                             "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
                             "Vi Vj Vk",
-                            "",
                             "",
                             "",
                             "Vi \u2190 Vj \u2217 Vk",
+                            "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
                             "Vi Vj Vk",
                             "",
                             "",
-                            "",
                             "Vi \u2190 Vj + Vk",
+                            "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
                             "",
                             "Vi Vj",
                             "",
-                            "",
                             "Vi \u2190 Vj >> 1",
+                            "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
@@ -1868,27 +2039,17 @@
                             "Vi \u2190 Bitwise NOT (Vi)",
                             "",
                             "",
+                            "",
+                            "",
+                            "",
                             ""
                         ],
                         [
-                            "",
                             "Vi, Vj",
-                            "Vj Vi \u2190 Vi \u2190",
+                            "Vj",
+                            "Vi \u2190",
+                            "Vi \u2190",
                             "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "",
-                            "",
-                            "V0 V1 V2 V3 V4 V5 V6 V7",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "Vst",
-                            "Vln",
                             "",
                             "",
                             "",
@@ -1896,57 +2057,51 @@
                         ],
                         [
                             "",
-                            "does not",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
+                            "V0",
+                            "V1",
+                            "V2",
+                            "V3",
+                            "V4",
+                            "V5",
+                            "V6",
+                            "V7"
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 67.62,
+                        "w": 502.33,
+                        "h": 575.87
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "Vst Vln\n\ndoes not\n\nVi\n\nVM SK\n\nN",
+                    "md": "Vst Vln\n\ndoes not\n\nVi\n\nVM SK\n\nN",
+                    "rows": null,
+                    "bBox": {
+                        "x": 86.95,
+                        "y": 133.87,
+                        "w": 436.49,
+                        "h": 509.61
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "|           | A | B | A + 4 |\n| --------- | - | - | ----- |\n| (B + 1)%N | N |   |       |",
+                    "rows": [
                         [
-                            "",
-                            "Vi",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "",
-                            "",
-                            "",
-                            "VM SK",
-                            "N",
-                            ""
-                        ],
-                        [
-                            "",
                             "",
                             "A",
                             "B",
-                            "A + 4",
-                            ""
+                            "A + 4"
                         ],
                         [
                             "(B + 1)%N",
-                            "",
                             "N",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "different vectors",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ],
-                        [
-                            "",
-                            "",
-                            "",
-                            "VM SK",
                             "",
                             ""
                         ]
@@ -1956,6 +2111,19 @@
                         "y": 67.62,
                         "w": 502.33,
                         "h": 575.87
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "dierent vectors\n\nVM SK",
+                    "md": "dierent vectors\n\nVM SK",
+                    "rows": null,
+                    "bBox": {
+                        "x": 86.95,
+                        "y": 364.49,
+                        "w": 436.0,
+                        "h": 278.99
                     }
                 }
             ],
@@ -1972,7 +2140,7 @@
         {
             "page": 18,
             "text": "                                                N\n\n\nExplanation.",
-            "md": "                                                N\n\n\nExplanation.",
+            "md": "\nN\n\nExplanation.\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -1981,8 +2149,8 @@
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "N\n\n\nExplanation.",
-                    "md": "N\n\n\nExplanation.",
+                    "value": "N\n\nExplanation.",
+                    "md": "N\n\nExplanation.",
                     "rows": null,
                     "bBox": {
                         "x": 79.2,
@@ -1992,20 +2160,20 @@
                     }
                 }
             ],
-            "status": "WARNING",
+            "status": "OK",
             "links": [],
             "width": 595.276,
             "height": 841.89,
             "triggeredAutoMode": false,
             "parsingMode": "accurate",
             "structuredData": null,
-            "noStructuredContent": true,
+            "noStructuredContent": false,
             "noTextContent": false
         },
         {
             "page": 19,
             "text": "   for i= 0 to 45:\n       if(a[i] == 0):\n           c[i] = b[i]\n       else:\n           c[i] = a[i] * b[i] + a[i]/2\n\n\u2022\n\u2022\n\u2022\n\u2022\n    SET Vst, 1       # Load Vector Stride Register\n    SET Vln, 46      # Load Vector Length Register\n    VLD V1, a        # Read from array a\n    VLD V2, b        # Read from array b\n    VCMPZ V3, V1     # Compare V1 to 0\n    LDM V3           # Load Vector Mask Register\n    VST c, V2        # Write to array c\n    VNOT V3          # BitwiseNOT\n    LDM V3           # Load Vector Mask Register\n    VSHFR V4, V1     # Shift to divide\n    VMUL V5, V1, V2  # Multiply\n    VADD V6, V5, V4  # Add\n    VST c, V6        # Write to array c",
-            "md": "for i= 0 to 45:\nif(a[i] == 0):\nc[i] = b[i]\nelse:\nc[i] = a[i] * b[i] + a[i]/2\n\nSET Vst, 1       # Load Vector Stride Register\nSET Vln, 46      # Load Vector Length Register\nVLD V1, a        # Read from array a\nVLD V2, b        # Read from array b\nVCMPZ V3, V1     # Compare V1 to 0\nLDM V3           # Load Vector Mask Register\nVST c, V2        # Write to array c\nVNOT V3          # BitwiseNOT\nLDM V3           # Load Vector Mask Register\nVSHFR V4, V1     # Shift to divide\nVMUL V5, V1, V2  # Multiply\nVADD V6, V5, V4  # Add\nVST c, V6        # Write to array c",
+            "md": "\n\nfor i= 0 to 45:\nif(a[i] == 0):\nc[i] = b[i]\nelse:\nc[i] = a[i] * b[i] + a[i]/2\n\nSET Vst, 1       # Load Vector Stride Register\nSET Vln, 46      # Load Vector Length Register\nVLD V1, a        # Read from array a\nVLD V2, b        # Read from array b\nVCMPZ V3, V1     # Compare V1 to 0\nLDM V3           # Load Vector Mask Register\nVST c, V2        # Write to array c\nVNOT V3          # BitwiseNOT\nLDM V3           # Load Vector Mask Register\nVSHFR V4, V1     # Shift to divide\nVMUL V5, V1, V2  # Multiply\nVADD V6, V5, V4  # Add\nVST c, V6        # Write to array c\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -2038,7 +2206,7 @@
         {
             "page": 20,
             "text": "\u2022\n\u2022\n\u2022\n    Explanation.\n    bank0 --MISS-|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank1    --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank2     --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank3       --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank4        --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank5         --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\n    bank6           --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\n    bank7            --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\n\n\n\n\n\n     SET: |-S-|\n     SET:    |-S-|\n     VLD:        |-----VLD-----|\n     VLD:                           |-----VLD-----|\n     VCMPZ:                          |VCMPZ|\n     LDM:                                  |L|\n     VST:                                              |-----VST-----|\n     VNOT:                                              |VNOT|\n     LDM:                                                   |L|\n     VSHFR:                                                   |VSHFR|\n     VMUL:                                                     |VMUL|\n     VADD:                                                          |VADD|\n     VST:                                                                 |-----VST-----|\n\n\n\n\n\n\n\n\n\n    total cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles =\n    1822 cycles",
-            "md": "# Explanation\n\n|       | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| ----- | -------- | ------- | -------- | ------- | -------- | ------- |\n| bank0 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank1 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank2 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank3 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank4 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank5 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank6 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |\n| bank7 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n\n# SET\n\n|-S-|\n\n# SET\n\n|-S-|\n\n# VLD\n\n|-----VLD-----|\n\n# VLD\n\n|-----VLD-----|\n\n# VCMPZ\n\n|VCMPZ|\n\n# LDM\n\n|L|\n\n# VST\n\n|-----VST-----|\n\n# VNOT\n\n|VNOT|\n\n# LDM\n\n|L|\n\n# VSHFR\n\n|VSHFR|\n\n# VMUL\n\n|VMUL|\n\n# VADD\n\n|VADD|\n\n# VST\n\n|-----VST-----|\n\n# Total Cycles\n\ntotal cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles",
+            "md": "\n\n# Explanation\n\n| bank0 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| ----- | -------- | ------- | -------- | ------- | -------- | ------- |\n| bank1 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank2 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank3 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank4 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank5 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank6 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |\n| bank7 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |\n\nSET: |-S-|\n\nSET:    |-S-|\n\nVLD:        |-----VLD-----|\n\nVLD:                           |-----VLD-----|\n\nVCMPZ:                          |VCMPZ|\n\nLDM:                                  |L|\n\nVST:                                              |-----VST-----|\n\nVNOT:                                              |VNOT|\n\nLDM:                                                   |L|\n\nVSHFR:                                                   |VSHFR|\n\nVMUL:                                                     |VMUL|\n\nVADD:                                                          |VADD|\n\nVST:                                                                 |-----VST-----|\n\ntotal cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -2061,17 +2229,8 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|       | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| ----- | -------- | ------- | -------- | ------- | -------- | ------- |\n| bank0 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank1 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank2 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank3 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank4 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank5 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank6 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |\n| bank7 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |",
+                    "md": "| bank0 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| ----- | -------- | ------- | -------- | ------- | -------- | ------- |\n| bank1 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank2 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank3 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank4 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank5 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- | --HIT-- |\n| bank6 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |\n| bank7 | --MISS-- | --HIT-- | --MISS-- | --HIT-- | --MISS-- |         |",
                     "rows": [
-                        [
-                            "",
-                            "--MISS--",
-                            "--HIT--",
-                            "--MISS--",
-                            "--HIT--",
-                            "--MISS--",
-                            "--HIT--"
-                        ],
                         [
                             "bank0",
                             "--MISS--",
@@ -2142,7 +2301,7 @@
                             "--MISS--",
                             "--HIT--",
                             "--MISS--",
-                            "--HIT--"
+                            ""
                         ]
                     ],
                     "bBox": {
@@ -2153,367 +2312,16 @@
                     }
                 },
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "SET",
-                    "md": "# SET",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-S-|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "SET",
-                    "md": "# SET",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-S-|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VLD",
-                    "md": "# VLD",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-----VLD-----|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VLD",
-                    "md": "# VLD",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-----VLD-----|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VCMPZ",
-                    "md": "# VCMPZ",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|VCMPZ|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "LDM",
-                    "md": "# LDM",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|L|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VST",
-                    "md": "# VST",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-----VST-----|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VNOT",
-                    "md": "# VNOT",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|VNOT|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "LDM",
-                    "md": "# LDM",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|L|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VSHFR",
-                    "md": "# VSHFR",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|VSHFR|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VMUL",
-                    "md": "# VMUL",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|VMUL|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VADD",
-                    "md": "# VADD",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "|VADD|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "VST",
-                    "md": "# VST",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "table",
-                    "lvl": null,
-                    "value": null,
-                    "md": "\\|-----VST-----|",
-                    "rows": [],
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "Total Cycles",
-                    "md": "# Total Cycles",
-                    "rows": null,
-                    "bBox": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "w": 595.28,
-                        "h": 841.89
-                    }
-                },
-                {
                     "type": "text",
                     "lvl": null,
-                    "value": "total cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles",
-                    "md": "total cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles",
+                    "value": "SET: |-S-|\n\nSET:    |-S-|\n\nVLD:        |-----VLD-----|\n\nVLD:                           |-----VLD-----|\n\nVCMPZ:                          |VCMPZ|\n\nLDM:                                  |L|\n\nVST:                                              |-----VST-----|\n\nVNOT:                                              |VNOT|\n\nLDM:                                                   |L|\n\nVSHFR:                                                   |VSHFR|\n\nVMUL:                                                     |VMUL|\n\nVADD:                                                          |VADD|\n\nVST:                                                                 |-----VST-----|\n\ntotal cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles",
+                    "md": "SET: |-S-|\n\nSET:    |-S-|\n\nVLD:        |-----VLD-----|\n\nVLD:                           |-----VLD-----|\n\nVCMPZ:                          |VCMPZ|\n\nLDM:                                  |L|\n\nVST:                                              |-----VST-----|\n\nVNOT:                                              |VNOT|\n\nLDM:                                                   |L|\n\nVSHFR:                                                   |VSHFR|\n\nVMUL:                                                     |VMUL|\n\nVADD:                                                          |VADD|\n\nVST:                                                                 |-----VST-----|\n\ntotal cycles = S + S + V LD cycles + V LD cycles + V ST cycles + V ST cycles = 1822 cycles",
                     "rows": null,
                     "bBox": {
                         "x": 118.23,
-                        "y": 655.9,
+                        "y": 413.52,
                         "w": 383.98,
-                        "h": 21.96
+                        "h": 264.33
                     }
                 }
             ],
@@ -2530,7 +2338,7 @@
         {
             "page": 21,
             "text": "   9       VLIW       [60 points]\n\n\n                             only\n            load_inc store_inc                                                                 rsrc2\n            1 after\n                                                                     load load_inc store     store_inc\n                                           r0 r1      r31\n\n\n     Functional             Operation (in assembly notation)                                   Semantics\n     Unit Type\n                            load rdst, [rsrc\u2081, rsrc\u2082, #offset]                                  dst         src\u2081    src\u2082\n     load                   load_inc    rdst, [rsrc\u2081, rsrc\u2082, #offset]                           dst         src\u2081    src\u2082\n                                                                                                src\u2082     src\u2082\n                            store   [rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083                                  src\u2081    src\u2082               src\u2083\n     store                  store_inc    [rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083                             src\u2081    src\u2082               src\u2083\n                                                                                                src\u2082     src\u2082\n     addition               add rdst, rsrc\u2081, rsrc\u2082                                              dst     src\u2081    src\u2082\n     multiplication         mult rdst, rsrc\u2081, rsrc\u2082                                             dst     src\u2081 \u00d7  src\u2082\n     branch                 bne rsrc\u2081, #offset, TARGET                                                              src\u2081\n     (any of the above)     NOP\n                                                              #offset\n                                   N                     is an even positive integer\n                                  r29 r30     r31                                             A B\n      C                        r0                    0             r1                    1\nC code                                    Assembly code\n    // An   i n t e g e r  i s 4  b y t e s  l o n g  LOOP:\n    int A[N+ 1 ] ;                                       ( v1 )  l o a d _ i n c  r2 ,  [ r31 ,  r0 , #0]     //     r2 :=  [ r31 +  r0 + #0];  r0  :=  r0 + 1\n      int  B [N+ 1 ] ;                                   ( v2 )  l o a d      r3 ,  [ r29 ,   r1 ,  #0]       //     r3 :=  [ r29 +  r1 + #0]\n      int  C [N+ 1 ] ;                                   ( v3 )  l o a d      r4 ,  [ r30 ,   r1 ,  #0]       //     r4 :=  [ r30 +  r1 + #0]\n     . . . // code     t o  i n i t i a l i z e A and B  ( v4 ) mult          r5 ,    r2 ,  r 3      //        r5  :=  r2   *   r3\n     f o r (int i =  1 ; i <= N;  i ++)                  ( v5 ) add           r6 ,    r5 ,  r 4      //        r6  :=  r5 +     r4\n           C [ i ] = C [ i =1] * A[ i ] + B [ i ] ;      ( v6 )  s t o r e _ i n c  [ r31 ,  r1 , #0] ,  r 6  // [ r31 +    r1 + #0] :=  r6 ;   r1  :=  r1 + 1\n                                                         ( v7 ) bne           r1 , #N, LOOP          //            branch  t o LOOP  i f r1 not  e q u a l t o #N\n                                                                 (v1)               .. (v7)",
-            "md": "# VLIW\n\n# [60 points]\n\n| Functional Unit Type | Operation (in assembly notation)           | Semantics       |\n| -------------------- | ------------------------------------------ | --------------- |\n| load                 | load rdst, \\[rsrc\u2081, rsrc\u2082, #offset]        | dst src\u2081 src\u2082   |\n| load                 | load\\_inc rdst, \\[rsrc\u2081, rsrc\u2082, #offset]   | dst src\u2081 src\u2082   |\n| store                | store \\[rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083      | src\u2081 src\u2082 src\u2083  |\n| store                | store\\_inc \\[rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083 | src\u2081 src\u2082 src\u2083  |\n| addition             | add rdst, rsrc\u2081, rsrc\u2082                     | dst src\u2081 src\u2082   |\n| multiplication       | mult rdst, rsrc\u2081, rsrc\u2082                    | dst src\u2081 \u00d7 src\u2082 |\n| branch               | bne rsrc\u2081, #offset, TARGET                 | src\u2081            |\n| (any of the above)   | NOP                                        | #offset         |\n\nN is an even positive integer\n\n|   | r29 | r30 | r31 |    |\n| - | --- | --- | --- | -- |\n|   | 0   | r0  | 1   | r1 |\n\n# C code\n\n// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4        // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];\n}\n(v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n(v7) bne r1, #N, LOOP      // branch to LOOP if r1 not equal to #N",
+            "md": "\n# 9 VLIW [60 points]\n\n| Functional Unit Type | Operation (in assembly notation)           | Semantics       |\n| -------------------- | ------------------------------------------ | --------------- |\n| load                 | load rdst, \\[rsrc\u2081, rsrc\u2082, #offset]        | dst src\u2081 src\u2082   |\n| load                 | load\\_inc rdst, \\[rsrc\u2081, rsrc\u2082, #offset]   | dst src\u2081 src\u2082   |\n| store                | store \\[rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083      | src\u2081 src\u2082 src\u2083  |\n| store                | store\\_inc \\[rsrc\u2081, rsrc\u2082, #offset], rsrc\u2083 | src\u2081 src\u2082 src\u2083  |\n| addition             | add rdst, rsrc\u2081, rsrc\u2082                     | dst src\u2081 src\u2082   |\n| multiplication       | mult rdst, rsrc\u2081, rsrc\u2082                    | dst src\u2081 \u00d7 src\u2082 |\n| branch               | bne rsrc\u2081, #offset, TARGET                 | src\u2081            |\n| (any of the above)   | NOP                                        | #offset         |\n\nN is an even positive integer\n\n| r29 | r30 | r31 |    |   |\n| --- | --- | --- | -- | - |\n| C   | r0  | 0   | r1 | 1 |\n\nC code\n\n// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4       // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];                  (v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n}                                                  (v7) bne r1, #N, LOOP          // branch to LOOP if r1 not equal to #N\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -2539,27 +2347,14 @@
                 {
                     "type": "heading",
                     "lvl": 1,
-                    "value": "VLIW",
-                    "md": "# VLIW",
-                    "rows": null,
-                    "bBox": {
-                        "x": 95.67,
-                        "y": 67.62,
-                        "w": 43.0,
-                        "h": 14.0
-                    }
-                },
-                {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "[60 points]",
-                    "md": "# [60 points]",
+                    "value": "9 VLIW [60 points]",
+                    "md": "# 9 VLIW [60 points]",
                     "rows": null,
                     "bBox": {
                         "x": 72.0,
-                        "y": 70.85,
+                        "y": 67.62,
                         "w": 164.24,
-                        "h": 533.75
+                        "h": 536.98
                     }
                 },
                 {
@@ -2638,21 +2433,21 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|   | r29 | r30 | r31 |    |\n| - | --- | --- | --- | -- |\n|   | 0   | r0  | 1   | r1 |",
+                    "md": "| r29 | r30 | r31 |    |   |\n| --- | --- | --- | -- | - |\n| C   | r0  | 0   | r1 | 1 |",
                     "rows": [
                         [
-                            "",
                             "r29",
                             "r30",
                             "r31",
+                            "",
                             ""
                         ],
                         [
-                            "",
-                            "0",
+                            "C",
                             "r0",
-                            "1",
-                            "r1"
+                            "0",
+                            "r1",
+                            "1"
                         ]
                     ],
                     "bBox": {
@@ -2663,28 +2458,15 @@
                     }
                 },
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "C code",
-                    "md": "# C code",
+                    "type": "text",
+                    "lvl": null,
+                    "value": "C code\n\n// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4       // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];                  (v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n}                                                  (v7) bne r1, #N, LOOP          // branch to LOOP if r1 not equal to #N",
+                    "md": "C code\n\n// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4       // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];                  (v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n}                                                  (v7) bne r1, #N, LOOP          // branch to LOOP if r1 not equal to #N",
                     "rows": null,
                     "bBox": {
                         "x": 60.81,
-                        "y": 558.21,
-                        "w": 59.4,
-                        "h": 54.28
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4        // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];\n}\n(v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n(v7) bne r1, #N, LOOP      // branch to LOOP if r1 not equal to #N",
-                    "md": "// An integer is 4 bytes long\nLOOP:\nint A[N+1];                                       (v1) load_inc r2, [r31, r0, #0]     // r2 := [r31 + r0 + #0]; r0 := r0 + 1\nint B[N+1];                                       (v2) load r3, [r29, r1, #0]       // r3 := [r29 + r1 + #0]\nint C[N+1];                                       (v3) load r4, [r30, r1, #0]       // r4 := [r30 + r1 + #0]\n... // code to initialize A and B\n(v4) mult r5, r2, r3      // r5 := r2 * r3\n(v5) add r6, r5, r4        // r6 := r5 + r4\nfor (int i = 1; i <= N; i++) {\nC[i] = C[i-1] * A[i] + B[i];\n}\n(v6) store_inc [r31, r1, #0], r6 // [r31 + r1 + #0] := r6; r1 := r1 + 1\n(v7) bne r1, #N, LOOP      // branch to LOOP if r1 not equal to #N",
-                    "rows": null,
-                    "bBox": {
-                        "x": 72.0,
                         "y": 67.62,
-                        "w": 458.46,
+                        "w": 469.65,
                         "h": 584.76
                     }
                 }
@@ -2702,46 +2484,28 @@
         {
             "page": 22,
             "text": "                                 ll in Table 2\n          minimize the number of VLIW instructions\n                     as soon as possible\n                                                  Functional Unit\nLoad                       Load                   Load                   Store                       Mult            Add            Branch\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                               not  NOP\n  7\n   ~~5~~  \n Explanation.\n                                                      NOPs\n\n                                                               N\n Execution time =          5 \u00d7 N\n Explanation.\n                                                                                       N\n                                            5 \u00d7 N",
-            "md": "# ll in Table 2\n\nminimize the number of VLIW instructions as soon as possible\n\n| Functional Unit | Load | Load | Load | Store | Mult | Add | Branch |\n| --------------- | ---- | ---- | ---- | ----- | ---- | --- | ------ |\n\nnot NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN\n\n5 \u00d7 N",
+            "md": "| Functional Unit |      |      |       |      |     |        |\n| --------------- | ---- | ---- | ----- | ---- | --- | ------ |\n| Load            | Load | Load | Store | Mult | Add | Branch |\n\nminimize the number of VLIW instructions as soon as possible\n\nnot NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN = 5 \u00d7 N",
             "images": [],
             "charts": [],
             "tables": [],
             "layout": [],
             "items": [
                 {
-                    "type": "heading",
-                    "lvl": 1,
-                    "value": "ll in Table 2",
-                    "md": "# ll in Table 2",
-                    "rows": null,
-                    "bBox": {
-                        "x": 96.91,
-                        "y": 113.84,
-                        "w": 426.55,
-                        "h": 554.31
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "minimize the number of VLIW instructions as soon as possible",
-                    "md": "minimize the number of VLIW instructions as soon as possible",
-                    "rows": null,
-                    "bBox": {
-                        "x": 96.91,
-                        "y": 131.78,
-                        "w": 426.18,
-                        "h": 536.38
-                    }
-                },
-                {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Functional Unit | Load | Load | Load | Store | Mult | Add | Branch |\n| --------------- | ---- | ---- | ---- | ----- | ---- | --- | ------ |",
+                    "md": "| Functional Unit |      |      |       |      |     |        |\n| --------------- | ---- | ---- | ----- | ---- | --- | ------ |\n| Load            | Load | Load | Store | Mult | Add | Branch |",
                     "rows": [
                         [
                             "Functional Unit",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
                             "Load",
                             "Load",
                             "Load",
@@ -2752,23 +2516,23 @@
                         ]
                     ],
                     "bBox": {
-                        "x": 109.63,
-                        "y": 182.16,
-                        "w": 380.33,
-                        "h": 17.1
+                        "x": 96.91,
+                        "y": 113.84,
+                        "w": 426.55,
+                        "h": 566.27
                     }
                 },
                 {
                     "type": "text",
                     "lvl": null,
-                    "value": "not NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN\n\n5 \u00d7 N",
-                    "md": "not NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN\n\n5 \u00d7 N",
+                    "value": "minimize the number of VLIW instructions as soon as possible\n\nnot NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN = 5 \u00d7 N",
+                    "md": "minimize the number of VLIW instructions as soon as possible\n\nnot NOP\n\nExplanation.\n\nNOPs\n\nExecution time = 5 \u00d7 N\n\nExplanation.\n\nN = 5 \u00d7 N",
                     "rows": null,
                     "bBox": {
                         "x": 96.91,
-                        "y": 418.75,
-                        "w": 425.16,
-                        "h": 261.36
+                        "y": 131.78,
+                        "w": 426.18,
+                        "h": 548.33
                     }
                 }
             ],
@@ -2785,7 +2549,7 @@
         {
             "page": 23,
             "text": "10     Cache      [50 points]\n\n\n                                             \u2192     \u2192\n       only\n\n                             please give the lowest possible addresses that can enable the identication of the num-\n      ber of sets and ways\n           0 \u2192   2\n           Explanation.\n                 [0 \u2192  2]\n                 [0 \u2192  4]\n\n\n\n                (4 sets, 1 way)\n                 4\n                 2\n                (2 sets, 2 ways)\n                 4  2\n                (1 set, 4 ways)\n                 0  2    4\n                                                                      just two\n                         dierent\n\n                 [0 \u2192  2]\n                   0      2\n                    0      2\n                    0     2\n                 [0 \u2192  4]\n                   0      4\n                    0      4\n                    0     4\n                                                                          0 \u2192  2",
-            "md": "# 10 Cache [50 points]\n\nonly\n\nplease give the lowest possible addresses that can enable the identification of the number of sets and ways\n\n0 \u2192 2Explanation.[0 \u2192 2][0 \u2192 4]\n(4 sets, 1 way)\n\n| 4 | 2 |\n| - | - |\n\n(2 sets, 2 ways)\n\n| 4 | 2 |\n| - | - |\n\n(1 set, 4 ways)\n\n| 0 | 2 | 4 |\n| - | - | - |\n\njust two different\n\n| \\[0 \u2192 2] | 0 | 2 |\n| -------- | - | - |\n| 0        | 2 |   |\n| 0        | 2 |   |\n\n| \\[0 \u2192 4] | 0 | 4 |\n| -------- | - | - |\n| 0        | 4 |   |\n| 0        | 4 |   |\n\n0 \u2192 2",
+            "md": "# 10 Cache [50 points]\n\nonly\n\nplease give the lowest possible addresses that can enable the identification of the number of sets and ways\n\n0 \u2192 2Explanation.[0 \u2192 2][0 \u2192 4]\n(4 sets, 1 way)\n\n| 4 | 2 |\n| - | - |\n\n(2 sets, 2 ways)\n\n| 4 | 2 |\n| - | - |\n\n(1 set, 4 ways)\n\n| 0 | 2 | 4 |\n| - | - | - |\n\njust two different\n\n| \\[0 \u2192 2] |   |   |   |\n| -------- | - | - | - |\n| 0        | 2 |   |   |\n| 0        | 2 |   |   |\n| 0        | 2 |   |   |\n\n| \\[0 \u2192 4] |   |   |\n| -------- | - | - |\n| 0        | 4 |   |\n| 0        | 4 |   |\n| 0        | 4 |   |\n\n0 \u2192 2",
             "images": [],
             "charts": [],
             "tables": [],
@@ -2915,21 +2679,30 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| \\[0 \u2192 2] | 0 | 2 |\n| -------- | - | - |\n| 0        | 2 |   |\n| 0        | 2 |   |",
+                    "md": "| \\[0 \u2192 2] |   |   |   |\n| -------- | - | - | - |\n| 0        | 2 |   |   |\n| 0        | 2 |   |   |\n| 0        | 2 |   |   |",
                     "rows": [
                         [
                             "[0 \u2192 2]",
-                            "0",
-                            "2"
-                        ],
-                        [
-                            "0",
-                            "2",
+                            "",
+                            "",
                             ""
                         ],
                         [
                             "0",
                             "2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "0",
+                            "2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "0",
+                            "2",
+                            "",
                             ""
                         ]
                     ],
@@ -2944,12 +2717,17 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| \\[0 \u2192 4] | 0 | 4 |\n| -------- | - | - |\n| 0        | 4 |   |\n| 0        | 4 |   |",
+                    "md": "| \\[0 \u2192 4] |   |   |\n| -------- | - | - |\n| 0        | 4 |   |\n| 0        | 4 |   |\n| 0        | 4 |   |",
                     "rows": [
                         [
                             "[0 \u2192 4]",
+                            "",
+                            ""
+                        ],
+                        [
                             "0",
-                            "4"
+                            "4",
+                            ""
                         ],
                         [
                             "0",
@@ -3029,7 +2807,7 @@
         {
             "page": 25,
             "text": "11      BONUS: Systolic Arrays                  [50 points]\n                                 2 \u00d7 2\n                                               H0 H1    V0 V1\n                                                                                             reg\n                                                                                                       c\n                                                           c + 1\n                                          i0   o0           i1   o1\n\n\n                                                                                      C = A \u00d7 B\nA B     C        2 \u00d7 2                                                  K \u00d7 K\n                                                K\u22121\n                                         Cij = X Aik \u00d7 Bkj\n                                                k=0\n                  K = 2                     C00\n                                     C00 = A00 \u00d7 B00 + A01 \u00d7 B10\n                                       A2\u00d72    B2\u00d72\n                      H0 H1    V0 V1\n                                     C2\u00d72\n\n                          cycle   H0 H1 V0 V1 PE00 PE01 PE10 PE11\n                                  A00      B00\n                                  A01 A10 B10 B01\n                                      A11      B11   C00\n                                                            C01   C10\n                                                                        C11",
-            "md": "# 11 BONUS: Systolic Arrays\n\n| 2 \u00d7 2 | H0 | H1    | V0 | V1 |    |    |\n| ----- | -- | ----- | -- | -- | -- | -- |\n| reg   | c  | c + 1 | i0 | o0 | i1 | o1 |\n\nC = A \u00d7 B\n\nA B C 2 \u00d7 2\n\nK \u00d7 K\n\nK\u22121\n\nCij = \u03a3 Aik \u00d7 Bkj\n\nk=0\n\nK = 2\n\nC00\n\nC00 = A00 \u00d7 B00 + A01 \u00d7 B10\n\nA2\u00d72 B2\u00d72\n\n|   |   | H0  | H1  | V0  | V1  | PE00 | PE01 | PE10 | PE11 |     |     |     |\n| - | - | --- | --- | --- | --- | ---- | ---- | ---- | ---- | --- | --- | --- |\n|   |   | A00 | B00 | A01 | B10 | B01  | A11  | B11  | C00  | C01 | C10 | C11 |\n",
+            "md": "\n\n# 11 BONUS: Systolic Arrays\n\n[50 points]\n\n| 2 \u00d7 2 | H0 H1 | V0 V1 |    |\n| ----- | ----- | ----- | -- |\n| reg   | c     | c + 1 |    |\n| i0    | o0    | i1    | o1 |\n\nC = A \u00d7 B\n\nA B C 2 \u00d7 2\n\nK \u00d7 K\n\nK\u22121\n\nCij = \u03a3 Aik \u00d7 Bkj\n\nk=0\n\nK = 2\n\nC00\n\nC00 = A00 \u00d7 B00 + A01 \u00d7 B10\n\nA2\u00d72 B2\u00d72\n\n|   |   | H0 H1 | V0 V1 |   |   |\n| - | - | ----- | ----- | - | - |\n|   |   | C2\u00d72  |       |   |   |\n\ncycle H0 H1 V0 V1 PE00 PE01 PE10 PE11\n\n|   |     | A00 | B00 |     |     |     |     |\n| - | --- | --- | --- | --- | --- | --- | --- |\n|   | A01 | A10 | B10 | B01 |     |     |     |\n|   |     | A11 | B11 | C00 | C01 | C10 | C11 |\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -3049,24 +2827,37 @@
                     }
                 },
                 {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "[50 points]",
+                    "md": "[50 points]",
+                    "rows": null,
+                    "bBox": {
+                        "x": 279.83,
+                        "y": 70.85,
+                        "w": 52.45,
+                        "h": 10.0
+                    }
+                },
+                {
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| 2 \u00d7 2 | H0 | H1    | V0 | V1 |    |    |\n| ----- | -- | ----- | -- | -- | -- | -- |\n| reg   | c  | c + 1 | i0 | o0 | i1 | o1 |",
+                    "md": "| 2 \u00d7 2 | H0 H1 | V0 V1 |    |\n| ----- | ----- | ----- | -- |\n| reg   | c     | c + 1 |    |\n| i0    | o0    | i1    | o1 |",
                     "rows": [
                         [
                             "2 \u00d7 2",
-                            "H0",
-                            "H1",
-                            "V0",
-                            "V1",
-                            "",
+                            "H0 H1",
+                            "V0 V1",
                             ""
                         ],
                         [
                             "reg",
                             "c",
                             "c + 1",
+                            ""
+                        ],
+                        [
                             "i0",
                             "o0",
                             "i1",
@@ -3097,19 +2888,67 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "|   |   | H0  | H1  | V0  | V1  | PE00 | PE01 | PE10 | PE11 |     |     |     |\n| - | - | --- | --- | --- | --- | ---- | ---- | ---- | ---- | --- | --- | --- |\n|   |   | A00 | B00 | A01 | B10 | B01  | A11  | B11  | C00  | C01 | C10 | C11 |",
+                    "md": "|   |   | H0 H1 | V0 V1 |   |   |\n| - | - | ----- | ----- | - | - |\n|   |   | C2\u00d72  |       |   |   |",
                     "rows": [
                         [
                             "",
                             "",
-                            "H0",
-                            "H1",
-                            "V0",
-                            "V1",
-                            "PE00",
-                            "PE01",
-                            "PE10",
-                            "PE11",
+                            "H0 H1",
+                            "V0 V1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "",
+                            "C2\u00d72",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 67.62,
+                        "w": 451.63,
+                        "h": 579.43
+                    }
+                },
+                {
+                    "type": "text",
+                    "lvl": null,
+                    "value": "cycle H0 H1 V0 V1 PE00 PE01 PE10 PE11",
+                    "md": "cycle H0 H1 V0 V1 PE00 PE01 PE10 PE11",
+                    "rows": null,
+                    "bBox": {
+                        "x": 72.0,
+                        "y": 67.62,
+                        "w": 451.51,
+                        "h": 513.42
+                    }
+                },
+                {
+                    "type": "table",
+                    "lvl": null,
+                    "value": null,
+                    "md": "|   |     | A00 | B00 |     |     |     |     |\n| - | --- | --- | --- | --- | --- | --- | --- |\n|   | A01 | A10 | B10 | B01 |     |     |     |\n|   |     | A11 | B11 | C00 | C01 | C10 | C11 |",
+                    "rows": [
+                        [
+                            "",
+                            "",
+                            "A00",
+                            "B00",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "",
+                            "A01",
+                            "A10",
+                            "B10",
+                            "B01",
                             "",
                             "",
                             ""
@@ -3117,11 +2956,6 @@
                         [
                             "",
                             "",
-                            "A00",
-                            "B00",
-                            "A01",
-                            "B10",
-                            "B01",
                             "A11",
                             "B11",
                             "C00",
@@ -3151,7 +2985,7 @@
         {
             "page": 26,
             "text": "                                                4 \u00d7 4\n\n\n19 cycles.\n                                                         4 \u00d7 4 = 16\n\n                        11\n\n\n                                   7 + 3 \u00d7 4 = 19\n               cycle  H0 H1 V0 V1 PE00 PE01 PE10 PE11\n                      A00      B00\n                      A01 A10 B10 B01\n                      A02 A11 B20 B11\n                      A03 A12 B30 B21\n                      A00 A13 B02 B31    C00\n                      A01 A10 B12 B03           C01   C10\n                      A02 A11 B22 B13                       C11\n                      A03 A12 B32 B23\n                      A20 A13 B00 B33    C02\n                      A21 A30 B10 B01           C03   C12\n                      A22 A31 B20 B11                       C13\n                      A23 A32 B30 B21\n                      A20 A33 B02 B31    C20\n                      A21 A30 B12 B03           C21   C30\n                      A22 A31 B22 B13                       C31\n                      A23 A32 B32 B23\n                           A33     B33   C22\n                                                C23   C32\n                                                            C33",
-            "md": "# 4 \u00d7 4\n\n19 cycles.\n\n4 \u00d7 4 = 16\n\n# 11\n\n7 + 3 \u00d7 4 = 19\n\n| cycle | H0  | H1  | V0  | V1  | PE00 | PE01 | PE10 | PE11 |\n| ----- | --- | --- | --- | --- | ---- | ---- | ---- | ---- |\n| A00   | B00 |     |     |     |      |      |      |      |\n| A01   | A10 | B10 | B01 |     |      |      |      |      |\n| A02   | A11 | B20 | B11 |     |      |      |      |      |\n| A03   | A12 | B30 | B21 |     |      |      |      |      |\n| A00   | A13 | B02 | B31 | C00 |      |      |      |      |\n| A01   | A10 | B12 | B03 | C01 | C10  |      |      |      |\n| A02   | A11 | B22 | B13 |     | C11  |      |      |      |\n| A03   | A12 | B32 | B23 |     |      |      |      |      |\n| A20   | A13 | B00 | B33 | C02 |      |      |      |      |\n| A21   | A30 | B10 | B01 | C03 | C12  |      |      |      |\n| A22   | A31 | B20 | B11 |     | C13  |      |      |      |\n| A23   | A32 | B30 | B21 |     |      |      |      |      |\n| A20   | A33 | B02 | B31 | C20 |      |      |      |      |\n| A21   | A30 | B12 | B03 | C21 | C30  |      |      |      |\n| A22   | A31 | B22 | B13 |     | C31  |      |      |      |\n| A23   | A32 | B32 | B23 |     |      |      |      |      |\n| A33   | B33 | C22 |     | C23 |      | C32  |      | C33  |\n",
+            "md": "\n# 4 \u00d7 4\n\n19 cycles.\n\n4 \u00d7 4 = 16\n\n# 11\n\n7 + 3 \u00d7 4 = 19\n\n| cycle | H0  | H1  | V0  | V1  | PE00 | PE01 | PE10 | PE11 |\n| ----- | --- | --- | --- | --- | ---- | ---- | ---- | ---- |\n| A00   | B00 |     |     |     |      |      |      |      |\n| A01   | A10 | B10 | B01 |     |      |      |      |      |\n| A02   | A11 | B20 | B11 |     |      |      |      |      |\n| A03   | A12 | B30 | B21 |     |      |      |      |      |\n| A00   | A13 | B02 | B31 | C00 |      |      |      |      |\n| A01   | A10 | B12 | B03 | C01 | C10  |      |      |      |\n| A02   | A11 | B22 | B13 |     | C11  |      |      |      |\n| A03   | A12 | B32 | B23 |     |      |      |      |      |\n| A20   | A13 | B00 | B33 | C02 |      |      |      |      |\n| A21   | A30 | B10 | B01 | C03 | C12  |      |      |      |\n| A22   | A31 | B20 | B11 |     | C13  |      |      |      |\n| A23   | A32 | B30 | B21 |     |      |      |      |      |\n| A20   | A33 | B02 | B31 | C20 |      |      |      |      |\n| A21   | A30 | B12 | B03 | C21 | C30  |      |      |      |\n| A22   | A31 | B22 | B13 |     | C31  |      |      |      |\n| A23   | A32 | B32 | B23 |     |      |      |      |      |\n| A33   | B33 | C22 |     | C23 |      | C32  |      | C33  |\n\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -3594,7 +3428,7 @@
         {
             "page": 28,
             "text": "M1:\nM2:\nExplanation\nWe calculate the accuracy and coverage for all three types of prefetchers, and then we can answer what\nprefetcher each machine is using. Underlined and red-marked cacheline addresses are correctly and incorrectly\nprefetched, respectively.\nEach prefetcher works in the following way while running Application A:\nStride: Coverage: 1/3, Accuracy: 9/26\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48,\na + 96)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48,\na + 96)\n1st-next-line: Coverage: 4/9, Accuracy: 4/9\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n4th-next-line:    Coverage: 6/27, Accuracy: 6/27\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20,\na + 36, a + 68)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20,\na + 36, a + 68)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a\n+ 36, a + 68)\nThe three prefetechers work in the following way while running Application B:\nStride: Coverage: 499/501, Accuracy: 499/500\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002)\n1st-next-line: Coverage: 0, Accuracy: 0\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ... , b + 998, b + 1000 (incorrect: b + 1, b + 3, ..., b + 999, b + 1001)\n4th-next-line:    Coverage: 499/501, Accuracy: 499/501\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b +1002, b + 1004)",
-            "md": "# Explanation\n\nWe calculate the accuracy and coverage for all three types of prefetchers, and then we can answer what prefetcher each machine is using. Underlined and red-marked cacheline addresses are correctly and incorrectly prefetched, respectively.\n\n# Application A\n\n# Stride\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 1/3      | 9/26     |\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\n\n# 1st-next-line\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 4/9      | 4/9      |\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\n# 4th-next-line\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 6/27     | 6/27     |\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\n# Application B\n\n# Stride\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 499/501  | 499/500  |\n\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002)\n\n# 1st-next-line\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 0        | 0        |\n\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ... , b + 998, b + 1000 (incorrect: b + 1, b + 3, ..., b + 999, b + 1001)\n\n# 4th-next-line\n\n| Coverage | Accuracy |\n| -------- | -------- |\n| 499/501  | 499/501  |\n\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002, b + 1004)",
+            "md": "# Explanation\n\nWe calculate the accuracy and coverage for all three types of prefetchers, and then we can answer what prefetcher each machine is using. Underlined and red-marked cacheline addresses are correctly and incorrectly prefetched, respectively.\n\n# Application A\n\n# Stride\n\n| Coverage:                                                    | 1/3                                                        | Accuracy: | 9/26 |\n| ------------------------------------------------------------ | ---------------------------------------------------------- | --------- | ---- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)         |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96) |           |      |\n\n# 1st-next-line\n\n| Coverage:                                                    | 4/9                                               | Accuracy: | 4/9 |\n| ------------------------------------------------------------ | ------------------------------------------------- | --------- | --- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |\n\n# 4th-next-line\n\n| Coverage:                                                    | 6/27                                                             | Accuracy: | 6/27 |\n| ------------------------------------------------------------ | ---------------------------------------------------------------- | --------- | ---- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |\n\n# Application B\n\n# Stride\n\n| Coverage:                                                     | 499/501               | Accuracy: | 499/500 |\n| ------------------------------------------------------------- | --------------------- | --------- | ------- |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1002) |           |         |\n\n# 1st-next-line\n\n| Coverage:                                                     | 0                                                 | Accuracy: | 0 |\n| ------------------------------------------------------------- | ------------------------------------------------- | --------- | - |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1, b + 3, ..., b + 999, b + 1001) |           |   |\n\n# 4th-next-line\n\n| Coverage:                                                     | 499/501                         | Accuracy: | 499/501 |\n| ------------------------------------------------------------- | ------------------------------- | --------- | ------- |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1002, b + 1004) |           |         |\n",
             "images": [],
             "charts": [],
             "tables": [],
@@ -3656,35 +3490,38 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 1/3      | 9/26     |",
+                    "md": "| Coverage:                                                    | 1/3                                                        | Accuracy: | 9/26 |\n| ------------------------------------------------------------ | ---------------------------------------------------------- | --------- | ---- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)         |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96) |           |      |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "1/3",
+                            "Accuracy:",
+                            "9/26"
                         ],
                         [
-                            "1/3",
-                            "9/26"
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 405.8,
-                        "h": 367.34
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)",
-                    "md": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 297.81,
+                        "y": 172.24,
                         "w": 406.38,
-                        "h": 45.86
+                        "h": 437.08
                     }
                 },
                 {
@@ -3704,35 +3541,38 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 4/9      | 4/9      |",
+                    "md": "| Coverage:                                                    | 4/9                                               | Accuracy: | 4/9 |\n| ------------------------------------------------------------ | ------------------------------------------------- | --------- | --- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65) |           |     |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "4/9",
+                            "Accuracy:",
+                            "4/9"
                         ],
                         [
-                            "4/9",
-                            "4/9"
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 405.8,
-                        "h": 367.34
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)",
-                    "md": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 364.56,
+                        "y": 172.24,
                         "w": 406.38,
-                        "h": 26.93
+                        "h": 437.08
                     }
                 },
                 {
@@ -3752,35 +3592,38 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 6/27     | 6/27     |",
+                    "md": "| Coverage:                                                    | 6/27                                                             | Accuracy: | 6/27 |\n| ------------------------------------------------------------ | ---------------------------------------------------------------- | --------- | ---- |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |\n| a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 | (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68) |           |      |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "6/27",
+                            "Accuracy:",
+                            "6/27"
                         ],
                         [
-                            "6/27",
-                            "6/27"
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)",
+                            "",
+                            ""
+                        ],
+                        [
+                            "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64",
+                            "(incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 405.8,
-                        "h": 367.34
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)",
-                    "md": "a, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 421.84,
-                        "w": 406.33,
-                        "h": 55.32
+                        "y": 172.24,
+                        "w": 406.38,
+                        "h": 437.08
                     }
                 },
                 {
@@ -3813,35 +3656,26 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 499/501  | 499/500  |",
+                    "md": "| Coverage:                                                     | 499/501               | Accuracy: | 499/500 |\n| ------------------------------------------------------------- | --------------------- | --------- | ------- |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1002) |           |         |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "499/501",
+                            "Accuracy:",
+                            "499/500"
                         ],
                         [
-                            "499/501",
-                            "499/500"
+                            "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000",
+                            "(incorrect: b + 1002)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 405.8,
-                        "h": 367.34
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002)",
-                    "md": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 543.54,
-                        "w": 308.33,
-                        "h": 8.0
+                        "y": 172.24,
+                        "w": 406.38,
+                        "h": 437.08
                     }
                 },
                 {
@@ -3861,35 +3695,26 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 0        | 0        |",
+                    "md": "| Coverage:                                                     | 0                                                 | Accuracy: | 0 |\n| ------------------------------------------------------------- | ------------------------------------------------- | --------- | - |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1, b + 3, ..., b + 999, b + 1001) |           |   |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "0",
+                            "Accuracy:",
+                            "0"
                         ],
                         [
-                            "0",
-                            "0"
+                            "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000",
+                            "(incorrect: b + 1, b + 3, ..., b + 999, b + 1001)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 406.33,
-                        "h": 376.81
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ... , b + 998, b + 1000 (incorrect: b + 1, b + 3, ..., b + 999, b + 1001)",
-                    "md": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ... , b + 998, b + 1000 (incorrect: b + 1, b + 3, ..., b + 999, b + 1001)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 572.43,
-                        "w": 405.92,
-                        "h": 8.0
+                        "y": 172.24,
+                        "w": 406.38,
+                        "h": 437.08
                     }
                 },
                 {
@@ -3909,35 +3734,26 @@
                     "type": "table",
                     "lvl": null,
                     "value": null,
-                    "md": "| Coverage | Accuracy |\n| -------- | -------- |\n| 499/501  | 499/501  |",
+                    "md": "| Coverage:                                                     | 499/501                         | Accuracy: | 499/501 |\n| ------------------------------------------------------------- | ------------------------------- | --------- | ------- |\n| b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 | (incorrect: b + 1002, b + 1004) |           |         |",
                     "rows": [
                         [
-                            "Coverage",
-                            "Accuracy"
+                            "Coverage:",
+                            "499/501",
+                            "Accuracy:",
+                            "499/501"
                         ],
                         [
-                            "499/501",
-                            "499/501"
+                            "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000",
+                            "(incorrect: b + 1002, b + 1004)",
+                            "",
+                            ""
                         ]
                     ],
                     "bBox": {
                         "x": 94.57,
-                        "y": 232.52,
-                        "w": 405.8,
-                        "h": 367.34
-                    }
-                },
-                {
-                    "type": "text",
-                    "lvl": null,
-                    "value": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002, b + 1004)",
-                    "md": "b, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002, b + 1004)",
-                    "rows": null,
-                    "bBox": {
-                        "x": 94.57,
-                        "y": 601.32,
-                        "w": 344.55,
-                        "h": 8.0
+                        "y": 172.24,
+                        "w": 406.38,
+                        "h": 437.08
                     }
                 }
             ],
@@ -3953,12 +3769,12 @@
         }
     ],
     "job_metadata": {
-        "job_pages": 0,
+        "job_pages": 28,
         "job_auto_mode_triggered_pages": 0,
-        "job_is_cache_hit": true
+        "job_is_cache_hit": false
     },
     "file_name": "data/ddca-s23-en-sol.pdf",
-    "job_id": "774b22ef-bc9b-4848-a6f5-ccf531acfe7a",
+    "job_id": "8c8280f6-a24e-4613-81cd-b1914dc3f8ff",
     "is_done": false,
     "error": null
 }
