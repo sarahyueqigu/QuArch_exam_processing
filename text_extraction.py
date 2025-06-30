@@ -113,8 +113,8 @@ def process(file_path, output_dir, matches):
       print("Processing text in:", problem)
       json_text = claud_37_processing(os.path.join(problems_path, problem))
       stripped_json = strip_json_code_block(json_text)
-      print(stripped_json)
-      problem_dict = json.loads(stripped_json)
+      problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
+      print("Raw problem output: ", problem_dict)
 
       problem_output = {}  # we will later append this to output
       #Deconstruct the json into standalone QA pairs
@@ -157,7 +157,7 @@ def process(file_path, output_dir, matches):
           elif figure["type"] == "subproblem_solution":
             problem_output[figure["part"]]["solution_figures"].append(figure_path)
 
-      print(problem_output)
+      print("Problem Output: ", problem_output)
       # Now add all these questions to the final out object
       for key in problem_output:
           output.append(problem_output[key])
