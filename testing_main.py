@@ -4,6 +4,7 @@ import testing_yolo
 import testing_opencv
 import test_fitz_pymupdf
 import testing_pdfplumber
+import testing_scikit
 
 
 for filename in os.listdir("data"):
@@ -21,13 +22,14 @@ for filename in os.listdir("data"):
 
 input_dir = "manual_figure_extraction/pdf_to_image"
 
-# For the libraries that scrape the images from the pdf's directly
-test_fitz_pymupdf.execute()
-testing_pdfplumber.execute()
+# # For the libraries that scrape the images from the pdf's directly
+# test_fitz_pymupdf.execute()
+# testing_pdfplumber.execute()
 
 # For the libraries that require converting the pdf into images:
 for exam in os.listdir(input_dir):
     for page in os.listdir(os.path.join(input_dir, exam)):
         input_path = os.path.join(input_dir, exam, page)
-        testing_yolo.execute(input_path, exam, page)
-        testing_opencv.execute(input_path, exam, page)
+        # testing_yolo.execute(input_path, exam, page)
+        # testing_opencv.execute(input_path, exam, page)
+        testing_scikit.execute(input_path, exam, page)
