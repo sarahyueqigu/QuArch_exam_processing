@@ -61,6 +61,7 @@ claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference
 
 def process(exam_path, pages_data): 
     print("\nIMAGE_IDENTIFYING")
+    print("exam path:", exam_path)
     # Create a dictionary defining all problems' image matches
     matches = {}
 
@@ -123,7 +124,7 @@ def process(exam_path, pages_data):
                 response = client.converse(
                     modelId=claude_inference_profile_arn,
                     messages=conversation,
-                    inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+                    inferenceConfig={"maxTokens": 800, "temperature": 0.2},
                 )
 
                 # Extract and print the response text.
