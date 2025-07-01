@@ -30,7 +30,7 @@ def claud_37_processing(path):
       "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header>,
       "subproblems": [ 
         {{
-          "subproblem": "a",
+          "subproblem": "a" (or "A" or "1"; insert the part number/letter exactly as it appears),
           "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header>,
           "subproblem_question": <Insert the full question of the subproblem, exactly as it appears in the original>,
           "subproblem_solution": <Insert the full solution of the subproblem, exactly as shown in the original>
