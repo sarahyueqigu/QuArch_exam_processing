@@ -1,6 +1,6 @@
 import ast
 import boto3
-import fitz
+import pymupdf
 import os
 import asyncio
 from botocore.exceptions import ClientError
@@ -27,8 +27,8 @@ def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     Extract pages from start_page to end_page (1-based index, inclusive)
     and save as a new PDF.
     """
-    doc = fitz.open(input_pdf_path)
-    new_doc = fitz.open()
+    doc = pymupdf.open(input_pdf_path)
+    new_doc = pymupdf.open()
 
     # PyMuPDF uses 0-based indexing
     new_doc.insert_pdf(doc, from_page=start_page - 1, to_page=end_page - 1)
@@ -126,7 +126,7 @@ def process(input_path):
     filename = os.path.basename(input_path)
 
     # Save all images first
-    images_path = os.path.join("extracted_problems", filename[:-4], "images")
+    images_path = os.path.join("images", filename[:-4])
     document_json = asyncio.run(llama_processing(input_path, images_path))
     # Convert the json to byte form for Claude input
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
@@ -143,15 +143,13 @@ def process(input_path):
     data = ast.literal_eval(dict_text)
     print(data)
     
-
-    output_dir = "extracted_problems/" + filename[:-4]
     for problem in data:
         child_pdf_filename = problem + ".pdf"
 
+        output_path = os.path.join("extracted_problems", filename[:-4], child_pdf_filename)
         # Create the target directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
+        os.makedirs(output_path, exist_ok=True)
 
-        output_path = os.path.join(output_dir, child_pdf_filename)
         extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
         # Also sort all images from the relevant page ranges into the data dict
         for pagenum in range(data[problem][0]-1, data[problem][1]):
