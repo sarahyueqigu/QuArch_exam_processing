@@ -5,7 +5,7 @@ import io
 import pypdf
 import pikepdf
 
-#pike cannot read some of the byte streams in the pdfs,..
+#pike cannot read some of the byte streams in the pdfs,..so it just doesnt work!
 
 def extract_images_as_png(pdf_path, output_folder):
     pdf = fitz.open(pdf_path)
