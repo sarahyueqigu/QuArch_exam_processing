@@ -102,10 +102,12 @@ def strip_json_code_block(text: str) -> str:
 
 
 
-def process(file_path, output_dir, matches):
+def process(file_path, output_dir, output_fol, matches):
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
-  problems_path = os.path.join("extracted_problems", filename)
+  problems_path = os.path.join(output_fol, filename) #7/3 changed the "extracted_problems" in 
+  #problems_path = os.path.join("extracted_problems", filename) to generic output_fol
+
   output_path = os.path.join(output_dir, filename + ".json")
   output = [] # List of all problems separated, will be pushed to final json
 
