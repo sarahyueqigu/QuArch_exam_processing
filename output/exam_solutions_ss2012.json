@@ -4,7 +4,7 @@
         "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
         "context_figures": [],
         "question": "If the system has no cache, how much time will it make all memory accesses in the program given above?",
-        "solution": "ttotal = N x tmem.\nttotal = 20 x 20ns. = 400 ns",
+        "solution": "ttotal =  N x tmem. \nttotal =  20 x 20ns. = 400 ns",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -13,7 +13,7 @@
         "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
         "context_figures": [],
         "question": "As an alternative, it was decided to use a direct mapped cache with capacity of 8 words and a block size of 1. The cache access time for this cache is 2ns. Using the table below, show the final content of this cache memory after executing the program above.",
-        "solution": "Location Content\nSet 7  \nSet 6  \nSet 5 14\nSet 4 10\nSet 3 0C  4C  0C  4C\nSet 2 08  48  08  48\nSet 1 04  44  04\nSet 0 00  40  00",
+        "solution": "Location Content \nSet 7  \nSet 6  \nSet 5 14 \nSet 4 10 \nSet 3 0C  4C  0C  4C \nSet 2 08  48  08  48 \nSet 1 04  44  04 \nSet 0 00  40  00",
         "solution_figures": [
             "images/exam_solutions_ss2012/chart_p16_0.png"
         ],
@@ -51,7 +51,7 @@
         "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
         "context_figures": [],
         "question": "How long will it take to make all the memory accesses for the program given above?",
-        "solution": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\nTotal is 40ns + 320ns = 360ns\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.\nTotal time memory access x AMAT = 20 x 18ns = 360ns",
+        "solution": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\nTotal is 40ns + 320ns = 360ns\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.  \nTotal time memory access x AMAT = 20 x 18ns = 360ns",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -150,7 +150,7 @@
             "images/exam_solutions_ss2012/chart_p4_0.png"
         ],
         "question": "Make a new state transition table and determine the next state equations using the gray code as state encoding.",
-        "solution": "Current State Next State \nS2 S1 S0 N2 N1 N0 \n0 0 0 0 0 1 \n0 0 1 0 1 1 \n0 1 0 1 1 0 \n0 1 1 0 1 0 \n1 0 0 0 0 0 \n1 0 1 1 0 0 \n1 1 0 1 1 1 \n1 1 1 1 0 1 \n\n\n\nN2 = S2S0 + S1S0' \nN1 = S2'S0 + S1S0' \nN2 = S2'S1' + S2S1",
+        "solution": "Current State Next State \nS2 S1 S0 N2 N1 N0 \n0 0 0 0 0 1 \n0 0 1 0 1 1 \n0 1 0 1 1 0 \n0 1 1 0 1 0 \n1 0 0 0 0 0 \n1 0 1 1 0 0 \n1 1 0 1 1 1 \n1 1 1 1 0 1 \n\nN2 = S2S0 + S1S0' \nN1 = S2'S0 + S1S0' \nN2 = S2'S1' + S2S1",
         "solution_figures": [
             "images/exam_solutions_ss2012/chart_p6_0.png"
         ],
@@ -206,7 +206,7 @@
             "images/exam_solutions_ss2012/chart_p7_0.png"
         ],
         "question": "Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \"tiny\" realizes a simple AND function)",
-        "solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
+        "solution": "",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -217,7 +217,7 @@
             "images/exam_solutions_ss2012/chart_p7_1.png"
         ],
         "question": "Which code snippet(s) will produce a four input multiplexer?",
-        "solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
+        "solution": "",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -228,7 +228,7 @@
             "images/exam_solutions_ss2012/chart_p8_0.png"
         ],
         "question": "Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c2c1d0d0d0001 (c and d are both 8-bit values)?",
-        "solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
+        "solution": "",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -239,7 +239,7 @@
             "images/exam_solutions_ss2012/chart_p8_1.png"
         ],
         "question": "Which code snippet(s) will produce a sequential circuit?",
-        "solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
+        "solution": "",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -250,7 +250,7 @@
             "images/exam_solutions_ss2012/chart_p8_2.png"
         ],
         "question": "Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
-        "solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
+        "solution": "",
         "solution_figures": [],
         "correctly_parsed": null
     },
@@ -360,12 +360,12 @@
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/c",
-        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\nFor reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same.",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\nFor reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same. Complete the modified assembly code below by filling in the empty blocks.",
         "context_figures": [
             "images/exam_solutions_ss2012/chart_p11_0.png",
             "images/exam_solutions_ss2012/chart_p12_0.png"
         ],
-        "question": "Complete the modified assembly code below by filling in the empty blocks.\n\nAssembly program using subroutines\nbegin     : add $a0, $t1, 10 # $t1 is the input reg\n            jal function\n            add $t6, $v0, $0\nhalt      : j  halt  \n\nfunction  : addi $t1, $0, 0  \n            addi $t2, $0, 1\n\n   loop   : slt $t3, $a0, $t2\n            bne $t3, $0, exit_func\n            add $t1, $t1, $t2  \n            addi $t2, $t2, 2  \n            j loop\n       \nexit_func : add $v0, $t1, $0\n    jr  $ra",
+        "question": "Assembly program using subroutines\nbegin     : add $a0, $t1, 10 # $t1 is the input reg\n            jal function\n            add $t6, $v0, $0\nhalt      : j  halt  \n\nfunction  : addi $t1, $0, 0  \n            addi $t2, $0, 1\n\n   loop   : slt $t3, $a0, $t2 \n            bne $t3, $0, exit_func \n            add $t1, $t1, $t2  \n            addi $t2, $t2, 2  \n            j loop \n       \nexit_func : add $v0, $t1, $0 \n    jr  $ra",
         "solution": "",
         "solution_figures": [],
         "correctly_parsed": null

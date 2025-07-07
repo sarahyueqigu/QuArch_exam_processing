@@ -120,7 +120,7 @@ def claud_37_processing(document_bytes):
         exit(1)
 
 
-def process(input_path):
+def process(input_path, output_fol): #7/3 added extra input path parameter, output_fol, such that all the output is not hard coded to "extracted_problems"
     print("\nPROBLEM_PAGE_EXTRACTION: ", input_path)
     
     filename = os.path.basename(input_path)
@@ -146,7 +146,9 @@ def process(input_path):
     for problem in data:
         child_pdf_filename = problem + ".pdf"
 
-        output_path = os.path.join("extracted_problems", filename[:-4], child_pdf_filename)
+        output_path = os.path.join(output_fol, filename[:-4], child_pdf_filename) #7/3 changed the "extracted_problems" to generic output_fol
+        #output_path = os.path.join("extracted_problems", filename[:-4], child_pdf_filename) 
+        
         # Create the target directory if it doesn't exist
         os.makedirs(output_path, exist_ok=True)
 

@@ -45,7 +45,7 @@ prompt = """
         {{
             "name": "image_name.png",
             "type": "subproblem_figure",
-            "part": "a"
+            "part": "a" (or "A" or "1" or "i"; insert the part number/letter exactly as it appears)
         }}
     ]
 
@@ -59,14 +59,15 @@ client = boto3.client("bedrock-runtime", region_name="us-east-2")
 
 claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-def process(exam_path, pages_data): 
+def process(exam_path, pages_data, output_fol): 
     print("\nIMAGE_IDENTIFYING")
     # Create a dictionary defining all problems' image matches
     matches = {}
 
     # page_ranges is the dictionary from problem_page_extraction that defined each problem's page range
     filename = os.path.basename(exam_path)
-    problems_path = os.path.join("extracted_problems",filename[:-4])
+    problems_path = os.path.join(output_fol,filename[:-4]) #7/3 changed to generic output_fol instead of "extracted_problems"
+    #problems_path = os.path.join("extracted_problems",filename[:-4])
 
     # Repeat for every problem that was extracted from exam
     for problem in os.listdir(problems_path):
