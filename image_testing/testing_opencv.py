@@ -23,7 +23,7 @@ def execute(img_path, exam, page):
     contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     # Create output directory
-    subimage_output_dir = os.path.join("manual_figure_extraction", "opencv", exam[:-4])
+    subimage_output_dir = os.path.join("../manual_figure_extraction", "opencv", exam[:-4])
     os.makedirs(subimage_output_dir, exist_ok=True)
 
     # Extract subimages
@@ -46,9 +46,9 @@ def execute(img_path, exam, page):
 
 if __name__ == "__main__":
     filename = "sp18-final-sol"
-    doc = pymupdf.open("data/sp18-final-sol.pdf")  # open document
+    doc = pymupdf.open("../data/sp18-final-sol.pdf")  # open document
 
-    pdf_output_dir = os.path.join("manual_figure_extraction", "pdf_to_image", "sp18-final-sol")
+    pdf_output_dir = os.path.join("../manual_figure_extraction", "pdf_to_image", "sp18-final-sol")
     os.makedirs(pdf_output_dir, exist_ok = True)
 
     for page in doc:  # iterate through the pages
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         new_path = os.path.join(pdf_output_dir, filename)
         pix.save(new_path)  # store image as a PNG
 
-    input_dir = "manual_figure_extraction/pdf_to_image"
+    input_dir = "../manual_figure_extraction/pdf_to_image"
 
     for exam in os.listdir(input_dir):
         for page in os.listdir(os.path.join(input_dir, exam)):
