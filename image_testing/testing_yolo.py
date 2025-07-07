@@ -13,7 +13,7 @@ def execute(img_path, exam, page):
     # Run inference
     results = model(img_path)[0]  # Single image, first result
 
-    subimage_output_dir = os.path.join("manual_figure_extraction", "yolo", exam)
+    subimage_output_dir = os.path.join("../manual_figure_extraction", "yolo", exam)
     os.makedirs(subimage_output_dir, exist_ok=True)
 
     # Loop over detections
