@@ -45,7 +45,7 @@ prompt = """
         {{
             "name": "image_name.png",
             "type": "subproblem_figure",
-            "part": "a" (or "A" or "1"; insert the part number/letter exactly as it appears)
+            "part": "a" (or "A" or "1" or "i"; insert the part number/letter exactly as it appears)
         }}
     ]
 
