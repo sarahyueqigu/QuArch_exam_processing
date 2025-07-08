@@ -151,10 +151,10 @@ def process(file_path, pages_data): # pages_data is the dictionary from problem_
             subproblem_output["question_id"] = filename + "/" + problem[:-4] + "/" + subproblem.get("subproblem", "")             
             # Ensure main problem context is included
             subproblem_output["context"] = problem_with_imgs.get("problem_context", "") + "\n" + subproblem.get("subproblem_context", "")
-            subproblem_output["context_figures"] = [problem_with_imgs.get("problem_context_figures", []) + subproblem.get("subproblem_context_figures", [])]
+            subproblem_output["context_figures"] = problem_with_imgs.get("problem_context_figures", []) + subproblem.get("subproblem_context_figures", [])
             subproblem_output["question"] = subproblem.get("subproblem_question", "")
             subproblem_output["solution"] = subproblem.get("subproblem_solution", "")
-            subproblem_output["solution_figures"] = [problem_with_imgs.get("problem_solution_figures", []) + subproblem.get("subproblem_solution_figures", [])]
+            subproblem_output["solution_figures"] = problem_with_imgs.get("problem_solution_figures", []) + subproblem.get("subproblem_solution_figures", [])
             subproblem_output["correctly_parsed"] = None
             problem_output[subproblem["subproblem"]] = subproblem_output
 
