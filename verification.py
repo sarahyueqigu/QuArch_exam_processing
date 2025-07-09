@@ -164,7 +164,7 @@ def process(json_path, exam):
             print(f"ERROR: Can't invoke '{claude_35_arn}'. Reason: {e}")
             exit(1)
 
-    output_dir = "verification_tests/" + exam
+    output_dir = "verification_tests/" + exam[:-5]
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "claude_37_arn.json")
 
@@ -174,11 +174,9 @@ def process(json_path, exam):
     
    
 if __name__ == "__main__":
-    parent_dir = "output"
+    path = "output"
 
-    for file in os.listdir(parent_dir):
-        path = os.path.join(parent_dir, file)
-        process(path, file)
+    process("output/sp18-final-sol.json", "sp18-final-sol.json")
 
     # for file in os.listdir(path):
     #     input_dir = os.path.join(path, file)
