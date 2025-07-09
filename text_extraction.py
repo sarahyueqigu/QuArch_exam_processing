@@ -2,13 +2,14 @@ import boto3
 from botocore.exceptions import ClientError
 import os
 import json
+import helper 
 
 client = boto3.client("bedrock-runtime", region_name="us-east-2")
+claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
 
 def claud_37_processing(path):
     filename = os.path.basename(path)[:-4]
-    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
     prompt = """You are a language model assisting with the digitization of academic exam content. The input is a PDF file containing one problem of a Computer Architecture Assessment. If part of another problem is included, ignore it and only focus on {filename}. 
     The problem may include any combination of the following:
@@ -88,20 +89,6 @@ def claud_37_processing(path):
         exit(1)
 
 
-def strip_json_code_block(text: str) -> str:
-    # find the first “{” and the last “}”
-    start = text.index("{")
-    end   = text.rindex("}") + 1
-    text2 = text[start:end]
-    
-    # Remove opening and closing code block markers
-    lines = text2.strip().splitlines()
-    cleaned_lines = [line for line in lines if not line.strip().startswith("```")]
-    return "\n".join(cleaned_lines)
-
-
-
-
 def process(file_path, output_dir, output_fol, matches):
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
@@ -114,7 +101,8 @@ def process(file_path, output_dir, output_fol, matches):
   for problem in os.listdir(problems_path):
       print("Processing text in:", problem)
       json_text = claud_37_processing(os.path.join(problems_path, problem))
-      stripped_json = strip_json_code_block(json_text)
+      stripped_json = helper.strip_json_code_block(json_text)
+      print(stripped_json)
       problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
       print("Raw problem output: ", problem_dict)
 
@@ -159,10 +147,21 @@ def process(file_path, output_dir, output_fol, matches):
           elif figure["type"] == "subproblem_solution":
             problem_output[figure["part"]]["solution_figures"].append(figure_path)
 
-      print("Problem Output: ", problem_output)
       # Now add all these questions to the final out object
       for key in problem_output:
+          
+          # Write all the data into an intermediary folder
+          preprocessed_output = os.path.join("preprocessed_output", filename)
+          os.makedirs(preprocessed_output, exist_ok = True)
+
+          with open(preprocessed_output + "/" + problem + ".json", 'w') as file:
+            json.dump(problem_dict, file, indent=4)
+          
+          # Add this data to a larger json file
           output.append(problem_output[key])
+
+
+         
       
     
   with open(output_path, 'w') as file:

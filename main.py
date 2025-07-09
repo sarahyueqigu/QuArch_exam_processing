@@ -21,11 +21,20 @@ if __name__ == "__main__":
         # skip anything that isn’t a file or doesn’t end with .pdf
         if not os.path.isfile(path) or not filename.lower().endswith(SUPPORTED): #6/30
             continue #6/30
+
         file_dir = input_dir + "/" + filename
 
+        print(file_dir)
+        
         data = problem_image_extraction.process(file_dir, "10_onur_exams_output")
         matches = image_identifing.process(file_dir, data, "10_onur_exams_output")
         text_extraction.process(file_dir, "output","10_onur_exams_output", matches)
+
+        # To be replaced by a variable returned by one of the last functions called that has the 
+        # final JSON file contents
+
+        json_dir = "output/" + filename + ".json"
+
             
         
         

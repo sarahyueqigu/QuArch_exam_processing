@@ -1,0 +1,455 @@
+[
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_1/a",
+        "context": "Boolean Algebra [12 points]\n",
+        "context_figures": [],
+        "question": "[6 points] Find the simplest sum-of-products representation of the following Boolean equation. Show your work step-by-step.\n\nF = (A+B + C).(A+B + C).C +A",
+        "solution": "F = B.C +A\n\nExplanation:\nF = (A.A+A.B +A.C +B.A+B.B +B.C + C.A+ C.B + C.C).C +A\nF = (0 +B.(A+A) +A.C +B +B.(C + C) + C.A+ 0).C +A\nF = (B +A.C +B +B + C.A).C +A\nF = (B.C +A.C.C +B.C + C.A.C) +A\nF = (B.C + 0 + C.A) +A\nF = B.C +A.(C + 1)\nF = B.C +A",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p3_0.png"
+        ],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_1/b",
+        "context": "Boolean Algebra [12 points]\n",
+        "context_figures": [],
+        "question": "[6 points] Convert the following Boolean equation so that it contains only NAND operations. Show your work step-by-step.\n\nF = A+ (B.C +A.C)",
+        "solution": "F = (A.(B.C.A.C.A.C))\n\nExplanation:\n\nF = ((A+ (B.C +A.C))\n\nF = (A.(B.C +A.C))\n\nF = (A.(B.C +A.C))\n\nF = (A.(B.C.A.C))\n\nF = (A.(B.C.A.C.A.C))",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p3_1.png"
+        ],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_10/a",
+        "context": "Reverse Engineering Caches [40 points]\n\nYou are trying to reverse-engineer the characteristics of a cache in a system, so that you can design\na more efficient, machine-specific implementation of an algorithm you are working on. To do so, you\nhave come up with three sequences of memory accesses to various bytes in the system in an attempt to\ndetermine the following four cache characteristics:\n\n\u2022 Cache block size (8, 16, 32, 64, or 128B).\n\n\u2022 Cache associativity (1-, 2-, 4-, or 8-way).\n\n\u2022 Cache size (4 or 8KB).\n\n\u2022 Cache replacement policy (LRU or FIFO).\n\nThe only statistic that you can collect on this system is cache hit rate after performing each sequence of\nmemory accesses. Here is what you observe:\n\nSequence Addresses Accessed (Oldest \u2192 Youngest) Hit Rate\n\n1. 31 8192 63 16384 4096 8192 64 16384 3/8\n2. 32768 0 129 1024 3072 8192 0\n3. 0 4 8 4096 64 128 1\n\nAssume that the cache is initially empty at the beginning of the first sequence, but not at the beginning\nof the second and third sequences. The sequences are executed back-to-back, i.e., no other accesses take\nplace in between the three sequences. Thus, at the beginning of the second (third) sequence, the\ncontents are the same as at the end of the first (second) sequence.\n\nBased on what you observe, what are the following characteristics of the cache? Explain to get points.\nIf a characteristic cannot be known, then write \"Unknown\" and explain.\n",
+        "context_figures": [],
+        "question": "Cache block size (8, 16, 32, 64, or 128B)?",
+        "solution": "64 B.\n\nExplanation:\nCache hit rate is 3/8 in sequence 1. This means that there are 3 hits. As two of them\nshould be the second accesses to 8192 and 16384, the other hit is the access to 63. With a\ncache block of 64 B, the access to address 64 results in a miss.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_10/b",
+        "context": "Reverse Engineering Caches [40 points]\n\nYou are trying to reverse-engineer the characteristics of a cache in a system, so that you can design\na more efficient, machine-specific implementation of an algorithm you are working on. To do so, you\nhave come up with three sequences of memory accesses to various bytes in the system in an attempt to\ndetermine the following four cache characteristics:\n\n\u2022 Cache block size (8, 16, 32, 64, or 128B).\n\n\u2022 Cache associativity (1-, 2-, 4-, or 8-way).\n\n\u2022 Cache size (4 or 8KB).\n\n\u2022 Cache replacement policy (LRU or FIFO).\n\nThe only statistic that you can collect on this system is cache hit rate after performing each sequence of\nmemory accesses. Here is what you observe:\n\nSequence Addresses Accessed (Oldest \u2192 Youngest) Hit Rate\n\n1. 31 8192 63 16384 4096 8192 64 16384 3/8\n2. 32768 0 129 1024 3072 8192 0\n3. 0 4 8 4096 64 128 1\n\nAssume that the cache is initially empty at the beginning of the first sequence, but not at the beginning\nof the second and third sequences. The sequences are executed back-to-back, i.e., no other accesses take\nplace in between the three sequences. Thus, at the beginning of the second (third) sequence, the\ncontents are the same as at the end of the first (second) sequence.\n\nBased on what you observe, what are the following characteristics of the cache? Explain to get points.\nIf a characteristic cannot be known, then write \"Unknown\" and explain.\n",
+        "context_figures": [],
+        "question": "Cache associativity (1-, 2-, 4-, or 8-way)?",
+        "solution": "4-way.\n\nExplanation:\nWe already know that the cache block size is 64 B. Thus, there are 6 offset bits.\n\nRegardless of cache size or associativity, addresses 0, 8192, 16384, and 32768 map to the\nsame set. Thus, the cache cannot be 1-way, because we would not see hits on 8192 and\n16384 in sequence 1.\n\nIf the cache were 2-way, 4096 would also map to the same set as 0, 8192, 16384, and\n32768. This would make impossible a cache hit on 8192 in sequence 1.\n\nIf the cache were 8-way, 0, 1024, 3072, 4096, 8192, 16384, and 32768 would all map to set\n0. With 8 ways, address 0 would not be replaced, so it would hit in sequence 2.\n\nTherefore, the cache is 4-way associative.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_10/c",
+        "context": "Reverse Engineering Caches [40 points]\n\nYou are trying to reverse-engineer the characteristics of a cache in a system, so that you can design\na more efficient, machine-specific implementation of an algorithm you are working on. To do so, you\nhave come up with three sequences of memory accesses to various bytes in the system in an attempt to\ndetermine the following four cache characteristics:\n\n\u2022 Cache block size (8, 16, 32, 64, or 128B).\n\n\u2022 Cache associativity (1-, 2-, 4-, or 8-way).\n\n\u2022 Cache size (4 or 8KB).\n\n\u2022 Cache replacement policy (LRU or FIFO).\n\nThe only statistic that you can collect on this system is cache hit rate after performing each sequence of\nmemory accesses. Here is what you observe:\n\nSequence Addresses Accessed (Oldest \u2192 Youngest) Hit Rate\n\n1. 31 8192 63 16384 4096 8192 64 16384 3/8\n2. 32768 0 129 1024 3072 8192 0\n3. 0 4 8 4096 64 128 1\n\nAssume that the cache is initially empty at the beginning of the first sequence, but not at the beginning\nof the second and third sequences. The sequences are executed back-to-back, i.e., no other accesses take\nplace in between the three sequences. Thus, at the beginning of the second (third) sequence, the\ncontents are the same as at the end of the first (second) sequence.\n\nBased on what you observe, what are the following characteristics of the cache? Explain to get points.\nIf a characteristic cannot be known, then write \"Unknown\" and explain.\n",
+        "context_figures": [],
+        "question": "Cache size (4 or 8KB)?",
+        "solution": "8 KB.\n\nExplanation:\nWe know that the cache is 4-way associative. In the beginning of sequence 2, 32768\nreplaces 0 (regardless of the replacement policy).\n\nThe fact that 8192 misses in sequence 2 can be explained by two possible cases:\n1. If the replacement policy is FIFO, the access to 0 in sequence 2 replaces 8192. Thus,\n   the cache size can be either 4 or 8 KB.\n2. If the replacement policy is LRU, the access to 0 in sequence 2 replaces 4096. If the\n   cache size is 4 KB, 1024 and 3072 map to the same set as 0 and 8192, and 1024 replaces\n   8192.\n\nSince there is a hit on 4096 in sequence 3, the size should be 8 KB. Otherwise, 3072 would\nhave replaced 4096.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_10/d",
+        "context": "Reverse Engineering Caches [40 points]\n\nYou are trying to reverse-engineer the characteristics of a cache in a system, so that you can design\na more efficient, machine-specific implementation of an algorithm you are working on. To do so, you\nhave come up with three sequences of memory accesses to various bytes in the system in an attempt to\ndetermine the following four cache characteristics:\n\n\u2022 Cache block size (8, 16, 32, 64, or 128B).\n\n\u2022 Cache associativity (1-, 2-, 4-, or 8-way).\n\n\u2022 Cache size (4 or 8KB).\n\n\u2022 Cache replacement policy (LRU or FIFO).\n\nThe only statistic that you can collect on this system is cache hit rate after performing each sequence of\nmemory accesses. Here is what you observe:\n\nSequence Addresses Accessed (Oldest \u2192 Youngest) Hit Rate\n\n1. 31 8192 63 16384 4096 8192 64 16384 3/8\n2. 32768 0 129 1024 3072 8192 0\n3. 0 4 8 4096 64 128 1\n\nAssume that the cache is initially empty at the beginning of the first sequence, but not at the beginning\nof the second and third sequences. The sequences are executed back-to-back, i.e., no other accesses take\nplace in between the three sequences. Thus, at the beginning of the second (third) sequence, the\ncontents are the same as at the end of the first (second) sequence.\n\nBased on what you observe, what are the following characteristics of the cache? Explain to get points.\nIf a characteristic cannot be known, then write \"Unknown\" and explain.\n",
+        "context_figures": [],
+        "question": "Cache replacement policy (LRU or FIFO)?",
+        "solution": "FIFO.\n\nExplanation:\nAs explained above, if the cache size is 8 KB, only FIFO can make address 0 replace\naddress 8192 in sequence 2.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_11",
+        "context": "\u2022 We define the switch node in Figure 3 to have 2 inputs (I, Ctrl) and 1 output (O). The Ctrl input always enters perpendicularly to the switch node. If the Ctrl input has a True token (i.e., a token with a value of 1), the O wire propagates the value on the I wire. Else, the 2 input tokens (I, Ctrl) are consumed, and no token is generated at the output (O).\n\n\u2022 We define the inverter node in Figure 4 to have 1 input (I) and 1 output (O). The node negates the input token (i.e., O = !I).\n\n\u2022 We define the TF node in Figure 5 to have 3 inputs (IF, IT, Ctrl) and 1 output (O). When Ctrl is set to True, O takes IT. When Ctrl is set to False, O takes IF.\n\n\u2022 The \u2265 node outputs True only when the left input is greater than or equal to the right input.\n\n\u2022 The +1 node outputs the input plus one.\n\n\u2022 The + node outputs the sum of the two inputs.\n\n\u2022 A node generates an output token when tokens exist at every input, and all input tokens are consumed.\n\n\u2022 Where a single wire splits into multiple wires, the token travelling on the wire is replicated to all wires.\n\nConsider the dataflow graph on the following page. Numbers in dashed boxes represent tokens (with the value indicated by the number) in the initial state. The X and Y inputs automatically produce tokens as soon as the previous token on the wire is consumed. The order of these tokens follows the pattern (note, the following are all single digit values spaced appropriately for the reader to easily notice the pattern):\n\nX: 0 01 011 0111 01111\n\nY: 1 22 333 4444 55555",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\img_p21_1.png",
+            "images\\digitaltechnik-s19-en-sol\\chart_p22_0.png",
+            "images\\digitaltechnik-s19-en-sol\\chart_p23_0.png"
+        ],
+        "question": "Consider the dataflow graph on the following page. Please clearly describe the sequence of tokens generated at the output (OUT).",
+        "solution": "1, 4, 9, 16, 25",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_12/a",
+        "context": "BONUS: Branch Prediction [30 points]\n\nAssume a machine with a two-bit global history register (GHR) shared by all branches, which starts with\nNot Taken, Not Taken (2'b00). Each pattern history table entry (PHTE) contains a 2-bit saturating\ncounter. The saturating counter values are as follows:\n\n2'b00 - Strongly Not Taken\n2'b01 - Weakly Not Taken\n2'b10 - Weakly Taken\n2'b11 - Strongly Taken\n\nAssume the following piece of code runs on this machine. The code has two branches (labeled B1 and\nB2). When we say that a branch is taken, we mean that the code inside the curly brackets is executed.\nFor the following questions, assume that this is the only block of code that will ever be run, and the\nloop-condition branch (B1) is resolved first in the iteration before the if-condition branch (B2).\n\nfor (int i = 0; i < 1000000; i++) { /* B1 */\n/* TAKEN PATH for B1 */\n\nif (i % 3 == 0) { /* B2 */\nj[i] = k[i] -1; /* TAKEN PATH for B2 */\n\n}\n}\n",
+        "context_figures": [],
+        "question": "Is it possible to observe that the branch predictor mispredicts 100% of the times in the\nfirst 5 iterations of the loop? If yes, fill in the table below with all possible initial values each entry\ncan take. We represent Not Taken with N, and Taken with T.\n\nTable 3: PHT\n\nPHT Entry Value\n\nTT 01\nTN 00\nNT 01\nNN 00 or 01",
+        "solution": "Yes, it is possible.\nThe pattern after 5 iterations: TTTNTNTTTN.\nIn order to be more clear, we add indices to each branch outcome in the pattern above, to\nrepresent their positions in the pattern: T1 T2 T3 N4 T5 N6 T7 T8 T9 N10\n\n\u2022 For GHR=NN, the only observed branch is T1. Therefore, the PHTE for NN has to\nbe either 00 or 01 so that the branch predictor mispredicts the taken branch.\n\n\u2022 For GHR=TT, the observed branches are T3 N4 T9 N10. The PHTE for TT has to\nbe initialized to 01 in order to cause the predictor to always mispredict. This way,\neach N and T moves the saturating counter to their respective direction. This will\ncause misprediction for the next branch which is always in the opposite direction.\n\n\u2022 For GHR=TN, the observed branches are T5 T7. Thus, the initial PHTE value for\nTN has to be 00 to mispredict both taken branches.\n\n\u2022 For GHR=NT, the observed branches are T2 N6 T8. Similar to the TT entry, NT's\nPHTE has to be initialized 01.",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p24_0.png"
+        ],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_12/b",
+        "context": "BONUS: Branch Prediction [30 points]\n\nAssume a machine with a two-bit global history register (GHR) shared by all branches, which starts with\nNot Taken, Not Taken (2'b00). Each pattern history table entry (PHTE) contains a 2-bit saturating\ncounter. The saturating counter values are as follows:\n\n2'b00 - Strongly Not Taken\n2'b01 - Weakly Not Taken\n2'b10 - Weakly Taken\n2'b11 - Strongly Taken\n\nAssume the following piece of code runs on this machine. The code has two branches (labeled B1 and\nB2). When we say that a branch is taken, we mean that the code inside the curly brackets is executed.\nFor the following questions, assume that this is the only block of code that will ever be run, and the\nloop-condition branch (B1) is resolved first in the iteration before the if-condition branch (B2).\n\nfor (int i = 0; i < 1000000; i++) { /* B1 */\n/* TAKEN PATH for B1 */\n\nif (i % 3 == 0) { /* B2 */\nj[i] = k[i] -1; /* TAKEN PATH for B2 */\n\n}\n}\n",
+        "context_figures": [],
+        "question": "At steady-state, we observe the following pattern which repeats over time: TTTNTN,\nwith T representing Taken, and N representing Not Taken. When GHR pattern equals to NT or\nTT, the predictor will observe that the branch outcome will be either T or N. Therefore, no matter\nwhat the initial values for these two entries are in the pattern history table (PHT), only one of\nthe branches can be predicted correctly. Thus prediction accuracy will never reach 100%. Explain\nhow using local history registers instead of the global history register will help bring the prediction\naccuracy up to 100% during the steady state, by showing what each PHTE will saturate to.",
+        "solution": "For the outer loop, we will keep observing all Ts, and the counters will be set to 2'b11 for\nTT and lead to 100% accuracy for this branch.\nThe second branch will keep observing this repeated pattern: TNN. So entry TN will be\nsaturated to 2'b00, entry NN will saturate to 2'b11, and entry NT will saturate to 2'b00.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_2/a",
+        "context": "Verilog [20 points]\n\nPlease answer the following three questions about Verilog.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p4_0.png"
+        ],
+        "question": "Does the following code result in a single D Flip-Flop with a synchronous active-low reset?\nPlease explain your answer.\n\n1 module mem (input clk, input reset, input [1:0] d, output reg [1:0] q);\n2 always @ (posedge clk or negedge reset)\n3 begin\n4 if (!reset) q <= 0;\n5 else q <= d;\n6 end\n7 endmodule",
+        "solution": "No.\nThe code implements two D Flip-Flops, not one. Each D Flip-Flop works with an\nasynchronous active-low reset signal.\n\nExplanation:\n\n\u2022 D and Q signals are two-bit-wide. Therefore, this code implements two D flip-flops.\n\u2022 The reset input is included in the sensitivity list, therefore it is not synchronous.\n\u2022 The code resets the output if the reset signal is low. Thus, the reset signal is active-\nlow.",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p4_1.png"
+        ],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_2/b",
+        "context": "Verilog [20 points]\n\nPlease answer the following three questions about Verilog.\n",
+        "context_figures": [],
+        "question": "Does the following code result in a sequential circuit or a combinational circuit? Please\nexplain your answer.\n\n1 module Mask (input [1:0] data_in, input mask, output reg [1:0] data_out);\n2 always @ (*)\n3 begin\n4 data_out[1] = data_in[1];\n5 if (mask)\n6 data_out[0] = 0;\n7 end\n8 endmodule",
+        "solution": "Sequential circuit.\n\nExplanation:\nThis code results in a sequential circuit, as all the left-hand side signals are not assigned in\nevery possible condition. For example, data_out[0] is not assigned when mask signal\nequals to zero.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_2/c",
+        "context": "Verilog [20 points]\n\nPlease answer the following three questions about Verilog.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p5_0.png"
+        ],
+        "question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how\nto fix it/them.\n\n1 module fulladd(input a, b, c, output reg s, c_out);\n2 assign s = a^b;\n3 assign c_out = (a & b) | (b & c) & (c & a);\n4 endmodule\n5\n6 module top ( input wire [5:0] instr, input wire op, output z);\n7\n8 reg[1:0] r1, r2;\n9 wire [3:0] w1, w2;\n10\n11 fulladd FA1 (.a(instr[0]), .b(instr[1]), .c(instr[2]),\n12 .c_out(r1[1]), .z(r1[0]));\n13 fulladd FA2 (.a(instr[3]), .b(instr[4]), .c(instr[5]),\n14 .z(r2[0]), .c_out(r2[1]));\n15\n16 assign z = r1 | op;\n17 assign w1 = r1 + 1;\n18 assign w2 = r2 << 1;\n19 assign op = r1 ^ r2;\n20\n21 endmodule",
+        "solution": "The code is not syntactically correct.\n\nExplanation:\n\u2022 'r1' and 'r2' have to be declared as wires.\n\u2022 'op' signal is connected to multiple drivers. It gets assigned from the input port and in\nline 19.\n\u2022 The module 'fulladd' does not have ports named 'z'. Those need to be changed to 's'.\n\u2022 The output signals 's' and 'c_out' have to be declared as wires but not as regs, since\nthey are driven by assign statements.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_3/a",
+        "context": "You are given two one-bit input signals (TA and TB) and one one-bit output signal (O) for the following modular equation: 2N(TA)+N(TB) \u2261 2 (mod 4). In this modular equation, N(TA) andN(TB) represent the total number of times the inputs TA and TB are high (i.e., logic 1) at each positive clock edge, respectively. The one-bit output signal, O, is set to 1 when the modular equation is satisfied (i.e., 2N(TA) +N(TB) \u2261 2 (mod 4)), and 0 otherwise. An example that sets O = 1 at the end of the fourth cycle would be:\n\n\u2022 (1st cycle) TA = 0 (N(TA) = 0), TB = 0 (N(TB) = 0), 2N(TA) +N(TB) \u2261 0 (mod 4)\u21d2 O = 0\n\n\u2022 (2nd cycle) TA = 1 (N(TA) = 1), TB = 1 (N(TB) = 1), 2N(TA) +N(TB) \u2261 3 (mod 4)\u21d2 O = 0\n\n\u2022 (3rd cycle) TA = 1 (N(TA) = 2), TB = 0 (N(TB) = 1), 2N(TA) +N(TB) \u2261 1 (mod 4)\u21d2 O = 0\n\n\u2022 (4th cycle) TA = 0 (N(TA) = 2), TB = 1 (N(TB) = 2), 2N(TA) +N(TB) \u2261 2 (mod 4)\u21d2 O = 1\n",
+        "context_figures": [],
+        "question": "You are given a partial Moore machine state transition diagram that corresponds to the modular equation described above. However, the input labels of most of the transitions are still missing in this diagram. Please label the transitions with the correct inputs so that the FSM correctly implements the above specification.",
+        "solution": "",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p6_0.png"
+        ],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_3/b",
+        "context": "You are given two one-bit input signals (TA and TB) and one one-bit output signal (O) for the following modular equation: 2N(TA)+N(TB) \u2261 2 (mod 4). In this modular equation, N(TA) andN(TB) represent the total number of times the inputs TA and TB are high (i.e., logic 1) at each positive clock edge, respectively. The one-bit output signal, O, is set to 1 when the modular equation is satisfied (i.e., 2N(TA) +N(TB) \u2261 2 (mod 4)), and 0 otherwise. An example that sets O = 1 at the end of the fourth cycle would be:\n\n\u2022 (1st cycle) TA = 0 (N(TA) = 0), TB = 0 (N(TB) = 0), 2N(TA) +N(TB) \u2261 0 (mod 4)\u21d2 O = 0\n\n\u2022 (2nd cycle) TA = 1 (N(TA) = 1), TB = 1 (N(TB) = 1), 2N(TA) +N(TB) \u2261 3 (mod 4)\u21d2 O = 0\n\n\u2022 (3rd cycle) TA = 1 (N(TA) = 2), TB = 0 (N(TB) = 1), 2N(TA) +N(TB) \u2261 1 (mod 4)\u21d2 O = 0\n\n\u2022 (4th cycle) TA = 0 (N(TA) = 2), TB = 1 (N(TB) = 2), 2N(TA) +N(TB) \u2261 2 (mod 4)\u21d2 O = 1\n",
+        "context_figures": [],
+        "question": "Describe the FSM with Boolean equations assuming that the states are encoded with one-hot encoding. Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
+        "solution": "State assignments: 0 (mod 4): 0001, 1 (mod 4): 0010, 2 (mod 4): 0100, 3 (mod 4): 1000\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TA TB + CS[1] TA TB + CS[2] TA TB + CS[3] TA TB\n\nNS[1] = CS[1] TA TB + CS[2] TA TB + CS[3] TA TB + CS[0] TA TB\n\nNS[2] = CS[2] TA TB + CS[3] TA TB + CS[0] TA TB + CS[1] TA TB\n\nNS[3] = CS[3] TA TB + CS[0] TA TB + CS[1] TA TB + CS[2] TA TB\n\nO[0] = CS[2]",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_3/c",
+        "context": "You are given two one-bit input signals (TA and TB) and one one-bit output signal (O) for the following modular equation: 2N(TA)+N(TB) \u2261 2 (mod 4). In this modular equation, N(TA) andN(TB) represent the total number of times the inputs TA and TB are high (i.e., logic 1) at each positive clock edge, respectively. The one-bit output signal, O, is set to 1 when the modular equation is satisfied (i.e., 2N(TA) +N(TB) \u2261 2 (mod 4)), and 0 otherwise. An example that sets O = 1 at the end of the fourth cycle would be:\n\n\u2022 (1st cycle) TA = 0 (N(TA) = 0), TB = 0 (N(TB) = 0), 2N(TA) +N(TB) \u2261 0 (mod 4)\u21d2 O = 0\n\n\u2022 (2nd cycle) TA = 1 (N(TA) = 1), TB = 1 (N(TB) = 1), 2N(TA) +N(TB) \u2261 3 (mod 4)\u21d2 O = 0\n\n\u2022 (3rd cycle) TA = 1 (N(TA) = 2), TB = 0 (N(TB) = 1), 2N(TA) +N(TB) \u2261 1 (mod 4)\u21d2 O = 0\n\n\u2022 (4th cycle) TA = 0 (N(TA) = 2), TB = 1 (N(TB) = 2), 2N(TA) +N(TB) \u2261 2 (mod 4)\u21d2 O = 1\n",
+        "context_figures": [],
+        "question": "Describe the FSM with Boolean equations assuming that the states are encoded with binary encoding (i.e., fully encoding). Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
+        "solution": "State assignments: 0 (mod 4): 00, 1 (mod 4): 01, 2 (mod 4): 10, 3 (mod 4): 11\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TB + CS[0] TB\n\nNS[1] = CS[0] (CS[1] XOR TA XOR TB) + CS[0] (TA XOR CS[1])\nO[0] = CS[1] CS[0]",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/1",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The latency of a branch predictor misprediction.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/2",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The size of a physical memory page.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/3",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The memory-mapped locations of exception vectors.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/4",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The function of each bit in a programmable branch-predictor configuration register.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/5",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The bit-width of the interface between the CPU and the L1 cache.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/6",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The number of pipeline stages in the CPU.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/7",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The order in which loads and stores are executed by a multi-core CPU.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/8",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The memory addressing modes available for arithmetic operations.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/9",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The program counter width.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_4/10",
+        "context": "ISA vs. Microarchitecture [20 points]\n\nA new CPU has two comprehensive user manuals available for purchase as shown in Table 1.\n\nManual Title Cost Description\nthe_isa.pdf CHF 1 million describes the ISA in detail\nthe_microarchitecture.pdf CHF 10 million describes the microarchitecture in detail\n\nTable 1: Manual Costs\n\nUnfortunately, the manuals are extremely expensive, and you can only afford one of the two. If both manuals might be useful, you would prefer the cheaper one.\n\nFor each of the following questions that you would like to answer, decide which manual is more likely to help. Note: we will subtract 1 point for each incorrect answer. For an unanswered question, you will get +0 points.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p8_0.png"
+        ],
+        "question": "The number of cache sets at each level of the cache hierarchy.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_5/a",
+        "context": "You are the leading engineer of a new processor. Both the design of the processor and the compiler for it are already done. Now, you need to decide if you will send the processor to manufacturing at its current stage or if you will delay the production to introduce last-minute improvements to the design. To make the decision, you meet with your team to brainstorm about how to improve the design. Together, after profiling the target applications for the processor, you come up with two options:\n\n\u2022 Keep the current project. For version A of the processor, the clock frequency is 600 MHz, and the following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 40%\nB 3 25%\nC 3 25%\nD 7 10%\n\n\u2022 Include optimizations to the design. For version B of the processor, the clock frequency is 700 MHz. The ISA for processor B includes three new types of instructions. Those three new types of instructions increase the total number of executed instructions for processor B by 50%, in comparison to processor A. The following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 15%\nB 2 15%\nC 4 10%\nD 6 10%\nE 1 10%\nF 2 20%\nG 2 20%\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_0.png",
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_1.png"
+        ],
+        "question": "What is the CPI of each version? Show your work.",
+        "solution": "CPIA:\n\n3\n\nCPIB:\n\n2.5\n\nCPIA = 2 \u00d7 0.4 + 3 \u00d7 0.25 + 3 \u00d7 0.25 + 7 \u00d7 0.1 = 3\nCPIB = 2 \u00d7 0.15 + 2 \u00d7 0.15 + 4 \u00d7 0.1 + 6 \u00d7 0.1 + 1 \u00d7 0.1 + 2 \u00d7 0.2 + 2 \u00d7 0.2 = 2.5",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_2.png"
+        ],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_5/b",
+        "context": "You are the leading engineer of a new processor. Both the design of the processor and the compiler for it are already done. Now, you need to decide if you will send the processor to manufacturing at its current stage or if you will delay the production to introduce last-minute improvements to the design. To make the decision, you meet with your team to brainstorm about how to improve the design. Together, after profiling the target applications for the processor, you come up with two options:\n\n\u2022 Keep the current project. For version A of the processor, the clock frequency is 600 MHz, and the following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 40%\nB 3 25%\nC 3 25%\nD 7 10%\n\n\u2022 Include optimizations to the design. For version B of the processor, the clock frequency is 700 MHz. The ISA for processor B includes three new types of instructions. Those three new types of instructions increase the total number of executed instructions for processor B by 50%, in comparison to processor A. The following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 15%\nB 2 15%\nC 4 10%\nD 6 10%\nE 1 10%\nF 2 20%\nG 2 20%\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_0.png",
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_1.png"
+        ],
+        "question": "What are the MIPS (Million Instructions Per Second) of each version? Show your work.",
+        "solution": "MIPSA:\n\n200\n\nMIPSB:\n\n280\n\nMIPSA = 600MHz/3\u2217106 = 200\n\nMIPSB = 700MHz/2.5\u2217106 = 280",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p10_0.png"
+        ],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_5/c",
+        "context": "You are the leading engineer of a new processor. Both the design of the processor and the compiler for it are already done. Now, you need to decide if you will send the processor to manufacturing at its current stage or if you will delay the production to introduce last-minute improvements to the design. To make the decision, you meet with your team to brainstorm about how to improve the design. Together, after profiling the target applications for the processor, you come up with two options:\n\n\u2022 Keep the current project. For version A of the processor, the clock frequency is 600 MHz, and the following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 40%\nB 3 25%\nC 3 25%\nD 7 10%\n\n\u2022 Include optimizations to the design. For version B of the processor, the clock frequency is 700 MHz. The ISA for processor B includes three new types of instructions. Those three new types of instructions increase the total number of executed instructions for processor B by 50%, in comparison to processor A. The following measurements are obtained:\n\nInstruction Class CPI Frequency of Occurrence\nA 2 15%\nB 2 15%\nC 4 10%\nD 6 10%\nE 1 10%\nF 2 20%\nG 2 20%\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_0.png",
+            "images\\digitaltechnik-s19-en-sol\\chart_p9_1.png"
+        ],
+        "question": "Considering your team is aiming to release to the market the processor that gives better performance when executing the target application, which processor version will you choose as the final design? Show your work.",
+        "solution": "Processor A.\n\nExplanation:\nWe calculate the execution time for each processor, Time = Ninstr.\u00d7 CPI \u00d7 1/clockfrequency\n\nSince the compiler for processor B generates 50% more instructions than the compiler for processor A, the total execution time for processor B is larger than the total execution time for processor A.\n\nTimeA = Ninstr. \u00d7 3 \u00d7 1/(600\u2217106)\n\nTimeB = 1.5Ninstr. \u00d7 2.5 \u00d7 1/(700\u2217106)",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/a",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "How many cycles does it take for an adder and for a multiplier to calculate a result?",
+        "solution": "3 cycles for adder (E1, E2, E3) and 4 cycles for multiplier (E1, E2, E3, E4).",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/b",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "What is the minimum number of register file read/write ports that this architecture implements? Explain.",
+        "solution": "The register file has two read ports and one write port.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/c",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "Can we reduce the execution time of this code by enabling more read/write ports in the register file? Explain.",
+        "solution": "It is not possible to reduce stall cycles of the given code by enabling more register file ports.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/d",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "Does this architecture implement any data forwarding? If so, how is data forwarding done between pipeline stages? Explain.",
+        "solution": "There is data forwarding from the M stage to E1, as we observe that the instruction 2 starts using R5 at the clk cycle 7, which is one clk cycle after the instruction 0 finishes calculating its result in the execution unit.\nSimilarly, as another proof of this data forwarding, we observe that the instruction 4 starts using R5 at the clk cycle 10, which is one clk cycle after the instruction 2 finishes calculating its result in the execution unit.\n\nAny other data forwarding is unknown with the given information.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/e",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "Is it possible to run this code faster by adding more data forwarding paths? If it is, how? Explain.",
+        "solution": "Not possible.\n\nAll instructions that stall due to data dependency are already using the best possible data forwarding. There is no stall cycles that can be eliminated by enabling another form of data forwarding.",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/f",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "Is there internal forwarding in the register file? If there is not, how would the execution time of the same program change by enabling internal forwarding in the register file? Explain.",
+        "solution": "There already is internal forwarding in the register file, as instruction 6 can finish the decode stage by fetching the value of R4 from the register file in the same cycle that R4 is written (cycle 13).",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_6/g",
+        "context": "The following piece of code runs on a pipelined microprocessor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination, Source1, Source2.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n1 ADD R4, R6, R7 F D E1 E2 E3 - M W\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M W\n3 MUL R4, R7, R7 F - - D E1 E2 E3 E4 M W\n4 ADD R6, R7, R5 F D - E1 E2 E3 M W\n5 ADD R3, R0, R6 F - D - - E1 E2 E3 M W\n6 ADD R7, R1, R4 F - - D E1 E2 E3 M W\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precise as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p11_0.png"
+        ],
+        "question": "Optimize the assembly code in order to reduce the number of stall cycles. You are allowed to reorder, add, or remove ADD and MUL instructions. You are expected to achieve the minimum possible execution time. Make sure that the register values that the optimized code generates at the end of its execution are identical to the register values that the original code generates at the end of its execution. Justify each individual change you make. Show the execution timeline of each instruction and what stage it is in the table below. (Notice that the table below consists of two parts: the first ten cycles at the top, and the next ten cycles at the bottom.)",
+        "solution": "\u2022 Instruction 1 is useless due to write-after-write, remove it.\n\u2022 Instruction 3 stalls for decode logic, move it up.\n\u2022 Instruction 6 does not have read-after-write dependency and can be executed before instr. 5. However, it cannot execute before instruction 4 as it would change the value of R7.\n\nNew total execution time is 17 cycles instead of 18.\n\nInstr. Instructions Cycles\n\nNo 1 2 3 4 5 6 7 8 9 10\n\n0 MUL R5, R6, R7 F D E1 E2 E3 E4 M W\n\n3 MUL R4, R7, R7 F D E1 E2 E3 E4 M W\n\n2 ADD R5, R5, R6 F D - - E1 E2 E3 M\n\n4 ADD R6, R7, R5 F - - D - - E1\n\n6 ADD R7, R1, R4 F - - D\n\n5 ADD R3, R0, R6 F\n\n11 12 13 14 15 16 17 18 19 20\n\n0 MUL R5, R6, R7\n\n3 MUL R4, R7, R7\n\n2 ADD R5, R5, R6 W\n\n4 ADD R6, R7, R5 E2 E3 M W\n\n6 ADD R7, R1, R4 E1 E2 E3 M W\n\n5 ADD R3, R0, R6 D - E1 E2 E3 M W",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p13_0.png"
+        ],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_7",
+        "context": "In this problem, we consider an in-order fetch, out-of-order dispatch, and out-of-order retirement execution engine that employs Tomasulo's algorithm. This engine behaves as follows:\n\n\u2022 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n\n\u2022 The engine can fetch FW instructions per cycle, decode DW instructions per cycle, and write back the result of RW instructions per cycle.\n\n\u2022 The engine has two execution units: 1) an integer ALU for executing integer instructions (i.e., addition and multiplication) and 2) a memory unit for executing load/store instructions.\n\n\u2022 Each execution unit has an R-entry reservation station.\n\n\u2022 An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n\nThe reservation stations are all initally empty. The processor fetches and executes six instructions. Table 2 shows the six instructions and their execution diagram.",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p15_0.png"
+        ],
+        "question": "Using the information provided above and in Table 2 (see the next page), fill in the blanks below with the configuration of the out-of-order microarchitecture. Write \"Unknown\" if the corresponding configuration cannot be determined using the information provided in the question.",
+        "solution": "The latency of the ALU and memory unit instructions: ALU - 2 cycles, MU - 10 cycles\n\nIn which pipeline stage is an instruction dispatched? Decode (D) stage\n\nNumber of entries of each reservation station (R): Two entries each\nFetch width (FW): 2\n\nDecode width (DW): 2\nRetire width (RW): Unknown\n\nIs the integer ALU pipelined? Unknown\nIs the memory unit pipelined? Yes\n\nIf applicable, between which stages is data forwarding implemented? No data forwarding",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p14_0.png"
+        ],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_8",
+        "context": "A systolic array consists of 3x4 Processing Elements (PEs), interconnected as shown in Figure 1. The inputs of the systolic array are labeled as H0, H1, H2 and V0,V1,V2,V3. Figure 2 shows the PE logic, which performs a multiply and accumulate operation (MAC), and it saves the result in an internal register (reg). Figure 2 also shows how each PE propagates its inputs. We make the following assumptions:\n\n\u2022 The latency of each MAC is one cycle.\n\n\u2022 The propagation of the values from i0 to o0, and from i1 to o1, takes one cycle.\n\n\u2022 The initial value of all registers is zero.\n\n\u2022 You can input a value more than once in the systolic array.\n\nYour goal is to use this systolic array to perform the convolution of a 3x3 image (matrix I) with three 2x2 filters (matrices F, G, and H), to obtain three outputs (matrices O, U, and E):\n\nI00 I01 I02\nI10 I11 I12\nI20 I21 I22\n\n~\nF00 F01\nF10 F11\n=\nO00 O01\nO10 O11\n\nI00 I01 I02\nI10 I11 I12\nI20 I21 I22\n\n~\nG00 G01\nG10 G11\n=\nU00 U01\nU10 U11\n\nI00 I01 I02\nI10 I11 I12\nI20 I21 I22\n\n~\nH00 H01\nH10 H11\n=\nE00 E01\nE10 E11\n\nAs an example, the convolution of the matrix I with the filter F is computed as follows:\n\n\u2022 O00 = I00 \u2217 F00 + I01 \u2217 F01 + I10 \u2217 F10 + I11 \u2217 F11\n\n\u2022 O01 = I01 \u2217 F00 + I02 \u2217 F01 + I11 \u2217 F10 + I12 \u2217 F11\n\n\u2022 O10 = I10 \u2217 F00 + I11 \u2217 F01 + I20 \u2217 F10 + I21 \u2217 F11\n\n\u2022 O11 = I11 \u2217 F00 + I12 \u2217 F01 + I21 \u2217 F10 + I22 \u2217 F11",
+        "context_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p16_0.png"
+        ],
+        "question": "You should compute the three convolutions in the minimum possible amount of cycles. Fill the following table with:\n\n1. The input values (matrices I, F, G, and H) in the correct input ports of the systolic array (the values can be repeated).\n\n2. The output values and the corresponding PE where the outputs (matrices O, U, and E) are generated.\n\nFill the gaps only with relevant information.",
+        "solution": "",
+        "solution_figures": [
+            "images\\digitaltechnik-s19-en-sol\\chart_p17_0.png"
+        ],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_9/a",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nif (A[i] > 33) { // Instruction 3\n\nB[i] = A[i] >> 1; // Instruction 4\n}\n\n}\n",
+        "context_figures": [],
+        "question": "How many warps does it take to execute this program?",
+        "solution": "33 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = d#Total_threads\n\n#Warp_size e,\n\nwhere\n#Total_threads = 1026 = 210 + 2 (i.e., one thread per loop iteration),\n\nand\n#Warp_size = 32 = 25 (given).\n\nThus, the number of warps needed to run this program is:\n#Warps = d 2\n10+2\n25 e = 25 + 1 = 33.",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_9/b",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nif (A[i] > 33) { // Instruction 3\n\nB[i] = A[i] >> 1; // Instruction 4\n}\n\n}\n",
+        "context_figures": [],
+        "question": "What is the maximum possible SIMD utilization of this program? Show your work. (Hint: The warp scheduler does not issue instructions where no threads are active).",
+        "solution": "3076\n3136 = 769\n\n784 .\n\nExplanation:\nThe maximum SIMD utilization is achieved when all threads of the complete warps follow\nthe same execution path and execute Instruction 2 or Instruction 4 (A[i] > 33\nor A[i] < 33), and the two active threads of the last warp do not execute Instruction\n2 or Instruction 4 (A[i] = 33).\nThe maximum SIMD utilization sums to 1026+32\u00d732+1026\n1056+1024+1056 = 3076\n3136 .",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_9/c",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nif (A[i] > 33) { // Instruction 3\n\nB[i] = A[i] >> 1; // Instruction 4\n}\n\n}\n",
+        "context_figures": [],
+        "question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer.)",
+        "solution": "For every 32 consecutive elements of A out of the first 1024 elements, every element should\nbe lower than 33 (if(A[i] < 33)), or greater than 33 (if(A[i] > 33)). The last\ntwo elements should be equal to 33. (NOTE: The solution is correct if the three cases are\ngiven.)",
+        "solution_figures": [],
+        "correctly_parsed": True
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_9/d",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nif (A[i] > 33) { // Instruction 3\n\nB[i] = A[i] >> 1; // Instruction 4\n}\n\n}\n",
+        "context_figures": [],
+        "question": "What is the minimum possible SIMD utilization of this program? Show your work.",
+        "solution": "353\n704 .\n\nExplanation:\nInstruction 1 is executed by every active thread ( 1026\n1056 utilization).\nThe minimum SIMD utilization of Instruction 2 occurs if only one thread per warp\nexecutes it.\nInstruction 3 is again executed by every active thread (1026\n1056 utilization).\nFinally, the minimum SIMD utilization of Instruction 4 occurs if only one thread per\nwarp executes it.\n\nThe minimum SIMD utilization sums to 1026+1\u00d733+1026+1\u00d733\n1056+1056+1056+1056 = 353\n704 .",
+        "solution_figures": [],
+        "correctly_parsed": False
+    },
+    {
+        "question_id": "digitaltechnik-s19-en-sol/Problem_9/e",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nif (A[i] > 33) { // Instruction 3\n\nB[i] = A[i] >> 1; // Instruction 4\n}\n\n}\n",
+        "context_figures": [],
+        "question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer.)",
+        "solution": "For every 32 consecutive elements among the first 1024 elements of A, one element should\nbe lower than 33 (if(A[i] < 33)), one element should be greater than 33 (if(A[i]\n> 33)), and the remaining 30 elements should be equal to 33.\nFor the last 2 elements of A, one element should be lower than 33 (if(A[i] < 33)), and\nthe other element should be greater than 33 (if(A[i] > 33)).",
+        "solution_figures": [],
+        "correctly_parsed": True
+    }
+]

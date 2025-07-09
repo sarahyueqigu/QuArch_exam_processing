@@ -100,7 +100,7 @@ def process(exam_path, pages_data, output_fol):
             # Only make this AI call if the problem has images to match
             if len(problem_range) > 2:
                 for image_name in problem_range[2:]:
-                    image_path = os.path.join("extracted_problems", filename[:-4], "images", image_name)
+                    image_path = os.path.join("images", filename[:-4], image_name)
                     with open(image_path, "rb") as image_file:
                         image_bytes = image_file.read()
 
@@ -134,7 +134,5 @@ def process(exam_path, pages_data, output_fol):
                 except (ClientError, Exception) as e:
                     print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
                     exit(1)
-    
-    matches["part"] = matches["part"].lower()
-    print(matches)
+                    
     return matches

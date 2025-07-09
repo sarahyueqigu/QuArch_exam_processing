@@ -144,15 +144,13 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
     print(data)
     
     for problem in data:
-        child_pdf_filename = problem + ".pdf"
-
-        output_path = os.path.join(output_fol, filename[:-4], child_pdf_filename) #7/3 changed the "extracted_problems" to generic output_fol
+        output_path = os.path.join(output_fol, filename[:-4]) #7/3 changed the "extracted_problems" to generic output_fol
         #output_path = os.path.join("extracted_problems", filename[:-4], child_pdf_filename) 
         
         # Create the target directory if it doesn't exist
         os.makedirs(output_path, exist_ok=True)
 
-        extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+        extract_page_range(input_path, output_path + "/" + problem + ".pdf", data[problem][0], data[problem][1])
         # Also sort all images from the relevant page ranges into the data dict
         for pagenum in range(data[problem][0]-1, data[problem][1]):
             for image in document_json.pages[pagenum].images:
