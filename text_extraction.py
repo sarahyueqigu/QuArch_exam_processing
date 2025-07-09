@@ -3,8 +3,10 @@ from botocore.exceptions import ClientError
 import os
 import json
 import image_identifying
+from botocore.config import Config
 
-client = boto3.client("bedrock-runtime", region_name="us-east-2")
+config = Config(read_timeout=1000)
+client = boto3.client("bedrock-runtime", region_name="us-east-2", config=config)
 
 
 def claud_37_processing(path):
@@ -49,7 +51,9 @@ def claud_37_processing(path):
       "problem_solution": <Insert the full solution of the problem, exactly as shown in the original. Replace all double quotes " here with escaped double quotes /">
     }}
 
-    Finally, if any double quotes (") within strings appear within your JSON, you must replace them with escaped double quotes (/").
+    Finally, here are some special cases to watch for:
+    If any double quotes (") within strings appear within your JSON, you must replace them with escaped double quotes (/").
+    If you encounter any math equations, use Latex format to represent them.
     """.format(filename = filename)
     
     # Load the document
@@ -138,7 +142,7 @@ def process(file_path, pages_data): # pages_data is the dictionary from problem_
 
         # Call image_identifying for each problem, feeding it:
         # 1) original problem PDF, 2) problem json, 3) associated images
-        problem_with_imgs = image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)
+        problem_with_imgs = json.loads(strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
         # TODO: make image_identifying an async function? to speed things up
       else:
          problem_with_imgs = problem_dict
