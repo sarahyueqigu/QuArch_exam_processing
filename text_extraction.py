@@ -1,14 +1,14 @@
 import boto3
 from botocore.exceptions import ClientError
+import config
 import os
 import json
 import image_identifying
+import helper
 
 client = boto3.client("bedrock-runtime", region_name="us-east-2")
-claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-
-def claud_37_processing(path):
+def claud_37_processing(path, arn):
     filename = os.path.basename(path)[:-4]
 
     prompt = """You are a language model assisting with the digitization of academic exam content. The input is a PDF file containing one problem of a Computer Architecture Assessment. If part of another problem is included, ignore it and only focus on {filename}. 
@@ -77,7 +77,7 @@ def claud_37_processing(path):
     try:
         # Send the message to the model, using a basic inference configuration.
         response = client.converse(
-            modelId=claude_inference_profile_arn,
+            modelId=arn,
             messages=conversation,
             inferenceConfig={"maxTokens": 4000, "temperature": 0.3},
         )
@@ -88,36 +88,26 @@ def claud_37_processing(path):
         return response_text
 
     except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        print(f"ERROR: Can't invoke '{arn}'. Reason: {e}")
         exit(1)
 
 
-def strip_json_code_block(text: str) -> str:
-    # find the first “{” and the last “}”
-    start = text.index("{")
-    end   = text.rindex("}") + 1
-    text2 = text[start:end]
-    
-    # Remove opening and closing code block markers
-    lines = text2.strip().splitlines()
-    cleaned_lines = [line for line in lines if not line.strip().startswith("```")]
-    return "\n".join(cleaned_lines)
-
-
-
-
-def process(file_path, pages_data): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
+def process(file_path, pages_data, arn, api): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
 
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
   problems_path = os.path.join("extracted_problems", filename)
   output = []
-  output_path = os.path.join("out", filename + ".json")
+
+  # Create folder structure for this
+  parent_folder = "out_model_comparison/" + filename
+  os.makedirs(parent_folder, exist_ok= True)
+  output_path = os.path.join(parent_folder, api + ".json")
   
   for problem in os.listdir(problems_path):
       print("Processing text in:", problem)
-      json_text = claud_37_processing(os.path.join(problems_path, problem))
-      stripped_json = strip_json_code_block(json_text)
+      json_text = claud_37_processing(os.path.join(problems_path, problem), arn)
+      stripped_json = helper.strip_json_code_block(json_text)
       print("Raw problem output: ", stripped_json)
       problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
 

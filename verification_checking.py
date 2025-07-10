@@ -35,8 +35,8 @@ def process(input_dir, exam):
         
         for verify, manual in zip(verification_test_json, manually_checked_json):
             row["total"] += 1
-            print("verify[correctly_parsed]: ", verify["correctly_parsed"])
-            print("manual[correctly_parsed]: ", manual["correctly_parsed"])
+            # print("verify[correctly_parsed]: ", verify["correctly_parsed"])
+            # print("manual[correctly_parsed]: ", manual["correctly_parsed"])
 
             if verify["correctly_parsed"] == True and manual["correctly_parsed"] == True:
                 row["concurred_trues"] += 1
@@ -47,6 +47,7 @@ def process(input_dir, exam):
                 row["api_trues"] += 1
             if manual["correctly_parsed"] == True:
                 row["checked_trues"] += 1
+                print("went here")
         
         row["api_accuracy"] = (row["concurred_trues"] + row["concurred_falses"]) / row["total"]
 
@@ -60,12 +61,12 @@ def process(input_dir, exam):
 
 
 if __name__ == "__main__":
-    parent_dir = "verification_tests"
-    exam = 
+    exam = "740_f13_midterm2_solutions"
+    parent_dir = os.path.join("verification_tests", exam)
     process(parent_dir, exam)
 
     # for exam in os.listdir(parent_dir):
         
     #     path = os.path.join(parent_dir, exam)
     #     print(path)
-    #     process(path, exam)
+    #     process(path, exam)c

@@ -1,0 +1,38 @@
+{
+    "problem": "6",
+    "problem_context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation.  Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_context": "For reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same.",
+            "subproblem_question": "Complete the modified assembly code below by filling in the empty blocks.\n\nAssembly program using subroutines\nbegin     : add $a0, $t1, 10 # $t1 is the input reg\n            jal function\n            add $t6, $v0, $0\nhalt      : j  halt  \n\nfunction  : addi $t1, $0, 0  \n            addi $t2, $0, 1\n\n   loop   : slt $t3, $a0, $t2\n            bne $t3, $0, exit_func\n            add $t1, $t1, $t2  \n            addi $t2, $t2, 2  \n            j loop\n       \nexit_func : add $v0, $t1, $0\n    jr  $ra",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "d",
+            "subproblem_question": "What is the value stored in register $t1 at the end of program execution for the code given in (c)?",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "e",
+            "subproblem_question": "As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1's contents.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

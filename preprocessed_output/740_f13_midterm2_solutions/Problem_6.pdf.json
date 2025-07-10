@@ -5,23 +5,32 @@
         {
             "subproblem": "A",
             "subproblem_question": "In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?",
-            "subproblem_solution": "Larger scheduling code blocks enable greater flexibility for instruction scheduling."
+            "subproblem_solution": "Larger scheduling code blocks enable greater flexibility for instruction scheduling.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
         },
         {
             "subproblem": "B",
             "subproblem_question": "For the example above, can Instruction Promotion ever improve system performance? Why or why not?",
-            "subproblem_solution": "Yes it can. With Instruction Promotion, the program can hide some of the load latency."
+            "subproblem_solution": "Yes it can. With Instruction Promotion, the program can hide some of the load latency.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
         },
         {
             "subproblem": "C",
             "subproblem_question": "For the example above, can Instruction Promotion ever degrade system performance? Why or why not?",
-            "subproblem_solution": "Yes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]"
+            "subproblem_solution": "Yes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
         },
         {
             "subproblem": "D",
             "subproblem_context": "The graph above shows the performance comparison of a program optimized using Hyperblock and Superblock respectively with different issue widths. With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock.",
             "subproblem_question": "Explain why this can happen?",
-            "subproblem_solution": "A wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup."
+            "subproblem_solution": "A wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
         }
-    ]
+    ],
+    "problem_context_figures": []
 }

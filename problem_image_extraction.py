@@ -1,5 +1,6 @@
 import ast
 import boto3
+import config
 import pymupdf
 import os
 import asyncio
@@ -13,7 +14,7 @@ load_dotenv()
 nest_asyncio.apply()
 
 parser = LlamaParse(
-    api_key="llx-K1mUygWh37kvgzJbCvvdROrM8N5XBfQFdM3mXfgye1GzYJtZ",
+    api_key= os.getenv("LLAMAPARSE_API_KEY"),
     parse_mode="parse_page_with_llm",
     extract_charts=True,
     num_workers=4,       # if multiple files passed, split in `num_workers` API calls
@@ -82,8 +83,7 @@ async def llama_processing(file_path, output_dir):
     return result
 
 
-def claud_37_processing(document_bytes):
-    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+def claud_37_processing(document_bytes, arn):
 
     # Start a conversation with a user message and the document
     conversation = [
@@ -106,7 +106,7 @@ def claud_37_processing(document_bytes):
     try:
         # Send the message to the model, using a basic inference configuration.
         response = client.converse(
-            modelId=claude_inference_profile_arn,
+            modelId=arn,
             messages=conversation,
             inferenceConfig={"maxTokens": 800, "temperature": 0.3},
         )
@@ -116,11 +116,11 @@ def claud_37_processing(document_bytes):
         return response_text
 
     except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        print(f"ERROR: Can't invoke '{arn}'. Reason: {e}")
         exit(1)
 
 
-def process(input_path, output_fol): #7/3 added extra input path parameter, output_fol, such that all the output is not hard coded to "extracted_problems"
+def process(input_path, output_fol, arn): #7/3 added extra input path parameter, output_fol, such that all the output is not hard coded to "extracted_problems"
     print("\nPROBLEM_PAGE_EXTRACTION: ", input_path)
     
     filename = os.path.basename(input_path)
@@ -131,8 +131,8 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
     # Convert the json to byte form for Claude input
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
-    #get the dictionary of split page numbers
-    string_output = claud_37_processing(document_bytes)
+    # get the dictionary of split page numbers
+    string_output = claud_37_processing(document_bytes, arn)
 
     # find the first “{” and the last “}”
     start = string_output.index("{")
@@ -159,3 +159,5 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
                 data[problem].append(chart.name)
 
     return data
+if __name__ == "__main__":
+    process("data/740_f13_midterm2_solutions.pdf", "pextracted_problems")

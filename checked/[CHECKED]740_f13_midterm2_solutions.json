@@ -6,7 +6,7 @@
         "question": "1) Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.\n\n2) Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why.",
         "solution": "Prioritizing latency-sensitive (memory non-intensive) threads can increase system throughput\n\nCan delay the critical/bottleneck thread which may not be memory non-intensive",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/B",
@@ -15,7 +15,7 @@
         "question": "Under what conditions would an application's performance increase linearly as memory bandwidth is increased?",
         "solution": "If memory bandwidth is the performance bottleneck",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/C",
@@ -24,7 +24,7 @@
         "question": "What problem does the fat tree interconnect solve that is present in the tree interconnect?",
         "solution": "High link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/D",
@@ -33,7 +33,7 @@
         "question": "You are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?",
         "solution": "The system is using circuit switching, and there is a large delay to set up all links between source and destination.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/E",
@@ -44,7 +44,7 @@
         "solution_figures": [
             "images\\740_f13_midterm2_solutions\\chart_p3_0.png"
         ],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/F",
@@ -53,7 +53,7 @@
         "question": "What is the purpose of token tagging in dynamic dataflow architectures?",
         "solution": "Supporting re-entrant code. Ensuring that tokens come from same context.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_1/G",
@@ -62,7 +62,7 @@
         "question": "1) What access patterns could benefit from this instruction? Explain well.\n\n2) The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail.",
         "solution": "Streaming or striding access pattern (no data reuse)\n\nAllow speculative scheduling of consumers of the load",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/A",
@@ -71,7 +71,7 @@
         "question": "Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)",
         "solution": "NO - will stall when more than 16 outstanding misses in pipe",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/B",
@@ -80,7 +80,7 @@
         "question": "Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?",
         "solution": "YES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/C",
@@ -89,7 +89,7 @@
         "question": "Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
         "solution": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/D",
@@ -98,7 +98,7 @@
         "question": "Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
         "solution": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_3/A",
@@ -109,7 +109,7 @@
         "question": "Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.",
         "solution": "+ \n\nR1 R2 \n\nR3 \n\n+ \n\n* \n\na a \n\n* \n\n+ f \n\n* c \n\ne \n\n+ d \n\nb",
         "solution_figures": [],
-        "correctly_parsed": False
+        "correctly_parsed": false
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_3/B",
@@ -122,7 +122,7 @@
         "solution_figures": [
             "images\\740_f13_midterm2_solutions\\chart_p7_0.png"
         ],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_4/A",
@@ -133,7 +133,7 @@
         "solution_figures": [
             "images\\740_f13_midterm2_solutions\\chart_p9_0.png"
         ],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_4/B",
@@ -142,7 +142,7 @@
         "question": "What rows would you place in far segment?",
         "solution": "rows 1 and 3 (also rows 0 and 2 since inclusive). see above",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_4/C",
@@ -151,7 +151,7 @@
         "question": "In 15 words or less, describe the insight in your mapping?",
         "solution": "See TL-DRAM's WMC policy \u2013 the first access in near simultaneous requests causes the second to wait activation + precharge time. minimizing this wait by caching first row in near segment is better than caching second row in near segment (this decreases only time to read from start of activation), even if second row is accessed more frequently (see example above)",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_4/D",
@@ -160,7 +160,7 @@
         "question": "Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an inclusive design? Name one advantage and one disadvantage for each.",
         "solution": "Exclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_4/E",
@@ -173,7 +173,7 @@
         "solution_figures": [
             "images\\740_f13_midterm2_solutions\\chart_p10_1.png"
         ],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/A",
@@ -182,7 +182,7 @@
         "question": "How many warps does it take to execute this program?",
         "solution": "16384/64 = 256",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/B",
@@ -193,7 +193,7 @@
         "question": "What is the SIMD utilization of this program?",
         "solution": "When a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 \u2217 4)/(64 + 64 \u2217 5) = 66.7%",
         "solution_figures": [],
-        "correctly_parsed": False
+        "correctly_parsed": false
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/C",
@@ -202,7 +202,7 @@
         "question": "Is it possible for this program to yield a SIMD utilization of 25%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show your work. If NO, explain why not.",
         "solution": "Yes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD utilization of (64 + 4 \u2217 4)/(64 \u2217 5) = 25%.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/D",
@@ -211,7 +211,7 @@
         "question": "Is it possible for this program to yield a SIMD utilization of 20%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show your work. If NO, explain why not.",
         "solution": "No. The smallest SIMD utilization one can get is to have one and only one element in every 64 elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 \u2217 4)/(64 \u2217 5) = 21.25%, which is still greater than 20%.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/E",
@@ -220,7 +220,7 @@
         "question": "Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
         "solution": "Hongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_6/A",
@@ -229,7 +229,7 @@
         "question": "In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?",
         "solution": "Larger scheduling code blocks enable greater flexibility for instruction scheduling.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_6/B",
@@ -238,7 +238,7 @@
         "question": "For the example above, can Instruction Promotion ever improve system performance? Why or why not?",
         "solution": "Yes it can. With Instruction Promotion, the program can hide some of the load latency.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_6/C",
@@ -247,7 +247,7 @@
         "question": "For the example above, can Instruction Promotion ever degrade system performance? Why or why not?",
         "solution": "Yes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]",
         "solution_figures": [],
-        "correctly_parsed": False
+        "correctly_parsed": false
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_6/D",
@@ -258,6 +258,6 @@
         "question": "With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?",
         "solution": "A wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.",
         "solution_figures": [],
-        "correctly_parsed": True
+        "correctly_parsed": true
     }
 ]
