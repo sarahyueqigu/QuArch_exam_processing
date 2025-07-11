@@ -130,7 +130,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
 
         # Call image_identifying for each problem, feeding it:
         # 1) original problem PDF, 2) problem json, 3) associated images
-        problem_with_imgs = json.loads(strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
+        problem_with_imgs = json.loads(helper.strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
         # TODO: make image_identifying an async function? to speed things up
       else:
          problem_with_imgs = problem_dict
