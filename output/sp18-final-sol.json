@@ -1,0 +1,286 @@
+[
+    {
+        "question_id": "sp18-final-sol/Problem_2/a",
+        "context": "We assume that IEEE decided to add a new 8-bit representation with its main characteristics consistent with the 32/64-bit representations. Consider the following four 8-bit numbers: A: 11100101 B: 00111001 C: 00001100 D: 00011101 The decimal values represented by the above numbers are as follows, in no particular order: -21, 3/8, 1/32, 29/8\n",
+        "context_figures": [],
+        "question": "Represent decimal value 3/8 in binary normalized form",
+        "solution": "1.1 x 2^-2",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_2/b",
+        "context": "We assume that IEEE decided to add a new 8-bit representation with its main characteristics consistent with the 32/64-bit representations. Consider the following four 8-bit numbers: A: 11100101 B: 00111001 C: 00001100 D: 00011101 The decimal values represented by the above numbers are as follows, in no particular order: -21, 3/8, 1/32, 29/8\n",
+        "context_figures": [],
+        "question": "Which 8-bit floating point number represents -21 (choose from A, B, C, D)?",
+        "solution": "A",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_2/c",
+        "context": "We assume that IEEE decided to add a new 8-bit representation with its main characteristics consistent with the 32/64-bit representations. Consider the following four 8-bit numbers: A: 11100101 B: 00111001 C: 00001100 D: 00011101 The decimal values represented by the above numbers are as follows, in no particular order: -21, 3/8, 1/32, 29/8\n",
+        "context_figures": [],
+        "question": "Which 8-bit floating point number represents 29/32 (choose from A, B, C, D)?",
+        "solution": "D",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_2/d",
+        "context": "We assume that IEEE decided to add a new 8-bit representation with its main characteristics consistent with the 32/64-bit representations. Consider the following four 8-bit numbers: A: 11100101 B: 00111001 C: 00001100 D: 00011101 The decimal values represented by the above numbers are as follows, in no particular order: -21, 3/8, 1/32, 29/8\n",
+        "context_figures": [],
+        "question": "Given the above information, figure out the following: Number of bits needed for exponent: Number of bits needed for fraction: Bias:",
+        "solution": "Number of bits needed for exponent: 3 Number of bits needed for fraction: 4 Bias: 3",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/a",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "How many cache lines does each set have in a direct mapped cache?",
+        "solution": "1",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/b",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "What is the cache line (a.k.a., block) size?",
+        "solution": "16 Bytes",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/c",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "What are the number of index bits for the direct mapped cache?",
+        "solution": "3",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/d",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\nNow consider the cache organized as a N-way set-associative cache, with the same total size and same cache line size as before. The total size of \"overhead\" for this N-way set associative cache is 112 bits. Assume that in this particular cache, overhead in each cache line includes tag bits and 10 additional bits for bookkeeping (e.g., the valid bit, modified bit, LRU bits) that do not affect this problem. We have expanded the table to show the hit/misses for the same sequence of accesses when the cache is organized as an N-way set-associative cache.\n\nAddress Read/Write Direct Mapped (Hit/Miss) N-way associative (Miss/Hit)\n0100001010 R Miss Miss\n1100100111 R Miss Miss\n1110101000 R Miss Miss\n0011000101 R Miss Miss\n0110111100 R Miss Miss\n1010110101 R Miss Miss\n1100100000 R Miss Hit\n0100001111 R Hit Hit\n0101111111 W Miss Miss\n0110110100 R Miss Hit\n0110100101 R Miss Miss",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "What is N?",
+        "solution": "2",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/e",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "What is the number of index bits for the N-Way set associative cache?",
+        "solution": "2",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/f",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png"
+        ],
+        "question": "Is this a write-allocate cache?",
+        "solution": "No",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_3/g",
+        "context": "A byte-addressable, write-back cache of fixed total size and fixed cache line (a.k.a., block) size is implemented as both a direct mapped cache and also as an N-way set-associative cache. In both cases, we will assume the cache is initially empty. \n\nFirst, consider the cache organized as a direct mapped cache. The following sequence of 11 accesses generates the hits/misses shown. Some miss/hit entries are intentionally left blank.\n\nAddress Read/Write Direct Mapped (Hit/Miss)\n0100001010 R \n1100100111 R Miss\n1110101000 R Miss\n0011000101 R \n0110111100 R \n1010110101 R Miss\n1100100000 R Miss\n0100001111 R Hit\n0101111111 W Miss\n0110110100 R \n0110100101 R Miss\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p5_0.png",
+            "images/sp18-final-sol/chart_p6_0.png"
+        ],
+        "question": "Please complete the second table above by filling in \"Hit\" or \"Miss\" for each of the blank entries. \"I Don't Know\" is accepted on a per blank basis.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/a",
+        "context": "\n",
+        "context_figures": [],
+        "question": "A microarchitecture is predicting whether a branch is taken or not taken using a 1-bit predictor. The last five branches were: taken, taken, taken, taken, not taken. What does the branch predictor predict (choose): Taken or Not Taken?",
+        "solution": "Not Taken",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/b",
+        "context": "\n",
+        "context_figures": [],
+        "question": "In a typical Linux/Unix terminal, when you hit Ctrl + Z, which state are you putting the foreground process to (choose): Running, Stopped, Terminated?",
+        "solution": "Stopped",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/c",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Cache blocking is a software-level performance optimization technique that improves what aspect of a program (choose): Locality, Parallelism, Concurrency, Security?",
+        "solution": "Locality",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/d",
+        "context": "\n",
+        "context_figures": [],
+        "question": "An application that is 90% parallelizable is executed on a single processor in 1.5 hours. If the application is allowed to run with an unlimited number of processors, what is the lower bound on its execution time?",
+        "solution": "9 mins. With an unlimited number of processors, the parallelizable part of a program would finish in no time, and the execution time is equivalent to the sequential part, which is 90 mins * 0.1 = 9 mins.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/e",
+        "context": "\n",
+        "context_figures": [],
+        "question": "On a page fault, the operating system often loads a page from the disk into memory. How does the operating system know whether it is necessary to write the previously occupied page in the memory back to the disk? Answer in fifteen words or fewer.",
+        "solution": "Check the dirty bit in the corresponding page table entry.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/f",
+        "context": "\n",
+        "context_figures": [],
+        "question": "What is the cycle time of a 1 GHz processor?",
+        "solution": "1 ns",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/g",
+        "context": "\n",
+        "context_figures": [],
+        "question": "What is the fundamental reason that process context switch has a much higher overhead than thread context switch in Linux? Answer in twenty words or fewer.",
+        "solution": "Threads share virtual address space while processes have separate virtual address spaces.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/h",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Suppose we have two 4-bit 2's complement numbers: 1111 1110 Does the sum of the two numbers result in an overflow?",
+        "solution": "No.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_1/i",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Recall that the crux of tracing-based GC algorithms such as Mark-and-sweep and Mark-sweep-compact is to start from \"root\" variables and then identify all the reachable variables. In the following code snippet, suppose the program just finishes executing L7, which variables are regarded as \"root\"? Name only those that point to variables on the heap.\n\nL1: int *p3;\n\nL2: int* foo(int n) {\nL3: int i, *p1;\nL4: p1 = (int *) malloc(n * sizeof(int));\nL5: for (i=0; i<n; i++)\nL6: p1[i] = i;\nL7: p3 = p1[2];\nL8: return p1;\nL9: }\n\nL10: void bar() {\nL11: int *p2 = foo(5);\nL12: }",
+        "solution": "p1 and p3.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_0",
+        "context": "Warm-up (2 points)",
+        "context_figures": [],
+        "question": "Facebook is hiring hardware engineers. What do you think they are building?",
+        "solution": "Any answer is accepted.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_4/a",
+        "context": "We wish to enhance the x86 ISA by adding a new instruction. The new instruction is called STI, \"Store Indirect\", and its format is:\n\nSTI Ra,Rb,Offset\n\nThe opcode of STI is 1010, and its binary encoding is (2-Byte long):\n\nOpcode <4-bit> Ra <3-bit> Rb <3-bit> Offset <6-bit>\n\nSTI operates as follows: We compute a virtual address (call it A) by adding the sign-extended Offset to the contents of register Rb. The memory location specified by A contains the virtual address B. We wish to store the contents of register Ra into the address specified by B.\n\nThe processor has a simple one-level virtual memory system. There is also a 2-entry TLB. You are given the following information:\n\n\u25cf Virtual Address Space: 64 KB\n\u25cf Physical Memory Size: 4 KB\n\u25cf PTE Size: 2 Bytes\n\u25cf The format of a PTE is shown below. The MSB is the valid bit, and the lower several bits are for the physical page number (PPN). Note that the exact number of bits for PPN is for you to determine. The rest bits are always padded with 0.\n\nValid <1-bit> 0...0 Physical Page Number\n\n\u25cf %eax: 0x8000\n\u25cf %ebx: 0x401E\n\u25cf Program Counter (%eip): 0x3048\n\nThe TLB state before any instructions related to this problem are executed:\n\nValid Virtual Page Number (VPN) PTE Valid Physical Page Number (PPN)\n1 0x0C1 1 0x01A\n1 0x182 1 0x024\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p7_0.png",
+            "images/sp18-final-sol/chart_p7_1.png",
+            "images/sp18-final-sol/chart_p7_2.png"
+        ],
+        "question": "In this particular TLB, the Valid bit in the first column and the Valid bit in the third column are the same in both TLB entries. In general, is it possible that these two valid bits have different values?",
+        "solution": "Yes",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_4/b",
+        "context": "We wish to enhance the x86 ISA by adding a new instruction. The new instruction is called STI, \"Store Indirect\", and its format is:\n\nSTI Ra,Rb,Offset\n\nThe opcode of STI is 1010, and its binary encoding is (2-Byte long):\n\nOpcode <4-bit> Ra <3-bit> Rb <3-bit> Offset <6-bit>\n\nSTI operates as follows: We compute a virtual address (call it A) by adding the sign-extended Offset to the contents of register Rb. The memory location specified by A contains the virtual address B. We wish to store the contents of register Ra into the address specified by B.\n\nThe processor has a simple one-level virtual memory system. There is also a 2-entry TLB. You are given the following information:\n\n\u25cf Virtual Address Space: 64 KB\n\u25cf Physical Memory Size: 4 KB\n\u25cf PTE Size: 2 Bytes\n\u25cf The format of a PTE is shown below. The MSB is the valid bit, and the lower several bits are for the physical page number (PPN). Note that the exact number of bits for PPN is for you to determine. The rest bits are always padded with 0.\n\nValid <1-bit> 0...0 Physical Page Number\n\n\u25cf %eax: 0x8000\n\u25cf %ebx: 0x401E\n\u25cf Program Counter (%eip): 0x3048\n\nThe TLB state before any instructions related to this problem are executed:\n\nValid Virtual Page Number (VPN) PTE Valid Physical Page Number (PPN)\n1 0x0C1 1 0x01A\n1 0x182 1 0x024\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p7_0.png",
+            "images/sp18-final-sol/chart_p7_1.png",
+            "images/sp18-final-sol/chart_p7_2.png"
+        ],
+        "question": "What is binary encoding for STI %eax,%ebx,0? Assume that %eax is encoded as 0 and %ebx is encoded as 1.",
+        "solution": "1010 000 001 000000",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_4/c",
+        "context": "We wish to enhance the x86 ISA by adding a new instruction. The new instruction is called STI, \"Store Indirect\", and its format is:\n\nSTI Ra,Rb,Offset\n\nThe opcode of STI is 1010, and its binary encoding is (2-Byte long):\n\nOpcode <4-bit> Ra <3-bit> Rb <3-bit> Offset <6-bit>\n\nSTI operates as follows: We compute a virtual address (call it A) by adding the sign-extended Offset to the contents of register Rb. The memory location specified by A contains the virtual address B. We wish to store the contents of register Ra into the address specified by B.\n\nThe processor has a simple one-level virtual memory system. There is also a 2-entry TLB. You are given the following information:\n\n\u25cf Virtual Address Space: 64 KB\n\u25cf Physical Memory Size: 4 KB\n\u25cf PTE Size: 2 Bytes\n\u25cf The format of a PTE is shown below. The MSB is the valid bit, and the lower several bits are for the physical page number (PPN). Note that the exact number of bits for PPN is for you to determine. The rest bits are always padded with 0.\n\nValid <1-bit> 0...0 Physical Page Number\n\n\u25cf %eax: 0x8000\n\u25cf %ebx: 0x401E\n\u25cf Program Counter (%eip): 0x3048\n\nThe TLB state before any instructions related to this problem are executed:\n\nValid Virtual Page Number (VPN) PTE Valid Physical Page Number (PPN)\n1 0x0C1 1 0x01A\n1 0x182 1 0x024\n",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p7_0.png",
+            "images/sp18-final-sol/chart_p7_1.png",
+            "images/sp18-final-sol/chart_p7_2.png"
+        ],
+        "question": "To process the STI instruction, one must go through the Fetch, Decode, etc. instruction cycle. What is the maximum number of physical addresses that can be accessed in processing an STI instruction?\n\nHints:\n1. Instruction fetch is the necessary first step in processing any instruction\n2. In the one-level virtual memory system, the page table lives in the physical memory",
+        "solution": "6",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_4/d",
+        "context": "We wish to enhance the x86 ISA by adding a new instruction. The new instruction is called STI, \"Store Indirect\", and its format is:\n\nSTI Ra,Rb,Offset\n\nThe opcode of STI is 1010, and its binary encoding is (2-Byte long):\n\nOpcode <4-bit> Ra <3-bit> Rb <3-bit> Offset <6-bit>\n\nSTI operates as follows: We compute a virtual address (call it A) by adding the sign-extended Offset to the contents of register Rb. The memory location specified by A contains the virtual address B. We wish to store the contents of register Ra into the address specified by B.\n\nThe processor has a simple one-level virtual memory system. There is also a 2-entry TLB. You are given the following information:\n\n\u25cf Virtual Address Space: 64 KB\n\u25cf Physical Memory Size: 4 KB\n\u25cf PTE Size: 2 Bytes\n\u25cf The format of a PTE is shown below. The MSB is the valid bit, and the lower several bits are for the physical page number (PPN). Note that the exact number of bits for PPN is for you to determine. The rest bits are always padded with 0.\n\nValid <1-bit> 0...0 Physical Page Number\n\n\u25cf %eax: 0x8000\n\u25cf %ebx: 0x401E\n\u25cf Program Counter (%eip): 0x3048\n\nThe TLB state before any instructions related to this problem are executed:\n\nValid Virtual Page Number (VPN) PTE Valid Physical Page Number (PPN)\n1 0x0C1 1 0x01A\n1 0x182 1 0x024\nNow the processor executes STI %eax,%ebx,0. It turned out that five physical memory accesses were needed. The table below shows the Virtual Address (VA), Physical Address (PA), Data, and whether or not there was a TLB hit for each of these five physical memory accesses in the order they occurred. Some of the blanks are intentionally left for you to fill in.\n\nVirtual Address Physical Address Data TLB Hit?\n0x3048 0x480 0xA040 Yes\nN/A 0x660 0x8040 No\n0x401E 0x81E 0x40FE No\nN/A 0x66E 0x8040 No\n0x40FE 0x1DE 0x8000 No\n\nComplete the table and fill in the following three boxes. You can assume that no page faults occurred.\n\nHints:\n1. What does the first TLB hit mean?\n2. Recall how to use PTBR and VPN to access the page table.\n3. Use the first and last accesses to figure out the page size first. Everything else will follow.",
+        "context_figures": [
+            "images/sp18-final-sol/chart_p7_0.png",
+            "images/sp18-final-sol/chart_p7_1.png",
+            "images/sp18-final-sol/chart_p7_2.png",
+            "images/sp18-final-sol/chart_p8_0.png"
+        ],
+        "question": "What is the page size?\nWhat is the total number of physical pages?\nWhat is the data in the page table base register (PTBR)?\nPlease complete the table above. \"I Don't Know\" is accepted on a per blank basis.",
+        "solution": "32 Bytes\n\n128\n\n0x260",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_5/a",
+        "context": "A programmer writes the following two C code segments. She wants to run them concurrently on a multicore processor, called SC, using two different threads, each of which will run on a different core.\n\nThread T1\na = X[0];\nb = a + Y[0];\nwhile(*flag == 0);\nY[0] += 1;\n\nThread T2\nY[0] = 1;\n*flag = 1;\nX[1] *= 2;\na = 0;\n\nX, Y, and flag have been allocated in main memory, while a and b are contained in the processor registers. A read or write to any of these variables generates a single memory request. The initial values of all memory locations and variables are 0. Assume each line of the C code segment of each thread translates to a single machine instruction.\n",
+        "context_figures": [],
+        "question": "Both threads have a variable a. Are they referring to the same variable?",
+        "solution": "No",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_5/b",
+        "context": "A programmer writes the following two C code segments. She wants to run them concurrently on a multicore processor, called SC, using two different threads, each of which will run on a different core.\n\nThread T1\na = X[0];\nb = a + Y[0];\nwhile(*flag == 0);\nY[0] += 1;\n\nThread T2\nY[0] = 1;\n*flag = 1;\nX[1] *= 2;\na = 0;\n\nX, Y, and flag have been allocated in main memory, while a and b are contained in the processor registers. A read or write to any of these variables generates a single memory request. The initial values of all memory locations and variables are 0. Assume each line of the C code segment of each thread translates to a single machine instruction.\n",
+        "context_figures": [],
+        "question": "What are the possible final value(s) of Y[0] after both threads finish execution? Consider all the possible thread interleavings.",
+        "solution": "2",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "sp18-final-sol/Problem_5/c",
+        "context": "A programmer writes the following two C code segments. She wants to run them concurrently on a multicore processor, called SC, using two different threads, each of which will run on a different core.\n\nThread T1\na = X[0];\nb = a + Y[0];\nwhile(*flag == 0);\nY[0] += 1;\n\nThread T2\nY[0] = 1;\n*flag = 1;\nX[1] *= 2;\na = 0;\n\nX, Y, and flag have been allocated in main memory, while a and b are contained in the processor registers. A read or write to any of these variables generates a single memory request. The initial values of all memory locations and variables are 0. Assume each line of the C code segment of each thread translates to a single machine instruction.\n",
+        "context_figures": [],
+        "question": "What are the possible final value(s) of b after both threads finish execution? Consider all the possible thread interleavings.",
+        "solution": "0 and 1",
+        "solution_figures": [],
+        "correctly_parsed": null
+    }
+]

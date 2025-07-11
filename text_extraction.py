@@ -1,17 +1,17 @@
 import boto3
 from botocore.exceptions import ClientError
+import config
 import os
 import json
 import image_identifying
 from botocore.config import Config
+import helper
 
 config = Config(read_timeout=1000)
 client = boto3.client("bedrock-runtime", region_name="us-east-2", config=config)
 
-
-def claud_37_processing(path):
+def claud_37_processing(path, arn):
     filename = os.path.basename(path)[:-4]
-    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
     prompt = """You are a language model assisting with the digitization of academic exam content. The input is a PDF file containing one problem of a Computer Architecture Assessment. If part of another problem is included, ignore it and only focus on {filename}. 
     The problem may include any combination of the following:
@@ -51,9 +51,7 @@ def claud_37_processing(path):
       "problem_solution": <Insert the full solution of the problem, exactly as shown in the original. Replace all double quotes " here with escaped double quotes /">
     }}
 
-    Finally, here are some special cases to watch for:
     If any double quotes (") within strings appear within your JSON, you must replace them with escaped double quotes (/").
-    If you encounter any math equations, use Latex format to represent them.
     """.format(filename = filename)
     
     # Load the document
@@ -81,9 +79,9 @@ def claud_37_processing(path):
     try:
         # Send the message to the model, using a basic inference configuration.
         response = client.converse(
-            modelId=claude_inference_profile_arn,
+            modelId=arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 4000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 4000, "temperature": 0},
         )
 
         # Extract and print the response text.
@@ -92,36 +90,26 @@ def claud_37_processing(path):
         return response_text
 
     except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        print(f"ERROR: Can't invoke '{arn}'. Reason: {e}")
         exit(1)
 
 
-def strip_json_code_block(text: str) -> str:
-    # find the first “{” and the last “}”
-    start = text.index("{")
-    end   = text.rindex("}") + 1
-    text2 = text[start:end]
-    
-    # Remove opening and closing code block markers
-    lines = text2.strip().splitlines()
-    cleaned_lines = [line for line in lines if not line.strip().startswith("```")]
-    return "\n".join(cleaned_lines)
-
-
-
-
-def process(file_path, pages_data): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
+def process(file_path, pages_data, arn, api): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
 
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
   problems_path = os.path.join("extracted_problems", filename)
   output = []
-  output_path = os.path.join("out", filename + ".json")
+
+  # Create folder structure for this
+  parent_folder = "out_model_comparison/" + filename
+  os.makedirs(parent_folder, exist_ok= True)
+  output_path = os.path.join(parent_folder, api + ".json")
   
   for problem in os.listdir(problems_path):
       print("Processing text in:", problem)
-      json_text = claud_37_processing(os.path.join(problems_path, problem))
-      stripped_json = strip_json_code_block(json_text)
+      json_text = claud_37_processing(os.path.join(problems_path, problem), arn)
+      stripped_json = helper.strip_json_code_block(json_text)
       print("Raw problem output: ", stripped_json)
       problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
 
@@ -177,6 +165,15 @@ def process(file_path, pages_data): # pages_data is the dictionary from problem_
 
       # Now add all these questions to the final out object
       for key in problem_output:
+          
+          # Write all the data into an intermediary folder
+          preprocessed_output = os.path.join("preprocessed_output", filename)
+          os.makedirs(preprocessed_output, exist_ok = True)
+
+          with open(preprocessed_output + "/" + problem + ".json", 'w') as file:
+            json.dump(problem_dict, file, indent=4)
+          
+          # Add this data to a larger json file
           output.append(problem_output[key])
 
   # Write all problems to the final json

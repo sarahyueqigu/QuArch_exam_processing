@@ -1,0 +1,35 @@
+{
+    "problem": "2",
+    "problem_context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:",
+    "subproblems": [
+        {
+            "subproblem": "A",
+            "subproblem_question": "Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)\n\nCIRCLE ONE: YES NO",
+            "subproblem_solution": "NO - will stall when more than 16 outstanding misses in pipe",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "B",
+            "subproblem_question": "Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?\n\nCIRCLE ONE: YES NO",
+            "subproblem_solution": "YES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "C",
+            "subproblem_question": "Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+            "subproblem_solution": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "D",
+            "subproblem_question": "Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+            "subproblem_solution": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}
