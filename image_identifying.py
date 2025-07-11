@@ -104,7 +104,7 @@ def process(exam_name, problem_pdf, problem_json, images):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 4000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 4000, "temperature": 0},
         )
 
         # Extract and print the response text.
