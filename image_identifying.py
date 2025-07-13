@@ -3,6 +3,7 @@ import boto3
 from botocore.exceptions import ClientError
 import json
 import os
+from botocore.config import Config
 
 prompt = """
     You are a language model assisting with the digitization of academic exam content in Computer Architecture.
@@ -39,7 +40,8 @@ prompt = """
     If none of the images given pertain to the problem, just output the original json given.
     """
 
-client = boto3.client("bedrock-runtime", region_name="us-east-2")
+config = Config(read_timeout=1000)
+client = boto3.client("bedrock-runtime", region_name="us-east-2", config=config)
 
 claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
@@ -104,7 +106,7 @@ def process(exam_name, problem_pdf, problem_json, images):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 4000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 4000, "temperature": 0},
         )
 
         # Extract and print the response text.
@@ -122,4 +124,3 @@ def process(exam_name, problem_pdf, problem_json, images):
         print(f"EXCEPTION: {e}")
         exit(1)
 
-    

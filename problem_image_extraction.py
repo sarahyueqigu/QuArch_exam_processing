@@ -108,7 +108,7 @@ def claud_37_processing(document_bytes):
         response = client.converse(
             modelId=claude_37_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 800, "temperature": 0},
         )
 
         # Extract and print the response text.
