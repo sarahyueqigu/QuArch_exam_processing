@@ -21,7 +21,7 @@ parser = LlamaParse(
     verbose=True,
     )
 
-
+claude_37_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     """
@@ -83,7 +83,7 @@ async def llama_processing(file_path, output_dir):
     return result
 
 
-def claud_37_processing(document_bytes, arn):
+def claud_37_processing(document_bytes):
 
     # Start a conversation with a user message and the document
     conversation = [
@@ -106,7 +106,7 @@ def claud_37_processing(document_bytes, arn):
     try:
         # Send the message to the model, using a basic inference configuration.
         response = client.converse(
-            modelId=arn,
+            modelId=claude_37_arn,
             messages=conversation,
             inferenceConfig={"maxTokens": 800, "temperature": 0.3},
         )
@@ -116,11 +116,11 @@ def claud_37_processing(document_bytes, arn):
         return response_text
 
     except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke '{arn}'. Reason: {e}")
+        print(f"ERROR: Can't invoke '{claude_37_arn}'. Reason: {e}")
         exit(1)
 
 
-def process(input_path, output_fol, arn): #7/3 added extra input path parameter, output_fol, such that all the output is not hard coded to "extracted_problems"
+def process(input_path, output_fol): #7/3 added extra input path parameter, output_fol, such that all the output is not hard coded to "extracted_problems"
     print("\nPROBLEM_PAGE_EXTRACTION: ", input_path)
     
     filename = os.path.basename(input_path)
@@ -132,7 +132,7 @@ def process(input_path, output_fol, arn): #7/3 added extra input path parameter,
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
     # get the dictionary of split page numbers
-    string_output = claud_37_processing(document_bytes, arn)
+    string_output = claud_37_processing(document_bytes)
 
     # find the first “{” and the last “}”
     start = string_output.index("{")

@@ -1,0 +1,28 @@
+{
+    "problem": "2",
+    "problem_context": "Please answer the following three questions about Verilog.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "Does the following code result in a single D Flip-Flop with a synchronous active-low reset? Please explain your answer.",
+            "subproblem_solution": "No.\nThe code implements two D Flip-Flops, not one. Each D Flip-Flop works with an asynchronous active-low reset signal.\n\nExplanation:\n\n\u2022 D and Q signals are two-bit-wide. Therefore, this code implements two D flip-flops.\n\u2022 The reset input is included in the sensitivity list, therefore it is not synchronous.\n\u2022 The code resets the output if the reset signal is low. Thus, the reset signal is active-low.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Does the following code result in a sequential circuit or a combinational circuit? Please explain your answer.",
+            "subproblem_solution": "Sequential circuit.\n\nExplanation:\nThis code results in a sequential circuit, as all the left-hand side signals are not assigned in every possible condition. For example, data_out[0] is not assigned when mask signal equals to zero.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how to fix it/them.",
+            "subproblem_solution": "The code is not syntactically correct.\n\nExplanation:\n\u2022 \u2018r1\u2019 and \u2018r2\u2019 have to be declared as wires.\n\u2022 \u2018op\u2019 signal is connected to multiple drivers. It gets assigned from the input port and in line 19.\n\u2022 The module \u2018fulladd\u2019 does not have ports named \u2018z\u2019. Those need to be changed to \u2018s\u2019.\n\u2022 The output signals \u2018s\u2019 and \u2018c_out\u2019 have to be declared as wires but not as regs, since they are driven by assign statements.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

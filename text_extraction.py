@@ -79,12 +79,12 @@ def claud_37_processing(path, arn):
         response = client.converse(
             modelId=arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 4000, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 8000, "temperature": 0},
         )
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]
-        #print(response_text)
+        # print(response_text)
         return response_text
 
     except (ClientError, Exception) as e:
@@ -108,7 +108,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
       print("Processing text in:", problem)
       json_text = claud_37_processing(os.path.join(problems_path, problem), arn)
       stripped_json = helper.strip_json_code_block(json_text)
-      print("Raw problem output: ", stripped_json)
+      # print("Raw problem output: ", stripped_json)
       problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
 
       # Prep problem_dict with empty "figures" fields, which image_identifying will fill in
@@ -130,6 +130,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
         # 1) original problem PDF, 2) problem json, 3) associated images
         problem_with_imgs = image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)
         # TODO: make image_identifying an async function? to speed things up
+        
       else:
          problem_with_imgs = problem_dict
 
@@ -159,7 +160,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
           "correctly_parsed" : None
       }
 
-      print("Problem Output: ", problem_output)
+      # print("Problem Output: ", problem_output)
 
       # Now add all these questions to the final out object
       for key in problem_output:

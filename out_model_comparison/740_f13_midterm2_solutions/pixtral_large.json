@@ -1,0 +1,284 @@
+[
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_2/A",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context_figures": [],
+        "question": "Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)",
+        "solution": "NO - will stall when more than 16 outstanding misses in pipe",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_2/B",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context_figures": [],
+        "question": "Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?",
+        "solution": "YES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_2/C",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context_figures": [],
+        "question": "Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+        "solution": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_2/D",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate the branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread stalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding requests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context_figures": [],
+        "question": "Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
+        "solution": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_3/A",
+        "context": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
+        "context_figures": [
+            "chart_p6_0.png"
+        ],
+        "question": "Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.",
+        "solution": "",
+        "solution_figures": [
+            "chart_p6_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_3/B",
+        "context": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
+        "context_figures": [
+            "chart_p6_0.png"
+        ],
+        "question": "Fill in the instruction opcodes, source, and destination registers in the table below.\n\nOP DEST SRC1 SRC2",
+        "solution": "",
+        "solution_figures": [
+            "chart_p7_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/A",
+        "context": "Problem 1: Potpourri\nSuppose we are running a multithreaded application where threads are part of the same application on a multicore processor. The memory controller is shared between the cores.",
+        "context_figures": [],
+        "question": [
+            "1) Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.",
+            "2) Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why."
+        ],
+        "solution": [
+            "Prioritizing latency-sensitive (memory non-intensive) threads can increase system throughput",
+            "Can delay the critical/bottleneck thread which may not be memory non-intensive"
+        ],
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/B",
+        "context": "Problem 1: Potpourri\n",
+        "context_figures": [],
+        "question": "Under what conditions would an application\u2019s performance increase linearly as memory bandwidth is increased?",
+        "solution": "If memory bandwidth is the performance bottleneck",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/C",
+        "context": "Problem 1: Potpourri\n",
+        "context_figures": [],
+        "question": "What problem does the fat tree interconnect solve that is present in the tree interconnect?",
+        "solution": "High link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/D",
+        "context": "Problem 1: Potpourri\n",
+        "context_figures": [],
+        "question": "You are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?",
+        "solution": "The system is using circuit switching, and there is a large delay to set up all links between source and destination.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/E",
+        "context": "Problem 1: Potpourri\nAs you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In fact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has the least slack over others in the router, where the slack of a packet (ideally) is defined as the number of cycles the packet can be delayed without hurting performance. The concept of slack is actually more general. It can be applied to prioritization at any shared resource, assuming the slack of a \u201cmemory request\u201d can be estimated well.",
+        "context_figures": [],
+        "question": [
+            "1) Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:",
+            "2) What performance issue can slack-based prioritization cause to other processors in the system? Why?",
+            "3) How can you solve this problem?"
+        ],
+        "solution": [
+            "The exact latency of the request may not be known at the time of injection \u2013 the slack may change based on the state of the shared resources and the decisions made by them",
+            "How much the packet would affect performance may not be known at the time of injection \u2013 the overlap of latency of the packet may not be known at the time of injection",
+            "Can cause starvation to some threads",
+            "Batching"
+        ],
+        "solution_figures": [
+            "chart_p3_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/F",
+        "context": "Problem 1: Potpourri\n",
+        "context_figures": [],
+        "question": "What is the purpose of token tagging in dynamic dataflow architectures?",
+        "solution": "Supporting re-entrant code. Ensuring that tokens come from same context.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_1/G",
+        "context": "Problem 1: Potpourri\n",
+        "context_figures": [],
+        "question": [
+            "1) What access patterns could benefit from this instruction? Explain well.",
+            "2) The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail."
+        ],
+        "solution": [
+            "Streaming or striding access pattern (no data reuse)",
+            "Allow speculative scheduling of consumers of the load"
+        ],
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_4/A",
+        "context": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive). time 0ns: row 0 read time 10ns: row 1 read time 100ns: row 2 read time 105ns: row 1 read time 200ns: row 3 read time 300ns: row 1 read.\n",
+        "context_figures": [],
+        "question": "What rows would you place in near segment? Hint: draw a timeline.",
+        "solution": "rows 0 and 2. see above",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_4/B",
+        "context": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive). time 0ns: row 0 read time 10ns: row 1 read time 100ns: row 2 read time 105ns: row 1 read time 200ns: row 3 read time 300ns: row 1 read.\n",
+        "context_figures": [],
+        "question": "What rows would you place in far segment?",
+        "solution": "rows 1 and 3 (also rows 0 and 2 since inclusive). see above",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_4/C",
+        "context": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive). time 0ns: row 0 read time 10ns: row 1 read time 100ns: row 2 read time 105ns: row 1 read time 200ns: row 3 read time 300ns: row 1 read.\n",
+        "context_figures": [],
+        "question": "In 15 words or less, describe the insight in your mapping?",
+        "solution": "See TL-DRAM\u2019s WMC policy \u2013 the first access in near simultaneous requests causes the second to wait activation + precharge time. minimizing this wait by caching first row in near segment is better than caching second row in near segment (this decreases only time to read from start of activation), even if second row is accessed more frequently (see example above)",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_4/D",
+        "context": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive). time 0ns: row 0 read time 10ns: row 1 read time 100ns: row 2 read time 105ns: row 1 read time 200ns: row 3 read time 300ns: row 1 read.\n",
+        "context_figures": [],
+        "question": "Assume now that the mapping is dynamic. What are the tradeoffs of an exclusive design vs. an inclusive design? Name one advantage and one disadvantage for each.",
+        "solution": "Exclusive requires swapping, but can use nearly full capacity of DRAM. Inclusive, the opposite.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_4/E",
+        "context": "Recall from your required reading on Tiered-Latency DRAM that there is a near and far segment, each containing some number of rows. Assume a very simplified memory model where there is just one bank and there are two rows in the near segment and four rows in the far segment. The time to activate and precharge a row is 25ns in the near segment and 50ns in the far segment. The time from start of activation to reading data is 10ns in the near segment and 15ns in the far segment. All other timings are negligible for this problem. Given the following memory request stream, determine the optimal assignment (minimize average latency of requests) of rows in the near and far segment (assume a fixed mapping where rows cannot migrate, a closed-row policy, and the far segment is inclusive). time 0ns: row 0 read time 10ns: row 1 read time 100ns: row 2 read time 105ns: row 1 read time 200ns: row 3 read time 300ns: row 1 read.\nAssume now that there are eight (8) rows in the near segment. Below is a plot showing the number of misses to the near segment for three applications (A, B, and C) when run alone with the specified number of rows allocated to the application in the near segment. This is similar to the plots you saw in your Utility-Based Cache Partitioning reading except for TL-DRAM instead of a cache. Determine the optimal static partitioning of the near segment when all three of these applications are run together on the system. In other words, how many rows would you allocate for each application? Hint: this should sum to eight. Optimal for this problem is defined as minimizing total misses across all applications.",
+        "context_figures": [
+            "chart_p10_0.png"
+        ],
+        "question": "How many near segment rows would you allocate to A?  How many near segment rows would you allocate to B?  How many near segment rows would you allocate to C?",
+        "solution": "1) 5  2) 3  3) 0",
+        "solution_figures": [
+            "chart_p10_1.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_5/A",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\n\n",
+        "context_figures": [],
+        "question": "How many warps does it take to execute this program?",
+        "solution": "16384/64 = 256",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_5/B",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\n\nAs shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively.",
+        "context_figures": [
+            "chart_p11_0.png"
+        ],
+        "question": "What is the SIMD utilization of this program?",
+        "solution": "A: 1 1 ...29 1s... 1 0 0 ...93 0s... 0 ...32 1s... 96 0s... ...\n\nB: 0 0 ...61 0s... 0 1 1 ...61 1s... 1 ...64 0s ...64 1s... ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 * 4)/(64 + 64 * 5) = 66.7%",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_5/C",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\n\n",
+        "context_figures": [],
+        "question": "Is it possible for this program to yield a SIMD utilization of 25%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 25%? Be precise and show your work. If NO, explain why not.",
+        "solution": "Yes. For example, if only 4 elements in every 64 elements of A are positive, we can have a SIMD utilization of (64 + 4 * 4)/(64 * 5) = 25%.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_5/D",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\n\n",
+        "context_figures": [],
+        "question": "Is it possible for this program to yield a SIMD utilization of 20%?\n\nCIRCLE ONE: YES NO\n\nIf YES, what should be true about arrays A and B for the SIMD utilization to be 20%? Be precise and show your work. If NO, explain why not.",
+        "solution": "No. The smallest SIMD utilization one can get is to have one and only one element in every 64 elements of A to be positive, which yields a minimal SIMD utilization of (64 + 1 * 4)/(64 * 5) = 21.25%, which is still greater than 20%.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_5/E",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\n\nDuring an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%.",
+        "context_figures": [],
+        "question": "Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
+        "solution": "Hongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_6/A",
+        "context": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.\n",
+        "context_figures": [],
+        "question": "In one sentence, in terms of code optimizations, explain what benefit does larger scheduling code blocks provide?",
+        "solution": "Larger scheduling code blocks enable greater flexibility for instruction scheduling.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_6/B",
+        "context": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.\nInstruction Promotion hoists the operation from a predicated instruction and replaces the original predicated instruction with a conditional move. With Instruction Promotion, operations can be scheduled and issued before their corresponding predicates are determined. Below shows an example of Instruction Promotion.\nBefore:\n\ncmplt B6,B7-> B0\n[B0] ld MEM1-> A5\n[!B0] ld MEM2-> A5\n\nnop 4\naddi A5,8 -> A8\n\nAfter Instruction Promotion:\n\nld MEM1-> A5\nld MEM2-> A6\ncmplt B6,B7-> B0\n\n[!B0] mv A6-> A5\nnop 4\naddi A5,8 -> A8\n\nAssume we run this code on a processor that supports predication but can only issue a predicated instruction after its corresponding predicate has been resolved.",
+        "context_figures": [],
+        "question": "For the example above, can Instruction Promotion ever improve system performance? Why or why not?",
+        "solution": "Yes it can. With Instruction Promotion, the program can hide some of the load latency.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_6/C",
+        "context": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.\n",
+        "context_figures": [],
+        "question": "For the example above, can Instruction Promotion ever degrade system performance? Why or why not?",
+        "solution": "Yes it can. Instruction Promotion: (1) introduces extra instructions and (2) can increase register pressure. [Note that extra instructions may not always increase register pressure]",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "740_f13_midterm2_solutions/Problem_6/D",
+        "context": "As described in class, Hyperblock scheduling uses predication support to replace unbiased branches with predicates, which enables larger code blocks.\nThe graph above shows the performance comparison of a program optimized using Hyperblock and Superblock respectively with different issue widths.",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "With all other factors being equal, as the figure shows, when the issue width is low, Superblock provides higher speedup than Hyperblock. However, when the issue width is high, Hyperblock provides higher speedup than Superblock. Explain why this can happen?",
+        "solution": "A wider issue width can tolerate the wasted instructions in a hyperblock, but does not benefit the superblock (all else being equal).\n\nA more detailed explanation: Hyperblock uses predication which increases the total number of instructions to execute. When the issue width is low, executing extra predicated instructions requires extra work, which slows down the processor as all resources of the processor has already been fully utilized. When the issue width is high, however, Hyperblock provides a greater number of independent instructions from the multiple paths of control to fill the available processor resources. As Hyperblock also enables larger code blocks for better optimization for unbiased branches, Hyperblock provides better speedup.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    }
+]

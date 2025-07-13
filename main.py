@@ -14,24 +14,20 @@ if __name__ == "__main__":
     # Parse through each file in the subfolder
     for filename in os.listdir(input_dir): # TODO: may cause some delays when .json files are added
         # Only process PDFs
-        if filename == "740_f13_midterm2_solutions.pdf":
+        if filename == "digitaltechnik-s19-en-sol.pdf":
         # if filename.lower().endswith(".pdf"):   
             # Build path             
             file_dir = input_dir + "/" + filename
-            data = problem_image_extraction.process(file_dir, "extracted_problems", arn)
+            data = problem_image_extraction.process(file_dir, "extracted_problems")
 
             # Loop through each arn
             for api in dir(config):
-
                 # Skip built-in attributes (those starting with __)
                 if not api.startswith("__"):
                     print(api)
                     arn = getattr(config, api)
-
-                    print("went here")
                     text_extraction.process(file_dir, data, arn, api)
 
             
             
             
-c

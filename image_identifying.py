@@ -111,6 +111,8 @@ def process(exam_name, problem_pdf, problem_json, images):
         response_text = response["output"]["message"]["content"][0]["text"]
         print("images filled in: ", response_text)
 
+        return json.loads(response_text)
+
     except ClientError as e:
         print(f"CLIENT ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
         exit(1)
@@ -120,4 +122,4 @@ def process(exam_name, problem_pdf, problem_json, images):
         print(f"EXCEPTION: {e}")
         exit(1)
 
-    return json.loads(response_text)
+    
