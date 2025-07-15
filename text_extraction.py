@@ -111,6 +111,8 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
       json_text = claud_37_processing(os.path.join(problems_path, problem), arn)
       stripped_json = helper.strip_json_code_block(json_text)
       # print("Raw problem output: ", stripped_json)
+      print("stripped_json:", stripped_json)
+
       problem_dict = json.loads(stripped_json) # This is the extracted problem text in json format
 
       # Prep problem_dict with empty "figures" fields, which image_identifying will fill in
@@ -130,7 +132,11 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
 
         # Call image_identifying for each problem, feeding it:
         # 1) original problem PDF, 2) problem json, 3) associated images
-        problem_with_imgs = json.loads(helper.strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
+        result = image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)
+        
+        result_str = json.dumps(result, indent=4)
+
+        problem_with_imgs = json.loads(helper.strip_json_code_block(result_str))
         # TODO: make image_identifying an async function? to speed things up
         
       else:

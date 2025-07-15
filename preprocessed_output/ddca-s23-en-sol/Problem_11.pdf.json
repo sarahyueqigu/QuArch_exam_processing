@@ -1,0 +1,21 @@
+{
+    "problem": "11",
+    "problem_context": "You are given a systolic array of 2\u00d7 2 Processing Elements (PEs), interconnected as shown in Figure 2. The inputs of the systolic array are labeled as H0, H1 and V0, V1. Figure 3 shows the PE logic, which performs a multiply-accumulate (MAC) operation and saves the result to an internal register (reg). Figure 3 also shows how each PE propagates its inputs. We make the following assumptions:\n\n\u02c6 The latency of each MAC operation is one cycle, i.e., if the inputs to a PE are available in cycle c, the updated register value will be available in cycle c+ 1.\n\n\u02c6 The propagation of the values from i0 to o0, and from i1 to o1, takes one cycle.\n\n\u02c6 The initial values of all internal registers is zero.\n\nFigure 2: PE array Figure 3: Processing Element (PE)\n\nYour goal is to use the systolic array shown in Figure 2 to perform the multiplication C = A\u00d7B, where A, B, and C are 2 \u00d7 2 matrices. Recall that the multiplication of two K \u00d7 K matrices is defined as follows:\n\nCij =\n\nK\u22121\u2211\nk=0\n\nAik \u00d7Bkj\n\nAs an example, for K = 2, the calculation for C00 is as follows:\n\nC00 = A00 \u00d7B00 +A01 \u00d7B10\n\nCompute the multiplication in the minimum possible number of cycles. Fill the following table with:\n\n1. Each input element (from matrices A2\u00d72 and B2\u00d72) in the correct cycle and input port of the systolic array (H0, H1 and V0, V1).\n\n2. Each output element (for matrix C2\u00d72) in the cycle and PE that generates each output.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "Fill in the blanks only with relevant information. Input cells left blank are interpreted as 0.",
+            "subproblem_solution": "cycle H0 H1 V0 V1 PE00 PE01 PE10 PE11\n\n0 A00 B00\n\n1 A01 A10 B10 B01\n\n2 A11 B11 C00\n\n3 C01 C10\n\n4 C11",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Suppose that the same systolic array from Figure 2 is used to compute the multiplication of two 4\u00d7 4 matrices. How many cycles does it take to perform the multiplication? Assume that the register in a PE resets to 0 immediately after an output is generated, i.e., PEs can start accumulating for the next output element in the next cycle without waiting for an extra cycle to reset the register to 0. Show your work.",
+            "subproblem_solution": "19 cycles.\n\nEach PE needs to calculate four elements to calculate the 4\u00d7 4 = 16 output elements.\n\nFor the first element calculated by each PE, the timeline looks similar to (a), but requires two additional cycles for the four MAC operations instead of two per element, i.e., seven cycles in total until PE11 produces its output.\n\nThe remaining three elements calculated by each PE require four cycles each if pipelined with the previously calculated element.\n\nThus, the total number of cycles is 7 + 3\u00d7 4 = 19.\n\ncycle H0 H1 V0 V1 PE00 PE01 PE10 PE11\n\n0 A00 B00\n\n1 A01 A10 B10 B01\n\n2 A02 A11 B20 B11\n\n3 A03 A12 B30 B21\n\n4 A00 A13 B02 B31 C00\n\n5 A01 A10 B12 B03 C01 C10\n\n6 A02 A11 B22 B13 C11\n\n7 A03 A12 B32 B23\n\n8 A20 A13 B00 B33 C02\n\n9 A21 A30 B10 B01 C03 C12\n\n10 A22 A31 B20 B11 C13\n\n11 A23 A32 B30 B21\n\n12 A20 A33 B02 B31 C20\n\n13 A21 A30 B12 B03 C21 C30\n\n14 A22 A31 B22 B13 C31\n\n15 A23 A32 B32 B23\n\n16 A33 B33 C22\n\n17 C23 C32\n\n18 C33",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

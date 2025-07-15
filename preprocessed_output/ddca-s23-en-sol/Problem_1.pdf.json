@@ -1,0 +1,28 @@
+{
+    "problem": "1",
+    "problem_context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Fib and G3. The value of each output is determined as follows:\n\n\n\u2022 The output Fib is 1 only when the input 4-bit number is a Fibonacci number. You can calculate Fibonacci numbers as follows, f(0) = 0, f(1) = 1, and f(n) = f(n\u2212 1) + f(n\u2212 2) for n \u2265 2.\n\n\n\u2022 The output G3 is 1 only when the input 4-bit number is greater than 3.\n\n\n\u2022 Otherwise, the corresponding output is zero.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "Fill in the missing entries in the truth table below for the combinational circuit you are designing and express the output Fib in the sum of products representation.",
+            "subproblem_solution": "Inputs Outputs\n\nA B C D Fib G3\n\n0 0 0 0 1 0\n\n0 0 0 1 1 0\n\n0 0 1 0 1 0\n\n0 0 1 1 1 0\n\n0 1 0 0 0 1\n\n0 1 0 1 1 1\n\n0 1 1 0 0 1\n\n0 1 1 1 0 1\n\n1 0 0 0 1 1\n\n1 0 0 1 0 1\n\n1 0 1 0 0 1\n\n1 0 1 1 0 1\n\n1 1 0 0 0 1\n\n1 1 0 1 1 1\n\n1 1 1 0 0 1\n\n1 1 1 1 0 1\n\nFib = (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Simplify the Fib expression using Boolean minimization rules. Show your work step-by-step.",
+            "subproblem_solution": "Fib = (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) +\n(A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = ((A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)\n\nFib = ((A \u00b7B) \u00b7 (1)) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (C \u00b7 ((A \u00b7B \u00b7D) + (A \u00b7B \u00b7D) + (A \u00b7B \u00b7D)))\n\nFib = (A \u00b7B) + (C \u00b7 ((B \u00b7D) + (A \u00b7B \u00b7D)))\n\nFib = (A \u00b7B) + (B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (A \u00b7B \u00b7 C \u00b7D) + (B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (B \u00b7 C \u00b7D) + (B \u00b7 C \u00b7D)",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Find the simplest representation of the G3 output by using only 2-input NAND gates. Show your work step-by-step.",
+            "subproblem_solution": "G3 = (A \u00b7A) \u00b7 (B \u00b7B)\nExplanation:\n\nG3 = (A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7\nD)+(A \u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)\n\nG3 = (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7D) + (C \u00b7D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7\nD) + (C \u00b7D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7D) + (C \u00b7D)))\n\nG3 = (A \u00b7B \u00b7 (1)) + (A \u00b7B \u00b7 (1)) + (A \u00b7B \u00b7 (1))\n\nG3 = (A \u00b7B) + (A \u00b7B) + (A \u00b7B)\n\nG3 = A+B\n\nG3 = A+B\n\nG3 = A \u00b7B\n\nG3 = (A \u00b7A) \u00b7 (B \u00b7B)",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

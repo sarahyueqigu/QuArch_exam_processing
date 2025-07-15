@@ -1,0 +1,23 @@
+{
+    "problem": "4",
+    "problem_context": "Verilog [60 points]",
+    "subproblems": [
+        {
+            "subproblem": "4.1",
+            "subproblem_context": "What Does This Code Do?",
+            "subproblem_question": "Analyze the following Verilog module and answer the question.\n\nmodule module_x (input wire clk, input wire rst,\ninput wire [7:0] in, output wire [7:0] out);\n\nreg [7:0] var1, var2, var3, var4;\n\nassign out = (var4 == in) ? var3 : var4;\n\nalways @(posedge clk) begin\nif (rst) begin\nvar1 <= 8\u2019b0; var2 <= 8\u2019b1;\nvar3 <= 8\u2019b0; var4 <= 8\u2019b0;\nend else begin\nvar1 <= var2; var2 <= var1 + var2;\nvar3 <= var1 + var2;\nvar4 <= var4 + 8\u2019b1;\nend\nend\nendmodule\n\nAssume that the input in always has the following value:\nin = 8\u2019h09\n\nWhat unsigned decimal values does the out signal get in the following waveform diagram? Fill in the gray boxes with an out value for each clk cycle. Briefly explain your answer.\n\nposedge 0 posedge 1 \u2026\n\nfill  in  all  10  empty  boxes\n\n\u2026\n0 1 2 3 4 5 6 7 8 55\n\nBrief explanation (to help us award you partial credit):\n\nExplanation.",
+            "subproblem_solution": "The module outputs the inth number in the Fibonacci sequence after in clock cycles. Until then, it outputs the number of clock cycles that have passed since reset.\nFor the given value of in (8'h09), the values for out are from leftmost yellow box to the rightmost yellow box:\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "4.2",
+            "subproblem_context": "Is ChatGPT not Right?",
+            "subproblem_question": "You gave ChatGPT the following prompt to help with your lab report: \u201cA Verilog module that simulates a character's movement on a 2D-plane. The module takes four inputs for four directions (direction inputs) the character can move to. The module outputs x and y coordinates. The character stays in the same coordinate if none of the direction inputs are set. Initial coordinates (set on reset) are 0, 0. Stride determines how many units the character moves in one step.\u201d\n\nmodule movement (\ninput clk, input rst,\ninput up, input down,\ninput left, input right,\n\n1 stride,\n\noutput [7:0] x_coord,\noutput [7:0] y_coord\n);\n\n2 x_internal, y_internal; // 8-bit signals\n\nwire [2:0] move_amount = 3 ; // if stride is not zero, move by stride amount, else move by 1\n\nalways @(posedge clk) begin\nif (rst) begin\nx_internal <= 0; y_internal <= 0;\nend else begin\nif (up) y_internal <= y_internal + move_amount;\nelse if (down) y_internal <= y_internal - move_amount;\nelse if (left) x_internal <= x_internal - move_amount;\nx_internal <= x_internal + move_amount;\nend\nend\n\n4 x_coord = x_internal; // output coordinate\n\n4 y_coord = y_internal; // output coordinate\n\nendmodule\n\nProvide your choice for each blank 1 , 2 , and 4 below. Circle only one of A, B, C, D. Provide a one-line expression for 3 (Hint: Use the ternary operator (?) to implement a MUX).\n\n1 : A. output B. output reg C. input wire [2:0] D. input reg\n\n2 : A. wire [7:0] B. [7:0] wire C. wire [8:0] D. reg [7:0]\n\n3 : stride != 3\u2019b0 ? stride : 3\u2019b1;\n\n4 : A. B. assign C. == D. let\n\nExplanation.",
+            "subproblem_solution": "1 : Signal stride is used as an input to the module, so it should be declared as an input. Among options that describe input signals (C and D), input reg is not valid Verilog syntax.\n\n2 : The correct way to describe signals that we can assign values to in an always block is reg [7:0].\n\n3 : We describe a mux using the ternary operator as such: stride != 3\u2019b0 ? stride : 3\u2019b1;. If stride is zero, the left-hand side of the ternary operator (i.e., stride) is the output of the mux and otherwise the right-hand side (i.e., 3\u2019b1) is the output of the mux.\n\n4 : The correct syntax for assigning a value to a signal is assign x_coord = x_internal;. Other options are not valid Verilog syntax.\n\nDid ChatGPT inject any errors in this code? Write down line number(s) and a short explanation (to help us award you partial credit).\n\nExplanation. Line 18 introduces a logical error, causing x_internal to always be incremented by move_amount regardless of the direction of movement.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

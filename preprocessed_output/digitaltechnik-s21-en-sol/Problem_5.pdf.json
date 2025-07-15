@@ -1,0 +1,37 @@
+{
+    "problem": "5",
+    "problem_context": "A multi-cycle processor P1 executes load instructions in 6 cycles, store instructions in 6 cycles, arithmetic instructions in 2 cycles, and branch instructions in 2 cycles. Consider an application A where 40% of all instructions are load instructions, 20% of all instructions are store instructions, 30% of all instructions are arithmetic instructions, and 10% of all instructions are branch instructions.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "What is the CPI of application A when executing on processor P1? Show your work.",
+            "subproblem_solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2 CPI = 4.4",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_context": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A.",
+            "subproblem_question": "What is the CPI of application A when executing on processor P2? Show your work.",
+            "subproblem_solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6 CPI = 8.4",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Which processor is faster (P1 or P2)? By how much (i.e., what is the speedup)? Show your work.",
+            "subproblem_solution": "P2 is 1.05\u00d7 faster than P1.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "d",
+            "subproblem_context": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options: (1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions. (2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.",
+            "subproblem_question": "Which optimization do you add to P1 for application A? Show your work and justify your choice.",
+            "subproblem_solution": "The ALU optimization. Application A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions. By Amdahl's Law, we have: SpeedupALU = 1 / (1\u22120.3\u22120.1)+ 0.3+0.1 / 2 = 1.25 SpeedupLSU = 1 / (1\u22120.4\u22120.2)+ 0.4 / 2 +0.2\u00d72 = 1.0 The ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}
