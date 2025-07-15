@@ -2,7 +2,7 @@ import json
 import os
 import csv
 
-fieldnames = ["exam", "api", "total", "concurred_trues", "concurred_falses", "false_trues", "true_falses",
+fieldnames = ["exam", "testing_version", "total", "concurred_trues", "concurred_falses", "false_trues", "true_falses",
               "verified_trues", "api_trues", "total_questions_no_images", "concurred_trues_no_images", 
               "concurred_falses_no_images", "api_accuracy", "llm_accuracy", "llm_accuracy_no_images"]
 
@@ -19,7 +19,7 @@ def process(input_dir, exam):
 
         row = {
             "exam": exam,
-            "api": "ALL (verification pipeline version 2)",
+            "testing_version": "problem by problem (verification pipeline version 2)",
             "total": 0.0,
             "concurred_trues": 0.0,
             "concurred_falses": 0.0, 
@@ -84,6 +84,7 @@ def process(input_dir, exam):
 
             # Write the row
             writer.writerow(row)
+
 
 
 if __name__ == "__main__":
