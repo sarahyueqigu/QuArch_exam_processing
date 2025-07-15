@@ -1,0 +1,395 @@
+[
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/a",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "If the system has no cache, how much time will it make all memory accesses in the program given above?",
+        "solution": "ttotal =  N x tmem. \nttotal =  20 x 20ns. = 400 ns",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/b",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "As an alternative, it was decided to use a direct mapped cache with capacity of 8 words and a block size of 1. The cache access time for this cache is 2ns. Using the table below, show the final content of this cache memory after executing the program above.",
+        "solution": "Location Content \nSet 7  \nSet 6  \nSet 5 14 \nSet 4 10 \nSet 3 0C  4C  0C  4C \nSet 2 08  48  08  48 \nSet 1 04  44  04 \nSet 0 00  40  00",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p16_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/c",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "How many compulsory cache misses were there?",
+        "solution": "There are six compulsory misses: the first four accesses to 00 04 08 0C and then the accesses to 10 14 on the 7th and 8th cycles.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/d",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "How many conflict misses were there?",
+        "solution": "There are 10 conflict misses: 8th cycle 40 conflicts with 00, 9th cycle 44 conflicts with 04, 10th cycle 00 conflicts with 40, 11th cycle 04 conflicts with 44, 12th cycle 48 conflicts with 08, 13th cycle 4C conflicts with 0C, 14th cycle 08 conflicts with 48, 15th cycle 0C conflicts with 4C,18th cycle 48 conflicts with 08, 19th cycle 4C conflicts with 0C",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/e",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "What is the Miss Ratio for this cache?",
+        "solution": "There are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/f",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "How long will it take to make all the memory accesses for the program given above?",
+        "solution": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns\nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns\nTotal is 40ns + 320ns = 360ns\nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.  \nTotal time memory access x AMAT = 20 x 18ns = 360ns",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_8/g",
+        "context": "In this exercise we will evaluate the memory access time of a small program under different cache configurations. The program will access the following 20 addresses in order (addresses are given as 8-bit hex numbers for simplicity): 0x00 0x04 0x08 0x0C 0x00 0x04 0x10 0x14 0x40 0x44 0x00 0x04 0x48 0x4C 0x08 0x0C 0x00 0x04 0x48 0x4C In this system one main memory access takes 20ns.\n",
+        "context_figures": [],
+        "question": "There are four suggestions below. In each case only one parameter of the cache will be changed. Which of the following changes would improve the total memory access time of this system running the above program, indicate all that apply?\na. Increasing the Capacity from 8 to 16\nb. Increasing Block size from 1 to 2\nc. Increasing Set Associativity from 1 (direct mapped) to 2\nd. Increasing Cache Access Time 1ns to 2 ns",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_2/a",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Write the truth table for the function Z= B'(C' + A) + BC'.",
+        "solution": "A B C Z \n0 0 0 1 \n0 0 1 0 \n0 1 0 1 \n0 1 1 0 \n1 0 0 1 \n1 0 1 1 \n1 1 0 1 \n1 1 1 0",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p3_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_2/b",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Compose a Karnaugh Map for the truth table from question 2(a).",
+        "solution": "A\\BC 00 01 11 10 \n0 1 0 0 1 \n1 1 1 0 1",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p3_1.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_2/c",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z",
+        "solution": "Z = AB' + C'",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_2/d",
+        "context": "\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p3_2.png"
+        ],
+        "question": "Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation.",
+        "solution": "Z = A + B + C + D' + E'FG",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p3_3.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_3/a",
+        "context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\nState Gray Code Output \nS G2 G1 G0 \nS0 0 0 0 \nS1 0 0 1 \nS2 0 1 1 \nS3 0 1 0 \nS4 1 1 0 \nS5 1 1 1 \nS6 1 0 1 \nS7 1 0 0 \n\nThe following is a state transition diagram of this FSM with the states named S0 to S7.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p4_0.png"
+        ],
+        "question": "Is this a Moore or Mealy type FSM?",
+        "solution": "Moore type, since the output G only depends on the state as there are no inputs",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_3/b",
+        "context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\nState Gray Code Output \nS G2 G1 G0 \nS0 0 0 0 \nS1 0 0 1 \nS2 0 1 1 \nS3 0 1 0 \nS4 1 1 0 \nS5 1 1 1 \nS6 1 0 1 \nS7 1 0 0 \n\nThe following is a state transition diagram of this FSM with the states named S0 to S7.\nIt has been decided to use a simple binary state encoding using 3-bits where each state is encoded in standard binary. I.e. S0 = 000, S1 = 001, \u2026 , S6= 110, S7 = 111.",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p4_0.png"
+        ],
+        "question": "Make a state transition table using the binary state encodings given above. Determine the next state equations.",
+        "solution": "Current State Next State \nS2 S1 S0 N2 N1 N0 \n0 0 0 0 0 1 \n0 0 1 0 1 0 \n0 1 0 0 1 1 \n0 1 1 1 0 0 \n1 0 0 1 0 1 \n1 0 1 1 1 0 \n1 1 0 1 1 1 \n1 1 1 0 0 0 \n\nN2 = S2'S1S0 + S2S1' + S2S0'  \nN1 = S1'S0 + S1S0' \nN0 = S0'",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p5_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_3/c",
+        "context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\nState Gray Code Output \nS G2 G1 G0 \nS0 0 0 0 \nS1 0 0 1 \nS2 0 1 1 \nS3 0 1 0 \nS4 1 1 0 \nS5 1 1 1 \nS6 1 0 1 \nS7 1 0 0 \n\nThe following is a state transition diagram of this FSM with the states named S0 to S7.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p4_0.png"
+        ],
+        "question": "Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2.",
+        "solution": "G2 = S2 \nG1 = S2S1' + S2'S1 \nG0 = S1'S0 + S1S0'",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_3/d",
+        "context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\nState Gray Code Output \nS G2 G1 G0 \nS0 0 0 0 \nS1 0 0 1 \nS2 0 1 1 \nS3 0 1 0 \nS4 1 1 0 \nS5 1 1 1 \nS6 1 0 1 \nS7 1 0 0 \n\nThe following is a state transition diagram of this FSM with the states named S0 to S7.\nIn step b), we have used a binary coding for the states. As a result, we needed a additional circuit to calculate the outputs from the State bits. In this part we will directly use the gray code for the state encoding. In this way, the state will directly be the required gray code, and no additional output encoding will be required.",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p4_0.png"
+        ],
+        "question": "Make a new state transition table and determine the next state equations using the gray code as state encoding.",
+        "solution": "Current State Next State \nS2 S1 S0 N2 N1 N0 \n0 0 0 0 0 1 \n0 0 1 0 1 1 \n0 1 0 1 1 0 \n0 1 1 0 1 0 \n1 0 0 0 0 0 \n1 0 1 1 0 0 \n1 1 0 1 1 1 \n1 1 1 1 0 1 \n\nN2 = S2S0 + S1S0' \nN1 = S2'S0 + S1S0' \nN2 = S2'S1' + S2S1",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p6_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_3/e",
+        "context": "In this question you will design a simple Finite State Machine (FSM) that implements a 3-bit Gray Code counter. The FSM will not have any inputs and have three output bits G2, G1, G0. Gray codes are specialized codes where consecutive numbers differ in only one bit position as seen in the table below.\n\nState Gray Code Output \nS G2 G1 G0 \nS0 0 0 0 \nS1 0 0 1 \nS2 0 1 1 \nS3 0 1 0 \nS4 1 1 0 \nS5 1 1 1 \nS6 1 0 1 \nS7 1 0 0 \n\nThe following is a state transition diagram of this FSM with the states named S0 to S7.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p4_0.png"
+        ],
+        "question": "Which solution would you prefer (using binary coding for the states as in b or gray coding as in d)? Explain with a short sentence.",
+        "solution": "Using the gray code as the state encoding results in a simpler circuit with fewer gates, it would be better to use that one.",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_1/a",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right.",
+        "solution": "1-C 2-B 3-D 4-A",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_1/b",
+        "context": "\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p2_0.png"
+        ],
+        "question": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1?",
+        "solution": "0",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_1/c",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b).",
+        "solution": "",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p2_1.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_4/a",
+        "context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p6_1.png",
+            "images/exam_solutions_ss2012/chart_p7_0.png"
+        ],
+        "question": "Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \"tiny\" realizes a simple AND function)",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_4/b",
+        "context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p7_1.png"
+        ],
+        "question": "Which code snippet(s) will produce a four input multiplexer?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_4/c",
+        "context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p8_0.png"
+        ],
+        "question": "Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c2c1d0d0d0001 (c and d are both 8-bit values)?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_4/d",
+        "context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p8_1.png"
+        ],
+        "question": "Which code snippet(s) will produce a sequential circuit?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_4/e",
+        "context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p8_2.png"
+        ],
+        "question": "Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_5/a",
+        "context": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table: Gate Delay (all paths) Area 2-input AND 15ps 1.8 m2 2-input OR 15ps 1.8 m2 2-input XOR 20ps 2.3 m2\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p8_1.png",
+            "images/exam_solutions_ss2012/chart_p9_0.png"
+        ],
+        "question": "The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)",
+        "solution": "AFA = 2.3m2+ 2.3m2 + 1.8m2 + 1.8m2 + 1.8m2 = 10m2 Critical path from A/B to Co tcrit= tXOR + tAND +tOR = 20ps + 15ps + 15ps = 50ps",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_5/b",
+        "context": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table: Gate Delay (all paths) Area 2-input AND 15ps 1.8 m2 2-input OR 15ps 1.8 m2 2-input XOR 20ps 2.3 m2\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p8_2.png",
+            "images/exam_solutions_ss2012/chart_p9_0.png"
+        ],
+        "question": "An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two's complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)",
+        "solution": "ATot = 8 x AFA = 80 m2 Tcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate =30ps), Since only Two's complement numbers are used, the carry out S8 is not used, For the MSB, only A/B to S delay is relevant = 40ps Tcrit=tMSB + 6 x tFA + 1 x tLSB = 40+ 6 x 50ps + 30ps = 370ps. 8 x tFA = 400ps is also acceptable should give them -1 point",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_5/c",
+        "context": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table: Gate Delay (all paths) Area 2-input AND 15ps 1.8 m2 2-input OR 15ps 1.8 m2 2-input XOR 20ps 2.3 m2\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p9_0.png",
+            "images/exam_solutions_ss2012/img_p9_1.png"
+        ],
+        "question": "A multi-operand adder to add four 8-bit two's complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)",
+        "solution": "Total Area = 3x Eightbit RCA = 3 x 80 m2 = 240 m2 The timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is Tcrit = tB,S + tB,S +T8bitRCA = 40ps + 40ps + 370ps = 450ps. Note: 1ps = 0.000 000 000 001s = 1.10-12s 1m2 = 0.000 000 000 001m2 = 1.10-12 m2",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_7/a",
+        "context": "The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p13_1.png"
+        ],
+        "question": "Determine the value of the control signals when this architecture executes a beq instruction, and fill in the table below. Note that the ALU can be programmed to perform the following functions: addition, subtraction, and, or.",
+        "solution": "Control Signal Value\nRegDst X\nALUSrc 0\nMemWrite 0\nMemtoReg X\nRegWrite 0\nBranch 1\nAluOperation (Add/Sub/And/Or) Sub",
+        "solution_figures": [
+            "images/exam_solutions_ss2012/chart_p14_0.png"
+        ],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_7/b",
+        "context": "The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p13_1.png"
+        ],
+        "question": "Draw the data flow on the block diagram above",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_7/c",
+        "context": "The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p13_1.png"
+        ],
+        "question": "Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above.",
+        "solution": "In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.\n\nIn a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time.\n\nA single cycle processor, needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_7/d",
+        "context": "The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/img_p13_1.png"
+        ],
+        "question": "Which of the following statements about microarchitectures are TRUE (Mark all that apply)?",
+        "solution": "In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases)\n\nIn a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE)\n\nThe Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE)\n\nA multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_6/a",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p11_0.png"
+        ],
+        "question": "What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_6/b",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p11_0.png"
+        ],
+        "question": "Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_6/c",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\nFor reusability of code, we rewrite the assembly program given in (a) using subroutines (procedures). The functionality of the code remains the same. Complete the modified assembly code below by filling in the empty blocks.",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p11_0.png",
+            "images/exam_solutions_ss2012/chart_p12_0.png"
+        ],
+        "question": "Assembly program using subroutines\nbegin     : add $a0, $t1, 10 # $t1 is the input reg\n            jal function\n            add $t6, $v0, $0\nhalt      : j  halt  \n\nfunction  : addi $t1, $0, 0  \n            addi $t2, $0, 1\n\n   loop   : slt $t3, $a0, $t2 \n            bne $t3, $0, exit_func \n            add $t1, $t1, $t2  \n            addi $t2, $t2, 2  \n            j loop \n       \nexit_func : add $v0, $t1, $0 \n    jr  $ra",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_6/d",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p11_0.png"
+        ],
+        "question": "What is the value stored in register $t1 at the end of program execution for the code given in (c)?",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    },
+    {
+        "question_id": "exam_solutions_ss2012/Problem_6/e",
+        "context": "This exercise uses MIPS assembly instructions. The relevant entries from the Appendix B of your book are given for the instructions used in this exercise. Given below is an assembly program to perform a certain operation. Go through the program step by step to answer the following questions.\n\nA MIPS Assembly Program\nbegin:  addi $t1, $0, 0  \n        addi $t2, $0, 1  \n             \nloop:   slt $t3, $t5, $t2 \n        bne $t3, $0, output \n        add $t1, $t1, $t2  \n        addi $t2, $t2, 2  \n        j loop \n       \noutput: add $t6, $t1, $0\n",
+        "context_figures": [
+            "images/exam_solutions_ss2012/chart_p11_0.png"
+        ],
+        "question": "As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1's contents.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": null
+    }
+]
