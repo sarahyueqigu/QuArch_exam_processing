@@ -1,0 +1,42 @@
+{
+    "problem": "9",
+    "problem_context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 4 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1026; i++) {\n    if (A[i] < 33) { // Instruction 1\n        B[i] = A[i] << 1; // Instruction 2\n    }\n    if (A[i] > 33) { // Instruction 3\n        B[i] = A[i] >> 1; // Instruction 4\n    }\n}",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "How many warps does it take to execute this program?",
+            "subproblem_solution": "33 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = #Total_threads / #Warp_size,\n\nwhere\n#Total_threads = 1026,\n\nand\n#Warp_size = 32 (given).\n\nThus, the number of warps needed to run this program is:\n#Warps = 1026 / 32 = 33.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "What is the maximum possible SIMD utilization of this program? Show your work.",
+            "subproblem_solution": "3076 / 3136 = 769 / 784.\n\nExplanation:\nThe maximum SIMD utilization is achieved when all threads of the complete warps follow the same execution path and execute Instruction 2 or Instruction 4 (A[i] > 33 or A[i] < 33), and the two active threads of the last warp do not execute Instruction 2 or Instruction 4 (A[i] = 33).\nThe maximum SIMD utilization sums to 1026 + 32x32 + 1026 / 1056 + 1024 + 1056 = 3076 / 3136.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b).",
+            "subproblem_solution": "For every 32 consecutive elements of A out of the first 1024 elements, every element should be lower than 33 (if(A[i] < 33)), or greater than 33 (if(A[i] > 33)). The last two elements should be equal to 33.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "d",
+            "subproblem_question": "What is the minimum possible SIMD utilization of this program? Show your work.",
+            "subproblem_solution": "353 / 704.\n\nExplanation:\nInstruction 1 is executed by every active thread (1026/1056 utilization). The minimum SIMD utilization of Instruction 2 occurs if only one thread per warp executes it. Instruction 3 is again executed by every active thread (1026/1056 utilization). Finally, the minimum SIMD utilization of Instruction 4 occurs if only one thread per warp executes it.\nThe minimum SIMD utilization sums to 1026 + 1x33 + 1026 + 1x33 / 1056 + 1056 + 1056 + 1056 = 353 / 704.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "e",
+            "subproblem_question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d).",
+            "subproblem_solution": "For every 32 consecutive elements among the first 1024 elements of A, one element should be lower than 33 (if(A[i] < 33)), one element should be greater than 33 (if(A[i] > 33)), and the remaining 30 elements should be equal to 33. For the last 2 elements of A, one element should be lower than 33 (if(A[i] < 33)), and the other element should be greater than 33 (if(A[i] > 33)).",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

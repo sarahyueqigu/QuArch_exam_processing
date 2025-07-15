@@ -1,0 +1,35 @@
+{
+    "problem": "7",
+    "problem_context": "The following is a diagram of a single cycle MIPS architecture that is able to execute R-type and I-type instructions.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "Determine the value of the control signals when this architecture executes a beq instruction, and fill in the table below. Note that the ALU can be programmed to perform the following functions: addition, subtraction, and, or.",
+            "subproblem_solution": "Control Signal Value\nRegDst X\nALUSrc 0\nMemWrite 0\nMemtoReg X\nRegWrite 0\nBranch 1\nAluOperation (Add/Sub/And/Or) Sub",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Draw the data flow on the block diagram above",
+            "subproblem_solution": "",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above.",
+            "subproblem_solution": "In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.\n\nIn a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time.\n\nA single cycle processor, needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "d",
+            "subproblem_question": "Which of the following statements about microarchitectures are TRUE (Mark all that apply)?",
+            "subproblem_solution": "In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases)\n\nIn a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE)\n\nThe Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE)\n\nA multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

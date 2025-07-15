@@ -1,0 +1,35 @@
+{
+    "problem": "10",
+    "problem_context": "You are trying to reverse-engineer the characteristics of a cache in a system, so that you can design a more efficient, machine-specific implementation of an algorithm you are working on. To do so, you have come up with three sequences of memory accesses to various bytes in the system in an attempt to determine the following four cache characteristics:\n\n\u2022 Cache block size (8, 16, 32, 64, or 128B).\n\n\u2022 Cache associativity (1-, 2-, 4-, or 8-way).\n\n\u2022 Cache size (4 or 8KB).\n\n\u2022 Cache replacement policy (LRU or FIFO).\n\nThe only statistic that you can collect on this system is cache hit rate after performing each sequence of memory accesses. Here is what you observe:\n\nSequence Addresses Accessed (Oldest \u2192 Youngest) Hit Rate\n\n1. 31 8192 63 16384 4096 8192 64 16384 3/8\n2. 32768 0 129 1024 3072 8192 0\n3. 0 4 8 4096 64 128 1\n\nAssume that the cache is initially empty at the beginning of the first sequence, but not at the beginning of the second and third sequences. The sequences are executed back-to-back, i.e., no other accesses take place in between the three sequences. Thus, at the beginning of the second (third) sequence, the contents are the same as at the end of the first (second) sequence.",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "Cache block size (8, 16, 32, 64, or 128B)?",
+            "subproblem_solution": "64 B.\n\nExplanation:\nCache hit rate is 3/8 in sequence 1. This means that there are 3 hits. As two of them should be the second accesses to 8192 and 16384, the other hit is the access to 63. With a cache block of 64 B, the access to address 64 results in a miss.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Cache associativity (1-, 2-, 4-, or 8-way)?",
+            "subproblem_solution": "4-way.\n\nExplanation:\nWe already know that the cache block size is 64 B. Thus, there are 6 offset bits.\n\nRegardless of cache size or associativity, addresses 0, 8192, 16384, and 32768 map to the same set. Thus, the cache cannot be 1-way, because we would not see hits on 8192 and 16384 in sequence 1.\n\nIf the cache were 2-way, 4096 would also map to the same set as 0, 8192, 16384, and 32768. This would make impossible a cache hit on 8192 in sequence 1.\n\nIf the cache were 8-way, 0, 1024, 3072, 4096, 8192, 16384, and 32768 would all map to set 0. With 8 ways, address 0 would not be replaced, so it would hit in sequence 2.\n\nTherefore, the cache is 4-way associative.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Cache size (4 or 8KB)?",
+            "subproblem_solution": "8 KB.\n\nExplanation:\nWe know that the cache is 4-way associative. In the beginning of sequence 2, 32768 replaces 0 (regardless of the replacement policy).\n\nThe fact that 8192 misses in sequence 2 can be explained by two possible cases:\n1. If the replacement policy is FIFO, the access to 0 in sequence 2 replaces 8192. Thus, the cache size can be either 4 or 8 KB.\n2. If the replacement policy is LRU, the access to 0 in sequence 2 replaces 4096. If the cache size is 4 KB, 1024 and 3072 map to the same set as 0 and 8192, and 1024 replaces 8192.\n\nSince there is a hit on 4096 in sequence 3, the size should be 8 KB. Otherwise, 3072 would have replaced 4096.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "d",
+            "subproblem_question": "Cache replacement policy (LRU or FIFO)?",
+            "subproblem_solution": "FIFO.\n\nExplanation:\nAs explained above, if the cache size is 8 KB, only FIFO can make address 0 replace address 8192 in sequence 2.",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

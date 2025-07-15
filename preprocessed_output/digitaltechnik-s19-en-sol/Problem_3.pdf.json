@@ -1,0 +1,28 @@
+{
+    "problem": "3",
+    "problem_context": "You are given two one-bit input signals (TA and TB) and one one-bit output signal (O) for the following modular equation: 2N(TA)+N(TB) \u2261 2 (mod 4). In this modular equation, N(TA) andN(TB) represent the total number of times the inputs TA and TB are high (i.e., logic 1) at each positive clock edge, respectively. The one-bit output signal, O, is set to 1 when the modular equation is satisfied (i.e., 2N(TA) +N(TB) \u2261 2 (mod 4)), and 0 otherwise. An example that sets O = 1 at the end of the fourth cycle would be:\n\n\u2022 (1st cycle) TA = 0 (N(TA) = 0), TB = 0 (N(TB) = 0), 2N(TA) +N(TB) \u2261 0 (mod 4)\u21d2 O = 0\n\n\u2022 (2nd cycle) TA = 1 (N(TA) = 1), TB = 1 (N(TB) = 1), 2N(TA) +N(TB) \u2261 3 (mod 4)\u21d2 O = 0\n\n\u2022 (3rd cycle) TA = 1 (N(TA) = 2), TB = 0 (N(TB) = 1), 2N(TA) +N(TB) \u2261 1 (mod 4)\u21d2 O = 0\n\n\u2022 (4th cycle) TA = 0 (N(TA) = 2), TB = 1 (N(TB) = 2), 2N(TA) +N(TB) \u2261 2 (mod 4)\u21d2 O = 1",
+    "subproblems": [
+        {
+            "subproblem": "a",
+            "subproblem_question": "You are given a partial Moore machine state transition diagram that corresponds to the modular equation described above. However, the input labels of most of the transitions are still missing in this diagram. Please label the transitions with the correct inputs so that the FSM correctly implements the above specification.",
+            "subproblem_solution": "",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "b",
+            "subproblem_question": "Describe the FSM with Boolean equations assuming that the states are encoded with one-hot encoding. Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
+            "subproblem_solution": "State assignments: 0 (mod 4): 0001, 1 (mod 4): 0010, 2 (mod 4): 0100, 3 (mod 4): 1000\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TA TB + CS[1] TA TB + CS[2] TA TB + CS[3] TA TB\nNS[1] = CS[1] TA TB + CS[2] TA TB + CS[3] TA TB + CS[0] TA TB \nNS[2] = CS[2] TA TB + CS[3] TA TB + CS[0] TA TB + CS[1] TA TB\nNS[3] = CS[3] TA TB + CS[0] TA TB + CS[1] TA TB + CS[2] TA TB\nO[0] = CS[2]",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        },
+        {
+            "subproblem": "c",
+            "subproblem_question": "Describe the FSM with Boolean equations assuming that the states are encoded with binary encoding (i.e., fully encoding). Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
+            "subproblem_solution": "State assignments: 0 (mod 4): 00, 1 (mod 4): 01, 2 (mod 4): 10, 3 (mod 4): 11\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TB + CS[0] TB\nNS[1] = CS[0] (CS[1] XOR TA XOR TB) + CS[0] (TA XOR CS[1])\nO[0] = CS[1] CS[0]",
+            "subproblem_context_figures": [],
+            "subproblem_solution_figures": []
+        }
+    ],
+    "problem_context_figures": []
+}

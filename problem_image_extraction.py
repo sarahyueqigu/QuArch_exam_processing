@@ -1,5 +1,6 @@
 import ast
 import boto3
+import config
 import pymupdf
 import os
 import asyncio
@@ -13,14 +14,14 @@ load_dotenv()
 nest_asyncio.apply()
 
 parser = LlamaParse(
-    api_key="llx-K1mUygWh37kvgzJbCvvdROrM8N5XBfQFdM3mXfgye1GzYJtZ",
+    api_key= os.getenv("LLAMAPARSE_API_KEY"),
     parse_mode="parse_page_with_llm",
     extract_charts=True,
     num_workers=4,       # if multiple files passed, split in `num_workers` API calls
     verbose=True,
     )
 
-
+claude_37_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
 def extract_page_range(input_pdf_path, output_pdf_path, start_page, end_page):
     """
@@ -83,7 +84,6 @@ async def llama_processing(file_path, output_dir):
 
 
 def claud_37_processing(document_bytes):
-    claude_inference_profile_arn = "arn:aws:bedrock:us-east-2:851725383897:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
     # Start a conversation with a user message and the document
     conversation = [
@@ -106,9 +106,9 @@ def claud_37_processing(document_bytes):
     try:
         # Send the message to the model, using a basic inference configuration.
         response = client.converse(
-            modelId=claude_inference_profile_arn,
+            modelId=claude_37_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 800, "temperature": 0.3},
+            inferenceConfig={"maxTokens": 800, "temperature": 0},
         )
 
         # Extract and print the response text.
@@ -116,7 +116,7 @@ def claud_37_processing(document_bytes):
         return response_text
 
     except (ClientError, Exception) as e:
-        print(f"ERROR: Can't invoke '{claude_inference_profile_arn}'. Reason: {e}")
+        print(f"ERROR: Can't invoke '{claude_37_arn}'. Reason: {e}")
         exit(1)
 
 
@@ -131,7 +131,7 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
     # Convert the json to byte form for Claude input
     document_bytes = json.dumps(document_json.model_dump(), indent=4).encode("utf-8")
 
-    #get the dictionary of split page numbers
+    # get the dictionary of split page numbers
     string_output = claud_37_processing(document_bytes)
 
     # find the first “{” and the last “}”
@@ -144,15 +144,13 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
     print(data)
     
     for problem in data:
-        child_pdf_filename = problem + ".pdf"
-
-        output_path = os.path.join(output_fol, filename[:-4], child_pdf_filename) #7/3 changed the "extracted_problems" to generic output_fol
+        output_path = os.path.join(output_fol, filename[:-4]) #7/3 changed the "extracted_problems" to generic output_fol
         #output_path = os.path.join("extracted_problems", filename[:-4], child_pdf_filename) 
         
         # Create the target directory if it doesn't exist
         os.makedirs(output_path, exist_ok=True)
 
-        extract_page_range(input_path, output_path, data[problem][0], data[problem][1])
+        extract_page_range(input_path, output_path + "/" + problem + ".pdf", data[problem][0], data[problem][1])
         # Also sort all images from the relevant page ranges into the data dict
         for pagenum in range(data[problem][0]-1, data[problem][1]):
             for image in document_json.pages[pagenum].images:
@@ -161,3 +159,5 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
                 data[problem].append(chart.name)
 
     return data
+if __name__ == "__main__":
+    process("data/740_f13_midterm2_solutions.pdf", "pextracted_problems")
