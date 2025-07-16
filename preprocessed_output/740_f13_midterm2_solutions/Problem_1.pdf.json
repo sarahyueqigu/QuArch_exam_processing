@@ -6,8 +6,8 @@
             "subproblem": "A",
             "subproblem_context": "Suppose we are running a multithreaded application where threads are part of the same application on a multicore processor. The memory controller is shared between the cores.",
             "subproblem_question": [
-                "1) Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.",
-                "2) Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why."
+                "Provide one reason why prioritizing a memory non-intensive thread over a memory-intensive one in the memory controller would improve performance. If this is not possible, write N/A and explain why.",
+                "Provide one reason why doing the same would degrade performance. If this is not possible, write N/A and explain why."
             ],
             "subproblem_solution": [
                 "Prioritizing latency-sensitive (memory non-intensive) threads can increase system throughput",
@@ -18,6 +18,7 @@
         },
         {
             "subproblem": "B",
+            "subproblem_context": "Memory bandwidth",
             "subproblem_question": "Under what conditions would an application\u2019s performance increase linearly as memory bandwidth is increased?",
             "subproblem_solution": "If memory bandwidth is the performance bottleneck",
             "subproblem_context_figures": [],
@@ -25,6 +26,7 @@
         },
         {
             "subproblem": "C",
+            "subproblem_context": "Fat trees",
             "subproblem_question": "What problem does the fat tree interconnect solve that is present in the tree interconnect?",
             "subproblem_solution": "High link contention between root and subnodes \u2013 a fat tree increases the bandwidth of these links",
             "subproblem_context_figures": [],
@@ -32,6 +34,7 @@
         },
         {
             "subproblem": "D",
+            "subproblem_context": "Interconnect",
             "subproblem_question": "You are observing a system with many processing elements connected through a network. There is currently no activity on the network (no messages are being sent). On cycle 10, one of the cores generates a message destined for a cache bank somewhere else on the network. You observe the network on cycle 20 and see that this message has not departed the source location. Assume that all components are enabled (not powered off) and operating at full speed. There are no other messages present in the system at this time. Why could this be?",
             "subproblem_solution": "The system is using circuit switching, and there is a large delay to set up all links between source and destination.",
             "subproblem_context_figures": [],
@@ -39,11 +42,11 @@
         },
         {
             "subproblem": "E",
-            "subproblem_context": "As you recall, we have discussed the idea of slack based prioritization for on-chip interconnects in class. In fact, you reviewed a paper that introduced this concept. The key idea was to prioritize the packet that has the least slack over others in the router, where the slack of a packet (ideally) is defined as the number of cycles the packet can be delayed without hurting performance. The concept of slack is actually more general. It can be applied to prioritization at any shared resource, assuming the slack of a \u201cmemory request\u201d can be estimated well.",
+            "subproblem_context": "Slack",
             "subproblem_question": [
-                "1) Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:",
-                "2) What performance issue can slack-based prioritization cause to other processors in the system? Why?",
-                "3) How can you solve this problem?"
+                "Suppose we have a mechanism that tries to estimate the exact slack of a memory request when the request is injected into the shared resources. Provide two reasons why estimating the exact slack of a packet might be difficult:",
+                "What performance issue can slack-based prioritization cause to other processors in the system? Why?",
+                "How can you solve this problem?"
             ],
             "subproblem_solution": [
                 "The exact latency of the request may not be known at the time of injection \u2013 the slack may change based on the state of the shared resources and the decisions made by them",
@@ -56,6 +59,7 @@
         },
         {
             "subproblem": "F",
+            "subproblem_context": "Dataflow",
             "subproblem_question": "What is the purpose of token tagging in dynamic dataflow architectures?",
             "subproblem_solution": "Supporting re-entrant code. Ensuring that tokens come from same context.",
             "subproblem_context_figures": [],
@@ -63,9 +67,10 @@
         },
         {
             "subproblem": "G",
+            "subproblem_context": "Alpha 21264",
             "subproblem_question": [
-                "1) What access patterns could benefit from this instruction? Explain well.",
-                "2) The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail."
+                "The Alpha 21264 had a \u201cPrefetch and evict next\u201d instruction that \u201cprefetched data into the L1 cache except that the block will be evicted from the L1 data cache on the next access to the same data cache set.\u201d What access patterns could benefit from this instruction? Explain well.",
+                "The Alpha 21264 processor employed a predictor that predicted whether a load would hit or miss in the cache before the load accessed the cache. What was the purpose of using this predictor? Explain concisely but with enough detail."
             ],
             "subproblem_solution": [
                 "Streaming or striding access pattern (no data reuse)",

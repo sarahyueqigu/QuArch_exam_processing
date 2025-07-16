@@ -1,7 +1,7 @@
 [
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/A",
-        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
         "context_figures": [],
         "question": "Can the pipeline always be kept full and non-stalling? Why or why not? (Hint: think about the worst case execution characteristics.)\n\nCIRCLE ONE: YES NO",
         "solution": "NO - will stall when more than 16 outstanding misses in pipe",
@@ -10,7 +10,7 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/B",
-        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
         "context_figures": [],
         "question": "Can the pipeline always be kept full and non-stalling if all accesses hit in the cache? Why or why not?\n\nCIRCLE ONE: YES NO",
         "solution": "YES - switching between 200 threads is plenty to avoid stalls due to branch prediction delay",
@@ -19,7 +19,7 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/C",
-        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
         "context_figures": [],
         "question": "Assume that all accesses hit in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
         "solution": "Reduce hardware thread contexts to 19, the minimum to keep pipe full/non-stalling",
@@ -28,7 +28,7 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_2/D",
-        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\n\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\n\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
+        "context": "Suppose your friend designed the following fine-grained multithreaded machine:\n\n\u2022 The pipeline has 22 stages and is 1 instruction wide.\n\u2022 Branches are resolved at the end of the 18th stage and there is a 1 cycle delay after that to communicate\nthe branch target to the fetch stage.\n\u2022 The data cache is accessed during stage 20. On a hit, the thread does not stall. On a miss, the thread\nstalls for 100 cycles, fixed. The cache is non-blocking and has space to accommodate 16 outstanding\nrequests.\n\u2022 The number of hardware contexts is 200.\n\nAssuming that there are always enough threads present, answer the following questions:\n",
         "context_figures": [],
         "question": "Assume that all accesses miss in the cache and your friend wants to keep the pipeline always full and non-stalling. How would you adjust the hardware resources (if necessary) to satisfy this while minimizing hardware cost? You cannot change the latencies provided above. Be comprehensive and specific with numerical answers. If nothing is necessary, justify why this is the case.",
         "solution": "Reduce hardware thread contexts to 100, the minimum to keep pipe full/non-stalling. Increase capability to support 100 outstanding misses",
@@ -37,7 +37,7 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_3/A",
-        "context": "Return of Tomasulo's Algorithm (30 pts)\n\nThe diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo's Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can't be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
+        "context": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo's Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can't be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
         "context_figures": [
             "chart_p6_0.png"
         ],
@@ -48,7 +48,7 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_3/B",
-        "context": "Return of Tomasulo's Algorithm (30 pts)\n\nThe diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo's Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can't be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
+        "context": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo's Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can't be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n",
         "context_figures": [
             "chart_p6_0.png"
         ],
@@ -187,12 +187,12 @@
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/B",
         "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\nAs shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively.",
-        "context_figures": [],
-        "question": "What is the SIMD utilization of this program?",
-        "solution": "A: 1 1 ...29 1s... 1 0 0 ...93 0s... 0 ...32 1s... 96 0s... ...\n\nB: 0 0 ...61 0s... 0 1 1 ...61 1s... 1 ...64 0s ...64 1s... ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 * 4)/(64 + 64 * 5) = 66.7%",
-        "solution_figures": [
+        "context_figures": [
             "chart_p11_0.png"
         ],
+        "question": "What is the SIMD utilization of this program?",
+        "solution": "A: 1 1 ...29 1s... 1 0 0 ...93 0s... 0 ...32 1s... 96 0s... ...\n\nB: 0 0 ...61 0s... 0 1 1 ...61 1s... 1 ...64 0s ...64 1s... ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 * 4)/(64 + 64 * 5) = 66.7%",
+        "solution_figures": [],
         "correctly_parsed": null
     },
     {
@@ -215,9 +215,9 @@
     },
     {
         "question_id": "740_f13_midterm2_solutions/Problem_5/E",
-        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\nDuring an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%.",
+        "context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}\nDuring an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization.",
         "context_figures": [],
-        "question": "Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
+        "question": "Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
         "solution": "Hongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.",
         "solution_figures": [],
         "correctly_parsed": null

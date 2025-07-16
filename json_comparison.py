@@ -12,29 +12,11 @@ arn = config.claude_37
 
 results = []
 
-# e.g. exam = "740_f13_midterm2_solutions"
-def process_per_problem(exam):
+# If there are any discrepancies between the content (e.g. the material rather than the point values) 
+# of each version of dictionaries/JSONs, the field "correctly_parsed" should be set to false, like 
+# this:
 
-# Attatched are (1) an exam pdf, (2) images extracted for that particular question, and (3)
-    print("COMPARING JSON RESULTS")
-    print("PROCESSING:", exam)
-
-    input_dir = "out_model_comparison/" + exam
-
-    # Open one JSON file to iterate thru the questions
-    json_path = os.path.join(input_dir, "claude_37.json")
-    with open(json_path, 'r', encoding='utf-8') as file:
-        placeholder_problems = json.load(file)
-
-    # Iterate through each question in each JSON
-    for problem in placeholder_problems: 
-
-        print("Processing", problem["question_id"])
-        
-        # If errors occur because the question_id doesn't work, use:
-        # for index in enumerate(json_content):
-
-        prompt = """You are are a JSON accuracy checker. Attatched are multiple versions of the same 
+prompt_false_checking = """You are are a JSON accuracy checker. Attatched are multiple versions of the same 
         content extracted in the format of a dictionary/json from different LLM models. Your task is to 
         compare the content of each dictionary/JSON field by field. Identify discrepancies in extracted 
         values, missing fields, or format differences. 
@@ -44,9 +26,11 @@ def process_per_problem(exam):
             "question_id": <Insert the "question_id" from the txt file>, 
             "correctly_parsed": <true or false>
         }
-        If there are any discrepancies between the content (e.g. the material rather than the point values) 
-        of each version of dictionaries/JSONs, the field "correctly_parsed" should be set to false, like 
-        this:
+
+        The LLM model claude_37 is typically best at extracting all the information. However, if the other
+        subsequent models (e.g. claude_35, pixtral_large, llama_17b) contain content that is not included
+        in the original claude_37 version of the extracted content, the field "correctly_parsed" should 
+        be set to false, like this:
         {
             "question_id": "digitaltechnik-s21-en-sol/Problem_10/a", 
             "correctly_parsed": false
@@ -74,6 +58,31 @@ def process_per_problem(exam):
         }
         Attatched below is each version of the actual extracted content from the exam
         """
+
+# e.g. exam = "740_f13_midterm2_solutions"
+def process_per_problem(exam):
+
+# Attatched are (1) an exam pdf, (2) images extracted for that particular question, and (3)
+    print("COMPARING JSON RESULTS")
+    print("PROCESSING:", exam)
+
+    input_dir = "out_model_comparison/" + exam
+
+    # Open one JSON file to iterate thru the questions
+    json_path = os.path.join(input_dir, "claude_37.json")
+    with open(json_path, 'r', encoding='utf-8') as file:
+        placeholder_problems = json.load(file)
+
+    # Iterate through each question in each JSON
+    for problem in placeholder_problems: 
+
+        print("Processing", problem["question_id"])
+        
+        # If errors occur because the question_id doesn't work, use:
+        # for index in enumerate(json_content):
+
+        prompt = prompt_false_checking
+
         # Iterate through each output from each llm model
         for llm_model in os.listdir(input_dir):
             json_path = os.path.join(input_dir, llm_model)
@@ -98,7 +107,7 @@ def process_per_problem(exam):
         results.append(json_result)            
 
     os.makedirs("llm_verification_v2", exist_ok=True)
-    output_path = os.path.join("llm_verification_v2", exam + ".json")
+    output_path = os.path.join("llm_verification_v2", "[AUTOCHECK_V2]" +  exam + ".json")
 
     with open(output_path, 'w') as file:
         json.dump(results, file, indent=4)
@@ -141,7 +150,7 @@ def claud_37_processing(prompt):
 # TODO: turn this into a dictionary and loop through them later
    
 if __name__ == "__main__":
-    exam = "740_f13_midterm2_solutions"
+    exam = "exam_solutions_ss2012"
 
     process_per_problem(exam)
 

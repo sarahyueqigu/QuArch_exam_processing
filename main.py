@@ -10,12 +10,14 @@ if __name__ == "__main__":
     print(os.listdir(parent_folder))
     input_dir = parent_folder
 
+    # Skipped exams because of formatting issues with json conversion
+    skipped_exams = []
 
     # Parse through each file in the subfolder
     for filename in os.listdir(input_dir): # TODO: may cause some delays when .json files are added
         # Only process PDFs
-        if filename == "digitaltechnik-s19-en-sol.pdf":
-        # if filename.lower().endswith(".pdf"):   
+        # if filename == "digitaltechnik-s19-en-sol.pdf":
+        if filename.lower().endswith(".pdf") and filename == "exam_solutions_ss2012.pdf":   
             # Build path             
             file_dir = input_dir + "/" + filename
             data = problem_image_extraction.process(file_dir, "extracted_problems")
@@ -26,8 +28,10 @@ if __name__ == "__main__":
                 if not api.startswith("__"):
                     print(api)
                     arn = getattr(config, api)
-                    text_extraction.process(file_dir, data, arn, api)
 
-            
-            
-            
+                    try:
+                        text_extraction.process(file_dir, data, arn, api)
+                    except json.JSONDecodeError as e:
+                        print("ERROR:", json.JSONDecodeError, "with exam", filename)
+                        skipped_exams.append(filename)
+

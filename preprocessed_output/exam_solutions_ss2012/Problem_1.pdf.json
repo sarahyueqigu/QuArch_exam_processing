@@ -1,24 +1,25 @@
 {
     "problem": "1",
+    "problem_context": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right.",
     "subproblems": [
         {
             "subproblem": "a",
-            "subproblem_question": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right. (2 points) \n\nBinary Number Value, Interpretation \n1 11110 A Decimal -1, 5-bit two's complement \n2 10001 B Decimal -1, 5 bit sign magnitude \n3 10010 C Decimal 30, 5 bit unsigned \n4 11111 D Hexadecimal 0x12, 5 bit unsigned",
+            "subproblem_question": "Match the number on the left to the descriptions on the right.",
             "subproblem_solution": "1-C 2-B 3-D 4-A",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "b",
-            "subproblem_question": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1? (1 point)",
+            "subproblem_context": "Consider the transistor level schematic below.",
+            "subproblem_question": "What is the output going to be when A=1, B=0, C=1?",
             "subproblem_solution": "0",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "c",
-            "subproblem_question": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
-            "subproblem_solution": "",
+            "subproblem_question": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b).",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }

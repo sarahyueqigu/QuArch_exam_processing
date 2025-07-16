@@ -91,14 +91,14 @@ def process(exam_name, problem_pdf, problem_json, images):
 
         # Append image to conversation
         conversation[0]["content"].append(
-        {
-            "image": {
-                "format": "png",
-                "source": {
-                    "bytes": image_bytes 
+            {
+                "image": {
+                    "format": "png",
+                    "source": {
+                        "bytes": image_bytes 
+                    }
                 }
             }
-        }
         )
 
     try:
@@ -106,12 +106,12 @@ def process(exam_name, problem_pdf, problem_json, images):
         response = client.converse(
             modelId=claude_inference_profile_arn,
             messages=conversation,
-            inferenceConfig={"maxTokens": 4000, "temperature": 0},
+            inferenceConfig={"maxTokens": 8120, "temperature": 0},
         )
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]
-        print("images filled in: ", response_text)
+        # print("images filled in: ", response_text)
 
         return json.loads(response_text)
 

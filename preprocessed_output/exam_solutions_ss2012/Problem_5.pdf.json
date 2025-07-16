@@ -1,25 +1,25 @@
 {
     "problem": "5",
-    "problem_context": "In this question we will compute the Area and Delay of different adder components. \n\nTo calculate the Area and the Speed use the values in the following table: \n\nGate Delay (all paths) Area \n\n2-input AND 15ps 1.8 m2 \n\n2-input OR 15ps 1.8 m2 \n\n2-input XOR 20ps 2.3 m2",
+    "problem_context": "In this question we will compute the Area and Delay of different adder components. To calculate the Area and the Speed use the values in the following table:",
     "subproblems": [
         {
             "subproblem": "a",
-            "subproblem_question": "The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)",
-            "subproblem_solution": "AFA  = 2.3m2+ 2.3m2 + 1.8m2 + 1.8m2 + 1.8m2 = 10m2  \n\nCritical path from A/B to Co \n\ntcrit= tXOR + tAND +tOR = 20ps + 15ps + 15ps = 50ps",
+            "subproblem_question": "The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table.",
+            "subproblem_solution": "AFA  = 2.3\u03bcm\u00b2 + 2.3\u03bcm\u00b2 + 1.8\u03bcm\u00b2 + 1.8\u03bcm\u00b2 + 1.8\u03bcm\u00b2 = 10\u03bcm\u00b2. Critical path from A/B to Co. tcrit = tXOR + tAND + tOR = 20ps + 15ps + 15ps = 50ps.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "b",
-            "subproblem_question": "An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two's complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)",
-            "subproblem_solution": "ATot = 8 x AFA = 80 m2  \n\nTcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate =30ps),  \nSince only Two's complement numbers are used, the carry out S8 is not used, For the MSB, only A/B to S delay is relevant = 40ps\nTcrit=tMSB + 6 x tFA + 1 x tLSB = 40+ 6 x 50ps + 30ps = 370ps.  \n\n8 x tFA = 400ps is also acceptable should give them -1 point",
+            "subproblem_question": "An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two\u2019s complement numbers, what is the total area and the critical path of this 8-bit adder?",
+            "subproblem_solution": "ATot = 8 x AFA = 80 \u03bcm\u00b2. Tcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate = 30ps). Since only Two\u2019s complement numbers are used, the carry out S8 is not used. For the MSB, only A/B to S delay is relevant = 40ps. Tcrit = tMSB + 6 x tFA + 1 x tLSB = 40 + 6 x 50ps + 30ps = 370ps. 8 x tFA = 400ps is also acceptable should give them -1 point.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "c",
-            "subproblem_question": "A multi-operand adder to add four 8-bit two's complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)",
-            "subproblem_solution": "Total Area = 3x Eightbit RCA = 3 x 80 m2  = 240  m2\n\nThe timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is \nTcrit = tB,S + tB,S +T8bitRCA = 40ps + 40ps + 370ps = 450ps.  \n\nNote:  1ps = 0.000 000 000 001s  = 1.10-12s\n  1m2  = 0.000 000 000 001m2   = 1.10-12 m2",
+            "subproblem_question": "A multi-operand adder to add four 8-bit two\u2019s complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder?",
+            "subproblem_solution": "Total Area = 3x Eightbit RCA = 3 x 80 \u03bcm\u00b2 = 240 \u03bcm\u00b2. The timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is Tcrit = tB,S + tB,S + T8bitRCA = 40ps + 40ps + 370ps = 450ps.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }
