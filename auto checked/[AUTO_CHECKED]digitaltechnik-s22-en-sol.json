@@ -1,0 +1,692 @@
+[
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_1/a",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Factorial and Div4. The value of each output is determined as follows:\n\n\u02c6 The output Factorial is 1 only when the input 4-bit number is a product of ALL positive integers that are less than or equal to the input number.\n\n\u02c6 The output Div4 is 1 only when the input 4-bit number is divisible by 4.\n\n\u02c6 Otherwise, the corresponding outputs are zero.\n\nPlease answer the following four questions.\n",
+        "context_figures": [],
+        "question": "Fill in the missing entries in the truth table below for the combinational circuit you are designing.",
+        "solution": "Inputs Outputs\n\nA B C D Factorial Div4\n\n0 0 0 0 1 1\n\n0 0 0 1 1 0\n\n0 0 1 0 1 0\n\n0 0 1 1 0 0\n\n0 1 0 0 0 1\n\n0 1 0 1 0 0\n\n0 1 1 0 0 0\n\n0 1 1 1 0 0\n\n1 0 0 0 0 1\n\n1 0 0 1 0 0\n\n1 0 1 0 0 0\n\n1 0 1 1 0 0\n\n1 1 0 0 0 1\n\n1 1 0 1 0 0\n\n1 1 1 0 0 0\n\n1 1 1 1 0 0",
+        "solution_figures": [
+            "chart_p3_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_1/b",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Factorial and Div4. The value of each output is determined as follows:\n\n\u02c6 The output Factorial is 1 only when the input 4-bit number is a product of ALL positive integers that are less than or equal to the input number.\n\n\u02c6 The output Div4 is 1 only when the input 4-bit number is divisible by 4.\n\n\u02c6 Otherwise, the corresponding outputs are zero.\n\nPlease answer the following four questions.\n",
+        "context_figures": [],
+        "question": "Express the output Div4 as the simplest sum of products representation. Show your work step-by-step.",
+        "solution": "Div4 = (C.D)\n\nExplanation:\n\nDiv4 = (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\nDiv4 = (A \u00b7 C \u00b7D)(B +B) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\nDiv4 = (A \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\nDiv4 = (C \u00b7D)(A \u00b7B +A) + (A \u00b7B \u00b7 C \u00b7D)\nDiv4 = (C \u00b7D \u00b7B) + (C \u00b7D \u00b7A) + (A \u00b7B \u00b7 C \u00b7D)\nDiv4 = (C \u00b7D \u00b7A) + (C \u00b7D)(A \u00b7B +B)\nDiv4 = (C \u00b7D)(A+A) + (C \u00b7D \u00b7B)\nDiv4 = (C \u00b7D) + (C \u00b7D \u00b7B)\nDiv4 = (C \u00b7D)",
+        "solution_figures": [
+            "chart_p4_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_1/c",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Factorial and Div4. The value of each output is determined as follows:\n\n\u02c6 The output Factorial is 1 only when the input 4-bit number is a product of ALL positive integers that are less than or equal to the input number.\n\n\u02c6 The output Div4 is 1 only when the input 4-bit number is divisible by 4.\n\n\u02c6 Otherwise, the corresponding outputs are zero.\n\nPlease answer the following four questions.\n",
+        "context_figures": [],
+        "question": "Find the simplest representation of the Factorial output by using only NOR gates. Show your work step-by-step.",
+        "solution": "Factorial = B +A+ C + C +D +D\nExplanation:\n\nFactorial = (A+B + C +D) \u00b7 (A+B + C +D) \u00b7 (A+B + C +D)\n\nFactorial = (A \u00b7 (A+B + C +D) +B \u00b7 (A+B + C +D) + C \u00b7 (A+B + C +D) +D \u00b7 (A+B + C +D)) \u00b7 (A+B + C +D)\n\nFactorial = (A + AB + AC + AD + AB + B + BC + BD + AC + CB + C + CD + AD +BD + CD +DD) \u00b7 (A+B + C +D)\n\nFactorial = (A+B + C) \u00b7 (A+B + C +D)\n\nFactorial = (A+AB +AC +AD) + (AB +B +BC +BD) + (AC +BC + CD)\n\nFactorial = B +A+ CD\n\nFactorial = B +A+ CD\n\nFactorial = B +A+ C +D\n\nFactorial = B +A+ C + C +D +D",
+        "solution_figures": [
+            "chart_p4_1.png",
+            "chart_p4_2.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_10/10.1",
+        "context": "A processor implements an in-order pipeline with multiple stages. Each stage completes in a single cycle. The pipeline stalls after fetching a conditional branch instruction and resumes execution once the condition of the branch is evaluated. There is no other case in which the pipeline stalls.\nYou create a microbenchmark as follows to reverse-engineer the pipeline characteristics:\n\nLOOP1:\nSUB R1, R1, #1 // R1 = R1 - 1\nBGT R1, LOOP1 // Branch to LOOP1 if R1 > 0\n\n\nLOOP2:\nB LOOP2 // Branch to LOOP2\n\n\n// Repeats until program is killed\n\n\nThe microbenchmark takes one input value R1 and runs until it is killed (e.g., via an external interrupt).\n\n\nYou carefully run the microbenchmark using different input values (R1) as summarized in Table 2. You terminate the microbenchmark using an external interrupt such that each run is guaranteed to execute exactly 50 dynamic instructions (i.e., the instructions actually executed by the processor, in contrast to static instructions, which is the number of instructions the microbenchmark has).\n\n\nInitial R1 Value Number of Cycles Taken\n2 71\n4 83\n8 107\n16 155",
+        "context_figures": [
+            "chart_p23_0.png"
+        ],
+        "question": "Using this information, you need to determine the following two system characteristics. Clearly show all work to receive full points!\n\n1. How many stages are in the pipeline?\n\n2. For how many cycles does a conditional branch instruction cause a stall?",
+        "solution": "1. 10 pipeline stages\n2. 6 cycles\n\n\nExplanation: We have a system of equations in the variables:\n\u02c6 C is the total number of cycles taken\n\u02c6 P is the total number of pipeline stages\n\u02c6 I is the total number of dynamic instructions executed\n\u02c6 B is the number of conditional branch instructions executed\n\u02c6 D is the number of cycles stalled for each conditional branch\n\n\nThe total number of cycles can be expressed as C = P + I \u2212 1 +B \u2217D.\nWe know that I = 50, and Table 2 gives us B and C, which we can use to solve the following\nsystem of equations:\n\n\n\u02c6 71 = P + 50\u2212 1 + 2 \u2217D\n\u02c6 83 = P + 50\u2212 1 + 4 \u2217D\n\n\nSolving this system, we obtain P = 10, D = 6",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_10/10.2",
+        "context": "A processor implements an in-order pipeline with multiple stages. Each stage completes in a single cycle. The pipeline stalls after fetching a conditional branch instruction and resumes execution once the condition of the branch is evaluated. There is no other case in which the pipeline stalls.\nTo improve performance, the designers add a mystery branch prediction mechanism to the processor. All we know about this mystery branch predictior is that it does not stall the piepline at all if the prediction is correct. They keep the rest of the design exactly the same as before. You re-run the same microbenchmark with R1 = 4 for the same number of total dynamic instructions with the new design, and you find that the microbenchmark executes in 77 cycles.\n\nBased on this given information, determine which of the following branch prediction mechanisms could be the mystery branch predictor implemented in the new version of the processor. For each branch prediction mechanism below, you should circle the configuration parameters that makes it match the performance of the mystery branch predictor.",
+        "context_figures": [],
+        "question": "(a) Static Branch Predictor\n\nCould this be the mystery branch predictor: YES NO\n\nIf YES, for which configuration below is the answer YES?\n\n(I) Static Prediction Direction\n\nAlways taken Always not taken\n\nExplain:\n\n(b) Last Time Branch Predictor\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nIf YES, for which configuration is the answer YES? Pick an option for each configuration parameter.\n\n(I) Initial Prediction Direction\n\nTaken Not taken\n\n(II) Local for each branch instruction (PC-based) or global (shared among all branches) history?\n\nLocal Global\n\nExplain:\n\n(c) Backward taken, Forward not taken (BTFN)\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nExplain:\n\n(d) Forward taken, Backward not taken (FTBN)\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nExplain:",
+        "solution": "(a) YES, if the static prediction direction is always not taken.\nExplanation: The execution time corresponds to 3 mispredictions and 1 correct prediction. The correct prediction occurs when the branch condition evaluates to FALSE and execution falls through to the following instruction (i.e., NOT TAKEN).\n\n(b) NO.\nExplanation: The last-time predictor will make a correct prediction at least three times, which means that it cannot be the mystery predictor.\n\n(c) NO.\nExplanation: The BTFN predictor makes exactly one misprediction, which is the opposite of what the mystery predictor achieves.\n\n(d) YES.\nExplanation: The FTBN predictor makes exactly one correct prediction, which is what we observe from the microbenchmark.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing important information from the original PDF. The context should include the reference to the microbenchmark from part 10.1, as the problem refers to 're-running the same microbenchmark'. Additionally, there's a typo in the context where 'predictior' is used instead of 'predictor' and 'piepline' instead of 'pipeline', which should match the original PDF exactly."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_11/(a)",
+        "context": "You and your colleague are tasked with designing the prefetcher of a machine your company is designing. The machine has a single processor attached to a main memory (DRAM) system.\n\nYou need to examine different prefetcher designs and analyze the trade-offs involved. For all parts of this question, you need to compute the coverage or overhead of the prefetcher in its steady state.\n\nYou run an application that has the following memory access pattern (note that these are cache block addresses). Assume this memory access pattern repeats for a long time.\n\nA, A+ 1, A+ 9, A+ 10, A+ 18, A+ 19, A+ 27, A+ 28, A+ 36, A+ 37, ...\n",
+        "context_figures": [],
+        "question": "You first design a stride prefetcher PrefX that observes the last three cache block requests. If there is a constant stride S between the last three requests, PrefX issues a prefetch to the next cache block using the stride S. In absence of a constant stride, PrefX refrains from prefetching. What is the coverage of PrefX for the application? Show your work. Please recall, prefetcher coverage is defined as:\n\nTotal number of prefetch requests used by the program\n\nTotal number of main memory requests without the prefetcher",
+        "solution": "0%\n\nExplanation: Since the stride in the address pattern is changing between +1 and +8, the stride prefetcher PrefX cannot learn any constant stride to issue prefetch requests.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_11/(b)",
+        "context": "You and your colleague are tasked with designing the prefetcher of a machine your company is designing. The machine has a single processor attached to a main memory (DRAM) system.\n\nYou need to examine different prefetcher designs and analyze the trade-offs involved. For all parts of this question, you need to compute the coverage or overhead of the prefetcher in its steady state.\n\nYou run an application that has the following memory access pattern (note that these are cache block addresses). Assume this memory access pattern repeats for a long time.\n\nA, A+ 1, A+ 9, A+ 10, A+ 18, A+ 19, A+ 27, A+ 28, A+ 36, A+ 37, ...\n",
+        "context_figures": [],
+        "question": "You then design a next-N-block prefetcher PrefY. For every memory access to cacheline address A, the PrefY prefetches addresses A+1, A+2, ..., A+N. What is the coverage of PrefY if you set N = 2?",
+        "solution": "50%\n\nExplanation: PrefY will prefetch A+1 by seeing A, A+9 by seeing A+8, and so on. Hence every alternate memory requests will be sucessfully prefetched.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_11/(c)",
+        "context": "You and your colleague are tasked with designing the prefetcher of a machine your company is designing. The machine has a single processor attached to a main memory (DRAM) system.\n\nYou need to examine different prefetcher designs and analyze the trade-offs involved. For all parts of this question, you need to compute the coverage or overhead of the prefetcher in its steady state.\n\nYou run an application that has the following memory access pattern (note that these are cache block addresses). Assume this memory access pattern repeats for a long time.\n\nA, A+ 1, A+ 9, A+ 10, A+ 18, A+ 19, A+ 27, A+ 28, A+ 36, A+ 37, ...\n",
+        "context_figures": [],
+        "question": "A prefetcher also incurs bandwidth overhead to the system. We define a prefetcher's bandwidth overhead to the the system as:\n\nTotal number of main memory requests with the prefetcher\n\nTotal number of main memory requests without the prefetcher\n\nPlease note that, if multiple prefetch requests are generated for one memory address, only one request goes to the DRAM.\n\nWhat is the bandwidth overhead of PrefY when N = 2? Show your work.",
+        "solution": "3/2\n\nExplanation:\nFor PrefY :\n\n\u02c6 A will prefetch addresses A+ 1, A+ 2\n\u02c6 A+ 1 will prefetch addresses A+ 2, A+ 3\n\nSo, for every 2 unique cache block requests without the prefetcher, there are 3 unique cache block requests with the prefetcher PrefY. Hence the bandwidth overhead is 3/2.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_11/(d)",
+        "context": "You and your colleague are tasked with designing the prefetcher of a machine your company is designing. The machine has a single processor attached to a main memory (DRAM) system.\n\nYou need to examine different prefetcher designs and analyze the trade-offs involved. For all parts of this question, you need to compute the coverage or overhead of the prefetcher in its steady state.\n\nYou run an application that has the following memory access pattern (note that these are cache block addresses). Assume this memory access pattern repeats for a long time.\n\nA, A+ 1, A+ 9, A+ 10, A+ 18, A+ 19, A+ 27, A+ 28, A+ 36, A+ 37, ...\n",
+        "context_figures": [],
+        "question": "What is the minimum value of N required to achieve a 100% prefetch coverage for PrefY? Show your work. Remember that you should consider the prefetcher's coverage in its steady state.",
+        "solution": "8\n\nExplanation: At N = 8, A+ 1 can prefetch for A+ 9, thus acheiving 100% coverage.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_11/(e)",
+        "context": "You and your colleague are tasked with designing the prefetcher of a machine your company is designing. The machine has a single processor attached to a main memory (DRAM) system.\n\nYou need to examine different prefetcher designs and analyze the trade-offs involved. For all parts of this question, you need to compute the coverage or overhead of the prefetcher in its steady state.\n\nYou run an application that has the following memory access pattern (note that these are cache block addresses). Assume this memory access pattern repeats for a long time.\n\nA, A+ 1, A+ 9, A+ 10, A+ 18, A+ 19, A+ 27, A+ 28, A+ 36, A+ 37, ...\n",
+        "context_figures": [],
+        "question": "What is the bandwidth overhead of PrefY at the value of N you find for part (d)? Show your work.",
+        "solution": "9/2\n\nExplanation:\nFor PrefY at N = 8:\n\n\u02c6 A will prefetch addresses A+ 1, A+ 2, A+ 3, A+ 4, A+ 5, A+ 6, A+ 7, A+ 8\n\u02c6 A+ 1 will prefetch addresses A+ 2, A+ 3, A+ 4, A+ 5, A+ 6, A+ 7, A+ 8, A+ 9\n\nSo, for every 2 unique cache block requests without the prefetcher, there are 9 unique cache block requests with the prefetcher PrefY. Hence the bandwidth overhead is 9/2.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_12/1",
+        "context": "You are trying to reverse-engineer the cache associativity in a newly-released system. You already know that the cache has a FIFO replacement policy and 8 blocks with a block size of 4 B. Starting with an empty cache, an application accesses five byte addresses in the following order\n\n2 \u2192 9 \u2192 16 \u2192 25 \u2192 33\n\nAssume you can access three addresses after the above sequence and observe the cache hit rate across these three accesses.\n",
+        "context_figures": [],
+        "question": "Which three addresses should you access in order to identify the set-associativity of the cache (1-, 2-, 4- or 8-way)? There may be multiple solutions; please give the lowest possible addresses that can enable the identification of the set-associativity. Please explain every step in detail to get full points.",
+        "solution": "0 \u2192 8 \u2192 16\nExplanation. There are four possible set/way configurations, shown below. Each configuration shows the cache state after the five initial accesses. Rows and columns represent sets and ways, respectively, and the byte address accessed is shown for each occupied set:\n\n(a) (8 sets, 1 way)\n33\n-\n9\n-\n16\n-\n25\n-\n\n(b) (4 sets, 2 ways)\n33 16\n- -\n9 25\n- -\n\n(c) (2 sets, 4 ways)\n33 9 16 25\n\u2212 \u2212 \u2212 \u2212\n\n(d) (1 set, 8 ways)\n2 9 16 25 33 \u2212 \u2212 \u2212\n\nAt this point, all four cache associativities have 100% miss rate since they started cold.\nIn order to differentiate the four cases with just three more accesses, we need to induce different hit/miss counts in each of the four types of cache associativities. The only way this is possible is if one cache type experiences three hits, another experiences three misses, the third one has one hit and two misses, and the last one has two hits and one miss.\nOnly two solutions exist to produce this case. In the two solutions, any address in each of the address ranges below can be accessed to reverse-engineer the cache associativity.\n\n\u02c6 (0-3)\u2192(16-19)\u2192(32-35)\n\u02c6 (0-3)\u2192(8-11)\u2192(16-19)\n\nChoosing the lowest possible addresses, the correct solution is 0 \u2192 8 \u2192 16",
+        "solution_figures": [
+            "chart_p28_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_12/2",
+        "context": "You are trying to reverse-engineer the cache associativity in a newly-released system. You already know that the cache has a FIFO replacement policy and 8 blocks with a block size of 4 B. Starting with an empty cache, an application accesses five byte addresses in the following order\n\n2 \u2192 9 \u2192 16 \u2192 25 \u2192 33\n\nAssume you can access three addresses after the above sequence and observe the cache hit rate across these three accesses.\n",
+        "context_figures": [
+            "chart_p29_0.png"
+        ],
+        "question": "What is the associativity of the cache if the cache hit rate observed over the 3 extra addresses accessed in Part (1) were:\n\nHit rate Associativity\n\n0\n\n1/3\n\n2/3\n\n1",
+        "solution": "Based on the solution to Part (1), these are the cache associativities corresponding to different hit rates.\n\nHit rate Associativity\n\n0 4-way, 2 sets\n\n1/3 2-way, 4 sets\n\n2/3 1-way, 8 sets\n\n1 8-way, 1 set",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures field contains chart_p29_0.png which appears to be an empty table that should be filled in as part of the solution. This reveals part of the solution structure in the context, which violates condition d). The empty table should not be included in the context_figures."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_12/3",
+        "context": "You are trying to reverse-engineer the cache associativity in a newly-released system. You already know that the cache has a FIFO replacement policy and 8 blocks with a block size of 4 B. Starting with an empty cache, an application accesses five byte addresses in the following order\n\n2 \u2192 9 \u2192 16 \u2192 25 \u2192 33\n\nAssume you can access three addresses after the above sequence and observe the cache hit rate across these three accesses.\n",
+        "context_figures": [],
+        "question": "When you accessed the three addresses you determined in Part (1), you observed a 100% hit rate across these three accesses. Now, your friend asks you to access four more addresses in the following order:\n\n32 \u2192 0 \u2192 8 \u2192 28\n\nWhich of the above four addresses would result in a cache miss?",
+        "solution": "28.\nThe cache associativity which provides 100% cache hit for the three extra accesses in Part (1) is 8-way and 1 set. The three addresses 32, 0 and 8 are already available in the cache before the four new accesses requested by your friend. 28 will result in a miss and will be added to the cache.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_2/a",
+        "context": "Finite State Machines [50 points]\n\nThe Polybahn from Central to Polyterasse has broken down! To fix it you need to design a finite state machine that controls the Polybahn's two doors A and B.\n\nThe Polybahn should operate as follows:\n\n\u02c6 Initially the Polybahn is empty and idle, and passengers can enter through door A.\n\n\u02c6 The Polybahn is full when it carries 2 passengers.\n\n\u02c6 When it is full and idle, the Polybahn goes into transit to the other station with both doors closed.\n\n\u02c6 After reaching the station, the Polybahn will unload all passengers through door B, while door A is still closed.\n\n\u02c6 After the last passenger has exited the Polybahn, door B closes and the Polybahn becomes idle.\n\n\u02c6 Should (1) a passenger fall out of the Polybahn during transit, or (2) the Polybahn become overfull (\u2265 3 passengers) at any point, it stops in emergency mode, where it opens all doors and remains (unless reset to the initial idle state).\n\nThe FSM receives two input bits, with the following meaning:\n\nInput Meaning\n\n00 no change\n01 exactly one passenger left\n10 exactly one passenger entered\n11 the Polybahn arrived in a station\n",
+        "context_figures": [
+            "chart_p5_0.png"
+        ],
+        "question": "[25 points] Complete the Moore-type FSM below by (1) drawing the transition edges between the states (including reset), (2) specifying the edges' respective input bits, and (3) specifying the output bits of each state. Any input for which no outgoing edge is specified is assumed as a self loop. The 6 given states are sufficient, do not draw additional states.\nNote: Passengers sometimes slip in or out through incorrect doors, or even through closed doors. Your FSM must correctly handle such cases.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": false,
+        "reasoning": "The solution field is empty when it should contain the solution text or reference to solution figures. Additionally, the context is missing the information about the FSM producing two output bits (A and B) and their meanings, which is essential context for solving the problem."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_2/b",
+        "context": "Finite State Machines [50 points]\n\nThe Polybahn from Central to Polyterasse has broken down! To fix it you need to design a finite state machine that controls the Polybahn's two doors A and B.\n\nThe Polybahn should operate as follows:\n\n\u02c6 Initially the Polybahn is empty and idle, and passengers can enter through door A.\n\n\u02c6 The Polybahn is full when it carries 2 passengers.\n\n\u02c6 When it is full and idle, the Polybahn goes into transit to the other station with both doors closed.\n\n\u02c6 After reaching the station, the Polybahn will unload all passengers through door B, while door A is still closed.\n\n\u02c6 After the last passenger has exited the Polybahn, door B closes and the Polybahn becomes idle.\n\n\u02c6 Should (1) a passenger fall out of the Polybahn during transit, or (2) the Polybahn become overfull (\u2265 3 passengers) at any point, it stops in emergency mode, where it opens all doors and remains (unless reset to the initial idle state).\n\nThe FSM receives two input bits, with the following meaning:\n\nInput Meaning\n\n00 no change\n01 exactly one passenger left\n10 exactly one passenger entered\n11 the Polybahn arrived in a station\nYou need to design a second FSM that controls only the bell. The bell should ring (i.e., the output bit is 1) whenever the Moore-type FSM you designed for part (a) opens or closes a door, and is constantly ringing in the case of an emergency.",
+        "context_figures": [
+            "chart_p6_0.png"
+        ],
+        "question": "[25 points] Complete the Mealy-type FSM below by (1) drawing the transition edges between the states (including reset), and (2) specifying the edges' respective input and output bits. Label edges in the following format: [input0][input1]/[bell], e.g., 10/0 = passenger entered, bell off. Any input for which no outgoing edge is specified is assumed as a self loop with output 0.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": false,
+        "reasoning": "The solution field is empty when it should contain the solution text or reference to solution figures. Additionally, the context is missing the information about the FSM producing two output bits (A and B) and their meanings, which is essential context for solving the problem. The context also doesn't clearly explain the relationship between the two FSMs (from part a and part b)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/1",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Two-level global branch prediction.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/2",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Location of the bits that identify the destination register in an ADD instruction.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/3",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Number of instructions fetched per cycle.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/4",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Ratio of the number of floating-point to integer general-purpose registers.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/5",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Number of integer arithmetic and logic units (ALUs).\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/6",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Instruction issue width of the processor core's pipeline.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/7",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "SIMD support.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/8",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "L3 cache replacement policy.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/9",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Width of the data bus to memory.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/10",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "The size of the addressable memory by programs.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/11",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Number of cycles it takes to execute an ADD instruction.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/12",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Ability to choose a specific cache replacement policy using operating system code.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/13",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Number of read/write ports in the physical register file.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/14",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Function of each bit in a programmable prefetcher's configuration register.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_3/15",
+        "context": "ISA vs. Microarchitecture [30 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Number of L3 cache banks.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_4/4.1",
+        "context": "Verilog [60 points]\nWhat Does This Code Do? [30 points]\n\nAnalyze the following Verilog module and answer the question.\n\n1 module mystery_module (clk, en, in1, in2, out);\n2\n\n3 input clk, en;\n4 input[63:0] in1;\n5 input[7:0] in2;\n6 output reg[10:0] out = 0;\n7\n\n8 reg[2:0] var1 = 0;\n9\n\n10 always @(posedge clk) begin\n11 out <= out;\n12 if (en & (var1 == 0)) begin\n13 var1 <= var1 + 1'b1;\n14\n\n15 if (in2[var1])\n16 out <= 11'd0 + in1[var1*8 +: 8];\n17 else\n18 out <= 11'd0 - in1[var1*8 +: 8];\n19 end\n20\n\n21 if (var1 != 0) begin\n22 var1 <= var1 + 1'b1;\n23\n\n24 if (in2[var1])\n25 out <= out + in1[var1*8 +: 8];\n26 else\n27 out <= out - in1[var1*8 +: 8];\n28 end\n29 end\n30\n\n31 endmodule\n\n\nAssume that the inputs in1 and in2 always have the following values:\nin1 = 64'h0807060504030201\nin2 = 8'b10111011",
+        "context_figures": [
+            "chart_p8_0.png"
+        ],
+        "question": "What unsigned decimal values does the out signal get in the following waveform diagram? Fill in the gray boxes with an out value for each clk cycle. Briefly explain your answer.",
+        "solution": "Explanation. Once en becomes 1, the mystery_module begins processing the inputs in1 and in2.\nThe output signal out is initially 0 (line 6).\nvar1 is used to index both in1 and in2. in1 is indexed in 8-bit data chunks and every bit in in2 is indexed separalety. var1 is initially 0 and indexes both inputs starting from their least-significant bits.\nWhen var1 is 0, the mystery_module adds (if in2[0] = 1) or subtracts (if in2[0] = 0) the least significant 8 bits of in1 (i.e., in1[7:0]) to/from the 11-bit out register. In consecutive cycles, var1 gets incremented by 1 and the module adds or subtracts the other 8-bit data chunks in in1 to/from out.\n\nFor the given values of in1 and in2, out gets the following values:\ncycle 0: out = 0 (en = 0 so out remains 0)\ncycle 1: out = 0 (en = 1 but out will be updated for the next cycle (after posedge 2))\ncycle 2: out = 0 + 1 = 1\ncycle 3: out = 1 + 2 = 3\ncycle 4: out = 3 - 3 = 0\ncycle 5: out = 0 + 4 = 4\ncycle 6: out = 4 + 5 = 9\ncycle 7: out = 9 + 6 = 15\ncycle 8: out = 15 - 7 = 8\ncycle 9: out = 8 + 8 = 16\ncycle 10: out = 16 (all inputs have been processed. var1 becomes 0 and out remains as is for future cycles unless en becomes 1)",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The image 'chart_p8_0.png' is incorrectly categorized as a context figure when it should be a solution figure. The image shows the waveform diagram with the filled-in gray boxes containing the answers (0, 0, 1, 3, 0, 4, 9, 15, 8, 16, 16). This reveals the solution to the problem, which violates condition d) that no part of the solution should be revealed in the context."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_4/4.2",
+        "context": "Verilog [60 points]\nComplete the Verilog code [30 points]\n\nFor each numbered blank 1 - 5 in the following Verilog code, mark the choice below (i.e., one of options A, B, C, D) that makes the Verilog module operate as described in the comments. The resulting code must have correct syntax.\n\n1 module my_module (input clk, input rst,\n\n2 input[1:0] data, 1 result);\n\n3\n\n4 2 state = 2'b00; // defining a 2-bit signal with an initial value of 0\n\n5\n\n6 always @(posedge clk) begin\n7 case (state)\n8 2'b00:\n\n9 state <= state + 3 ; // set the next 'state' to 2'b11\n\n10 2'b01:\n11 state <= 2'b00;\n12 2'b10: begin\n13 state <= 2'b11;\n14\n\n15 if ( 4 data) // set the next 'state' to 2'b01 if\n16 state <= 2'b01; // all bits of 'data' are 1\n17 end\n18 2'b11:\n19 state <= 2'b10;\n20 endcase\n21\n\n22 end\n23\n\n24 assign result = 5 state; // assign 1'b1 to 'result' if 'state' has any bit set to 1\n\n25 // otherwise assign 1'b0\n26 endmodule",
+        "context_figures": [],
+        "question": "Provide your choice for each blank 1 - 5 below. Circle only one of A, B, C, D for each blank.\n\n1 : A. output B. output reg C. output reg[0:0] D. input reg\n\n2 : A. reg[1:0] B. reg C. wire D. wire[1:0]\n\n3 : A. 1'b3 B. 3'b2 C. 2'd11 D. 3\n\n4 : A. || B. & C. ! D. 1\n\n5 : A. | B. & C. && D. ^",
+        "solution": "Explanation.\n\n1 : result must be specified as a single bit 'output' signal because it gets assigned either 1'b0 or 1'b1 via an 'assign' operator. It cannot be specified as a 'output reg' because the 'assign' operator can be used only with 'wire' signals. Note: 'output' is the same as 'output wire'.\n2 : state is a two-bit signal (as we can tell from lines 8, 10, 12) and must be a 'reg' because it gets assigned a value in an 'always' block.\n\n3 : In order to transition to state = 3 from state = 0, we need to add 3. Note that A. 1'b3 is not a valid syntax as 3 is not a binary number. Not in the choices, but 1'd3 would also be incorrect since 3 cannot be encoded with a single bit. C. 2'd11 has a similar problem as decimal 11 cannot be encoded with 2 bits.\n4 : In the given choices, only the AND-reduction (&) operator provides the expected functionality of resulting in 1 when all bits of data are 1.\n\n5 : In the given choices, only the OR-reduction (|) operator provides the expected functionality of resulting in 1 when state contains at least one 1.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/1",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "A main memory access typically consumes less energy than a register \ufffdle access.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/2",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Building a larger memory array by increasing the length of the array's wordlines and bitlines increases the cost ($) but does not increase the access time of the array.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/3",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Activating a DRAM cell temporarily destroys the value stored in the DRAM cell.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/4",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "DRAM cost ($) per bit is much higher than that of SRAM.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/5",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "The memory hierarchy of a typical computer system comprises di\ufffderent memory technologies.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/6",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Recently accessed data should be kept at the bottom-level in the memory hierarchy (e.g., main memory or disk) and not at the top-level (e.g., caches) in the hierarchy.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/7",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "A program with no branches has high temporal locality in its instruction memory references.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/8",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "A cache that has a block size equal to word size of memory access instructions cannot exploit spatial locality.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/9",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Memory banking enables concurrent access to the memory structure.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/10",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "In DRAM, accesses to di\ufffderent rows in one bank can be serviced faster compared to accesses to the same row in one bank.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/11",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "PCM is non-volatile, which means PCM retains stored data even when it is powered o\ufffd.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/12",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "If a hypothetical system is not constrained by chip area, memory cost ($), and energy consumption, DRAM would be the best memory technology to use in that system.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/13",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "The entire page table is typically stored in physical memory.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/14",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Virtual-to-physical address translation is on the critical path of a memory access.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_5/15",
+        "context": "Memory Potpourri [30 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 1 point for each incorrect answer and award 0 points for unanswered questions.\n",
+        "context_figures": [],
+        "question": "Virtual memory makes programmer's and microarchitect's tasks easier.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_6/a",
+        "context": "Some fellow students are working on a project called AwesomeMEM, where their goal is to optimize the memory hierarchy (caches and DRAM) to enhance the performance of a multi-core system.\n\nThey evaluate two system configurations. First, the Baseline configuration constitutes a system with two processors, a last-level cache (LLC), and DRAM as main memory. Second, the AwesomeMEM configuration builds on top of the Baseline configuration by employing optimizations to the memory hierarchy.\n\nThe students evaluate the performance benefits of AwesomeMEM in simulation as follows:\n\n1. First, they collect performance metrics of four single-threaded applications (App1, App2, App3, App4) running in isolation in the Baseline configuration.\n\n2. Second, they create two-application mixes to perform a multi-program simulation, where two applications run concurrently in the Baseline configuration, each in a dedicated processor. They evaluate two application mixes: Mix1 (consisting of App1 and App2); and Mix2 (consisting of App3 and App4).\n\n3. Third, they use the same two-application mixes as in the second step to perform a multi-program simulation, where two applications run concurrently in the AwesomeMEM configuration, each in a dedicated processor.\n\nTable 1 summarizes the performance metrics the students collected for each step.\n\nTable 1: Performance metrics the students collected.\n\nExecution Mode | Application Mix | Configuration | Application | Executed Instructions | Executed Cycles | LLC Miss Rate (%) | Branch Misprediction Rate (%) | DRAM Bank Conflict Rate (%)\n--- | --- | --- | --- | --- | --- | --- | --- | ---\nSingle-threaded | N/A | Baseline | App1 | 100,000 | 40,000 | 26% | 1% | 42%\nSingle-threaded | N/A | Baseline | App2 | 100,000 | 800,000 | 99% | 1% | 94%\nSingle-threaded | N/A | Baseline | App3 | 100,000 | 500,000 | 52% | 1% | 89%\nSingle-threaded | N/A | Baseline | App4 | 100,000 | 20,000 | 10% | 1% | 14%\nMulti-programmed | Mix1 | Baseline | App1 | 100,000 | 200,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | Baseline | App2 | 100,000 | 900,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | AwesomeMEM | App1 | 80,000 | 100,000 | 65% | 1% | 55%\nMulti-programmed | Mix1 | AwesomeMEM | App2 | 80,000 | 400,000 | 65% | 1% | 55%\nMulti-programmed | Mix2 | Baseline | App3 | 100,000 | 600,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | Baseline | App4 | 100,000 | 20,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | AwesomeMEM | App3 | 80,000 | 400,000 | 50% | 1% | 45%\nMulti-programmed | Mix2 | AwesomeMEM | App4 | 100,000 | 20,000 | 50% | 1% | 45%\n\nAnswer the following questions based on the performance metrics the students collected.",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "What is the Instructions Per Cycle (IPC) of each of the four applications when the application is executed in isolation in the Baseline configuration? Show your work.",
+        "solution": "App1:\n\nIPC = #instructions/#cycles = 100,000/40,000 = 2.5\n\nApp2:\n\nIPC = #instructions/#cycles = 100,000/800,000 = 0.125\n\nApp3:\n\nIPC = #instructions/#cycles = 100,000/500,000 = 0.2\n\nApp4:\n\nIPC = #instructions/#cycles = 100,000/20,000 = 5",
+        "solution_figures": [
+            "chart_p14_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_6/b",
+        "context": "Some fellow students are working on a project called AwesomeMEM, where their goal is to optimize the memory hierarchy (caches and DRAM) to enhance the performance of a multi-core system.\n\nThey evaluate two system configurations. First, the Baseline configuration constitutes a system with two processors, a last-level cache (LLC), and DRAM as main memory. Second, the AwesomeMEM configuration builds on top of the Baseline configuration by employing optimizations to the memory hierarchy.\n\nThe students evaluate the performance benefits of AwesomeMEM in simulation as follows:\n\n1. First, they collect performance metrics of four single-threaded applications (App1, App2, App3, App4) running in isolation in the Baseline configuration.\n\n2. Second, they create two-application mixes to perform a multi-program simulation, where two applications run concurrently in the Baseline configuration, each in a dedicated processor. They evaluate two application mixes: Mix1 (consisting of App1 and App2); and Mix2 (consisting of App3 and App4).\n\n3. Third, they use the same two-application mixes as in the second step to perform a multi-program simulation, where two applications run concurrently in the AwesomeMEM configuration, each in a dedicated processor.\n\nTable 1 summarizes the performance metrics the students collected for each step.\n\nTable 1: Performance metrics the students collected.\n\nExecution Mode | Application Mix | Configuration | Application | Executed Instructions | Executed Cycles | LLC Miss Rate (%) | Branch Misprediction Rate (%) | DRAM Bank Conflict Rate (%)\n--- | --- | --- | --- | --- | --- | --- | --- | ---\nSingle-threaded | N/A | Baseline | App1 | 100,000 | 40,000 | 26% | 1% | 42%\nSingle-threaded | N/A | Baseline | App2 | 100,000 | 800,000 | 99% | 1% | 94%\nSingle-threaded | N/A | Baseline | App3 | 100,000 | 500,000 | 52% | 1% | 89%\nSingle-threaded | N/A | Baseline | App4 | 100,000 | 20,000 | 10% | 1% | 14%\nMulti-programmed | Mix1 | Baseline | App1 | 100,000 | 200,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | Baseline | App2 | 100,000 | 900,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | AwesomeMEM | App1 | 80,000 | 100,000 | 65% | 1% | 55%\nMulti-programmed | Mix1 | AwesomeMEM | App2 | 80,000 | 400,000 | 65% | 1% | 55%\nMulti-programmed | Mix2 | Baseline | App3 | 100,000 | 600,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | Baseline | App4 | 100,000 | 20,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | AwesomeMEM | App3 | 80,000 | 400,000 | 50% | 1% | 45%\nMulti-programmed | Mix2 | AwesomeMEM | App4 | 100,000 | 20,000 | 50% | 1% | 45%\n\nAnswer the following questions based on the performance metrics the students collected.\nTo measure the system throughput of a multi-core system, the students use the weighted speedup metric, which sums the Instructions Per Cycle (IPC) slowdown experienced by each application compared to when it is run alone (IPCalone_i) for the same number of instructions as it executed in the multi-programmed application mix (IPCshared_i):\n\nSystem Throughput = Weighted Speedup = \u2211_i (IPCshared_i/IPCalone_i)",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "What is the IPCshared_i, i \u2208 {App1, App2, App3, App4}, of each of the four applications when they are executed concurrently in accordance with their multi-programmed application mix in the Baseline and AwesomeMEM configurations? Show your work.",
+        "solution": "App1:\n\nBaseline: For the Baseline: IPCshared_App1 = #instructions/#cycles = 100,000/200,000 = 0.5\n\nAwesomeMEM: For AwesomeMEM: IPCshared_App1 = #instructions/#cycles = 80,000/100,000 = 0.8\n\nApp2:\n\nBaseline: For the Baseline: IPCshared_App2 = #instructions/#cycles = 100,000/900,000 = 0.11\n\nAwesomeMEM: For AwesomeMEM: IPCshared_App2 = #instructions/#cycles = 80,000/400,000 = 0.2\n\nApp3:\n\nBaseline: For the Baseline: IPCshared_App3 = #instructions/#cycles = 100,000/600,000 = 0.16\n\nAwesomeMEM: For AwesomeMEM: IPCshared_App3 = #instructions/#cycles = 80,000/400,000 = 0.2\n\nApp4:\n\nBaseline: For the Baseline: IPCshared_App4 = #instructions/#cycles = 100,000/20,000 = 5\n\nAwesomeMEM: For AwesomeMEM: IPCshared_App4 = #instructions/#cycles = 100,000/20,000 = 5",
+        "solution_figures": [
+            "chart_p15_0.png",
+            "chart_p15_1.png",
+            "chart_p15_2.png",
+            "chart_p15_3.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_6/c",
+        "context": "Some fellow students are working on a project called AwesomeMEM, where their goal is to optimize the memory hierarchy (caches and DRAM) to enhance the performance of a multi-core system.\n\nThey evaluate two system configurations. First, the Baseline configuration constitutes a system with two processors, a last-level cache (LLC), and DRAM as main memory. Second, the AwesomeMEM configuration builds on top of the Baseline configuration by employing optimizations to the memory hierarchy.\n\nThe students evaluate the performance benefits of AwesomeMEM in simulation as follows:\n\n1. First, they collect performance metrics of four single-threaded applications (App1, App2, App3, App4) running in isolation in the Baseline configuration.\n\n2. Second, they create two-application mixes to perform a multi-program simulation, where two applications run concurrently in the Baseline configuration, each in a dedicated processor. They evaluate two application mixes: Mix1 (consisting of App1 and App2); and Mix2 (consisting of App3 and App4).\n\n3. Third, they use the same two-application mixes as in the second step to perform a multi-program simulation, where two applications run concurrently in the AwesomeMEM configuration, each in a dedicated processor.\n\nTable 1 summarizes the performance metrics the students collected for each step.\n\nTable 1: Performance metrics the students collected.\n\nExecution Mode | Application Mix | Configuration | Application | Executed Instructions | Executed Cycles | LLC Miss Rate (%) | Branch Misprediction Rate (%) | DRAM Bank Conflict Rate (%)\n--- | --- | --- | --- | --- | --- | --- | --- | ---\nSingle-threaded | N/A | Baseline | App1 | 100,000 | 40,000 | 26% | 1% | 42%\nSingle-threaded | N/A | Baseline | App2 | 100,000 | 800,000 | 99% | 1% | 94%\nSingle-threaded | N/A | Baseline | App3 | 100,000 | 500,000 | 52% | 1% | 89%\nSingle-threaded | N/A | Baseline | App4 | 100,000 | 20,000 | 10% | 1% | 14%\nMulti-programmed | Mix1 | Baseline | App1 | 100,000 | 200,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | Baseline | App2 | 100,000 | 900,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | AwesomeMEM | App1 | 80,000 | 100,000 | 65% | 1% | 55%\nMulti-programmed | Mix1 | AwesomeMEM | App2 | 80,000 | 400,000 | 65% | 1% | 55%\nMulti-programmed | Mix2 | Baseline | App3 | 100,000 | 600,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | Baseline | App4 | 100,000 | 20,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | AwesomeMEM | App3 | 80,000 | 400,000 | 50% | 1% | 45%\nMulti-programmed | Mix2 | AwesomeMEM | App4 | 100,000 | 20,000 | 50% | 1% | 45%\n\nAnswer the following questions based on the performance metrics the students collected.",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "What is the weighted speedup of each of the two application mixes when it is executed in the Baseline configuration? Show your work.",
+        "solution": "Mix1:\n\nWeighted Speedup = \u2211_i (IPCshared_i/IPCalone_i) = (IPCshared_App1/IPCalone_App1) + (IPCshared_App2/IPCalone_App2)\n\nWeighted Speedup = 0.5/2.5 + 0.11/0.125 = 1.08\n\nMix2:\n\nWeighted Speedup = \u2211_i (IPCshared_i/IPCalone_i) = (IPCshared_App3/IPCalone_App3) + (IPCshared_App4/IPCalone_App4)\n\nWeighted Speedup = 0.16/0.2 + 5/5 = 1.8",
+        "solution_figures": [
+            "chart_p16_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_6/d",
+        "context": "Some fellow students are working on a project called AwesomeMEM, where their goal is to optimize the memory hierarchy (caches and DRAM) to enhance the performance of a multi-core system.\n\nThey evaluate two system configurations. First, the Baseline configuration constitutes a system with two processors, a last-level cache (LLC), and DRAM as main memory. Second, the AwesomeMEM configuration builds on top of the Baseline configuration by employing optimizations to the memory hierarchy.\n\nThe students evaluate the performance benefits of AwesomeMEM in simulation as follows:\n\n1. First, they collect performance metrics of four single-threaded applications (App1, App2, App3, App4) running in isolation in the Baseline configuration.\n\n2. Second, they create two-application mixes to perform a multi-program simulation, where two applications run concurrently in the Baseline configuration, each in a dedicated processor. They evaluate two application mixes: Mix1 (consisting of App1 and App2); and Mix2 (consisting of App3 and App4).\n\n3. Third, they use the same two-application mixes as in the second step to perform a multi-program simulation, where two applications run concurrently in the AwesomeMEM configuration, each in a dedicated processor.\n\nTable 1 summarizes the performance metrics the students collected for each step.\n\nTable 1: Performance metrics the students collected.\n\nExecution Mode | Application Mix | Configuration | Application | Executed Instructions | Executed Cycles | LLC Miss Rate (%) | Branch Misprediction Rate (%) | DRAM Bank Conflict Rate (%)\n--- | --- | --- | --- | --- | --- | --- | --- | ---\nSingle-threaded | N/A | Baseline | App1 | 100,000 | 40,000 | 26% | 1% | 42%\nSingle-threaded | N/A | Baseline | App2 | 100,000 | 800,000 | 99% | 1% | 94%\nSingle-threaded | N/A | Baseline | App3 | 100,000 | 500,000 | 52% | 1% | 89%\nSingle-threaded | N/A | Baseline | App4 | 100,000 | 20,000 | 10% | 1% | 14%\nMulti-programmed | Mix1 | Baseline | App1 | 100,000 | 200,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | Baseline | App2 | 100,000 | 900,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | AwesomeMEM | App1 | 80,000 | 100,000 | 65% | 1% | 55%\nMulti-programmed | Mix1 | AwesomeMEM | App2 | 80,000 | 400,000 | 65% | 1% | 55%\nMulti-programmed | Mix2 | Baseline | App3 | 100,000 | 600,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | Baseline | App4 | 100,000 | 20,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | AwesomeMEM | App3 | 80,000 | 400,000 | 50% | 1% | 45%\nMulti-programmed | Mix2 | AwesomeMEM | App4 | 100,000 | 20,000 | 50% | 1% | 45%\n\nAnswer the following questions based on the performance metrics the students collected.",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "What is the weighted speedup of each of the two application mixes when it is executed in the AwesomeMEM configuration? Show your work.",
+        "solution": "Mix1:\n\nWeighted Speedup = \u2211_i (IPCshared_i/IPCalone_i) = (IPCshared_App1/IPCalone_App1) + (IPCshared_App2/IPCalone_App2)\n\nWeighted Speedup = 0.8/2.5 + 0.2/0.125 = 1.92\n\nMix2:\n\nWeighted Speedup = \u2211_i (IPCshared_i/IPCalone_i) = (IPCshared_App3/IPCalone_App3) + (IPCshared_App4/IPCalone_App4)\n\nWeighted Speedup = 0.2/0.2 + 5/5 = 2",
+        "solution_figures": [
+            "chart_p16_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_6/e",
+        "context": "Some fellow students are working on a project called AwesomeMEM, where their goal is to optimize the memory hierarchy (caches and DRAM) to enhance the performance of a multi-core system.\n\nThey evaluate two system configurations. First, the Baseline configuration constitutes a system with two processors, a last-level cache (LLC), and DRAM as main memory. Second, the AwesomeMEM configuration builds on top of the Baseline configuration by employing optimizations to the memory hierarchy.\n\nThe students evaluate the performance benefits of AwesomeMEM in simulation as follows:\n\n1. First, they collect performance metrics of four single-threaded applications (App1, App2, App3, App4) running in isolation in the Baseline configuration.\n\n2. Second, they create two-application mixes to perform a multi-program simulation, where two applications run concurrently in the Baseline configuration, each in a dedicated processor. They evaluate two application mixes: Mix1 (consisting of App1 and App2); and Mix2 (consisting of App3 and App4).\n\n3. Third, they use the same two-application mixes as in the second step to perform a multi-program simulation, where two applications run concurrently in the AwesomeMEM configuration, each in a dedicated processor.\n\nTable 1 summarizes the performance metrics the students collected for each step.\n\nTable 1: Performance metrics the students collected.\n\nExecution Mode | Application Mix | Configuration | Application | Executed Instructions | Executed Cycles | LLC Miss Rate (%) | Branch Misprediction Rate (%) | DRAM Bank Conflict Rate (%)\n--- | --- | --- | --- | --- | --- | --- | --- | ---\nSingle-threaded | N/A | Baseline | App1 | 100,000 | 40,000 | 26% | 1% | 42%\nSingle-threaded | N/A | Baseline | App2 | 100,000 | 800,000 | 99% | 1% | 94%\nSingle-threaded | N/A | Baseline | App3 | 100,000 | 500,000 | 52% | 1% | 89%\nSingle-threaded | N/A | Baseline | App4 | 100,000 | 20,000 | 10% | 1% | 14%\nMulti-programmed | Mix1 | Baseline | App1 | 100,000 | 200,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | Baseline | App2 | 100,000 | 900,000 | 99% | 1% | 97%\nMulti-programmed | Mix1 | AwesomeMEM | App1 | 80,000 | 100,000 | 65% | 1% | 55%\nMulti-programmed | Mix1 | AwesomeMEM | App2 | 80,000 | 400,000 | 65% | 1% | 55%\nMulti-programmed | Mix2 | Baseline | App3 | 100,000 | 600,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | Baseline | App4 | 100,000 | 20,000 | 60% | 1% | 90%\nMulti-programmed | Mix2 | AwesomeMEM | App3 | 80,000 | 400,000 | 50% | 1% | 45%\nMulti-programmed | Mix2 | AwesomeMEM | App4 | 100,000 | 20,000 | 50% | 1% | 45%\n\nAnswer the following questions based on the performance metrics the students collected.\nThe students do not want to reveal the primary technique behind AwesomeMEM. When asked, they provided the following list of architectural techniques and told you that some of them could be the reason behind AwesomeMEM's system throughput improvement:\n\n(i) AwesomeMEM increases the LLC capacity by 2\u00d7 that of the Baseline.\n\n(ii) AwesomeMEM randomizes main memory requests to reduce DRAM bank conflicts.\n\n(iii) AwesomeMEM employs a perfect branch predictor that always predicts a branch's direction correctly.\n\n(iv) AwesomeMEM employs an efficient hardware prefetcher.",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "Which of the above explanations cannot possible be a reason for AwesomeMEM's higher performance over the Baseline? Explain your reasoning based on the data in Table 1.",
+        "solution": "Option (iii) cannot possible be a reason for AwesomeMEM's performance improvement compared to the Baseline.\n\nExplanation:\n(iii) is not possible since the branch misprediction rate n the AwesomeMEM configuration is the same for Mix1 and Mix2 compared to the Baseline configuration.\n\n(i) is possible since LLC miss rate in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.\n\n(ii) is possible since bank conflicts in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.\n\n(iv) is possible since LLC miss rate in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(a)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "What is the ALU's latency for an addition and for a multiplication, respectively?",
+        "solution": "Addition: 1 cycle for an addition (E1).\n\nMultiplication: 3 cycles for a multiplication (E1, E2, E3).",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(b)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "Does this processor implement data forwarding? If so, between which pipeline stages? Explain your reasoning.",
+        "solution": "The processor implements data forwarding from W to E1.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution is incomplete. The original PDF shows that an explanation of the reasoning should be included, but the solution in the JSON only contains the conclusion without any explanation."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(c)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "The number of cycles in the decode stage dynamically varies between instructions. Explain why this might be the case. Hint: Register values are read from the register file in the decode stage.",
+        "solution": "All listed instructions require two operands for the ALU, which require up to two cycles to read from the register file. If one of the inputs is an immediate (e.g., instruction 2) or is forwarded from an earlier instruction, the register file has to be queried for only one input. Then, a shorter decode stage is sufficient.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(d)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "What is the minimum number of register file read ports and write ports that this processor implements? Explain.",
+        "solution": "The register file has one read port and one write port.\n\nAcording to the timeline in cycles 2 and 3, the decode stage operates in two cycles for an instruction that has two register operands. Also, acording to cycle 4, the decode stage takes one cycle for an instruction with one register operand. We conclude that the decode stage needs one cycle to decode and read each register operand which means the register file has one read port.\n\nThe register file has at least one dedicated write port since acording to cycle 12, the decode stage and the write back stage are both using the register file, and we are sure that both have been serviced by the register file within that cycle since the next cycle is not a stall for any of them.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(e)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "Can we reduce the execution time of this code by enabling more read or write ports in the register file? Explain. If yes, what is the speedup compared to the baseline microprocessor assuming the changes do not impact clock frequency? Show your work.",
+        "solution": "Yes. Adding a new read port to the register file will enable the register file to service the decode unit in one cycle for any instruction with one or two register operands. The speedup is 16/13. Here is the new timeline:\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13\n\n1 MUL R5, R6, R7 F D E1 E2 E3 M W\n2 ADDI R4, R6, 5 F D E1 - - M W\n3 MUL R4, R7, R8 F D E1 E2 E3 M W\n4 ADD R5, R5, R6 F D - E1 - M W\n5 ADD R6, R7, R5 F - D - - E1 M W\n6 ADD R7, R1, R4 F - - D E1 M W",
+        "solution_figures": [
+            "chart_p18_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_7/(f)",
+        "context": "Pipelining [70 points]\n\nThe following piece of code runs on an in-order pipelined processor as shown in the table (F: Fetch, D: Decode, E: Execute, M: Memory, W: Write back). Instructions are in the form \"Instruction Destination,Source1,Source2/Immediate.\" For example, \"ADD A, B, C\" means A \u2190 B + C.\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - - E1 M W\n6 ADD R7, R1, R4 F - - - D1 D2 E1 M W\n\nUse this information to reverse engineer the microarchitecture of this processor to answer the following questions. Answer the questions as precisely as possible with the provided information. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "Is it possible to run this code faster by adding more data forwarding paths to the original pipeline? If it is, explain how and calculate the speedup with respect to the original pipeline assuming the changes do not impact clock frequency. Otherwise, explain why it is not possible.",
+        "solution": "Yes, it is possible. Adding a forwarding path fromM to E1 can improve the performance. The speedup is 16/15. Here is a new timeline:\n\nCycles 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\n\n1 MUL R5, R6, R7 F D1 D2 E1 E2 E3 M W\n2 ADDI R4, R6, 5 F - D1 E1 - - M W\n3 MUL R4, R7, R8 F D1 D2 E1 E2 E3 M W\n4 ADD R5, R5, R6 F - D1 E1 - - M W\n5 ADD R6, R7, R5 F D1 - - E1 M W\n6 ADD R7, R1, R4 F - - D1 D2 E1 M W",
+        "solution_figures": [
+            "chart_p18_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_8/8.1",
+        "context": "Consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo's algorithm. This engine has the following characteristics:\n\n\u02c6 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n\n\u02c6 The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n\n\u02c6 The engine has two execution units: 1) an adder to execute ADD instructions and 2) a multiplier to execute MUL instructions.\n\n\u02c6 The execution units are fully pipelined. The adder has two stages (E1-E2), and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n\n\u02c6 The adder has a two-entry reservation station, and the multiplier has a three-entry reservation station.\n\n\u02c6 An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n\n\u02c6 Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in the E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n\n\u02c6 The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n\n\u02c6 An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.\nThe processor is to fetch and execute five instructions. Assume the reservation stations (RS) are all initially empty, and the initial state of the register alias table (RAT) is given below in Figure (a). Instructions are fetched, decoded, and executed as discussed in class. At some point during the execution of the five instructions, a snapshot of the state of the RS and the RAT is taken. Figures (b) and (c) show the state of the RS and the RAT at the snapshot time. A dash (\u2013) indicates that a value has been cleared. A question mark (?) indicates that a value is unknown to you.",
+        "context_figures": [
+            "chart_p19_0.png"
+        ],
+        "question": "",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": false,
+        "reasoning": "This entry doesn't have a specific question in the 'question' field. It appears to be just the problem setup/context. In the original PDF, this is section 8.1 which is labeled 'Problem Definition' and doesn't contain an actual question to answer."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_8/8.2",
+        "context": "Consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo's algorithm. This engine has the following characteristics:\n\n\u02c6 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n\n\u02c6 The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n\n\u02c6 The engine has two execution units: 1) an adder to execute ADD instructions and 2) a multiplier to execute MUL instructions.\n\n\u02c6 The execution units are fully pipelined. The adder has two stages (E1-E2), and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n\n\u02c6 The adder has a two-entry reservation station, and the multiplier has a three-entry reservation station.\n\n\u02c6 An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n\n\u02c6 Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in the E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n\n\u02c6 The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n\n\u02c6 An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.\nQuestions",
+        "context_figures": [],
+        "question": "",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": false,
+        "reasoning": "This entry doesn't have a specific question in the 'question' field. It appears to be just a section header for 'Questions' (section 8.2 in the original PDF) without any actual question content."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_8/8.2.1",
+        "context": "Consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo's algorithm. This engine has the following characteristics:\n\n\u02c6 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n\n\u02c6 The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n\n\u02c6 The engine has two execution units: 1) an adder to execute ADD instructions and 2) a multiplier to execute MUL instructions.\n\n\u02c6 The execution units are fully pipelined. The adder has two stages (E1-E2), and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n\n\u02c6 The adder has a two-entry reservation station, and the multiplier has a three-entry reservation station.\n\n\u02c6 An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n\n\u02c6 Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in the E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n\n\u02c6 The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n\n\u02c6 An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.\n",
+        "context_figures": [],
+        "question": "Data flow Graph [40 points]\n\nBased on the information provided above, identify the instructions and provide the dataflow graph below for the instructions that have been fetched. Please appropriately connect the nodes using edges and specify the direction of each edge. Label each edge with the destination architectural register and the corresponding Tag.",
+        "solution": "",
+        "solution_figures": [
+            "chart_p20_0.png"
+        ],
+        "correctly_parsed": false,
+        "reasoning": "The context is missing the critical information from section 8.1 (Problem Definition) which includes the initial state of the RAT and the snapshot of the RS and RAT that are needed to solve this problem. The context_figures field should include 'chart_p19_0.png' which shows these tables. Without this information, the question is not standalone and cannot be solved."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_8/8.2.2",
+        "context": "Consider an in-order fetch, out-of-order dispatch, and in-order retirement execution engine that employs Tomasulo's algorithm. This engine has the following characteristics:\n\n\u02c6 The engine has four main pipeline stages: Fetch (F), Decode (D), Execute (E), and Write-back (W).\n\n\u02c6 The engine can fetch one instruction per cycle, decode one instruction per cycle, and write back the result of one instruction per cycle.\n\n\u02c6 The engine has two execution units: 1) an adder to execute ADD instructions and 2) a multiplier to execute MUL instructions.\n\n\u02c6 The execution units are fully pipelined. The adder has two stages (E1-E2), and the multiplier has four stages (E1-E2-E3-E4). Execution of each stage takes one cycle.\n\n\u02c6 The adder has a two-entry reservation station, and the multiplier has a three-entry reservation station.\n\n\u02c6 An instruction always allocates the first available entry of the reservation station (in top-to-bottom order) of the corresponding execution unit.\n\n\u02c6 Full data forwarding is available, i.e., during the last cycle of the E stage, the tags and data are broadcast to the reservation station and the Register Alias Table (RAT). For example, an ADD instruction updates the reservation station entries of the dependent instructions in the E2 stage. So, the updated value can be read from the reservation station entry in the next cycle. Therefore, a dependent instruction can potentially begin its execution in the next cycle (after E2).\n\n\u02c6 The multiplier and adder have separate output data buses, which allow both the adder and the multiplier to update the reservation station and the RAT in the same cycle.\n\n\u02c6 An instruction continues to occupy a reservation station slot until it finishes the Write-back (W) stage. The reservation station entry is deallocated after the Write-back (W) stage.\n",
+        "context_figures": [],
+        "question": "Program Instructions [20 points]\n\nFill in the blanks below with the five-instruction sequence in program order. There can be more than one correct ordering. Please provide only one correct ordering. When referring to registers, please use their architectural names (R0 through R9). Place the register with the smaller architectural name on the left source register box.\nFor example, ADD R8 \u21d0 R1, R5.",
+        "solution": "ADD R3 \u21d0 R7 , R4\n\nMUL R5 \u21d0 R3 , R2\n\nMUL R7 \u21d0 R5 , R7\n\nADD R8 \u21d0 R1 , R2\n\nMUL R9 \u21d0 R6 , R3",
+        "solution_figures": [
+            "chart_p20_1.png"
+        ],
+        "correctly_parsed": false,
+        "reasoning": "Similar to the previous question, the context is missing the critical information from section 8.1 (Problem Definition) which includes the initial state of the RAT and the snapshot of the RS and RAT that are needed to solve this problem. The context_figures field should include 'chart_p19_0.png' which shows these tables. Without this information, the question is not standalone and cannot be solved."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_9/a",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B and C are already in vector registers so there are no loads and stores in this program. Both B and C are arrays of integers and each integer in these arrays has an absolute value of less than 10 (i.e., |B[i]| < 10 and |C[i]| < 10, for all i).\n\nfor (i = 0; i < 1024; i++) {\nA[i] = B[i] * C[i]; // instruction 1\nif (/* Condition */) { // instruction 2\n\n// instruction 3\n// instruction 4\n.\n.\n.\n// instruction k + 2\n\n}\nC[i] = C[i] - 1; // instruction k + 3\n\n}\n",
+        "context_figures": [],
+        "question": "How many warps does it take to execute this program? Show your work.",
+        "solution": "32 Warps.\n\nExplanation:\nWarps = (Number of threads) / (Number of threads per warp) Number of threads =\n210 (i.e., one thread per loop iteration) Number of threads per warp = 32 = 25 (given)\nWarps = 210/25 = 25",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution in the parsed JSON doesn't match the original PDF. The solution in the JSON says '32 Warps' but then calculates '25 warps' in the explanation. The original PDF shows the answer as '32 Warps' but this is inconsistent with the calculation shown. This inconsistency makes the parsing incorrect."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_9/b",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B and C are already in vector registers so there are no loads and stores in this program. Both B and C are arrays of integers and each integer in these arrays has an absolute value of less than 10 (i.e., |B[i]| < 10 and |C[i]| < 10, for all i).\n\nfor (i = 0; i < 1024; i++) {\nA[i] = B[i] * C[i]; // instruction 1\nif (/* Condition */) { // instruction 2\n\n// instruction 3\n// instruction 4\n.\n.\n.\n// instruction k + 2\n\n}\nC[i] = C[i] - 1; // instruction k + 3\n\n}\n",
+        "context_figures": [],
+        "question": "Assume that the condition for the if statement is (i % 16 == 0). What is the number of instructions (k) in the body of the conditional block given a SIMD utilization of 11/32? Assume that there are no control flow instructions in the body of the if statement. Show your work.",
+        "solution": "7 Instructions.\n\nExplanation:\nTwo of the 32 threads go inside of the conditional block. This pattern is homogeneous\nthrough all warps.\n\n2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32 \u2192 k = 7 instructions.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The formula in the solution is not correctly parsed. In the original PDF, the formula is '2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32' but in the JSON it appears as '2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32' which doesn't properly represent the division. The formula should have clearer grouping to show the numerator and denominator."
+    },
+    {
+        "question_id": "digitaltechnik-s22-en-sol/Problem_9/c",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B and C are already in vector registers so there are no loads and stores in this program. Both B and C are arrays of integers and each integer in these arrays has an absolute value of less than 10 (i.e., |B[i]| < 10 and |C[i]| < 10, for all i).\n\nfor (i = 0; i < 1024; i++) {\nA[i] = B[i] * C[i]; // instruction 1\nif (/* Condition */) { // instruction 2\n\n// instruction 3\n// instruction 4\n.\n.\n.\n// instruction k + 2\n\n}\nC[i] = C[i] - 1; // instruction k + 3\n\n}\n",
+        "context_figures": [],
+        "question": "Assume that the condition for the if statement is (i % 16 == 0 && i < 512). What is the number of instructions (k) in the body of the conditional block given a SIMD utilization of 5/8? Assume that there are no control flow instructions in the body of the if statement. Show your work.",
+        "solution": "4 Instructions.\n\nExplanation:\nTwo of the 32 threads only within the first 16 warps go inside of the conditional\nblock. In the rest of the warps no thread goes inside of the conditional block.\n\n16(32\u00d7(3))+16(2\u00d7(k+3)+30\u00d73)/16(32\u00d7(3+k))+16(32\u00d73) = 5/8 \u2192 k = 4 instructions.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The formula in the solution is not correctly parsed. In the original PDF, the formula has clear numerator and denominator, but in the JSON it appears as '16(32\u00d7(3))+16(2\u00d7(k+3)+30\u00d73)/16(32\u00d7(3+k))+16(32\u00d73) = 5/8' which doesn't properly represent the division structure. The formula should have clearer grouping to show the numerator and denominator."
+    }
+]

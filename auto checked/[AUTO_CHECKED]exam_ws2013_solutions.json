@@ -1,0 +1,267 @@
+[
+    {
+        "question_id": "exam_ws2013_solutions/Problem_1/(a)",
+        "context": "\n",
+        "context_figures": [],
+        "question": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.\n\n(\u22126)10 using 6-bit sign magnitude: (10 0110)2\n\n(37)10 using 6-bit unsigned: (10 0101)2\n\n(\u221228)10 using 6-bit two's complement: (10 0100)2\n\n(2B)16 using 6-bit unsigned: (10 1011)2",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": false,
+        "reasoning": "The solution field is empty when it should contain the answers shown in the PDF. The question field contains both the question and the answers, which means the solution is incorrectly revealed in the question field."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_1/(b)",
+        "context": "\n",
+        "context_figures": [],
+        "question": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n\u2022 Both two's complement and sign/magnitude representation can be used to represent negative numbers in binary.\n\n\u2022 Using N bits it is possible to represent 2N different numbers when an unsigned number system is used.\n\n\u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.",
+        "solution": "Solution: True, however it is more difficult to design arithmetic circuits that work with sign/magnitude format. Still they are used.\n\nSolution: True.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.",
+        "solution_figures": [],
+        "correctly_parsed": true
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_2/a",
+        "context": "Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).\n\nThe state has been coded using a 3-bit vector S = S2 S1 S0 according to the following table:\n\nState\nname S2 S1 S0\nA 0 0 0\nB 0 0 1\nC 0 1 0\nD 0 1 1\nE 1 0 0\nF 1 0 1\n",
+        "context_figures": [],
+        "question": "Is this a Moore or Mealy type FSM? Briefly explain.",
+        "solution": "Solution: Moore, outputs depend only on the present state and nothing else.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the state diagram that shows the FSM with its inputs and outputs. Without this diagram, a student would not be able to determine if it's a Moore or Mealy type FSM. The state diagram shown in the original PDF is essential for answering this question."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_2/b",
+        "context": "Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).\n\nThe state has been coded using a 3-bit vector S = S2 S1 S0 according to the following table:\n\nState\nname S2 S1 S0\nA 0 0 0\nB 0 0 1\nC 0 1 0\nD 0 1 1\nE 1 0 0\nF 1 0 1\n",
+        "context_figures": [],
+        "question": "Fill in the following state transition table that determines the next state vector N = N2N1N0 based on the current state S and the input I.",
+        "solution": "State Input Next State\nname S2 S1 S0 I name N2 N1 N0\nA 0 0 0 X B 0 0 1\nB 0 0 1 0 C 0 1 0\nB 0 0 1 1 E 1 0 0\nC 0 1 0 0 D 0 1 1\nC 0 1 0 1 A 0 0 0\nD 0 1 1 0 D 0 1 1\nD 0 1 1 1 A 0 0 0\nE 1 0 0 X F 1 0 1\nF 1 0 1 0 E 1 0 0\nF 1 0 1 1 C 0 1 0\n\nNote that there are different ways of writing this table to represent the same result.",
+        "solution_figures": [
+            "chart_p4_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the state diagram that shows the FSM transitions. Without this diagram, a student would not be able to fill in the state transition table. Additionally, the empty table that needs to be filled in is not provided in the context."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_2/c",
+        "context": "Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).\n\nThe state has been coded using a 3-bit vector S = S2 S1 S0 according to the following table:\n\nState\nname S2 S1 S0\nA 0 0 0\nB 0 0 1\nC 0 1 0\nD 0 1 1\nE 1 0 0\nF 1 0 1\n",
+        "context_figures": [],
+        "question": "Write the Next State Equations from the table you have filled above using either Product of Sums (POS) or Sum of Products (SOP) form. Do not spend time minimizing the equations, this will be next question.",
+        "solution": "Solution:\nN0 = S2 S1 S0 + S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0\nN1 = S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0 I + S2 S1 S0 I\nN2 = S2 S1 S0 I + S2 S1 S0 + S2 S1 S0 I",
+        "solution_figures": [
+            "chart_p5_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the state diagram and the filled state transition table from part (b). Without these, a student would not have the necessary information to write the Next State Equations. The question refers to 'the table you have filled above' but this table is not included in the context."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_2/d",
+        "context": "Consider the following state diagram of an FSM with 1-bit input (I) and 1-bit output (Z).\n\nThe state has been coded using a 3-bit vector S = S2 S1 S0 according to the following table:\n\nState\nname S2 S1 S0\nA 0 0 0\nB 0 0 1\nC 0 1 0\nD 0 1 1\nE 1 0 0\nF 1 0 1\nMinimize the Next State Equations from the previous part. Note that the FSM requires only six states. This means that there are several State (S) / Input(I) combinations for which the outputs can be treated as Don't Care, which should help minimizing the boolean equations.",
+        "context_figures": [],
+        "question": "Hint: Consider using Karnaugh diagrams to solve this problem.",
+        "solution": "Solution:\n\nIt is important to note that for S2 S1 = 11 the next state N can be taken as N2N1N0 = XXX. This can simplify the Boolean equations significantly. It is best to use a Karnaugh map to find the simplifications.\n\nN0 = S1 S0 + S1 I\nN1 = S1 I + S2 S0 I + S2 S0 I\nN2 = S2 S0 + S2 I + S2 S1 S0 I",
+        "solution_figures": [
+            "chart_p5_1.png",
+            "chart_p6_0.png",
+            "chart_p6_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the state diagram and the Next State Equations from part (c). The question refers to 'the Next State Equations from the previous part' but these equations are not included in the context. Additionally, the question field contains only a hint rather than the actual question, which should be about minimizing the Next State Equations."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_3",
+        "context": "In this question you are required to write the Verilog code that implements the following block diagram.",
+        "context_figures": [
+            "chart_p8_0.png"
+        ],
+        "question": "The block called Controller has six 1-bit inputs and a single 1-bit output (Result). It contains two instances of a combinational block called (comb). The following is the declaration part of this module:\n\n1 module comb ( input A , input B , input C, output Z);\n2 // definition of the combinational circuit comb\n3\n\n4 endmodule\n\nNotes:\n\n\u2022 The flip-flop and the multiplexer will not be instantiated, you will have to write the corresponding Verilog code.\n\n\u2022 The flip-flop uses an asynchronous reset, the output is zero when reset is one.\n\n\u2022 Note that Verilog is case sensitive.\n\n\u2022 Write legibly.",
+        "solution": "1 module Controller (\n2 input Clk,\n3 input Reset,\n4 input In1,In2,In3,\n5 input Sel,\n6 output reg Result);\n7\n\n8 // Define internal signals\n9 wire Left, Right, MuxOut;\n10\n\n11 // instantiate the module comb two times\n12 comb InstLeft (.A(In1), .B(In2), .C(In3), .Z(Left) );\n13 comb InstRight (.A(In3), .B(In2), .C(In1), .Z(Right) );\n14\n\n15 // The multiplexer\n16 assign MuxOut = (Sel) ? Right: Left;\n17\n\n18 // The FF\n19 always @ (posedge Clk, posedge Reset)\n20 if (Reset) Result <= 1'b0;\n21 else Result <= MuxOut;\n22\n\n23 endmodule",
+        "solution_figures": [
+            "chart_p8_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The problem has been incorrectly parsed for the following reasons: 1) The same image 'chart_p8_0.png' appears in both context_figures and solution_figures, which is incorrect as the diagram should only be part of the context, not the solution. 2) The problem statement in the PDF includes '3. (15 points)' at the beginning which is missing from the parsed question. 3) The solution should not include the diagram as a figure since the solution is purely code-based."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/a",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "What is the critical path of this circuit? Calculate its path delay.",
+        "solution": "Critical path is the longest timing path in the circuit:\n\nCriticalPath = tpd,A + tpd,B + tpd,C + tpd,mux + tsetup,FF\n\n= 0.6 + 1.8 + 1.2 + 0.3 + 0.1ns\n\n= 4.0ns",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/b",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "What is the maximum operating frequency of this circuit?",
+        "solution": "Maximum operating frequency is 1/Critical Path, 1/4ns = 250MHz.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/c",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "What is the shortest path of this circuit ?",
+        "solution": "The short path is the fastest route a signal can propagate through the circuit. In this case it is the signal that goes through the select input of the multiplexer and reaches the register. This signal only passes through the multiplexer, so the short path is 0.3ns.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/d",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "In order to make the circuit faster, it is suggested to introduce pipelining. Determine the best location between the blocks to place the pipeline registers assuming a one stage pipeline implementation and redraw the schematic. (Hint: in a one stage pipeline, the latency increases only by 1 clock cycle).",
+        "solution": "[Circuit diagram showing pipelined implementation]\n\nNote that you will have to insert a pipeline register in all paths, including the multiplexer control register.",
+        "solution_figures": [
+            "chart_p12_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/e",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "What is the critical path of this pipelined circuit and calculate its path delay.",
+        "solution": "CriticalPath = tpd,A + tpd,B + tsetup,FF\n\n= 0.6 + 1.8 + 0.1ns\n\n= 2.5ns",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/f",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "What is the speed-up we have achieved by pipelining?",
+        "solution": "Old critical path / New Critical path = 4.0 / 2.5 = 1.6. The new circuit has a 60% shorter critical path, therefore it can be clocked 60% faster.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_4/g",
+        "context": "In this question you are required to calculate different timing paths for the circuit given below.\n\n[Circuit diagram showing registers, MUX, and blocks A, B, C, D]\n\nNote that the block B is used twice. All the inputs are supplied from external registers.\nThe timing properties of all the blocks used in the circuit are given in the table below:\n\n[Table showing Propagation Delay, Contamination Delay, Setup Time, and Hold Time for Register, 2:1 Multiplexer, A, B, C, and D]\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns. 1 GHz = 1000 MHz\n",
+        "context_figures": [
+            "chart_p10_0.png",
+            "chart_p10_1.png"
+        ],
+        "question": "Why did we not achieve the theoretical maximum speed-up from the pipelining. State at least two reasons.",
+        "solution": "1. It was not possible to place the pipeline registers at exactly half the previous critical path. Unless we move the pipeline registers into the blocks themselves we can not improve any more.\n\n2. The pipeline register has a small overhead (tsetup,FF > 0). Even if we managed to divide the circuit in equal halves, this overhead would not allow us to reach 100% speedup. The problem gets worse the shorter the critical path is.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_5/a",
+        "context": "The questions 5, 6 and 7 are based on the MIPS assembly code given below.\n\n\naddi $t0, $0, 8\nxor $s0, $s0, $s0\n\n\nloop: beq $t0, $0, done\nlw $t1, 0x4($0)\nlw $t2, 0x24($0)\nadd $t3, $t1, $s0\nadd $s0, $t2, $t3\naddi $t0, $t0, -1\nj loop\n\n\ndone:\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "Briefly explain what the above MIPS assembly code does.",
+        "solution": "The program will execute a loop 8 times. In each iteration of the loop, the\ncontent of the address 0x0000 0004 and the content of the address 0x0000\n0024 will be added together and added to the register $s0 which was initialized\nto the value 0 (A xor A is 0).",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_5/b",
+        "context": "The questions 5, 6 and 7 are based on the MIPS assembly code given below.\n\n\naddi $t0, $0, 8\nxor $s0, $s0, $s0\n\n\nloop: beq $t0, $0, done\nlw $t1, 0x4($0)\nlw $t2, 0x24($0)\nadd $t3, $t1, $s0\nadd $s0, $t2, $t3\naddi $t0, $t0, -1\nj loop\n\n\ndone:\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "Assuming the data at memory location 0x0000 0004 is decimal 16 and\nat memory location 0x0000 0024 is decimal 32, what will be the content of the\nregister $s0 in hexadecimal when the program execution jumps to done:?",
+        "solution": "The program calculates 8\u00d7(mem(0x00000004)+mem(0x00000024)).\nThis equals to 8 \u00d7 (32 + 16) == 384. In hexadecimal this will be 0x0180. It is\nactually very easy to do the calculation if you do it in binary.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_5/c",
+        "context": "The questions 5, 6 and 7 are based on the MIPS assembly code given below.\n\n\naddi $t0, $0, 8\nxor $s0, $s0, $s0\n\n\nloop: beq $t0, $0, done\nlw $t1, 0x4($0)\nlw $t2, 0x24($0)\nadd $t3, $t1, $s0\nadd $s0, $t2, $t3\naddi $t0, $t0, -1\nj loop\n\n\ndone:\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "Briefly explain the three different MIPS instruction types (R, I, J) and\nshow one instruction of each type from the example code above.",
+        "solution": "R-type Uses up to three registers, two for source and one for destination.\nExample: xor $s0, $s0, $s0.\n\nI-type Uses a 16-bit constant as part of the instruction.\nExample: addi $t0, $0, 8.\n\nJ-type Uses a 26-bit constant that can be used to calculate the address of\nthe next instruction, allowing the program execution to jump to a new\nlocation.\nExample: j loop.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_6/a",
+        "context": "In this question you are required to make calculations regarding the processor's speed.\nFor this question, use the MIPS assembly program from the previous section.\n",
+        "context_figures": [],
+        "question": "How many instructions are executed until the program finishes?",
+        "solution": "There are two initial instructions, and the loop contains 7 instruc-\ntions which is executed 8 times, in addition there is one last beq command that\nwill be executed after the last loop. Ninstructions = 2 + (7 \u00d7 8) + 1 = 59 (56, or\n58 could also be accepted)",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_6/b",
+        "context": "In this question you are required to make calculations regarding the processor's speed.\nFor this question, use the MIPS assembly program from the previous section.\n",
+        "context_figures": [],
+        "question": "Assume that you are using a single cycle microarchitecture running at\n1 GHz. If the CPI (Cycles Per Instruction) is 1, how long will it take for the\nprogram to finish execution?",
+        "solution": "59 instructions x 1 CPI = 59 clock cycles. At 1 GHz, 1 clock cycles\nis 1 ns, so the entire program will execute in 59 ns.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_6/c",
+        "context": "In this question you are required to make calculations regarding the processor's speed.\nFor this question, use the MIPS assembly program from the previous section.\n",
+        "context_figures": [],
+        "question": "In a second microarchitecture, due to a very slow memory, every load\nword (lw) instruction requires 10 clock cycles. Calculate the number of cycles\nneeded to execute the entire program.",
+        "solution": "The loop contains 2 lw instructions each take 10 clock cycles. The\nremaining 5 instructions take 1 clock cycle. Every loop takes 25 clock cycles.\nThere are 8 iterations of the loop plus two additional initial instructions and\none last beq: Ncycles = 2 + (8 \u00d7 (5 \u00d7 1 + 2 \u00d7 10) + 1 = 203 (200, or 202 could\nalso be accepted)",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_6/d",
+        "context": "In this question you are required to make calculations regarding the processor's speed.\nFor this question, use the MIPS assembly program from the previous section.\n",
+        "context_figures": [],
+        "question": "For this second microarchitecture, what is the average CPI? (approximate\nnumbers \u00b110% are ok )",
+        "solution": "There are 59 instructions that are executed in 203 clock cycles.\nCPI = 203/59 = 3.44. Acceptable are also approximate calculations CPI =\n200/60 = 3.33 or CPI = 210/60 = 3.5",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_6/e",
+        "context": "In this question you are required to make calculations regarding the processor's speed.\nFor this question, use the MIPS assembly program from the previous section.\n",
+        "context_figures": [],
+        "question": "For the second microarchitecture with the slow memory, what can be\ndone in both the code and the processor to improve the speed of this particular\nprogram other than using a faster memory. Write two short suggestions that would\nhave the largest impact and briefly explain why that would improve the perfor-\nmance.\nNote: The result of the program should depend on the two values stored in the\nmemory, these can not assumed to be constants.",
+        "solution": "\u2022 The most obvious problem is the slow memory access. Introducing a\nproper cache could alleviate this problem. The first iterations would still\nbe slow, but the remaining accesses would be fast.\n\n\u2022 The program could be written more efficiently. The loop essentially mul-\ntiplies the sum of the two values in memory by eight. Instead of a loop, a\nshift left operation could be used.\n\nlw $t1, 0x4($0)\nlw $t2, 0x24($0)\nadd $s0, $t1, $s2\nsll $s0, $s0, 3\n\n\u2022 Standard pipelining will not work in this architecture, there are two con-\nsecutive memory accesses which are the problem, all other instructions\ncan already be calculated in a single cycle.\n\n\u2022 Using a better technology would increase the speed. However, this is not\none of the easiest solutions. The first two solutions are clearly better\nsuited.",
+        "solution_figures": [
+            "chart_p17_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Additionally, the solution_figures field contains 'chart_p17_0.png', but this image is not actually shown in the solution in the PDF. The code snippet is part of the text solution, not a separate figure."
+    },
+    {
+        "question_id": "exam_ws2013_solutions/Problem_7",
+        "context": "A friend suggests adding a cache system to speed up the execution of MIPS assembly code on the micro-architecture from question 6 (slow load word (lw) instruction that requires 10 clock cycles for memory access).",
+        "context_figures": [],
+        "question": "Which of the two cache design options would make the program in question 5 run faster? Briefly explain why.\n\nSolution A A direct-mapped cache with a capacity of 8 words and an access time of tcache = 1 clock cycle\n\nSolution B A two-way set associative cache with the same capacity of 8 words, but with twice the access time tcache = 2 clock cycles.\n\nNote: The question is specific to the program in question 5 and not about speeding up any arbitrary program.",
+        "solution": "In a direct mapped cache, there is only one location where data can be placed in a cache. In a direct mapped cache with 8 locations, the address 0x0000 0004 and 0x0000 0024 would map to the same cache location. If this cache is used, every memory access would result in a cache miss. Using solution A would make the program run even slower, as every memory access would have first a cache miss (1 clock cycle) followed by the actual memory access (10 cycles).\nNcycles = 2 + (8 \u00d7 (5 + 2 \u00d7 11)) = 218\n\nSolution A can not be used to speed up the program.\n\nIn a 2-way set associative memory, there are two locations where data can be placed in a cache. Although the addresses 0x0000 0004 and 0x0000 0024 still map to the same set, they can both be placed in the cache. The first two memory accesses would be compulsory misses requiring 12 clock cyles (2 for the cache miss plus 10 for the actual memory access). But for the following 7 iterations, every memory access would be a cache hit, requiring only 2 clock cycles.\nNcycles = 2 + (7 \u00d7 (5 + 2 \u00d7 2)) + (5 + 2 \u00d7 12) = 94\n\nSolution B is the only viable alternative, that would speed up the program by more than 2x.\n\nNote that the program used is virtually identical to the one used in class notes to explain the problems with Direct-mapped cache.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The problem is not standalone as it references 'the program in question 5' without including that program's details. Without knowing what program is being referred to in question 5, a student would not have enough context to solve this problem. The context should include the details of the program from question 5, including the memory access pattern that causes the direct-mapped cache to perform poorly."
+    }
+]

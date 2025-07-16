@@ -1,0 +1,615 @@
+[
+    {
+        "question_id": "ddca-s23-en-sol/Problem_1/a",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Fib and G3. The value of each output is determined as follows:\n\n\u02c6 The output Fib is 1 only when the input 4-bit number is a Fibonacci number. You can calculate Fibonacci numbers as follows, f(0) = 0, f(1) = 1, and f(n) = f(n\u2212 1) + f(n\u2212 2) for n \u2265 2.\n\n\u02c6 The output G3 is 1 only when the input 4-bit number is greater than 3.\n\n\u02c6 Otherwise, the corresponding output is zero.\n\nPlease answer the following three questions.\n",
+        "context_figures": [],
+        "question": "Fill in the missing entries in the truth table below for the combinational circuit you are designing and express the output Fib in the sum of products representation.",
+        "solution": "Inputs Outputs\n\nA B C D Fib G3\n\n0 0 0 0 1 0\n\n0 0 0 1 1 0\n\n0 0 1 0 1 0\n\n0 0 1 1 1 0\n\n0 1 0 0 0 1\n\n0 1 0 1 1 1\n\n0 1 1 0 0 1\n\n0 1 1 1 0 1\n\n1 0 0 0 1 1\n\n1 0 0 1 0 1\n\n1 0 1 0 0 1\n\n1 0 1 1 0 1\n\n1 1 0 0 0 1\n\n1 1 0 1 1 1\n\n1 1 1 0 0 1\n\n1 1 1 1 0 1\n\n\nFib = (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) +\n(A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)",
+        "solution_figures": [
+            "chart_p3_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution in the JSON doesn't match the original PDF. In the PDF, the Fib expression uses complemented variables (with overbar notation), but in the JSON solution, it appears as uncomplemented variables. The truth table values seem correct, but the sum of products representation is not accurately transcribed with the proper notation for complemented variables."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_1/b",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Fib and G3. The value of each output is determined as follows:\n\n\u02c6 The output Fib is 1 only when the input 4-bit number is a Fibonacci number. You can calculate Fibonacci numbers as follows, f(0) = 0, f(1) = 1, and f(n) = f(n\u2212 1) + f(n\u2212 2) for n \u2265 2.\n\n\u02c6 The output G3 is 1 only when the input 4-bit number is greater than 3.\n\n\u02c6 Otherwise, the corresponding output is zero.\n\nPlease answer the following three questions.\n",
+        "context_figures": [],
+        "question": "Simplify the Fib expression using Boolean minimization rules. Show your work step-by-step.",
+        "solution": "Fib = (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) +\n(A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = ((A\u00b7B)\u00b7((C \u00b7D)+(C \u00b7D)+(C \u00b7D)+(C \u00b7D)))+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)+(A\u00b7B\u00b7C \u00b7D)\n\nFib = ((A \u00b7B) \u00b7 (1)) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (C \u00b7 ((A \u00b7B \u00b7D) + (A \u00b7B \u00b7D) + (A \u00b7B \u00b7D)))\n\nFib = (A \u00b7B) + (C \u00b7 ((B \u00b7D) + (A \u00b7B \u00b7D)))\n\nFib = (A \u00b7B) + (B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (A \u00b7B \u00b7 C \u00b7D) + (B \u00b7 C \u00b7D)\n\nFib = (A \u00b7B) + (B \u00b7 C \u00b7D) + (B \u00b7 C \u00b7D)",
+        "solution_figures": [
+            "chart_p4_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "Similar to the previous problem, the solution in the JSON doesn't properly represent the complemented variables with overbars as shown in the original PDF. The steps of the Boolean minimization are correct in sequence, but the notation for complemented variables is missing, which is crucial for understanding the Boolean expressions."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_1/c",
+        "context": "During your job interview, you are asked to design a combinational circuit with a four-bit input, {A,B,C,D} (A is the most significant bit and D is the least significant bit), and two 1-bit outputs, Fib and G3. The value of each output is determined as follows:\n\n\u02c6 The output Fib is 1 only when the input 4-bit number is a Fibonacci number. You can calculate Fibonacci numbers as follows, f(0) = 0, f(1) = 1, and f(n) = f(n\u2212 1) + f(n\u2212 2) for n \u2265 2.\n\n\u02c6 The output G3 is 1 only when the input 4-bit number is greater than 3.\n\n\u02c6 Otherwise, the corresponding output is zero.\n\nPlease answer the following three questions.\n",
+        "context_figures": [],
+        "question": "Find the simplest representation of the G3 output by using only 2-input NAND gates. Show your work step-by-step.",
+        "solution": "G3 = (A \u00b7A) \u00b7 (B \u00b7B)\nExplanation:\n\nG3 = (A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7D)+(A \u00b7B \u00b7C \u00b7\nD)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)+(A\u00b7B \u00b7C \u00b7D)\n\nG3 = (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7D) + (C \u00b7D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7\nD) + (C \u00b7D))) + (A \u00b7B \u00b7 ((C \u00b7D) + (C \u00b7D) + (C \u00b7D) + (C \u00b7D)))\n\nG3 = (A \u00b7B \u00b7 (1)) + (A \u00b7B \u00b7 (1)) + (A \u00b7B \u00b7 (1))\n\nG3 = (A \u00b7B) + (A \u00b7B) + (A \u00b7B)\n\nG3 = A+B\n\nG3 = A+B\n\nG3 = A \u00b7B\n\nG3 = (A \u00b7A) \u00b7 (B \u00b7B)",
+        "solution_figures": [
+            "chart_p4_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "Again, the solution in the JSON doesn't properly represent the complemented variables with overbars as shown in the original PDF. The steps of the simplification are correct in sequence, but the notation for complemented variables is missing throughout the solution, which is essential for understanding the Boolean expressions and NAND gate implementation."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_10/a",
+        "context": "Consider a processor using a 4-block LRU-based L1 data cache with a block size of 1 byte. Starting with an empty cache, an application accesses three cache blocks with the following addresses in the order given below:\n\n0 \u2192 2 \u2192 4\n\nA malicious programmer tries to reverse-engineer the number of sets and ways in the L1 data cache by issuing only two more accesses and observing the cache hit rate across these two accesses. Assume that the programmer can insert the malicious accesses only after the above three accesses of the application.\n",
+        "context_figures": [],
+        "question": "What are the addresses of the next two cache blocks that should be accessed to successfully reverse-engineer the number of sets and ways in the cache? There may be multiple solutions; please give the lowest possible addresses that can enable the identification of the number of sets and ways. Please explain every step in detail to get full points.",
+        "solution": "0 \u2192 2\n\nExplanation. There are two possible answers:\n\n\u02c6 [0 \u2192 2]\n\n\u02c6 [0 \u2192 4]\n\nThere are three possible set/way configurations, shown below labeled by their respective sets/ways. Each configuration shows a drawing of the cache state after the three initial accesses. Rows and columns represent sets and ways, respectively, and the LRU address is shown for each occupied set:\n(a) (4 sets, 1 way)\n\n4\n-\n2\n-\n\n(b) (2 sets, 2 ways)\n4 2\n- -\n\n(c) (1 set, 4 ways)\n0 2 4 -\n\nAt this point, all three configurations have a 100% miss rate since they started cold. In order to differentiate between the three configurations with just two more accesses, we need to induce different hit/miss counts in each of them. The only way this is possible is if one configuration experiences two hits, another two misses, and the last one hit and one miss.\nOnly two solutions exist to produce this case:\n\n\u02c6 [0 \u2192 2]\n\n(a) 0 miss, 2 hit = 50% miss rate\n(b) 0 miss, 2 miss = 100% miss rate\n(c) 0 hit, 2 hit = 0% miss rate\n\n\u02c6 [0 \u2192 4]\n\n(a) 0 miss, 4 miss = 100% miss rate\n(b) 0 miss, 4 hit = 50% miss rate\n(c) 0 hit, 4 hit = 0% miss rate\n\nChoosing the lowest possible addresses, the correct solution is 0 \u2192 2",
+        "solution_figures": [
+            "chart_p23_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_10/b",
+        "context": "Consider a processor using a 4-block LRU-based L1 data cache with a block size of 1 byte. Starting with an empty cache, an application accesses three cache blocks with the following addresses in the order given below:\n\n0 \u2192 2 \u2192 4\n\nA malicious programmer tries to reverse-engineer the number of sets and ways in the L1 data cache by issuing only two more accesses and observing the cache hit rate across these two accesses. Assume that the programmer can insert the malicious accesses only after the above three accesses of the application.\n",
+        "context_figures": [
+            "chart_p24_0.png"
+        ],
+        "question": "What is the number of sets and ways if the cache hit rate observed over the two extra addresses accessed in Part (1) were:\n\nL1 hit rate # sets # ways\n\n100%\n\n50%\n\n0%\n\nExplain your reasoning:",
+        "solution": "Based on the solution to Part (1), these are the number of sets and ways corresponding to different hit rates.\n\nSolution:\n\nL1 hit rate # sets # ways\n\n100% 1 4\n\n50% 4 1\n\n0% 2 2",
+        "solution_figures": [
+            "chart_p24_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_10/c",
+        "context": "Consider a processor using a 4-block LRU-based L1 data cache with a block size of 1 byte. Starting with an empty cache, an application accesses three cache blocks with the following addresses in the order given below:\n\n0 \u2192 2 \u2192 4\n\nA malicious programmer tries to reverse-engineer the number of sets and ways in the L1 data cache by issuing only two more accesses and observing the cache hit rate across these two accesses. Assume that the programmer can insert the malicious accesses only after the above three accesses of the application.\n",
+        "context_figures": [],
+        "question": "Is it possible to reverse-engineer the number of sets and ways of the cache using two accesses (after the application's first three accesses) if the Most Recently Used (MRU) block is replaced first? Explain your reasoning.",
+        "solution": "No. There is no solution for just two more accesses because with an MRU policy, no permutation of two more accesses is able to assign a unique L1 hit rate to each of the three cache configurations.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_11/a",
+        "context": "You are given a systolic array of 2\u00d7 2 Processing Elements (PEs), interconnected as shown in Figure 2. The inputs of the systolic array are labeled as H0, H1 and V0, V1. Figure 3 shows the PE logic, which performs a multiply-accumulate (MAC) operation and saves the result to an internal register (reg). Figure 3 also shows how each PE propagates its inputs. We make the following assumptions:\n\n\u02c6 The latency of each MAC operation is one cycle, i.e., if the inputs to a PE are available in cycle c, the updated register value will be available in cycle c+ 1.\n\n\u02c6 The propagation of the values from i0 to o0, and from i1 to o1, takes one cycle.\n\n\u02c6 The initial values of all internal registers is zero.\n\nYour goal is to use the systolic array shown in Figure 2 to perform the multiplication C = A\u00d7B, where A, B, and C are 2 \u00d7 2 matrices. Recall that the multiplication of two K \u00d7 K matrices is de\ufffdned as follows:\n\nCij = \u2211(k=0 to K-1) Aik \u00d7Bkj\n\nAs an example, for K = 2, the calculation for C00 is as follows:\n\nC00 = A00 \u00d7B00 +A01 \u00d7B10\n\nCompute the multiplication in the minimum possible number of cycles. Fill the following table with:\n\n1. Each input element (from matrices A2\u00d72 and B2\u00d72) in the correct cycle and input port of the systolic array (H0, H1 and V0, V1).\n\n2. Each output element (for matrix C2\u00d72) in the cycle and PE that generates each output.\n",
+        "context_figures": [],
+        "question": "Fill in the blanks only with relevant information. Input cells left blank are interpreted as 0.",
+        "solution": "cycle H0 H1 V0 V1 PE00 PE01 PE10 PE11\n\n0 A00 B00\n\n1 A01 A10 B10 B01\n\n2 A11 B11 C00\n\n3 C01 C10\n\n4 C11\n\n5\n6\n7",
+        "solution_figures": [
+            "chart_p25_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The problem is missing critical context figures. The original PDF mentions Figure 2 (showing the PE array) and Figure 3 (showing the Processing Element logic), but these figures are not included in the context_figures field. Without these diagrams, a student would not be able to understand the systolic array structure or how the PEs are interconnected, which is essential for solving the problem."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_11/b",
+        "context": "You are given a systolic array of 2\u00d7 2 Processing Elements (PEs), interconnected as shown in Figure 2. The inputs of the systolic array are labeled as H0, H1 and V0, V1. Figure 3 shows the PE logic, which performs a multiply-accumulate (MAC) operation and saves the result to an internal register (reg). Figure 3 also shows how each PE propagates its inputs. We make the following assumptions:\n\n\u02c6 The latency of each MAC operation is one cycle, i.e., if the inputs to a PE are available in cycle c, the updated register value will be available in cycle c+ 1.\n\n\u02c6 The propagation of the values from i0 to o0, and from i1 to o1, takes one cycle.\n\n\u02c6 The initial values of all internal registers is zero.\n\nYour goal is to use the systolic array shown in Figure 2 to perform the multiplication C = A\u00d7B, where A, B, and C are 2 \u00d7 2 matrices. Recall that the multiplication of two K \u00d7 K matrices is de\ufffdned as follows:\n\nCij = \u2211(k=0 to K-1) Aik \u00d7Bkj\n\nAs an example, for K = 2, the calculation for C00 is as follows:\n\nC00 = A00 \u00d7B00 +A01 \u00d7B10\n\nCompute the multiplication in the minimum possible number of cycles. Fill the following table with:\n\n1. Each input element (from matrices A2\u00d72 and B2\u00d72) in the correct cycle and input port of the systolic array (H0, H1 and V0, V1).\n\n2. Each output element (for matrix C2\u00d72) in the cycle and PE that generates each output.\n",
+        "context_figures": [],
+        "question": "Suppose that the same systolic array from Figure 2 is used to compute the multiplication of two 4\u00d7 4 matrices. How many cycles does it take to perform the multiplication? Assume that the register in a PE resets to 0 immediately after an output is generated, i.e., PEs can start accumulating for the next output element in the next cycle without waiting for an extra cycle to reset the register to 0. Show your work.",
+        "solution": "19 cycles.\n\nEach PE needs to calculate four elements to calculate the 4\u00d7 4 = 16 output elements.\n\nFor the \ufffdrst element calculated by each PE, the timeline looks similar to (a), but requires two additional cycles for the four MAC operations instead of two per element, i.e., seven cycles in total until PE11 produces its output.\n\nThe remaining three elements calculated by each PE require four cycles each if pipelined with the previously calculated element.\n\nThus, the total number of cycles is 7 + 3\u00d7 4 = 19.\n\ncycle H0 H1 V0 V1 PE00 PE01 PE10 PE11\n\n0 A00 B00\n\n1 A01 A10 B10 B01\n\n2 A02 A11 B20 B11\n\n3 A03 A12 B30 B21\n\n4 A00 A13 B02 B31 C00\n\n5 A01 A10 B12 B03 C01 C10\n\n6 A02 A11 B22 B13 C11\n\n7 A03 A12 B32 B23\n\n8 A20 A13 B00 B33 C02\n\n9 A21 A30 B10 B01 C03 C12\n\n10 A22 A31 B20 B11 C13\n\n11 A23 A32 B30 B21\n\n12 A20 A33 B02 B31 C20\n\n13 A21 A30 B12 B03 C21 C30\n\n14 A22 A31 B22 B13 C31\n\n15 A23 A32 B32 B23\n\n16 A33 B33 C22\n\n17 C23 C32\n\n18 C33",
+        "solution_figures": [
+            "chart_p26_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The problem is missing critical context figures. The original PDF mentions Figure 2 (showing the PE array) and Figure 3 (showing the Processing Element logic), but these figures are not included in the context_figures field. Without these diagrams, a student would not be able to understand the systolic array structure or how the PEs are interconnected, which is essential for solving the problem. Additionally, there's a typo in the solution text where 'first' is rendered as '\ufffdrst'."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_12",
+        "context": "An ETH student writes two programs (A and B) and runs them on two different toy machines (M1 and M2) to determine the type of the prefetcher used in each of these machines. She observes programs A and B to generate the following memory access patterns (note that these are cacheblock addresses, not byte addresses).\n\nProgram A: 27 memory accesses\n\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64,\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64,\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64\n\nProgram B: 501 memory accesses\n\nb, b + 2, b + 4, ...., b + 998, b + 1000\n\nThe student measures the coverage (i.e., the fraction of program's memory accesses correctly predicted by the prefetcher) and accuracy (i.e., the fraction of sent prefetch requests that are used by the program) of the prefetching mechanism in each of the machines. The following table shows her measurement results:\n\nMachine M1 Machine M2\nCoverage Accuracy Coverage Accuracy\nProgram A 6/27 6/27 1/3 9/26\nProgram B 499/501 499/501 499/501 499/500\n\nThe student knows the following information about the machines:\n\n\u02c6 There are three possible choices for the prefetching mechanism:\n\n1. Stride prefetcher\n\n2. 1st-next-block prefetcher with degree 1: Prefetches cacheline A+1 after seeing access to block A\n\n3. 4th-next-block prefetcher with degree 1: Prefetches cacheline A+4 after seeing access to block A\n\n\u02c6 Each prefetcher has large enough resources to detect and store access patterns.\n\n\u02c6 Each prefetcher starts with an empty table.\n\n\u02c6 Each prefetcher sends only one prefetch request for each program access.\n\n\u02c6 Each memory access is separated long enough in time so that all prefetch requests sent can complete before the next access occurs.\n\n\u02c6 No prefetcher employs any confidence mechanism (e.g., the stride prefetcher will send a prefetch request to address A+4 by only seeing two consecutive memory accesses to addresses A and A+2).",
+        "context_figures": [
+            "chart_p27_0.png"
+        ],
+        "question": "Determine what type of prefetching mechanism is used by M1 and M2. Show your work. Answers without explanation will not be rewarded.",
+        "solution": "Machine M1: 4th-next-line prefetcher\n\nMachine M2: Stride prefetcher\n\nSpace for explanation:\n\nM1: 4th-next-line prefetcher\nM2: Stride prefetcher\n\nExplanation\n\nWe calculate the accuracy and coverage for all three types of prefetchers, and then we can answer what prefetcher each machine is using. Underlined and red-marked cacheline addresses are correctly and incorrectly prefetched, respectively.\n\nEach prefetcher works in the following way while running Application A:\n\nStride: Coverage: 1/3, Accuracy: 9/26\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 12, a + 24, a + 48, a + 96)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a - 64, a + 5, a + 12, a + 24, a + 48, a + 96)\n\n1st-next-line: Coverage: 4/9, Accuracy: 4/9\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 9, a + 17, a + 33, a + 65)\n\n4th-next-line: Coverage: 6/27, Accuracy: 6/27\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64, (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\na, a + 1, a + 2, a + 3, a + 4, a + 8, a + 16, a + 32, a + 64 (incorrect: a + 5, a + 6, a + 7, a + 12, a + 20, a + 36, a + 68)\n\nThe three prefetechers work in the following way while running Application B:\n\nStride: Coverage: 499/501, Accuracy: 499/500\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b + 1002)\n\n1st-next-line: Coverage: 0, Accuracy: 0\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ... , b + 998, b + 1000 (incorrect: b + 1, b + 3, ..., b + 999, b + 1001)\n\n4th-next-line: Coverage: 499/501, Accuracy: 499/501\nb, b + 2, b + 4, b + 6, b + 8, b + 10, ..., b + 998, b + 1000 (incorrect: b +1002, b + 1004)",
+        "solution_figures": [
+            "chart_p27_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_2/2.1",
+        "context": "Finite State Machines [45 points]\nSimplifying an FSM [20 points]",
+        "context_figures": [
+            "chart_p5_0.png"
+        ],
+        "question": "You are given the finite state machine of a one input / one output digital circuit design. Answer the following questions for the given state diagram.\n\nIs it possible to simplify this state diagram and reduce the number of states? If so, simplify it to the minimum number of states. Explain each step of your simplification. Draw the simplified state diagram. If not, explain why it is not possible to simplify the state diagram.",
+        "solution": "Yes, it is possible. Below is the state transition table of the given state machine:\n\nCurrent State Input Next State Output\n\nA 0 A 1\nA 1 B 0\nB 0 A 1\nB 1 B 0\nC 0 D 1\nC 1 A 0\nD 0 A 1\nD 1 B 0\n\nWe can see that the states A, B, and D are identical. For all of these states,\n\u02c6 an input of 0 leads to the next state A and the output 1\n\u02c6 an input of 1 leads to the next state B and the output 0\n\nTherefore, we can merge states A, B, and D. Let's use the name X:\n\nCurrent State Input Next State Output\n\nX 0 X 1\nX 1 X 0\nC 0 X 1\nC 1 X 0\n\nWe can further simplify this state machine as both states C and X are identical in terms of their next state and output. As a result, this state machine has only one state and the output is always the inverse of the input.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution is missing the final simplified state diagram that is shown in the PDF. The solution_figures field should contain a reference to the diagram showing the single state S with the transitions 1/0 and 0/1."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_2/2.2",
+        "context": "Finite State Machines [45 points]\nDesigning an FSM [25 points]",
+        "context_figures": [],
+        "question": "Design a Moore finite state machine (FSM), where each output is solely determined by the current state of the machine and not directly influenced by the inputs. The state machine should have one input and one output. This FSM's goal is to detect a stable transition in the input signal from repeated logic-0 to repeated logic-1. The output should be logic-1 only when the input sequence of \"0-0-1-1\" is observed. The output should be zero in all other cases.\n\nWhen the circuit is reset, your state machine should assume that the input signal has been high (logic-1) for a long time. Draw the state diagram and explain why it works. Your state machine should use as few states as possible and each state should have a precise definition and output.",
+        "solution": "We need to keep track of the bit values in the last four bits. This requires 16 states. However, many of these states behave the same. We can reduce the number of states down to five.\n\n\u02c6 Since this is a Moore machine, the output should be independent from the input. Therefore, there should be a state for the posedge where the output is \"1\". All other states will have the output of \"0\". The FSM goes to the posedge state only when the last four bits are 0-0-1-1. We call this state S0011.\n\n\u02c6 The FSM should reach to the posedge state from another state where the last three input bits are 0-0-1. We call this state SX001.\n\n\u02c6 The FSM should reach to the 0-0-1 state from a state where the last two input bits are 0-0. Note that it does not matter what the input bits are, earlier than the last two zeros. We call this state SXX01.\n\n\u02c6 The FSM should not stay in state S0011 for more than one clock cycle as when the new input comes, the last four bits will not be 0-0-1-1 anymore. If the input is 1, the next state should be SXXX1: the last bit is zero but it is not a posedge and the earlier bits are not important. If the input is 0, the next state should be SXX10: the last two bits are 1-0 and the earlier bits are not important.\n\n\u02c6 Intuitively, if the state is SXXX1, the FSM should remain at this state if the input is 1 and go to SXX10 if the input is 0.\n\n\u02c6 If the state is SXX10, the FSM should not remain at this state regardless of the input. If the input is 0, the next state is SXX00. If the input is 1, the next state is SXXX1.\n\nTherefore, it is possible to design this state machine with five states. The state diagram is shown below.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution is missing the state diagram that is mentioned in the last sentence 'The state diagram is shown below.' The diagram is present in the original PDF but not included in the solution_figures field."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/1",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Width of the immediate value in an ADD instruction.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/2",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "The algorithm used by the ALU to perform multiplication.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/3",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Number of bits required for indexing the source register of a store instruction.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/4",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Number of entries in the L3 cache.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/5",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "The data cache organization (e.g., direct-mapped, set-associative).\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/6",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Support for conveying prefetching hints to the hardware via the compiler.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/7",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Available data types (e.g., integer) for arithmetic and logic operations.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/8",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Cache coherence protocol in multi-core processors.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/9",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Width of the data bus between the processor and main memory.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/10",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "The memory controller's memory request scheduling algorithm.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/11",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Instruction encoding for control flow and branch instructions.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated. Also, in the original PDF, this question has 'control flow' with a special character that appears as 'control \ufffdow' which is not properly represented in the parsed version."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/12",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "The design of the register renaming logic.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/13",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Number of instructions decoded per cycle in a superscalar processor.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/14",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "L2 cache miss latency.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_3/15",
+        "context": "ISA vs. Microarchitecture [45 points]\n\nCircle whether each of the following is an aspect of the ISA or the microarchitecture.\n\nNote: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Width of the program counter.\n\n1. ISA 2. Microarchitecture",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty. According to the requirements, both the question and solution fields should be populated."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_4/4.1",
+        "context": "Verilog [60 points]\nWhat Does This Code Do? [30 points]\n\nAnalyze the following Verilog module and answer the question.\n\n1 module module_x (input wire clk, input wire rst,\n2 input wire [7:0] in, output wire [7:0] out);\n3\n\n4 reg [7:0] var1, var2, var3, var4;\n5\n\n6 assign out = (var4 == in) ? var3 : var4;\n7\n\n8 always @(posedge clk) begin\n9 if (rst) begin\n10 var1 <= 8'b0; var2 <= 8'b1;\n11 var3 <= 8'b0; var4 <= 8'b0;\n12 end else begin\n13 var1 <= var2; var2 <= var1 + var2;\n14 var3 <= var1 + var2;\n15 var4 <= var4 + 8'b1;\n16 end\n17 end\n18 endmodule\n\nAssume that the input in always has the following value:\nin = 8'h09",
+        "context_figures": [
+            "img_p7_1.png"
+        ],
+        "question": "What unsigned decimal values does the out signal get in the following waveform diagram? Fill in the gray boxes with an out value for each clk cycle. Briefly explain your answer.",
+        "solution": "Explanation.\nThe module outputs the inth number in the Fibonacci sequence after in clock cycles. Until then, it outputs the number of clock cycles that have passed since reset.\nFor the given value of in (8'h09), the values for out are from leftmost yellow box to the rightmost yellow box:\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The question is missing important visual information. The waveform diagram mentioned in the question is shown in the image, but the question asks to fill in gray boxes with values, which should be visible in the image. The image provided doesn't clearly show these gray boxes that need to be filled. Additionally, the solution refers to 'yellow boxes' which aren't described in the question. The context and question don't fully capture what's being asked in the original PDF."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_4/4.2",
+        "context": "Verilog [60 points]\nIs ChatGPT not Right? [30 points]\n\nYou gave ChatGPT the following prompt to help with your lab report: \"A Verilog module that simulates a character's movement on a 2D-plane. The module takes four inputs for four directions (direction inputs) the character can move to. The module outputs x and y coordinates. The character stays in the same coordinate if none of the direction inputs are set. Initial coordinates (set on reset) are 0, 0. Stride determines how many units the character moves in one step.\"\n\n1 module movement (\n2 input clk, input rst,\n3 input up, input down,\n4 input left, input right,\n\n5 1 stride,\n\n6 output [7:0] x_coord,\n7 output [7:0] y_coord\n8 );\n\n9 2 x_internal, y_internal; // 8-bit signals\n\n10 wire [2:0] move_amount = 3 ; // if stride is not zero, move by stride amount, else move by 1\n\n11 always @(posedge clk) begin\n12 if (rst) begin\n13 x_internal <= 0; y_internal <= 0;\n14 end else begin\n15 if (up) y_internal <= y_internal + move_amount;\n16 else if (down) y_internal <= y_internal - move_amount;\n17 else if (left) x_internal <= x_internal - move_amount;\n18 x_internal <= x_internal + move_amount;\n19 end\n20 end\n\n21 4 x_coord = x_internal; // output coordinate\n\n22 4 y_coord = y_internal; // output coordinate\n\n23 endmodule",
+        "context_figures": [],
+        "question": "Provide your choice for each blank 1, 2, and 4 below. Circle only one of A, B, C, D. Provide a one-line expression for 3 (Hint: Use the ternary operator (?) to implement a MUX).\n\n1 : A. output B. output reg C. input wire [2:0] D. input reg\n\n2 : A. wire [7:0] B. [7:0] wire C. wire [8:0] D. reg [7:0]\n\n3 : \n\n4 : A. B. assign C. == D. let\n\nDid ChatGPT inject any errors in this code? Write down line number(s) and a short explanation (to help us award you partial credit).",
+        "solution": "Explanation.\n\n1 : Signal stride is used as an input to the module, so it should be declared as an input.\nAmong options that describe input signals (C and D), input reg is not valid Verilog syntax.\n\n2 : The correct way to describe signals that we can assign values to in an always block is\nreg [7:0].\n3 : We describe a mux using the ternary operator as such: stride != 3'b0 ? stride\n: 3'b1;. If stride is zero, the left-hand side of the ternary operator (i.e., stride) is the\noutput of the mux and otherwise the right-hand side (i.e., 3'b1) is the output of the mux.\n\n4 : The correct syntax for assigning a value to a signal is assign x_coord =\nx_internal;. Other options are not valid Verilog syntax.\n\nExplanation. Line 18 introduces a logical error, causing x_internal to always be incremented by move_amount regardless of the direction of movement.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/1",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A main memory access typically has larger latency than a register \ufffdle access.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/2",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "SRAM is commonly used as main memory in modern computers.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/3",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A DRAM cell requires larger power to store data compared to an SRAM cell.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/4",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Reads are faster than writes in DRAM.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/5",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Reads are faster than writes in phase change memory.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/6",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A bitline in a DRAM array connects all DRAM cells in a DRAM row to the row decoder circuitry.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/7",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Using virtual memory reduces the memory access latency.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/8",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Phase Change Memory (PCM) is non-volatile.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/9",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "If a hypothetical system is not constrained by chip area, memory cost ($), and energy consumption, PCM would be the best memory technology to use in that system.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/10",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A program with a streaming memory access pattern leads to very high temporal locality in the last level data cache.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/11",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "In DRAM, accesses to di\ufffderent rows in one bank can be serviced faster compared to accesses to di\ufffderent rows in di\ufffderent banks.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/12",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "TLB is a specialized instruction cache that caches instructions based on branch prediction results.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/13",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "Virtual memory simpli\ufffdes software design.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/14",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A page fault happens when the TLB does not contain the entry needed by an instruction.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_5/15",
+        "context": "Memory Potpourri [45 points]\n\nRead the following statements about memory organization & technology. Circle \ufffdTrue\ufffd if the statement is true and \ufffdFalse\ufffd otherwise. Note: we will subtract 2 points for each incorrect answer and award 0 points for each unanswered question.\n",
+        "context_figures": [],
+        "question": "A fully-associative L1 TLB that only stores 4KB virtual-to-physical mappings and has 1024 entries can cover up to 4MB of memory.",
+        "solution": "1. True 2. False",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The PDF shows the question but doesn't explicitly mark which answer is correct."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_6/a",
+        "context": "A multi-cycle processor P1 executes load instructions in 6 cycles, store instructions in 6 cycles, arithmetic instructions in 2 cycles, and branch instructions in 2 cycles. Consider an application A where 40% of all instructions are load instructions, 20% of all instructions are store instructions, 30% of all instructions are arithmetic instructions, and 10% of all instructions are branch instructions.\n",
+        "context_figures": [],
+        "question": "What is the CPI (cycles per instruction) of application A when executing on processor P1? Show your work.",
+        "solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2\nCPI = 4.4",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_6/b",
+        "context": "A multi-cycle processor P1 executes load instructions in 6 cycles, store instructions in 6 cycles, arithmetic instructions in 2 cycles, and branch instructions in 2 cycles. Consider an application A where 40% of all instructions are load instructions, 20% of all instructions are store instructions, 30% of all instructions are arithmetic instructions, and 10% of all instructions are branch instructions.\n",
+        "context_figures": [],
+        "question": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A. What is the CPI of application A when executing on processor P2? Show your work.",
+        "solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6\nCPI = 8.4",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_6/c",
+        "context": "A multi-cycle processor P1 executes load instructions in 6 cycles, store instructions in 6 cycles, arithmetic instructions in 2 cycles, and branch instructions in 2 cycles. Consider an application A where 40% of all instructions are load instructions, 20% of all instructions are store instructions, 30% of all instructions are arithmetic instructions, and 10% of all instructions are branch instructions.\n",
+        "context_figures": [],
+        "question": "Which processor is faster (P1 or P2)? By how much (i.e., what is the speedup)? Show your work.",
+        "solution": "P2 is 1.05\u00d7 faster than P1.\n\nExplanation.\nExecution_Time_P1 = instructions\u00d7 CPIP1 \u00d7 clock_time\n\nExecution_Time_P2 = instructions\u00d7 CPIP2 \u00d7 clock_time/2\n\nclock_time = 1/clock_frequency\n\nAssuming that Execution_Time_P2 < Execution_Time_P1 =\u21d2\nExecution_Time_P1/Execution_Time_P2 > 1. Thus:\n\n=\u21d2 instructions\u00d7CPIP1\u00d7clock_time/(instructions\u00d7CPIP2\u00d7clock_time/2)\n\n=\u21d2 4.4\u00d7clock_time/(8.4\u00d7 clock_time/2)\n\n=\u21d2 4.4/4.2\n\n=\u21d2 1.05",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_6/d",
+        "context": "A multi-cycle processor P1 executes load instructions in 6 cycles, store instructions in 6 cycles, arithmetic instructions in 2 cycles, and branch instructions in 2 cycles. Consider an application A where 40% of all instructions are load instructions, 20% of all instructions are store instructions, 30% of all instructions are arithmetic instructions, and 10% of all instructions are branch instructions.\n",
+        "context_figures": [],
+        "question": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options:\n\n(1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions.\n\n(2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.\n\nWhich optimization do you add to P1 for application A? Show your work and justify your choice.",
+        "solution": "The ALU optimization.\n\nExplanation.\nApplication A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions.\nBy Amdahl's Law, we have:\n\nSpeedupALU = 1/((1\u22120.3\u22120.1)+ (0.3+0.1)/2) = 1.25\n\nSpeedupLSU = 1/((1\u22120.4\u22120.2)+ 0.4/2 +0.2\u00d72) = 1.0\n\nThe ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.\n\nAlternative Solution.\nWith the ALU, the new CPI of processor P1 will be:\nCPIALU = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2/2 + 0.1\u00d7 2/2\nCPIALU = 4.0\n\nWith the LSU, the new CPI of processor P1 will be:\nCPILSU = 0.4\u00d7 6/2 + 0.2\u00d7 (6\u00d7 2) + 0.3\u00d7 2 + 0.1\u00d7 2\nCPILSU = 4.4\n\nSince CPIALU < CPILSU , integrating the ALU will improve the overall cycles-per-instruction.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_7/a",
+        "context": "Pipelining [70 points]\n\nCode Listing 1 contains a piece of assembly code. Table 1 presents the execution timeline of this code.\n\n1 MOVI R1, X # R1 <- X\n2 MOVI R2, Y # R2 <- Y\n3 L1:\n4 MUL R4, R1, R1 # R4 <- R1 \u00d7 R1\n5 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n6 ADD R4, R5, R6 # R4 <- R5 + R6\n7 ADD R5, R2, R4 # R5 <- R2 + R4\n8 SUBI R3, R1, 2048 # R3 <- R1 - 2048, set condition flags\n9 JNZ L1 # Jump to L1 if zero flag is NOT set\n10 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n\nCode Listing 1: Assembly Program\n\nCycles\nInstructions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MOVI R1, X F D E1 E2 E3 M W\n\n2 MOVI R2, Y F D E1 E2 E3 M W\n\n3 MUL R4, R1, R1 F D - E1 E2 E3 M W\n\n4 MUL R1, R1, R2 F - D E1 E2 E3 M W\n\n5 ADD R4, R5, R6 F D E1 E2 E3 M W\n\n6 ADD R5, R2, R4 F D - - E1 E2 E3 M W\n\n7 SUBI R3, R1, 2048 F - - D E1 E2 E3 M W\n\n8 JNZ L1 F D - - E1 ...\n\n9 ... ...\n\nTable 1: Execution timeline (F:Fetch, D:Decode, E:Execute, M:Memory, W:WriteBack)\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precisely as possible. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "[15 points] List the data forwarding paths between pipeline stages.",
+        "solution": "The result of E3 stage is forwarded to E1 stage (e.g., R1's value at clock cycle 6 and R4's value at clock cycle 11). The result of M stage is forwarded to E1 stage (e.g., R1's value at clock cycle 7.)\nThe result of E3 stage is forwarded to the condition registers (e.g., SUBI and JNZ at clock cycle 15).\nThere is no other information for any other data forwarding. Therefore, other data forwardings are unknown.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_7/b",
+        "context": "Pipelining [70 points]\n\nCode Listing 1 contains a piece of assembly code. Table 1 presents the execution timeline of this code.\n\n1 MOVI R1, X # R1 <- X\n2 MOVI R2, Y # R2 <- Y\n3 L1:\n4 MUL R4, R1, R1 # R4 <- R1 \u00d7 R1\n5 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n6 ADD R4, R5, R6 # R4 <- R5 + R6\n7 ADD R5, R2, R4 # R5 <- R2 + R4\n8 SUBI R3, R1, 2048 # R3 <- R1 - 2048, set condition flags\n9 JNZ L1 # Jump to L1 if zero flag is NOT set\n10 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n\nCode Listing 1: Assembly Program\n\nCycles\nInstructions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MOVI R1, X F D E1 E2 E3 M W\n\n2 MOVI R2, Y F D E1 E2 E3 M W\n\n3 MUL R4, R1, R1 F D - E1 E2 E3 M W\n\n4 MUL R1, R1, R2 F - D E1 E2 E3 M W\n\n5 ADD R4, R5, R6 F D E1 E2 E3 M W\n\n6 ADD R5, R2, R4 F D - - E1 E2 E3 M W\n\n7 SUBI R3, R1, 2048 F - - D E1 E2 E3 M W\n\n8 JNZ L1 F D - - E1 ...\n\n9 ... ...\n\nTable 1: Execution timeline (F:Fetch, D:Decode, E:Execute, M:Memory, W:WriteBack)\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precisely as possible. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "[10 points] Does this machine use hardware interlocking or software interlocking? Explain.",
+        "solution": "Hardware interlocking. It detects data dependencies and stalls the pipeline accordingly without needing any software-induced NOPs.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_7/c",
+        "context": "Pipelining [70 points]\n\nCode Listing 1 contains a piece of assembly code. Table 1 presents the execution timeline of this code.\n\n1 MOVI R1, X # R1 <- X\n2 MOVI R2, Y # R2 <- Y\n3 L1:\n4 MUL R4, R1, R1 # R4 <- R1 \u00d7 R1\n5 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n6 ADD R4, R5, R6 # R4 <- R5 + R6\n7 ADD R5, R2, R4 # R5 <- R2 + R4\n8 SUBI R3, R1, 2048 # R3 <- R1 - 2048, set condition flags\n9 JNZ L1 # Jump to L1 if zero flag is NOT set\n10 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n\nCode Listing 1: Assembly Program\n\nCycles\nInstructions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MOVI R1, X F D E1 E2 E3 M W\n\n2 MOVI R2, Y F D E1 E2 E3 M W\n\n3 MUL R4, R1, R1 F D - E1 E2 E3 M W\n\n4 MUL R1, R1, R2 F - D E1 E2 E3 M W\n\n5 ADD R4, R5, R6 F D E1 E2 E3 M W\n\n6 ADD R5, R2, R4 F D - - E1 E2 E3 M W\n\n7 SUBI R3, R1, 2048 F - - D E1 E2 E3 M W\n\n8 JNZ L1 F D - - E1 ...\n\n9 ... ...\n\nTable 1: Execution timeline (F:Fetch, D:Decode, E:Execute, M:Memory, W:WriteBack)\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precisely as possible. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\nFor the rest of this question, assume the following:\n\n\u2022 X = 4, Y = 2 in Code Listing 1.\n\n\u2022 Branch predictor always predicts correctly.\n\n\u2022 The machine uses hardware interlocking.\n\nAt a given clock cycle T,\n\n\u2022 the value stored in R1 is 1024.\n\n\u2022 the processor fetches the dynamic instruction N which is MUL R4, R1, R1",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "[15 points] Calculate the value of T (the clock cycle of the given snapshot). Show your work.",
+        "solution": "T = 82.\n\nExplanation.\nThe instruction MUL R4, R1, R1 is fetched for the first time at the clock cycle 3. After the first iteration of the loop, the instruction is fetched for the second time at the clock cycle 12.\n\nThe instruction JNZ L1 stalls at the Decode stage and delays MUL R4, R1, R1. Due to this delay, there are 10 cycles in between the Nth and (N+1)th times the instruction is fetched, after the first iteration of the loop.\n\nIf R1 = 1024, this instruction is fetched and executed 8 times so far.\n\nSince in cycle T the first instruction in the loop (MUL R4, R1, R1) is being fetched, no cycles of the 9th iteration have executed so far.\n\nThen, T = 12 + 7\u00d7 10 = 82",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_7/d",
+        "context": "Pipelining [70 points]\n\nCode Listing 1 contains a piece of assembly code. Table 1 presents the execution timeline of this code.\n\n1 MOVI R1, X # R1 <- X\n2 MOVI R2, Y # R2 <- Y\n3 L1:\n4 MUL R4, R1, R1 # R4 <- R1 \u00d7 R1\n5 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n6 ADD R4, R5, R6 # R4 <- R5 + R6\n7 ADD R5, R2, R4 # R5 <- R2 + R4\n8 SUBI R3, R1, 2048 # R3 <- R1 - 2048, set condition flags\n9 JNZ L1 # Jump to L1 if zero flag is NOT set\n10 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n\nCode Listing 1: Assembly Program\n\nCycles\nInstructions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MOVI R1, X F D E1 E2 E3 M W\n\n2 MOVI R2, Y F D E1 E2 E3 M W\n\n3 MUL R4, R1, R1 F D - E1 E2 E3 M W\n\n4 MUL R1, R1, R2 F - D E1 E2 E3 M W\n\n5 ADD R4, R5, R6 F D E1 E2 E3 M W\n\n6 ADD R5, R2, R4 F D - - E1 E2 E3 M W\n\n7 SUBI R3, R1, 2048 F - - D E1 E2 E3 M W\n\n8 JNZ L1 F D - - E1 ...\n\n9 ... ...\n\nTable 1: Execution timeline (F:Fetch, D:Decode, E:Execute, M:Memory, W:WriteBack)\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precisely as possible. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "[15 points] Calculate the value of N (the total number of dynamic instructions fetched by the clock cycle T). Show your work.",
+        "solution": "N = 51.\n\nExplanation.\nLoop iterates for 8 times before the processor reaches to clock cycle T.\n\nThere are two instructions before the loop starts.\n\nThen, N = 2 + 8\u00d7 6 + 1 = 51 (assuming that the instruction indices start from 1).",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_7/e",
+        "context": "Pipelining [70 points]\n\nCode Listing 1 contains a piece of assembly code. Table 1 presents the execution timeline of this code.\n\n1 MOVI R1, X # R1 <- X\n2 MOVI R2, Y # R2 <- Y\n3 L1:\n4 MUL R4, R1, R1 # R4 <- R1 \u00d7 R1\n5 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n6 ADD R4, R5, R6 # R4 <- R5 + R6\n7 ADD R5, R2, R4 # R5 <- R2 + R4\n8 SUBI R3, R1, 2048 # R3 <- R1 - 2048, set condition flags\n9 JNZ L1 # Jump to L1 if zero flag is NOT set\n10 MUL R1, R1, R2 # R1 <- R1 \u00d7 R2\n\nCode Listing 1: Assembly Program\n\nCycles\nInstructions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\n1 MOVI R1, X F D E1 E2 E3 M W\n\n2 MOVI R2, Y F D E1 E2 E3 M W\n\n3 MUL R4, R1, R1 F D - E1 E2 E3 M W\n\n4 MUL R1, R1, R2 F - D E1 E2 E3 M W\n\n5 ADD R4, R5, R6 F D E1 E2 E3 M W\n\n6 ADD R5, R2, R4 F D - - E1 E2 E3 M W\n\n7 SUBI R3, R1, 2048 F - - D E1 E2 E3 M W\n\n8 JNZ L1 F D - - E1 ...\n\n9 ... ...\n\nTable 1: Execution timeline (F:Fetch, D:Decode, E:Execute, M:Memory, W:WriteBack)\n\nUse this information to reverse engineer the architecture of this microprocessor to answer the following questions. Answer the questions as precisely as possible. If the provided information is not sufficient to answer a question, answer \"Unknown\" and explain your reasoning clearly.\n",
+        "context_figures": [
+            "chart_p14_0.png"
+        ],
+        "question": "[15 points] Calculate the total execution time of the assembly code in Code Listing 1 until the completion in terms of the number of clock cycles. Show your work.",
+        "solution": "100 cycles.\n\nExplanation.\nUntil the end of the second iteration, the loop takes 19 cycles as shown above.\nThe steady-state throughput of an iteration after the first iteration is 6 instructions in 10 cycles.\n\nLoop will iterate until R1 becomes 2048, which means 9 iterations in total.\n\nThere is only one instruction after the loop, which takes 1 cycle to complete.\n\nThen, T = 19 + 8\u00d7 10 + 1 = 100",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_8/a",
+        "context": "Vector Processing [80 points]\n\nAssume a vector processor that implements the following ISA:\n\n\nOpcode Operands Latency (cycles) Description\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\nLDM Vi 1 VMSK \u2190 LSB(Vi) (VMSK = Vector Mask Register)\nVLD Vi, #A 50 row hit, 100 row miss, pipelined Vi \u2190Mem[Address]\nVST Vi, #A 50 row hit, 100 row miss, pipelined Mem[Address]\u2190 Vi\n\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\n\nVSHFR Vi, Vj 10, pipelined Vi \u2190 Vj >> 1\nVNOT Vi 4, pipelined Vi \u2190 BitwiseNOT (Vi)\nVCMPZ Vi, Vj 4, pipelined if(Vj == 0) Vi \u2190 0xFFFF; else Vi \u2190 0x0000\n\n\nAssume the following:\n\n\n\u02c6 The processor has an in-order pipeline and issues one instruction per cycle.\n\n\n\u02c6 There are 8 vector registers (V0,V1,V2,V3,V4,V5,V6,V7), and the size of a vector element is 4 bytes.\n\n\n\u02c6 Vst and Vln are 10-bit registers.\n\n\n\u02c6 The processor does not support chaining between vector functional units.\n\n\n\u02c6 LDM moves the least-signi\ufffdcant bit (LSB) of each vector element in a vector register Vi into the\ncorresponding position in VMSK . This instruction is executed in one single cycle.\n\n\n\u02c6 The main memory is composed of N banks, and each bank has a row bu\ufffder of size 64 bits.\n\n\n\u02c6 All rows in main memory are initially closed (i.e., all banks are precharged).\n\n\n\u02c6 The memory is byte addressable, and the address space is represented using 32 bits.\n\n\n\u02c6 Vector elements are stored in memory in a 4-byte-aligned manner. The \ufffdrst element of a vector\nalways starts at the beginning of a memory row.\n\n\n\u02c6 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at A + 4 maps to bank\n(B + 1)%N , where % is the modulo operator and N is the number of banks. N is not necessarily\na power of two.\n\n\n\u02c6 The latency of accessing memory is 100 cycles when the memory request misses in the row bu\ufffder,\nand 50 cycles when the memory request hits in the row bu\ufffder.\n\n\n\u02c6 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\n\u02c6 There is one functional unit for executing VLD instructions and a separate functional unit for\nexecuting VST instructions. This means the load and store operations for di\ufffderent vectors cannot\nbe overlapped.\n\n\n\u02c6 The operations on a vector do not a\ufffdect the vector elements corresponding to the locations in the\nVector Mask Register (VMSK) that are set to 0.\n",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "What should the minimum number of banks (N) be to avoid stalls while executing a VLD or VST instruction? Calculate the minimum number of banks for every stride from 1 to 10. Explain.",
+        "solution": "101 banks for even strides, 100 banks for odd strides\nExplanation.\nTo calculate the minimum value, we have to assume the worst case, which is when all\nmemory accesses are row bu\ufffder misses (latency = 100). To avoid stalls, we need to\nensure that consecutive vector elements access 100 di\ufffderent banks.\n\nWe illustrate the solution for even strides (2 and 4) and odd strides (1 and 3).\n\n101 banks are enough to avoid stalls with even numbers. For example, with a vector\nstride of 2, consecutive elements of a vector will map to banks 0, 2, 4 ... 96, 98, 100, 1, 3\n... 97, 99. With a vector stride of 4, consecutive elements of a vector will map to banks\n0, 4, 8 ... 96, 100, 3, 7 ... 95, 99, 2, etc.\n\n100 banks are enough to avoid stalls with odd numbers. For example, with a vector\nstride of 1, consecutive elements of a vector will map to banks 0, 1, 2, 3 ... 98, 99. With\na vector of stride 3, consecutive elements of a vector will map to banks 0, 3, 6 ... 96, 99,\n2, 5 ... 95, 98\n\nSo, the minimum number of banks is 100 for odd strides, and 101 for even strides.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_8/b",
+        "context": "Vector Processing [80 points]\n\nAssume a vector processor that implements the following ISA:\n\n\nOpcode Operands Latency (cycles) Description\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\nLDM Vi 1 VMSK \u2190 LSB(Vi) (VMSK = Vector Mask Register)\nVLD Vi, #A 50 row hit, 100 row miss, pipelined Vi \u2190Mem[Address]\nVST Vi, #A 50 row hit, 100 row miss, pipelined Mem[Address]\u2190 Vi\n\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\n\nVSHFR Vi, Vj 10, pipelined Vi \u2190 Vj >> 1\nVNOT Vi 4, pipelined Vi \u2190 BitwiseNOT (Vi)\nVCMPZ Vi, Vj 4, pipelined if(Vj == 0) Vi \u2190 0xFFFF; else Vi \u2190 0x0000\n\n\nAssume the following:\n\n\n\u02c6 The processor has an in-order pipeline and issues one instruction per cycle.\n\n\n\u02c6 There are 8 vector registers (V0,V1,V2,V3,V4,V5,V6,V7), and the size of a vector element is 4 bytes.\n\n\n\u02c6 Vst and Vln are 10-bit registers.\n\n\n\u02c6 The processor does not support chaining between vector functional units.\n\n\n\u02c6 LDM moves the least-signi\ufffdcant bit (LSB) of each vector element in a vector register Vi into the\ncorresponding position in VMSK . This instruction is executed in one single cycle.\n\n\n\u02c6 The main memory is composed of N banks, and each bank has a row bu\ufffder of size 64 bits.\n\n\n\u02c6 All rows in main memory are initially closed (i.e., all banks are precharged).\n\n\n\u02c6 The memory is byte addressable, and the address space is represented using 32 bits.\n\n\n\u02c6 Vector elements are stored in memory in a 4-byte-aligned manner. The \ufffdrst element of a vector\nalways starts at the beginning of a memory row.\n\n\n\u02c6 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at A + 4 maps to bank\n(B + 1)%N , where % is the modulo operator and N is the number of banks. N is not necessarily\na power of two.\n\n\n\u02c6 The latency of accessing memory is 100 cycles when the memory request misses in the row bu\ufffder,\nand 50 cycles when the memory request hits in the row bu\ufffder.\n\n\n\u02c6 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\n\u02c6 There is one functional unit for executing VLD instructions and a separate functional unit for\nexecuting VST instructions. This means the load and store operations for di\ufffderent vectors cannot\nbe overlapped.\n\n\n\u02c6 The operations on a vector do not a\ufffdect the vector elements corresponding to the locations in the\nVector Mask Register (VMSK) that are set to 0.\nTranslate the following loop into assembly code that can be executed in the least possible number of cycles in the previously described vector machine:\n\nfor i= 0 to 45:\nif(a[i] == 0):\nc[i] = b[i]\nelse:\nc[i] = a[i] * b[i] + a[i]/2\n\nAssume:\n\n\u2022 The same machine as in part (a).\n\n\u2022 In the for loop, 45 is inclusive, i.e., [0, 45]\n\n\u2022 The size of the elements of vectors a, b, and c is 4 bytes\n\n\u2022 Vectors a, b, and c do not share parts of the same DRAM row",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "",
+        "solution": "SET Vst, 1 # Load Vector Stride Register\nSET Vln, 46 # Load Vector Length Register\nVLD V1, a # Read from array a\nVLD V2, b # Read from array b\nVCMPZ V3, V1 # Compare V1 to 0\nLDM V3 # Load Vector Mask Register\nVST c, V2 # Write to array c\nVNOT V3 # BitwiseNOT\nLDM V3 # Load Vector Mask Register\nVSHFR V4, V1 # Shift to divide\nVMUL V5, V1, V2 # Multiply\nVADD V6, V5, V4 # Add\nVST c, V6 # Write to array c",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The question field is empty, which violates condition b) that requires both the question and solution fields to be populated. The question should include the instruction to translate the loop into assembly code."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_8/c",
+        "context": "Vector Processing [80 points]\n\nAssume a vector processor that implements the following ISA:\n\n\nOpcode Operands Latency (cycles) Description\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\nLDM Vi 1 VMSK \u2190 LSB(Vi) (VMSK = Vector Mask Register)\nVLD Vi, #A 50 row hit, 100 row miss, pipelined Vi \u2190Mem[Address]\nVST Vi, #A 50 row hit, 100 row miss, pipelined Mem[Address]\u2190 Vi\n\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\n\nVSHFR Vi, Vj 10, pipelined Vi \u2190 Vj >> 1\nVNOT Vi 4, pipelined Vi \u2190 BitwiseNOT (Vi)\nVCMPZ Vi, Vj 4, pipelined if(Vj == 0) Vi \u2190 0xFFFF; else Vi \u2190 0x0000\n\n\nAssume the following:\n\n\n\u02c6 The processor has an in-order pipeline and issues one instruction per cycle.\n\n\n\u02c6 There are 8 vector registers (V0,V1,V2,V3,V4,V5,V6,V7), and the size of a vector element is 4 bytes.\n\n\n\u02c6 Vst and Vln are 10-bit registers.\n\n\n\u02c6 The processor does not support chaining between vector functional units.\n\n\n\u02c6 LDM moves the least-signi\ufffdcant bit (LSB) of each vector element in a vector register Vi into the\ncorresponding position in VMSK . This instruction is executed in one single cycle.\n\n\n\u02c6 The main memory is composed of N banks, and each bank has a row bu\ufffder of size 64 bits.\n\n\n\u02c6 All rows in main memory are initially closed (i.e., all banks are precharged).\n\n\n\u02c6 The memory is byte addressable, and the address space is represented using 32 bits.\n\n\n\u02c6 Vector elements are stored in memory in a 4-byte-aligned manner. The \ufffdrst element of a vector\nalways starts at the beginning of a memory row.\n\n\n\u02c6 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at A + 4 maps to bank\n(B + 1)%N , where % is the modulo operator and N is the number of banks. N is not necessarily\na power of two.\n\n\n\u02c6 The latency of accessing memory is 100 cycles when the memory request misses in the row bu\ufffder,\nand 50 cycles when the memory request hits in the row bu\ufffder.\n\n\n\u02c6 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\n\u02c6 There is one functional unit for executing VLD instructions and a separate functional unit for\nexecuting VST instructions. This means the load and store operations for di\ufffderent vectors cannot\nbe overlapped.\n\n\n\u02c6 The operations on a vector do not a\ufffdect the vector elements corresponding to the locations in the\nVector Mask Register (VMSK) that are set to 0.\nWhat is the number of cycles the previous code takes to execute in the vector processor described in this question? Assume:\n\n\u2022 Vectors a and b are in di\ufffderent rows\n\n\u2022 A machine that has a memory with 8 banks.\n\n\u2022 The rest of the machine is the same as in part (a).",
+        "context_figures": [
+            "chart_p17_0.png"
+        ],
+        "question": "",
+        "solution": "1822 cycles\nExplanation.\n\nThe memory accesses look like:\nbank0 --MISS-|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank1 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank2 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank3 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank4 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank5 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank6 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\nbank7 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\n\nTherefore, the latency of the load corresponds to the latency of the bank with the larger\nlatency. In this case, bank 5 (300+150+5 = 455 cycles). The latency of a store is also\n455 cycles.\n\nThe general picture is:\n\nSET: |-S-|\nSET: |-S-|\nVLD: |-----VLD-----|\nVLD: |-----VLD-----|\nVCMPZ: |VCMPZ|\nLDM: |L|\nVST: |-----VST-----|\nVNOT: |VNOT|\nLDM: |L|\nVSHFR: |VSHFR|\nVMUL: |VMUL|\nVADD: |VADD|\nVST: |-----VST-----|\n\nS = 1\nVLD_cycles = VST_cycles = 455\nVMUL_cycles = 10 + 45 = 55\nVCMPZ_cycles = 4 + 45 = 49\nVNOT_cycles = 4 + 45 = 49\nL = 1\nVSHFR = 10 + 45 = 55\nVADD = 5 + 45 = 50\n\nConsidering how the latency of some instructions is hidden by the other instructions,\nthe total cycles can be calculated as:\ntotal_cycles = S + S + V LD_cycles + V LD_cycles + V ST_cycles + V ST_cycles =\n1822 cycles",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The question field is empty, which violates condition b) that requires both the question and solution fields to be populated. The question should ask about the number of cycles the code from part (b) takes to execute."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_9/a",
+        "context": "You are the human compiler for a VLIW processor whose specifications are as follows:\n\n\u02c6 There are a total of 7 functional units: 3 load units, 1 store unit, 1 addition unit, 1 multiplication\nunit, and 1 branch unit.\n\n\u02c6 The VLIW processor can only execute assembly operations listed in Table 1. The table shows the\ninstructions that each functional unit can execute and each instructon's semantics. Note that the\nload_inc/store_inc instructions automatically increment the address source register rsrc2 by\n1, after data is loaded/stored.\n\n\u02c6 All assembly operations have a 1-cycle latency (including load, load_inc, store, and store_inc).\n\n\u02c6 This machine has 32 registers (r0, r1, ..., r31).\n\n\u02c6 The registers are read at the rising edge and written at the falling edge of the clock.\n\n\u02c6 The memory is word-addressable (1 word = 4 bytes).\n\n\u02c6 The VLIW processor operates at 1 GHz.\n\nFigure 1 shows the C code and its equivalent assembly code for the application that we will execute in\nthis VLIW processor. Assume that N is an even positive integer throughout this question.\n\nIn the assembly code, registers r29, r30, and r31 hold the base addresses of the C-code arrays A, B,\nand C, respectively. Register r0 is initialized with 0 and register r1 is initialized with 1.\n",
+        "context_figures": [
+            "chart_p21_0.png"
+        ],
+        "question": "Your goal in this question is to statically schedule the instructions in Figure 1 to the\nVLIW processor specified above. Table 2 (on the next page) represents the occupancy of each\nfunctional unit during the execution of the assembly code in Figure 1.\n\nFor the assembly code given in Figure 1, fill in Table 2 with the appropriate VLIW instructions.\n\nIn your solution, minimize the number of VLIW instructions, and ensure that each instruction is scheduled to execute as soon as possible. Table 2 should only contain assembly operations\nsupported by the VLIW processor, as described in Table 1.",
+        "solution": "Functional Unit\n\nVLIW\nInstruction Load Load Load Store Mult Add Branch\n\n1 LOOP: load_inc r2, [r31, r0, #0] load r3, [r29, r1, #0] load r4, [r30, r1, #0] NOP NOP NOP NOP\n\n2 NOP NOP NOP NOP mult r5, r2, r3 NOP NOP\n\n3 NOP NOP NOP NOP NOP add r6, r5, r4 NOP\n\n4 NOP NOP NOP store_inc [r31, r1, #0], r6 NOP NOP NOP\n\n5 NOP NOP NOP NOP NOP NOP bne r1, #N, LOOP",
+        "solution_figures": [
+            "chart_p22_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the C code and assembly code from Figure 1 that is referenced in the problem. Without this information, a student would not have enough context to understand what instructions need to be scheduled. Additionally, Table 1 is referenced but not included in the context_figures, which is essential for understanding the VLIW processor's supported operations."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_9/b",
+        "context": "You are the human compiler for a VLIW processor whose specifications are as follows:\n\n\u02c6 There are a total of 7 functional units: 3 load units, 1 store unit, 1 addition unit, 1 multiplication\nunit, and 1 branch unit.\n\n\u02c6 The VLIW processor can only execute assembly operations listed in Table 1. The table shows the\ninstructions that each functional unit can execute and each instructon's semantics. Note that the\nload_inc/store_inc instructions automatically increment the address source register rsrc2 by\n1, after data is loaded/stored.\n\n\u02c6 All assembly operations have a 1-cycle latency (including load, load_inc, store, and store_inc).\n\n\u02c6 This machine has 32 registers (r0, r1, ..., r31).\n\n\u02c6 The registers are read at the rising edge and written at the falling edge of the clock.\n\n\u02c6 The memory is word-addressable (1 word = 4 bytes).\n\n\u02c6 The VLIW processor operates at 1 GHz.\n\nFigure 1 shows the C code and its equivalent assembly code for the application that we will execute in\nthis VLIW processor. Assume that N is an even positive integer throughout this question.\n\nIn the assembly code, registers r29, r30, and r31 hold the base addresses of the C-code arrays A, B,\nand C, respectively. Register r0 is initialized with 0 and register r1 is initialized with 1.\n",
+        "context_figures": [
+            "chart_p21_0.png"
+        ],
+        "question": "What is the ratio between the number of useful operations and the number of VLIW instructions in your code? A useful operation refers to any assembly operation that is not a NOP.",
+        "solution": "7\n5 useful operations per VLIW instruction.\n\nExplanation.\nThere are a total of 7 assembly operations (excluding NOPs) composing 5 VLIW instructions.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the C code and assembly code from Figure 1, as well as Table 1 and Table 2 which are essential for understanding the problem. Without seeing the VLIW code that was created in part (a), a student would not be able to calculate the ratio of useful operations to VLIW instructions."
+    },
+    {
+        "question_id": "ddca-s23-en-sol/Problem_9/c",
+        "context": "You are the human compiler for a VLIW processor whose specifications are as follows:\n\n\u02c6 There are a total of 7 functional units: 3 load units, 1 store unit, 1 addition unit, 1 multiplication\nunit, and 1 branch unit.\n\n\u02c6 The VLIW processor can only execute assembly operations listed in Table 1. The table shows the\ninstructions that each functional unit can execute and each instructon's semantics. Note that the\nload_inc/store_inc instructions automatically increment the address source register rsrc2 by\n1, after data is loaded/stored.\n\n\u02c6 All assembly operations have a 1-cycle latency (including load, load_inc, store, and store_inc).\n\n\u02c6 This machine has 32 registers (r0, r1, ..., r31).\n\n\u02c6 The registers are read at the rising edge and written at the falling edge of the clock.\n\n\u02c6 The memory is word-addressable (1 word = 4 bytes).\n\n\u02c6 The VLIW processor operates at 1 GHz.\n\nFigure 1 shows the C code and its equivalent assembly code for the application that we will execute in\nthis VLIW processor. Assume that N is an even positive integer throughout this question.\n\nIn the assembly code, registers r29, r30, and r31 hold the base addresses of the C-code arrays A, B,\nand C, respectively. Register r0 is initialized with 0 and register r1 is initialized with 1.\n",
+        "context_figures": [
+            "chart_p21_0.png"
+        ],
+        "question": "What is the execution time (in cycles) of the VLIW processor when executing the sequence of instructions in Table 2, as a function of the loop counter N? Show your work.",
+        "solution": "Execution time = 5\u00d7N .\n\nExplanation.\nA single iteration of the loop takes 5 clock cycles to execute. Since the loop repeats N\ntimes, the total execution time is equal to 5\u00d7N .",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the C code and assembly code from Figure 1, as well as Table 1 and Table 2 which are essential for understanding the problem. Without seeing the VLIW code that was created in part (a) and the loop structure, a student would not be able to calculate the execution time as a function of N."
+    }
+]

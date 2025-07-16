@@ -1,3 +1,3 @@
-"exam", "testing_version", "total", "concurred_trues", "concurred_falses", "false_trues", "true_falses","verified_trues", "api_trues", "total_questions_no_images", "concurred_trues_no_images", "concurred_falses_no_images", "api_accuracy", "llm_accuracy", "llm_accuracy_no_images"
+"exam", "testing_version", "total", "concurred_trues", "concurred_falses", "false_trues", "true_falses","verified_trues", "api_trues", "total_questions_no_images", "concurred_trues_no_images", "concurred_falses_no_images", "false_trues_no_images", "true_falses_no_images", "llm_accuracy", "llm_accuracy_no_images"
 exam_solutions_ss2012,[AUTO_CHECKED]exam_solutions_ss2012.json,36.0,9.0,22.0,0.0,5.0,9.0,14.0,8.0,5.0,2.0,0.0,1.0,0.8611111111111112,0.875
 exam_solutions_ss2012,exam_solutions_ss2012.json,36.0,1.0,18.0,8.0,9.0,9.0,10.0,8.0,0.0,1.0,5.0,2.0,0.5277777777777778,0.125

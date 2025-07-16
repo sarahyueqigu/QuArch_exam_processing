@@ -1,0 +1,226 @@
+[
+    {
+        "question_id": "exam_ss2015/Problem_1/(a)",
+        "context": "In this exercise we want to develop a new standard for representing Swiss postcodes in binary format. Swiss postcodes have four digits and ranges from 1000-9999.\n",
+        "context_figures": [],
+        "question": "How many bits in total are needed if we want to represent the Swiss post-codes using two's complement binary format? Encode the postcode of Wilchingen, SH (8217) using this format.",
+        "solution": "Solution: 15 bits are needed: there are 9'000 different possible postcodes (more or less), and you need at least 14 bits to represent them (214==16'536). You need another bit for the two's complement.\n(8217)10 = 8192 + 16 + 8 + 1 = (010 0000 0001 1001)2",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_1/(b)",
+        "context": "In this exercise we want to develop a new standard for representing Swiss postcodes in binary format. Swiss postcodes have four digits and ranges from 1000-9999.\n",
+        "context_figures": [],
+        "question": "How many bits in total are needed if we represent each decimal digit as a separate unsigned binary number? Encode the postcode of Wilchingen, SH (8217) using this format.",
+        "solution": "Solution: 16 bits are needed: For each decimal digit 4 bits will be needed. There are 4 digits, that makes 16 in total\n(8, 2, 1, 7)10 = (1000, 0010, 0001, 0111)2",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_1/(c)",
+        "context": "In this exercise we want to develop a new standard for representing Swiss postcodes in binary format. Swiss postcodes have four digits and ranges from 1000-9999.\n",
+        "context_figures": [],
+        "question": "How many bits in total are needed if we represent two decimal digits at a time as a separate unsigned binary number? Encode the postcode of Wilchingen, SH (8217) using this format.",
+        "solution": "Solution: 14 bits are needed: For two decimal digits (00-99), 7 bits will be needed (27==128). There are two such numbers digits, that makes 14 in total\n(82, 17)10 = (101 0010, 001 0001)2",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_2/a",
+        "context": "For this question, use the following truth table for a 4-input logic function called Z.\n\nInput Output\n\nA B C D Z\n\n0 0 0 0 1\n\n0 0 0 1 0\n\n0 0 1 0 1\n\n0 0 1 1 0\n\n0 1 0 0 0\n\n0 1 0 1 1\n\n0 1 1 0 0\n\n0 1 1 1 0\n\n1 0 0 0 0\n\n1 0 0 1 0\n\n1 0 1 0 1\n\n1 0 1 1 1\n\n1 1 0 0 0\n\n1 1 0 1 0\n\n1 1 1 0 1\n\n1 1 1 1 1\n",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "One of your friends has determined the following Boolean equation for Z:\n\nZ = A \u00b7B \u00b7 C + A \u00b7B \u00b7 C + A \u00b7B \u00b7 C + A \u00b7B \u00b7 C \u00b7D\n\nDoes the equation match the truth table? If not, specify which terms in the equation are incorrect and what terms are missing, if any.",
+        "solution": "The equation does not match the truth table. There are the following problems:\n\n\u2022 A \u00b7B \u00b7 C \u00b7D is missing\n\n\u2022 A \u00b7 B \u00b7 C \u00b7D is not in the truth table, but is included in the equation as part of the term A \u00b7B \u00b7 C",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_2/b",
+        "context": "For this question, use the following truth table for a 4-input logic function called Z.\n\nInput Output\n\nA B C D Z\n\n0 0 0 0 1\n\n0 0 0 1 0\n\n0 0 1 0 1\n\n0 0 1 1 0\n\n0 1 0 0 0\n\n0 1 0 1 1\n\n0 1 1 0 0\n\n0 1 1 1 0\n\n1 0 0 0 0\n\n1 0 0 1 0\n\n1 0 1 0 1\n\n1 0 1 1 1\n\n1 1 0 0 0\n\n1 1 0 1 0\n\n1 1 1 0 1\n\n1 1 1 1 1\n",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "The equation that your friend has written in 2a) also contains some redundant terms. Can you simplify it?",
+        "solution": "Z = A \u00b7B \u00b7 C + A \u00b7 C + A \u00b7B \u00b7 C \u00b7D\n\nor\n\nZ = B \u00b7 C + A \u00b7B \u00b7 C + A \u00b7B \u00b7 C \u00b7D",
+        "solution_figures": [
+            "chart_p5_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution_figures field contains 'chart_p5_0.png', but the image shown in the PDF doesn't match what would be expected. The image in the PDF shows mathematical equations, not a chart or diagram. The solution_figures should either be empty or contain the correct reference to the image showing the simplified Boolean equations."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_2/c",
+        "context": "For this question, use the following truth table for a 4-input logic function called Z.\n\nInput Output\n\nA B C D Z\n\n0 0 0 0 1\n\n0 0 0 1 0\n\n0 0 1 0 1\n\n0 0 1 1 0\n\n0 1 0 0 0\n\n0 1 0 1 1\n\n0 1 1 0 0\n\n0 1 1 1 0\n\n1 0 0 0 0\n\n1 0 0 1 0\n\n1 0 1 0 1\n\n1 0 1 1 1\n\n1 1 0 0 0\n\n1 1 0 1 0\n\n1 1 1 0 1\n\n1 1 1 1 1\n",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "Derive an optimized correct Boolean equation for the same truth table. (Hint: use a Karnaugh map)",
+        "solution": "Z = A \u00b7B \u00b7D + A \u00b7 C + A \u00b7B \u00b7 C \u00b7D",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_2/d",
+        "context": "For this question, use the following truth table for a 4-input logic function called Z.\n\nInput Output\n\nA B C D Z\n\n0 0 0 0 1\n\n0 0 0 1 0\n\n0 0 1 0 1\n\n0 0 1 1 0\n\n0 1 0 0 0\n\n0 1 0 1 1\n\n0 1 1 0 0\n\n0 1 1 1 0\n\n1 0 0 0 0\n\n1 0 0 1 0\n\n1 0 1 0 1\n\n1 0 1 1 1\n\n1 1 0 0 0\n\n1 1 0 1 0\n\n1 1 1 0 1\n\n1 1 1 1 1\n",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "Draw a gate-level schematic that realizes the function Z using only 2-input AND, OR gates. Assume that you have all the inputs (A,B,C,D) and their complements (A,B,C,D) available.",
+        "solution": "A B C D\n\nZ",
+        "solution_figures": [
+            "chart_p6_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_2/e",
+        "context": "For this question, use the following truth table for a 4-input logic function called Z.\n\nInput Output\n\nA B C D Z\n\n0 0 0 0 1\n\n0 0 0 1 0\n\n0 0 1 0 1\n\n0 0 1 1 0\n\n0 1 0 0 0\n\n0 1 0 1 1\n\n0 1 1 0 0\n\n0 1 1 1 0\n\n1 0 0 0 0\n\n1 0 0 1 0\n\n1 0 1 0 1\n\n1 0 1 1 1\n\n1 1 0 0 0\n\n1 1 0 1 0\n\n1 1 1 0 1\n\n1 1 1 1 1\n",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "Assume that all the gates (AND, OR, NOT) in the previous diagram have a propagation delay of 100 ps and a contamination delay of 50 ps. What is the delay of the longest (critical) path and the shortest path of this circuit?",
+        "solution": "In the solution above, the critical path goes through one inverter, 2 AND gates, and 2 OR gates and is (5 \u00d7 tpd ==) 500 ps. The short path goes through one AND gate and two OR gates and equals to (3timestcd ==)150 ps. Note: Depending on how the circuit is drawn the numbers could change slightly.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "There's a typo in the solution text. '(3timestcd ==)150 ps' should be '(3 \u00d7 tcd ==) 150 ps'. The multiplication symbol and spacing are incorrect."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_3/a",
+        "context": "\nOne of your colleagues is designing a finite state machine with a one-bit input (A) and a two-bit output (Z). He has started designing a state transitioning diagram as given below:",
+        "context_figures": [
+            "chart_p7_0.png"
+        ],
+        "question": "Even if you do not know the exact functionality of the FSM, there are some obvious problems with this diagram. Help your colleague by identifying the problems in this diagram. List as many mistakes as you can find in this diagram.",
+        "solution": "There are many problems with this diagram\n\n1. The states do not have identifying names or labels\n\n2. There is no reset state\n\n3. Most states have a Moore labelling (output state in the bubble), one has a Mealy type labelling (output given with input transitions)\n\n4. The output state is missing for the transition from the unlabelled state with a = 0.\n\n5. There are two different transitions both with a = 1 from the same state\n\n6. There are two different transitions from state Z = 00 that are not labelled\n\n7. For two states only a = 0 makes a transition. What will happen with a = 1 is not shown, presumably will remain in the same state.\n\nFor every correctly spotted mistake you will get points, you will get full points if you have spotted 5 of the above.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The image chart_p7_0.png appears to contain the solution annotations (showing the 7 problems with red text and arrows) rather than just the original FSM diagram. This violates condition d) as it reveals parts of the solution in the context figure."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_3/b",
+        "context": "\nAfter learning from his mistakes, your colleague has proceeded to write the following Verilog code for a much better (and different) FSM. The code has been verified for syntax errors and found to be OK.",
+        "context_figures": [
+            "chart_p8_0.png"
+        ],
+        "question": "Draw a proper state transition diagram that corresponds to the FSM described in this Verilog code.",
+        "solution": "init\n\nZ=00\n\nload\n\nZ=10\n\nblink1\n\nZ=01\n\nerror2\n\nZ=00\n\nerror1\n\nZ=11\n\nblink2\n\nZ=00\n\nA=1\n\nA=0\n\nA=0\n\nA=0\n\nA=0\n\nA=1\n\nA=1\n\nA=1\n\nRST",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution in the original PDF includes a state diagram figure, but this is not referenced in the solution_figures field. The text representation of the diagram in the solution field is not adequate to convey the actual diagram structure shown in the PDF."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_3/c",
+        "context": "\n",
+        "context_figures": [],
+        "question": "Is the FSM described by the previous Verilog code a Moore or a Mealy FSM? Why?",
+        "solution": "Moore, the output Z only depends on the state (present) and not on the input (A).",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is insufficient for this question to be standalone. It refers to 'the previous Verilog code' but doesn't include that code in the context. A student would need to see the Verilog code from part (b) to answer this question."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_4/a",
+        "context": "In this question you will write a small MIPS program that halves/quarters the RGB color values of the entire image as described in the page before.\n",
+        "context_figures": [],
+        "question": "Let us first develop a small MIPS assembly routine that will halve/quarter each 8-bit color component (Red, Green, Blue) individually and combine them together. The problem is that you can not just divide the 32-bit number that keeps the combined RGB value, you have to separate the values first, divide them individually and combine them again. (Hint: consider using 'and', 'or' and 'shift' operators) Assume that the 32-bit input value is located in the register $a0. Please provide the dimmed value in the register $v0.",
+        "solution": "1 addi $t0, $t0, 255 # initialize a mask\n2\n3 # GET B\n4 and $t1, $a0, $t0 # mask only the B into $t1\n5 srl $t1, $t1, 1 # divide B by 2 (unsigned number)\n6\n7 # GET G\n8 srl $a0, $a0, 8 # shift the number by 8 bits\n9 and $t2, $a0, $t0 # mask only the G into $t2\n10 srl $t2, $t2, 2 # divide G by 4 (unsigned number)\n11\n12 # GET R\n13 srl $a0, $a0, 8 # shift the number by 8 bits\n14 and $v0, $a0, $t0 # mask only the R into $v0\n15 srl $v0, $v0, 1 # divide R by 2 (unsigned number)\n16\n17 # ASSEMBLE\n18 sll $v0, $v0, 8 # shift the result by 8 bits left\n19 or $v0, $v0, $t2 # or the divided value of G in $t2\n20 sll $v0, $v0, 8 # shift the result by 8 bits left\n21 or $v0, $v0, $t1 # or the divided value of B in $t1\n\nWe use the mask in $t0 to pick out exactly the 8 LSB in each step. We first start with B, mask it to $t1, and divide it. Next we shift the entire number by 8 to the right. This way the next color value is ready to be processed (G). We mask and shift it by 2 to divede by 4 in $t2. The last value (R) can then be already copied to $v0. Now we move back and 'or' the calculated values in the reverse order first G in $t2 and then B in $t1.\nThere are many alternative solutions that would work (i.e. using lb and sb which was not covered in class).",
+        "solution_figures": [
+            "chart_p11_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_4/b",
+        "context": "In this question you will write a small MIPS program that halves/quarters the RGB color values of the entire image as described in the page before.\n",
+        "context_figures": [],
+        "question": "We want to convert the routine from the previous exercise into a subroutine named dim_pixel that can be called from a main program. Make the necessary modifications (additions and/or changes, if necessary) to your code from the previous part so that it can be a proper subroutine.",
+        "solution": "1\n2 dim_pixel: # function label\n3\n4 ### Your code from the previous part\n5 ### no need to replicate it if no changes\n6 ### are needed to the program\n7\n8 jr $ra # jump back to the main ($ra)\n\nSince you will not be jumping out of this subroutine again, there is technically no need to save anything on stack. You will not lose points if you do so.",
+        "solution_figures": [
+            "chart_p12_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_4/c",
+        "context": "In this question you will write a small MIPS program that halves/quarters the RGB color values of the entire image as described in the page before.\n",
+        "context_figures": [],
+        "question": "Now we need to make one program that will loop over the entire picture, load the color values, call the function dim_pixel and write the result back again. Write this program using MIPS assembly.",
+        "solution": "1 # initializations\n2 lui $s0, 0x2000 # load start address\n3 ori $s0, $s0, 0x0000 # 0x2000 0000\n4 lui $s1, 0x2040 # load end address\n5 ori $s1, $s1, 0x0000 # 0x2040 0000\n6\n7 loop: lw $a0, 0($s0) # load one value\n8 jal dim_pixel # call subroutine\n9 sw $v0, 0($s0) # store back value\n10 addi $s0, $s0, 4 # next pixel address\n11 beq $s0, $s1, done # end of loop?\n12 j loop\n13\n14 done: # finished execution\n\nThe solution has to be consistent with your answer to 4a. i.e. if you assumed $a0 contains the address of the pixel, and not the value, the address needs to be loaded at this point.",
+        "solution_figures": [
+            "chart_p12_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_5/a",
+        "context": "In this question we will calculate how fast our program from question 4 will run.\n",
+        "context_figures": [],
+        "question": "How many instructions will be necessary to calculate the dimming operation on the whole image in Question 4c? If you have not answered Question 4a or 4b, assume that you need 10 instructions for one dim_pixel subroutine. If you make further assumptions please state them clearly. (Note: you can use approximations to simplify calculations.)",
+        "solution": "The inner loop in question 4c has 6 instructions. One of these instructions calls the subroutine that has 14 further instructions (including the jr). Thus per pixel we will need 20 instructions. For the entire image this loop will be executed 1'024 times 1'024 == 1'048'576 (approximately 1 million). The initial instructions can be ignored.\nIn total we will need slightly more than 20 million instructions (20'971'520).\nThe answer will depend on your answer to question 4 (or your assumption).",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_5/b",
+        "context": "In this question we will calculate how fast our program from question 4 will run.\n",
+        "context_figures": [],
+        "question": "For a real-time video application, you realize that you can afford at most 10ms of time until this operation is completed. Assuming that you are using an ideal single cycle MIPS architecture, what is the minimum clock frequency that your processor has to run at, so that your program finishes within 10ms?",
+        "solution": "T = N \u00b7 CPI \u00b7 1/f\n\nWhere T is the time to finish the operation, in this case 10ms, N was calculated in the previous exercise to be 20 million, CPI for an ideal single cycle processor is 1. From here we can calculate the clock frequency (f) to be 2GHz.\n\nHint:\n1 s = 1000ms = 1\u2032000\u2032000\u00b5s = 1\u2032000\u2032000\u2032000ns = 1\u2032000\u2032000\u2032000\u2032000 ps\n1Hz = 1 1/s; 1 kHz = 1\u2032000 1/s; 1MHz = 1\u2032000\u2032000 1/s; 1GHz = 1\u2032000\u2032000\u2032000 1/s;",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "exam_ss2015/Problem_6/a",
+        "context": "In this question, we will examine if we can make the dimming operation from question 4 run faster if we design a specific instruction dim just for this purpose.\n",
+        "context_figures": [],
+        "question": "Design a simple combinational circuit that takes a 32-bit input A and performs the dimming operation described in question 4. Complete the following Verilog code for this operation, or if you prefer, draw a detailed circuit schematic that explains the circuit.\n\n1 module dim ( input [31:0] A,\n2 output [31:0] Z);\n3\n\n4 assign Z= {8'b0000_0000,\n5 1'b0, A[23:17],\n6 2'b00, A[15:10],\n7 1'b0, A[ 7:1]};\n8\n\n9 endmodule",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the solution from the PDF. Additionally, the context is incomplete as it doesn't explain what the dimming operation from question 4 is, which is necessary for understanding this problem."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_6/b",
+        "context": "In this question, we will examine if we can make the dimming operation from question 4 run faster if we design a specific instruction dim just for this purpose.\n",
+        "context_figures": [],
+        "question": "What is the propagation delay of this circuit? Assume all logic gates will have a propagation delay of 100 ps. (Caution: tricky question.)",
+        "solution": "There are no active parts to this circuit, it contains only wiring and will virtually have no delay.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete as it doesn't include the circuit design from part (a) which is necessary to understand what circuit's propagation delay is being asked about."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_6/c",
+        "context": "In this question, we will examine if we can make the dimming operation from question 4 run faster if we design a specific instruction dim just for this purpose.\nNow that we have the dim block designed, we want to enhance our processor with an instruction that uses this block. The Control Unit of MIPS has already been modified to generate a signal ExecuteDim that will be set to '1' whenever the new dim instruction has been decoded.\nTwo of your colleagues make two different suggestions.\n\n\u2022 Josh says: \"Let us make dim an R-type instruction. The block dim can be placed in parallel with the ALU and it will take its input from SrcA. An additional multiplexer can select between the output of the ALU and the output of the dim block depending on the value of ExecuteDim. You execute dim by running dim $dest, $src\"\n\n\u2022 Sandra says: \"We can combine the sw operation with dim and make it an I-type instruction. We can use the WriteData input of the RAM as an input to the dim block. A multiplexer can then select between the WriteData and the output of the dim block depending on the value of ExecuteDim. You execute dim by running dim $src, offset($addr). The value in $src, will be dimmed and written to the address $addr+offset.\"",
+        "context_figures": [],
+        "question": "Does Josh's idea work? Does Sandra's idea work? Whose idea do you think is better? Why?",
+        "solution": "Both ideas would work. Sandra has a better idea, as it will further reduce the number of instructions by one.\n\n1 # Josh version\n2 loop: lw $a0, 0($s0) # load one value\n3 dim $a0, $a0 # execute the 'dim' function\n4 sw $a0, 0($s0) # dim store back value\n5 addi $s0, $s0, 4 # next pixel address\n6 beq $s0, $s1, done # end of loop?\n7 j loop\n\n1 # Sandra version\n2 loop: lw $a0, 0($s0) # load one value\n3 dim $a0, 0($s0) # dim and store back value\n4 addi $s0, $s0, 4 # next pixel address\n5 beq $s0, $s1, done # end of loop?\n6 j loop\n\nAs long as you can make a reasonable case for it, answers defending the idea of Josh will also be accepted as correct. The correct answer also depends on the hardware implementation you came up with. In 6a/b, the expected answer only has wiring, therefore does not add much additional delay apart from a multiplexer. This is the reason why Sandra's idea works better. If the dim function had non-negligible delay, it could be argued that Josh's idea keeps this delay in parallel to the ALU and does not slow down the circuit.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is incomplete as it doesn't explain what the dimming operation from question 4 is, which is necessary for understanding this problem."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_6/d",
+        "context": "In this question, we will examine if we can make the dimming operation from question 4 run faster if we design a specific instruction dim just for this purpose.\n",
+        "context_figures": [
+            "img_p15_1.png"
+        ],
+        "question": "Modify the standard single cycle block diagram given below so that it will allow the new dim instruction based on one of the ideas mentioned above. Please explicitly state whose idea you implement.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution field is empty when it should contain the solution from the PDF. The context is incomplete as it doesn't include the two ideas (Josh's and Sandra's) mentioned in part (c) which are necessary for this problem. Additionally, the context doesn't explain what the dimming operation from question 4 is."
+    },
+    {
+        "question_id": "exam_ss2015/Problem_7/(a)",
+        "context": "\n",
+        "context_figures": [],
+        "question": "When considering the performance of caches, what are compulsory cache misses? Is there any way to reduce them? How?",
+        "solution": "Compulsory misses occur when a data is accessed for the first time in a program.\nSince there were no prior accesses this data will not be located in the cache and\nwill have to be fetched.\nA larger block size can be used to reduce the compulsory misses. This takes\nadvantage of spatial locality. When there is a cache miss, not only the required\ndata is loaded into the cache, adjacent words are also automatically loaded into\nthe cache, reducing the possibility of further compulsory misses.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    }
+]

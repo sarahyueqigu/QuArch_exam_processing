@@ -1,0 +1,602 @@
+[
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.1",
+        "context": "Potpourri [30 points]\nMicroarchitecture or ISA? [10 points]",
+        "context_figures": [],
+        "question": "Based on your knowledge of a basic MIPS design and the computer architecture techniques you learned throughout this course, put an \"X\" in the box corresponding to whether each of the following design characteristics is better classified as \"microarchitecture\" or \"ISA\":",
+        "solution": "Characteristic Microarchitecture ISA\n\nGeneral purpose register $29 is the stack pointer X\n\nMaximum bandwidth between the L2 and the L3 cache X\n\nMaximum reservation station capacity X\n\nHardware floating point exception support X\n\nInstruction issue width X\n\nVector instruction support X\n\nMemory-mapped I/O Port Address X\n\nArithmetic and Logic Unit (ALU) critical path X\n\nCPU endianness X\n\nVirtual page size X",
+        "solution_figures": [
+            "chart_p3_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.2",
+        "context": "Potpourri [30 points]\nSingle-Cycle Processor Datapath [10 points]",
+        "context_figures": [
+            "chart_p4_0.png"
+        ],
+        "question": "Modify the single-cycle processor datapath to include a version of the lw instruction, called lw2, that adds two registers to obtain the effective address. The datapath that you will modify is provided below. Your job is to implement the necessary data and control signals to support the new lw2 instruction, which we define to have the following semantics:\n\nlw2: Rd \u2190 Memory[Rs + Rt]\nPC \u2190 PC + 4\n\nAdd to the datapath any necessary data and control signals (if necessary) to implement the lw2 instruction. Draw and label all components and wires very clearly (give control signals meaningful names; if selecting a subset of bits from many, specify exactly which bits are selected; and so on).",
+        "solution": "There is no need for new components and wires. The main difference is that the ALU must use \"Read data 2\", instead of the output of the sign extend unit. The new lw2 will be R-type, not I-type.\nThe values of the control signals need to be:\nRegDst = 1;\nALUScr = 0;\nMemtoReg = 1;\nRegWrite = 1;\nMemRead = 1;\nMemWrite = 0;\nALUop = 00;\nBranch = 0.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution in the parsed JSON has a typo: 'ALUScr = 0' should be 'ALUSrc = 0' as shown in the original PDF. This is a minor error but affects the accuracy of the solution."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.3",
+        "context": "Potpourri [30 points]\nPerformance Evaluation [10 points]",
+        "context_figures": [],
+        "question": "The execution time of a given benchmark is 100 ms on a 500 MHz processor. An ETH alumnus, designing the next generation of the processor, notices that a new implementation enables the processor to run at 750 MHz. However, the modifications increase the CPI by 20% for the same benchmark.",
+        "solution": "",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "This question is a parent question for subproblems 1.3a, 1.3b, and 1.3c, but it has an empty solution field. The solution should either contain the combined solutions of the subproblems or indicate that the solution is provided in the subproblems."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.3a",
+        "context": "Potpourri [30 points]\n",
+        "context_figures": [],
+        "question": "What is the execution time expressed in terms of the number of cycles taken for the old generation of the processor (i.e., before the modifications)?\n\nAssuming that the IPC is 2, what is the number of instructions in the benchmark?",
+        "solution": "Answer: Execution time is 50 Million cycles. The benchmark has 100 Million instructions.\n\nExplanation:\nClock frequency is 500 MHz. Then each cycle takes 1/(500\u00d7 10\u22126) = 2ns.\nTotal execution time in cycles is 100ms/2ns = 50Million cycles.\n\n2 instructions per cycle. Then, the total number of instructions: 2x50M = 100M",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.3b",
+        "context": "Potpourri [30 points]\n",
+        "context_figures": [],
+        "question": "What is the execution time of the benchmark in milliseconds for the new generation of the processor?",
+        "solution": "Answer: 80 ms.\n\nExplanation:\nExecution Time = [Number of Instructions]\u00d7 [CPI]\u00d7 [Frequency\u22121]\nLet's say that the CPI of baseline is c, and number of instructions is i.\nThen the execution time of baseline:\n(c\u00d7 i)/(500x106) = 100x10\u22123 seconds => (c\u00d7 i) = 5\u00d7 107\n\nThe execution time after modifications: ((1.2\u00d7 c)\u00d7 i)/(750x106)\nT = ((1.2\u00d7 (c\u00d7 i))/(750\u00d7 106) seconds.\nT = ((1.2\u00d7 (5\u00d7 107))/(750\u00d7 106) seconds.\nT = 8\u00d7 10\u22122 = 80ms.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.3c",
+        "context": "Potpourri [30 points]\n",
+        "context_figures": [],
+        "question": "What is the speedup or slowdown of the new generation processor over the old generation?",
+        "solution": "Answer: 25% speedup\n\nExplanation:\nSpeedup = (OldExecutionTime / [NewExecutionTime])\u2212 1\nSpeedup = 100/80\u2212 1\nSpeedup = 0.25\n\nThen the modification introduces 25% speedup.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_10/a",
+        "context": "An enterprising computer architect is building a new machine for high-frequency stock trading and needs to choose a CPU. She will need to optimize her setup for memory access latency in order to gain a competitive edge in the market. She is considering two different prototype enthusiast CPUs that advertise high memory performance:\n\n(A) Dragonfire-980 Hyper-Z\n\n(B) Peregrine G-Class XTreme\n\nShe needs to characterize these CPUs to select the best one, and she knows from Prof. Mutlu's course that she is capable of reverse-engineering everything she needs to know. Unfortunately, these CPUs are not yet publicly available, and their exact specifications are unavailable. Luckily, important documents were recently leaked, claiming that the two CPUs have:\n\n\u2022 Exactly 1 high-performance core\n\n\u2022 LRU replacement policies (for any set-associative caches)\n\n\u2022 Inclusive caching (i.e., data in a given cache level is present upward throughout the memory hierarchy. For example, if a cache line is present in L1, the cache line is also present in L2 and L3 if available.)\n\n\u2022 Constant-latency memory structures (i.e., an access to any part of a given memory structure takes the same amount of time)\n\n\u2022 Cache line, size, and associativity are all size aligned to powers of two\n\nBeing an ingenious engineer, she devises the following simple application in order to extract all of the information she needs to know. The application uses a high-resolution timer to measure the amount of time it takes to read data from memory with a specific pattern parameterized by STRIDE and MAX_ADDRESS:\n\nstart_timer()\nrepeat N times:\n    memory_address <- random_data()\n    READ[(memory_address * STRIDE) % MAX_ADDRESS]\nend_timer()\n\nAssume 1) this code runs for a long time, so all memory structures are fully warmed up, i.e., repeatedly accessed data is already cached, and 2) N is large enough such that the timer captures only steady-state information.\n\nBy sweeping STRIDE and MAX_ADDRESS, the computer architect can glean information about the various memory structures in each CPU.\n\nShe produces Figure 1 for CPU A and Figure 2 for CPU B.\nYour task: Using the data from the graphs, reverse-engineer the following system parameters. If the parameter does not make sense (e.g., L3 cache in a 2-cache system), mark the box with an \"X\". If the graphs provide insufficient information to ascertain a desired parameter, simply mark it as \"N/A\".\n",
+        "context_figures": [
+            "chart_p32_0.png"
+        ],
+        "question": "Fill in the blanks for Dragonfire-980 Hyper-Z.",
+        "solution": "NOTE 1 TO SOLUTION READER:\nThis analysis provides insufficient information to determine the line size of the cache(s). This is because we are always 'striding' in power-of-two values starting at address 0. This means that either our access pattern entirely fits within the cache (in which case we observe constant latency since the cache is already warmed up), or the access pattern is striding using values larger than the line size, so we never see two accesses to the same cache line.\n\nNOTE 2 TO SOLUTION READER:\nThis problem is not actually that hard.\nThe way to think about these plots is that each point is an access pattern. The easiest points to understand are those that result in an access pattern of {0, 0, 0, 0, ...} and randomly from {0, A}, where A is your stride. Just by looking at those you should be able to determine pretty much everything.\nThe access latencies and sizes are trivial to read off if you understand what the test code is trying to do. The associativities are nuanced, but you can tell from the aforementioned access patterns by simulating carefully.\nIf you want to go all-in, you can compute probabilities: if I access {0, A} then 50% of the time I'll hit and 50% miss. It's easy to get the cache latencies, so I can just match points from there on :)\n\nTable 1: Fill in the following table for CPU A (Dragonfire-980 Hyper-Z)\n\nSystem Parameter CPU A: Dragonfire-980 Hyper-Z\nL1 L2 L3 DRAM\nCache Line Size (B) N/A N/A N/A N/A OR X\nCache Associativity 2 X X X\nTotal Cache Size (B) 16 X X X\nAccess Latency from (ns) 1 20 X X 100",
+        "solution_figures": [
+            "chart_p32_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_10/b",
+        "context": "An enterprising computer architect is building a new machine for high-frequency stock trading and needs to choose a CPU. She will need to optimize her setup for memory access latency in order to gain a competitive edge in the market. She is considering two different prototype enthusiast CPUs that advertise high memory performance:\n\n(A) Dragonfire-980 Hyper-Z\n\n(B) Peregrine G-Class XTreme\n\nShe needs to characterize these CPUs to select the best one, and she knows from Prof. Mutlu's course that she is capable of reverse-engineering everything she needs to know. Unfortunately, these CPUs are not yet publicly available, and their exact specifications are unavailable. Luckily, important documents were recently leaked, claiming that the two CPUs have:\n\n\u2022 Exactly 1 high-performance core\n\n\u2022 LRU replacement policies (for any set-associative caches)\n\n\u2022 Inclusive caching (i.e., data in a given cache level is present upward throughout the memory hierarchy. For example, if a cache line is present in L1, the cache line is also present in L2 and L3 if available.)\n\n\u2022 Constant-latency memory structures (i.e., an access to any part of a given memory structure takes the same amount of time)\n\n\u2022 Cache line, size, and associativity are all size aligned to powers of two\n\nBeing an ingenious engineer, she devises the following simple application in order to extract all of the information she needs to know. The application uses a high-resolution timer to measure the amount of time it takes to read data from memory with a specific pattern parameterized by STRIDE and MAX_ADDRESS:\n\nstart_timer()\nrepeat N times:\n    memory_address <- random_data()\n    READ[(memory_address * STRIDE) % MAX_ADDRESS]\nend_timer()\n\nAssume 1) this code runs for a long time, so all memory structures are fully warmed up, i.e., repeatedly accessed data is already cached, and 2) N is large enough such that the timer captures only steady-state information.\n\nBy sweeping STRIDE and MAX_ADDRESS, the computer architect can glean information about the various memory structures in each CPU.\n\nShe produces Figure 1 for CPU A and Figure 2 for CPU B.\nYour task: Using the data from the graphs, reverse-engineer the following system parameters. If the parameter does not make sense (e.g., L3 cache in a 2-cache system), mark the box with an \"X\". If the graphs provide insufficient information to ascertain a desired parameter, simply mark it as \"N/A\".\n",
+        "context_figures": [
+            "chart_p33_0.png"
+        ],
+        "question": "Fill in the blanks for Peregrine G-Class XTreme.",
+        "solution": "Table 2: Fill in the following table for CPU B (Peregrine G-Class XTreme)\n\nSystem Parameter CPU B: Peregrine G-Class XTreme\nL1 L2 L3 DRAM\nCache Line Size (B) N/A N/A N/A N/A OR X\nCache Associativity 1 4 X X\nTotal Cache Size (B) 32 512 X X\nAccess Latency (ns) 1 10 40 X 100",
+        "solution_figures": [
+            "chart_p33_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/a",
+        "context": "We often use the \"addition node\":\n\na b\n\nc\n\n+\n\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.\n",
+        "context_figures": [
+            "chart_p34_0.png"
+        ],
+        "question": "Implement the single-bit binary addition of two \"1-bit\" input tokens a and b as a dataflow graph using only 2-input {AND, OR, XOR} nodes and COPY nodes if necessary (illustrated in Figure 3). Fill in the internal implementation below, where inputs and outputs (labeled with their corresponding bit-widths) have been provided:",
+        "solution": "1\n\nAND\n\n11\n\n1\n\nXOR\n\n11\n\n1\n\nCOPY\n\n1 1\n\n1\n\nCOPY\n\n1 1",
+        "solution_figures": [
+            "chart_p34_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing Figure 3 which shows the basic bitwise operations allowed in Part (a). The solution text doesn't clearly represent the dataflow graph structure that should be implemented."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/b",
+        "context": "We often use the \"addition node\":\n\na b\n\nc\n\n+\n\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.\nYou may recognize the node we designed in part (a) as a model for a so-called \"half-adder (HA)\", which is not very useful by itself since it is only useful for adding 1-bit input tokens. In order to extend this design to perform binary addition of 2-bit input tokens a[1:0] and b[1:0], the sum[1] token from half-adding a[0] and b[0] will have to act as an input token for another half-adder node used for adding a[1] and b[1]. This results in a 3-input adder called a \"full-adder (FA)\".",
+        "context_figures": [],
+        "question": "Fortunately, we can implement a full-adder (FA) using half-adders (HA) (i.e., the node we designed in part (a). Implement the full-adder using a minimum number of half-adders and at most 1 additional 2-input {AND, OR, XOR} node.",
+        "solution": "HA\n\n1 1\n\n11\n\nHA\n\n1 1\n\n11\n\n1\n\nOR\n\n11",
+        "solution_figures": [
+            "chart_p35_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing Figure 3 which shows the basic operations. The solution text doesn't clearly represent the dataflow graph structure that should be implemented. Additionally, the context doesn't properly explain what a half-adder is since it depends on part (a)."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/c",
+        "context": "We often use the \"addition node\":\n\na b\n\nc\n\n+\n\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.\n",
+        "context_figures": [],
+        "question": "The full-adder (FA) is a versatile design that can be used to implement n-bit addition. Show how we might use it to implement 2-bit binary addition of two input tokens a[1:0] and b[1:0]. Use only a minimum number of full-adders (i.e., the dataflow node you designed in Part 2). Hint: you may use constant input tokens if necessary.",
+        "solution": "FA\n\n1 1\n\n11\n1\n\nFA\n\n1 1\n\n11\n1\n\n0",
+        "solution_figures": [
+            "chart_p36_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The question refers to 'Part 2' but this should be 'part (b)'. The solution text doesn't clearly represent the dataflow graph structure."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/d",
+        "context": "We often use the \"addition node\":\n\na b\n\nc\n\n+\n\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.\n",
+        "context_figures": [],
+        "question": "Interestingly, the full-adder can also be used to add four 1-bit input tokens. This is a natural extension of the full-adder in the same way we extended the half-adder to create the full-adder itself (in part (b)). Implement the 4-input node below using only a minimum number of full-adders (FA) (i.e., the dataflow node you designed in part (b)). Hint: you may use constant input tokens if necessary.",
+        "solution": "FA\n\n1 1\n\n11\n1\n\nFA\n\n1 1\n\n11\n1\n\nFA\n\n1 1\n\n11\n1\n\n0\n\n0",
+        "solution_figures": [
+            "chart_p37_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The solution text doesn't clearly represent the dataflow graph structure."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/e",
+        "context": "We often use the \"addition node\":\n\na b\n\nc\n\n+\n\nto represent the addition of two input tokens. If we think of the tokens as binary numbers, we can model a simple logic circuit using dataflow graphs. Note that a token can be used as an input to only one node. If the same value is needed by more than one node, it first should be replicated using one or more copy nodes, and then each copied token can be supplied to one node only.\n",
+        "context_figures": [],
+        "question": "As it turns out, any n \u2265 3 1-bit input binary adders can be implemented purely using full-adders. Fill in the table below for the minimum number of required full adders to implement an n-input 1-bit adder.",
+        "solution": "n # required full-adders\n\n3 1\n\n4 3\n\n5 3\n\n6 4\n\n7 4\n\n8 7",
+        "solution_figures": [
+            "chart_p37_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The solution figure shows a table, but the solution text doesn't properly format it as a table."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_12/a",
+        "context": "Assume a processor that implements an ISA with eight registers (R0-R7). In this ISA, the main memory is byte-addressable and each word contains 4 bytes. The processor employs a branch predictor. The ISA implements the instructions given in the following table:\n\nInstructions Description\nla Ri, Address load the Address into Ri\nmove Ri, Rj Ri \u2190 Rj\nmove Ri, (Rj) Ri \u2190 Memory[Rj ]\nmove (Ri), Rj Memory[Ri] \u2190 Rj\nli Ri, Imm Ri \u2190 Imm\nadd Ri, Rj , Rk Ri \u2190 Rj + Rk\naddi Ri, Rj , Imm Ri \u2190 Rj + Imm\ncmp Ri, Rj Compare: Set sign flag, if Ri < Rj ; set zero flag, if Ri = Rj\ncmp Ri, (Rj) Compare: Set sign flag, if Ri < Memory[Rj ]; set zero flag, if Ri = Memory[Rj ]\ncmpi Ri, Imm Compare: Set sign flag, if Ri < Imm; set zero flag, if Ri = Imm.\njg label Jump to the target address if both of sign and zero flags are zero.\njnz label Jump to the target address if zero flag is zero.\nhalt Stop executing instructions.\n\nThe processor executes the following program. Answer the questions below related to the accuracy of the branch predictors that the processor can potentially implement.\n\n1 la R0, Array\n2 move R6, R0\n3 li R1, 4\n4 move R5, R1\n5 move R7, R1\n6 move R2, R0\n7 addi R2, R2, 4\n8 Loop:\n9 move R3, (R2)\n10 cmp R3, (R0)\n11 jg Next_Iteration\n12 move R4, (R0)\n13 move (R0), R3\n14 move (R2), R4\n15 Next_Iteration:\n16 addi R0, R0, 4\n17 addi R2, R2, 4\n18 addi R1, R1, -1\n19 cmpi R1, 0\n20 jnz Loop\n21 move R1, R7\n22 addi R5, R5, -1\n23 move R0, R6\n24 move R2, R0\n25 addi R2, R2, 4\n26 cmpi R5, 0\n27 jnz Loop\n28 halt\n29 .data\n30 Array: word 5, 20, 1, -5, 34\n",
+        "context_figures": [
+            "chart_p38_0.png"
+        ],
+        "question": "What would be the prediction accuracy using a global one-bit-history (last-time) branch predictor shared between all the branches? The initial state of the predictor is \"taken\".",
+        "solution": "Answer: 19/36.\n\nNote that initial values of both R1 and R5 are 4; and they change only before the branches in lines 20 and 27 respectively. Both branches follow the pattern of T-T-T-NT, which creates a nested loop.\n\nAt each iteration of the internal loop, adjacent elements (pointed by R0 and R2) are swapped, if Memory[R0] \u2264 Memory[R2]. Then, both R0 and R4 are incremented by 4. So they point to the next element in the next iteration.\n\nTherefore, the code sorts the elements in Array in increasing order.\n\nTable below shows the behavior of each branch through the code. Here T means that the corresponding branch is taken at specified turn, whereas N indicates that it is not taken.\n\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\nLine11 T N N T N N T T\nLine20 T T T N T T T N\nLine27 T T\n\n19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36\nLine11 N T T T T T T T\nLine20 T T T N T T T N\nLine27 T N\n\nOne-bit-history branch predictor suggests that the next branch's behavior will be the same with the last one. Table below shows the predictor states, hits, and misses through the execution.\n\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\nPredictor State T T T N T N T T N T N T N T T\nBranch Behavior T T N T N T T N T N T N T T T\nHit/Miss H H M M M M H M M M M M M H H\n\n16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\nPredictor State T T N T N T T T T T T N T T T\nBranch Behavior T N T N T T T T T T N T T T T\nHit/Miss H M M M M H H H H H M M H H H\n\n31 32 33 34 35 36\nPredictor State T T T T T N\nBranch Behavior T T T T N N\nHit/Miss H H H H M H",
+        "solution_figures": [
+            "chart_p38_0.png",
+            "chart_p38_1.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_12/b",
+        "context": "Assume a processor that implements an ISA with eight registers (R0-R7). In this ISA, the main memory is byte-addressable and each word contains 4 bytes. The processor employs a branch predictor. The ISA implements the instructions given in the following table:\n\nInstructions Description\nla Ri, Address load the Address into Ri\nmove Ri, Rj Ri \u2190 Rj\nmove Ri, (Rj) Ri \u2190 Memory[Rj ]\nmove (Ri), Rj Memory[Ri] \u2190 Rj\nli Ri, Imm Ri \u2190 Imm\nadd Ri, Rj , Rk Ri \u2190 Rj + Rk\naddi Ri, Rj , Imm Ri \u2190 Rj + Imm\ncmp Ri, Rj Compare: Set sign flag, if Ri < Rj ; set zero flag, if Ri = Rj\ncmp Ri, (Rj) Compare: Set sign flag, if Ri < Memory[Rj ]; set zero flag, if Ri = Memory[Rj ]\ncmpi Ri, Imm Compare: Set sign flag, if Ri < Imm; set zero flag, if Ri = Imm.\njg label Jump to the target address if both of sign and zero flags are zero.\njnz label Jump to the target address if zero flag is zero.\nhalt Stop executing instructions.\n\nThe processor executes the following program. Answer the questions below related to the accuracy of the branch predictors that the processor can potentially implement.\n\n1 la R0, Array\n2 move R6, R0\n3 li R1, 4\n4 move R5, R1\n5 move R7, R1\n6 move R2, R0\n7 addi R2, R2, 4\n8 Loop:\n9 move R3, (R2)\n10 cmp R3, (R0)\n11 jg Next_Iteration\n12 move R4, (R0)\n13 move (R0), R3\n14 move (R2), R4\n15 Next_Iteration:\n16 addi R0, R0, 4\n17 addi R2, R2, 4\n18 addi R1, R1, -1\n19 cmpi R1, 0\n20 jnz Loop\n21 move R1, R7\n22 addi R5, R5, -1\n23 move R0, R6\n24 move R2, R0\n25 addi R2, R2, 4\n26 cmpi R5, 0\n27 jnz Loop\n28 halt\n29 .data\n30 Array: word 5, 20, 1, -5, 34\n",
+        "context_figures": [
+            "chart_p38_0.png"
+        ],
+        "question": "What would be the prediction accuracy using a global two-bit-history (two-bit counter) branch predictor shared between all the branches? Assume that the initial state of the two-bit counter is \"weakly taken\". The \"weakly taken\" state transitions to the \"weakly not-taken\" state on misprediction. Similarly, the \"weakly not-taken\" state transitions to the \"weakly taken\" state on misprediction. A correct prediction in one of the \"weak\" states transitions the state to the corresponding \"strong\" state.",
+        "solution": "Answer: 26/36.\n\nExplanation:\nTable below shows the predictor states, hits, and misses through the code. Used abbreviations are as follows: ST: Strongly Taken, WT: Weakly Taken, WN: Weakly Not-taken, SN: Strongly Not-taken.\n\nBranch behavior is the same with question (a), since both of them are shared predictors.\n\n1 2 3 4 5 6 7 8 9 10 11 12 13 14\nPredictor State WT ST ST WT ST WT ST ST WT ST WT ST WT ST\nBranch Behavior T T N T N T T N T N T N T T\nHit/Miss H H M H M H H M H M H M H H\n\n15 16 17 18 19 20 21 22 23 24 25 26 27 28\nPredictor State ST ST ST WT ST WT ST ST ST ST ST ST WT ST\nBranch Behavior T T N T N T T T T T T N T T\nHit/Miss H H M H M H H H H H H M H H\n\n29 30 31 32 33 34 35 36\nPredictor State ST ST ST ST ST ST ST WT\nBranch Behavior T T T T T T N N\nHit/Miss H H H H H H M M",
+        "solution_figures": [
+            "chart_p39_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_12/c",
+        "context": "Assume a processor that implements an ISA with eight registers (R0-R7). In this ISA, the main memory is byte-addressable and each word contains 4 bytes. The processor employs a branch predictor. The ISA implements the instructions given in the following table:\n\nInstructions Description\nla Ri, Address load the Address into Ri\nmove Ri, Rj Ri \u2190 Rj\nmove Ri, (Rj) Ri \u2190 Memory[Rj ]\nmove (Ri), Rj Memory[Ri] \u2190 Rj\nli Ri, Imm Ri \u2190 Imm\nadd Ri, Rj , Rk Ri \u2190 Rj + Rk\naddi Ri, Rj , Imm Ri \u2190 Rj + Imm\ncmp Ri, Rj Compare: Set sign flag, if Ri < Rj ; set zero flag, if Ri = Rj\ncmp Ri, (Rj) Compare: Set sign flag, if Ri < Memory[Rj ]; set zero flag, if Ri = Memory[Rj ]\ncmpi Ri, Imm Compare: Set sign flag, if Ri < Imm; set zero flag, if Ri = Imm.\njg label Jump to the target address if both of sign and zero flags are zero.\njnz label Jump to the target address if zero flag is zero.\nhalt Stop executing instructions.\n\nThe processor executes the following program. Answer the questions below related to the accuracy of the branch predictors that the processor can potentially implement.\n\n1 la R0, Array\n2 move R6, R0\n3 li R1, 4\n4 move R5, R1\n5 move R7, R1\n6 move R2, R0\n7 addi R2, R2, 4\n8 Loop:\n9 move R3, (R2)\n10 cmp R3, (R0)\n11 jg Next_Iteration\n12 move R4, (R0)\n13 move (R0), R3\n14 move (R2), R4\n15 Next_Iteration:\n16 addi R0, R0, 4\n17 addi R2, R2, 4\n18 addi R1, R1, -1\n19 cmpi R1, 0\n20 jnz Loop\n21 move R1, R7\n22 addi R5, R5, -1\n23 move R0, R6\n24 move R2, R0\n25 addi R2, R2, 4\n26 cmpi R5, 0\n27 jnz Loop\n28 halt\n29 .data\n30 Array: word 5, 20, 1, -5, 34\n",
+        "context_figures": [
+            "chart_p38_0.png"
+        ],
+        "question": "What would be the prediction accuracy using a local two-bit-history (two-bit counter) branch predictor that is separate for each branch? The initial state is \"weakly taken\" and the state transitions are the same as in part (b).",
+        "solution": "Answer:\n\n\u2022 L11: 8/16\n\n\u2022 L20: 12/16\n\n\u2022 L27: 3/4\n\n\u2022 All Branches: 23/36\n\nExplanation: Private predictors update their states only based on the behaviors of corresponding branches.\n\n1 2 3 4 5 6 7 8 9 10 11 12\nL11 Predictor State WT ST WT WN WT WN\nL11 Branch Behavior T N N T N N\nL11 Hit/Miss H M M M M H\n\nL20 Predictor State WT ST ST ST WT\nL20 Branch Behavior T T T N T\nL20 Hit/Miss H H H M H\n\nL27 Predictor State WT\nL27 Branch Behavior T\nL27 Hit/Miss H\n\n13 14 15 16 17 18 19 20 21 22 23 24\nL11 Predictor State SN WN WT WN WT\nL11 Branch Behavior T T N T T\nL11 Hit/Miss M M M M H\n\nL20 Predictor State ST ST ST WT ST ST\nL20 Branch Behavior T T N T T T\nL20 Hit/Miss H H M H H H\n\nL27 Predictor State ST\nL27 Branch Behavior T\nL27 Hit/Miss H\n\n25 26 27 28 29 30 31 32 33 34 35 36\nL11 Predictor State ST ST ST ST ST\nL11 Branch Behavior T T T T T\nL11 Hit/Miss H H H H H\n\nL20 Predictor State ST WT ST ST ST\nL20 Branch Behavior N T T T N\nL20 Hit/Miss M H H H M\n\nL27 Predictor State ST ST\nL27 Branch Behavior T N\nL27 Hit/Miss H M",
+        "solution_figures": [
+            "chart_p40_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/a",
+        "context": "Verilog [30 points]\n\nPlease answer the following four questions about Verilog.\n",
+        "context_figures": [
+            "chart_p6_0.png"
+        ],
+        "question": "Does the following code result in a sequential circuit or a combinational circuit? Explain why.\n\n1 module concat (input clk, input data_in1, input data_in2,\n2 output reg [1:0] data_out);\n3 always @ (posedge clk, data_in1)\n4 if (data_in1)\n5 data_out = {data_in1, data_in2};\n6 else if (data_in2)\n7 data_out = {data_in2, data_in1};\n8 endmodule",
+        "solution": "Sequential circuit.\n\nExplanation.\nThis code results in a sequential circuit because data_in2 is not in the sensitivity list, and thus a\nlatch is inferred for data_out.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/b",
+        "context": "Verilog [30 points]\n\nPlease answer the following four questions about Verilog.\n",
+        "context_figures": [
+            "chart_p6_1.png"
+        ],
+        "question": "In the following code, the input clk is a clock signal. What is the hexadecimal value of the output c right after the third positive edge of clk if initially c = 8'hE3 and a = 4'd8 and b = 4'o2 during the entire time?\n\n1 module mod1 (input clk, input [3:0] a, input [3:0] b, output reg [7:0] c);\n2 always @ (posedge clk)\n3 begin\n4 c <= {c, &a, |b};\n5 c[0] <= ^c[7:6];\n6 end\n7 endmodule\n\nPlease answer below. Show your work.",
+        "solution": "8'hC4.\n\nExplanation.\nCycle 1: c <= {c, &a, |b} \u2192 c <= {1110_0011, 0, 1} \u2192 c <= {1000_1101}\n\nc[0] <= \u02c6c[7:6] \u2192 c[0] <= \u02c6{11} \u2192 c[0] <= 0\nAt the first positive edge of clk, c = 8\u2032b1000_1100\nCycle 2: c <= {c, &a, |b} \u2192 c <= {1000_1100, 0, 1} \u2192 c <= {0011_0001}\n\nc[0] <= \u02c6c[7:6] \u2192 c[0] <= \u02c6{10} \u2192 c[0] <= 1\nAt the second positive edge of clk, c = 8\u2032b0011_0001\nCycle 3: c <= {c, &a, |b} \u2192 c <= {0011_0001, 0, 1} \u2192 c <= {1100_0101}\n\nc[0] <= \u02c6c[7:6] \u2192 c[0] <= \u02c6{00} \u2192 c[0] <= 0\nAt the third positive edge of clk, c = 8\u2032b1100_0100\u2192 c = 8\u2032hC4\n\nNote that since the assignments to c are non-blocking, c[7 : 6] in line 5 is not affected by the assignment\nto c in line 4 in the same cycle.",
+        "solution_figures": [
+            "chart_p7_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures reference chart_p6_1.png, but the image shown in the PDF is different from what would be expected. The code in the PDF shows 'module mod1' but the image might not match exactly. Additionally, the solution_figures reference chart_p7_0.png which doesn't appear to be necessary as the solution is textual."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/c",
+        "context": "Verilog [30 points]\n\nPlease answer the following four questions about Verilog.\n",
+        "context_figures": [
+            "chart_p8_0.png"
+        ],
+        "question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how to fix it/them.\n\n1 module 1nn3r ( input [3:0] d, input op, output[1:0] s);\n2 assign s = op ? (d[1:0] - d[3:2]) :\n3 (d[3:2] + d[1:0]);\n4 endmodule\n5\n\n6 module top ( input wire [6:0] instr, input wire op, output reg z);\n7\n\n8 reg[1:0] r1, r2;\n9\n\n10 1nn3r i0 (.instr(instr[1:0]), .op(instr[7]), .z(r1) );\n11 1nn3r i1 (.instr(instr[3:2]), .op(instr[0]), .z(r2) );\n12 assign z = r1 | r2;\n13\n\n14 endmodule",
+        "solution": "The code is not syntactically correct.\n\nExplanation.\n\u2022 Module names cannot start with a number \u2192 '1nn3r' is not a legal module name.\n\u2022 The output signal 'z' has to be declared as a 'wire' but not 'reg'.\n\u2022 'r1' and 'r2' has to be declared as 'wire's.\n\u2022 The module '1nn3r' does not have ports named 'instr' and 'z'. Those need to be changed to 'd' and 's', respectively.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The code in the PDF shows 'module 1nn3r' but in the image it appears as 'module lnn3r' (with a lowercase L instead of the number 1). This discrepancy suggests the image might not be correctly representing the code from the PDF."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/d",
+        "context": "Verilog [30 points]\n\nPlease answer the following four questions about Verilog.\n",
+        "context_figures": [
+            "chart_p9_0.png"
+        ],
+        "question": "Does the following code correctly implement a counter that counts from 1 to 11 by increments of 2 (e.g., 1, 3, 5, 7, 9, 11, 1, 3, ...)? If so, say \"Correct\". If not, correct the code with minimal modification.\n\n1 module odd_counter (clk, count);\n2 wire clk;\n3 reg[2:0] count;\n4 reg[2:0] count_next;\n5\n\n6 always@*\n7 begin\n8 count_next = count;\n9 if(count != 11)\n10 count_next = count_next + 2;\n11 else\n12 count_next <= 1;\n13 end\n14\n\n15 always@(posedge clk)\n16 count <= count_next;\n17 endmodule",
+        "solution": "No, the implementation is not correct.\n\nExplanation.\nThe correct implementation:\n\nmodule odd_counter (clk, count);\nwire clk;\nreg[3:0] count = 1;\nreg[3:0] count_next;\n\nalways@* begin\ncount_next = count;\nif(count != 11)\ncount_next += 2;\nelse\ncount_next = 1;\n\nend\n\nalways@(posedge clk)\ncount <= count_next;\n\nendmodule",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/e",
+        "context": "Verilog [30 points]\n\nPlease answer the following four questions about Verilog.\n",
+        "context_figures": [],
+        "question": "Does the following code correctly instantiate a 4-bit adder? If so, say \"Correct\". If not, correct the code with minimal modification.\n\n1 module adder(input a, input b, input c, output sum, output carry);\n2 assign sum = a ^ b ^ c;\n3 assign carry = (a&b) | (b&c) | (c&a);\n4 endmodule\n5\n\n6\n\n7 module adder_4bits(input [3:0] a, input [3:0] b, output [3:0] sum, carry);\n8 wire [2:0]s;\n9\n\n10 adder u0 (a[0],b[0],1'b0,sum[0],s[0]);\n11 adder u1 (a[1],s[0],b[1],sum[1],s[1]);\n12 adder u2 (a[2],s[1],b[2],sum[2],s[2]);\n13 adder u3 (a[3],s[2],b[3],sum[3],carry);\n14 endmodule",
+        "solution": "Yes.\nExplanation: Even though the wire s is swapped with the input b, the final computation produced by the module adder is still going to be correct since the or and and operations are commutative.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_3/a",
+        "context": "Boolean Algebra [15 points]\n",
+        "context_figures": [],
+        "question": "Find the simplest sum-of-products representation of the following Boolean equation. Show your work step-by-step.\n\nF = B + (A+ C).(A+B + C)",
+        "solution": "F = A+B + C\n\nExplanation:\nF = B + (A.A+A.B +A.C +A.C +B.C + C.C)\nF = B + 0 +A.B + C.(A+A) +B.C + C\nF = (B +A.B) + C.(A+A) + (B.C + C)\nF = (B +A) + C + C.(B + 1)\nF = A+B + C",
+        "solution_figures": [
+            "chart_p10_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution text is correctly extracted, but the image 'chart_p10_0.png' appears to contain the solution steps with overbar notation for negation that isn't represented in the text version. The solution should either include proper notation in the text or rely solely on the image. The current representation could be confusing as the text solution doesn't properly show negation symbols."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_3/b",
+        "context": "Boolean Algebra [15 points]\n",
+        "context_figures": [],
+        "question": "Convert the following Boolean equation so that it only contains NAND operations. Show your work step-by-step.\n\nF = (A+B.C) + C",
+        "solution": "F = (((A.A).(B.C)).C)\n\nExplanation:\n\nF = (((A+B.C) + C))\nF = ((A+B.C).C)\n\nF = ((A+B.C).C)\n\nF = ((A.(B.C)).C)\n\nF = (((A.A).(B.C)).C)",
+        "solution_figures": [
+            "chart_p10_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution text is correctly extracted, but the image 'chart_p10_1.png' appears to contain the solution steps with overbar notation for NAND operations that isn't properly represented in the text version. The solution should either include proper notation in the text or rely solely on the image. The current representation doesn't properly show the NAND operations with appropriate notation."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_3/c",
+        "context": "Boolean Algebra [15 points]\n",
+        "context_figures": [],
+        "question": "Using Boolean algebra, simplify the following min-terms:\n\u2211(3, 5, 7, 11, 13, 15)\n\nShow your work step-by-step.",
+        "solution": "F = D.(B + C)\n\nExplanation:\n\n{3, 5, 7, 11, 13, 15} = {0011, 0101, 0111, 1011, 1101, 1111}\n\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D)\nF = (C.D.((A.B) + (A.B) + (A.B) + (A.B))) + (B.D.((A.C) + (A.C)))\nF = (C.D) + (B.C.D)\nF = D.(C + (B.C))\nF = D.(B + C)",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The solution text is correctly extracted, but it doesn't properly represent the negation symbols that should appear in the Boolean expressions. For example, expressions like 'A.B.C.D' should have overbar notation to indicate which variables are negated based on the binary representations {0011, 0101, etc.}. Without proper notation for negation, the solution is not accurately represented."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/a",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "There is one critical component of an FSM that is missing in this diagram. Please write what is missing in the answer box below.",
+        "solution": "The reset line or indication for initial state.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. The diagram showing states A, B, C, D and their connections should be included in the context_figures field."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/b",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "Of the two FSM types, what type of an FSM is this?",
+        "solution": "Moore",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to determine what type of FSM this is."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/c",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "List one major advantage of each type of state encoding below.",
+        "solution": "One-hot encoding reduces next-state logic\n\nBinary encoding reduces FFs to hold state\n\nOutput encoding reduces the output logic",
+        "solution_figures": [
+            "chart_p12_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution figure chart_p12_0.png appears to be a table showing the advantages of each encoding type, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the table format should be preserved in the solution text."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/d",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "Fully describe the FSM with equations given that the states are encoded with one-hot encoding. Assign state encodings such that numerical values of states increase monotonically for states A through D while using the minimum possible number of bits to represent the states with one-hot encoding. Indicate the values you assign to each state and simplify all equations:",
+        "solution": "State assignments: A: 0001, B: 0010, C: 0100, D: 1000\nNS[3] = TB * TS[3] + TS[2]\nNS[2] = TB * TS[0] + TA * TS[1]\nNS[1] = TB * (TS[0] + TS[3])\nNS[0] = TS[1] * TA\nO[1] = TS[0] + TS[1]\nO[0] = TS[1] + TS[2]",
+        "solution_figures": [
+            "chart_p13_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution figure chart_p13_0.png appears to be showing the equations, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the equation format should be preserved in the solution text. Additionally, the context is missing the FSM diagram that is referenced in the problem statement."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/e",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "Fully describe the FSM with equations given that the states are encoded with binary encoding. Assign state encodings such that numerical values of states increase monotonically for states A through D while using the minimum possible number of bits to represent the states with binary encoding. Indicate the values you assign to each state and simplify all equations:",
+        "solution": "State assignments: A: 00, B: 01, C: 10, D: 11\nNS[1] = TS[1] * (TS[0] * TB + TS[0] TA) + TS[1] * (TS[0] + TS[0] * TB)\nNS[0] = TS[1] * TS[0] * TB + TS[1]\nO[1] = TS[1]\nO[0] = TS[1] XOR TS[0]",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to derive or verify these equations."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/f",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\n",
+        "context_figures": [],
+        "question": "Fully describe the FSM with equations given that the states are encoded with output encoding. Use the minimum possible number of bits to represent the states with output encoding. Indicate the values you assign to each state and simplify all equations:",
+        "solution": "State assignments: A: 10, B: 11, C: 01, D: 00\nNS[1] = TS[1] * TS[0] * TB + TS[1] * TS[0] * TA + TS[1] * TS[0] * TB\n= TS[0] * TB + TS[1] * TS[0] * TA\nNS[0] = TS[1] * TS[0] + TS[1] * TS[0] * TA + TS[1] * TS[0] * TB\n= TS[1] * (TS[0] + TS[0] * TA) + TS[1] * TS[0] * TB\nO[1] = TS[1]\nO[0] = TS[0]",
+        "solution_figures": [
+            "chart_p13_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution figure chart_p13_1.png appears to be showing the equations, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the equation format should be preserved in the solution text. Additionally, the context is missing the FSM diagram that is referenced in the problem statement."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_4/g",
+        "context": "Finite State Machine [50 points]\n\nYou are given the following FSM with two one-bit input signals (TA and TB) and one two-bit output signal (O). You need to implement this FSM, but you are unsure about how you should encode the states. Answer the following questions to get a better sense of the FSM and how the three different types of state encoding we dicussed in the lecture (i.e., one-hot, binary, output) will affect the implementation.\nAssume the following conditions:\n\n\u2022 We can only implement our FSM with 2-input AND gates, 2-input OR gates, and D flip-flops.\n\u2022 2-input AND gates and 2-input OR gates occupy the same area.\n\u2022 D flip-flops occupy 3x the area of 2-input AND gates.",
+        "context_figures": [],
+        "question": "Which state encoding do you choose to implement in order to minimize the total area of this FSM?",
+        "solution": "one-hot: 10 logics 4 FFs binary: 16 logics. 2 FFs output: 10 logics. 2 FFs\nOutput encoding has the least amount of circuitry elements.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to determine the correct answer to this question."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_5/a",
+        "context": "ISA and Microarchitecture [45 points]\n\nYou are asked to complete the following program written in MIPS assembly with a sequence of MIPS instructions that perform 64-bit integer subtraction (A - B). The 64-bit integer to be subtracted from (A) is loaded into registers $4 and $5. Similarly, the 64-bit integer to subtract (B) is loaded into registers $6 and $7. Both numbers are in two's complement form. The upper 32-bit part of each number is stored in the corresponding even-numbered register.\n\nLoop: lw $4, 0($1)\nlw $5, 4($1)\nlw $6, 8($1)\nlw $7, 12($1)\n\n# 64-bit subtraction\n# goes here\n\naddi $1, $1, 16\nj Loop\n",
+        "context_figures": [
+            "chart_p18_0.png"
+        ],
+        "question": "Complete the above program to perform the 64-bit subtraction explained above using at most 4 MIPS instructions. (Note: A summary of the MIPS ISA is provided at the end of this question.)",
+        "solution": "A possible sequence of instructions is as follows:\n\nsubu $3, $5, $7 # Subtract the least significant part\nsltu $2, $5, $7 # Check if borrowing is needed\nadd $2, $6, $2 # Add borrow\nsub $2, $4, $2 # Subtract the most significant part",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure since it's not properly extracted or referenced in the original PDF. The MIPS instruction summary is textually mentioned but not included in the context."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_5/b",
+        "context": "ISA and Microarchitecture [45 points]\n\nYou are asked to complete the following program written in MIPS assembly with a sequence of MIPS instructions that perform 64-bit integer subtraction (A - B). The 64-bit integer to be subtracted from (A) is loaded into registers $4 and $5. Similarly, the 64-bit integer to subtract (B) is loaded into registers $6 and $7. Both numbers are in two's complement form. The upper 32-bit part of each number is stored in the corresponding even-numbered register.\n\nLoop: lw $4, 0($1)\nlw $5, 4($1)\nlw $6, 8($1)\nlw $7, 12($1)\n\n# 64-bit subtraction\n# goes here\n\naddi $1, $1, 16\nj Loop\nAssume that the program executes on a pipelined processor, which does not implement interlocking in hardware. The pipeline assumes that all instructions are independent and relies on the compiler to properly order instructions such that there is sufficient distance between dependent instructions. The compiler either moves other independent instructions between two dependent instructions, if it can find such instructions, or otherwise, inserts nops. There is no internal register file forwarding (i.e., if an instruction writes into a register, another instruction cannot access the new value of the register until the next cycle). The pipeline does not implement any data forwarding. The datapath has the following five pipeline stages, similarly to the basic pipelined MIPS processor we discussed in lecture. Registers are accessed in the Decode stage. The execution stage contains one ALU.\n\n(a) Fetch (one clock cycle)\n\n(b) Decode (one clock cycle)\n\n(c) Execute (one clock cycle)\n\n(d) Memory (one clock cycle)\n\n(e) Write-back (one clock cycle).",
+        "context_figures": [
+            "chart_p18_0.png"
+        ],
+        "question": "Reorder the existing instructions and insert as few as possible nop instructions to correctly execute the entire program that you completed in part (a) on the given pipelined processor. Show all the instructions necessary to correctly execute the entire program.",
+        "solution": "We reoder the lw instructions to first load the data that corresponds to the lower parts of the two numbers since we need the lower part first. We also reorder the completely independent addi instruction to hide part of the load latency. We insert sufficient number of nop instructions until the register is written before the dependent instruction reads the same register in the decode stage.\n\nThis is the resulting code:\n\nLoop: lw $5, 4($1)\nlw $7, 12($1)\nlw $4, 0($1)\nlw $6, 8($1)\naddi $1, $1, 16\nsltu $2, $5, $7\nsubu $3, $5, $7\nnop\nnop\nadd $2, $6, $2\nnop\nnop\nnop\nsub $2, $4, $2\nj Loop",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure since it's not properly extracted or referenced in the original PDF. Additionally, the context field has formatting issues where the pipeline stages are labeled as (a), (b), (c), etc., which could be confusing since part (a) is a different question."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_5/c",
+        "context": "ISA and Microarchitecture [45 points]\n\nYou are asked to complete the following program written in MIPS assembly with a sequence of MIPS instructions that perform 64-bit integer subtraction (A - B). The 64-bit integer to be subtracted from (A) is loaded into registers $4 and $5. Similarly, the 64-bit integer to subtract (B) is loaded into registers $6 and $7. Both numbers are in two's complement form. The upper 32-bit part of each number is stored in the corresponding even-numbered register.\n\nLoop: lw $4, 0($1)\nlw $5, 4($1)\nlw $6, 8($1)\nlw $7, 12($1)\n\n# 64-bit subtraction\n# goes here\n\naddi $1, $1, 16\nj Loop\n",
+        "context_figures": [
+            "chart_p18_0.png"
+        ],
+        "question": "What is the Cycles Per Instruction (CPI) of the program when executed on the pipelined processor provided in part (b)?",
+        "solution": "CPI \u2248 1.5\n\nExplanation.\nSince the code is an infinite loop, the number of cycles to fill the pipeline becomes negligible after a large number of iterations. Thus, we can consider that the throughput is one instruction every cycle. We count the number of cycles for one loop iteration. It is 15 for 10 instructions. This way, CPI \u2248 15/10 = 1.5.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure. Additionally, the context is incomplete as it doesn't include the description of the pipelined processor from part (b) that is necessary to answer this question."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_5/d",
+        "context": "ISA and Microarchitecture [45 points]\n\nYou are asked to complete the following program written in MIPS assembly with a sequence of MIPS instructions that perform 64-bit integer subtraction (A - B). The 64-bit integer to be subtracted from (A) is loaded into registers $4 and $5. Similarly, the 64-bit integer to subtract (B) is loaded into registers $6 and $7. Both numbers are in two's complement form. The upper 32-bit part of each number is stored in the corresponding even-numbered register.\n\nLoop: lw $4, 0($1)\nlw $5, 4($1)\nlw $6, 8($1)\nlw $7, 12($1)\n\n# 64-bit subtraction\n# goes here\n\naddi $1, $1, 16\nj Loop\n",
+        "context_figures": [
+            "chart_p18_0.png"
+        ],
+        "question": "Now, assume a processor with a multi-cycle datapath. In this multi-cycle datapath, each instruction type is executed in the following number of cycles: 4 cycles for R-type, 5 cycles for load, 4 cycles for store, and 3 cycles for jump. What is the CPI of the program in part (a) when executed on this multi-cycle datapath? Assuming the multi-cycle datapath runs at the same clock frequency as the pipelined datapath in part (b), how much speedup does pipelining provide?",
+        "solution": "CPI:\n\nCPI = 4.3\n\nExplanation.\nFor the multi-cycle datapath, we have to take into account the number of cycles\nfor each instruction type: 4 cycles for R-type, 5 cycles for load, 4 cycles for store,\nand 3 cycles for jump.\nThus, CPI = (4\u00d75+5\u00d74+3\u00d71)/10 = 4.3.\n\nSpeedup:\n\nPipelining provides 287% speedup.\n\nExplanation.\nWe calculate the speedup as follows:\nSpeedup = CPImulti\u2212cycle/CPIpipelined = 4.3/1.5 = 2.87.",
+        "solution_figures": [],
+        "correctly_parsed": "false",
+        "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure. Additionally, the context is incomplete as it doesn't include the description of the pipelined processor from part (b) that is necessary to answer this question and make the comparison for the speedup calculation."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/a",
+        "context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined\n\nMIPS processor we discussed in lectures, and one ALU :\n\n1. Fetch (one clock cycle)\n\n2. Decode (one clock cycle)\n\n3. Execute (one clock cycle)\n\n4. Memory (one clock cycle)\n\n5. Write-back (one clock cycle).\n\nMachine I does not implement interlocking in hardware. It assumes all instructions are independent\nand relies on the compiler to order instructions such that there is sufficient distance between depen-\ndent instructions. The compiler either moves other independent instructions between two dependent\ninstructions, if it can find such instructions, or otherwise, inserts nops. Assume internal register file\nforwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan correctly access the updated value of the same register in the next half of the cycle). Assume\nthat the processor predicts all branches as always-taken.\n\nMachine II implements data forwarding in hardware. On detection of a flow dependence, it can forward\nan operand from the memory stage or from the write-back stage to the execute stage. The load\ninstruction (lw) can only be forwarded from the write-back stage because data becomes available in\nthe memory stage but not in the execute stage like for the other instructions. Assume internal register\nfile forwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan access the updated value of the same register in the next half of the cycle). The compiler does\nnot reorder instructions. Assume that the processor predicts all branches as always-taken.\nConsider the following code segment:\n\nCopy: lw $2, 100($5)\nsw $2, 200($6)\naddi $1, $1, 1\nbne $1, $25, Copy\n\nInitially, $5 = 0, $6 = 0, $1 = 0, and $25 = 25.\n",
+        "context_figures": [],
+        "question": "When the given code segment is executed on Machine I, the compiler has to reorder\ninstructions and insert nops if needed. Write the resulting code that has minimal modifications\nfrom the original.",
+        "solution": "Copy: lw $2, 100($5)\n\naddi $1, $1, 1\n\nnop\n\nsw $2, 200($6)\n\nbne $1, $25, Copy",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/b",
+        "context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined\n\nMIPS processor we discussed in lectures, and one ALU :\n\n1. Fetch (one clock cycle)\n\n2. Decode (one clock cycle)\n\n3. Execute (one clock cycle)\n\n4. Memory (one clock cycle)\n\n5. Write-back (one clock cycle).\n\nMachine I does not implement interlocking in hardware. It assumes all instructions are independent\nand relies on the compiler to order instructions such that there is sufficient distance between depen-\ndent instructions. The compiler either moves other independent instructions between two dependent\ninstructions, if it can find such instructions, or otherwise, inserts nops. Assume internal register file\nforwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan correctly access the updated value of the same register in the next half of the cycle). Assume\nthat the processor predicts all branches as always-taken.\n\nMachine II implements data forwarding in hardware. On detection of a flow dependence, it can forward\nan operand from the memory stage or from the write-back stage to the execute stage. The load\ninstruction (lw) can only be forwarded from the write-back stage because data becomes available in\nthe memory stage but not in the execute stage like for the other instructions. Assume internal register\nfile forwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan access the updated value of the same register in the next half of the cycle). The compiler does\nnot reorder instructions. Assume that the processor predicts all branches as always-taken.\nConsider the following code segment:\n\nCopy: lw $2, 100($5)\nsw $2, 200($6)\naddi $1, $1, 1\nbne $1, $25, Copy\n\nInitially, $5 = 0, $6 = 0, $1 = 0, and $25 = 25.\n",
+        "context_figures": [],
+        "question": "When the given code segment is executed on Machine II, dependencies between instruc-\ntions are resolved in hardware. Explain when data is forwarded and which instructions are stalled\nand when they are stalled.",
+        "solution": "In every iteration, data are forwarded for sw and for bne. The instruction sw is dependent on lw, so\nit is stalled one cycle in every iteration",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/c",
+        "context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined\n\nMIPS processor we discussed in lectures, and one ALU :\n\n1. Fetch (one clock cycle)\n\n2. Decode (one clock cycle)\n\n3. Execute (one clock cycle)\n\n4. Memory (one clock cycle)\n\n5. Write-back (one clock cycle).\n\nMachine I does not implement interlocking in hardware. It assumes all instructions are independent\nand relies on the compiler to order instructions such that there is sufficient distance between depen-\ndent instructions. The compiler either moves other independent instructions between two dependent\ninstructions, if it can find such instructions, or otherwise, inserts nops. Assume internal register file\nforwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan correctly access the updated value of the same register in the next half of the cycle). Assume\nthat the processor predicts all branches as always-taken.\n\nMachine II implements data forwarding in hardware. On detection of a flow dependence, it can forward\nan operand from the memory stage or from the write-back stage to the execute stage. The load\ninstruction (lw) can only be forwarded from the write-back stage because data becomes available in\nthe memory stage but not in the execute stage like for the other instructions. Assume internal register\nfile forwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan access the updated value of the same register in the next half of the cycle). The compiler does\nnot reorder instructions. Assume that the processor predicts all branches as always-taken.\nConsider the following code segment:\n\nCopy: lw $2, 100($5)\nsw $2, 200($6)\naddi $1, $1, 1\nbne $1, $25, Copy\n\nInitially, $5 = 0, $6 = 0, $1 = 0, and $25 = 25.\n",
+        "context_figures": [],
+        "question": "Calculate the machine code size of the code segments executed on Machine I (part (a))\nand Machine II (part (b)).",
+        "solution": "Machine I: Machine I - 20 bytes (because of the additional nop)\n\nMachine II: Machine II - 16 bytes",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/d",
+        "context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined\n\nMIPS processor we discussed in lectures, and one ALU :\n\n1. Fetch (one clock cycle)\n\n2. Decode (one clock cycle)\n\n3. Execute (one clock cycle)\n\n4. Memory (one clock cycle)\n\n5. Write-back (one clock cycle).\n\nMachine I does not implement interlocking in hardware. It assumes all instructions are independent\nand relies on the compiler to order instructions such that there is sufficient distance between depen-\ndent instructions. The compiler either moves other independent instructions between two dependent\ninstructions, if it can find such instructions, or otherwise, inserts nops. Assume internal register file\nforwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan correctly access the updated value of the same register in the next half of the cycle). Assume\nthat the processor predicts all branches as always-taken.\n\nMachine II implements data forwarding in hardware. On detection of a flow dependence, it can forward\nan operand from the memory stage or from the write-back stage to the execute stage. The load\ninstruction (lw) can only be forwarded from the write-back stage because data becomes available in\nthe memory stage but not in the execute stage like for the other instructions. Assume internal register\nfile forwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan access the updated value of the same register in the next half of the cycle). The compiler does\nnot reorder instructions. Assume that the processor predicts all branches as always-taken.\nConsider the following code segment:\n\nCopy: lw $2, 100($5)\nsw $2, 200($6)\naddi $1, $1, 1\nbne $1, $25, Copy\n\nInitially, $5 = 0, $6 = 0, $1 = 0, and $25 = 25.\n",
+        "context_figures": [],
+        "question": "Calculate the number of cycles it takes to execute the code segment on Machine I and\nMachine II.",
+        "solution": "Machine I:\n\nThe compiler reorders instructions and places one nop. This is the execution\ntimeline of the first iteration:\n1 2 3 4 5 6 7 8 9\nF D E M W\n\nF D E M W\nN N N N N\n\nF D E M W\nF D E M W\n\n9 cycles for one iteration. As there are 5 instructions in each iteration and 25\niterations, the total number of cycles is 129 cycles.\n\nMachine II:\n\nThe machine stalls sw one cycle in the decode stage. This is the execution\ntimeline of the first iteration:\n1 2 3 4 5 6 7 8 9\nF D E M W\n\nF D D E M W\nF F D E M W\n\nF D E M W\n9 cycles for one iteration. As there are 4 instructions in each iteration and 25\niterations, and one stall cycle in each iteration, the total number of cycles is\n129 cycles.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/e",
+        "context": "Consider two pipelined machines implementing MIPS ISA, Machine I and Machine II:\nBoth machines have the following five pipeline stages, very similarly to the basic 5-stage pipelined\n\nMIPS processor we discussed in lectures, and one ALU :\n\n1. Fetch (one clock cycle)\n\n2. Decode (one clock cycle)\n\n3. Execute (one clock cycle)\n\n4. Memory (one clock cycle)\n\n5. Write-back (one clock cycle).\n\nMachine I does not implement interlocking in hardware. It assumes all instructions are independent\nand relies on the compiler to order instructions such that there is sufficient distance between depen-\ndent instructions. The compiler either moves other independent instructions between two dependent\ninstructions, if it can find such instructions, or otherwise, inserts nops. Assume internal register file\nforwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan correctly access the updated value of the same register in the next half of the cycle). Assume\nthat the processor predicts all branches as always-taken.\n\nMachine II implements data forwarding in hardware. On detection of a flow dependence, it can forward\nan operand from the memory stage or from the write-back stage to the execute stage. The load\ninstruction (lw) can only be forwarded from the write-back stage because data becomes available in\nthe memory stage but not in the execute stage like for the other instructions. Assume internal register\nfile forwarding (an instruction writes into a register in the first half of a cycle and another instruction\ncan access the updated value of the same register in the next half of the cycle). The compiler does\nnot reorder instructions. Assume that the processor predicts all branches as always-taken.\nConsider the following code segment:\n\nCopy: lw $2, 100($5)\nsw $2, 200($6)\naddi $1, $1, 1\nbne $1, $25, Copy\n\nInitially, $5 = 0, $6 = 0, $1 = 0, and $25 = 25.\n",
+        "context_figures": [],
+        "question": "Which machine is faster for this code segment? Explain.",
+        "solution": "For this code segment, both machines take the same number of cycles. We cannot say which one is\nfaster, since we do not know the clock frequency.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_7/a",
+        "context": "Out-of-order Execution [45 points]\n\nIn this problem, we will give you the state of the Register Alias Table (RAT) and Reservation Stations\n(RS) for an out-of-order execution engine that employs Tomasulo's algorithm, as we discussed in lectures.\nYour first task is to determine the original sequence of four instructions in program order.\n\nThe out-of-order machine in this problem behaves as follows:\n\u2022 The frontend of the machine has a one-cycle fetch stage and a one-cycle decode stage. The machine\ncan fetch one instruction per cycle, and can decode one instruction per cycle.\n\u2022 The machine executes only register-type instructions, e.g., OP Rdest \u2190 Rsrc1, Rsrc2., where OP can\nbe ADD or MUL.\n\u2022 The machine dispatches one instruction per cycle into the reservation stations, in program order.\nDispatch occurs during the decode stage.\n\u2022 An instruction always allocates the first reservation station that is available (in top-to-bottom order)\nat the required functional unit.\n\u2022 When an instruction in a reservation station finishes executing, the reservation station is cleared.\n\u2022 The adder and multiplier are not pipelined. An ADD operation takes 2 cycles. A multiply operation\ntakes 3 cycles.\n\u2022 The result of an addition and multiplication is broadcast to the reservation station entries and the\nRAT in the writeback stage. A dependent instruction can begin execution in the next cycle after the\nwriteback if it has all of its operands available in the reservation station entry. There is only one\nbroadcast bus, and thus multiple instructions cannot broadcast in the same cycle.\n\u2022 When multiple instructions are ready to execute at a functional unit at the same cycle, the oldest\nready instruction is chosen to be executed first.\nInitially, the machine is empty. Four instructions then are fetched, decoded, and dispatched into\nreservation stations. Pictured below is the state of the machine when the final instruction has been\ndispatched into a reservation station:\n",
+        "context_figures": [
+            "chart_p22_2.png",
+            "chart_p22_0.png",
+            "chart_p22_1.png"
+        ],
+        "question": "Give the four instructions that have been dispatched into the machine, in program order.\nThe source registers for the first instruction can be specified in either order. Give instructions in the\nfollowing format: \"opcode destination \u21d0 source1, source2.\"",
+        "solution": "MUL R1 \u21d0 R1 , R1\n\nADD R1 \u21d0 R1 , R2\n\nADD R4 \u21d0 R1 , R1\n\nMUL R3 \u21d0 R1 , R4",
+        "solution_figures": [
+            "chart_p22_0.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution figure 'chart_p22_0.png' appears to be incorrectly assigned. This image is already used in the context_figures, which means it's showing the initial state of the machine rather than being part of the solution. The solution for part (a) should be text-only without any figures."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_7/b",
+        "context": "Out-of-order Execution [45 points]\n\nIn this problem, we will give you the state of the Register Alias Table (RAT) and Reservation Stations\n(RS) for an out-of-order execution engine that employs Tomasulo's algorithm, as we discussed in lectures.\nYour first task is to determine the original sequence of four instructions in program order.\n\nThe out-of-order machine in this problem behaves as follows:\n\u2022 The frontend of the machine has a one-cycle fetch stage and a one-cycle decode stage. The machine\ncan fetch one instruction per cycle, and can decode one instruction per cycle.\n\u2022 The machine executes only register-type instructions, e.g., OP Rdest \u2190 Rsrc1, Rsrc2., where OP can\nbe ADD or MUL.\n\u2022 The machine dispatches one instruction per cycle into the reservation stations, in program order.\nDispatch occurs during the decode stage.\n\u2022 An instruction always allocates the first reservation station that is available (in top-to-bottom order)\nat the required functional unit.\n\u2022 When an instruction in a reservation station finishes executing, the reservation station is cleared.\n\u2022 The adder and multiplier are not pipelined. An ADD operation takes 2 cycles. A multiply operation\ntakes 3 cycles.\n\u2022 The result of an addition and multiplication is broadcast to the reservation station entries and the\nRAT in the writeback stage. A dependent instruction can begin execution in the next cycle after the\nwriteback if it has all of its operands available in the reservation station entry. There is only one\nbroadcast bus, and thus multiple instructions cannot broadcast in the same cycle.\n\u2022 When multiple instructions are ready to execute at a functional unit at the same cycle, the oldest\nready instruction is chosen to be executed first.\nInitially, the machine is empty. Four instructions then are fetched, decoded, and dispatched into\nreservation stations. Pictured below is the state of the machine when the final instruction has been\ndispatched into a reservation station:\n",
+        "context_figures": [
+            "chart_p22_2.png",
+            "chart_p22_0.png",
+            "chart_p22_1.png"
+        ],
+        "question": "Now assume that the machine flushes all instructions out of the pipeline and restarts fetch from the first instruction in the sequence above. Show the full pipeline timing diagram below for\nthe sequence of four instructions that you determined above, from the fetch of the first instruction\nto the writeback of the last instruction. Assume that the machine stops fetching instructions after\nthe fourth instruction.\n\nAs we saw in lectures, use \"F\" for fetch, \"D\" for decode, \"En\" to signify the nth cycle of execution\nfor an instruction, and \"W\" to signify writeback. Fill in each instruction as well. You may or may\nnot need all columns shown.",
+        "solution": "Cycle: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n\nMUL R1 \u2190 R1, R1 F D E1 E2 E3 W\n\nADD R1 \u2190 R1, R2 F D E1 E2 W\n\nADD R4 \u2190 R1, R1 F D E1 E2 W\n\nMUL R3 \u2190 R1, R4 F D E1 E2 E3 W",
+        "solution_figures": [
+            "chart_p22_1.png"
+        ],
+        "correctly_parsed": "false",
+        "reasoning": "The solution figure 'chart_p22_1.png' appears to be incorrectly assigned. This image is already used in the context_figures, which means it's showing the initial state of the machine rather than being part of the solution. The solution for part (b) should be the timing diagram text without any figures."
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_7/c",
+        "context": "Out-of-order Execution [45 points]\n\nIn this problem, we will give you the state of the Register Alias Table (RAT) and Reservation Stations\n(RS) for an out-of-order execution engine that employs Tomasulo's algorithm, as we discussed in lectures.\nYour first task is to determine the original sequence of four instructions in program order.\n\nThe out-of-order machine in this problem behaves as follows:\n\u2022 The frontend of the machine has a one-cycle fetch stage and a one-cycle decode stage. The machine\ncan fetch one instruction per cycle, and can decode one instruction per cycle.\n\u2022 The machine executes only register-type instructions, e.g., OP Rdest \u2190 Rsrc1, Rsrc2., where OP can\nbe ADD or MUL.\n\u2022 The machine dispatches one instruction per cycle into the reservation stations, in program order.\nDispatch occurs during the decode stage.\n\u2022 An instruction always allocates the first reservation station that is available (in top-to-bottom order)\nat the required functional unit.\n\u2022 When an instruction in a reservation station finishes executing, the reservation station is cleared.\n\u2022 The adder and multiplier are not pipelined. An ADD operation takes 2 cycles. A multiply operation\ntakes 3 cycles.\n\u2022 The result of an addition and multiplication is broadcast to the reservation station entries and the\nRAT in the writeback stage. A dependent instruction can begin execution in the next cycle after the\nwriteback if it has all of its operands available in the reservation station entry. There is only one\nbroadcast bus, and thus multiple instructions cannot broadcast in the same cycle.\n\u2022 When multiple instructions are ready to execute at a functional unit at the same cycle, the oldest\nready instruction is chosen to be executed first.\nInitially, the machine is empty. Four instructions then are fetched, decoded, and dispatched into\nreservation stations. Pictured below is the state of the machine when the final instruction has been\ndispatched into a reservation station:\n",
+        "context_figures": [
+            "chart_p22_2.png",
+            "chart_p22_0.png",
+            "chart_p22_1.png"
+        ],
+        "question": "Finally, show the state of the RAT and reservation stations at the end of the 12th cycle of execution in the figure below. Complete all blank parts.",
+        "solution": "Reg V Tag Value\n\nRAT\n\nR0\n\nR1\n\nR2\n\nR3\n\nR4\n\nR5\n\n1\n\n0\n\n1\n\n1\n\nE\n\n33\n\n8\u2013\n\u2013\n66\n\n\u2013\n\n\u2013\u2013\u2013\n\n\u2013\u2013\n\u2013\n\n\u2013\n\nID\n\n+\n\nV Tag Value V Tag Value\n\nA\n\nB\n\nC \u2013 \u2013 \u2013 \u2013\u2013 \u2013\n\n\u2013 \u2013 \u2013 \u2013\u2013 \u2013\n\u2013 \u2013 \u2013 \u2013\u2013 \u2013\n\nID\n\n\u00d7 \n\nV Tag Value V Tag Value\n\nD \u2013 \u2013 \nE 1 133 66\nF \u2013 \u2013 \u2013 \u2013\u2013\n\n\u2013 \u2013 \u2013\u2013\n\n\u2013\n\u2013 \u2013",
+        "solution_figures": [
+            "chart_p23_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/a",
+        "context": "Vector Processing [40 points]\n\nAssume a vector processor that implements the following ISA:\n\nOpcode Operands Latency (cycles) Description\n\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\n\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\n\nVLD Vi, #A 100, pipelined Vi \u2190Mem[Address]\n\nVST Vi, #A 100, pipelined Mem[Address]\u2190 Vi\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\nVDIV Vi, Vj , Vk 20, pipelined Vi \u2190 Vj/Vk\n\nAssume the following:\n\n\u2022 The processor has an in-order pipeline.\n\n\u2022 The size of a vector element is 4 bytes.\n\n\u2022 Vst and Vln are 10-bit registers.\n\n\u2022 The processor does not support chaining between vector functional units.\n\n\u2022 The main memory has N banks.\n\n\u2022 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at address A + 4 maps\nto bank (B + 1)%N , where % is the modulo operator and N is the number of banks. N is not\nnecessarily a power of two.\n\n\u2022 The memory is byte addressable and the address space is represented using 32 bits.\n\n\u2022 Vector elements are stored in memory in 4-byte-aligned manner.\n\n\u2022 Each memory bank has a 4KB row buffer.\n\n\u2022 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\u2022 There are separate functional units for executing VLD and VST instructions.\n",
+        "context_figures": [
+            "chart_p25_0.png"
+        ],
+        "question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 1? Explain.",
+        "solution": "100 banks (because the latency of VLD and VST instructions is 100 cycles)",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/b",
+        "context": "Vector Processing [40 points]\n\nAssume a vector processor that implements the following ISA:\n\nOpcode Operands Latency (cycles) Description\n\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\n\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\n\nVLD Vi, #A 100, pipelined Vi \u2190Mem[Address]\n\nVST Vi, #A 100, pipelined Mem[Address]\u2190 Vi\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\nVDIV Vi, Vj , Vk 20, pipelined Vi \u2190 Vj/Vk\n\nAssume the following:\n\n\u2022 The processor has an in-order pipeline.\n\n\u2022 The size of a vector element is 4 bytes.\n\n\u2022 Vst and Vln are 10-bit registers.\n\n\u2022 The processor does not support chaining between vector functional units.\n\n\u2022 The main memory has N banks.\n\n\u2022 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at address A + 4 maps\nto bank (B + 1)%N , where % is the modulo operator and N is the number of banks. N is not\nnecessarily a power of two.\n\n\u2022 The memory is byte addressable and the address space is represented using 32 bits.\n\n\u2022 Vector elements are stored in memory in 4-byte-aligned manner.\n\n\u2022 Each memory bank has a 4KB row buffer.\n\n\u2022 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\u2022 There are separate functional units for executing VLD and VST instructions.\n",
+        "context_figures": [
+            "chart_p25_0.png"
+        ],
+        "question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 2? Explain.",
+        "solution": "101 banks.\nExplanation. To avoid stalls, we need to ensure that consecutive vector elements access 100 different banks.\nWith a vector stride of 2, consecutive elements of a vector will map to every other bank. For example, if the first element maps to bank 0, the next element will map to bank 2, and so on.\nWith 100 banks, the 51st element of a vector will map to bank 100%100 = 0, conflicting with the first element of the vector.\nHowevert, with 101 banks, the 51st element will map to bank 1, which was skipped by the previous vector elements.\n\nLet's assume there are 102 elements in a vector and the first elements accesses bank 0. The 101 banks will be accessed in the following order:\n\n(0, 2, ..., 100, 102, 104, ..., 200, 202)%101 = (0, 2, ..., 100, 1, 3, ..., 99, 0)\nWe can see that none of the elements conflict in the DRAM banks. Note that, when the last vector elements accesses bank 0, the bank is already available for a new access because the 100 cycle latency of accessing the first element is overlapped by accessing the other 101 elements.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/c",
+        "context": "Vector Processing [40 points]\n\nAssume a vector processor that implements the following ISA:\n\nOpcode Operands Latency (cycles) Description\n\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\n\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\n\nVLD Vi, #A 100, pipelined Vi \u2190Mem[Address]\n\nVST Vi, #A 100, pipelined Mem[Address]\u2190 Vi\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\nVDIV Vi, Vj , Vk 20, pipelined Vi \u2190 Vj/Vk\n\nAssume the following:\n\n\u2022 The processor has an in-order pipeline.\n\n\u2022 The size of a vector element is 4 bytes.\n\n\u2022 Vst and Vln are 10-bit registers.\n\n\u2022 The processor does not support chaining between vector functional units.\n\n\u2022 The main memory has N banks.\n\n\u2022 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at address A + 4 maps\nto bank (B + 1)%N , where % is the modulo operator and N is the number of banks. N is not\nnecessarily a power of two.\n\n\u2022 The memory is byte addressable and the address space is represented using 32 bits.\n\n\u2022 Vector elements are stored in memory in 4-byte-aligned manner.\n\n\u2022 Each memory bank has a 4KB row buffer.\n\n\u2022 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\u2022 There are separate functional units for executing VLD and VST instructions.\nAssume:\n\n\u2022 A machine that has a memory with as many banks as you found is part (a).\n\u2022 The vector stride is set to 1.\n\u2022 The value of the vector length is set to M (but we do not know M)\n\nThe machine executes the following program:\n\nVLD V1 \u2190 A\nVLD V2 \u2190 (A + 32768)\nVADD V3 \u2190 V1, V1\nVMUL V4 \u2190 V2, V3\nVST (A + 32768*2) \u2190 V4",
+        "context_figures": [
+            "chart_p25_0.png"
+        ],
+        "question": "The total number of cycles needed to complete the execution of the above program is 4306. What is M?",
+        "solution": "M = 1000\n\nExplanation.\n\nVLD |-100-|--(M-1)--|\nVLD |-100-|--(M-1)--|\nVADD |-5-|--(M-1)--|\nVMUL |-10-|--(M-1)--|\nVST |-100-|--(M-1)--|\n\n(M + 100\u2212 1) + 100 + (M \u2212 1) + 10 + (M \u2212 1) + 100 + (M \u2212 1)\n= 306 + 4 \u2217M = 4306 \u2192 M = 1000 elements",
+        "solution_figures": [
+            "chart_p26_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/d",
+        "context": "Vector Processing [40 points]\n\nAssume a vector processor that implements the following ISA:\n\nOpcode Operands Latency (cycles) Description\n\nSET Vst, #n 1 Vst \u2190 n (Vst = Vector Stride Register)\n\nSET Vln, #n 1 Vln \u2190 n (Vln = Vector Length Register)\n\nVLD Vi, #A 100, pipelined Vi \u2190Mem[Address]\n\nVST Vi, #A 100, pipelined Mem[Address]\u2190 Vi\n\nVMUL Vi, Vj , Vk 10, pipelined Vi \u2190 Vj \u2217 Vk\n\nVADD Vi, Vj , Vk 5, pipelined Vi \u2190 Vj + Vk\n\nVDIV Vi, Vj , Vk 20, pipelined Vi \u2190 Vj/Vk\n\nAssume the following:\n\n\u2022 The processor has an in-order pipeline.\n\n\u2022 The size of a vector element is 4 bytes.\n\n\u2022 Vst and Vln are 10-bit registers.\n\n\u2022 The processor does not support chaining between vector functional units.\n\n\u2022 The main memory has N banks.\n\n\u2022 Vector elements stored in consecutive memory addresses are interleaved between the memory banks.\nE.g., if a vector element at address A maps to bank B, a vector element at address A + 4 maps\nto bank (B + 1)%N , where % is the modulo operator and N is the number of banks. N is not\nnecessarily a power of two.\n\n\u2022 The memory is byte addressable and the address space is represented using 32 bits.\n\n\u2022 Vector elements are stored in memory in 4-byte-aligned manner.\n\n\u2022 Each memory bank has a 4KB row buffer.\n\n\u2022 Each memory bank has a single read and a single write port so that a load and a store operation\ncan be performed simultaneously.\n\n\u2022 There are separate functional units for executing VLD and VST instructions.\n",
+        "context_figures": [
+            "chart_p25_0.png"
+        ],
+        "question": "If we modify the vector processor to support chaining, how many cycles would be required to execute the same program in part (c)? Explain.",
+        "solution": "VLD |--100--|--(VLEN-1)--|\nVLD |---100---|---(VLEN-1)---|\nVADD |-1-|-5-|---(VLEN-1)---| (this is delayed because the processor\nexecutes the instructions in order)\nVMUL |-10-|---(VLEN-1)---|\nVST |-100-|---(VLEN-1)---|\n\n100 + (VLEN-1) + 100 + 10 + 100 + (VLEN-1) = 310 + 2*1000 - 2 = 2308 cycles",
+        "solution_figures": [
+            "chart_p27_0.png"
+        ],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/a",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "How many warps does it take to execute this program?",
+        "solution": "33 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = d#Total_threads#Warp_size e,\n\nwhere\n#Total_threads = 1025 = 210 + 1 (i.e., one thread per loop iteration),\n\nand\n#Warp_size = 32 = 25 (given).\n\nThus, the number of warps needed to run this program is:\n#Warps = d 210+125 e = 25 + 1 = 33.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/b",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "What is the maximum possible SIMD utilization of this program? (Hint: The warp scheduler does not issue instructions when no threads are active).",
+        "solution": "1025/1056.\n\nExplanation:\nEven though all active threads in a warp follow the same execution path, the last warp will only have one active thread.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/c",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer.)",
+        "solution": "For every 32 consecutive elements of A, every element should be lower than 33 (if), or greater than or equal to 33 (else). (NOTE: The solution is correct if both cases are given.)",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/d",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "What is the minimum possible SIMD utilization of this program?",
+        "solution": "1025/1568.\n\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nThen, part of the threads in each warp executes Instruction 2 and the other part executes Instruction 3. We consider that Instruction 2 is executed by \u03b1 threads in each warp (except the last warp), where 0 < \u03b1 \u2264 32, and Instruction 3 is executed by the remaining 32\u2212\u03b1 threads.\nThe only active thread in the last warp executes either Instruction 2 or Instruction 3. The other instruction is not issued for this warp.\n\nThe minimum SIMD utilization sums to (1025+\u03b1\u00d732+(32\u2212\u03b1)\u00d732+1)/(1056+1024+1024+32) = 1025/1568.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/e",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer.)",
+        "solution": "For every 32 consecutive elements of A, part of the elements should be lower than 33 (if), and the other part should be greater than or equal to 33 (else).",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    },
+    {
+        "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/f",
+        "context": "We define the SIMD utilization of a program that runs on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of the program. As we saw in lecture and practice exercises, the SIMD utilization of a program is computed across the complete run of the program.\n\nThe following code segment is run on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A and B are already in vector registers, so there are no loads and stores in this program. (Hint: Notice that there are 3 instructions in each iteration.) A warp in the GPU consists of 32 threads, and there are 32 SIMD lanes in the GPU.\n\nfor (i = 0; i < 1025; i++) {\nif (A[i] < 33) { // Instruction 1\n\nB[i] = A[i] << 1; // Instruction 2\n}\nelse {\n\nB[i] = A[i] >> 1; // Instruction 3\n}\n\n}\n",
+        "context_figures": [],
+        "question": "What is the SIMD utilization of this program if A[i] = i? Show your work.",
+        "solution": "1025/1072.\n\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nInstruction 2 is executed by the first 33 threads, i.e., all threads in the first warp and one thread in the second warp.\nInstruction 3 is executed by the remaining active threads.\n\nThe SIMD utilization sums to (1025+32+1+31+960+1)/(1056+32+32+32+960+32) = 2050/2144 = 1025/1072.",
+        "solution_figures": [],
+        "correctly_parsed": "true"
+    }
+]

@@ -22,11 +22,11 @@ def claud_37_processing(path, arn):
     Point value associations for the problem or subproblems, including extra credit points
     Solutions, either typed or handwritten
     Tables, diagrams, circuit schematics, or block diagrams
+    Fill-in-the-blank questions (e.g. in "42 in binary: 101010", "42 in binary:" is the question and "101010" is the answer)
 
     Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, and solutions. At times, a subquestion can have nested subparts. Ignore any point values for any problem, question, or sub-question. Ignore any images, charts, or figures and do not attempt to extract text from them. 
     If a provided image is not part of {filename} and instead is part of another problem(s), omit it from the dictionary.
-    Format your response so that it can be exported into a JSON file using the template below. 
-    If the particular exam question lacks any of the listed components, omit them from the template.
+    Format your response so that it can be exported into a JSON file using the template below.
 
     Template for a problem which is split up into sub-problems:
     {{
@@ -37,7 +37,7 @@ def claud_37_processing(path, arn):
           "subproblem": "a" (Copy the part letter/number exactly as it appears on the exam),
           "subproblem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no subproblem context or if the question is the only part of the subproblem, don’t include this header. Replace all double quotes " here with escaped double quotes /">,
           "subproblem_question": <Insert the full question of the subproblem, exactly as it appears in the original. Replace all double quotes " here with escaped double quotes /">,
-          "subproblem_solution": <Insert the full solution of the subproblem, exactly as shown in the original. Replace all double quotes " here with escaped double quotes /">
+          "subproblem_solution": <Insert the full solution of the problem, exactly as shown in the original. If the question has options (e.g. True/False or multiple choice), be sure to isolate the correct option here (e.g. "True" or "Option A"). Replace all double quotes " here with escaped double quotes /">
         }},
         ...repeat as needed for additional subproblems within this problem
       ],
@@ -48,7 +48,7 @@ def claud_37_processing(path, arn):
       "problem": "1",
       "problem_context": <Insert any introductory paragraph or description exactly as it appears. If there is no context, don’t include this header. Replace all double quotes " here with escaped double quotes /">,
       "problem_question": <Insert the full question of the problem, exactly as it appears in the original. Replace all double quotes " here with escaped double quotes /">,
-      "problem_solution": <Insert the full solution of the problem, exactly as shown in the original. Replace all double quotes " here with escaped double quotes /">
+      "problem_solution": <Insert the full solution of the problem, exactly as shown in the original. If the question has options (e.g. True/False or multiple choice), be sure to isolate the correct option here (e.g. "True" or "Option A"). Replace all double quotes " here with escaped double quotes /">
     }}
 
     If any double quotes (") within strings appear within your JSON, you must replace them with escaped double quotes (/").
@@ -104,7 +104,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
   # Create folder structure for this
   parent_folder = "out_model_comparison/" + filename
   os.makedirs(parent_folder, exist_ok= True)
-  output_path = os.path.join(parent_folder, api + ".json")
+  output_path = os.path.join(parent_folder, "[SUBOPTIONS]_" + api + ".json")
   
   for problem in os.listdir(problems_path):
       print("Processing text in:", problem)

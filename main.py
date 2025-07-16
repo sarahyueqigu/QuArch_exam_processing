@@ -22,16 +22,17 @@ if __name__ == "__main__":
             file_dir = input_dir + "/" + filename
             data = problem_image_extraction.process(file_dir, "extracted_problems")
 
-            # Loop through each arn
-            for api in dir(config):
-                # Skip built-in attributes (those starting with __)
-                if not api.startswith("__"):
-                    print(api)
-                    arn = getattr(config, api)
+            # # Loop through each arn
+            # for api in dir(config):
+            #     # Skip built-in attributes (those starting with __)
+            #     if not api.startswith("__"):
 
-                    try:
-                        text_extraction.process(file_dir, data, arn, api)
-                    except json.JSONDecodeError as e:
-                        print("ERROR:", json.JSONDecodeError, "with exam", filename)
-                        skipped_exams.append(filename)
+            api = "claude_37"
+            arn = getattr(config, api)
+
+            try:
+                text_extraction.process(file_dir, data, arn, api)
+            except json.JSONDecodeError as e:
+                print("ERROR:", json.JSONDecodeError, "with exam", filename)
+                skipped_exams.append(filename)
 

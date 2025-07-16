@@ -5,7 +5,7 @@ import csv
 fieldnames = ["exam", "testing_version", "total", "concurred_trues", "concurred_falses", "false_trues", 
               "true_falses", "verified_trues", "llm_trues", "total_questions_no_images", 
               "concurred_trues_no_images", "concurred_falses_no_images", "false_trues_no_images", 
-              "true_falses_no_images", "llm_accuracy", "llm_accuracy_no_images"]
+              "true_falses_no_images", "llm_accuracy", "llm_accuracy_no_images", "false_trues_questions"]
 
 # false_trues is where the api thinks it's true when it's actually false
 # true_falses is where the api thinks it's false when it's actually true 
@@ -29,7 +29,8 @@ def process_single(input_dir, exam, file):
         "false_trues_no_images": 0.0,
         "true_falses_no_images": 0.0,
         "llm_accuracy": 0.0,
-        "llm_accuracy_no_images": 0.0
+        "llm_accuracy_no_images": 0.0,
+        "false_trues_questions": []
     }
     
     json_path = os.path.join(input_dir, file)
@@ -61,12 +62,14 @@ def process_single(input_dir, exam, file):
             row["concurred_falses"] += 1
             if not has_images:
                 row["concurred_falses_no_images"] += 1
+
         elif llm_verified["correctly_parsed"] == True and hand_verified["correctly_parsed"] == False:
             row["true_falses"] += 1
             if not has_images:
                 row["true_falses_no_images"] += 1
         else:
             row["false_trues"] += 1
+            row["false_trues_questions"].append(hand_verified["question_id"])
             if not has_images:
                 row["false_trues_no_images"] += 1
 
@@ -104,7 +107,7 @@ if __name__ == "__main__":
     # parent_dir = os.path.join("llm_verification_v2", exam)
     # process_v1("llm_verification_v2", exam)
 
-    file = "exam_solutions_ss2012.json"
+    file = "[AUTO_CHECKED]exam_solutions_ss2012.json"
 
     process_single("llm_verification_v2", exam, file)
 
