@@ -17,10 +17,10 @@ if __name__ == "__main__":
     for filename in os.listdir(input_dir): # TODO: may cause some delays when .json files are added
         # Only process PDFs
         # if filename == "digitaltechnik-s19-en-sol.pdf":
-        if filename.lower().endswith(".pdf") and filename == "exam_solutions_ss2012.pdf":   
+        if filename.lower().endswith(".pdf"):# and filename == "exam_solutions_ss2012.pdf":   
             # Build path             
             file_dir = input_dir + "/" + filename
-            data = problem_image_extraction.process(file_dir, "extracted_problems")
+            data = problem_image_extraction.process(file_dir, "output")
 
             # # Loop through each arn
             # for api in dir(config):
@@ -30,9 +30,9 @@ if __name__ == "__main__":
             api = "claude_37"
             arn = getattr(config, api)
 
-            try:
-                text_extraction.process(file_dir, data, arn, api)
-            except json.JSONDecodeError as e:
-                print("ERROR:", json.JSONDecodeError, "with exam", filename)
-                skipped_exams.append(filename)
-
+                    try:
+                        text_extraction.process(file_dir, data, arn, api, "output")
+                    except json.JSONDecodeError as e:
+                        print("ERROR:", json.JSONDecodeError, "with exam", filename)
+                        skipped_exams.append(filename)
+            

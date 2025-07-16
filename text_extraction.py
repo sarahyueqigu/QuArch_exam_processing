@@ -94,11 +94,12 @@ def claud_37_processing(path, arn):
         exit(1)
 
 
-def process(file_path, pages_data, arn, api): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
+def process(file_path, pages_data, arn, api, output_fol): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
 
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
-  problems_path = os.path.join("extracted_problems", filename)
+  #problems_path = os.path.join("extracted_problems", filename)
+  problems_path = os.path.join(output_fol, filename)
   output = []
 
   # Create folder structure for this
