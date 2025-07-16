@@ -30,9 +30,9 @@ if __name__ == "__main__":
             api = "claude_37"
             arn = getattr(config, api)
 
-                    try:
-                        text_extraction.process(file_dir, data, arn, api, "output")
-                    except json.JSONDecodeError as e:
-                        print("ERROR:", json.JSONDecodeError, "with exam", filename)
-                        skipped_exams.append(filename)
+            try:
+                text_extraction.process(file_dir, data, arn, api, "output")
+            except json.JSONDecodeError as e:
+                print("ERROR:", json.JSONDecodeError, "with exam", filename)
+                skipped_exams.append(filename)
             
