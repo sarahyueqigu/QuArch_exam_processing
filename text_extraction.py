@@ -102,9 +102,8 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
   output = []
 
   # Create folder structure for this
-  parent_folder = "out_model_comparison/" + filename
-  os.makedirs(parent_folder, exist_ok= True)
-  output_path = os.path.join(parent_folder, api + ".json")
+  parent_folder = "out/" + filename
+  output_path = parent_folder + ".json"
   
   for problem in os.listdir(problems_path):
       print("Processing text in:", problem)
@@ -130,7 +129,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
 
         # Call image_identifying for each problem, feeding it:
         # 1) original problem PDF, 2) problem json, 3) associated images
-        problem_with_imgs = json.loads(strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
+        problem_with_imgs = json.loads(helper.strip_json_code_block(image_identifying.process(filename, os.path.join(problems_path, problem), problem_dict, images)))
         # TODO: make image_identifying an async function? to speed things up
       else:
          problem_with_imgs = problem_dict
@@ -147,7 +146,7 @@ def process(file_path, pages_data, arn, api): # pages_data is the dictionary fro
             subproblem_output["question"] = subproblem.get("subproblem_question", "")
             subproblem_output["solution"] = subproblem.get("subproblem_solution", "")
             subproblem_output["solution_figures"] = problem_with_imgs.get("problem_solution_figures", []) + subproblem.get("subproblem_solution_figures", [])
-            subproblem_output["correctly_parsed"] = None
+            subproblem_output["passed_llm_verification"] = None
             problem_output[subproblem["subproblem"]] = subproblem_output
 
       else: # if this is a standalone question
