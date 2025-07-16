@@ -1,20 +1,18 @@
 {
     "problem": "1",
-    "problem_context": "Boolean Logic Circuits",
+    "problem_context": "Boolean Logic Circuits [20 points]",
     "subproblems": [
         {
-            "subproblem": "a",
-            "subproblem_context": "Using Boolean algebra, find the simplest Boolean algebra equation for the following min-terms: \u2211(1111, 1110, 1000, 1001, 1011, 1010, 0000). Show your work step-by-step.",
-            "subproblem_question": "F = (B.C.D) + (A.(C +B))",
-            "subproblem_solution": "F = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) \n F = (B.C.D).(A+A)+(A.C).(B.D+B.D+B.D+B.D)+(A.B).(C.D+C.D+C.D+C.D) \n F = (B.C.D) + (A.C) + (A.B) \n F = (B.C.D) + (A.(C +B))",
+            "subproblem": "(a)",
+            "subproblem_question": "[10 points] Using Boolean algebra, \ufffdnd the simplest Boolean algebra equation for the following min-terms:\u2211(1111, 1110, 1000, 1001, 1011, 1010, 0000). Show your work step-by-step.",
+            "subproblem_solution": "F = (B.C.D) + (A.(C +B))\n\nExplanation:\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D)\n\nF = (B.C.D).(A+A)+(A.C).(B.D+B.D+B.D+B.D)+(A.B).(C.D+C.D+C.D+C.D)\n\nF = (B.C.D) + (A.C) + (A.B)\n\nF = (B.C.D) + (A.(C +B))",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
-            "subproblem": "b",
-            "subproblem_context": "Convert the following Boolean equation so that it only contains NOR operations. Show your work step-by-step.",
-            "subproblem_question": "F = A+ (B.C +A.C)",
-            "subproblem_solution": "F = ((A+A+ (B.C +A.C)) + ((A+A+ (B.C +A.C)) \n B.C = B +B + C + C \n A.C = A+A+ C + C + C + C \n F = ((A+ (B.C +A.C)) \n F = ((A+ (B.C +A.C)) + ((A+ (B.C +A.C)) \n F = ((A+A+ (B.C +A.C)) + ((A+A+ (B.C +A.C)) \n B.C = B +B + C + C \n A.C = A+A+ C + C + C + C",
+            "subproblem": "(b)",
+            "subproblem_question": "[10 points] Convert the following Boolean equation so that it only contains NOR operations. Show your work step-by-step.\n\nF = A+ (B.C +A.C)",
+            "subproblem_solution": "F = ((A+A+ (B.C +A.C)) + ((A+A+ (B.C +A.C))\n\nB.C = B +B + C + C\n\nA.C = A+A+ C + C + C + C\n\nExplanation:\n\nF = ((A+ (B.C +A.C))\n\nF = ((A+ (B.C +A.C)) + ((A+ (B.C +A.C))\n\nF = ((A+A+ (B.C +A.C)) + ((A+A+ (B.C +A.C))\n\nB.C = B +B + C + C\n\nA.C = A+A+ C + C + C + C",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }

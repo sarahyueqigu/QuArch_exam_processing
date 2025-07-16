@@ -1,39 +1,39 @@
 {
     "problem": "4",
-    "problem_context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit.",
+    "problem_context": "In this question for each part there will be two Verilog code snippets. For each part you will have to say whether both, only one, or none of the code snippets fulfill what is being asked. All code snippets are syntactically correct. They will compile and produce either a sequential circuit or a combinational circuit. (2 points each)",
     "subproblems": [
         {
             "subproblem": "a",
-            "subproblem_question": "Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \u201ctiny\u201d realizes a simple AND function)",
-            "subproblem_solution": "\u2610 Only A  \u2610 Only B  \u2610 Both A and B  \u2610 None",
+            "subproblem_question": "Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \"tiny\" realizes a simple AND function)",
+            "subproblem_solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "b",
             "subproblem_question": "Which code snippet(s) will produce a four input multiplexer?",
-            "subproblem_solution": "\u2610 Only A  \u2610 Only B  \u2610 Both A and B  \u2610 None",
+            "subproblem_solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "c",
             "subproblem_question": "Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c2c1d0d0d0001 (c and d are both 8-bit values)?",
-            "subproblem_solution": "\u2610 Only A  \u2610 Only B  \u2610 Both A and B  \u2610 None",
+            "subproblem_solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "d",
             "subproblem_question": "Which code snippet(s) will produce a sequential circuit?",
-            "subproblem_solution": "\u2610 Only A  \u2610 Only B  \u2610 Both A and B  \u2610 None",
+            "subproblem_solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "e",
             "subproblem_question": "Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
-            "subproblem_solution": "\u2610 Only A  \u2610 Only B  \u2610 Both A and B  \u2610 None",
+            "subproblem_solution": "\u2610 Only A \u2610 Only B \u2610 Both A and B \u2610 None",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }

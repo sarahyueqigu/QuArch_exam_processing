@@ -1,6 +1,6 @@
 {
     "problem": "5",
-    "problem_context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labeled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) {\n\nA[i] = A[i] * C[i];\nB[i] = A[i] + B[i];\nC[i] = B[i] + 1;\nD[i] = C[i] * B[i];\n\n}\n}\n\n",
+    "problem_context": "We define the SIMD utilization of a program running on a GPU as the fraction of SIMD lanes that are kept busy with active threads during the run of a program.\n\nThe following code segment is running on a GPU. Each thread executes a single iteration of the shown loop. Assume that the data values of the arrays A, B, and C are already in vector registers so there are no loads and stores in this program. (Hint: Notice that there are 5 instructions in each thread as labled below.) A warp in the GPU consists of 64 threads, and there are 64 SIMD lanes in the GPU.\n\nfor (i = 0; i < 16384; i++) {\nif (A[i] > 0) { //Instruction 1\n\nA[i] = A[i] * C[i]; //Instruction 2\nB[i] = A[i] + B[i]; //Instruction 3\nC[i] = B[i] + 1; //Instruction 4\nD[i] = C[i] * B[i]; //Instruction 5\n\n}\n}",
     "subproblems": [
         {
             "subproblem": "A",
@@ -11,9 +11,9 @@
         },
         {
             "subproblem": "B",
-            "subproblem_context": "As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively. What is the SIMD utilization of this program?\n\nA: 1 1 ...29 1s... 1 0 0 ...93 0s... 0 ...32 1s... 96 0s... ...\n\nB: 0 0 ...61 0s... 0 1 1 ...61 1s... 1 ...64 0s ...64 1s... ...",
+            "subproblem_context": "As shown below, assume array A has a repetitive pattern which has 32 ones followed by 96 zeros repetitively and array B has a different repetitive pattern which has 64 zeros followed by 64 ones repetitively.",
             "subproblem_question": "What is the SIMD utilization of this program?",
-            "subproblem_solution": "When a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 * 4)/(64 + 64 * 5) = 66.7%",
+            "subproblem_solution": "A: 1 1 ...29 1s... 1 0 0 ...93 0s... 0 ...32 1s... 96 0s... ...\n\nB: 0 0 ...61 0s... 0 1 1 ...61 1s... 1 ...64 0s ...64 1s... ...\n\nWhen a warp is working on a segment of array A that has 64 0s, none of the threads in the warp will take the branch, which yields no branch divergence of the warp. Hence, the SIMD utilization of this particular input set is (64 + 64 + 32 * 4)/(64 + 64 * 5) = 66.7%",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
@@ -33,8 +33,8 @@
         },
         {
             "subproblem": "E",
-            "subproblem_context": "During an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization. Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
-            "subproblem_question": "Is Hongyi correct?",
+            "subproblem_context": "During an execution with a particular input array A, which has exactly 24 positive elements in every 64 elements, Hongyi finds that the SIMD utilization of the program is 50%. Based on this observation, Hongyi claims that any input array that has an average of 24 out of 64 elements positive would yield a 50% SIMD utilization.",
+            "subproblem_question": "Is Hongyi correct?\n\nCIRCLE ONE: YES NO\n\nIf YES, show your work. If NO, provide a counterexample.",
             "subproblem_solution": "Hongyi is incorrect. If A has a repetitive pattern of 48 contiguous 1s followed by 80 contiguous 0s, in which case 37.5% of the elements are positive on average, then the SIMD utilization of the program will be 83.3% rather than 50%.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []

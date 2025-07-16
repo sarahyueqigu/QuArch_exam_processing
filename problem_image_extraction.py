@@ -159,5 +159,5 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
                 data[problem].append(chart.name)
 
     return data
-if __name__ == "__main__":
-    process("data/740_f13_midterm2_solutions.pdf", "pextracted_problems")
+# if __name__ == "__main__":
+#     process("data/740_f13_midterm2_solutions.pdf", "extracted_problems")

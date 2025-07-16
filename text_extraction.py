@@ -25,6 +25,7 @@ def claud_37_processing(path, arn):
 
     Your task is to identify and separate each exam problem into the listed components, including context, sub-questions, and solutions. At times, a subquestion can have nested subparts. Ignore any point values for any problem, question, or sub-question. Ignore any images, charts, or figures and do not attempt to extract text from them. 
     If a provided image is not part of {filename} and instead is part of another problem(s), omit it from the dictionary.
+    If you encounter any math equations, extract them using LaTeX format, but do not attempt to solve them.
     Format your response so that it can be exported into a JSON file using the template below. 
     If the particular exam question lacks any of the listed components, omit them from the template.
 
@@ -94,11 +95,12 @@ def claud_37_processing(path, arn):
         exit(1)
 
 
-def process(file_path, pages_data, arn, api): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
+def process(file_path, pages_data, arn, api, output_fol): # pages_data is the dictionary from problem_page_extraction that defined each problem's page range
 
   print("\nTEXT_EXTRACTION")
   filename = os.path.basename(file_path)[:-4]
-  problems_path = os.path.join("extracted_problems", filename)
+  #problems_path = os.path.join("extracted_problems", filename)
+  problems_path = os.path.join(output_fol, filename)
   output = []
 
   # Create folder structure for this

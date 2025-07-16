@@ -1,25 +1,25 @@
 {
-    "problem": "11",
-    "problem_context": "A runahead execution processor is designed with an unintended hardware bug: every other instruction in runahead mode is dropped by the processor after the fetch stage. Recall that the runahead mode is the speculative processing mode where the processor executes instructions solely to generate prefetch requests. All other behavior of the runahead mode is exactly as we described in lectures. When a program is executed, which of the following scenarios could happen compared to a runahead processor without the hardware bug and why? Assume that the program has no bug in it and executes correctly on the processor without the hardware bug.",
+    "problem": "11 BONUS: Prefetching",
+    "problem_context": "A runahead execution processor is designed with an unintended hardware bug: every other instruction in runahead mode is dropped by the processor after the fetch stage. Recall that the runahead mode is the speculative processing mode where the processor executes instructions solely to generate prefetch requests. All other behavior of the runahead mode is exactly as we described in lectures. When a program is executed, which of the following scenarios could happen compared to a runahead processor without the hardware bug and why? Circle YES if there is a possibility to observe the described behavior and explain in the box (either if you answer YES or NO). Assume that the program has no bug in it and executes correctly on the processor without the hardware bug.",
     "subproblems": [
         {
             "subproblem": "a",
             "subproblem_question": "The buggy runahead processor finishes the program correctly and faster than the non-buggy runahead processor.",
-            "subproblem_solution": "YES. Dropping instructions enables the discovery of more cache misses than not dropping the instructions.",
+            "subproblem_solution": "YES\n\nWhy?\n\nDropping instructions enables the discovery of more cache misses than not dropping the instructions.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "b",
             "subproblem_question": "The buggy runahead processor finishes the program correctly and slower than the non-buggy runahead processor.",
-            "subproblem_solution": "YES. The buggy runahead processor is not able to generate cache misses that are dependent on dropped instructions.",
+            "subproblem_solution": "YES\n\nWhy?\n\nThe buggy runahead processor is not able to generate cache misses that are dependent on dropped instructions.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "c",
             "subproblem_question": "The buggy runahead processor executes the program incorrectly.",
-            "subproblem_solution": "NO. Not possible as all executions in runahead mode are purely speculative and do not commit. Hence it cannot affect the correctness of the program.",
+            "subproblem_solution": "NO\n\nWhy?\n\nNot possible as all executions in runahead mode is purely speculative and do not commit. Hence it cannot affect the correctness of the program.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }

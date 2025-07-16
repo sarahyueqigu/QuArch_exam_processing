@@ -1,18 +1,18 @@
 {
     "problem": "3",
-    "problem_context": "The diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo\u2019s Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can\u2019t be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.\n\nID V Tag Val V Tag Val\n\n- - - - - - -\n\nE 0 C - 0 A -\n\nF 0 A - 1 - 20\n\nC 0 A - 0 A -\n\nID V Tag Val V Tag Val\n\n- - - - - - -\n\nD 0 B - 0 E -\n\nB 1 - 20 0 F -\n\nA 1 - 20 1 - 30\n\nSRC 1                      SRC 2  SRC 1                      SRC 2\n\nReg V Tag Val\n\nR0 1 - 5\n\nR1 0 A 10\n\nR2 0 B 20\n\nR3 1 - 30\n\nR4 0 C 40\n\nR5 0 D 50\n\nR6 1 - 60\n\nR7 1 - 70\n\nRAT",
+    "problem_context": "Return of Tomasulo's Algorithm (30 pts)\n\nThe diagram below shows a snapshot at a particular point in time of various parts (reservation stations and register alias table) of the microarchitecture for an implementation supporting out-of-order execution in the spirit of Tomasulo's Algorithm. Note that there is an adder and a multiplier in this machine. The processor is supplied with a seven instruction program following reset. The state below was captured at some point in time during the execution of these seven instructions. Anything marked with a \u2013 is unknown and can't be relied upon for your answer. You should assume that the bottommost instruction in the reservation station arrived earliest and the topmost instruction in the reservation station arrived last.",
     "subproblems": [
         {
             "subproblem": "A",
-            "subproblem_question": "Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.",
-            "subproblem_solution": "",
+            "subproblem_question": "[15 pts] Identify the instructions and draw the data flow graph for the seven instructions (use + for ADD and * for MUL). Please label the edges of the data flow graph with the destination register tag if known. Label with register number if the tag is not known. Note that the first instruction is an ADD with destination register R3.",
+            "subproblem_solution": "+ \n\nR1 R2 \n\nR3 \n\n+ \n\n* \n\na a \n\n* \n\n+ f \n\n* c \n\ne \n\n+ d \n\nb",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "B",
-            "subproblem_question": "Fill in the instruction opcodes, source, and destination registers in the table below.\n\nOP DEST SRC1 SRC2\n\nADD R3 R1 R2\n\nADD R1 R2 R3\n\nMUL R4 R1 R1\n\nMUL R5 R2 R1\n\nADD  R2 R2 R5\n\nMUL R5 R4 R1\n\nADD R5 R2 R5",
-            "subproblem_solution": "",
+            "subproblem_question": "[15 pts] Fill in the instruction opcodes, source, and destination registers in the table below.",
+            "subproblem_solution": "OP DEST SRC1 SRC2 \n\nADD R3 R1 R2 \n\nADD R1 R2 R3 \n\nMUL R4 R1 R1 \n\nMUL R5 R2 R1 \n\nADD  R2 R2 R5 \n\nMUL R5 R4 R1 \n\nADD R5 R2 R5 \n\nInstructions",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }

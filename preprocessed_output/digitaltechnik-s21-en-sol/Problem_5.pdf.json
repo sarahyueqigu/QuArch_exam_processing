@@ -5,30 +5,28 @@
         {
             "subproblem": "a",
             "subproblem_question": "What is the CPI of application A when executing on processor P1? Show your work.",
-            "subproblem_solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2 CPI = 4.4",
+            "subproblem_solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2\nCPI = 4.4",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "b",
-            "subproblem_context": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A.",
-            "subproblem_question": "What is the CPI of application A when executing on processor P2? Show your work.",
-            "subproblem_solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6 CPI = 8.4",
+            "subproblem_question": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A. What is the CPI of application A when executing on processor P2? Show your work.",
+            "subproblem_solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6\nCPI = 8.4",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "c",
             "subproblem_question": "Which processor is faster (P1 or P2)? By how much (i.e., what is the speedup)? Show your work.",
-            "subproblem_solution": "P2 is 1.05\u00d7 faster than P1.",
+            "subproblem_solution": "P2 is 1.05\u00d7 faster than P1.\n\nExplanation.\nExecution_Time_P1 = instructions\u00d7 CPIP1 \u00d7 clock_time\n\nExecution_Time_P2 = instructions\u00d7 CPIP2 \u00d7 clock_time/2\n\nclock_time = 1/clock_frequency\n\nAssuming that Execution_Time_P2 < Execution_Time_P1 =\u21d2\nExecution_Time_P1/Execution_Time_P2 > 1. Thus:\n\n=\u21d2 instructions\u00d7CPIP1\u00d7clock_time/(instructions\u00d7CPIP2\u00d7clock_time/2)\n\n=\u21d2 4.4\u00d7clock_time/(8.4\u00d7 clock_time/2)\n\n=\u21d2 4.4/4.2\n\n=\u21d2 1.05",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         },
         {
             "subproblem": "d",
-            "subproblem_context": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options: (1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions. (2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.",
-            "subproblem_question": "Which optimization do you add to P1 for application A? Show your work and justify your choice.",
-            "subproblem_solution": "The ALU optimization. Application A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions. By Amdahl's Law, we have: SpeedupALU = 1 / (1\u22120.3\u22120.1)+ 0.3+0.1 / 2 = 1.25 SpeedupLSU = 1 / (1\u22120.4\u22120.2)+ 0.4 / 2 +0.2\u00d72 = 1.0 The ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.",
+            "subproblem_question": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options:\n\n(1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions.\n\n(2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.\n\nWhich optimization do you add to P1 for application A? Show your work and justify your choice.",
+            "subproblem_solution": "The ALU optimization.\n\nExplanation.\nApplication A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions.\nBy Amdahl's Law, we have:\n\nSpeedupALU = 1/((1\u22120.3\u22120.1)+ (0.3+0.1)/2) = 1.25\n\nSpeedupLSU = 1/((1\u22120.4\u22120.2)+ 0.4/2 +0.2\u00d72) = 1.0\n\nThe ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.\n\nAlternative Solution.\nWith the ALU, the new CPI of processor P1 will be:\nCPIALU = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2/2 + 0.1\u00d7 2/2\nCPIALU = 4.0\n\nWith the LSU, the new CPI of processor P1 will be:\nCPILSU = 0.4\u00d7 6/2 + 0.2\u00d7 (6\u00d7 2) + 0.3\u00d7 2 + 0.1\u00d7 2\nCPILSU = 4.4\n\nSince CPIALU < CPILSU , integrating the ALU will improve the overall cycles-per-instructions.",
             "subproblem_context_figures": [],
             "subproblem_solution_figures": []
         }
