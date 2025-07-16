@@ -49,6 +49,8 @@ def process(json_path, extracted_problems_folder, images_folder):
         images = []
         for question in full_exam:
             if problem_pdf[:-4] == question["question_id"].split("/")[1]:
+                 # Add new "passed_human_verification" field
+                question["passed_human_verification"] = None
                 problem_dict.append(question)
 
                 # Also keep track of images associated
@@ -117,10 +119,7 @@ def process(json_path, extracted_problems_folder, images_folder):
             print("Json Returned by Verifier: ", response_text)
 
             # Add the modified dictionaries to final output 
-            response_dict = json.loads(helper.string_to_list(response_text))
-            # Add new "passed_human_verification" field
-            response_dict["passed_human_verification"] = None
-            verified_output += response_dict
+            verified_output += json.loads(helper.string_to_list(response_text))
 
 
         except ClientError as e:
