@@ -25,7 +25,7 @@
         "question": "Is this a Moore or Mealy type FSM? Briefly explain.",
         "solution": "Solution: Moore, outputs depend only on the present state and nothing else.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the state diagram that shows the FSM with its inputs and outputs. Without this diagram, a student would not be able to determine if it's a Moore or Mealy type FSM. The state diagram shown in the original PDF is essential for answering this question."
     },
     {
@@ -37,7 +37,7 @@
         "solution_figures": [
             "chart_p4_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the state diagram that shows the FSM transitions. Without this diagram, a student would not be able to fill in the state transition table. Additionally, the empty table that needs to be filled in is not provided in the context."
     },
     {
@@ -49,7 +49,7 @@
         "solution_figures": [
             "chart_p5_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the state diagram and the filled state transition table from part (b). Without these, a student would not have the necessary information to write the Next State Equations. The question refers to 'the table you have filled above' but this table is not included in the context."
     },
     {
@@ -63,7 +63,7 @@
             "chart_p6_0.png",
             "chart_p6_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the state diagram and the Next State Equations from part (c). The question refers to 'the Next State Equations from the previous part' but these equations are not included in the context. Additionally, the question field contains only a hint rather than the actual question, which should be about minimizing the Next State Equations."
     },
     {
@@ -77,7 +77,7 @@
         "solution_figures": [
             "chart_p8_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The problem has been incorrectly parsed for the following reasons: 1) The same image 'chart_p8_0.png' appears in both context_figures and solution_figures, which is incorrect as the diagram should only be part of the context, not the solution. 2) The problem statement in the PDF includes '3. (15 points)' at the beginning which is missing from the parsed question. 3) The solution should not include the diagram as a figure since the solution is purely code-based."
     },
     {
@@ -90,7 +90,7 @@
         "question": "What is the critical path of this circuit? Calculate its path delay.",
         "solution": "Critical path is the longest timing path in the circuit:\n\nCriticalPath = tpd,A + tpd,B + tpd,C + tpd,mux + tsetup,FF\n\n= 0.6 + 1.8 + 1.2 + 0.3 + 0.1ns\n\n= 4.0ns",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/b",
@@ -102,7 +102,7 @@
         "question": "What is the maximum operating frequency of this circuit?",
         "solution": "Maximum operating frequency is 1/Critical Path, 1/4ns = 250MHz.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/c",
@@ -114,7 +114,7 @@
         "question": "What is the shortest path of this circuit ?",
         "solution": "The short path is the fastest route a signal can propagate through the circuit. In this case it is the signal that goes through the select input of the multiplexer and reaches the register. This signal only passes through the multiplexer, so the short path is 0.3ns.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/d",
@@ -128,7 +128,7 @@
         "solution_figures": [
             "chart_p12_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/e",
@@ -140,7 +140,7 @@
         "question": "What is the critical path of this pipelined circuit and calculate its path delay.",
         "solution": "CriticalPath = tpd,A + tpd,B + tsetup,FF\n\n= 0.6 + 1.8 + 0.1ns\n\n= 2.5ns",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/f",
@@ -152,7 +152,7 @@
         "question": "What is the speed-up we have achieved by pipelining?",
         "solution": "Old critical path / New Critical path = 4.0 / 2.5 = 1.6. The new circuit has a 60% shorter critical path, therefore it can be clocked 60% faster.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_4/g",
@@ -164,7 +164,7 @@
         "question": "Why did we not achieve the theoretical maximum speed-up from the pipelining. State at least two reasons.",
         "solution": "1. It was not possible to place the pipeline registers at exactly half the previous critical path. Unless we move the pipeline registers into the blocks themselves we can not improve any more.\n\n2. The pipeline register has a small overhead (tsetup,FF > 0). Even if we managed to divide the circuit in equal halves, this overhead would not allow us to reach 100% speedup. The problem gets worse the shorter the critical path is.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2013_solutions/Problem_5/a",
@@ -175,7 +175,7 @@
         "question": "Briefly explain what the above MIPS assembly code does.",
         "solution": "The program will execute a loop 8 times. In each iteration of the loop, the\ncontent of the address 0x0000 0004 and the content of the address 0x0000\n0024 will be added together and added to the register $s0 which was initialized\nto the value 0 (A xor A is 0).",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
     },
     {
@@ -187,7 +187,7 @@
         "question": "Assuming the data at memory location 0x0000 0004 is decimal 16 and\nat memory location 0x0000 0024 is decimal 32, what will be the content of the\nregister $s0 in hexadecimal when the program execution jumps to done:?",
         "solution": "The program calculates 8\u00d7(mem(0x00000004)+mem(0x00000024)).\nThis equals to 8 \u00d7 (32 + 16) == 384. In hexadecimal this will be 0x0180. It is\nactually very easy to do the calculation if you do it in binary.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
     },
     {
@@ -199,7 +199,7 @@
         "question": "Briefly explain the three different MIPS instruction types (R, I, J) and\nshow one instruction of each type from the example code above.",
         "solution": "R-type Uses up to three registers, two for source and one for destination.\nExample: xor $s0, $s0, $s0.\n\nI-type Uses a 16-bit constant as part of the instruction.\nExample: addi $t0, $0, 8.\n\nJ-type Uses a 26-bit constant that can be used to calculate the address of\nthe next instruction, allowing the program execution to jump to a new\nlocation.\nExample: j loop.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context and question match the original PDF, but I cannot verify if the image 'chart_p14_0.png' correctly represents the MIPS assembly code box from the PDF without seeing the actual image. The image should show the formatted assembly code as displayed in the PDF."
     },
     {
@@ -209,7 +209,7 @@
         "question": "How many instructions are executed until the program finishes?",
         "solution": "There are two initial instructions, and the loop contains 7 instruc-\ntions which is executed 8 times, in addition there is one last beq command that\nwill be executed after the last loop. Ninstructions = 2 + (7 \u00d7 8) + 1 = 59 (56, or\n58 could also be accepted)",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
     },
     {
@@ -219,7 +219,7 @@
         "question": "Assume that you are using a single cycle microarchitecture running at\n1 GHz. If the CPI (Cycles Per Instruction) is 1, how long will it take for the\nprogram to finish execution?",
         "solution": "59 instructions x 1 CPI = 59 clock cycles. At 1 GHz, 1 clock cycles\nis 1 ns, so the entire program will execute in 59 ns.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
     },
     {
@@ -229,7 +229,7 @@
         "question": "In a second microarchitecture, due to a very slow memory, every load\nword (lw) instruction requires 10 clock cycles. Calculate the number of cycles\nneeded to execute the entire program.",
         "solution": "The loop contains 2 lw instructions each take 10 clock cycles. The\nremaining 5 instructions take 1 clock cycle. Every loop takes 25 clock cycles.\nThere are 8 iterations of the loop plus two additional initial instructions and\none last beq: Ncycles = 2 + (8 \u00d7 (5 \u00d7 1 + 2 \u00d7 10) + 1 = 203 (200, or 202 could\nalso be accepted)",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
     },
     {
@@ -239,7 +239,7 @@
         "question": "For this second microarchitecture, what is the average CPI? (approximate\nnumbers \u00b110% are ok )",
         "solution": "There are 59 instructions that are executed in 203 clock cycles.\nCPI = 203/59 = 3.44. Acceptable are also approximate calculations CPI =\n200/60 = 3.33 or CPI = 210/60 = 3.5",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Without seeing the actual program, a student would not be able to solve this problem."
     },
     {
@@ -251,7 +251,7 @@
         "solution_figures": [
             "chart_p17_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete. The problem refers to 'the MIPS assembly program from the previous section' but this program is not included in the context. Additionally, the solution_figures field contains 'chart_p17_0.png', but this image is not actually shown in the solution in the PDF. The code snippet is part of the text solution, not a separate figure."
     },
     {
@@ -261,7 +261,7 @@
         "question": "Which of the two cache design options would make the program in question 5 run faster? Briefly explain why.\n\nSolution A A direct-mapped cache with a capacity of 8 words and an access time of tcache = 1 clock cycle\n\nSolution B A two-way set associative cache with the same capacity of 8 words, but with twice the access time tcache = 2 clock cycles.\n\nNote: The question is specific to the program in question 5 and not about speeding up any arbitrary program.",
         "solution": "In a direct mapped cache, there is only one location where data can be placed in a cache. In a direct mapped cache with 8 locations, the address 0x0000 0004 and 0x0000 0024 would map to the same cache location. If this cache is used, every memory access would result in a cache miss. Using solution A would make the program run even slower, as every memory access would have first a cache miss (1 clock cycle) followed by the actual memory access (10 cycles).\nNcycles = 2 + (8 \u00d7 (5 + 2 \u00d7 11)) = 218\n\nSolution A can not be used to speed up the program.\n\nIn a 2-way set associative memory, there are two locations where data can be placed in a cache. Although the addresses 0x0000 0004 and 0x0000 0024 still map to the same set, they can both be placed in the cache. The first two memory accesses would be compulsory misses requiring 12 clock cyles (2 for the cache miss plus 10 for the actual memory access). But for the following 7 iterations, every memory access would be a cache hit, requiring only 2 clock cycles.\nNcycles = 2 + (7 \u00d7 (5 + 2 \u00d7 2)) + (5 + 2 \u00d7 12) = 94\n\nSolution B is the only viable alternative, that would speed up the program by more than 2x.\n\nNote that the program used is virtually identical to the one used in class notes to explain the problems with Direct-mapped cache.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The problem is not standalone as it references 'the program in question 5' without including that program's details. Without knowing what program is being referred to in question 5, a student would not have enough context to solve this problem. The context should include the details of the program from question 5, including the memory access pattern that causes the direct-mapped cache to perform poorly."
     }
 ]

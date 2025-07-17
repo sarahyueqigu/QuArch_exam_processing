@@ -38,7 +38,7 @@ def process_single(input_dir, exam, file):
         verification_test_json = json.load(file)
     
     # Open the hand_verifiedly checked results
-    checked_path = os.path.join("checked", "[CHECKED]" + exam + ".json")
+    checked_path = os.path.join("checked", "[AUTOCHECKED]" + exam + ".json")
     with open(checked_path, "r") as file:
         hand_verifiedly_checked_json = json.load(file)
     

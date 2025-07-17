@@ -6,7 +6,7 @@
         "question": "[10 points] Using Boolean algebra, \ufffdnd the simplest Boolean algebra equation for the following min-terms:\u2211(1111, 1110, 1000, 1001, 1011, 1010, 0000). Show your work step-by-step.",
         "solution": "F = (B.C.D) + (A.(C +B))\n\nExplanation:\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D)\n\nF = (B.C.D).(A+A)+(A.C).(B.D+B.D+B.D+B.D)+(A.B).(C.D+C.D+C.D+C.D)\n\nF = (B.C.D) + (A.C) + (A.B)\n\nF = (B.C.D) + (A.(C +B))",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_1/b",
@@ -17,7 +17,7 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution in the parsed JSON doesn't match the original PDF exactly. In the PDF, the Boolean expressions have overbar notations for negation which are not properly represented in the parsed text. Additionally, the image 'chart_p3_0.png' is referenced in the solution_figures field, but this image appears to be the mathematical work shown in the PDF rather than a separate figure. The solution should be represented as text with proper notation for Boolean operations and negations."
     },
     {
@@ -29,7 +29,7 @@
         "question": "Cache block size (8, 16, 32, 64, or 128B)?",
         "solution": "16 B.\n\nExplanation:\nCache hit rate is 2/8 in sequence 1. This means that there are 2 hits. Depending on the cache block size, we can group addresses that belong to the same cache block as follows:\n\n\u02c6 8B: {0}, {16}, {24,25}, {255}, {305}, {1024}, {1100}. \u2234 Number of possible hits = 1.\n\n\u02c6 16B: {0}, {16,24,25}, {255}, {305}, {1024}, {1100}. \u2234 Number of possible hits = 2.\n\u02c6 32B: {0,16,24,25}, {255}, {305}, {1024}, {1100}. \u2234 Number of possible hits = 3.\n\u02c6 64B: {0,16,24,25}, {255,305}, {1024}, {1100}. \u2234 Number of possible hits = 4.\n\u02c6 128B: {0,16,24,25}, {255,305}, {1024,1100}. \u2234 Number of possible hits = 5.\n\nTherefore, we can know that the cache block size is 16B.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image 'chart_p23_0.png' is referenced in the context_figures field but I cannot verify its contents. The image should be the table showing the sequences, addresses accessed, and hit rates. Without being able to verify the image content, I cannot confirm if it's correctly extracted and doesn't reveal any solution information."
     },
     {
@@ -41,7 +41,7 @@
         "question": "Cache associativity (2-, 4-, or 8-way)?",
         "solution": "2-way.\n\nExplanation:\n\nCache hit rate is 3/8 in sequence 2, which means that there are 3 hits.\nWe already know that the cache block size is 16B. Thus, there are 4 offset bits.\n\nThe access to address 31 in sequence 2 would hit because the cache block would not be replaced.\nThe access to address 305 in sequence 2 would hit because the cache block would not be replaced.\nThe access to address 65537 in sequence 2 would hit because the cache block would not be replaced.\n\nTherefore, all the other accesses should miss.\nThe access to address 65536, 131072 and 262144 in sequence 2 would miss because addresses 65536, 131072 and 262144 do not belong to any cache block previously accessed.\nAddresses 65536, 131072 and 262144 would be placed in set 0 if the cache associativity is 2-way, 4-way, or 8-way, independently of the cache size.\nAddress 8 must be a miss, so its cache block must be replaced by cache blocks that map to set 0 (addresses 65536, 131072 and 262144). For this to happen, the associativity must be 2-way.\nTherefore, the cache is 2-way associative.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image 'chart_p23_0.png' is referenced in the context_figures field but I cannot verify its contents. The image should be the table showing the sequences, addresses accessed, and hit rates. Without being able to verify the image content, I cannot confirm if it's correctly extracted and doesn't reveal any solution information. Additionally, the solution references the result from part (a) which makes this question dependent on the previous one."
     },
     {
@@ -53,7 +53,7 @@
         "question": "Cache replacement policy (LRU or FIFO)?",
         "solution": "FIFO.\n\nExplanation:\nFrom questions (a) and (b), we already know the following facts:\n\n\u02c6 The cache block size is 16 B.\n\u02c6 The cache is 2-way.\n\nCache hit rate is 2/3 in sequence 3, which means that there are 2 hits.\nWith the LRU policy only the access to address 262145 in sequence 3 would hit. With the FIFO policy, accesses to addresses 262145 and 4 in sequence 3 would hit.\nTherefore, the cache adopts the FIFO policy.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image 'chart_p23_0.png' is referenced in the context_figures field but I cannot verify its contents. The image should be the table showing the sequences, addresses accessed, and hit rates. Without being able to verify the image content, I cannot confirm if it's correctly extracted and doesn't reveal any solution information. Additionally, the solution references results from parts (a) and (b) which makes this question dependent on previous ones."
     },
     {
@@ -65,7 +65,7 @@
         "question": "To identify the cache size (4 or 8KiB), you can access two addresses right after sequence 3 (i.e., the contents are the same as at the end of the third sequence) and measure the cache hit rate. Which two addresses would you choose? Explain your answer (there may be several correct answers).",
         "solution": "Address 2048 and address 0 (there are other correct answers as well)\n\nExplanation:\nFrom questions (a), (b) and (c), we already know the following facts:\n\n\u02c6 The cache block size is 16 B.\n\u02c6 The cache is 2-way.\n\u02c6 FIFO replacement policy\n\nWe know that there are 4 bits for indexing the byte in a block, and there are 7 bits (if the cache size is 4KiB) or 8 bits (if the cache size is 8 KiB). Therefore, address 2048 would be in set 0 only if the cache size is 4KiB: we can access address 2048, and then check if a block in set 0 was replaced by address 2048 by accessing address 0. If it is a miss, the cache size is 4KiB, and if it is a hit, the cache size is 8KiB.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image 'chart_p23_0.png' is referenced in the context_figures field but I cannot verify its contents. The image should be the table showing the sequences, addresses accessed, and hit rates. Without being able to verify the image content, I cannot confirm if it's correctly extracted and doesn't reveal any solution information. Additionally, the solution references results from parts (a), (b), and (c) which makes this question dependent on previous ones."
     },
     {
@@ -75,7 +75,7 @@
         "question": "The buggy runahead processor finishes the program correctly and faster than the non-buggy runahead processor.",
         "solution": "Dropping instructions enables the discovery of more cache misses than not dropping the instructions.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_11/(b)",
@@ -84,7 +84,7 @@
         "question": "The buggy runahead processor finishes the program correctly and slower than the non-buggy runahead processor.",
         "solution": "The buggy runahead processor is not able to generate cache misses that are dependent on dropped instructions.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_11/(c)",
@@ -93,7 +93,7 @@
         "question": "The buggy runahead processor executes the program incorrectly.",
         "solution": "Not possible as all executions in runahead mode is purely speculative and do not commit. Hence it cannot affect the correctness of the program.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_12",
@@ -108,7 +108,7 @@
             "chart_p27_0.png",
             "chart_p28_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_2/2.1",
@@ -119,7 +119,7 @@
         "question": "",
         "solution": "Explanation.\n\n1 : odata must be declared as an output signal since values are assigned to it in the second always block. It cannot be an input signal since inputs are read-only signals and no assignments are allowed to them. odata must be also declared as reg since the assignments are made inside an always block.\n\n2 : nval must be declared as reg[31:0] since values are assigned to it inside the first always block.\n3 : default is a correct choice since all other cases for a 2-bit values (i.e., 2'b00, 2'b01, and 2'b10) are defined in the case statement. The other choices are not correct since they do not properly specify the value of 3. For example, in 2'b3, the problem is that 3 is not a valid binary digit but 2'b must be followed by a 2-bit binary value.\n\n4 : Choices with assign are not valid since the assign keyword cannot be used in an always block. Choice C does not specify an assignment operator but an equality comparison, hence it is not a valid choice either. The correct choice is D, which assigns 0 to odata using non-blocking assignment operator.\n\n5 : The correct choice is D due to the same reasons as in 4 .",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_2/2.2",
@@ -130,7 +130,7 @@
         "question": "Show the values (as unsigned decimal numbers) that the out signal takes, starting from the initial state of the module, for 16 consecutive clock (i.e., clk) cycles. Explain your answer briefly.",
         "solution": "out is equal to 0, 1, 2, 3, 0, 3, 2, 3, 0, 3, 2, 3, 0, 3, 2, 3 in the first 16 clock cycles.\n\nExplanation.\nThe module either increments or decrements my_reg depending on the state. When state is equal to 0, my_reg is incremented by 1 and otherwise decremented by 1. The value of my_reg is directly assigned to the out signal, and both signals are 2-bit wide.\nmy_reg and state are both initially 0. Therefore, in subsequent cycles, my_reg gets incremented until it reaches 3. During the next cycle, a new value for state is being computed (i.e., the inverse of state as \u223cstate). However, since the new value of the state is not updated until the next positive edge of the clk, the second always block reads state as 0, and thus my_reg gets incremented again to become 0 (the maximum value a 2-bit register can represent is 3 and incrementing my_reg one more time makes it 0).\nDuring the next cycle, state is 1 and my_reg is decremented back to 3. Since my_reg (and thus out) being 3 inverts state, state becomes 0 in the subsequent cycle and my_reg becomes 2 during the positive edge of clk when state is inverted. Then, my_reg gets incremented to 3 and 0 in the next consecutive cycles. Because state remains as 0 or 1 for two consecutive cycles and then gets inverted, the values of my_reg forever repeat the sequence of (0, 3, 2, 3, 0, 3, 2, 3, . . .).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_3/3.1",
@@ -141,7 +141,7 @@
         "solution_figures": [
             "chart_p7_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The parsing is incorrect for several reasons: 1) The question field is empty when it should contain the specific questions (a) and (b) from the PDF. 2) The solution field is empty when it should contain the text solutions provided in the PDF. 3) The original state diagram from the PDF is missing from the context_figures. 4) The solution figure 'chart_p7_0.png' appears to be only part of the simplified state diagram from part (a), but doesn't include the full solution. 5) The context is incomplete without the original state diagram."
     },
     {
@@ -151,7 +151,7 @@
         "question": "Design a Moore finite state machine (FSM) with one input and one output. The input provides an\nunsigned binary number in a bit-serial fashion from the most-significant bit to the least-significant bit.\nThe output should be logic-1 in a clock cycle if the provided input so far is divisible by 8 (i.e., [the input\nnumber] mod 8 = 0). (Hint: Recall that the output depends only on the current state in a Moore FSM.)",
         "solution": "From the given examples, we can see that strings can be exactly divided by 8 are all ended\nwith \"000\" (i.e., three \"0\"s). Then, we define S0, a state where the number is ended with\n\"000\".\nIf \"1\" comes, then the number cannot be exactly divided by 8 and it lacks three \"0\"s at the\nend. We define this state as \"E\" state (S1), which means no zero at the end.\nWhen there is a \"0\", then the number lacks two \"0\"s to be exactly divided by 8. Therefore,\nwe define the state as \"0\" (S2).\nWhen there are two \"0\"s, then the number lacks one more \"0\" to be exactly divided by 8.\nTherefore, we define the state as \"00\" (S3) .\nBased on the analysis above, we can draw the finite state machine whose output (i.e., O) is\n\"1\" at S0 (is \"0\" at other states):",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The parsing is incomplete because the solution_figures field is empty when it should contain the state diagram that is shown in the PDF. The solution text references a diagram ('we can draw the finite state machine...') but the actual diagram image is missing from the solution_figures."
     },
     {
@@ -161,7 +161,7 @@
         "question": "Number of uniquely identifiable memory locations.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -171,7 +171,7 @@
         "question": "Number of instructions fetched per clock cycle.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -181,7 +181,7 @@
         "question": "Support for branch prediction hints conveyed by the compiler.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -191,7 +191,7 @@
         "question": "Number of general-purpose registers.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -201,7 +201,7 @@
         "question": "Number of non-programmable registers.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -211,7 +211,7 @@
         "question": "SIMD processing support.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -221,7 +221,7 @@
         "question": "Number of integer arithmetic and logic units (ALUs).\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -231,7 +231,7 @@
         "question": "Number of read ports in the physical register file.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -241,7 +241,7 @@
         "question": "Endianness (big endian vs. small endian).\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -251,7 +251,7 @@
         "question": "Size of a virtual memory page.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -261,7 +261,7 @@
         "question": "Cache coherence protocol.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -271,7 +271,7 @@
         "question": "Number of cache blocks in the L3 cache.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -281,7 +281,7 @@
         "question": "Ability to flush (i.e., invalidate) a cache line using the operating system code.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -291,7 +291,7 @@
         "question": "Number of pipeline stages.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -301,7 +301,7 @@
         "question": "How many prefetches the hardware prefetcher generates in a clock cycle.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, which violates condition b) that requires both question and solution fields to be populated."
     },
     {
@@ -311,7 +311,7 @@
         "question": "What is the CPI of application A when executing on processor P1? Show your work.",
         "solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2\nCPI = 4.4",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_5/b",
@@ -320,7 +320,7 @@
         "question": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A. What is the CPI of application A when executing on processor P2? Show your work.",
         "solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6\nCPI = 8.4",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_5/c",
@@ -329,7 +329,7 @@
         "question": "Which processor is faster (P1 or P2)? By how much (i.e., what is the speedup)? Show your work.",
         "solution": "P2 is 1.05\u00d7 faster than P1.\n\nExplanation.\nExecution_Time_P1 = instructions\u00d7 CPIP1 \u00d7 clock_time\n\nExecution_Time_P2 = instructions\u00d7 CPIP2 \u00d7 clock_time\n2\n\nclock_time = 1\nclock_frequency\n\nAssuming that Execution_Time_P2 < Execution_Time_P1 =\u21d2\nExecution_Time_P1\nExecution_Time_P2 > 1. Thus:\n\n=\u21d2 instructions\u00d7CPIP1\u00d7clock_time\n\ninstructions\u00d7CPIP2\u00d7\nclock_time\n2\n\n=\u21d2 4.4\u00d7clock_time\n\n8.4\u00d7 clock_time\n2\n\n=\u21d2 4.4\n4.2\n\n=\u21d2 1.05",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution formatting is incorrect. The fractions in the solution are not properly represented. For example, 'clock_time/2' appears as 'clock_time\\n2' and other fractions have similar issues. This makes the mathematical steps difficult to follow and understand."
     },
     {
@@ -339,7 +339,7 @@
         "question": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options:\n\n(1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions.\n\n(2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.\n\nWhich optimization do you add to P1 for application A? Show your work and justify your choice.",
         "solution": "The ALU optimization.\n\nExplanation.\nApplication A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions.\nBy Amdahl's Law, we have:\n\nSpeedupALU = 1\n(1\u22120.3\u22120.1)+ 0.3+0.1\n2\n\n= 1.25\n\nSpeedupLSU = 1\n(1\u22120.4\u22120.2)+ 0.4\n2 +0.2\u00d72\n= 1.0\n\nThe ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.\n\nAlternative Solution.\nWith the ALU, the new CPI of processor P1 will be:\nCPIALU = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2\n2 + 0.1\u00d7 2\n2\n\nCPIALU = 4.0\n\nWith the LSU, the new CPI of processor P1 will be:\nCPILSU = 0.4\u00d7 6\n2 + 0.2\u00d7 (6\u00d7 2) + 0.3\u00d7 2 + 0.1\u00d7 2\nCPILSU = 4.4\n\nSince CPIALU < CPILSU , integrating the ALU will improve the overall cycles-\nper-instructions.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution formatting is incorrect. The fractions in the solution are not properly represented. For example, in the Amdahl's Law equations, the denominators appear on new lines rather than properly formatted fractions. Similarly, in the CPI calculations, fractions like '2/2' appear as '2\\n2'. This makes the mathematical steps difficult to follow and understand."
     },
     {
@@ -349,7 +349,7 @@
         "question": "Re-write the code segment above with minimal changes so that it gets correctly executed in Machine A with minimal latency. You can either insert nop instructions or reorder instructions as needed.",
         "solution": "Loop: lw $1, 0($4)\nlw $2, 400($4)\nnop\nnop\nadd $3, $1, $2\nnop\nnop\nsw $3, 0($4)\nsub $4, $4, #4\nnop\nnop\nbnez $4, Loop",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_6/b",
@@ -360,7 +360,7 @@
         "solution_figures": [
             "chart_p13_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_6/c",
@@ -369,7 +369,7 @@
         "question": "Calculate the number of cycles it takes to execute the code segment on Machine A. Show your work in the box.",
         "solution": "Total number of cycles: 1303.\n\nExplanation:\nThe compiler reorders instructions and places six nop-s.\nThis is the execution timeline of the first iteration:\n\nEach iteration consists of 12 instructions. Since the next program counter is available\nafter the decode stage of bnez, the next iteration starts with an additional delay of 1\ncycle.\nThe last iteration takes 16 cycles, to drain the pipeline.\nThus the entire program runs for 99 * 13 + 16 = 1303 cycles.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_6/d",
@@ -380,7 +380,7 @@
         "solution_figures": [
             "chart_p14_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_6/e",
@@ -389,7 +389,7 @@
         "question": "Calculate the number of cycles it takes to execute the code segment on Machine B. Show your work in the box.",
         "solution": "Total number of cycles: 803.\n\nExplanation:\n1 - Foward $2 from W to E in cycle 6.\n2 - Foward $3 from M to E in cycle 7.\n3 - Foward $4 from M to E in cycle 9.\n\nEach iteration takes 8 cycles, including one cycle delay after bnez, because to the next\nprogram counter is available only after the decode stage of bnez.\nThe last iteration takes 11 cycles, to drain the pipeline.\nThus total number of cycles is 99*8 + 11 = 803 cycles.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_7/7.1",
@@ -400,7 +400,7 @@
         "question": "",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The question field is empty. This problem appears to be a setup for the subsequent subproblems rather than a standalone question, but it should still have a clear question statement. Additionally, the solution field is empty."
     },
     {
@@ -410,7 +410,7 @@
         "question": "",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "This appears to be just a section header for the questions that follow. It doesn't contain an actual question or solution, and both fields are empty."
     },
     {
@@ -422,7 +422,7 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the critical information from Problem 7.1 which includes the initial state of the RAT and the snapshot of the RS and RAT that are necessary to solve this problem. The figures showing the initial state and snapshot state of the RAT and RS are not included in the context_figures, making this problem impossible to solve with the given information."
     },
     {
@@ -434,7 +434,7 @@
         "solution_figures": [
             "chart_p16_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "Similar to the previous subproblem, this question is missing the critical context information from Problem 7.1 which includes the initial state of the RAT and the snapshot of the RS and RAT. Without this information in the context or context_figures, it's impossible for a student to solve this problem."
     },
     {
@@ -444,7 +444,7 @@
         "question": "How many warps does it take to execute these code segments?",
         "solution": "32 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = d#Total_threads/#Warp_size e,\n\nwhere\n#Total_threads = 1024 = 210 (i.e., one thread per loop iteration),\nand\n#Warp_size = 32 = 25 (given).\n\nThus, the number of warps needed to run this program is:\n\n#Warps = d 210/25 e = 25 = 32.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/b",
@@ -453,7 +453,7 @@
         "question": "What is the SIMD utilization of the first iteration of the inner loop (j = 0) for Code Segment 1? Show your work. (Hint: The warp scheduler does not issue instructions when no thread is active).",
         "solution": "The utilization of the first iteration (j = 0) of Code Segment 1 is 7/8.\n\nExplanation:\nInstructions 1, 2, and 4 are executed by all threads in Code Segment 1.\n\nIn Code Segment 1, s = 1 during the first iteration. Thus, only even numbered threads fulfill the predicate of the if statement, and only half of the threads of each warp execute Instruction 3.\nCode Segment 1, j = 0: SIMD_utilization = (1024+1024+512+1024)/(1024+1024+1024+1024) = 7/8.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/c",
@@ -462,7 +462,7 @@
         "question": "What is the SIMD utilization of the first iteration of the inner loop (j = 0) for Code Segment 2? Show your work. (Hint: The warp scheduler does not issue instructions when no thread is active).",
         "solution": "The utilization of the first iteration (j = 0) of Code Segment 2 is 100%.\n\nExplanation:\nInstructions 1, 2, and 4 are executed by all threads in Code Segment 2.\n\nIn Code Segment 2, s = 512 during the first iteration. Thus, only threads with i < 512 fulfill the predicate of the if statement, and all threads of only half of the warps execute Instruction 3.\nCode Segment 2, j = 0: SIMD_utilization = (1024+1024+512+1024)/(1024+1024+512+1024) = 7/7 = 100%.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/d",
@@ -471,7 +471,7 @@
         "question": "What is the SIMD utilization of any iteration of the inner loop (0 <= j < 10) for Code Segment 1? Show your work. (Hint: Derive an analytical expression, which may be piecewise).",
         "solution": "As mentioned in part (b), Instructions 1, 2, and 4 are executed by all threads.\n\nIn Code Segment 1, with 0 <= j < 5, all 32 warps are active, but the number of active threads per warp divides by half in each iteration. With 5 <= j < 10, only one thread per warp is active, and the number of active warps divides by half in each iteration. As a result:\n\nCode Segment 1, iteration j:\n\nSIMD_utilization = {\n(3072+2(9\u2212j))/4096, if 0 \u2264 j < 5\n(3072+2(9\u2212j))/(3072+32\u22172(9\u2212j)), if 5 \u2264 j < 10\n}",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/e",
@@ -480,7 +480,7 @@
         "question": "What is the SIMD utilization of any iteration of the inner loop (0 <= j < 10) for Code Segment 2? Show your work. (Hint: Derive an analytical expression, which may be piecewise).",
         "solution": "As mentioned in part (b), Instructions 1, 2, and 4 are executed by all threads.\n\nIn Code Segment 2, with 0 <= j < 5, all 32 threads per warp are active, but the number of active warps divides by half in each iteration. With 5 <= j < 10, only one warp is active, and the number of active threads divides by half in each iteration. As a result:\n\nCode Segment 2, iteration j:\n\nSIMD_utilization = {\n(3072+32\u22172(4\u2212j))/(3072+32\u22172(4\u2212j)) = 100%, if 0 \u2264 j < 5\n(3072+2(9\u2212j))/(3072+32), if 5 \u2264 j < 10\n}",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/f",
@@ -489,7 +489,7 @@
         "question": "Is there any iteration (0 <= j < 10) where both code segments have the same utilization? Explain your reasoning.",
         "solution": "Yes, with j = 9 only one thread of only one warp is active, since only one thread (out of 1024) is needed to perform the last addition.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_8/g",
@@ -498,7 +498,7 @@
         "question": "Which code is expected to run faster on a GPU? Explain your reasoning.",
         "solution": "Code Segment 2 is faster because it has less intra-warp divergence, and thus higher SIMD utilization. In each iteration (except the last one), the number of warps that Code Segment 2 schedules is smaller than the number of warps that Code Segment 1 schedules. This results in fewer execution cycles.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_9/1",
@@ -507,7 +507,7 @@
         "question": "What is the branch misprediction rate when the above piece of code runs on Machine A? Show your work.",
         "solution": "45.01% = 2251/5001.\n\nExplanation:\nB1 will generate 1 misprediction out of 1001 iterations (B1 is not taken in the 1001th\niteration and the loop body does not execute). B2 will generate 500 mispredictions out\nof 1000 iterations, B3 will generate 750 mispredictions out of 1000 iterations, and both\nB4 and B5 will generate 500 mispredictions out of 1000 iterations.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_9/2",
@@ -516,7 +516,7 @@
         "question": "What is the branch misprediction rate when the above piece of code runs on Machine B? Show your work.",
         "solution": "59.97% = 2999/5001.\n\nExplanation:\nFrom (0-249): 375 mispredictions (125 for B2 and 250 for B5) for 1250 branches.\nFrom (250-499): 874 mispredictions (2 for iteration 250, 4 for every odd iteration, 3 for\nevery even iteration except for iteration 250) for 1250 branches.\nFrom (500-1000): 1750 mispredictions (3 for odd iterations, 4 for even iterations, 0 for\ni = 1000) for 2501 branches.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s21-en-sol/Problem_9/3",
@@ -525,6 +525,6 @@
         "question": "What is the branch misprediction rate when the above piece of code runs on Machine C? Show your work.",
         "solution": "20.20% = 1010/5001.\n\nExplanation:\nYou can split this up by branch.\nB1: mispredicts at i = 0, and i = 1000 (2 mispredictions out of 1001).\nB2: mispredicts every time since it oscillates between Weakly Not Taken and Weakly\nTaken (1000 mispredictions out of 1000).\nB3: mispredicts at i = 0, i = 250, and i = 251 (3 mispredictions out of 1000).\nB4: mispredicts at i = 0, i = 500, and i = 501 (3 mispredictions out of 1000).\nB5: mispredicts at i = 500, and i = 501 (2 mispredictions out of 1000).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]

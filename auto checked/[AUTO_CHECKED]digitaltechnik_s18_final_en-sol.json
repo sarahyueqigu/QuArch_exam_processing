@@ -8,7 +8,7 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_1/1.2",
@@ -19,7 +19,7 @@
         "question": "Modify the single-cycle processor datapath to include a version of the lw instruction, called lw2, that adds two registers to obtain the effective address. The datapath that you will modify is provided below. Your job is to implement the necessary data and control signals to support the new lw2 instruction, which we define to have the following semantics:\n\nlw2: Rd \u2190 Memory[Rs + Rt]\nPC \u2190 PC + 4\n\nAdd to the datapath any necessary data and control signals (if necessary) to implement the lw2 instruction. Draw and label all components and wires very clearly (give control signals meaningful names; if selecting a subset of bits from many, specify exactly which bits are selected; and so on).",
         "solution": "There is no need for new components and wires. The main difference is that the ALU must use \"Read data 2\", instead of the output of the sign extend unit. The new lw2 will be R-type, not I-type.\nThe values of the control signals need to be:\nRegDst = 1;\nALUScr = 0;\nMemtoReg = 1;\nRegWrite = 1;\nMemRead = 1;\nMemWrite = 0;\nALUop = 00;\nBranch = 0.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution in the parsed JSON has a typo: 'ALUScr = 0' should be 'ALUSrc = 0' as shown in the original PDF. This is a minor error but affects the accuracy of the solution."
     },
     {
@@ -29,7 +29,7 @@
         "question": "The execution time of a given benchmark is 100 ms on a 500 MHz processor. An ETH alumnus, designing the next generation of the processor, notices that a new implementation enables the processor to run at 750 MHz. However, the modifications increase the CPI by 20% for the same benchmark.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "This question is a parent question for subproblems 1.3a, 1.3b, and 1.3c, but it has an empty solution field. The solution should either contain the combined solutions of the subproblems or indicate that the solution is provided in the subproblems."
     },
     {
@@ -39,7 +39,7 @@
         "question": "What is the execution time expressed in terms of the number of cycles taken for the old generation of the processor (i.e., before the modifications)?\n\nAssuming that the IPC is 2, what is the number of instructions in the benchmark?",
         "solution": "Answer: Execution time is 50 Million cycles. The benchmark has 100 Million instructions.\n\nExplanation:\nClock frequency is 500 MHz. Then each cycle takes 1/(500\u00d7 10\u22126) = 2ns.\nTotal execution time in cycles is 100ms/2ns = 50Million cycles.\n\n2 instructions per cycle. Then, the total number of instructions: 2x50M = 100M",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
     },
     {
@@ -49,7 +49,7 @@
         "question": "What is the execution time of the benchmark in milliseconds for the new generation of the processor?",
         "solution": "Answer: 80 ms.\n\nExplanation:\nExecution Time = [Number of Instructions]\u00d7 [CPI]\u00d7 [Frequency\u22121]\nLet's say that the CPI of baseline is c, and number of instructions is i.\nThen the execution time of baseline:\n(c\u00d7 i)/(500x106) = 100x10\u22123 seconds => (c\u00d7 i) = 5\u00d7 107\n\nThe execution time after modifications: ((1.2\u00d7 c)\u00d7 i)/(750x106)\nT = ((1.2\u00d7 (c\u00d7 i))/(750\u00d7 106) seconds.\nT = ((1.2\u00d7 (5\u00d7 107))/(750\u00d7 106) seconds.\nT = 8\u00d7 10\u22122 = 80ms.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
     },
     {
@@ -59,7 +59,7 @@
         "question": "What is the speedup or slowdown of the new generation processor over the old generation?",
         "solution": "Answer: 25% speedup\n\nExplanation:\nSpeedup = (OldExecutionTime / [NewExecutionTime])\u2212 1\nSpeedup = 100/80\u2212 1\nSpeedup = 0.25\n\nThen the modification introduces 25% speedup.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context field is incomplete. It should include 'Performance Evaluation [10 points]' to provide the full context of the problem. Additionally, it should include the parent question text about the benchmark and processor specifications to make this subproblem standalone."
     },
     {
@@ -73,7 +73,7 @@
         "solution_figures": [
             "chart_p32_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_10/b",
@@ -86,7 +86,7 @@
         "solution_figures": [
             "chart_p33_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_11/a",
@@ -99,7 +99,7 @@
         "solution_figures": [
             "chart_p34_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing Figure 3 which shows the basic bitwise operations allowed in Part (a). The solution text doesn't clearly represent the dataflow graph structure that should be implemented."
     },
     {
@@ -111,7 +111,7 @@
         "solution_figures": [
             "chart_p35_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing Figure 3 which shows the basic operations. The solution text doesn't clearly represent the dataflow graph structure that should be implemented. Additionally, the context doesn't properly explain what a half-adder is since it depends on part (a)."
     },
     {
@@ -123,7 +123,7 @@
         "solution_figures": [
             "chart_p36_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The question refers to 'Part 2' but this should be 'part (b)'. The solution text doesn't clearly represent the dataflow graph structure."
     },
     {
@@ -135,7 +135,7 @@
         "solution_figures": [
             "chart_p37_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The solution text doesn't clearly represent the dataflow graph structure."
     },
     {
@@ -147,7 +147,7 @@
         "solution_figures": [
             "chart_p37_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is insufficient as it doesn't explain what a full-adder is, which was defined in part (b). The solution figure shows a table, but the solution text doesn't properly format it as a table."
     },
     {
@@ -162,7 +162,7 @@
             "chart_p38_0.png",
             "chart_p38_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_12/b",
@@ -175,7 +175,7 @@
         "solution_figures": [
             "chart_p39_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_12/c",
@@ -188,7 +188,7 @@
         "solution_figures": [
             "chart_p40_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/a",
@@ -199,7 +199,7 @@
         "question": "Does the following code result in a sequential circuit or a combinational circuit? Explain why.\n\n1 module concat (input clk, input data_in1, input data_in2,\n2 output reg [1:0] data_out);\n3 always @ (posedge clk, data_in1)\n4 if (data_in1)\n5 data_out = {data_in1, data_in2};\n6 else if (data_in2)\n7 data_out = {data_in2, data_in1};\n8 endmodule",
         "solution": "Sequential circuit.\n\nExplanation.\nThis code results in a sequential circuit because data_in2 is not in the sensitivity list, and thus a\nlatch is inferred for data_out.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/b",
@@ -212,7 +212,7 @@
         "solution_figures": [
             "chart_p7_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures reference chart_p6_1.png, but the image shown in the PDF is different from what would be expected. The code in the PDF shows 'module mod1' but the image might not match exactly. Additionally, the solution_figures reference chart_p7_0.png which doesn't appear to be necessary as the solution is textual."
     },
     {
@@ -224,7 +224,7 @@
         "question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how to fix it/them.\n\n1 module 1nn3r ( input [3:0] d, input op, output[1:0] s);\n2 assign s = op ? (d[1:0] - d[3:2]) :\n3 (d[3:2] + d[1:0]);\n4 endmodule\n5\n\n6 module top ( input wire [6:0] instr, input wire op, output reg z);\n7\n\n8 reg[1:0] r1, r2;\n9\n\n10 1nn3r i0 (.instr(instr[1:0]), .op(instr[7]), .z(r1) );\n11 1nn3r i1 (.instr(instr[3:2]), .op(instr[0]), .z(r2) );\n12 assign z = r1 | r2;\n13\n\n14 endmodule",
         "solution": "The code is not syntactically correct.\n\nExplanation.\n\u2022 Module names cannot start with a number \u2192 '1nn3r' is not a legal module name.\n\u2022 The output signal 'z' has to be declared as a 'wire' but not 'reg'.\n\u2022 'r1' and 'r2' has to be declared as 'wire's.\n\u2022 The module '1nn3r' does not have ports named 'instr' and 'z'. Those need to be changed to 'd' and 's', respectively.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The code in the PDF shows 'module 1nn3r' but in the image it appears as 'module lnn3r' (with a lowercase L instead of the number 1). This discrepancy suggests the image might not be correctly representing the code from the PDF."
     },
     {
@@ -236,7 +236,7 @@
         "question": "Does the following code correctly implement a counter that counts from 1 to 11 by increments of 2 (e.g., 1, 3, 5, 7, 9, 11, 1, 3, ...)? If so, say \"Correct\". If not, correct the code with minimal modification.\n\n1 module odd_counter (clk, count);\n2 wire clk;\n3 reg[2:0] count;\n4 reg[2:0] count_next;\n5\n\n6 always@*\n7 begin\n8 count_next = count;\n9 if(count != 11)\n10 count_next = count_next + 2;\n11 else\n12 count_next <= 1;\n13 end\n14\n\n15 always@(posedge clk)\n16 count <= count_next;\n17 endmodule",
         "solution": "No, the implementation is not correct.\n\nExplanation.\nThe correct implementation:\n\nmodule odd_counter (clk, count);\nwire clk;\nreg[3:0] count = 1;\nreg[3:0] count_next;\n\nalways@* begin\ncount_next = count;\nif(count != 11)\ncount_next += 2;\nelse\ncount_next = 1;\n\nend\n\nalways@(posedge clk)\ncount <= count_next;\n\nendmodule",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_2/e",
@@ -245,7 +245,7 @@
         "question": "Does the following code correctly instantiate a 4-bit adder? If so, say \"Correct\". If not, correct the code with minimal modification.\n\n1 module adder(input a, input b, input c, output sum, output carry);\n2 assign sum = a ^ b ^ c;\n3 assign carry = (a&b) | (b&c) | (c&a);\n4 endmodule\n5\n\n6\n\n7 module adder_4bits(input [3:0] a, input [3:0] b, output [3:0] sum, carry);\n8 wire [2:0]s;\n9\n\n10 adder u0 (a[0],b[0],1'b0,sum[0],s[0]);\n11 adder u1 (a[1],s[0],b[1],sum[1],s[1]);\n12 adder u2 (a[2],s[1],b[2],sum[2],s[2]);\n13 adder u3 (a[3],s[2],b[3],sum[3],carry);\n14 endmodule",
         "solution": "Yes.\nExplanation: Even though the wire s is swapped with the input b, the final computation produced by the module adder is still going to be correct since the or and and operations are commutative.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_3/a",
@@ -256,7 +256,7 @@
         "solution_figures": [
             "chart_p10_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text is correctly extracted, but the image 'chart_p10_0.png' appears to contain the solution steps with overbar notation for negation that isn't represented in the text version. The solution should either include proper notation in the text or rely solely on the image. The current representation could be confusing as the text solution doesn't properly show negation symbols."
     },
     {
@@ -268,7 +268,7 @@
         "solution_figures": [
             "chart_p10_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text is correctly extracted, but the image 'chart_p10_1.png' appears to contain the solution steps with overbar notation for NAND operations that isn't properly represented in the text version. The solution should either include proper notation in the text or rely solely on the image. The current representation doesn't properly show the NAND operations with appropriate notation."
     },
     {
@@ -278,7 +278,7 @@
         "question": "Using Boolean algebra, simplify the following min-terms:\n\u2211(3, 5, 7, 11, 13, 15)\n\nShow your work step-by-step.",
         "solution": "F = D.(B + C)\n\nExplanation:\n\n{3, 5, 7, 11, 13, 15} = {0011, 0101, 0111, 1011, 1101, 1111}\n\nF = (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D) + (A.B.C.D)\nF = (C.D.((A.B) + (A.B) + (A.B) + (A.B))) + (B.D.((A.C) + (A.C)))\nF = (C.D) + (B.C.D)\nF = D.(C + (B.C))\nF = D.(B + C)",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text is correctly extracted, but it doesn't properly represent the negation symbols that should appear in the Boolean expressions. For example, expressions like 'A.B.C.D' should have overbar notation to indicate which variables are negated based on the binary representations {0011, 0101, etc.}. Without proper notation for negation, the solution is not accurately represented."
     },
     {
@@ -288,7 +288,7 @@
         "question": "There is one critical component of an FSM that is missing in this diagram. Please write what is missing in the answer box below.",
         "solution": "The reset line or indication for initial state.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. The diagram showing states A, B, C, D and their connections should be included in the context_figures field."
     },
     {
@@ -298,7 +298,7 @@
         "question": "Of the two FSM types, what type of an FSM is this?",
         "solution": "Moore",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to determine what type of FSM this is."
     },
     {
@@ -310,7 +310,7 @@
         "solution_figures": [
             "chart_p12_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure chart_p12_0.png appears to be a table showing the advantages of each encoding type, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the table format should be preserved in the solution text."
     },
     {
@@ -322,7 +322,7 @@
         "solution_figures": [
             "chart_p13_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure chart_p13_0.png appears to be showing the equations, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the equation format should be preserved in the solution text. Additionally, the context is missing the FSM diagram that is referenced in the problem statement."
     },
     {
@@ -332,7 +332,7 @@
         "question": "Fully describe the FSM with equations given that the states are encoded with binary encoding. Assign state encodings such that numerical values of states increase monotonically for states A through D while using the minimum possible number of bits to represent the states with binary encoding. Indicate the values you assign to each state and simplify all equations:",
         "solution": "State assignments: A: 00, B: 01, C: 10, D: 11\nNS[1] = TS[1] * (TS[0] * TB + TS[0] TA) + TS[1] * (TS[0] + TS[0] * TB)\nNS[0] = TS[1] * TS[0] * TB + TS[1]\nO[1] = TS[1]\nO[0] = TS[1] XOR TS[0]",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to derive or verify these equations."
     },
     {
@@ -344,7 +344,7 @@
         "solution_figures": [
             "chart_p13_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure chart_p13_1.png appears to be showing the equations, but this should not be classified as a solution figure since it's part of the formatted answer. The solution is textual and the equation format should be preserved in the solution text. Additionally, the context is missing the FSM diagram that is referenced in the problem statement."
     },
     {
@@ -354,7 +354,7 @@
         "question": "Which state encoding do you choose to implement in order to minimize the total area of this FSM?",
         "solution": "one-hot: 10 logics 4 FFs binary: 16 logics. 2 FFs output: 10 logics. 2 FFs\nOutput encoding has the least amount of circuitry elements.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the FSM diagram that is referenced in the problem statement. Without the diagram, it's impossible to determine the correct answer to this question."
     },
     {
@@ -366,7 +366,7 @@
         "question": "Complete the above program to perform the 64-bit subtraction explained above using at most 4 MIPS instructions. (Note: A summary of the MIPS ISA is provided at the end of this question.)",
         "solution": "A possible sequence of instructions is as follows:\n\nsubu $3, $5, $7 # Subtract the least significant part\nsltu $2, $5, $7 # Check if borrowing is needed\nadd $2, $6, $2 # Add borrow\nsub $2, $4, $2 # Subtract the most significant part",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure since it's not properly extracted or referenced in the original PDF. The MIPS instruction summary is textually mentioned but not included in the context."
     },
     {
@@ -378,7 +378,7 @@
         "question": "Reorder the existing instructions and insert as few as possible nop instructions to correctly execute the entire program that you completed in part (a) on the given pipelined processor. Show all the instructions necessary to correctly execute the entire program.",
         "solution": "We reoder the lw instructions to first load the data that corresponds to the lower parts of the two numbers since we need the lower part first. We also reorder the completely independent addi instruction to hide part of the load latency. We insert sufficient number of nop instructions until the register is written before the dependent instruction reads the same register in the decode stage.\n\nThis is the resulting code:\n\nLoop: lw $5, 4($1)\nlw $7, 12($1)\nlw $4, 0($1)\nlw $6, 8($1)\naddi $1, $1, 16\nsltu $2, $5, $7\nsubu $3, $5, $7\nnop\nnop\nadd $2, $6, $2\nnop\nnop\nnop\nsub $2, $4, $2\nj Loop",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure since it's not properly extracted or referenced in the original PDF. Additionally, the context field has formatting issues where the pipeline stages are labeled as (a), (b), (c), etc., which could be confusing since part (a) is a different question."
     },
     {
@@ -390,7 +390,7 @@
         "question": "What is the Cycles Per Instruction (CPI) of the program when executed on the pipelined processor provided in part (b)?",
         "solution": "CPI \u2248 1.5\n\nExplanation.\nSince the code is an infinite loop, the number of cycles to fill the pipeline becomes negligible after a large number of iterations. Thus, we can consider that the throughput is one instruction every cycle. We count the number of cycles for one loop iteration. It is 15 for 10 instructions. This way, CPI \u2248 15/10 = 1.5.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure. Additionally, the context is incomplete as it doesn't include the description of the pipelined processor from part (b) that is necessary to answer this question."
     },
     {
@@ -402,7 +402,7 @@
         "question": "Now, assume a processor with a multi-cycle datapath. In this multi-cycle datapath, each instruction type is executed in the following number of cycles: 4 cycles for R-type, 5 cycles for load, 4 cycles for store, and 3 cycles for jump. What is the CPI of the program in part (a) when executed on this multi-cycle datapath? Assuming the multi-cycle datapath runs at the same clock frequency as the pipelined datapath in part (b), how much speedup does pipelining provide?",
         "solution": "CPI:\n\nCPI = 4.3\n\nExplanation.\nFor the multi-cycle datapath, we have to take into account the number of cycles\nfor each instruction type: 4 cycles for R-type, 5 cycles for load, 4 cycles for store,\nand 3 cycles for jump.\nThus, CPI = (4\u00d75+5\u00d74+3\u00d71)/10 = 4.3.\n\nSpeedup:\n\nPipelining provides 287% speedup.\n\nExplanation.\nWe calculate the speedup as follows:\nSpeedup = CPImulti\u2212cycle/CPIpipelined = 4.3/1.5 = 2.87.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field references 'chart_p18_0.png', but this appears to be the MIPS instruction summary table shown at the end of the problem in the PDF. This table should not be included as a context figure. Additionally, the context is incomplete as it doesn't include the description of the pipelined processor from part (b) that is necessary to answer this question and make the comparison for the speedup calculation."
     },
     {
@@ -412,7 +412,7 @@
         "question": "When the given code segment is executed on Machine I, the compiler has to reorder\ninstructions and insert nops if needed. Write the resulting code that has minimal modifications\nfrom the original.",
         "solution": "Copy: lw $2, 100($5)\n\naddi $1, $1, 1\n\nnop\n\nsw $2, 200($6)\n\nbne $1, $25, Copy",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/b",
@@ -421,7 +421,7 @@
         "question": "When the given code segment is executed on Machine II, dependencies between instruc-\ntions are resolved in hardware. Explain when data is forwarded and which instructions are stalled\nand when they are stalled.",
         "solution": "In every iteration, data are forwarded for sw and for bne. The instruction sw is dependent on lw, so\nit is stalled one cycle in every iteration",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/c",
@@ -430,7 +430,7 @@
         "question": "Calculate the machine code size of the code segments executed on Machine I (part (a))\nand Machine II (part (b)).",
         "solution": "Machine I: Machine I - 20 bytes (because of the additional nop)\n\nMachine II: Machine II - 16 bytes",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/d",
@@ -439,7 +439,7 @@
         "question": "Calculate the number of cycles it takes to execute the code segment on Machine I and\nMachine II.",
         "solution": "Machine I:\n\nThe compiler reorders instructions and places one nop. This is the execution\ntimeline of the first iteration:\n1 2 3 4 5 6 7 8 9\nF D E M W\n\nF D E M W\nN N N N N\n\nF D E M W\nF D E M W\n\n9 cycles for one iteration. As there are 5 instructions in each iteration and 25\niterations, the total number of cycles is 129 cycles.\n\nMachine II:\n\nThe machine stalls sw one cycle in the decode stage. This is the execution\ntimeline of the first iteration:\n1 2 3 4 5 6 7 8 9\nF D E M W\n\nF D D E M W\nF F D E M W\n\nF D E M W\n9 cycles for one iteration. As there are 4 instructions in each iteration and 25\niterations, and one stall cycle in each iteration, the total number of cycles is\n129 cycles.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_6/e",
@@ -448,7 +448,7 @@
         "question": "Which machine is faster for this code segment? Explain.",
         "solution": "For this code segment, both machines take the same number of cycles. We cannot say which one is\nfaster, since we do not know the clock frequency.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_7/a",
@@ -463,7 +463,7 @@
         "solution_figures": [
             "chart_p22_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p22_0.png' appears to be incorrectly assigned. This image is already used in the context_figures, which means it's showing the initial state of the machine rather than being part of the solution. The solution for part (a) should be text-only without any figures."
     },
     {
@@ -479,7 +479,7 @@
         "solution_figures": [
             "chart_p22_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p22_1.png' appears to be incorrectly assigned. This image is already used in the context_figures, which means it's showing the initial state of the machine rather than being part of the solution. The solution for part (b) should be the timing diagram text without any figures."
     },
     {
@@ -495,7 +495,7 @@
         "solution_figures": [
             "chart_p23_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/a",
@@ -506,7 +506,7 @@
         "question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 1? Explain.",
         "solution": "100 banks (because the latency of VLD and VST instructions is 100 cycles)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/b",
@@ -517,7 +517,7 @@
         "question": "What should the minimum value of N be to avoid stalls while executing a VLD or VST instruction, assuming a vector stride of 2? Explain.",
         "solution": "101 banks.\nExplanation. To avoid stalls, we need to ensure that consecutive vector elements access 100 different banks.\nWith a vector stride of 2, consecutive elements of a vector will map to every other bank. For example, if the first element maps to bank 0, the next element will map to bank 2, and so on.\nWith 100 banks, the 51st element of a vector will map to bank 100%100 = 0, conflicting with the first element of the vector.\nHowevert, with 101 banks, the 51st element will map to bank 1, which was skipped by the previous vector elements.\n\nLet's assume there are 102 elements in a vector and the first elements accesses bank 0. The 101 banks will be accessed in the following order:\n\n(0, 2, ..., 100, 102, 104, ..., 200, 202)%101 = (0, 2, ..., 100, 1, 3, ..., 99, 0)\nWe can see that none of the elements conflict in the DRAM banks. Note that, when the last vector elements accesses bank 0, the bank is already available for a new access because the 100 cycle latency of accessing the first element is overlapped by accessing the other 101 elements.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/c",
@@ -530,7 +530,7 @@
         "solution_figures": [
             "chart_p26_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_8/d",
@@ -543,7 +543,7 @@
         "solution_figures": [
             "chart_p27_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/a",
@@ -552,7 +552,7 @@
         "question": "How many warps does it take to execute this program?",
         "solution": "33 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = d#Total_threads#Warp_size e,\n\nwhere\n#Total_threads = 1025 = 210 + 1 (i.e., one thread per loop iteration),\n\nand\n#Warp_size = 32 = 25 (given).\n\nThus, the number of warps needed to run this program is:\n#Warps = d 210+125 e = 25 + 1 = 33.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/b",
@@ -561,7 +561,7 @@
         "question": "What is the maximum possible SIMD utilization of this program? (Hint: The warp scheduler does not issue instructions when no threads are active).",
         "solution": "1025/1056.\n\nExplanation:\nEven though all active threads in a warp follow the same execution path, the last warp will only have one active thread.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/c",
@@ -570,7 +570,7 @@
         "question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer.)",
         "solution": "For every 32 consecutive elements of A, every element should be lower than 33 (if), or greater than or equal to 33 (else). (NOTE: The solution is correct if both cases are given.)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/d",
@@ -579,7 +579,7 @@
         "question": "What is the minimum possible SIMD utilization of this program?",
         "solution": "1025/1568.\n\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nThen, part of the threads in each warp executes Instruction 2 and the other part executes Instruction 3. We consider that Instruction 2 is executed by \u03b1 threads in each warp (except the last warp), where 0 < \u03b1 \u2264 32, and Instruction 3 is executed by the remaining 32\u2212\u03b1 threads.\nThe only active thread in the last warp executes either Instruction 2 or Instruction 3. The other instruction is not issued for this warp.\n\nThe minimum SIMD utilization sums to (1025+\u03b1\u00d732+(32\u2212\u03b1)\u00d732+1)/(1056+1024+1024+32) = 1025/1568.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/e",
@@ -588,7 +588,7 @@
         "question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer.)",
         "solution": "For every 32 consecutive elements of A, part of the elements should be lower than 33 (if), and the other part should be greater than or equal to 33 (else).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik_s18_final_en-sol/Problem_9/f",
@@ -597,6 +597,6 @@
         "question": "What is the SIMD utilization of this program if A[i] = i? Show your work.",
         "solution": "1025/1072.\n\nExplanation:\nInstruction 1 is executed by every active thread (1025/1056 utilization).\nInstruction 2 is executed by the first 33 threads, i.e., all threads in the first warp and one thread in the second warp.\nInstruction 3 is executed by the remaining active threads.\n\nThe SIMD utilization sums to (1025+32+1+31+960+1)/(1056+32+32+32+960+32) = 2050/2144 = 1025/1072.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]

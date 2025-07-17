@@ -8,7 +8,7 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution table format in the text doesn't match the original PDF's table format. The binary digits in the solution text are spaced out individually rather than formatted in a proper table as shown in the image. Additionally, the image 'chart_p3_0.png' appears to be the solution table, but it's not clear if it's properly cropped to only show the solution part without revealing parts of the question."
     },
     {
@@ -18,7 +18,7 @@
         "question": "How can you express decimal 171 and \u221240 using two's complement binary representation?",
         "solution": "Solution: 171 == 0 1010 1011\n\nNote that you have to have a leading zero, otherwise it would be a negative number (twos complement -85). Any number of leading zeroes is fine, but there should be at least one.\n-40 == 101 1000\n\nSimilarly you need to have at least one leading '1' here as well.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_2/(a)",
@@ -29,7 +29,7 @@
         "question": "What is the meaning of X in this truth table?",
         "solution": "The output value is not important for the functionality of the circuit.\nIt can be taken as '0' or '1' to simplify the equations",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_2/(b)",
@@ -40,7 +40,7 @@
         "question": "A friend of yours has determined the following Boolean equation for Z:\n\nZ = (B +D) \u00b7 (B + C) \u00b7 (A+ C) \u00b7 (A+B +D) \u00b7 (A+B + C) \u00b7 (A+ C +D)\n\nBut he is not sure if this is correct. Verify whether or not the given equation matches\nthe truth table given above. Is there something that your friend could have done\nbetter?",
         "solution": "The equation is not correct. You can see this if you mark the minterms on the\ntruth table for each equation. The following are the problems:\n\n\u2022 (A+ C) is redundant if the X there was chosen as '1'\n\n\u2022 (A+B +D) is redundant.\n\n\u2022 (A+B + C) is redundant, but (A+B + C) is missing\n\n\u2022 (A+ C +D) is plain wrong. It covers 1 and X. Should not be there\n\nThe X values have not been optimally used, this results in a more complex\nequation, there are more 0s than 1s, so a SOP form would probably be better,\nin addition there are redundant terms, the equation is not simplified",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_2/(c)",
@@ -51,7 +51,7 @@
         "question": "Derive your own optimized boolean equation corresponding to the same truth table using sums-of-products form. Try to take advantage of the 'X' values to minimize the equation as much as possible. (Hint: use a Karnaugh map)",
         "solution": "If you take all the Xs as '1', you can derive:\nZ = (B \u00b7D) + (C \u00b7D) + (A \u00b7B \u00b7 C)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_3/a",
@@ -60,7 +60,7 @@
         "question": "Draw the State Transition Diagram for a Moore type FSM that implements this state machine",
         "solution": "00\nDIM =1\n\nLOW =1\n\nANIM=0\n\n\n01\nDIM =1\n\nLOW =0\n\nANIM=0\n\n\n10\nDIM =0\n\nLOW =0\n\nANIM=0\n\n\n11\nDIM =0\n\nLOW =0\n\nANIM=1\n\n\nD=0,C=1 D=0,C=1 D=0,C=1\n\n\nD=1,C=0 D=1,C=0 D=1,C=0\n\n\nD=X,C=0 D=0,C=XD=0,C=0\n\nor\n\nD=1,C=1\n\nD=0,C=0\n\nor\n\nD=1,C=1\n\nReset",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution should include a diagram, but there are no solution figures associated with this problem. The text representation of the state transition diagram is not sufficient without a visual representation. Additionally, the context is missing the problem number '3' and part '(a)' from the original PDF."
     },
     {
@@ -72,7 +72,7 @@
         "solution_figures": [
             "chart_p7_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is incomplete and does not provide all the necessary information from part (a) that would be needed to complete part (b). The context should include the description of the power levels, inputs, outputs, and their relationships as given in the original PDF. Additionally, the solution figure 'chart_p7_0.png' is referenced but we cannot verify if it correctly represents the table shown in the PDF without seeing the actual image."
     },
     {
@@ -84,7 +84,7 @@
         "question": "1 module one (input sel, input [1:0] data, output z);\n2\n\n3 always @ (*)\n4 begin\n5 assign z= (sel) ? data[1]:data[0];\n6 end\n7 endmodule",
         "solution": "This code has mistakes. sequential assignments do not start with assign, these are reserved for combinational statements. In addition, if z was assigned in an always statement, it should have been declared as reg.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_4/b",
@@ -95,7 +95,7 @@
         "question": "1 module two (input [1:0] sel, output reg [7:0] z);\n2\n\n3 always @ (sel)\n4 if (sel == 2'b01) z=8'b01010101;\n5 else if (sel == 2'b10) z=8'hAA;\n6 else z=8'd0;\n7\n\n8 endmodule",
         "solution": "This code is correct, it is OK to write constants using different representations.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_4/c",
@@ -106,7 +106,7 @@
         "question": "1 module three ( input [3:0] data, input sel1, input sel2, output z);\n2\n\n3 wire [1:0] m; // actual exam had (a typo) : wire m;\n4\n\n5 module mux2 ( input [1:0] i, input sel, output z);\n6 assign z= (sel) ? i[1]:i[0];\n7 endmodule\n8\n\n9 mux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\n10 mux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\n11 mux2 i2 (.i(m), .sel(sel2), .z(z) );\n12\n\n13 endmodule",
         "solution": "This code has mistakes. The sub module mux2 should be defined outside the module three and not be part of it. Only the instantiations are part of the code. In the actual exam, there was a typo here, and m was declared as a single bit. Students that pointed out this typo got full points. This is the intended version.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_4/d",
@@ -117,7 +117,7 @@
         "question": "1 module four (input [3:0] data, input [1:0] sel, output reg [3:0] z);\n2\n\n3 always @ (data, sel)\n4 z = data;\n5 if (sel[0]) z = ~data;\n6 else if (sel[1]) z = 4'b0000;\n7\n\n8 endmodule",
         "solution": "This code has mistakes. If there is no begin following the always statement, then only the first statement will be a sequential statement, the rest starting with the if will be interpreted as a separate combinational statement.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_5/a",
@@ -128,7 +128,7 @@
         "solution_figures": [
             "chart_p10_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the diagram of the single port SRAM memory with 512-entries of 32-bit words that is shown in the original PDF. This diagram is necessary for understanding the problem. Additionally, the solution text in the PDF contains more than just 'Solution:' - it includes the complete schematic diagram with labels."
     },
     {
@@ -138,7 +138,7 @@
         "question": "If we were to modify the ALU for the 64-bit MIPS processor, what changes would have to be made inside the ALU so that it could process 64-bits at a time? How would this affect the size of the ALU?",
         "solution": "Solution: All arithmetic logic operations need to be defined over 64 bits. More or less the ALU would double in size.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_5/c",
@@ -147,7 +147,7 @@
         "question": "Would the changes to the ALU that you have outlined above, also impact the propagation delay of the arithmetic and logic functions? Would the 64-bit ALU be faster, slower or exactly the same speed as a 32-bit adder.",
         "solution": "Solution: The core of the ALU is an adder. For the 64-bit ALU we will need a 64-bit adder which will need more time to perform the operation (in the worst case twice as much). The propagation delay of the ALU will increase, ALU will be slower.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_5/d",
@@ -156,7 +156,7 @@
         "question": "Assuming that the ALU is on the critical path of the processor, how would the clock frequency of the new 64-bit processor compare to the original 32-bit processor?",
         "solution": "Solution: The propagation delay of the ALU will increase, which will decrease the maximum clock frequency of the processor.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_5/e",
@@ -165,7 +165,7 @@
         "question": "Taking into account your answers from the previous parts, comment on the execution time of a program running on a single-cycle 64-bit MIPS architecture when compared to the same program running on a single-cycle 32-bit MIPS architecture. Do you expect the execution time to increase, to decrease, or would it stay the same? Briefly explain why. Assume that only the width of the operands have changed, and the instructions were only modified to cope with the larger data width. No new instructions were added",
         "solution": "Solution: Since both architectures are single cycle CPI will be 1 for both architectures, so the CPI will not affect the performance. Since the ALU is more complex, the clock frequency will be lower, which will increase the execution time. If the number of instructions can not be decreased by the same proportion the 64-bit processor will be slower. There are cases when operating on larger numbers could reduce the number of instructions (N). I.e. a number exceeding 4 billion can not be expressed with only 32 bit. If you need to process such a number (for example add two such numbers) a 32-bit architecture will need multiple instructions, whereas a 64-bit architecture could use a single instruction. Reducing the run time.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_6/a",
@@ -176,7 +176,7 @@
         "solution_figures": [
             "chart_p14_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_6/b",
@@ -187,7 +187,7 @@
         "solution_figures": [
             "chart_p15_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ws2014_solutions/Problem_7",
@@ -196,6 +196,6 @@
         "question": "What is the difference between a set associative and direct-mapped cache, briefly describe a situation where a set associative cache with the same capacity performs better than a direct-mapped cache version.",
         "solution": "In a direct mapped cache every memory location can map to only one cache location. In some cases this can cause conflict misses even though there is in principle room in the cache. Set associative caches allow a memory location to be mapped to a set of locations (i.e. a 2-way set associative cache allows mapping to 2 locations) in the cache. This reduces conflict misses.\n\nFor example assume a cache with a capacity of 8 words, and consider the code below:\n\n1 one: lw $s1, 0($s0) # first read\n2 two: lw $s2, 4($s0) # second read\n3 three: lw $s3,32($s0) # third read\n4 four: lw $s4,36($s0) # fourth read\n5 five: lw $s5, 0($s0) # re-read first\n6 six: lw $s6, 4($s0) # re-read second\n\nIf you use a direct mapped cache the addresses 0, 32 and 4, 36 will map to the same cache location. So the first two accesses will be compulsory misses, but will fill the cache location 0 and 1. Although we still have room in the cache (only 2 out of 8 is occupied), the next two reads (three and four) will again map to locations 0 and 1 overwriting the old ones. The last two reads will then again be cache misses.\n\nIn a 2-way set associative cache, the reads at three and four will not overwrite the old content because there is another way to store them in the cache. Therefore, the last two accesses (five and six) will come from the cache.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]

@@ -6,7 +6,7 @@
         "question": "Each of the following interprets this sequence differently. For each interpretation, state if the statement is true of false. If it is false, write the correct interpretation.\n\n(EA)16 in hexadecimal format: False, (AE)16\n\n-46 in decimal when using sign/magnitude representation: True\n\n-81 in decimal when using two's complement representation: False,-82\n\n174 when using unsigned representation: True",
         "solution": "False, (AE)16\n\nTrue\n\nFalse,-82\n\nTrue",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_1/(b)",
@@ -15,7 +15,7 @@
         "question": "State whether the following statements about the binary representation of numbers are true or false. Give brief explanations for the statements that are false.\n\n\u2022 Both two's complement and one's complement representation define two zeroes, one positive and one negative.\n\n\u2022 Using N bits it is only possible to represent 2N\u22121 \u2212 1 different numbers when a two's complement number system is used.\n\n\u2022 While there are methods to represent both positive and negative integers, it is not possible to represent fractions or real numbers using binary numbers.",
         "solution": "Solution: False, there's only one representation for two's complement.\n\nSolution: False. These are only the positive numbers, in total all numbers from \u22122N\u22121 to 2N\u22121 \u2212 1 can be represented.\n\nSolution: False, fixed and floating point number systems can be used to represent such numbers.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_2/(a)",
@@ -26,7 +26,7 @@
         "question": "(1 point) What is the meaning of X in this truth table?",
         "solution": "Solution: The output value is not important for the functionality of the circuit.\nIt can be taken as '0' or '1' to simplify the equations",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_2/(b)",
@@ -37,7 +37,7 @@
         "question": "(6 points) A friend of yours has determined the following Boolean equation for Z:\n\nZ = (B +D) \u00b7 (A+B + C) \u00b7 (A+B + C) \u00b7 (A+B + C) \u00b7 (A+ C +D)\n\nBut he is not sure if this is correct. Verify whether or not the given equation\nmatches the truth table given above. If not, please explain how the equation can\nbe corrected.",
         "solution": "Solution:\nThe equation is not correct. You can see this if you mark the min-terms on the\ntruth table for each equation. The following are the problems:\n\n\u2022 (B +D) is wrong. Should have been (B +D)\n\n\u2022 (A+B + C) and (A+B + C) can be merged to (A+B)\n\n\u2022 min-term (A+B + C +D) is missing\n\n\u2022 (A+ C +D) is redundant, especially if the X is taken as '1'\n\nThe X values have not been optimally used, this results in a more complex\nequation, if X values are chosen carefully a SOP form would probably be better,\nin addition there are redundant terms, the equation is not simplified",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_2/(c)",
@@ -48,7 +48,7 @@
         "question": "(5 points) Derive your own optimized Boolean equation corresponding to the same\ntruth table using sums-of-products form. Try to take advantage of the 'X' values\nto minimize the equation as much as possible. (Hint: use a Karnaugh map)",
         "solution": "Solution: If you take ABCD as 0 and all other X's as '1', you can derive:\nZ = (B \u00b7D) + (A \u00b7 C \u00b7D)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_2/(d)",
@@ -60,7 +60,7 @@
         "question": "(4 points) Draw a gate-level schematic that realizes the function Z using only 2-\ninput AND, OR gates. Assume that you have all variables (A,B,C,D) available as\ninput. Their complements (A,B,C,D) are already drawn for you.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain a description of the gate-level schematic. Additionally, the image 'chart_p6_0.png' appears to be part of the solution rather than context, as it shows the gate-level schematic with the complements already drawn. This image should be in the solution_figures field instead of context_figures."
     },
     {
@@ -72,7 +72,7 @@
         "question": "(2 points) Assume that all the gates (AND, OR, NOT) in the previous diagram\nhave a propagation delay of 100 ps and a contamination delay of 50 ps. What is the\ndelay of the longest (critical) path and the shortest path of this circuit?",
         "solution": "Solution: In the solution above, the critical path goes through 1 inverter, 2\nAND gates, and 1 OR gate and is (4 \u00d7 tpd ==) 400 ps. The short path goes\nthrough one AND gate and two OR gates and equals to (2\u00d7 tcd ==)100 ps.\nNote: Depending on how the circuit is drawn the numbers could change slightly,\nit is possible that the longest path is 5 gates.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "This question refers to 'the previous diagram' which is the gate-level schematic from part (d). Since the diagram is not properly included in part (d)'s solution, this question lacks the necessary context. The solution also refers to 'the solution above' which depends on seeing the circuit diagram from part (d)."
     },
     {
@@ -117,7 +117,7 @@
         "question": "Which code snippet generates a sequential circuit?",
         "solution": "none",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution in the PDF shows a checkmark next to 'none', but the solution field in the JSON only contains 'none' without indicating it's the correct answer. Additionally, the context should include the module mux2 definition that appears in the PDF before part (b)."
     },
     {
@@ -130,7 +130,7 @@
         "question": "Which code snippet properly instantiates the module mux2?",
         "solution": "Both A and B",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing the module mux2 definition that appears in the PDF. The context should include 'module mux2 (input d1, input d2, input s, output out); assign out = s? d1:d2; endmodule' to provide complete context for the question."
     },
     {
@@ -142,7 +142,7 @@
         "question": "Which code snippet results in a 2-input multiplexer ?",
         "solution": "B",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field only includes one image (chart_p11_0.png), but the question requires both code snippets A and B to be shown. The second code snippet appears to be missing from the context figures."
     },
     {
@@ -154,7 +154,7 @@
         "question": "Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c3c2c1d6d6110 (c and d are both 8-bit values)?",
         "solution": "Both A and B",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field only includes one image (chart_p11_1.png), but the question requires both code snippets A and B to be shown. The second code snippet appears to be missing from the context figures."
     },
     {
@@ -166,7 +166,7 @@
         "question": "Which code snippets produce a combinational circuit?",
         "solution": "A",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field only includes one image (chart_p11_2.png), but the question requires both code snippets A and B to be shown. The second code snippet appears to be missing from the context figures."
     },
     {
@@ -180,7 +180,7 @@
         "solution_figures": [
             "chart_p12_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The parsing has several issues: 1) The same image 'chart_p12_0.png' is used in both context_figures and solution_figures, which is problematic as it shouldn't appear in both places. 2) The solution table is included in the solution field, which is correct, but the image in solution_figures appears to be redundant since the solution is already provided as text. 3) The images provided appear to be just the MIPS code which is already included in the context text, not a separate figure that would be needed for the problem. The original PDF doesn't seem to have a figure that needs to be included separately from the text."
     },
     {
@@ -190,7 +190,7 @@
         "question": "How long (in seconds) will it take for this program to run on this architecture?",
         "solution": "Time to execute = N \u00b7 CPI \u00b7 1/f\n\nT ime to execute = 200.000.000 \u00b7 1 \u00b7 1/400.000.000Hz\nTime to execute = 0.5 seconds",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_6/b",
@@ -199,7 +199,7 @@
         "question": "As an alternative, you consider a multi-cycle architecture that can run at 1.2 GHz, what is the minimum CPI that the multi cycle architecture has to achieve so that we can be faster?",
         "solution": "Time to execute = N \u00b7 CPI \u00b7 1/f\n\n0.5 seconds = 200.000.000 \u00b7 CPI \u00b7 1/1.200.000.000Hz\n\nCPI has to be at least 3",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_6/c",
@@ -208,7 +208,7 @@
         "question": "As yet another alternative, there is a different architecture for which the program can be compiled more efficiently into 120 million instructions. The architecture has a CPI of 2 and runs at 500MHz. Is this option faster than the single cycle architecture from 6a?",
         "solution": "Time to execute = N \u00b7 CPI \u00b7 1/f\n\nT ime to execute = 120.000.000 \u00b7 2 \u00b7 1/500.000.000Hz\nTime to execute = 0.48 seconds\n\nIt is marginally faster",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_7/(a)",
@@ -217,7 +217,7 @@
         "question": "Consider the program with the memory accesses listed above. How many cache misses and how many cache hits will you generate?",
         "solution": "14 misses and 2 hits.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_7/(b)",
@@ -226,7 +226,7 @@
         "question": "What is the total memory access time for the program in question",
         "solution": "14 misses each require 1 cache access + 1 memory access (42 cycles), and the 2 cache hits require 2x2 = 4 additional cycles. So the total is:\n\nTotal = 14\u00d7 (40 + 2) + 2\u00d7 2Total = 588 + 4Total = 592",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text has a formatting error. The solution should read 'Total = 14\u00d7 (40 + 2) + 2\u00d7 2' followed by 'Total = 588 + 4' and then 'Total = 592'. Instead, it incorrectly shows 'Total = 14\u00d7 (40 + 2) + 2\u00d7 2Total = 588 + 4Total = 592' which combines these expressions incorrectly."
     },
     {
@@ -236,7 +236,7 @@
         "question": "How many of these misses are compulsory, how many are conflict and how many are capacity misses",
         "solution": "There are 4 compulsory misses, 10 conflict misses, and no capacity misses. Half the capacity of the cache is not used during the execution of the program.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2016/Problem_7/(d)",
@@ -245,6 +245,6 @@
         "question": "For each of the following changes to the cache organization, state whether it will or not increase the cache hit ratio and explain why.\n\n1. Increasing the cache capacity from 8 to 16 words\n2. Making a 2-way set associative cache instead of direct mapped cache\n3. Using a block size of 4.",
         "solution": "1. Will not work directly, unless used in combination with the other two methods.\n\n2. Will work, 2-way set associative cache reduces conflict misses. However, there will be more compulsory misses. ( 5 hit/ 11 miss)\n\n3. Will work, using a block size of 4 reduces the compulsory misses. Still there would be several conflict misses ( 6 hit/ 10 miss)\n\nA better solution would be to use 2-way set associative with a block size of 4 (12 hit, 4 miss). Or increase the size to 16, and use 4 way set associative with block size 4 (13 hit / 3 miss).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]

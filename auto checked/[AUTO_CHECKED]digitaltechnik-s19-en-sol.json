@@ -8,7 +8,7 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text is correctly extracted, but there's an issue with the representation of Boolean operations. In the original PDF, there are overbar notations for negation (A\u0305, B\u0305, C\u0305) which are not properly represented in the parsed text. Additionally, the image 'chart_p3_0.png' appears to be included as a solution figure, but without seeing the actual image, I cannot verify if it's correctly associated or if it contains part of the solution that should be in the text."
     },
     {
@@ -20,7 +20,7 @@
         "solution_figures": [
             "chart_p3_1.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text is extracted but lacks proper representation of the NAND operations and overbar notations for negation that appear in the original PDF. The explanation also appears to have some redundant steps and possibly missing proper notation for NAND operations. Additionally, the image 'chart_p3_1.png' is included as a solution figure, but without seeing the actual image, I cannot verify if it's correctly associated or if it contains important notation that should be represented in the text."
     },
     {
@@ -30,7 +30,7 @@
         "question": "Cache block size (8, 16, 32, 64, or 128B)?",
         "solution": "64 B.\n\nExplanation:\nCache hit rate is 3/8 in sequence 1. This means that there are 3 hits. As two of them\nshould be the second accesses to 8192 and 16384, the other hit is the access to 63. With a\ncache block of 64 B, the access to address 64 results in a miss.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_10/b",
@@ -39,7 +39,7 @@
         "question": "Cache associativity (1-, 2-, 4-, or 8-way)?",
         "solution": "4-way.\n\nExplanation:\nWe already know that the cache block size is 64 B. Thus, there are 6 offset bits.\n\nRegardless of cache size or associativity, addresses 0, 8192, 16384, and 32768 map to the\nsame set. Thus, the cache cannot be 1-way, because we would not see hits on 8192 and\n16384 in sequence 1.\n\nIf the cache were 2-way, 4096 would also map to the same set as 0, 8192, 16384, and\n32768. This would make impossible a cache hit on 8192 in sequence 1.\n\nIf the cache were 8-way, 0, 1024, 3072, 4096, 8192, 16384, and 32768 would all map to set\n0. With 8 ways, address 0 would not be replaced, so it would hit in sequence 2.\n\nTherefore, the cache is 4-way associative.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_10/c",
@@ -48,7 +48,7 @@
         "question": "Cache size (4 or 8KB)?",
         "solution": "8 KB.\n\nExplanation:\nWe know that the cache is 4-way associative. In the beginning of sequence 2, 32768\nreplaces 0 (regardless of the replacement policy).\n\nThe fact that 8192 misses in sequence 2 can be explained by two possible cases:\n1. If the replacement policy is FIFO, the access to 0 in sequence 2 replaces 8192. Thus,\n   the cache size can be either 4 or 8 KB.\n2. If the replacement policy is LRU, the access to 0 in sequence 2 replaces 4096. If the\n   cache size is 4 KB, 1024 and 3072 map to the same set as 0 and 8192, and 1024 replaces\n   8192.\n\nSince there is a hit on 4096 in sequence 3, the size should be 8 KB. Otherwise, 3072 would\nhave replaced 4096.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_10/d",
@@ -57,7 +57,7 @@
         "question": "Cache replacement policy (LRU or FIFO)?",
         "solution": "FIFO.\n\nExplanation:\nAs explained above, if the cache size is 8 KB, only FIFO can make address 0 replace\naddress 8192 in sequence 2.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_11",
@@ -72,7 +72,7 @@
             "img_p21_1.png",
             "chart_p22_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The parsing has several issues: 1) The actual dataflow graph that is needed to solve the problem is missing from the context_figures. The image 'chart_p22_0.png' should contain the complete dataflow graph with nodes and connections, but it's not clear if this is correctly included. 2) The solution figures include the same images as the context figures, which is problematic because the solution should not be revealed in the context. 3) The question refers to 'the dataflow graph on the following page' but this graph doesn't appear to be properly included in the context. Without seeing the actual dataflow graph that students need to analyze, the problem is not standalone."
     },
     {
@@ -84,7 +84,7 @@
         "question": "Is it possible to observe that the branch predictor mispredicts 100% of the times in the first 5 iterations of the loop? If yes, fill in the table below with all possible initial values each entry can take. We represent Not Taken with N, and Taken with T.",
         "solution": "Yes, it is possible.\nThe pattern after 5 iterations: TTTNTNTTTN.\nIn order to be more clear, we add indices to each branch outcome in the pattern above, to represent their positions in the pattern: T1 T2 T3 N4 T5 N6 T7 T8 T9 N10\n\n\u2022 For GHR=NN, the only observed branch is T1. Therefore, the PHTE for NN has to be either 00 or 01 so that the branch predictor mispredicts the taken branch.\n\n\u2022 For GHR=TT, the observed branches are T3 N4 T9 N10. The PHTE for TT has to be initialized to 01 in order to cause the predictor to always mispredict. This way, each N and T moves the saturating counter to their respective direction. This will cause misprediction for the next branch which is always in the opposite direction.\n\n\u2022 For GHR=TN, the observed branches are T5 T7. Thus, the initial PHTE value for TN has to be 00 to mispredict both taken branches.\n\n\u2022 For GHR=NT, the observed branches are T2 N6 T8. Similar to the TT entry, NT's PHTE has to be initialized 01.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_12/(b)",
@@ -93,7 +93,7 @@
         "question": "At steady-state, we observe the following pattern which repeats over time: TTTNTN, with T representing Taken, and N representing Not Taken. When GHR pattern equals to NT or TT, the predictor will observe that the branch outcome will be either T or N. Therefore, no matter what the initial values for these two entries are in the pattern history table (PHT), only one of the branches can be predicted correctly. Thus prediction accuracy will never reach 100%. Explain how using local history registers instead of the global history register will help bring the prediction accuracy up to 100% during the steady state, by showing what each PHTE will saturate to.",
         "solution": "For the outer loop, we will keep observing all Ts, and the counters will be set to 2'b11 for TT and lead to 100% accuracy for this branch.\nThe second branch will keep observing this repeated pattern: TNN. So entry TN will be saturated to 2'b00, entry NN will saturate to 2'b11, and entry NT will saturate to 2'b00.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_2/a",
@@ -106,7 +106,7 @@
         "solution_figures": [
             "chart_p4_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_2/b",
@@ -117,7 +117,7 @@
         "question": "Does the following code result in a sequential circuit or a combinational circuit? Please\nexplain your answer.\n\n1 module Mask (input [1:0] data_in, input mask, output reg [1:0] data_out);\n2 always @ (*)\n3 begin\n4 data_out[1] = data_in[1];\n5 if (mask)\n6 data_out[0] = 0;\n7 end\n8 endmodule",
         "solution": "Sequential circuit.\n\nExplanation:\nThis code results in a sequential circuit, as all the left-hand side signals are not assigned in\nevery possible condition. For example, data_out[0] is not assigned when mask signal\nequals to zero.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_2/c",
@@ -126,7 +126,7 @@
         "question": "Is the following code syntactically correct? If not, please explain the mistake(s) and how\nto fix it/them.\n\n1 module fulladd(input a, b, c, output reg s, c_out);\n2 assign s = a^b;\n3 assign c_out = (a & b) | (b & c) & (c & a);\n4 endmodule\n5\n6 module top ( input wire [5:0] instr, input wire op, output z);\n7\n8 reg[1:0] r1, r2;\n9 wire [3:0] w1, w2;\n10\n11 fulladd FA1 (.a(instr[0]), .b(instr[1]), .c(instr[2]),\n12 .c_out(r1[1]), .z(r1[0]));\n13 fulladd FA2 (.a(instr[3]), .b(instr[4]), .c(instr[5]),\n14 .z(r2[0]), .c_out(r2[1]));\n15\n16 assign z = r1 | op;\n17 assign w1 = r1 + 1;\n18 assign w2 = r2 << 1;\n19 assign op = r1 ^ r2;\n20\n21 endmodule",
         "solution": "The code is not syntactically correct.\n\nExplanation:\n\u2022 'r1' and 'r2' have to be declared as wires.\n\u2022 'op' signal is connected to multiple drivers. It gets assigned from the input port and in\nline 19.\n\u2022 The module 'fulladd' does not have ports named 'z'. Those need to be changed to 's'.\n\u2022 The output signals 's' and 'c_out' have to be declared as wires but not as regs, since\nthey are driven by assign statements.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_3/(a)",
@@ -137,7 +137,7 @@
         "question": "You are given a partial Moore machine state transition diagram that corresponds to the modular equation described above. However, the input labels of most of the transitions are still missing in this diagram. Please label the transitions with the correct inputs so that the FSM correctly implements the above specification.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the completed state transition diagram or a description of the transition labels. The image provided (chart_p6_0.png) appears to be the completed solution rather than the partial diagram mentioned in the question, as it shows all transition labels filled in. This means the solution is inadvertently revealed in the context_figures field, violating condition d."
     },
     {
@@ -147,7 +147,7 @@
         "question": "Describe the FSM with Boolean equations assuming that the states are encoded with one-hot encoding. Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
         "solution": "State assignments: 0 (mod 4): 0001, 1 (mod 4): 0010, 2 (mod 4): 0100, 3 (mod 4): 1000\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TA TB + CS[1] TA TB + CS[2] TA TB + CS[3] TA TB\n\nNS[1] = CS[1] TA TB + CS[2] TA TB + CS[3] TA TB + CS[0] TA TB\n\nNS[2] = CS[2] TA TB + CS[3] TA TB + CS[0] TA TB + CS[1] TA TB\n\nNS[3] = CS[3] TA TB + CS[0] TA TB + CS[1] TA TB + CS[2] TA TB\n\nO[0] = CS[2]",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "This question requires the state transition diagram from part (a) as context to properly understand the FSM structure, but the context_figures field is empty. The state diagram should be included in the context_figures to make this question standalone. Additionally, the solution matches what's in the PDF, but without the state diagram as context, a student wouldn't have enough information to solve the problem."
     },
     {
@@ -157,7 +157,7 @@
         "question": "Describe the FSM with Boolean equations assuming that the states are encoded with binary encoding (i.e., fully encoding). Assign state encodings while using the minimum possible number of bits to represent the states. Please indicate the values you assign to each state.",
         "solution": "State assignments: 0 (mod 4): 00, 1 (mod 4): 01, 2 (mod 4): 10, 3 (mod 4): 11\nCS denotes current states, and NS denotes next states.\nNS[0] = CS[0] TB + CS[0] TB\n\nNS[1] = CS[0] (CS[1] XOR TA XOR TB) + CS[0] (TA XOR CS[1])\nO[0] = CS[1] CS[0]",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "Similar to part (b), this question requires the state transition diagram from part (a) as context to properly understand the FSM structure, but the context_figures field is empty. The state diagram should be included in the context_figures to make this question standalone. Without the state diagram as context, a student wouldn't have enough information to solve the problem."
     },
     {
@@ -169,7 +169,7 @@
         "question": "The latency of a branch predictor misprediction.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer (which would be option 2). Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -181,7 +181,7 @@
         "question": "The size of a physical memory page.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -193,7 +193,7 @@
         "question": "The memory-mapped locations of exception vectors.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -205,7 +205,7 @@
         "question": "The function of each bit in a programmable branch-predictor configuration register.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -217,7 +217,7 @@
         "question": "The bit-width of the interface between the CPU and the L1 cache.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -229,7 +229,7 @@
         "question": "The number of pipeline stages in the CPU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -241,7 +241,7 @@
         "question": "The order in which loads and stores are executed by a multi-core CPU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -253,7 +253,7 @@
         "question": "The memory addressing modes available for arithmetic operations.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -265,7 +265,7 @@
         "question": "The program counter width.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -277,7 +277,7 @@
         "question": "The number of cache sets at each level of the cache hierarchy.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the answer. Additionally, the image 'chart_p8_0.png' is referenced but we cannot verify if it's correctly extracted or if it's actually needed for this question."
     },
     {
@@ -292,7 +292,7 @@
         "solution_figures": [
             "chart_p9_2.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_5/b",
@@ -306,7 +306,7 @@
         "solution_figures": [
             "chart_p10_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution formula in the JSON has incorrect formatting. In the original PDF, the formula is MIPSA = 600MHz/(3*10^6) = 200, but in the JSON it's represented as 'MIPSA = 600MHz/3*106 = 200' which doesn't properly show the division by 3 million. Similarly for MIPSB, the formula should be 700MHz/(2.5*10^6) = 280."
     },
     {
@@ -319,7 +319,7 @@
         "question": "Considering your team is aiming to release to the market the processor that gives better performance when executing the target application, which processor version will you choose as the final design? Show your work.",
         "solution": "Processor A.\n\nExplanation:\nWe calculate the execution time for each processor, Time = Ninstr.\u00d7 CPI \u00d7 1/clockfrequency\n\nSince the compiler for processor B generates 50% more instructions than the compiler for processor A, the total execution time for processor B is larger than the total execution time for processor A.\n\nTimeA = Ninstr. \u00d7 3 \u00d7 1/(600\u2217106)\n\nTimeB = 1.5Ninstr. \u00d7 2.5 \u00d7 1/(700\u2217106)",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution formula in the JSON has incorrect formatting. In the original PDF, the formula includes proper fractions with 1 over clock frequency, but in the JSON it's represented as '1/(600*106)' which doesn't properly show 10^6. Similarly for TimeB, the formula should show proper mathematical notation for 10^6."
     },
     {
@@ -331,7 +331,7 @@
         "question": "How many cycles does it take for an adder and for a multiplier to calculate a result?",
         "solution": "3 cycles for adder (E1, E2, E3) and 4 cycles for multiplier (E1, E2, E3, E4).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/b",
@@ -342,7 +342,7 @@
         "question": "What is the minimum number of register file read/write ports that this architecture implements? Explain.",
         "solution": "The register file has two read ports and one write port.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/c",
@@ -353,7 +353,7 @@
         "question": "Can we reduce the execution time of this code by enabling more read/write ports in the register file? Explain.",
         "solution": "It is not possible to reduce stall cycles of the given code by enabling more register file ports.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/d",
@@ -364,7 +364,7 @@
         "question": "Does this architecture implement any data forwarding? If so, how is data forwarding done between pipeline stages? Explain.",
         "solution": "There is data forwarding from the M stage to E1, as we observe that the instruction 2 starts using R5 at the clk cycle 7, which is one clk cycle after the instruction 0 finishes calculating its result in the execution unit.\nSimilarly, as another proof of this data forwarding, we observe that the instruction 4 starts using R5 at the clk cycle 10, which is one clk cycle after the instruction 2 finishes calculating its result in the execution unit.\n\nAny other data forwarding is unknown with the given information.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/e",
@@ -375,7 +375,7 @@
         "question": "Is it possible to run this code faster by adding more data forwarding paths? If it is, how? Explain.",
         "solution": "Not possible.\n\nAll instructions that stall due to data dependency are already using the best possible data forwarding. There is no stall cycles that can be eliminated by enabling another form of data forwarding.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/f",
@@ -386,7 +386,7 @@
         "question": "Is there internal forwarding in the register file? If there is not, how would the execution time of the same program change by enabling internal forwarding in the register file? Explain.",
         "solution": "There already is internal forwarding in the register file, as instruction 6 can finish the decode stage by fetching the value of R4 from the register file in the same cycle that R4 is written (cycle 13).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_6/g",
@@ -399,7 +399,7 @@
         "solution_figures": [
             "chart_p13_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_7",
@@ -412,7 +412,7 @@
         "solution_figures": [
             "chart_p15_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_8",
@@ -425,7 +425,7 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The parsing has several issues: 1) The solution field is empty when it should contain the filled table shown in the PDF. 2) The same image 'chart_p16_0.png' is used for both context_figures and solution_figures, but these should be different images - the context figures should show the PE array and PE element diagrams, while the solution figure should show the completed table. 3) The image provided doesn't clearly separate which part is context and which part is solution. 4) The partially filled table shown in the PDF (with some entries already filled in) is not included in either the question or context."
     },
     {
@@ -435,7 +435,7 @@
         "question": "How many warps does it take to execute this program?",
         "solution": "33 warps.\n\nExplanation:\nThe number of warps is calculated as:\n#Warps = d#Total_threads\n#Warp_size e,\n\nwhere\n#Total_threads = 1026 = 210 + 2 (i.e., one thread per loop iteration),\n\nand\n#Warp_size = 32 = 25 (given).\n\nThus, the number of warps needed to run this program is:\n#Warps = d 2\n10+2\n25 e = 25 + 1 = 33.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_9/b",
@@ -444,7 +444,7 @@
         "question": "What is the maximum possible SIMD utilization of this program? Show your work. (Hint: The warp scheduler does not issue instructions where no threads are active).",
         "solution": "3076\n3136 = 769\n784 .\n\nExplanation:\nThe maximum SIMD utilization is achieved when all threads of the complete warps follow\nthe same execution path and execute Instruction 2 or Instruction 4 (A[i] > 33\nor A[i] < 33), and the two active threads of the last warp do not execute Instruction\n2 or Instruction 4 (A[i] = 33).\nThe maximum SIMD utilization sums to 1026+32\u00d732+1026\n1056+1024+1056 = 3076\n3136 .",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution contains formatting issues with fractions and mathematical notation. The original PDF shows the fraction 3076/3136 = 769/784, but in the parsed version, the numerators and denominators are on separate lines, making it difficult to read. Additionally, the formula 1026+32\u00d732+1026/1056+1024+1056 is not properly formatted as a fraction."
     },
     {
@@ -454,7 +454,7 @@
         "question": "Please describe what needs to be true about array A to reach the maximum possible SIMD utilization asked in part (b). (Please cover all cases in your answer.)",
         "solution": "For every 32 consecutive elements of A out of the first 1024 elements, every element should\nbe lower than 33 (if(A[i] < 33)), or greater than 33 (if(A[i] > 33)). The last\ntwo elements should be equal to 33. (NOTE: The solution is correct if the three cases are\ngiven.)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s19-en-sol/Problem_9/d",
@@ -463,7 +463,7 @@
         "question": "What is the minimum possible SIMD utilization of this program? Show your work.",
         "solution": "353\n704 .\n\nExplanation:\nInstruction 1 is executed by every active thread ( 1026\n1056 utilization).\nThe minimum SIMD utilization of Instruction 2 occurs if only one thread per warp\nexecutes it.\nInstruction 3 is again executed by every active thread (1026\n1056 utilization).\nFinally, the minimum SIMD utilization of Instruction 4 occurs if only one thread per\nwarp executes it.\n\nThe minimum SIMD utilization sums to 1026+1\u00d733+1026+1\u00d733\n1056+1056+1056+1056 = 353\n704 .",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution contains formatting issues with fractions and mathematical notation. The original PDF shows the fraction 353/704, but in the parsed version, the numerator and denominator are on separate lines. Similarly, the fractions 1026/1056 and the final calculation 1026+1\u00d733+1026+1\u00d733/1056+1056+1056+1056 = 353/704 are not properly formatted as fractions."
     },
     {
@@ -473,6 +473,6 @@
         "question": "Please describe what needs to be true about array A to reach the minimum possible SIMD utilization asked in part (d). (Please cover all cases in your answer.)",
         "solution": "For every 32 consecutive elements among the first 1024 elements of A, one element should\nbe lower than 33 (if(A[i] < 33)), one element should be greater than 33 (if(A[i]\n> 33)), and the remaining 30 elements should be equal to 33.\nFor the last 2 elements of A, one element should be lower than 33 (if(A[i] < 33)), and\nthe other element should be greater than 33 (if(A[i] > 33)).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]

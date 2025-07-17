@@ -6,7 +6,7 @@
         "question": "For the following four numbers given in decimal or hexadecimal notation, write the corresponding binary number using the indicated format.",
         "solution": "(\u22125)10 using six-bit sign magnitude: (10 0101)2\n\n(38)10 using six-bit unsigned: (10 0110)2\n\n(\u221228)10 using six-bit two's complement: (10 0100)2\n\nHexadecimal (2C)16 using six-bit unsigned: (10 1100)2",
         "solution_figures": [],
-        "correctly_parsed": true
+        "correctly_parsed": false
     },
     {
         "question_id": "exam_ws2012_solutions/Problem_1/b",

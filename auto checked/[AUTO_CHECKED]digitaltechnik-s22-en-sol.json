@@ -8,7 +8,7 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_1/b",
@@ -19,7 +19,7 @@
         "solution_figures": [
             "chart_p4_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_1/c",
@@ -31,7 +31,7 @@
             "chart_p4_1.png",
             "chart_p4_2.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_10/10.1",
@@ -42,7 +42,7 @@
         "question": "Using this information, you need to determine the following two system characteristics. Clearly show all work to receive full points!\n\n1. How many stages are in the pipeline?\n\n2. For how many cycles does a conditional branch instruction cause a stall?",
         "solution": "1. 10 pipeline stages\n2. 6 cycles\n\n\nExplanation: We have a system of equations in the variables:\n\u02c6 C is the total number of cycles taken\n\u02c6 P is the total number of pipeline stages\n\u02c6 I is the total number of dynamic instructions executed\n\u02c6 B is the number of conditional branch instructions executed\n\u02c6 D is the number of cycles stalled for each conditional branch\n\n\nThe total number of cycles can be expressed as C = P + I \u2212 1 +B \u2217D.\nWe know that I = 50, and Table 2 gives us B and C, which we can use to solve the following\nsystem of equations:\n\n\n\u02c6 71 = P + 50\u2212 1 + 2 \u2217D\n\u02c6 83 = P + 50\u2212 1 + 4 \u2217D\n\n\nSolving this system, we obtain P = 10, D = 6",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_10/10.2",
@@ -51,7 +51,7 @@
         "question": "(a) Static Branch Predictor\n\nCould this be the mystery branch predictor: YES NO\n\nIf YES, for which configuration below is the answer YES?\n\n(I) Static Prediction Direction\n\nAlways taken Always not taken\n\nExplain:\n\n(b) Last Time Branch Predictor\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nIf YES, for which configuration is the answer YES? Pick an option for each configuration parameter.\n\n(I) Initial Prediction Direction\n\nTaken Not taken\n\n(II) Local for each branch instruction (PC-based) or global (shared among all branches) history?\n\nLocal Global\n\nExplain:\n\n(c) Backward taken, Forward not taken (BTFN)\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nExplain:\n\n(d) Forward taken, Backward not taken (FTBN)\n\nCould this be the mystery branch predictor?\n\nYES NO\n\nExplain:",
         "solution": "(a) YES, if the static prediction direction is always not taken.\nExplanation: The execution time corresponds to 3 mispredictions and 1 correct prediction. The correct prediction occurs when the branch condition evaluates to FALSE and execution falls through to the following instruction (i.e., NOT TAKEN).\n\n(b) NO.\nExplanation: The last-time predictor will make a correct prediction at least three times, which means that it cannot be the mystery predictor.\n\n(c) NO.\nExplanation: The BTFN predictor makes exactly one misprediction, which is the opposite of what the mystery predictor achieves.\n\n(d) YES.\nExplanation: The FTBN predictor makes exactly one correct prediction, which is what we observe from the microbenchmark.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context is missing important information from the original PDF. The context should include the reference to the microbenchmark from part 10.1, as the problem refers to 're-running the same microbenchmark'. Additionally, there's a typo in the context where 'predictior' is used instead of 'predictor' and 'piepline' instead of 'pipeline', which should match the original PDF exactly."
     },
     {
@@ -61,7 +61,7 @@
         "question": "You first design a stride prefetcher PrefX that observes the last three cache block requests. If there is a constant stride S between the last three requests, PrefX issues a prefetch to the next cache block using the stride S. In absence of a constant stride, PrefX refrains from prefetching. What is the coverage of PrefX for the application? Show your work. Please recall, prefetcher coverage is defined as:\n\nTotal number of prefetch requests used by the program\n\nTotal number of main memory requests without the prefetcher",
         "solution": "0%\n\nExplanation: Since the stride in the address pattern is changing between +1 and +8, the stride prefetcher PrefX cannot learn any constant stride to issue prefetch requests.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_11/(b)",
@@ -70,7 +70,7 @@
         "question": "You then design a next-N-block prefetcher PrefY. For every memory access to cacheline address A, the PrefY prefetches addresses A+1, A+2, ..., A+N. What is the coverage of PrefY if you set N = 2?",
         "solution": "50%\n\nExplanation: PrefY will prefetch A+1 by seeing A, A+9 by seeing A+8, and so on. Hence every alternate memory requests will be sucessfully prefetched.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_11/(c)",
@@ -79,7 +79,7 @@
         "question": "A prefetcher also incurs bandwidth overhead to the system. We define a prefetcher's bandwidth overhead to the the system as:\n\nTotal number of main memory requests with the prefetcher\n\nTotal number of main memory requests without the prefetcher\n\nPlease note that, if multiple prefetch requests are generated for one memory address, only one request goes to the DRAM.\n\nWhat is the bandwidth overhead of PrefY when N = 2? Show your work.",
         "solution": "3/2\n\nExplanation:\nFor PrefY :\n\n\u02c6 A will prefetch addresses A+ 1, A+ 2\n\u02c6 A+ 1 will prefetch addresses A+ 2, A+ 3\n\nSo, for every 2 unique cache block requests without the prefetcher, there are 3 unique cache block requests with the prefetcher PrefY. Hence the bandwidth overhead is 3/2.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_11/(d)",
@@ -88,7 +88,7 @@
         "question": "What is the minimum value of N required to achieve a 100% prefetch coverage for PrefY? Show your work. Remember that you should consider the prefetcher's coverage in its steady state.",
         "solution": "8\n\nExplanation: At N = 8, A+ 1 can prefetch for A+ 9, thus acheiving 100% coverage.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_11/(e)",
@@ -97,7 +97,7 @@
         "question": "What is the bandwidth overhead of PrefY at the value of N you find for part (d)? Show your work.",
         "solution": "9/2\n\nExplanation:\nFor PrefY at N = 8:\n\n\u02c6 A will prefetch addresses A+ 1, A+ 2, A+ 3, A+ 4, A+ 5, A+ 6, A+ 7, A+ 8\n\u02c6 A+ 1 will prefetch addresses A+ 2, A+ 3, A+ 4, A+ 5, A+ 6, A+ 7, A+ 8, A+ 9\n\nSo, for every 2 unique cache block requests without the prefetcher, there are 9 unique cache block requests with the prefetcher PrefY. Hence the bandwidth overhead is 9/2.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_12/1",
@@ -108,7 +108,7 @@
         "solution_figures": [
             "chart_p28_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_12/2",
@@ -119,7 +119,7 @@
         "question": "What is the associativity of the cache if the cache hit rate observed over the 3 extra addresses accessed in Part (1) were:\n\nHit rate Associativity\n\n0\n\n1/3\n\n2/3\n\n1",
         "solution": "Based on the solution to Part (1), these are the cache associativities corresponding to different hit rates.\n\nHit rate Associativity\n\n0 4-way, 2 sets\n\n1/3 2-way, 4 sets\n\n2/3 1-way, 8 sets\n\n1 8-way, 1 set",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The context_figures field contains chart_p29_0.png which appears to be an empty table that should be filled in as part of the solution. This reveals part of the solution structure in the context, which violates condition d). The empty table should not be included in the context_figures."
     },
     {
@@ -129,7 +129,7 @@
         "question": "When you accessed the three addresses you determined in Part (1), you observed a 100% hit rate across these three accesses. Now, your friend asks you to access four more addresses in the following order:\n\n32 \u2192 0 \u2192 8 \u2192 28\n\nWhich of the above four addresses would result in a cache miss?",
         "solution": "28.\nThe cache associativity which provides 100% cache hit for the three extra accesses in Part (1) is 8-way and 1 set. The three addresses 32, 0 and 8 are already available in the cache before the four new accesses requested by your friend. 28 will result in a miss and will be added to the cache.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_2/a",
@@ -162,7 +162,7 @@
         "question": "Two-level global branch prediction.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -172,7 +172,7 @@
         "question": "Location of the bits that identify the destination register in an ADD instruction.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -182,7 +182,7 @@
         "question": "Number of instructions fetched per cycle.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -192,7 +192,7 @@
         "question": "Ratio of the number of floating-point to integer general-purpose registers.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -202,7 +202,7 @@
         "question": "Number of integer arithmetic and logic units (ALUs).\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -212,7 +212,7 @@
         "question": "Instruction issue width of the processor core's pipeline.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -222,7 +222,7 @@
         "question": "SIMD support.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -232,7 +232,7 @@
         "question": "L3 cache replacement policy.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -242,7 +242,7 @@
         "question": "Width of the data bus to memory.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -252,7 +252,7 @@
         "question": "The size of the addressable memory by programs.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -262,7 +262,7 @@
         "question": "Number of cycles it takes to execute an ADD instruction.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -272,7 +272,7 @@
         "question": "Ability to choose a specific cache replacement policy using operating system code.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -282,7 +282,7 @@
         "question": "Number of read/write ports in the physical register file.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -292,7 +292,7 @@
         "question": "Function of each bit in a programmable prefetcher's configuration register.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (ISA)."
     },
     {
@@ -302,7 +302,7 @@
         "question": "Number of L3 cache banks.\n\n1. ISA 2. Microarchitecture",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty when it should contain the correct answer (Microarchitecture)."
     },
     {
@@ -314,7 +314,7 @@
         "question": "What unsigned decimal values does the out signal get in the following waveform diagram? Fill in the gray boxes with an out value for each clk cycle. Briefly explain your answer.",
         "solution": "Explanation. Once en becomes 1, the mystery_module begins processing the inputs in1 and in2.\nThe output signal out is initially 0 (line 6).\nvar1 is used to index both in1 and in2. in1 is indexed in 8-bit data chunks and every bit in in2 is indexed separalety. var1 is initially 0 and indexes both inputs starting from their least-significant bits.\nWhen var1 is 0, the mystery_module adds (if in2[0] = 1) or subtracts (if in2[0] = 0) the least significant 8 bits of in1 (i.e., in1[7:0]) to/from the 11-bit out register. In consecutive cycles, var1 gets incremented by 1 and the module adds or subtracts the other 8-bit data chunks in in1 to/from out.\n\nFor the given values of in1 and in2, out gets the following values:\ncycle 0: out = 0 (en = 0 so out remains 0)\ncycle 1: out = 0 (en = 1 but out will be updated for the next cycle (after posedge 2))\ncycle 2: out = 0 + 1 = 1\ncycle 3: out = 1 + 2 = 3\ncycle 4: out = 3 - 3 = 0\ncycle 5: out = 0 + 4 = 4\ncycle 6: out = 4 + 5 = 9\ncycle 7: out = 9 + 6 = 15\ncycle 8: out = 15 - 7 = 8\ncycle 9: out = 8 + 8 = 16\ncycle 10: out = 16 (all inputs have been processed. var1 becomes 0 and out remains as is for future cycles unless en becomes 1)",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image 'chart_p8_0.png' is incorrectly categorized as a context figure when it should be a solution figure. The image shows the waveform diagram with the filled-in gray boxes containing the answers (0, 0, 1, 3, 0, 4, 9, 15, 8, 16, 16). This reveals the solution to the problem, which violates condition d) that no part of the solution should be revealed in the context."
     },
     {
@@ -324,7 +324,7 @@
         "question": "Provide your choice for each blank 1 - 5 below. Circle only one of A, B, C, D for each blank.\n\n1 : A. output B. output reg C. output reg[0:0] D. input reg\n\n2 : A. reg[1:0] B. reg C. wire D. wire[1:0]\n\n3 : A. 1'b3 B. 3'b2 C. 2'd11 D. 3\n\n4 : A. || B. & C. ! D. 1\n\n5 : A. | B. & C. && D. ^",
         "solution": "Explanation.\n\n1 : result must be specified as a single bit 'output' signal because it gets assigned either 1'b0 or 1'b1 via an 'assign' operator. It cannot be specified as a 'output reg' because the 'assign' operator can be used only with 'wire' signals. Note: 'output' is the same as 'output wire'.\n2 : state is a two-bit signal (as we can tell from lines 8, 10, 12) and must be a 'reg' because it gets assigned a value in an 'always' block.\n\n3 : In order to transition to state = 3 from state = 0, we need to add 3. Note that A. 1'b3 is not a valid syntax as 3 is not a binary number. Not in the choices, but 1'd3 would also be incorrect since 3 cannot be encoded with a single bit. C. 2'd11 has a similar problem as decimal 11 cannot be encoded with 2 bits.\n4 : In the given choices, only the AND-reduction (&) operator provides the expected functionality of resulting in 1 when all bits of data are 1.\n\n5 : In the given choices, only the OR-reduction (|) operator provides the expected functionality of resulting in 1 when state contains at least one 1.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_5/1",
@@ -333,7 +333,7 @@
         "question": "A main memory access typically consumes less energy than a register \ufffdle access.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -343,7 +343,7 @@
         "question": "Building a larger memory array by increasing the length of the array's wordlines and bitlines increases the cost ($) but does not increase the access time of the array.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -353,7 +353,7 @@
         "question": "Activating a DRAM cell temporarily destroys the value stored in the DRAM cell.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -363,7 +363,7 @@
         "question": "DRAM cost ($) per bit is much higher than that of SRAM.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -373,7 +373,7 @@
         "question": "The memory hierarchy of a typical computer system comprises di\ufffderent memory technologies.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -383,7 +383,7 @@
         "question": "Recently accessed data should be kept at the bottom-level in the memory hierarchy (e.g., main memory or disk) and not at the top-level (e.g., caches) in the hierarchy.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -393,7 +393,7 @@
         "question": "A program with no branches has high temporal locality in its instruction memory references.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -403,7 +403,7 @@
         "question": "A cache that has a block size equal to word size of memory access instructions cannot exploit spatial locality.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -413,7 +413,7 @@
         "question": "Memory banking enables concurrent access to the memory structure.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -423,7 +423,7 @@
         "question": "In DRAM, accesses to di\ufffderent rows in one bank can be serviced faster compared to accesses to the same row in one bank.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -433,7 +433,7 @@
         "question": "PCM is non-volatile, which means PCM retains stored data even when it is powered o\ufffd.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -443,7 +443,7 @@
         "question": "If a hypothetical system is not constrained by chip area, memory cost ($), and energy consumption, DRAM would be the best memory technology to use in that system.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -453,7 +453,7 @@
         "question": "The entire page table is typically stored in physical memory.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -463,7 +463,7 @@
         "question": "Virtual-to-physical address translation is on the critical path of a memory access.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -473,7 +473,7 @@
         "question": "Virtual memory makes programmer's and microarchitect's tasks easier.",
         "solution": "1. True 2. False",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field only contains the options '1. True 2. False' but does not indicate which is the correct answer. The actual solution (which option is correct) is missing."
     },
     {
@@ -487,7 +487,7 @@
         "solution_figures": [
             "chart_p14_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_6/b",
@@ -503,7 +503,7 @@
             "chart_p15_2.png",
             "chart_p15_3.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_6/c",
@@ -516,7 +516,7 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_6/d",
@@ -529,7 +529,7 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_6/e",
@@ -540,7 +540,7 @@
         "question": "Which of the above explanations cannot possible be a reason for AwesomeMEM's higher performance over the Baseline? Explain your reasoning based on the data in Table 1.",
         "solution": "Option (iii) cannot possible be a reason for AwesomeMEM's performance improvement compared to the Baseline.\n\nExplanation:\n(iii) is not possible since the branch misprediction rate n the AwesomeMEM configuration is the same for Mix1 and Mix2 compared to the Baseline configuration.\n\n(i) is possible since LLC miss rate in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.\n\n(ii) is possible since bank conflicts in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.\n\n(iv) is possible since LLC miss rate in the AwesomeMEM configuration drops for Mix1 and Mix2 compared to the Baseline configuration.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_7/(a)",
@@ -551,7 +551,7 @@
         "question": "What is the ALU's latency for an addition and for a multiplication, respectively?",
         "solution": "Addition: 1 cycle for an addition (E1).\n\nMultiplication: 3 cycles for a multiplication (E1, E2, E3).",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_7/(b)",
@@ -562,7 +562,7 @@
         "question": "Does this processor implement data forwarding? If so, between which pipeline stages? Explain your reasoning.",
         "solution": "The processor implements data forwarding from W to E1.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution is incomplete. The original PDF shows that an explanation of the reasoning should be included, but the solution in the JSON only contains the conclusion without any explanation."
     },
     {
@@ -574,7 +574,7 @@
         "question": "The number of cycles in the decode stage dynamically varies between instructions. Explain why this might be the case. Hint: Register values are read from the register file in the decode stage.",
         "solution": "All listed instructions require two operands for the ALU, which require up to two cycles to read from the register file. If one of the inputs is an immediate (e.g., instruction 2) or is forwarded from an earlier instruction, the register file has to be queried for only one input. Then, a shorter decode stage is sufficient.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_7/(d)",
@@ -585,7 +585,7 @@
         "question": "What is the minimum number of register file read ports and write ports that this processor implements? Explain.",
         "solution": "The register file has one read port and one write port.\n\nAcording to the timeline in cycles 2 and 3, the decode stage operates in two cycles for an instruction that has two register operands. Also, acording to cycle 4, the decode stage takes one cycle for an instruction with one register operand. We conclude that the decode stage needs one cycle to decode and read each register operand which means the register file has one read port.\n\nThe register file has at least one dedicated write port since acording to cycle 12, the decode stage and the write back stage are both using the register file, and we are sure that both have been serviced by the register file within that cycle since the next cycle is not a stall for any of them.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_7/(e)",
@@ -598,7 +598,7 @@
         "solution_figures": [
             "chart_p18_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_7/(f)",
@@ -611,7 +611,7 @@
         "solution_figures": [
             "chart_p18_1.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "digitaltechnik-s22-en-sol/Problem_8/8.1",
@@ -666,7 +666,7 @@
         "question": "How many warps does it take to execute this program? Show your work.",
         "solution": "32 Warps.\n\nExplanation:\nWarps = (Number of threads) / (Number of threads per warp) Number of threads =\n210 (i.e., one thread per loop iteration) Number of threads per warp = 32 = 25 (given)\nWarps = 210/25 = 25",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution in the parsed JSON doesn't match the original PDF. The solution in the JSON says '32 Warps' but then calculates '25 warps' in the explanation. The original PDF shows the answer as '32 Warps' but this is inconsistent with the calculation shown. This inconsistency makes the parsing incorrect."
     },
     {
@@ -676,7 +676,7 @@
         "question": "Assume that the condition for the if statement is (i % 16 == 0). What is the number of instructions (k) in the body of the conditional block given a SIMD utilization of 11/32? Assume that there are no control flow instructions in the body of the if statement. Show your work.",
         "solution": "7 Instructions.\n\nExplanation:\nTwo of the 32 threads go inside of the conditional block. This pattern is homogeneous\nthrough all warps.\n\n2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32 \u2192 k = 7 instructions.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The formula in the solution is not correctly parsed. In the original PDF, the formula is '2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32' but in the JSON it appears as '2\u00d7(3+k)+30\u00d73/32\u00d7(3+k) = 11/32' which doesn't properly represent the division. The formula should have clearer grouping to show the numerator and denominator."
     },
     {
@@ -686,7 +686,7 @@
         "question": "Assume that the condition for the if statement is (i % 16 == 0 && i < 512). What is the number of instructions (k) in the body of the conditional block given a SIMD utilization of 5/8? Assume that there are no control flow instructions in the body of the if statement. Show your work.",
         "solution": "4 Instructions.\n\nExplanation:\nTwo of the 32 threads only within the first 16 warps go inside of the conditional\nblock. In the rest of the warps no thread goes inside of the conditional block.\n\n16(32\u00d7(3))+16(2\u00d7(k+3)+30\u00d73)/16(32\u00d7(3+k))+16(32\u00d73) = 5/8 \u2192 k = 4 instructions.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The formula in the solution is not correctly parsed. In the original PDF, the formula has clear numerator and denominator, but in the JSON it appears as '16(32\u00d7(3))+16(2\u00d7(k+3)+30\u00d73)/16(32\u00d7(3+k))+16(32\u00d73) = 5/8' which doesn't properly represent the division structure. The formula should have clearer grouping to show the numerator and denominator."
     }
 ]

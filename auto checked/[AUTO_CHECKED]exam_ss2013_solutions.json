@@ -6,7 +6,7 @@
         "question": "You receive the following 12-bit binary sequence:\n\n0000 0111 1100\n\nWhich decimal numbers are encoded in this sequence, if you were told that the sequence contained:\n\nTwo 6-bit numbers using two's complement: 1,\u22124\n\nA single 12-bit unsigned number: 124\n\nThree 4-bit numbers using sign/magnitude: 0, 7,\u22124",
         "solution": "Solution:\n\n1. Zero is represented only once\n\n2. Standard binary addition works with two's complement numbers without additional effort\n\n3. Associativity law holds",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution text does not match the original PDF. The solution text provided is actually for problem 1(b), not 1(a). The solution for 1(a) should contain the actual decimal numbers encoded in the binary sequence for each representation method."
     },
     {
@@ -16,7 +16,7 @@
         "question": "In the lecture, it was explained that the two's complement was the better alternative to represent negative numbers. Name two main advantages of the two's complement representation over a sign/magnitude representation:",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution field is empty, but the original PDF contains a solution for this problem (the three advantages of two's complement representation). The solution that was incorrectly placed in problem 1(a) actually belongs here."
     },
     {
@@ -28,7 +28,7 @@
         "solution_figures": [
             "chart_p5_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p5_0.png' contains both the solution to part (a) as well as the propagation and contamination delay paths that are part of the solutions to parts (b) and (c). This reveals parts of the solutions to questions (b) and (c) in the solution figure for question (a)."
     },
     {
@@ -38,7 +38,7 @@
         "question": "Determine the propagation delay of the circuit. Draw it on your schematic, and calculate the propagation delay using the delay values from the table.",
         "solution": "Solution:\n\ntpd = tpd,AND + tpd,OR + tpd,AND + tpd,INV + tpd,MUX\n\n= 100 ps + 120 ps + 100 ps + 50 ps + 180 ps\n\n= 550 ps",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution requires drawing the propagation delay on a schematic, but there is no solution figure included. The schematic with the propagation delay path is shown in the image 'chart_p5_0.png' which is incorrectly only associated with question (a)."
     },
     {
@@ -48,7 +48,7 @@
         "question": "Determine the contamination delay of the circuit. Draw it on your schematic, and calculate the contamination delay using the delay values from the table.",
         "solution": "Solution:\n\ntpd = tpd,INV + tpd,MUX\n\n= 50 ps + 180 ps\n\n= 230 ps",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution requires drawing the contamination delay on a schematic, but there is no solution figure included. The schematic with the contamination delay path is shown in the image 'chart_p5_0.png' which is incorrectly only associated with question (a)."
     },
     {
@@ -58,7 +58,7 @@
         "question": "Is this a Moore or a Mealy FSM? Briefly explain.",
         "solution": "Moore, outputs depend only on the present state and nothing else.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_3/b",
@@ -69,7 +69,7 @@
         "solution_figures": [
             "chart_p6_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p6_0.png' is referenced but I cannot verify its contents since the actual image is not provided in a viewable format. Without being able to confirm that the image correctly represents the state transition diagram, I cannot mark this as correctly parsed."
     },
     {
@@ -81,7 +81,7 @@
         "solution_figures": [
             "chart_p8_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p8_0.png' is referenced but I cannot verify its contents since the actual image is not provided in a viewable format. Without being able to confirm that the image correctly represents the state transition table, I cannot mark this as correctly parsed."
     },
     {
@@ -91,7 +91,7 @@
         "question": "For describing the nextstate is it better to use Products-of-Sums (POS) or Sums-of-Products (SOP)? Briefly explain.",
         "solution": "Sums-of-Products, there are fewer entries with a 1 in them, and SOP requires one entry for each",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution appears to be incomplete. The original solution in the PDF says 'Sums-of-Products, there are fewer entries with a 1 in them, and SOP requires one entry for each' but it seems to be cut off. The complete explanation should clarify what SOP requires one entry for each of."
     },
     {
@@ -103,7 +103,7 @@
         "solution_figures": [
             "chart_p9_0.png"
         ],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The solution figure 'chart_p9_0.png' is referenced but I cannot verify its contents since the actual image is not provided in a viewable format. Additionally, the Boolean equations in the solution text don't properly represent the overbar notation for negation that appears in the original PDF. The equations should show which variables are negated with proper notation."
     },
     {
@@ -113,7 +113,7 @@
         "question": "Briefly explain how the output z could be obtained in an actual circuit implementation, what kind of logic circuit would be needed?",
         "solution": "The output is directly obtained from the 2 least significant bits of the state, or S1 S0.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_4/a",
@@ -124,7 +124,7 @@
         "question": "module one (input [1:0] sel, input [3:0] data, output z);\n\nassign z = sel[1] ? (sel[0] ? data[0] : data[3])\n: (sel[0] ? data[2] : data[1]);\nendmodule",
         "solution": "This code is correct. The distribution of the data bits may seem strange, but we are not checking for behviour.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_4/b",
@@ -135,7 +135,7 @@
         "question": "module mux2 ( input [1:0] i, input sel, output z);\n\nassign z= (sel) ? i[1]:i[0];\n\nendmodule\n\nmodule two ( input [3:0] data, input sel1, input sel2, output z);\n\nmux2 i0 (.i(data[1:0]), .sel(sel1), .z(m[0]) );\nmux2 i1 (.i(data[3:2]), .sel(sel1), .z(m[1]) );\nmux2 i2 (.i(m), .sel(sel2), .z(z) );\n\nendmodule",
         "solution": "This code has mistakes. In module two there is an additional signal m used. This has not been declared, it should be declared as wire [1:0] m;.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_4/c",
@@ -146,7 +146,7 @@
         "question": "module three (input [1:0] sel, output reg [7:0] z);\n\nalways @ (sel)\nif (sel = 2'b01) z=8'b01010101;\nelse if (sel = 2'b10) z=8'b10101010;\nelse z=8'b00000000;\n\nendmodule",
         "solution": "This code has mistakes. The condition checking for sel has been written as = which is an assignment. It should be == in both instances.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image chart_p11_0.png shows that in the original code, the output is declared as 'output req [7:0] z' but in the parsed question it's written as 'output reg [7:0] z'. This is a discrepancy between the original and parsed text."
     },
     {
@@ -158,7 +158,7 @@
         "question": "module four (input [1:0] sel, input neg, output reg [3:0] z);\n\nalways @ (neg, sel)\nif (neg) z = 4'b1111;\nelse z = 4'b0000;\nif (sel[1]) z = 4'b0001;\nif (sel[0]) z = 4'b0010;\n\nendmodule",
         "solution": "This code has mistakes. There are 3 seperate if statements following always. These should be within a begin ... end block. Note that, it would not be correct to have three separate always statements as this would mean driving the signal z from three different processes.",
         "solution_figures": [],
-        "correctly_parsed": "false",
+        "correctly_parsed": false,
         "reasoning": "The image chart_p11_1.png shows that in the original code, the output is declared as 'output req [3:0] z' but in the parsed question it's written as 'output reg [3:0] z'. This is a discrepancy between the original and parsed text."
     },
     {
@@ -170,7 +170,7 @@
         "question": "\u2022 What is the area occupied by the entire pipeline?\n\n\u2022 How long does it take to compute one addition?\n\n\u2022 What is the maximum operating frequency (in GHz) of this pipeline?\n\n\u2022 How many additions can be completed in 1000 ns?",
         "solution": "Area = AFF,64 + ARCA,32 + AFF,32\n= 670 + 4000 + 330\n= 5000\n\nLatency = 4ns\n\nMaxFrequency = 1/4ns\n= 0.250GHz\n\nThroughput = 1000/4ns\n= 250 additions per 1000ns\n\nHint: 1/1ns = 1GHz, a clock with 1 GHz has a period of 1 ns.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_5/(b)",
@@ -181,7 +181,7 @@
         "question": "\u2022 What is the area occupied by the entire pipeline?\n\n\u2022 How long does it take to compute one addition?\n\n\u2022 What is the maximum operating frequency (in GHz) of this pipeline?\n\n\u2022 How many additions can be completed in 1000 ns?",
         "solution": "Area = AFF,64 + ACLA,32 + AFF,32\n= 670 + 6000 + 330\n= 7000\n\nLatency = 2.5ns\n\nMaxFrequency = 1/2.5ns\n= 0.400GHz\n\nThroughput = 1000/2.5ns\n= 400 additions per 1000ns",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_5/(c)",
@@ -192,7 +192,7 @@
         "question": "\u2022 What is the area occupied by the entire pipeline?\n\n\u2022 How long does it take to compute one addition?\n\n\u2022 What is the maximum operating frequency (in GHz) of this pipeline?\n\n\u2022 How many additions can be completed in 1000 ns?",
         "solution": "Area = AFF,64 + ARCA,16 + AFF,49 + ARCA,16 + AFF,32\n= 670 + 2000 + 500 + 2000 + 330\n= 5500\n\nLatency = 4ns\n\nMaxFrequency = 1/2ns\n= 0.500GHz\n\nThroughput = 1000/2ns\n= 500 additions per 1000ns",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_5/(d)",
@@ -201,7 +201,7 @@
         "question": "The Latency is the time it takes to calculate one addition, whereas the Throughput is the number of additions that can be calculated per unit time. It is obvious that the throughput will increase if you can reduce the latency. Is it possible to increase the throughput, even if you cannot reduce the latency? Briefly explain.",
         "solution": "Yes. One solution is to introduce pipelining it is possible to improve the throughput as seen in the section c) of this question. Pipelining does not reduce latency, the computation of one data item still takes the same amount of time, however, the operation is broken down into smaller pieces, and as soon as the first part is completed, a new data item can be accepted, this improves the throughput. Another solution is to increase parallelism by, for example, duplicating the hardware.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_6",
@@ -210,7 +210,7 @@
         "question": "List at least five improvements that can be made in order to improve the Execution T ime.",
         "solution": "Solution: Any five of the following could be accepted:\n\n\u2022 Reduce number of instructions\n\n\u2013 adopt CISC, that uses instructions that can do more\n\n\u2013 improve the compiler so that it produces more optimized code\n\n\u2022 Reduce clocks per instruction\n\n\u2013 adopt RISC, simpler instructions can be executed faster\n\n\u2013 add parallel execution units, do more per clock cycle\n\n\u2022 Increase clock frequency\n\n\u2013 migrate to a more modern manufacturing technology\n\n\u2013 adopt pipelining\n\n\u2013 redesign and improve timing critical components in the circuit (adders, alu etc)\n\n\u2013 Could also be accepted : overclock the system (use higher voltage, clock frequency)",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_7",
@@ -223,7 +223,7 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_8/(a)",
@@ -232,7 +232,7 @@
         "question": "Alain: \"We have too many cache misses due to conflicts. We need to reduce the degree of associativity, so that we reduce conflict misses in the cache\":",
         "solution": "This idea will not work. Just the opposite: increasing set associativity gives data more possibilities to be stored in the cache without replacing other data. This reduces conflict misses.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_8/(b)",
@@ -241,7 +241,7 @@
         "question": "Beatrice: \"There are many compulsory cache misses. To combat this, we should increase our block size\"",
         "solution": "This idea could work. A larger block size will take advantage of spatial locality and assume that nearby data items will also be accessed by the program. If the program has such accesses, the first data access will result in a compulsory miss, but the subsequent accesses will find data in the cache.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     },
     {
         "question_id": "exam_ss2013_solutions/Problem_8/(c)",
@@ -250,6 +250,6 @@
         "question": "Cathy: \"Our cache has many capacity misses. Instead of using a set associative cache, we should convert it to a direct mapped cache of the same size. This will allow more sets to be stored in the cache, hence reducing capacity misses\"",
         "solution": "This idea will not work. The organization of the cache does not change its capacity. The capacity miss occurs because data that is needed can not fit into the cache.",
         "solution_figures": [],
-        "correctly_parsed": "true"
+        "correctly_parsed": true
     }
 ]
