@@ -14,7 +14,7 @@ def process(json_path, extracted_problems_folder, images_folder):
     verified_output = [] # Final output of the verification process: the altered json
 
     prompt = """
-    Attached are images, parts of a problem (context, question, and solution) separated into a JSON Format, and a pdf of the original problem. Your task is to determine if the images were extracted faithfully from the original problem. 
+    Attached are a pdf of the original problem, parts of a problem (context, question, and solution) separated into a JSON Format, and images extracted from that pdf (the names of said images are referenced in the JSON). Your task is to determine if the images were extracted faithfully from the original problem. 
 
 Reference the PDF to determine the completeness of the image. For example, the image should not be cut or cropped, split into two separate images, and should not omit any labels or arrows relevant to it.
 
@@ -87,9 +87,14 @@ You should err on the side of classifying more image-based problems as false rat
                         }
                     ]
 
+                    prompt += "The images are appended in the following order: "
                     # Add all image files to the conversation
                     for image in images:
+
+                        prompt += image + ", "
                         image_path = os.path.join(images_folder, filename, image)
+                        print(image_path)
+
                         with open(image_path, "rb") as image_file:
                             image_bytes = image_file.read()
                         # Append image to conversation
@@ -118,8 +123,8 @@ You should err on the side of classifying more image-based problems as false rat
                         response_text = response["output"]["message"]["content"][0]["text"]
                         print("Json Returned by Verifier: ", response_text)
 
-                        # Add the modified dictionaries to final output 
-                        verified_output += json.loads(helper.string_to_list(response_text))
+                        # # Add the modified dictionaries to final output 
+                        # verified_output += json.loads(helper.string_to_list(response_text))
 
 
                     except ClientError as e:
