@@ -8,8 +8,9 @@
         "question": "Below you can see on the left four binary numbers and on the right 4 interpretations of these numbers and a corresponding value. Match the number on the left to the descriptions on the right. (2 points)",
         "solution": "1-C 2-B 3-D 4-A",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The context_figures field references 'chart_p2_0.png', but I cannot verify if this image correctly shows the table with binary numbers and their interpretations since the actual image content is not provided for review. Without seeing the image, I cannot confirm if it contains all necessary information without revealing the solution."
+        "passed_llm_verification": false,
+        "reasoning": "The context_figures field references 'chart_p2_0.png', but I cannot verify if this image correctly shows the table with binary numbers and their interpretations since the actual image content is not provided for review. Without seeing the image, I cannot confirm if it contains all necessary information without revealing the solution.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_1/b",
@@ -20,8 +21,9 @@
         "question": "Consider the transistor level schematic below. What is the output going to be when A=1, B=0, C=1? (1 point)",
         "solution": "0",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The context_figures field references 'chart_p2_1.png', but I cannot verify if this image correctly shows the transistor level schematic since the actual image content is not provided for review. Without seeing the image, I cannot confirm if it contains all necessary information for solving the problem."
+        "passed_llm_verification": false,
+        "reasoning": "The context_figures field references 'chart_p2_1.png', but I cannot verify if this image correctly shows the transistor level schematic since the actual image content is not provided for review. Without seeing the image, I cannot confirm if it contains all necessary information for solving the problem.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_1/c",
@@ -30,8 +32,9 @@
         "question": "Using only 2-input AND, 2-input OR, or inverters, draw a gate level schematic that realizes the same Boolean Function as the circuit shown in 1(b). (2 points)",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty when it should contain some text or reference to a solution figure. Additionally, this question references circuit shown in 1(b), but there's no context figure provided that shows this circuit, making the question not standalone."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty when it should contain some text or reference to a solution figure. Additionally, this question references circuit shown in 1(b), but there's no context figure provided that shows this circuit, making the question not standalone.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_2/a",
@@ -42,7 +45,8 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_2/b",
@@ -53,7 +57,8 @@
         "solution_figures": [
             "chart_p3_1.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_2/c",
@@ -62,7 +67,8 @@
         "question": "Find a minimal Boolean Equation from the Karnaugh Map (2(b)) or the Boolean Equation (2 (a)) for Z",
         "solution": "Z = AB' + C'",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_2/d",
@@ -74,8 +80,9 @@
         "question": "Examine the circuit below. We want to find out the Boolean equation by inspection. You can use bubble-pushing methods to simplify the circuit. Write the Boolean equation.",
         "solution": "Z = A + B + C + D' + E'FG",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The circuit diagram appears to be split across two images (chart_p3_2.png and chart_p3_3.png), but the original PDF shows it should be one complete circuit. The solution is shown in the images, which violates condition d) that no part of the solution should be revealed in the context figures. The final equation 'Z = A + B + C + D' + E'FG' is visible in the last image."
+        "passed_llm_verification": false,
+        "reasoning": "The circuit diagram appears to be split across two images (chart_p3_2.png and chart_p3_3.png), but the original PDF shows it should be one complete circuit. The solution is shown in the images, which violates condition d) that no part of the solution should be revealed in the context figures. The final equation 'Z = A + B + C + D' + E'FG' is visible in the last image.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_3/a",
@@ -86,8 +93,9 @@
         "question": "Is this a Moore or Mealy type FSM?",
         "solution": "Moore type, since the output G only depends on the state as there are no inputs",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure."
+        "passed_llm_verification": false,
+        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_3/b",
@@ -100,8 +108,9 @@
         "solution_figures": [
             "chart_p5_0.png"
         ],
-        "correctly_parsed": false,
-        "reasoning": "The state transition diagram is missing from the context_figures. Additionally, the solution_figures reference chart_p5_0.png which should contain the state transition table, but it's not properly included."
+        "passed_llm_verification": false,
+        "reasoning": "The state transition diagram is missing from the context_figures. Additionally, the solution_figures reference chart_p5_0.png which should contain the state transition table, but it's not properly included.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_3/c",
@@ -112,8 +121,9 @@
         "question": "Now determine the output equations that calculate the outputs G2, G1, G0 from the state bits S0, S1, S2.",
         "solution": "G2 = S2 \nG1 = S2S1' + S2'S1 \nG0 = S1'S0 + S1S0'",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure."
+        "passed_llm_verification": false,
+        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_3/d",
@@ -126,8 +136,9 @@
         "solution_figures": [
             "chart_p6_0.png"
         ],
-        "correctly_parsed": false,
-        "reasoning": "The state transition diagram is missing from the context_figures. Additionally, there's an error in the solution where N2 is defined twice (the last equation should be N0 instead of N2). Also, the solution_figures reference chart_p6_0.png which should contain the state transition table, but it's not properly included."
+        "passed_llm_verification": false,
+        "reasoning": "The state transition diagram is missing from the context_figures. Additionally, there's an error in the solution where N2 is defined twice (the last equation should be N0 instead of N2). Also, the solution_figures reference chart_p6_0.png which should contain the state transition table, but it's not properly included.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_3/e",
@@ -138,8 +149,9 @@
         "question": "Which solution would you prefer (using binary coding for the states as in b or gray coding as in d)? Explain with a short sentence.",
         "solution": "Using the gray code as the state encoding results in a simpler circuit with fewer gates, it would be better to use that one.",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure."
+        "passed_llm_verification": false,
+        "reasoning": "The state transition diagram is missing from the context_figures. The image chart_p4_0.png is referenced but not properly included, which is essential for understanding the FSM structure.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_4/a",
@@ -151,8 +163,9 @@
         "question": "Which code snippet(s) realizes the following hierarchy of three instances given in the figure below? (Note the function \"tiny\" realizes a simple AND function)",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, there are syntax errors in the code snippets in the original PDF that are not preserved in the images - for example, in Code Snippet (A) and (B), there are missing commas after 'input P,Q' which should be 'input P,Q,'. The multiple choice options (Only A, Only B, Both A and B, None) are also not included in the parsed question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, there are syntax errors in the code snippets in the original PDF that are not preserved in the images - for example, in Code Snippet (A) and (B), there are missing commas after 'input P,Q' which should be 'input P,Q,'. The multiple choice options (Only A, Only B, Both A and B, None) are also not included in the parsed question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_4/b",
@@ -163,8 +176,9 @@
         "question": "Which code snippet(s) will produce a four input multiplexer?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. Additionally, the code snippets in the image show that in Code Snippet (B), there's a case statement with specific bit patterns (2'b00, 2'b10, 2'b11) which is important for understanding the problem."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. Additionally, the code snippets in the image show that in Code Snippet (B), there's a case statement with specific bit patterns (2'b00, 2'b10, 2'b11) which is important for understanding the problem.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_4/c",
@@ -175,8 +189,9 @@
         "question": "Which code snippet(s) will produce a 8-bit value which is composed of (from MSB to LSB), c2c1d0d0d0001 (c and d are both 8-bit values)?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. There's also a syntax error in Code Snippet (B) in the original PDF where '3b'001' should be '3'b001', which is not preserved in the image."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. There's also a syntax error in Code Snippet (B) in the original PDF where '3b'001' should be '3'b001', which is not preserved in the image.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_4/d",
@@ -187,8 +202,9 @@
         "question": "Which code snippet(s) will produce a sequential circuit?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_4/e",
@@ -199,8 +215,9 @@
         "question": "Which code snippet(s) will produce a falling edge triggered D-type flip-flop with an asynchronous reset?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. Additionally, in Code Snippet (A) in the original PDF, there's a missing semicolon after 'if (reset) q <= 1'b0' which should be 'if (reset) q <= 1'b0;', which is not preserved in the image."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. The multiple choice options (Only A, Only B, Both A and B, None) are not included in the parsed question. Additionally, in Code Snippet (A) in the original PDF, there's a missing semicolon after 'if (reset) q <= 1'b0' which should be 'if (reset) q <= 1'b0;', which is not preserved in the image.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_5/a",
@@ -212,7 +229,8 @@
         "question": "The figure below is a gate level schematic of a 1-bit full adder. Using the table above: Determine the total area of the 1-bit full adder, identify the critical path in this circuit by drawing on the schematic, and calculate the critical path using the table. (3 points)",
         "solution": "AFA  = 2.3m2+ 2.3m2 + 1.8m2 + 1.8m2 + 1.8m2 = 10m2  \nCritical path from A/B to Co \ntcrit= tXOR + tAND +tOR = 20ps + 15ps + 15ps = 50ps",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_5/b",
@@ -224,7 +242,8 @@
         "question": "An 8-bit Ripple Carry Adder is generated from the 1-bit Full Adder from the previous question 5a. If this adder is used to add 8-bit two's complement numbers, what is the total area and the critical path of this 8-bit adder? (3 points)",
         "solution": "ATot = 8 x AFA = 80 m2  \n\nTcrit is a little tricky. The Ci for the LSB is 0. So the signal there propagates through a shorter path (One AND and one OR gate =30ps),  \nSince only Two's complement numbers are used, the carry out S8 is not used, For the MSB, only A/B to S delay is relevant = 40ps\nTcrit=tMSB + 6 x tFA + 1 x tLSB = 40+ 6 x 50ps + 30ps = 370ps.  \n\n8 x tFA = 400ps is also acceptable should give them -1 point",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_5/c",
@@ -236,8 +255,9 @@
         "question": "A multi-operand adder to add four 8-bit two's complement numbers is constructed using the 8-bit ripple carry adder structure from the question 5b as shown in the figure below. What is the total area and the critical path of this multi-operand adder? (4 points)",
         "solution": "Total Area = 3x Eightbit RCA = 3 x 80 m2  = 240  m2\n\nThe timing is trickier. The critical path goes through the LSB of the first adder, and then the second LSB to the S0 outputs (40ps each). Then you have the normal critical path of the eight-bit RCA calculated in the previous question (370ps). Together it is \nTcrit = tB,S + tB,S +T8bitRCA = 40ps + 40ps + 370ps = 450ps.  \n\nNote:  1ps = 0.000 000 000 001s  = 1.10-12s\n  1m2  = 0.000 000 000 001m2   = 1.10-12 m2",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution contains a note explaining that 1ps = 10^-12s and 1m2 = 10^-12 m2, but in the original PDF these units are shown as \u03bcm\u00b2 (micro-meter squared) rather than m2. This is a significant difference in the unit representation that could confuse students."
+        "passed_llm_verification": false,
+        "reasoning": "The solution contains a note explaining that 1ps = 10^-12s and 1m2 = 10^-12 m2, but in the original PDF these units are shown as \u03bcm\u00b2 (micro-meter squared) rather than m2. This is a significant difference in the unit representation that could confuse students.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/a",
@@ -249,8 +269,9 @@
         "question": "What does the above MIPS assembly program do? What is the value stored in output register $t6 at the end of program execution if the input register $t5 contains the decimal value 10?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context_figures appear to be instruction tables and the assembly program, but without seeing the actual images, it's difficult to verify if they are correctly associated with this problem."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context_figures appear to be instruction tables and the assembly program, but without seeing the actual images, it's difficult to verify if they are correctly associated with this problem.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/b",
@@ -261,8 +282,9 @@
         "question": "Modify the program to load input from memory address 0x00000010 and store the output in memory address 0x00000020 instead of the registers $t5 and $t6.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b). Also, the context_figures reference chart_p13_0.png, but without seeing the actual image, it's difficult to verify if it's correctly associated with this problem."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b). Also, the context_figures reference chart_p13_0.png, but without seeing the actual image, it's difficult to verify if it's correctly associated with this problem.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/c",
@@ -274,8 +296,9 @@
         "question": "Complete the modified assembly code below by filling in the empty blocks.\n\nAssembly program using subroutines\nbegin     : add $a0, $t1, 10 # $t1 is the input reg\n            jal function\n            add $t6, $v0, $0\nhalt      : j  halt  \n\nfunction  : addi $t1, $0, 0  \n            addi $t2, $0, 1\n\n   loop   : slt $t3, $a0, $t2 \n            bne $t3, $0, exit_func \n            add $t1, $t1, $t2  \n            addi $t2, $t2, 2  \n            j loop\n       \nexit_func : add $v0, $t1, $0 \n    jr  $ra",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b). Additionally, chart_p12_0.png appears to show the assembly program with subroutines and has highlighted boxes indicating where students should fill in code, which might reveal part of the solution, violating condition (d)."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b). Additionally, chart_p12_0.png appears to show the assembly program with subroutines and has highlighted boxes indicating where students should fill in code, which might reveal part of the solution, violating condition (d).",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/d",
@@ -286,8 +309,9 @@
         "question": "What is the value stored in register $t1 at the end of program execution for the code given in (c)?",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context doesn't include the code from part (c) which is needed to answer this question, violating condition (c) about the problem being standalone."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context doesn't include the code from part (c) which is needed to answer this question, violating condition (c) about the problem being standalone.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_6/e",
@@ -298,8 +322,9 @@
         "question": "As you can observe that the subroutine function overwrites register $t1, suggest modifications to the code to preserve $t1's contents.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context doesn't include the subroutine code from part (c) which is needed to understand this question, violating condition (c) about the problem being standalone."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b). Additionally, the context doesn't include the subroutine code from part (c) which is needed to understand this question, violating condition (c) about the problem being standalone.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_7/a",
@@ -312,7 +337,8 @@
         "solution_figures": [
             "chart_p14_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_7/b",
@@ -323,8 +349,9 @@
         "question": "Draw the data flow on the block diagram above",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, and there are no solution figures provided. According to the PDF, this question requires drawing the data flow on the block diagram, which would typically be represented as an image in the solution."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, and there are no solution figures provided. According to the PDF, this question requires drawing the data flow on the block diagram, which would typically be represented as an image in the solution.",
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_7/c",
@@ -335,7 +362,8 @@
         "question": "Briefly explain the advantages of a multi-cycle architecture when compared to the single-cycle architecture shown above.",
         "solution": "In a single-cycle architecture, all instructions are given 1-cycle to execute, therefore the slowest instruction determines the speed of the processor.  \n\nIn a multi-cycle processor, instructions are broken down into smaller pieces, decreasing the cycle time. Simpler instructions can be executed faster, reducing the average cycle time. \n\nA single cycle processor, needs multiple instances of memories, and adders which may be quite large. A multi-cycle processor can share these resources, using only a single memory and ALU. This reduces the area",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_7/d",
@@ -346,7 +374,8 @@
         "question": "Which of the following statements about microarchitectures are TRUE (Mark all that apply)?",
         "solution": "In a pipelined architecture, a given instruction is executed faster than in a single-cycle architecture. (FALSE, a given instruction runs even slightly slower, due to the overhead, but the throughput increases) \n\nIn a pipelined architecture, control hazards can occur following the branch instruction, since the next instruction address may not be determined in time. (TRUE) \n\nThe Clocks per Instruction (CPI) of a micro-architecture is calculated as a weighted average of instructions executed in a given program/benchmark, and therefore is program dependent. (TRUE) \n\nA multi-cycle architecture has less control overhead than a single-cycle architecture. (FALSE, first there are more resources to be shared, and there is overhead for the sequential processing)",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/a",
@@ -355,7 +384,8 @@
         "question": "If the system has no cache, how much time will it make all memory accesses in the program given above? (1 point)",
         "solution": "ttotal =  N x tmem. \n ttotal =  20 x 20ns. = 400 ns",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/b",
@@ -366,7 +396,8 @@
         "solution_figures": [
             "chart_p16_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/c",
@@ -375,7 +406,8 @@
         "question": "How many compulsory cache misses were there? (1 point)",
         "solution": "There are six compulsory misses: the first four accesses to 00 04 08 0C and then the accesses to 10 14 on the 7th and 8th cycles.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/d",
@@ -384,7 +416,8 @@
         "question": "How many conflict misses were there? (1 point)",
         "solution": "There are 10 conflict misses: 8th cycle 40 conflicts with 00, 9th cycle 44 conflicts with 04, 10th cycle 00 conflicts with 40, 11th cycle 04 conflicts with 44, 12th cycle 48 conflicts with 08, 13th cycle 4C conflicts with 0C, 14th cycle 08 conflicts with 48, 15th cycle 0C conflicts with 4C,18th cycle 48 conflicts with 08, 19th cycle 4C conflicts with 0C",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/e",
@@ -393,7 +426,8 @@
         "question": "What is the Miss Ratio for this cache? (1 points)",
         "solution": "There are 16 misses out of 20 accesses. So the Miss Rate is 16/20 = 80%",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/f",
@@ -402,7 +436,8 @@
         "question": "How long will it take to make all the memory accesses for the program given above? (2 points)",
         "solution": "There are 20 cache accesses each 2ns = 2 x 20ns = 40ns \nThere are 16 cache misses, each resulting in a memory access=16x20ns=320ns \nTotal is 40ns + 320ns = 360ns \nOR = AMAT = tcache + (MR x tmem) = 2ns + (0.8 x 20ns) = 18ns.  \nTotal time memory access x AMAT = 20 x 18ns = 360ns",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "exam_solutions_ss2012/Problem_8/g",
@@ -411,7 +446,8 @@
         "question": "There are four suggestions below. In each case only one parameter of the cache will be changed. Which of the following changes would improve the total memory access time of this system running the above program, indicate all that apply? (2 points) \n\na. Increasing the Capacity from 8 to 16 \nb. Increasing Block size from 1 to 2 \nc. Increasing Set Associativity from 1 (direct mapped) to 2 \nd. Increasing Cache Access Time 1ns to 2 ns",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty when it should contain the answer to which changes would improve the total memory access time. The original PDF doesn't show the solution for this part, but a complete parsing should include the solution if it was available."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty when it should contain the answer to which changes would improve the total memory access time. The original PDF doesn't show the solution for this part, but a complete parsing should include the solution if it was available.",
+        "passed_human_verification": null
     }
 ]

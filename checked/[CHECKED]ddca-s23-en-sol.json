@@ -8,7 +8,7 @@
         "question": "Fill in the missing entries in the truth table below for the combinational circuit you are designing and express the output Fib in the sum of products representation.",
         "solution": "Inputs Outputs\n\nA B C D Fib G3\n\n0 0 0 0 1 0\n\n0 0 0 1 1 0\n\n0 0 1 0 1 0\n\n0 0 1 1 1 0\n\n0 1 0 0 0 1\n\n0 1 0 1 1 1\n\n0 1 1 0 0 1\n\n0 1 1 1 0 1\n\n1 0 0 0 1 1\n\n1 0 0 1 0 1\n\n1 0 1 0 0 1\n\n1 0 1 1 0 1\n\n1 1 0 0 0 1\n\n1 1 0 1 1 1\n\n1 1 1 0 0 1\n\n1 1 1 1 0 1\n\n\nFib = (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) + (A \u00b7B \u00b7C \u00b7D) +\n(A \u00b7B \u00b7 C \u00b7D) + (A \u00b7B \u00b7 C \u00b7D)",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_1/b",
@@ -19,7 +19,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p4_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_1/c",
@@ -30,7 +30,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p4_1.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_10/a",
@@ -41,7 +41,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p23_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_10/b",
@@ -55,7 +55,7 @@
             "images\\ddca-s23-en-sol\\chart_p23_0.png",
             "images\\ddca-s23-en-sol\\chart_p24_1.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_10/c",
@@ -66,7 +66,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p23_0.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_11/a",
@@ -77,7 +77,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p25_0.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_11/b",
@@ -88,7 +88,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p26_0.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_12",
@@ -101,7 +101,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p28_0.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_2/1",
@@ -112,7 +112,7 @@
         "solution_figures": [
             "images\\ddca-s23-en-sol\\chart_p5_0.png"
         ],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_2/2",
@@ -121,7 +121,7 @@
         "question": "Design a Moore finite state machine (FSM), where each output is solely determined by the current state of the machine and not directly influenced by the inputs. The state machine should have one input and one output. This FSM's goal is to detect a stable transition in the input signal from repeated logic-0 to repeated logic-1. The output should be logic-1 only when the input sequence of \"0-0-1-1\" is observed. The output should be zero in all other cases.\n\nWhen the circuit is reset, your state machine should assume that the input signal has been high (logic-1) for a long time. Draw the state diagram and explain why it works. Your state machine should use as few states as possible and each state should have a precise definition and output.",
         "solution": "We need to keep track of the bit values in the last four bits. This requires 16 states. However, many of these states behave the same. We can reduce the number of states down to five.\n\n\u02c6 Since this is a Moore machine, the output should be independent from the input. Therefore, there should be a state for the posedge where the output is \"1\". All other states will have the output of \"0\". The FSM goes to the posedge state only when the last four bits are 0-0-1-1. We call this state S0011.\n\n\u02c6 The FSM should reach to the posedge state from another state where the last three input bits are 0-0-1. We call this state SX001.\n\n\u02c6 The FSM should reach to the 0-0-1 state from a state where the last two input bits are 0-0. Note that it does not matter what the input bits are, earlier than the last two zeros. We call this state SXX01.\n\n\u02c6 The FSM should not stay in state S0011 for more than one clock cycle as when the new input comes, the last four bits will not be 0-0-1-1 anymore. If the input is 1, the next state should be SXXX1: the last bit is zero but it is not a posedge and the earlier bits are not important. If the input is 0, the next state should be SXX10: the last two bits are 1-0 and the earlier bits are not important.\n\n\u02c6 Intuitively, if the state is SXXX1, the FSM should remain at this state if the input is 1 and go to SXX10 if the input is 0.\n\n\u02c6 If the state is SXX10, the FSM should not remain at this state regardless of the input. If the input is 0, the next state is SXX00. If the input is 1, the next state is SXXX1.\n\nTherefore, it is possible to design this state machine with five states. The state diagram is shown below.",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/1",
@@ -130,7 +130,7 @@
         "question": "Width of the immediate value in an ADD instruction.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/2",
@@ -139,7 +139,7 @@
         "question": "The algorithm used by the ALU to perform multiplication.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/3",
@@ -148,7 +148,7 @@
         "question": "Number of bits required for indexing the source register of a store instruction.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/4",
@@ -157,7 +157,7 @@
         "question": "Number of entries in the L3 cache.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/5",
@@ -166,7 +166,7 @@
         "question": "The data cache organization (e.g., direct-mapped, set-associative).",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/6",
@@ -175,7 +175,7 @@
         "question": "Support for conveying prefetching hints to the hardware via the compiler.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/7",
@@ -184,7 +184,7 @@
         "question": "Available data types (e.g., integer) for arithmetic and logic operations.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/8",
@@ -193,7 +193,7 @@
         "question": "Cache coherence protocol in multi-core processors.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/9",
@@ -202,7 +202,7 @@
         "question": "Width of the data bus between the processor and main memory.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/10",
@@ -211,7 +211,7 @@
         "question": "The memory controller's memory request scheduling algorithm.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/11",
@@ -220,7 +220,7 @@
         "question": "Instruction encoding for control flow and branch instructions.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/12",
@@ -229,7 +229,7 @@
         "question": "The design of the register renaming logic.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/13",
@@ -238,7 +238,7 @@
         "question": "Number of instructions decoded per cycle in a superscalar processor.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/14",
@@ -247,7 +247,7 @@
         "question": "L2 cache miss latency.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_3/15",
@@ -256,7 +256,7 @@
         "question": "Width of the program counter.",
         "solution": "1. ISA 2. Microarchitecture",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_4/1",
@@ -267,7 +267,7 @@
         "question": "What unsigned decimal values does the out signal get in the following waveform diagram? Fill in the gray boxes with an out value for each clk cycle. Briefly explain your answer.",
         "solution": "Explanation.\nThe module outputs the inth number in the Fibonacci sequence after in clock cycles. Until then, it outputs the number of clock cycles that have passed since reset.\nFor the given value of in (8'h09), the values for out are from leftmost yellow box to the rightmost yellow box:\n0, 1, 2, 3, 4, 5, 6, 7, 8, 55",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_4/2",
@@ -276,7 +276,7 @@
         "question": "Provide your choice for each blank 1, 2, and 4 below. Circle only one of A, B, C, D. Provide a one-line expression for 3 (Hint: Use the ternary operator (?) to implement a MUX).\n\n1 : A. output B. output reg C. input wire [2:0] D. input reg\n\n2 : A. wire [7:0] B. [7:0] wire C. wire [8:0] D. reg [7:0]\n\n3 : \n\n4 : A. B. assign C. == D. let\n\nDid ChatGPT inject any errors in this code? Write down line number(s) and a short explanation (to help us award you partial credit).",
         "solution": "Explanation.\n\n1 : Signal stride is used as an input to the module, so it should be declared as an input.\nAmong options that describe input signals (C and D), input reg is not valid Verilog syntax.\n\n2 : The correct way to describe signals that we can assign values to in an always block is\nreg [7:0].\n3 : We describe a mux using the ternary operator as such: stride != 3'b0 ? stride\n: 3'b1;. If stride is zero, the left-hand side of the ternary operator (i.e., stride) is the\noutput of the mux and otherwise the right-hand side (i.e., 3'b1) is the output of the mux.\n\n4 : The correct syntax for assigning a value to a signal is assign x_coord =\nx_internal;. Other options are not valid Verilog syntax.\n\nExplanation. Line 18 introduces a logical error, causing x_internal to always be incremented by move_amount regardless of the direction of movement.",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/1",
@@ -285,7 +285,7 @@
         "question": "A main memory access typically has larger latency than a register file access.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/2",
@@ -294,7 +294,7 @@
         "question": "SRAM is commonly used as main memory in modern computers.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/3",
@@ -303,7 +303,7 @@
         "question": "A DRAM cell requires larger power to store data compared to an SRAM cell.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/4",
@@ -312,7 +312,7 @@
         "question": "Reads are faster than writes in DRAM.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/5",
@@ -321,7 +321,7 @@
         "question": "Reads are faster than writes in phase change memory.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/6",
@@ -330,7 +330,7 @@
         "question": "A bitline in a DRAM array connects all DRAM cells in a DRAM row to the row decoder circuitry.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/7",
@@ -339,7 +339,7 @@
         "question": "Using virtual memory reduces the memory access latency.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/8",
@@ -348,7 +348,7 @@
         "question": "Phase Change Memory (PCM) is non-volatile.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/9",
@@ -357,7 +357,7 @@
         "question": "If a hypothetical system is not constrained by chip area, memory cost ($), and energy consumption, PCM would be the best memory technology to use in that system.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/10",
@@ -366,7 +366,7 @@
         "question": "A program with a streaming memory access pattern leads to very high temporal locality in the last level data cache.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/11",
@@ -375,7 +375,7 @@
         "question": "In DRAM, accesses to different rows in one bank can be serviced faster compared to accesses to different rows in different banks.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/12",
@@ -384,7 +384,7 @@
         "question": "TLB is a specialized instruction cache that caches instructions based on branch prediction results.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/13",
@@ -393,7 +393,7 @@
         "question": "Virtual memory simplifies software design.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/14",
@@ -402,7 +402,7 @@
         "question": "A page fault happens when the TLB does not contain the entry needed by an instruction.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_5/15",
@@ -411,7 +411,7 @@
         "question": "A fully-associative L1 TLB that only stores 4KB virtual-to-physical mappings and has 1024 entries can cover up to 4MB of memory.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_6/a",
@@ -420,7 +420,7 @@
         "question": "What is the CPI (cycles per instruction) of application A when executing on processor P1? Show your work.",
         "solution": "CPI = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2 + 0.1\u00d7 2\nCPI = 4.4",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_6/b",
@@ -429,7 +429,7 @@
         "question": "A new design of the processor doubles the clock frequency of P1. However, the latencies of all instructions increase by 4 cycles. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A. What is the CPI of application A when executing on processor P2? Show your work.",
         "solution": "CPI = 0.4\u00d7 10 + 0.2\u00d7 10 + 0.3\u00d7 6 + 0.1\u00d7 6\nCPI = 8.4",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_6/c",
@@ -438,7 +438,7 @@
         "question": "Which processor is faster (P1 or P2)? By how much (i.e., what is the speedup)? Show your work.",
         "solution": "P2 is 1.05\u00d7 faster than P1.\n\nExplanation.\nExecution_Time_P1 = instructions\u00d7 CPIP1 \u00d7 clock_time\n\nExecution_Time_P2 = instructions\u00d7 CPIP2 \u00d7 clock_time\n2\n\nclock_time = 1\nclock_frequency\n\nAssuming that Execution_Time_P2 < Execution_Time_P1 =\u21d2\nExecution_Time_P1\nExecution_Time_P2 > 1. Thus:\n\n=\u21d2 instructions\u00d7CPIP1\u00d7clock_time\ninstructions\u00d7CPIP2\u00d7clock_time\n2\n\n=\u21d2 4.4\u00d7clock_time\n8.4\u00d7 clock_time\n2\n\n=\u21d2 4.4\n4.2\n\n=\u21d2 1.05",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_6/d",
@@ -447,7 +447,7 @@
         "question": "You want to improve the original P1 design by including one new optimization without changing the clock frequency. You can choose only one of the following options:\n\n(1) ALU: An optimized ALU, which halves the latency of both arithmetic and branch instructions.\n\n(2) LSU: An asymmetric load-store unit, which halves the latency of load operations but doubles the latency of store operations.\n\nWhich optimization do you add to P1 for application A? Show your work and justify your choice.",
         "solution": "The ALU optimization.\n\nExplanation.\nApplication A executes 40% load, 20% store, 30% arithmetic, and 10% branch instructions.\nBy Amdahl's Law, we have:\n\nSpeedupALU = 1\n(1\u22120.3\u22120.1)+ 0.3+0.1\n2\n= 1.25\n\nSpeedupLSU = 1\n(1\u22120.4\u22120.2)+ 0.4\n2 +0.2\u00d72\n= 1.0\n\nThe ALU optimization provides 1.25\u00d7 speedup, while the LSU provides no speedup at all.\n\nAlternative Solution.\nWith the ALU, the new CPI of processor P1 will be:\nCPIALU = 0.4\u00d7 6 + 0.2\u00d7 6 + 0.3\u00d7 2\n2 + 0.1\u00d7 2\n2\nCPIALU = 4.0\n\nWith the LSU, the new CPI of processor P1 will be:\nCPILSU = 0.4\u00d7 6\n2 + 0.2\u00d7 (6\u00d7 2) + 0.3\u00d7 2 + 0.1\u00d7 2\nCPILSU = 4.4\n\nSince CPIALU < CPILSU , integrating the ALU will improve the overall cycles-\nper-instruction.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_7/a",
@@ -458,7 +458,7 @@
         "question": "List the data forwarding paths between pipeline stages.",
         "solution": "The result of E3 stage is forwarded to E1 stage (e.g., R1's value at clock cycle 6 and R4's value at clock cycle 11). The result of M stage is forwarded to E1 stage (e.g., R1's value at clock cycle 7.)\nThe result of E3 stage is forwarded to the condition registers (e.g., SUBI and JNZ at clock cycle 15).\nThere is no other information for any other data forwarding. Therefore, other data forwardings are unknown.",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_7/b",
@@ -469,7 +469,7 @@
         "question": "Does this machine use hardware interlocking or software interlocking? Explain.",
         "solution": "Hardware interlocking. It detects data dependencies and stalls the pipeline accordingly without needing any software-induced NOPs.",
         "solution_figures": [],
-        "correctly_parsed":false
+        "passed_llm_verification":false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_7/c",
@@ -480,7 +480,7 @@
         "question": "Calculate the value of T (the clock cycle of the given snapshot). Show your work.",
         "solution": "T = 82.\n\nExplanation.\nThe instruction MUL R4, R1, R1 is fetched for the first time at the clock cycle 3. After the first iteration of the loop, the instruction is fetched for the second time at the clock cycle 12.\n\nThe instruction JNZ L1 stalls at the Decode stage and delays MUL R4, R1, R1. Due to this delay, there are 10 cycles in between the Nth and (N+1)th times the instruction is fetched, after the first iteration of the loop.\n\nIf R1 = 1024, this instruction is fetched and executed 8 times so far.\n\nSince in cycle T the first instruction in the loop (MUL R4, R1, R1) is being fetched, no cycles of the 9th iteration have executed so far.\n\nThen, T = 12 + 7\u00d7 10 = 82",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_7/d",
@@ -491,7 +491,7 @@
         "question": "Calculate the value of N (the total number of dynamic instructions fetched by the clock cycle T). Show your work.",
         "solution": "N = 51.\n\nExplanation.\nLoop iterates for 8 times before the processor reaches to clock cycle T.\n\nThere are two instructions before the loop starts.\n\nThen, N = 2 + 8\u00d7 6 + 1 = 51 (assuming that the instruction indices start from 1).",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_7/e",
@@ -502,7 +502,7 @@
         "question": "Calculate the total execution time of the assembly code in Code Listing 1 until the completion in terms of the number of clock cycles. Show your work.",
         "solution": "100 cycles.\n\nExplanation.\nUntil the end of the second iteration, the loop takes 19 cycles as shown above.\nThe steady-state throughput of an iteration after the first iteration is 6 instructions in 10 cycles.\n\nLoop will iterate until R1 becomes 2048, which means 9 iterations in total.\n\nThere is only one instruction after the loop, which takes 1 cycle to complete.\n\nThen, T = 19 + 8\u00d7 10 + 1 = 100",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_8/a",
@@ -513,7 +513,7 @@
         "question": "What should the minimum number of banks (N) be to avoid stalls while executing a VLD or VST instruction? Calculate the minimum number of banks for every stride from 1 to 10. Explain.",
         "solution": "101 banks for even strides, 100 banks for odd strides\nExplanation.\nTo calculate the minimum value, we have to assume the worst case, which is when all\nmemory accesses are row bu\ufffder misses (latency = 100). To avoid stalls, we need to\nensure that consecutive vector elements access 100 di\ufffderent banks.\n\nWe illustrate the solution for even strides (2 and 4) and odd strides (1 and 3).\n\n101 banks are enough to avoid stalls with even numbers. For example, with a vector\nstride of 2, consecutive elements of a vector will map to banks 0, 2, 4 ... 96, 98, 100, 1, 3\n... 97, 99. With a vector stride of 4, consecutive elements of a vector will map to banks\n0, 4, 8 ... 96, 100, 3, 7 ... 95, 99, 2, etc.\n\n100 banks are enough to avoid stalls with odd numbers. For example, with a vector\nstride of 1, consecutive elements of a vector will map to banks 0, 1, 2, 3 ... 98, 99. With\na vector of stride 3, consecutive elements of a vector will map to banks 0, 3, 6 ... 96, 99,\n2, 5 ... 95, 98\n\nSo, the minimum number of banks is 100 for odd strides, and 101 for even strides.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_8/b",
@@ -524,7 +524,7 @@
         "question": "",
         "solution": "SET Vst, 1 # Load Vector Stride Register\nSET Vln, 46 # Load Vector Length Register\nVLD V1, a # Read from array a\nVLD V2, b # Read from array b\nVCMPZ V3, V1 # Compare V1 to 0\nLDM V3 # Load Vector Mask Register\nVST c, V2 # Write to array c\nVNOT V3 # BitwiseNOT\nLDM V3 # Load Vector Mask Register\nVSHFR V4, V1 # Shift to divide\nVMUL V5, V1, V2 # Multiply\nVADD V6, V5, V4 # Add\nVST c, V6 # Write to array c",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_8/c",
@@ -535,7 +535,7 @@
         "question": "",
         "solution": "1822 cycles\nExplanation.\n\nThe memory accesses look like:\nbank0 --MISS-|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank1 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank2 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank3 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank4 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank5 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|--HIT--|\nbank6 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\nbank7 --MISS--|--HIT--|--MISS--|--HIT--|--MISS--|\n\nTherefore, the latency of the load corresponds to the latency of the bank with the larger\nlatency. In this case, bank 5 (300+150+5 = 455 cycles). The latency of a store is also\n455 cycles.\n\nThe general picture is:\n\nSET: |-S-|\nSET: |-S-|\nVLD: |-----VLD-----|\nVLD: |-----VLD-----|\nVCMPZ: |VCMPZ|\nLDM: |L|\nVST: |-----VST-----|\nVNOT: |VNOT|\nLDM: |L|\nVSHFR: |VSHFR|\nVMUL: |VMUL|\nVADD: |VADD|\nVST: |-----VST-----|\n\nS = 1\nVLD_cycles = VST_cycles = 455\nVMUL_cycles = 10 + 45 = 55\nVCMPZ_cycles = 4 + 45 = 49\nVNOT_cycles = 4 + 45 = 49\nL = 1\nVSHFR = 10 + 45 = 55\nVADD = 5 + 45 = 50\n\nConsidering how the latency of some instructions is hidden by the other instructions,\nthe total cycles can be calculated as:\ntotal_cycles = S + S + V LD_cycles + V LD_cycles + V ST_cycles + V ST_cycles =\n1822 cycles",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_9/a",
@@ -547,7 +547,7 @@
         "question": "Your goal in this question is to statically schedule the instructions in Figure 1 to the VLIW processor specified above. Table 2 (on the next page) represents the occupancy of each functional unit during the execution of the assembly code in Figure 1.\n\nFor the assembly code given in Figure 1, fill in Table 2 with the appropriate VLIW instructions.\n\nIn your solution, minimize the number of VLIW instructions, and ensure that each instruction is scheduled to execute as soon as possible. Table 2 should only contain assembly operations supported by the VLIW processor, as described in Table 1.",
         "solution": "Functional Unit\n\nVLIW\nInstruction Load Load Load Store Mult Add Branch\n\n1 LOOP: load_inc r2, [r31, r0, #0] load r3, [r29, r1, #0] load r4, [r30, r1, #0] NOP NOP NOP NOP\n\n2 NOP NOP NOP NOP mult r5, r2, r3 NOP NOP\n\n3 NOP NOP NOP NOP NOP add r6, r5, r4 NOP\n\n4 NOP NOP NOP store_inc [r31, r1, #0], r6 NOP NOP NOP\n\n5 NOP NOP NOP NOP NOP NOP bne r1, #N, LOOP",
         "solution_figures": [],
-        "correctly_parsed": false
+        "passed_llm_verification": false
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_9/b",
@@ -558,7 +558,7 @@
         "question": "What is the ratio between the number of useful operations and the number of VLIW instructions in your code? A useful operation refers to any assembly operation that is not a NOP.",
         "solution": "7/5 useful operations per VLIW instruction.\n\nExplanation.\nThere are a total of 7 assembly operations (excluding NOPs) composing 5 VLIW instructions.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     },
     {
         "question_id": "ddca-s23-en-sol/Problem_9/c",
@@ -569,6 +569,6 @@
         "question": "What is the execution time (in cycles) of the VLIW processor when executing the sequence of instructions in Table 2, as a function of the loop counter N? Show your work.",
         "solution": "Execution time = 5\u00d7N.\n\nExplanation.\nA single iteration of the loop takes 5 clock cycles to execute. Since the loop repeats N times, the total execution time is equal to 5\u00d7N.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true
     }
 ]

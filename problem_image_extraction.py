@@ -159,5 +159,14 @@ def process(input_path, output_fol): #7/3 added extra input path parameter, outp
                 data[problem].append(chart.name)
 
     return data
-# if __name__ == "__main__":
-#     process("data/740_f13_midterm2_solutions.pdf", "extracted_problems")
+
+if __name__ == "__main__":
+    input_dir =  "OnurETHZ_exams"
+    for exam in os.listdir(input_dir):
+        output_dir = "extracted_problems"
+
+        output_path = os.path.join(output_dir, exam[:-4])
+        
+        if exam.endswith(".pdf") and not os.path.isdir(output_path):
+            file_dir = os.path.join(input_dir, exam)
+            process(file_dir, "extracted_problems")

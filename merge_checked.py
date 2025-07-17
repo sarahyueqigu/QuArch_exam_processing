@@ -3,6 +3,8 @@ import os
 
 folder = "checked"
 
+# Previously we hand-checked some exams before running them through the autochecker. This program is designed to combine
+# both the autochecker "correctly_parsed" field and the human-iputted "correctly-parsed" field into one JSON file
 for file in os.listdir(folder):
     if file.endswith(".json"):
 

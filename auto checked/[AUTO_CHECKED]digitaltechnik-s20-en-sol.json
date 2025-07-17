@@ -8,7 +8,8 @@
         "solution_figures": [
             "chart_p3_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_1/b",
@@ -20,7 +21,8 @@
             "chart_p3_1.png",
             "chart_p3_2.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_10/a",
@@ -29,7 +31,8 @@
         "question": "A program with 2500 dynamic instructions completes in 4514 cycles. If 500 of those\ninstructions are conditional branches, at the end of which pipeline stage are the branch instructions\nresolved? (Assume that the pipeline does not stall for any other reason than conditional branches,\ne.g., data dependencies, during the execution of that program.)",
         "solution": "At the end of the 5th stage.\n\nExplanation: Total cycles = 15 + 2500 + 500 \u2217X \u2212 1\n4514 = 2514 + 500 \u2217X\n2000 = 500 \u2217X\nX = 4\nEach branch causes 4 idle cycles (bubbles), thus branches are resolved at the end of 5th\nstage.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_10/b",
@@ -38,8 +41,9 @@
         "question": "How many instructions will be executed when running this piece of code? Show your work.\n\nHow many of them are CONDITIONAL branch instructions? Show your work.",
         "solution": "Total instructions executed = 98;\n\nConditional branch instructions = 36;",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution is incomplete. In the original PDF, there should be work shown for how the answers were derived, but the parsed solution only contains the final answers without any explanation or work shown."
+        "passed_llm_verification": false,
+        "reasoning": "The solution is incomplete. In the original PDF, there should be work shown for how the answers were derived, but the parsed solution only contains the final answers without any explanation or work shown.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_10/c",
@@ -48,7 +52,8 @@
         "question": "(I) Static Branch Predictor\n\nCould this be the mysterious branch predictor?\n\nYES NO\n\nIf YES, for which configuration below is the answer YES? Pick an option for each configuration\nparameter.\n\ni. Static Prediction Direction\n\nAlways taken Always not taken\n\n(II) Last Time Branch Predictor\n\nCould this be the mysterious branch predictor?\n\nYES NO\n\nIf YES, for which configuration is the answer YES? Pick an option for each configuration\nparameter.\n\ni. Initial Prediction Direction\n\nTaken Not taken\n\nii. Local for each branch instruction (i.e., PC-based) or global (i.e., shared among all branches)\nhistory?\n\nLocal Global\n\n(III) Backward taken, Forward not taken (BTFN)\n\nPlease recollect, a conditional branch is said to be backward if its target address is lower than\nthe branch PC, and vice-versa.\n\nCould this be the mysterious branch predictor?\n\nYES NO\n\n(IV) Two-bit Counter Based Prediction (using saturating arithmetic)\n\nCould this be the mysterious branch predictor?\n\nYES NO\n\nIf YES, for which configuration is the answer YES? Pick an option for each configuration\nparameter.\n\ni. Initial Prediction Direction\n\n00 (Strongly not taken) 01 (Weakly not taken)\n10 (Weakly taken) 11 (Strongly taken)\n\nii. Local for each branch instruction (i.e., PC-based, without any interference between dif-\nferent branches) or global (i.e., a single counter shared among all branches) history?\n\nLocal Global",
         "solution": "YES, if the static prediction direction is always not taken.\n\nExplanation: 98 instructions (36 of them are conditional branches) finishes execu-\ntion in 136 cycles. This means there are 6 branch mispredictions. So, any predictor\nthat produces 6 mispredictions can be our mysterious predictor.\nA static predictor with always not taken predicton generates 6 mispredictions. Hence,\nYES.\n\nNO.\n\nExplanation: There is no configuration for this branch predictor that results in 6\nmispredictions for the above program.\n\nLocal-taken: 12 mispredictions, Local-NotTaken: 10 mispredictions,\nGlobal-taken: 10 mispredictions, Global-NotTaken: 9 mispredictions.\n\nNO.\n\nExplanation: BTFN predictor makes 26 mispredictions. Hence it cannot be\nour mysterious branch predictor.\n\nYES, if local or global history registers with 00 or 01 initial values are used.\n\nExplanation: Such a configuration yields exactly 6 mispredictions, which results\nin 136 cycles execution time for the above program.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_11/a",
@@ -60,8 +65,9 @@
         "question": "Warm-up: which of the following are goals of VLIW CPU design (circle all that apply)?\n\n(i) Simplify code compilation.\n\n(ii) Simplify application development.\n\n(iii) Reduce overall hardware complexity.\n\n(iv) Simplify hardware inter-instruction dependence checking.\n\n(v) Reduce processor fetch width.",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty, which violates condition (b) that requires both question and solution fields to be populated."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty, which violates condition (b) that requires both question and solution fields to be populated.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_11/b",
@@ -75,7 +81,8 @@
         "solution_figures": [
             "chart_p27_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_11/c",
@@ -87,7 +94,8 @@
         "question": "How many total cycles are required to complete execution of all instructions in the previous question? Ignore pipeline fill overheads and assume the instruction latencies given in Table 5.",
         "solution": "13",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_11/d",
@@ -99,7 +107,8 @@
         "question": "What is the utilization of the instruction scheduling slots (computed as the ratio of utilized slots to total execution slots throughout execution)?",
         "solution": "(12 slots used) / (13 cycles * 4 slots/cycle) = 3/13 \u2248 23.1%",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_2/a",
@@ -108,7 +117,8 @@
         "question": "Does the following code result in a sequential circuit or a combinational circuit? Please explain your answer.\n\n1\n2 module sevensegment (input [3:0] data, output reg [6:0] segments);\n3 always @ ( * )\n4 case (data)\n5 4'd0: segments = 7'b111_1110;\n6 4'd1: segments = 7'b011_0000;\n7 4'd2: segments = 7'b110_1101;\n8 4'd3: segments = 7'b111_1001;\n9 4'd4: segments = 7'b011_0011;\n10 endcase\n11 endmodule",
         "solution": "Sequential circuit.\n\nExplanation:\nThis code results in a sequential circuit, as all the left-hand side signals are not assigned in every possible condition. For example, for values of data that are more than 4, segment is not assigned to a specific value.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_2/b",
@@ -117,7 +127,8 @@
         "question": "Does the following code result in an output signal which is zero except for one clock cycle in every three clock cycles (0-0-1-0-0-1...)? If not, please enable this functionality by adding minimal changes. Explain your answer.\n\n1 module divideby3 (input clk, input reset, output q);\n2 reg [1:0] curVal, nextVal;\n3 parameter S0 = 2'b00; parameter S1 = 2'b01; parameter S2 = 2'b10;\n4 always @ (*)\n5 case (curVal)\n6 S0: nextVal = S1;\n7 S1: nextVal = S2;\n8 S2: nextVal = S0;\n9 default: nextVal = S0;\n10 endcase\n11 assign q = (curVal == S0);\n12 endmodule",
         "solution": "No.\n\nExplanation:\nThe FSM misses state register. This leads to curVal not changing to nextVal. To fix the problem, the state register should be added:\n\nalways @ (posedge clk, posedge reset)\nif (reset) curVal <= S0;\nelse curVal <= nextVal;",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_2/c",
@@ -126,8 +137,9 @@
         "question": "The following code implements a circuit and we initialize all inputs and registers of the circuit to zero. We apply the following changes to the input signals in two subsequent steps. What are the values of out and tmp after each step? Please show your work.\n\n\u2022 Step 1: sel changes to 1.\n\n\u2022 Step 2: While sel is still 1, b changes to 1.\n\n1 module mod1 (input sel, input a, input b, input c, output out);\n2 reg tmp = 1'b0;\n3 always @ (sel)\n4 if (sel)\n5 tmp <= ~(a & b);\n6 out <= tmp ^ c;\n7 else\n8 tmp <= 0;\n9 out <= 0;\n10 endmodule",
         "solution": "After step 1, tmp and out are respectively 1 and 0 . After step 2, tmp and out are respectively 1 and 0\n\nExplanation:\nAfter step 1: sel is in the sensitivity list of the always block. Therefore, the if statement executes. Since tmp and out are in the left hand side of non-blocking assignments, they execute concurrentlyi, and the second assignment in the if block does not see the new value of tmp when executing.\nAfter step 2: The values of tmp and out do not change because b is not in the sensitivity list of the always block.",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "There's a typo in the solution text. The word 'concurrentlyi' should be 'concurrently' without the 'i' at the end. This doesn't match the original PDF exactly."
+        "passed_llm_verification": false,
+        "reasoning": "There's a typo in the solution text. The word 'concurrentlyi' should be 'concurrently' without the 'i' at the end. This doesn't match the original PDF exactly.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_2/d",
@@ -136,7 +148,8 @@
         "question": "Is the following code syntactically correct and result in deterministic values for all signals? If not, please explain the mistake(s).\n\n1 module top (input [1:0] in1, in2 , input op, output reg [1:0] z, output reg s);\n2\n3 wire tmp;\n4 always@(*) begin\n5 tmp = in1[0] & in2[0];\n6 z[0] = tmp & op;\n7 end\n8 always@(*) begin\n9 tmp = in1[1] | in2[1];\n10 z[1] = tmp & (~p)\n11 end\n12 assign s = (z[1] > z[0])\n13 endmodule",
         "solution": "The code is not syntactically correct and does not result in deterministic values.\n\nExplanation:\n\u2022 'tmp' has to be declared as a reg since it is used in the always blocks.\n\u2022 's' should not to be declared as a reg since it is driven by the assign statement.\n\u2022 'tmp' signal is connected to multiple drivers and leads to non-deterministic values.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_3/3.1",
@@ -147,7 +160,8 @@
         "solution_figures": [
             "chart_p6_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_3/3.2",
@@ -156,8 +170,9 @@
         "question": "",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The parser failed to extract the complete question and solution for problem 3.2. The original PDF shows that problem 3.2 has three parts (a, b, c) with specific questions about whether the given state machine is a Mealy or Moore machine, if it can be simplified, and what the state machine does. The question field is empty, and the solution field is also empty. Additionally, the context is missing the state diagram figure that is referenced in the problem statement."
+        "passed_llm_verification": false,
+        "reasoning": "The parser failed to extract the complete question and solution for problem 3.2. The original PDF shows that problem 3.2 has three parts (a, b, c) with specific questions about whether the given state machine is a Mealy or Moore machine, if it can be simplified, and what the state machine does. The question field is empty, and the solution field is also empty. Additionally, the context is missing the state diagram figure that is referenced in the problem statement.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/1",
@@ -168,8 +183,9 @@
         "question": "The integer multiplication algorithm used by the ALU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/2",
@@ -180,8 +196,9 @@
         "question": "The program counter width.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/3",
@@ -192,8 +209,9 @@
         "question": "Branch misprediction penalty.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/4",
@@ -204,8 +222,9 @@
         "question": "The ability to flush the TLB from the OS.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/5",
@@ -216,8 +235,9 @@
         "question": "The size of the Reorder Buffer in an Out-of-Order CPU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/6",
@@ -228,8 +248,9 @@
         "question": "The fetch width of a superscalar CPU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/7",
@@ -240,8 +261,9 @@
         "question": "SIMD instruction support.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/8",
@@ -252,8 +274,9 @@
         "question": "The memory addresses of the memory-mapped devices of the CPU (e.g., keyboard).\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/9",
@@ -264,8 +287,9 @@
         "question": "The number of non-programmable registers in the CPU.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/10",
@@ -276,8 +300,9 @@
         "question": "The replacement policy of the L1 data cache.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/11",
@@ -288,8 +313,9 @@
         "question": "The memory controller's scheduling algorithm.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/12",
@@ -300,8 +326,9 @@
         "question": "The number of bits required for the destination register of a load instruction.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/13",
@@ -312,8 +339,9 @@
         "question": "Description of the support for division and multiplication between integers.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/14",
@@ -324,8 +352,9 @@
         "question": "The mechanism to enter in a system call in the OS.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_4/15",
@@ -336,8 +365,9 @@
         "question": "The size of the addressable memory.\n\n1. the_isa.pdf 2. the_microarchitecture.pdf",
         "solution": "",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question."
+        "passed_llm_verification": false,
+        "reasoning": "The solution field is empty. Additionally, the image 'chart_p8_0.png' is referenced but we don't know what it contains or if it's correctly associated with this question.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_5/a",
@@ -346,7 +376,8 @@
         "question": "What is the CPI of application A when executing on processor P1? Show your work.",
         "solution": "CPI = 0.2\u00d7 10 + 0.2\u00d7 8 + 0.5\u00d7 4 + 0.1\u00d7 4\nCPI = 6",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_5/b",
@@ -355,7 +386,8 @@
         "question": "A new design of the processor doubles the clock frequency of P1. However, the latencies of the load, store, arithmetic, and branch instructions increase by 2, 2, 2, and 1 cycles, respectively. We call this new processor P2. The compiler used to generate instructions for P2 is the same as for P1. Thus, it produces the same number of instructions for program A. What is the CPI of application A when executing on processor P2? Show your work.",
         "solution": "CPI = 0.2\u00d7 12 + 0.2\u00d7 10 + 0.5\u00d7 6 + 0.1\u00d7 5\nCPI = 7.9",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_5/c",
@@ -364,8 +396,9 @@
         "question": "Which processor is faster (P1 or P2)? By how much? Show your work.",
         "solution": "P2 is 1.52\u00d7 faster than P1.\n\nExplanation.\nExecution_Time_P1 = instructions\u00d7 CPIP1 \u00d7 clock_rate\n\nExecution_Time_P2 = instructions\u00d7 CPIP2 \u00d7 clock_rate/2\n\nclock_rate = 1/clock_frequency\n\nAssuming that Execution_Time_P2 < Execution_Time_P1 =\u21d2\nExecution_Time_P1/Execution_Time_P2 > 1. Thus:\n\n=\u21d2 instructions\u00d7CPIP1\u00d7clock_rate/(instructions\u00d7CPIP2\u00d7clock_rate/2)\n\n=\u21d2 6\u00d7clock_rate/(7.9\u00d7 clock_rate/2)\n\n=\u21d2 6/3.95\n\n=\u21d2 1.52",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "The context is missing information about processor P2 from part (b). Without this information, the problem is not standalone as required by condition (c). A student would need to know the details about P2 (doubled clock frequency and increased latencies) to understand the comparison being asked for."
+        "passed_llm_verification": false,
+        "reasoning": "The context is missing information about processor P2 from part (b). Without this information, the problem is not standalone as required by condition (c). A student would need to know the details about P2 (doubled clock frequency and increased latencies) to understand the comparison being asked for.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_5/d",
@@ -374,7 +407,8 @@
         "question": "There is some extra area available in the chip of processor P1, where extra hardware can fit. You can decide to include in your processor a faster branch execution unit or a faster memory device. The faster branch execution unit reduces the latency of branch instructions by a factor of 4. The memory device reduces the latency of the memory operations by a factor of 2. Which design do you choose? Show your work.",
         "solution": "A faster memory device.\n\nExplanation.\nApplication A executes 10% of branch operations and 40% of memory operations (load and stores).\nBy Amdahl's Law, we have:\n\nSpeedupbranch = 1/((1\u22120.1)+ 0.1/4) = 1.08\n\nSpeedupmemory = 1/((1\u22120.4)+ 0.4/2) = 1.25\n\nTherefore, the new memory device provides more speedup than the faster branch execution unit, for this particular application.\n\nAlternative Solution.\nIn case we decide to reduce the latency of the branch operations, the new CPI of processor P1 will be:\nCPIbranch = 0.2\u00d7 10 + 0.2\u00d7 8 + 0.5\u00d7 4 + 0.1\u00d7 4/4\nCPIbranch = 5.7\n\nIn case we decide to reduce the latency of the memory operations, the new CPI of processor P1 will be:\nCPImemory = 0.2\u00d7 10/2 + 0.2\u00d7 8/2 + 0.5\u00d7 4 + 0.1\u00d7 4\nCPImemory = 4.2\n\nSince CPImemory < CPIbranch, improving the memory device will provide shorter cycles-per-instructions.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_6/(a)",
@@ -386,7 +420,8 @@
         "question": "List the necessary data forwardings between pipeline stages to exhibit this behavior.",
         "solution": "The result of E3 stage is forwarded to E1 stage (e.g., R1's value at clock cycle 10 and\nR2's value at clock cycle 7).\nThe result of E3 stage is forwarded to the condition registers (e.g., SUBI and JNZ at\nclock cycle 13).\nThere is no other information for any other data forwarding. Therefore, other data\nforwardings are unknown.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_6/(b)",
@@ -398,7 +433,8 @@
         "question": "Does this machine use hardware-interlocking or software-interlocking? Explain.",
         "solution": "Hardware-interlocking. It detects data dependencies and stalls the pipeline accordingly\nwithout needing any software-induced NOPs.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_6/(c)",
@@ -412,7 +448,8 @@
         "solution_figures": [
             "chart_p13_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_6/(d)",
@@ -424,7 +461,8 @@
         "question": "Calculate the value of T. Show your work.",
         "solution": "T = 682.\n\nExplanation.\nSteady state throughput of an iteration is 4 instructions in 7 cycles. The first iteration\ntakes 10 cycles as shown below.\n\nIf R1 = 98, this iteration is executed for 97 times so far.\n\nSince in cycle T the first instruction of the loop is being fetched, no cycles of the 98th\niteration have executed so far.\n\nThen, T = 10 + 96\u00d7 7 + 0 = 682",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_6/(e)",
@@ -436,7 +474,8 @@
         "question": "Calculate the value of N. Show your work.",
         "solution": "N = 390.\n\nExplanation.\nLoop iterates for 97 times before reaching to clock cycle T.\n\nThere are two instructions before the loop starts.\n\nThen, N = 2 + 97\u00d7 4 = 390, assuming that the instruction indices start from 0.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_7/a",
@@ -447,7 +486,8 @@
         "question": "Using the information provided above, answer the following questions regarding the processor design. If a question has more than one correct answer or a correct answer cannot be determined using the information provided in the question, answer the question as specifically as possible. For example, use phrases such as \"at least/at most\" and try to narrow down the answer using the information that is provided in the question and can be inferred from Table 3. If nothing can be inferred, write \"Unknown\" as an answer. Explain your reasoning briefly.\n\nWhat is the cache hit latency?\n\nWhat is the cache miss latency?\n\nWhat is the cache line size?\n\nWhat is the number of entries in each reservation station (R)?\n\nHow many ALUs does the processor have?\n\nIs the integer ALU pipelined?\n\nDoes the processor perform branch prediction?\n\nAt which pipeline stage is the correct outcome of a branch evaluated?",
         "solution": "1 cycle. The last ST instruction that writes to the same memory location that is previously loaded by LD takes only 1 cycle in E stage.\n\nWhat is the cache miss latency?\n\n8 cycles. The first LD instruction spends 8 cycles in the E stage.\n\nWhat is the cache line size?\n\nUnknown. We cannot infer the cache line size from one LD and ST instructions and also we cannot determine the minimum cache line size since the register width is not given in the question.\n\nWhat is the number of entries in each reservation station (R)?\n\nALU \u2192 at least 2, MU \u2192 unknown\n\nHow many ALUs does the processor have?\n\nAt least 2 ALUs if not pipelined, otherwise at least 1 ALU. This is because we see two arithmetic instructions simultaneously in E stage in the pipeline diagram.\n\nIs the integer ALU pipelined?\n\nYes if the processor has 1 ALU, otherwise no. The explanation is similar to the above question.\n\nDoes the processor perform branch prediction?\n\nYes because there are squashed (as a result of branch misprediction) instructions in the pipeline.\n\nAt which pipeline stage is the correct outcome of a branch evaluated?\n\nAt the end of stage E4. This is because in the next cycle after the branch instruction completes E4 previously fetched instructions are killed and an instruction from the correct path is fetched.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_7/b",
@@ -460,7 +500,8 @@
         "solution_figures": [
             "chart_p17_0.png"
         ],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_8/a",
@@ -469,7 +510,8 @@
         "question": "How many warps does it take to execute this program?",
         "solution": "Warps = (Number of threads) / (Number of threads per warp) Number of threads =\n212 (i.e., one thread per loop iteration) Number of threads per warp = 64 = 26 (given)\nWarps = 212/26 = 26",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_8/b",
@@ -478,7 +520,8 @@
         "question": "When we measure the SIMD utilization for this program with one input set, we find\nthat it is 134/320. What can you say about arrays A,B, and C? Be precise. (Hint: Look at the\n\"if\" branch).",
         "solution": "A. Nothing.\nB. 2 in every 64 consecutive elements of B are less than 8888, the rest are exactly 8888.\nC. Nothing.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_8/c",
@@ -487,7 +530,8 @@
         "question": "What needs to be true about array B to achieve 100% utilization? Show your work. Be\nprecise and complete. (Hint: The warp scheduler does not issue instructions where no threads are\nactive).",
         "solution": "Every 64 consecutive elements of B are either:\n(1) equal to 8888,\n(2) less than 8888,\n(3) greater than 8888.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_8/d",
@@ -496,7 +540,8 @@
         "question": "What is the minimum possible SIMD utilization of this program?",
         "solution": "132/384.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_8/e",
@@ -505,7 +550,8 @@
         "question": "What needs to be true about array B to achieve the minimum possible SIMD utilization?\nShow your work. (Please cover all cases in your answer.)",
         "solution": "1 in every 64 of B's elements are greater than 8888, and 1 in every 64 of B's elements are\nless than 8888, and the rest of the elements are 8888.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_9/a",
@@ -514,7 +560,8 @@
         "question": "Cache block size (8, 16, 32, 64, or 128 B)?",
         "solution": "128 B.\n\nExplanation:\nCache hit rate is 1/2 in sequence 1. This means that there are 4 hits. Depending on the\ncache block size, we can group addresses that belong to the same cache block as follows:\n\n\u2022 8\u201332 B: {0}, {32}, {128}, {73}, {8192}, {255}, {16384}, {196}. \u2234 Number of\npossible hits = 0.\n\n\u2022 64 B: {0, 32}, {128}, {73}, {8192}, {255, 196}, {16484}. \u2234 Number of possible hits\n= 2.\n\n\u2022 128 B: {0, 32, 73}, {128, 255, 196}, {8192}, {16384}. \u2234 Number of possible hits\n= 4.\n\nTherefore, we can know that the cache block size is 128 B.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_9/b",
@@ -523,8 +570,9 @@
         "question": "Cache associativity (1-, 2-, 4-, or 8-way)?",
         "solution": "4-way.\n\nExplanation:\n\nCache hit rate is 3/8 in sequence 2, which means that there are 3 hits.\nWe already know that the cache block size is 128 B. Thus, there are 7 offset bits.\n\nThe access to address 196 in sequence 2 would hit because the cache block would not be\nreplaced.\nThe access to address 512 in sequence 2 would miss because address 512 does not belong\nto any cache block previously accessed.\nTherefore, the accesses to addresses 0, 127, 4096, 8192, 16834 and 32768 in sequence 2\nwould hit 2 times.\nRegardless of cache size, those addresses will never hit when the cache were 1-way or\n2-way.\nIf the cache were 8-way, those addresses would all map to set 0. With 8 ways, addresses\n127, 9182, 16384 would not be replaced, so the three addressess would hit.\nTherefore, the cache is 4-way associative.",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "There's a typo in the solution where '16834' is written instead of '16384' as in the original PDF. Also, there's a typo where '9182' is written instead of '8192'."
+        "passed_llm_verification": false,
+        "reasoning": "There's a typo in the solution where '16834' is written instead of '16384' as in the original PDF. Also, there's a typo where '9182' is written instead of '8192'.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_9/c",
@@ -533,8 +581,9 @@
         "question": "Cache replacement policy (LRU or FIFO)?",
         "solution": "LRU.\n\nExplanation:\nFrom questions (a) and (b), we already know the following facts:\n\n\u2022 The cache block size is 128 B.\n\u2022 The cache is 4-way.\n\u2022 The accesses to addresses 0, 127, 4096, 8192, 16384, and 32768 in sequence 2 would\n  hit 2 times.\nRegardless of the cache size, 0, 127, 4096, 8192, 16834, and 32768 in sequence 2 would\nall map to set 0.\nWith the FIFO policy, accesses to addresses 127, 8192, and 16484 in sequence 2 would\nhit.\nWith the LRU policy, accesses to addresses 127 and 8192 would hit.\nTherefore, the cache adopts the LRU policy.",
         "solution_figures": [],
-        "correctly_parsed": false,
-        "reasoning": "There are typos in the solution where '16834' is written instead of '16384' and '16484' is written instead of '16384' as in the original PDF."
+        "passed_llm_verification": false,
+        "reasoning": "There are typos in the solution where '16834' is written instead of '16384' and '16484' is written instead of '16384' as in the original PDF.",
+        "passed_human_verification": null
     },
     {
         "question_id": "digitaltechnik-s20-en-sol/Problem_9/d",
@@ -543,6 +592,7 @@
         "question": "Which addresses should you use for X and Y?",
         "solution": "X = 1024\u00d7 (2k \u2212 1) where k is a positive integer.\nY = 32768\n\nExplanation:\nIf the cache is 4-KiB, all addresses that are multiples of 1024 would map to set 0. If the\ncache is 8-KiB, all addresses that are multiples of 2048 would map to set 0.\nAfter the access to 8192 in sequence 3, the LRU address in set 0 is 32768.\nIf the cache is 4-KiB, access to X = 1024 \u00d7 (2k \u2212 1) would replace 32768, so access to\n32768 would miss. If the cache is 8-KiB, such access would not replace 32768, so access\nto 32768 would hit.",
         "solution_figures": [],
-        "correctly_parsed": true
+        "passed_llm_verification": true,
+        "passed_human_verification": null
     }
 ]
